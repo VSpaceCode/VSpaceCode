@@ -1,0 +1,195 @@
+{
+    "vim.leader": " ",
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "<space>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "<tab>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.nextEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusFirstEditorGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "2"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusSecondEditorGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "3"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusThirdEditorGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "b"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "d"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.openFile",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "r"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.openRecent",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.view.scm",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "p",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeWindow",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q",
+                "q"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeWindow",
+                    "args": []
+                }
+            ]
+        }
+    ]
+}
