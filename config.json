@@ -138,6 +138,20 @@
         {
             "before": [
                 "<leader>",
+                "f",
+                "t"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.view.explorer",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "g",
                 "s"
             ],
@@ -152,6 +166,20 @@
         {
             "before": [
                 "leader",
+                "l",
+                "d"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeFolder",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
                 "p",
                 "f"
             ],
@@ -159,6 +187,34 @@
             "commands": [
                 {
                     "command": "workbench.action.quickOpen",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "p",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.openFolder",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "p",
+                "p"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.openRecent",
                     "args": []
                 }
             ]
@@ -187,6 +243,34 @@
             "commands": [
                 {
                     "command": "workbench.action.closeWindow",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusNextGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "W"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusPreviousGroup",
                     "args": []
                 }
             ]

@@ -90,12 +90,18 @@ Key bindings                  Description
 :kbd:`SPC` :kbd:`b` :kbd:`b`  Open file in project
 :kbd:`SPC` :kbd:`b` :kbd:`d`  Close active editor
 :kbd:`SPC` :kbd:`f` :kbd:`f`  Open file
-:kbd:`SPC` :kbd:`f` :kbd:`r`  Open recent files/folders
+:kbd:`SPC` :kbd:`f` :kbd:`r`  Open recent files
 :kbd:`SPC` :kbd:`f` :kbd:`s`  Save file
+:kbd:`SPC` :kbd:`f` :kbd:`t`  Explorer view
 :kbd:`SPC` :kbd:`g` :kbd:`s`  Open source control
+:kbd:`SPC` :kbd:`l` :kbd:`d`  Close folder project
 :kbd:`SPC` :kbd:`p` :kbd:`f`  Open file in project
+:kbd:`SPC` :kbd:`p` :kbd:`l`  Open folder project
+:kbd:`SPC` :kbd:`p` :kbd:`p`  Open recent project
 :kbd:`SPC` :kbd:`q` :kbd:`f`  Close window
 :kbd:`SPC` :kbd:`q` :kbd:`q`  Close window
+:kbd:`SPC` :kbd:`w` :kbd:`w`  Next editor group
+:kbd:`SPC` :kbd:`w` :kbd:`W`  Previous editor group
 ============================  ========================================
 
 
