@@ -1,0 +1,81 @@
+leader: " "
+
+bindings:
+
+  # Special keys
+  - {keys: [<leader>, <space>],
+     command: workbench.action.showCommands,
+     description: ""}
+  - {keys: [<leader>, <tab>],
+     command: workbench.action.nextEditor,
+     description: ""}
+
+  # Numbers
+  - {keys: [<leader>, 1],
+     command: workbench.action.focusFirstEditorGroup,
+     description: ""}
+  - {keys: [<leader>, 2],
+     command: workbench.action.focusSecondEditorGroup,
+     description: ""}
+  - {keys: [<leader>, 3],
+     command: workbench.action.focusThirdEditorGroup,
+     description: ""}
+
+  # SPC b - Buffers
+  - {keys: [<leader>, b, b],
+     command: workbench.action.quickOpen,
+     description: ""}
+  - {keys: [<leader>, b, d],
+     command: workbench.action.closeActiveEditor,
+     description: ""}
+
+  # SPC f - Files
+  - {keys: [<leader>, f, f],
+     command: workbench.action.files.openFile,
+     description: ""}
+  - {keys: [<leader>, f, r],
+     command: workbench.action.openRecent,
+     description: ""}
+  - {keys: [<leader>, f, s],
+     command: workbench.action.files.save,
+     description: ""}
+  - {keys: [<leader>, f, t],
+     command: workbench.view.explorer,
+     description: ""}
+
+  # SPC g - Source control
+  - {keys: [<leader>, g, s],
+     command: workbench.view.scm,
+     description: ""}
+
+  # SPC l - Layouts
+  - {keys: [<leader>, l, d],
+     command: workbench.action.closeFolder,
+     description: ""}
+
+  # SPC p - Projects
+  - {keys: [<leader>, p, f],
+     command: workbench.action.quickOpen,
+     description: ""}
+  - {keys: [<leader>, p, l],
+     command: workbench.action.files.openFolder,
+     description: ""}
+  - {keys: [<leader>, p, p],
+     command: workbench.action.openRecent,
+     description: ""}
+
+  # SPC q - Quit
+  - {keys: [<leader>, q, f],
+     command: workbench.action.closeWindow,
+     description: ""}
+  - {keys: [<leader>, q, q],
+     command: workbench.action.closeWindow,
+     description: ""}
+
+  # SPC w - Windows
+  - {keys: [<leader>, w, w],
+     command: workbench.action.focusNextGroup,
+     description: ""}
+  - {keys: [<leader>, w, W],
+     command: workbench.action.focusPreviousGroup,
+     description: ""}
