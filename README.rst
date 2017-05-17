@@ -79,30 +79,30 @@ Keybindings
 
 The following keybindings are currently configured:
 
-=================================  ===========================================
-Key bindings                       Description
-=================================  ===========================================
-:kbd:`<leader>` :kbd:`<space>`     Run command
-:kbd:`<leader>` :kbd:`<tab>`       Next editor
-:kbd:`<leader>` :kbd:`1`           Focus first editor group
-:kbd:`<leader>` :kbd:`2`           Focus second editor group
-:kbd:`<leader>` :kbd:`3`           Focus third editor group
-:kbd:`<leader>` :kbd:`b` :kbd:`b`  Quick open (show current buffers)
-:kbd:`<leader>` :kbd:`b` :kbd:`d`  Close active editor
-:kbd:`<leader>` :kbd:`f` :kbd:`f`  Open file
-:kbd:`<leader>` :kbd:`f` :kbd:`r`  Open recent (show recent files)
-:kbd:`<leader>` :kbd:`f` :kbd:`s`  Save file
-:kbd:`<leader>` :kbd:`f` :kbd:`t`  Show explorer view
-:kbd:`<leader>` :kbd:`g` :kbd:`s`  Show source control view
-:kbd:`<leader>` :kbd:`l` :kbd:`d`  Clode folder
-:kbd:`<leader>` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
-:kbd:`<leader>` :kbd:`p` :kbd:`l`  Open folder project
-:kbd:`<leader>` :kbd:`p` :kbd:`p`  Open recent (show recent folders)
-:kbd:`<leader>` :kbd:`q` :kbd:`f`  Close window
-:kbd:`<leader>` :kbd:`q` :kbd:`q`  Close window
-:kbd:`<leader>` :kbd:`w` :kbd:`w`  Next editor group
-:kbd:`<leader>` :kbd:`w` :kbd:`W`  Previous editor group
-=================================  ===========================================
+===============================  ===========================================
+Key bindings                     Description
+===============================  ===========================================
+:kbd:`leader` :kbd:`space`       Run command
+:kbd:`leader` :kbd:`tab`         Next editor
+:kbd:`leader` :kbd:`1`           Focus first editor group
+:kbd:`leader` :kbd:`2`           Focus second editor group
+:kbd:`leader` :kbd:`3`           Focus third editor group
+:kbd:`leader` :kbd:`b` :kbd:`b`  Quick open (show current buffers)
+:kbd:`leader` :kbd:`b` :kbd:`d`  Close active editor
+:kbd:`leader` :kbd:`f` :kbd:`f`  Open file
+:kbd:`leader` :kbd:`f` :kbd:`r`  Open recent (show recent files)
+:kbd:`leader` :kbd:`f` :kbd:`s`  Save file
+:kbd:`leader` :kbd:`f` :kbd:`t`  Show explorer view
+:kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
+:kbd:`leader` :kbd:`l` :kbd:`d`  Clode folder
+:kbd:`leader` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
+:kbd:`leader` :kbd:`p` :kbd:`l`  Open folder project
+:kbd:`leader` :kbd:`p` :kbd:`p`  Open recent (show recent folders)
+:kbd:`leader` :kbd:`q` :kbd:`f`  Close window
+:kbd:`leader` :kbd:`q` :kbd:`q`  Close window
+:kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
+:kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
+===============================  ===========================================
 
 
 Contributing

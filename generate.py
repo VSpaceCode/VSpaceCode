@@ -39,8 +39,10 @@ def generate_documentation(config):
     # Prepare documentation content
     keys_list, desc_list = list(), list()
     for binding in config['bindings']:
-        keys_list.append(' '.join([':kbd:`{}`'.format(key)
-                                   for key in binding['keys']]))
+        keys_list.append(' '
+                         .join([':kbd:`{}`'.format(key)
+                                for key in binding['keys']])
+                         .replace('<', '').replace('>', ''))
         desc_list.append(binding['description'])
     keys_maxlen = max([len(keys) for keys in keys_list])
     desc_maxlen = max([len(desc) for desc in desc_list])
