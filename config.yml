@@ -5,77 +5,77 @@ bindings:
   # Special keys
   - {keys: [<leader>, <space>],
      command: workbench.action.showCommands,
-     description: ""}
+     description: "Run command"}
   - {keys: [<leader>, <tab>],
      command: workbench.action.nextEditor,
-     description: ""}
+     description: "Next editor"}
 
   # Numbers
   - {keys: [<leader>, 1],
      command: workbench.action.focusFirstEditorGroup,
-     description: ""}
+     description: "Focus first editor group"}
   - {keys: [<leader>, 2],
      command: workbench.action.focusSecondEditorGroup,
-     description: ""}
+     description: "Focus second editor group"}
   - {keys: [<leader>, 3],
      command: workbench.action.focusThirdEditorGroup,
-     description: ""}
+     description: "Focus third editor group"}
 
   # SPC b - Buffers
   - {keys: [<leader>, b, b],
      command: workbench.action.quickOpen,
-     description: ""}
+     description: "Quick open (show current buffers)"}
   - {keys: [<leader>, b, d],
      command: workbench.action.closeActiveEditor,
-     description: ""}
+     description: "Close active editor"}
 
   # SPC f - Files
   - {keys: [<leader>, f, f],
      command: workbench.action.files.openFile,
-     description: ""}
+     description: "Open file"}
   - {keys: [<leader>, f, r],
      command: workbench.action.openRecent,
-     description: ""}
+     description: "Open recent (show recent files)"}
   - {keys: [<leader>, f, s],
      command: workbench.action.files.save,
-     description: ""}
+     description: "Save file"}
   - {keys: [<leader>, f, t],
      command: workbench.view.explorer,
-     description: ""}
+     description: "Show explorer view"}
 
   # SPC g - Source control
   - {keys: [<leader>, g, s],
      command: workbench.view.scm,
-     description: ""}
+     description: "Show source control view"}
 
   # SPC l - Layouts
   - {keys: [<leader>, l, d],
      command: workbench.action.closeFolder,
-     description: ""}
+     description: "Clode folder"}
 
   # SPC p - Projects
   - {keys: [<leader>, p, f],
      command: workbench.action.quickOpen,
-     description: ""}
+     description: "Quick open (allow to open any project file)"}
   - {keys: [<leader>, p, l],
      command: workbench.action.files.openFolder,
-     description: ""}
+     description: "Open folder project"}
   - {keys: [<leader>, p, p],
      command: workbench.action.openRecent,
-     description: ""}
+     description: "Open recent (show recent folders)"}
 
   # SPC q - Quit
   - {keys: [<leader>, q, f],
      command: workbench.action.closeWindow,
-     description: ""}
+     description: "Close window"}
   - {keys: [<leader>, q, q],
      command: workbench.action.closeWindow,
-     description: ""}
+     description: "Close window"}
 
   # SPC w - Windows
   - {keys: [<leader>, w, w],
      command: workbench.action.focusNextGroup,
-     description: ""}
+     description: "Next editor group"}
   - {keys: [<leader>, w, W],
      command: workbench.action.focusPreviousGroup,
-     description: ""}
+     description: "Previous editor group"}
