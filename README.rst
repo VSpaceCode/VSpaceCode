@@ -53,16 +53,16 @@ and then press :kbd:`Return`. You can then press the ``Install`` button, wait
 for it to finish, and then ``Reload`` the editor by clicking the associated
 button.
 
-To set up VSpaceCode, simply merge the content of the `config.json`_ file with
+To set up VSpaceCode, simply merge the content of the `settings.json`_ file with
 your own settings. To do so, press :kbd:`Ctrl + Shift + P`, enter ``user
 settings`` and then press :kbd:`Return`:
 
 - If you don't have any VSCodeVim configuration yet, you can simply copy/paste
-  the content of `config.json`_ (without the top-level brackets) somewhere into
+  the content of `settings.json`_ (without the top-level brackets) somewhere into
   your ``settings.json``.
 
 - If you already have some VSCodeVim configurations, you will have to manually
-  copy/paste the parts of `config.json`_ into the corresponding
+  copy/paste the parts of `settings.json`_ into the corresponding
   ``vim.otherModesKeyBindingsNonRecursive`` section of your ``settings.json``.
 
 In any case it is recommended to keep the configurations you take from here
@@ -71,7 +71,7 @@ copy/pasting the relevant parts.
 
 .. _VSCodeVim: https://github.com/VSCodeVim/Vim
 .. _VSpaceCode: https://github.com/StreakyCobra/VSpaceCode
-.. _`config.json`: config.json
+.. _`settings.json`: settings.json
 
 
 Keybindings
@@ -114,7 +114,7 @@ all. Feel free to open pull requests if you have some interesting mappings that
 do not exist yet. Please try to make the following changes in a **single
 commit**:
 
-- Keep bindings sorted in `config.json`_
+- Keep bindings sorted in `settings.json`_
 - Add the corresponding line in the `Keybindings`_ section of this README
 - Include your name in the `Contributors`_ section of this README
 

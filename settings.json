@@ -6,6 +6,7 @@
                 "<leader>",
                 "<space>"
             ],
+            "after": [],
             "commands": [
                 {
                     "command": "workbench.action.showCommands",
@@ -165,7 +166,7 @@
         },
         {
             "before": [
-                "leader",
+                "<leader>",
                 "l",
                 "d"
             ],
@@ -179,7 +180,7 @@
         },
         {
             "before": [
-                "leader",
+                "<leader>",
                 "p",
                 "f"
             ],
@@ -193,7 +194,7 @@
         },
         {
             "before": [
-                "leader",
+                "<leader>",
                 "p",
                 "l"
             ],
@@ -207,7 +208,7 @@
         },
         {
             "before": [
-                "leader",
+                "<leader>",
                 "p",
                 "p"
             ],
