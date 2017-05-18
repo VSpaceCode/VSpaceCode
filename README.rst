@@ -2,6 +2,9 @@
 VSpaceCode
 ==========
 
+.. image:: resources/logo.png
+   :align: center
+
 » *Spacemacs-like keybindings for Visual Studio Code*
 
 -----
