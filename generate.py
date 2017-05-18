@@ -14,6 +14,11 @@ def get_config():
         return yaml.load(file)
 
 
+def generate_json_config(config):
+    """Generate VSpaceCode config in JSON format from the original config."""
+    return json.dumps(config, indent=4)
+
+
 def generate_settings(config):
     """Generate the VSCode settings from the config."""
     # Prepare result dictionnary
@@ -65,26 +70,30 @@ def generate_documentation(config):
 
 def usage():
     """Print the usage and exit."""
-    print("Usage: {} <settings|documentation>".format(sys.argv[0]))
+    print("Usage: {} <documentation|json_config|settings>".format(sys.argv[0]))
     exit(1)
 
 
 def main():
     """Run the script."""
     # Check for arguments
-    if len(sys.argv) != 2 or sys.argv[1] not in ['settings', 'documentation']:
+    if len(sys.argv) != 2 or sys.argv[1] not in ['documentation',
+                                                'json_config',
+                                                'settings']:
         usage()
     # Get the command
     command = sys.argv[1]
     # Read the configuration
     config = get_config()
     # Generate accordingly to command
-    if command == 'settings':
-        settings = generate_settings(config)
-        print(json.dumps(settings, indent=4))
-    elif command == 'documentation':
+    if command == 'documentation':
         documentation = generate_documentation(config)
         print(documentation)
+    elif command == 'json_config':
+        print(generate_json_config(config))
+    elif command == 'settings':
+        settings = generate_settings(config)
+        print(json.dumps(settings, indent=4))
 
 
 if __name__ == '__main__':
