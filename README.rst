@@ -92,6 +92,8 @@ Key bindings                     Description
 :kbd:`leader` :kbd:`3`           Focus third editor group
 :kbd:`leader` :kbd:`b` :kbd:`b`  Quick open (show current buffers)
 :kbd:`leader` :kbd:`b` :kbd:`d`  Close active editor
+:kbd:`leader` :kbd:`b` :kbd:`p`  Previous editor
+:kbd:`leader` :kbd:`b` :kbd:`n`  Next editor
 :kbd:`leader` :kbd:`f` :kbd:`f`  Open file
 :kbd:`leader` :kbd:`f` :kbd:`r`  Open recent (show recent files)
 :kbd:`leader` :kbd:`f` :kbd:`s`  Save file

@@ -275,6 +275,34 @@
                     "args": []
                 }
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "p"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.previousEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
+                "n"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.nextEditor",
+                    "args": []
+                }
+            ]
         }
     ]
 }
