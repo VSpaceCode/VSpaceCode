@@ -28,6 +28,12 @@ bindings:
   - {keys: [<leader>, b, d],
      command: workbench.action.closeActiveEditor,
      description: "Close active editor"}
+  - {keys: [<leader>, b, n],
+     command: workbench.action.nextEditor,
+     description: "Focus next editor"}
+  - {keys: [<leader>, b, p],
+     command: workbench.action.previousEditor,
+     description: "Focus previous editor"}
 
   # SPC f - Files
   - {keys: [<leader>, f, f],
