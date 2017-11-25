@@ -1,5 +1,5 @@
 {
-    "vim.leader": " ",
+    "vim.leader": "<space>",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": [
@@ -10,6 +10,19 @@
             "commands": [
                 {
                     "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "'"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.toggleTerminal",
                     "args": []
                 }
             ]
@@ -125,6 +138,34 @@
         {
             "before": [
                 "<leader>",
+                "e",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.actions.view.problems",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "e"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.openGlobalSettings",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "f",
                 "f"
             ],
@@ -181,6 +222,20 @@
         {
             "before": [
                 "<leader>",
+                "f",
+                "y"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.copyPathOfActiveFile",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "g",
                 "s"
             ],
@@ -190,6 +245,63 @@
                     "command": "workbench.view.scm",
                     "args": []
                 }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "j",
+                "="
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.formatDocument",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j",
+                "j"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "s"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j",
+                "l"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "leader",
+                "b",
+                "d",
+                "j",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j",
+                "w"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "leader",
+                "b",
+                "d",
+                "w"
             ]
         },
         {
@@ -266,12 +378,164 @@
             "before": [
                 "<leader>",
                 "q",
+                "r"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.reloadWindow",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q",
                 "q"
             ],
             "after": [],
             "commands": [
                 {
                     "command": "workbench.action.closeWindow",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "e"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.rename",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "j"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.gotoSymbol",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "p"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "P"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFilesWithSelectedText",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "T",
+                "F"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleFullScreen",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "T",
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleMenuBar",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "T",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.selectTheme",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "T",
+                "t"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleActivityBarVisibility",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "v"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.smartSelect.grow",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "V"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.smartSelect.shrink",
                     "args": []
                 }
             ]
@@ -304,5 +568,17 @@
                 }
             ]
         }
-    ]
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "f",
+                "d"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.easymotion": true
 }
