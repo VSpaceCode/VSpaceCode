@@ -82,9 +82,10 @@ Keybindings
 
 The following keybindings are currently configured:
 
-===============================  ===========================================
-Key bindings                     Description
-===============================  ===========================================
+===============================  =========================================== =========================
+Key bindings                     Description                                 Remark
+===============================  =========================================== =========================
+:kbd:`leader` :kbd:`'`           Toggle terminal                             Open terminal effectively
 :kbd:`leader` :kbd:`space`       Run command
 :kbd:`leader` :kbd:`tab`         Next editor
 :kbd:`leader` :kbd:`1`           Focus first editor group
@@ -94,20 +95,38 @@ Key bindings                     Description
 :kbd:`leader` :kbd:`b` :kbd:`d`  Close active editor
 :kbd:`leader` :kbd:`b` :kbd:`n`  Next editor
 :kbd:`leader` :kbd:`b` :kbd:`p`  Previous editor
+:kbd:`leader` :kbd:`e` :kbd:`l`  List errors / problems
+:kbd:`leader` :kbd:`f` :kbd:`e`  Show your settings file                     shorter binding (by 'd')
 :kbd:`leader` :kbd:`f` :kbd:`f`  Open file
 :kbd:`leader` :kbd:`f` :kbd:`r`  Open recent (show recent files)
 :kbd:`leader` :kbd:`f` :kbd:`s`  Save file
 :kbd:`leader` :kbd:`f` :kbd:`t`  Show explorer view
+:kbd:`leader` :kbd:`f` :kbd:`y`  Copy current file path                      doesn't show the path
 :kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
+:kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             better than Spacemacs
+:kbd:`leader` :kbd:`j` :kbd:`j`  Easymotion to character
+:kbd:`leader` :kbd:`j` :kbd:`l`  Easymotion to line
+:kbd:`leader` :kbd:`j` :kbd:`w`  Easymotion to word
 :kbd:`leader` :kbd:`l` :kbd:`d`  Clode folder
 :kbd:`leader` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
 :kbd:`leader` :kbd:`p` :kbd:`l`  Open folder project
 :kbd:`leader` :kbd:`p` :kbd:`p`  Open recent (show recent folders)
 :kbd:`leader` :kbd:`q` :kbd:`f`  Close window
 :kbd:`leader` :kbd:`q` :kbd:`q`  Close window
+:kbd:`leader` :kbd:`q` :kbd:`r`  Reload window
+:kbd:`leader` :kbd:`s` :kbd:`e`  Rename symbol                               works only on symbols
+:kbd:`leader` :kbd:`s` :kbd:`j`  Go to symbol in file
+:kbd:`leader` :kbd:`s` :kbd:`p`  Find in files
+:kbd:`leader` :kbd:`s` :kbd:`P`  Find in files with selection
+:kbd:`leader` :kbd:`T` :kbd:`F`  Toggle fullscreen
+:kbd:`leader` :kbd:`T` :kbd:`m`  Toggle menu bar
+:kbd:`leader` :kbd:`T` :kbd:`t`  Toggle activity bar
+:kbd:`leader` :kbd:`T` :kbd:`s`  Select color theme
+:kbd:`leader` :kbd:`v`           Expand region                               no transient state
+:kbd:`leader` :kbd:`V`           Shrink region                               no transient state
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
-===============================  ===========================================
+===============================  =========================================== =========================
 
 
 Contributing
@@ -132,3 +151,4 @@ to this project:
 
 - `CodeFalling <https://github.com/CodeFalling>`_
 - `li-xinyang <https://github.com/li-xinyang>`_
+- `adrianstaniec <https://github.com/adrianstaniec>`_
