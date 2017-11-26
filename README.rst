@@ -96,14 +96,14 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`b` :kbd:`n`  Next editor
 :kbd:`leader` :kbd:`b` :kbd:`p`  Previous editor
 :kbd:`leader` :kbd:`e` :kbd:`l`  List errors / problems
-:kbd:`leader` :kbd:`f` :kbd:`e`  Show your settings file                     shorter binding (by 'd')
+:kbd:`leader` :kbd:`f` :kbd:`e`  Show your settings file                     Shorter binding (by 'd')
 :kbd:`leader` :kbd:`f` :kbd:`f`  Open file
 :kbd:`leader` :kbd:`f` :kbd:`r`  Open recent (show recent files)
 :kbd:`leader` :kbd:`f` :kbd:`s`  Save file
 :kbd:`leader` :kbd:`f` :kbd:`t`  Show explorer view
-:kbd:`leader` :kbd:`f` :kbd:`y`  Copy current file path                      doesn't show the path
+:kbd:`leader` :kbd:`f` :kbd:`y`  Copy current file path                      Doesn't show the path
 :kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
-:kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             better than Spacemacs
+:kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             Better than Spacemacs
 :kbd:`leader` :kbd:`j` :kbd:`j`  Easymotion to character
 :kbd:`leader` :kbd:`j` :kbd:`l`  Easymotion to line
 :kbd:`leader` :kbd:`j` :kbd:`w`  Easymotion to word
@@ -114,7 +114,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`q` :kbd:`f`  Close window
 :kbd:`leader` :kbd:`q` :kbd:`q`  Close window
 :kbd:`leader` :kbd:`q` :kbd:`r`  Reload window
-:kbd:`leader` :kbd:`s` :kbd:`e`  Rename symbol                               works only on symbols
+:kbd:`leader` :kbd:`s` :kbd:`e`  Rename symbol                               Works only on symbols
 :kbd:`leader` :kbd:`s` :kbd:`j`  Go to symbol in file
 :kbd:`leader` :kbd:`s` :kbd:`p`  Find in files
 :kbd:`leader` :kbd:`s` :kbd:`P`  Find in files with selection
@@ -122,8 +122,8 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`T` :kbd:`m`  Toggle menu bar
 :kbd:`leader` :kbd:`T` :kbd:`t`  Toggle activity bar
 :kbd:`leader` :kbd:`T` :kbd:`s`  Select color theme
-:kbd:`leader` :kbd:`v`           Expand region                               no transient state
-:kbd:`leader` :kbd:`V`           Shrink region                               no transient state
+:kbd:`leader` :kbd:`v`           Expand region                               No transient state
+:kbd:`leader` :kbd:`V`           Shrink region                               No transient state
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
 ===============================  =========================================== =========================
