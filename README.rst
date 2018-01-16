@@ -132,10 +132,12 @@ Gotchas
 =======
 
 On Mac, you will need to change the following setting
-> "command": "workbench.action.files.openFile"
+
+    "command": "workbench.action.files.openFile"
 
 to 
-> "command": "workbench.action.files.openFileFolder"
+
+    "command": "workbench.action.files.openFileFolder"
 
 Contributing
 ============
