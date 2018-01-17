@@ -76,6 +76,17 @@ copy/pasting the relevant parts.
 .. _VSpaceCode: https://github.com/StreakyCobra/VSpaceCode
 .. _`settings.json`: settings.json
 
+Note for Mac users
+------------------
+
+On Mac, you will need to change the setting for ``<leader> f f`` from::
+
+    "command": "workbench.action.files.openFile"
+
+to::
+
+    "command": "workbench.action.files.openFileFolder"
+
 
 Keybindings
 ===========
@@ -128,16 +139,6 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
 ===============================  =========================================== =========================
 
-Gotchas
-=======
-
-On Mac, you will need to change the following setting
-
-    "command": "workbench.action.files.openFile"
-
-to 
-
-    "command": "workbench.action.files.openFileFolder"
 
 Contributing
 ============
