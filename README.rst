@@ -139,6 +139,16 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
 ===============================  =========================================== =========================
 
+Gotchas
+=======
+
+On Mac, you will need to change the following setting
+
+    "command": "workbench.action.files.openFile"
+
+to 
+
+    "command": "workbench.action.files.openFileFolder"
 
 Contributing
 ============
