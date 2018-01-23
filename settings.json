@@ -35,7 +35,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.nextEditor",
+                    "command": "workbench.action.openNextRecentlyUsedEditorInGroup",
                     "args": []
                 }
             ]
@@ -88,7 +88,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.quickOpen",
+                    "command": "workbench.action.showAllEditors",
                     "args": []
                 }
             ]
