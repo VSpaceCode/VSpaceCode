@@ -43,6 +43,19 @@
         {
             "before": [
                 "<leader>",
+                "/"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "1"
             ],
             "after": [],
@@ -402,6 +415,20 @@
                 }
             ]
         },
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.findInFiles",
+                    "args": []
+                }
+            ]
+        },        
         {
             "before": [
                 "<leader>",

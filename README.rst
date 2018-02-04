@@ -99,6 +99,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`'`           Toggle terminal                             Open terminal effectively
 :kbd:`leader` :kbd:`space`       Run command
 :kbd:`leader` :kbd:`tab`         Next editor
+:kbd:`leader` :kbd:`/`           Find in files
 :kbd:`leader` :kbd:`1`           Focus first editor group
 :kbd:`leader` :kbd:`2`           Focus second editor group
 :kbd:`leader` :kbd:`3`           Focus third editor group
@@ -125,6 +126,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`q` :kbd:`f`  Close window
 :kbd:`leader` :kbd:`q` :kbd:`q`  Close window
 :kbd:`leader` :kbd:`q` :kbd:`r`  Reload window
+:kbd:`leader` :kbd:`r` :kbd:`s`  Find in files
 :kbd:`leader` :kbd:`s` :kbd:`e`  Rename symbol                               Works only on symbols
 :kbd:`leader` :kbd:`s` :kbd:`j`  Go to symbol in file
 :kbd:`leader` :kbd:`s` :kbd:`p`  Find in files
@@ -163,3 +165,4 @@ to this project:
 - `CodeFalling <https://github.com/CodeFalling>`_
 - `li-xinyang <https://github.com/li-xinyang>`_
 - `adrianstaniec <https://github.com/adrianstaniec>`_
+- `fabrik42 <https://github.com/fabrik42>`_
