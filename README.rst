@@ -162,7 +162,10 @@ Contributors
 Thanks to the following people for sharing their configurations and contributing
 to this project:
 
-- `CodeFalling <https://github.com/CodeFalling>`_
-- `li-xinyang <https://github.com/li-xinyang>`_
 - `adrianstaniec <https://github.com/adrianstaniec>`_
+- `CodeFalling <https://github.com/CodeFalling>`_
 - `fabrik42 <https://github.com/fabrik42>`_
+- `jamrizzi <https://github.com/jamrizzi>`_
+- `joefiorini <https://github.com/joefiorini>`_
+- `JuanCaicedo <https://github.com/JuanCaicedo>`_
+- `li-xinyang <https://github.com/li-xinyang>`_
