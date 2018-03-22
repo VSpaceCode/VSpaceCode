@@ -123,6 +123,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`g` :kbd:`f`  Git fetch
 :kbd:`leader` :kbd:`g` :kbd:`m`  Git merge
 :kbd:`leader` :kbd:`g` :kbd:`p`  Git publish
+:kbd:`leader` :kbd:`g` :kbd:`d`  Git delete branch
 :kbd:`leader` :kbd:`g` :kbd:`i`  Git init
 :kbd:`leader` :kbd:`h` :kbd:`d`  Help describe keybindings
 :kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             Better than Spacemacs
