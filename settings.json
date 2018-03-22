@@ -390,6 +390,20 @@
             "before": [
                 "<leader>",
                 "g",
+                "c"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.commit",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
                 "i"
             ],
             "after": [],
