@@ -594,6 +594,62 @@
                     "args": []
                 }
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "v"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusNextGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusPreviousGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.sortLinesAscending",
+                    "args": []
+                }
+            ]
         }
     ],
     "vim.insertModeKeyBindings": [
