@@ -376,6 +376,20 @@
             "before": [
                 "<leader>",
                 "g",
+                "d"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.deleteBranch",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
                 "i"
             ],
             "after": [],
