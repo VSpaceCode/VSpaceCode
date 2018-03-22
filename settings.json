@@ -319,6 +319,62 @@
         {
             "before": [
                 "<leader>",
+                "g",
+                "b"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.checkout",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.fetch",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.merge",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "p"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.publish",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "h",
                 "d"
             ],

@@ -119,6 +119,10 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
 :kbd:`leader` :kbd:`g` :kbd:`S`  Git stage
 :kbd:`leader` :kbd:`g` :kbd:`U`  Git unstage
+:kbd:`leader` :kbd:`g` :kbd:`b`  Git checkout
+:kbd:`leader` :kbd:`g` :kbd:`f`  Git fetch
+:kbd:`leader` :kbd:`g` :kbd:`m`  Git merge
+:kbd:`leader` :kbd:`g` :kbd:`p`  Git publish
 :kbd:`leader` :kbd:`h` :kbd:`d`  Help describe keybindings
 :kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             Better than Spacemacs
 :kbd:`leader` :kbd:`j` :kbd:`j`  Easymotion to character
