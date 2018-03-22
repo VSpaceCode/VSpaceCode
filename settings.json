@@ -678,6 +678,20 @@
                     "args": []
                 }
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                ";",
+                ";"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.commentLine",
+                    "args": []
+                }
+            ]
         }
     ],
     "vim.insertModeKeyBindings": [
