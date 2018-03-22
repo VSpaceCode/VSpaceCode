@@ -72,11 +72,10 @@ async function write(src, obj) {
 async function syncSettings() {
     const settings = getSmall(await read(bigSetting));
     const smallSettings = await read(smallSetting);
-    const both = lodash.merge({}, smallSettings, settings);
-    if (lodash.isEqual(both, smallSettings)) {
-        await write(bigSetting, getBig(smallSettings));
-    } else {
+    if (lodash.isEqual(smallSettings, {})) {
         await write(smallSetting, settings);
+    } else {
+        await write(bigSetting, getBig(smallSettings));
     }
 }
 
