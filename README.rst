@@ -127,6 +127,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`g` :kbd:`c`  Git commit
 :kbd:`leader` :kbd:`g` :kbd:`i`  Git init
 :kbd:`leader` :kbd:`h` :kbd:`d`  Help describe keybindings
+:kbd:`leader` :kbd:`i` :kbd:`s`  Insert snippet
 :kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             Better than Spacemacs
 :kbd:`leader` :kbd:`j` :kbd:`j`  Easymotion to character
 :kbd:`leader` :kbd:`j` :kbd:`l`  Easymotion to line

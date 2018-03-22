@@ -431,6 +431,20 @@
         {
             "before": [
                 "<leader>",
+                "i",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.insertSnippet",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "j",
                 "="
             ],
