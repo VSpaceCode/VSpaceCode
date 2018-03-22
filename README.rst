@@ -139,6 +139,10 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`V`           Shrink region                               No transient state
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
+:kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
+:kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
+:kbd:`leader` :kbd:`w` :kbd:`v`  Split window
+:kbd:`leader` :kbd:`l` :kbd:`s`  Sort lines
 ===============================  =========================================== =========================
 
 
@@ -169,3 +173,4 @@ to this project:
 - `joefiorini <https://github.com/joefiorini>`_
 - `JuanCaicedo <https://github.com/JuanCaicedo>`_
 - `li-xinyang <https://github.com/li-xinyang>`_
+- `danielpa9708 <https://github.com/danielpa9708>`_
