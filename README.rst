@@ -117,6 +117,8 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`f` :kbd:`t`  Show explorer view
 :kbd:`leader` :kbd:`f` :kbd:`y`  Copy current file path                      Doesn't show the path
 :kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
+:kbd:`leader` :kbd:`g` :kbd:`S`  Git stage
+:kbd:`leader` :kbd:`g` :kbd:`U`  Git unstage
 :kbd:`leader` :kbd:`h` :kbd:`d`  Help describe keybindings
 :kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             Better than Spacemacs
 :kbd:`leader` :kbd:`j` :kbd:`j`  Easymotion to character
