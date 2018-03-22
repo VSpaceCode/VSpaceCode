@@ -375,6 +375,20 @@
         {
             "before": [
                 "<leader>",
+                "g",
+                "i"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.init",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "h",
                 "d"
             ],
