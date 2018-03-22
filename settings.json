@@ -291,6 +291,34 @@
         {
             "before": [
                 "<leader>",
+                "g",
+                "S"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.stage",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
+                "U"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "git.unstage",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "h",
                 "d"
             ],
