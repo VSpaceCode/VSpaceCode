@@ -155,6 +155,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
 :kbd:`leader` :kbd:`w` :kbd:`v`  Split window
+:kbd:`leader` :kbd:`w` :kbd:`m`  Maximize
 :kbd:`leader` :kbd:`l` :kbd:`s`  Sort lines
 :kbd:`leader` :kbd:`;` :kbd:`;`  Comment line
 ===============================  =========================================== =========================

@@ -822,6 +822,20 @@
         {
             "before": [
                 "<leader>",
+                "w",
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.maximizeEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "l",
                 "s"
             ],
