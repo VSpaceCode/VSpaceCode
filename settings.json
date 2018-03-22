@@ -277,6 +277,20 @@
         {
             "before": [
                 "<leader>",
+                "h",
+                "d"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.openGlobalKeybindings",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "j",
                 "="
             ],
