@@ -107,6 +107,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`b` :kbd:`d`  Close active editor
 :kbd:`leader` :kbd:`b` :kbd:`n`  Next editor
 :kbd:`leader` :kbd:`b` :kbd:`p`  Previous editor
+:kbd:`leader` :kbd:`b` :kbd:`s`  Scratch buffer
 :kbd:`leader` :kbd:`d` :kbd:`w`  Trim whitespace
 :kbd:`leader` :kbd:`e` :kbd:`l`  List errors / problems
 :kbd:`leader` :kbd:`f` :kbd:`e`  Show your settings file                     Shorter binding (by 'd')
