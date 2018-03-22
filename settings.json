@@ -151,6 +151,20 @@
         {
             "before": [
                 "<leader>",
+                "d",
+                "w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.trimTrailingWhitespace",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "e",
                 "l"
             ],
