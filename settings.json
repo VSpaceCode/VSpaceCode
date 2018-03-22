@@ -151,6 +151,20 @@
         {
             "before": [
                 "<leader>",
+                "b",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.newUntitledFile",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "d",
                 "w"
             ],
