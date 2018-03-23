@@ -4,7 +4,7 @@
   "description": "========== VSpaceCode ==========",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -w scripts/settings.json scripts/compile.js"
+    "dev": "rm scripts/settings.json && nodemon -w scripts/settings.json scripts/compile.js"
   },
   "repository": {
     "type": "git",
