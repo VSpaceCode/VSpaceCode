@@ -107,6 +107,8 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`b` :kbd:`d`  Close active editor
 :kbd:`leader` :kbd:`b` :kbd:`n`  Next editor
 :kbd:`leader` :kbd:`b` :kbd:`p`  Previous editor
+:kbd:`leader` :kbd:`b` :kbd:`s`  Scratch buffer
+:kbd:`leader` :kbd:`d` :kbd:`w`  Trim whitespace
 :kbd:`leader` :kbd:`e` :kbd:`l`  List errors / problems
 :kbd:`leader` :kbd:`f` :kbd:`e`  Show your settings file                     Shorter binding (by 'd')
 :kbd:`leader` :kbd:`f` :kbd:`f`  Open file
@@ -115,6 +117,17 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`f` :kbd:`t`  Show explorer view
 :kbd:`leader` :kbd:`f` :kbd:`y`  Copy current file path                      Doesn't show the path
 :kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
+:kbd:`leader` :kbd:`g` :kbd:`S`  Git stage
+:kbd:`leader` :kbd:`g` :kbd:`U`  Git unstage
+:kbd:`leader` :kbd:`g` :kbd:`b`  Git checkout
+:kbd:`leader` :kbd:`g` :kbd:`f`  Git fetch
+:kbd:`leader` :kbd:`g` :kbd:`m`  Git merge
+:kbd:`leader` :kbd:`g` :kbd:`p`  Git publish
+:kbd:`leader` :kbd:`g` :kbd:`d`  Git delete branch
+:kbd:`leader` :kbd:`g` :kbd:`c`  Git commit
+:kbd:`leader` :kbd:`g` :kbd:`i`  Git init
+:kbd:`leader` :kbd:`h` :kbd:`d`  Help describe keybindings
+:kbd:`leader` :kbd:`i` :kbd:`s`  Insert snippet
 :kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             Better than Spacemacs
 :kbd:`leader` :kbd:`j` :kbd:`j`  Easymotion to character
 :kbd:`leader` :kbd:`j` :kbd:`l`  Easymotion to line
@@ -139,6 +152,12 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`V`           Shrink region                               No transient state
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
+:kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
+:kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
+:kbd:`leader` :kbd:`w` :kbd:`v`  Split window
+:kbd:`leader` :kbd:`w` :kbd:`m`  Maximize
+:kbd:`leader` :kbd:`l` :kbd:`s`  Sort lines
+:kbd:`leader` :kbd:`;` :kbd:`;`  Comment line
 ===============================  =========================================== =========================
 
 
@@ -169,3 +188,4 @@ to this project:
 - `joefiorini <https://github.com/joefiorini>`_
 - `JuanCaicedo <https://github.com/JuanCaicedo>`_
 - `li-xinyang <https://github.com/li-xinyang>`_
+- `danielpa9708 <https://github.com/danielpa9708>`_
