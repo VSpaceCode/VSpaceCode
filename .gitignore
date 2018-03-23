@@ -10,3 +10,6 @@
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode
+
+node_modules/
+scripts/settings.json
