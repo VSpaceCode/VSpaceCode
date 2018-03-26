@@ -179,20 +179,6 @@
         {
             "before": [
                 "<leader>",
-                "d",
-                "w"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.trimTrailingWhitespace",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
                 "e",
                 "l"
             ],
@@ -857,6 +843,20 @@
             "commands": [
                 {
                     "command": "editor.action.sortLinesAscending",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x",
+                "w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.trimTrailingWhitespace",
                     "args": []
                 }
             ]

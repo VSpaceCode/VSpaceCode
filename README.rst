@@ -109,7 +109,6 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`b` :kbd:`n`  Next editor
 :kbd:`leader` :kbd:`b` :kbd:`p`  Previous editor
 :kbd:`leader` :kbd:`b` :kbd:`s`  Scratch buffer
-:kbd:`leader` :kbd:`d` :kbd:`w`  Trim whitespace
 :kbd:`leader` :kbd:`e` :kbd:`l`  List errors / problems
 :kbd:`leader` :kbd:`f` :kbd:`e`  Show your settings file                     Shorter binding (by 'd')
 :kbd:`leader` :kbd:`f` :kbd:`f`  Open file
@@ -158,6 +157,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
 :kbd:`leader` :kbd:`x` :kbd:`s`  Sort lines
+:kbd:`leader` :kbd:`x` :kbd:`w`  Trim whitespace
 ===============================  =========================================== =========================
 
 
