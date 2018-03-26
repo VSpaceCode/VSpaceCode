@@ -132,7 +132,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`j` :kbd:`j`  Easymotion to character
 :kbd:`leader` :kbd:`j` :kbd:`l`  Easymotion to line
 :kbd:`leader` :kbd:`j` :kbd:`w`  Easymotion to word
-:kbd:`leader` :kbd:`l` :kbd:`d`  Clode folder
+:kbd:`leader` :kbd:`l` :kbd:`d`  Close folder
 :kbd:`leader` :kbd:`l` :kbd:`s`  Sort lines
 :kbd:`leader` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
 :kbd:`leader` :kbd:`p` :kbd:`l`  Open folder project
