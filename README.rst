@@ -134,7 +134,6 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`j` :kbd:`l`  Easymotion to line
 :kbd:`leader` :kbd:`j` :kbd:`w`  Easymotion to word
 :kbd:`leader` :kbd:`l` :kbd:`d`  Close folder
-:kbd:`leader` :kbd:`l` :kbd:`s`  Sort lines
 :kbd:`leader` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
 :kbd:`leader` :kbd:`p` :kbd:`l`  Open folder project
 :kbd:`leader` :kbd:`p` :kbd:`p`  Open recent (show recent folders)
@@ -158,6 +157,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`w` :kbd:`v`  Split window
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
+:kbd:`leader` :kbd:`x` :kbd:`s`  Sort lines
 ===============================  =========================================== =========================
 
 

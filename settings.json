@@ -530,20 +530,6 @@
         {
             "before": [
                 "<leader>",
-                "l",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.sortLinesAscending",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
                 "p",
                 "f"
             ],
@@ -857,6 +843,20 @@
             "commands": [
                 {
                     "command": "workbench.action.focusPreviousGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.sortLinesAscending",
                     "args": []
                 }
             ]
