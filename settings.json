@@ -558,6 +558,20 @@
         {
             "before": [
                 "<leader>",
+                "p",
+                "t"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.view.explorer",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "q",
                 "f"
             ],
@@ -773,6 +787,34 @@
             "commands": [
                 {
                     "command": "workbench.action.focusNextGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "H"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupLeft",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "L"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupRight",
                     "args": []
                 }
             ]
