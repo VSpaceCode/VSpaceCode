@@ -96,9 +96,9 @@ The following keybindings are currently configured:
 ===============================  =========================================== =========================
 Key bindings                     Description                                 Remark
 ===============================  =========================================== =========================
-:kbd:`leader` :kbd:`'`           Toggle terminal                             Open terminal effectively
 :kbd:`leader` :kbd:`space`       Run command
 :kbd:`leader` :kbd:`tab`         Next editor
+:kbd:`leader` :kbd:`'`           Toggle terminal                             Open terminal effectively
 :kbd:`leader` :kbd:`/`           Find in files
 :kbd:`leader` :kbd:`1`           Focus first editor group
 :kbd:`leader` :kbd:`2`           Focus second editor group
@@ -116,16 +116,16 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`f` :kbd:`s`  Save file
 :kbd:`leader` :kbd:`f` :kbd:`t`  Show explorer view
 :kbd:`leader` :kbd:`f` :kbd:`y`  Copy current file path                      Doesn't show the path
-:kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
-:kbd:`leader` :kbd:`g` :kbd:`S`  Git stage
-:kbd:`leader` :kbd:`g` :kbd:`U`  Git unstage
 :kbd:`leader` :kbd:`g` :kbd:`b`  Git checkout
+:kbd:`leader` :kbd:`g` :kbd:`c`  Git commit
+:kbd:`leader` :kbd:`g` :kbd:`d`  Git delete branch
 :kbd:`leader` :kbd:`g` :kbd:`f`  Git fetch
+:kbd:`leader` :kbd:`g` :kbd:`i`  Git init
 :kbd:`leader` :kbd:`g` :kbd:`m`  Git merge
 :kbd:`leader` :kbd:`g` :kbd:`p`  Git publish
-:kbd:`leader` :kbd:`g` :kbd:`d`  Git delete branch
-:kbd:`leader` :kbd:`g` :kbd:`c`  Git commit
-:kbd:`leader` :kbd:`g` :kbd:`i`  Git init
+:kbd:`leader` :kbd:`g` :kbd:`S`  Git stage
+:kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
+:kbd:`leader` :kbd:`g` :kbd:`U`  Git unstage
 :kbd:`leader` :kbd:`h` :kbd:`d`  Help describe keybindings
 :kbd:`leader` :kbd:`i` :kbd:`s`  Insert snippet
 :kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             Better than Spacemacs
@@ -133,6 +133,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`j` :kbd:`l`  Easymotion to line
 :kbd:`leader` :kbd:`j` :kbd:`w`  Easymotion to word
 :kbd:`leader` :kbd:`l` :kbd:`d`  Clode folder
+:kbd:`leader` :kbd:`l` :kbd:`s`  Sort lines
 :kbd:`leader` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
 :kbd:`leader` :kbd:`p` :kbd:`l`  Open folder project
 :kbd:`leader` :kbd:`p` :kbd:`p`  Open recent (show recent folders)
@@ -146,17 +147,16 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`s` :kbd:`P`  Find in files with selection
 :kbd:`leader` :kbd:`T` :kbd:`F`  Toggle fullscreen
 :kbd:`leader` :kbd:`T` :kbd:`m`  Toggle menu bar
-:kbd:`leader` :kbd:`T` :kbd:`t`  Toggle activity bar
 :kbd:`leader` :kbd:`T` :kbd:`s`  Select color theme
+:kbd:`leader` :kbd:`T` :kbd:`t`  Toggle activity bar
 :kbd:`leader` :kbd:`v`           Expand region                               No transient state
 :kbd:`leader` :kbd:`V`           Shrink region                               No transient state
+:kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
+:kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
+:kbd:`leader` :kbd:`w` :kbd:`m`  Maximize
+:kbd:`leader` :kbd:`w` :kbd:`v`  Split window
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
-:kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
-:kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
-:kbd:`leader` :kbd:`w` :kbd:`v`  Split window
-:kbd:`leader` :kbd:`w` :kbd:`m`  Maximize
-:kbd:`leader` :kbd:`l` :kbd:`s`  Sort lines
 :kbd:`leader` :kbd:`;` :kbd:`;`  Comment line
 ===============================  =========================================== =========================
 
