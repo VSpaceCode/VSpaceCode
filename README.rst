@@ -98,6 +98,7 @@ Key bindings                     Description                                 Rem
 ===============================  =========================================== =========================
 :kbd:`leader` :kbd:`space`       Run command
 :kbd:`leader` :kbd:`tab`         Next editor
+:kbd:`leader` :kbd:`;` :kbd:`;`  Comment line
 :kbd:`leader` :kbd:`'`           Toggle terminal                             Open terminal effectively
 :kbd:`leader` :kbd:`/`           Find in files
 :kbd:`leader` :kbd:`1`           Focus first editor group
@@ -123,8 +124,8 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`g` :kbd:`i`  Git init
 :kbd:`leader` :kbd:`g` :kbd:`m`  Git merge
 :kbd:`leader` :kbd:`g` :kbd:`p`  Git publish
-:kbd:`leader` :kbd:`g` :kbd:`S`  Git stage
 :kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
+:kbd:`leader` :kbd:`g` :kbd:`S`  Git stage
 :kbd:`leader` :kbd:`g` :kbd:`U`  Git unstage
 :kbd:`leader` :kbd:`h` :kbd:`d`  Help describe keybindings
 :kbd:`leader` :kbd:`i` :kbd:`s`  Insert snippet
@@ -157,7 +158,6 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`w` :kbd:`v`  Split window
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
-:kbd:`leader` :kbd:`;` :kbd:`;`  Comment line
 ===============================  =========================================== =========================
 
 
