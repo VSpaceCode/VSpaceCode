@@ -183,9 +183,9 @@ to this project:
 
 - `adrianstaniec <https://github.com/adrianstaniec>`_
 - `CodeFalling <https://github.com/CodeFalling>`_
+- `danielpa9708 <https://github.com/danielpa9708>`_
 - `fabrik42 <https://github.com/fabrik42>`_
 - `jamrizzi <https://github.com/jamrizzi>`_
 - `joefiorini <https://github.com/joefiorini>`_
 - `JuanCaicedo <https://github.com/JuanCaicedo>`_
 - `li-xinyang <https://github.com/li-xinyang>`_
-- `danielpa9708 <https://github.com/danielpa9708>`_
