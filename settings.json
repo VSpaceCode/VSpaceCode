@@ -767,6 +767,20 @@
             "before": [
                 "<leader>",
                 "w",
+                "d"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeEditorsInGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
                 "h"
             ],
             "after": [],

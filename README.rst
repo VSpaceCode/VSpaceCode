@@ -151,6 +151,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`T` :kbd:`t`  Toggle activity bar
 :kbd:`leader` :kbd:`v`           Expand region                               No transient state
 :kbd:`leader` :kbd:`V`           Shrink region                               No transient state
+:kbd:`leader` :kbd:`w` :kbd:`d`  Close editors in group
 :kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
 :kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`H`  Move editor group to left
