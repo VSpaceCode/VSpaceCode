@@ -136,6 +136,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
 :kbd:`leader` :kbd:`p` :kbd:`l`  Open folder project
 :kbd:`leader` :kbd:`p` :kbd:`p`  Open recent (show recent folders)
+:kbd:`leader` :kbd:`p` :kbd:`t`  Show explorer view
 :kbd:`leader` :kbd:`q` :kbd:`f`  Close window
 :kbd:`leader` :kbd:`q` :kbd:`q`  Close window
 :kbd:`leader` :kbd:`q` :kbd:`r`  Reload window
@@ -152,6 +153,8 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`V`           Shrink region                               No transient state
 :kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
 :kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
+:kbd:`leader` :kbd:`w` :kbd:`H`  Move editor group to left
+:kbd:`leader` :kbd:`w` :kbd:`L`  Move editor group to right
 :kbd:`leader` :kbd:`w` :kbd:`m`  Maximize
 :kbd:`leader` :kbd:`w` :kbd:`v`  Split window
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
