@@ -178,10 +178,11 @@ commit**:
 - Add the corresponding line in the `Keybindings`_ section of this README
 - Include your name in the `Contributors`_ section of this README
 
-If want to write & test some keybindings and find the changes required to update
-settings.json is too big, you can use `npm run dev` command, then edit `./scripts/settings.json`
-which is the same as `./settings.json` but with a shorter syntax. The readme
-need to be updated manually
+If you are writing and testing some keybindings, and find the changes required
+to update ``settings.json`` too large, you can use ``npm run dev`` to compile a
+``./scripts/settings.json`` file which is a copy of ``./settings.json`` but with
+a shorter syntax. Note: ``npm install`` should be run the first time to install
+the dependencies.
 
 Contributors
 ============
