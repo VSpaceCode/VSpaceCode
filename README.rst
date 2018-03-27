@@ -153,8 +153,8 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`V`           Shrink region                               No transient state
 :kbd:`leader` :kbd:`w` :kbd:`d`  Close editors in group
 :kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
-:kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`H`  Move editor group to left
+:kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`L`  Move editor group to right
 :kbd:`leader` :kbd:`w` :kbd:`m`  Maximize
 :kbd:`leader` :kbd:`w` :kbd:`v`  Split window

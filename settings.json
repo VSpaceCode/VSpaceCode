@@ -795,12 +795,12 @@
             "before": [
                 "<leader>",
                 "w",
-                "l"
+                "H"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.focusNextGroup",
+                    "command": "workbench.action.moveActiveEditorGroupLeft",
                     "args": []
                 }
             ]
@@ -809,12 +809,12 @@
             "before": [
                 "<leader>",
                 "w",
-                "H"
+                "l"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.moveActiveEditorGroupLeft",
+                    "command": "workbench.action.focusNextGroup",
                     "args": []
                 }
             ]
