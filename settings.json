@@ -1,6 +1,6 @@
 {
     "vim.leader": "<space>",
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindings": [
         {
             "before": [
                 "<leader>",

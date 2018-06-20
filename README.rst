@@ -66,7 +66,7 @@ settings`` and then press :kbd:`Return`:
 
 - If you already have some VSCodeVim configurations, you will have to manually
   copy/paste the parts of `settings.json`_ into the corresponding
-  ``vim.otherModesKeyBindingsNonRecursive`` section of your ``settings.json``.
+  ``vim.normalModeKeyBindings`` section of your ``settings.json``.
 
 In any case it is recommended to keep the configurations you take from here
 grouped in your ``settings.json`` so you can easily update them by just
