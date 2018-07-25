@@ -104,6 +104,11 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`1`           Focus first editor group
 :kbd:`leader` :kbd:`2`           Focus second editor group
 :kbd:`leader` :kbd:`3`           Focus third editor group
+:kbd:`leader` :kbd:`4`           Focus forth editor group
+:kbd:`leader` :kbd:`5`           Focus fifth editor group
+:kbd:`leader` :kbd:`6`           Focus sixth editor group
+:kbd:`leader` :kbd:`7`           Focus seventh editor group
+:kbd:`leader` :kbd:`8`           Focus eighth editor group
 :kbd:`leader` :kbd:`b` :kbd:`b`  Quick open (show current buffers)
 :kbd:`leader` :kbd:`b` :kbd:`d`  Close active editor
 :kbd:`leader` :kbd:`b` :kbd:`n`  Next editor
@@ -151,9 +156,13 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`T` :kbd:`t`  Toggle activity bar
 :kbd:`leader` :kbd:`v`           Expand region                               No transient state
 :kbd:`leader` :kbd:`V`           Shrink region                               No transient state
+:kbd:`leader` :kbd:`w` :kbd:`-`  Split window below
+:kbd:`leader` :kbd:`w` :kbd:`/`  Split window to right
 :kbd:`leader` :kbd:`w` :kbd:`d`  Close editors in group
 :kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
 :kbd:`leader` :kbd:`w` :kbd:`H`  Move editor group to left
+:kbd:`leader` :kbd:`w` :kbd:`j`  Move window focus down
+:kbd:`leader` :kbd:`w` :kbd:`k`  Move window focus up
 :kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`L`  Move editor group to right
 :kbd:`leader` :kbd:`w` :kbd:`m`  Maximize
@@ -195,6 +204,7 @@ to this project:
 - `danielpa9708 <https://github.com/danielpa9708>`_
 - `fabrik42 <https://github.com/fabrik42>`_
 - `jamrizzi <https://github.com/jamrizzi>`_
+- `JJWJ <https://github.com/JJWJ>`_
 - `joefiorini <https://github.com/joefiorini>`_
 - `JuanCaicedo <https://github.com/JuanCaicedo>`_
 - `li-xinyang <https://github.com/li-xinyang>`_
