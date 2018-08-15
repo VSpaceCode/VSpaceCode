@@ -258,6 +258,34 @@
         {
             "before": [
                 "<leader>",
+                "e",
+                "p"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.marker.previous",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e",
+                "n"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.marker.next",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "f",
                 "e"
             ],
