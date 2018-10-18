@@ -307,7 +307,13 @@
             "commands": [
                 {
                     "command": "workbench.action.files.openFile",
-                    "args": []
+                    "args": [],
+                    "when": "!isMac"
+                },
+                {
+                    "command": "workbench.action.files.openFileFolder",
+                    "args": [],
+                    "when": "isMac"
                 }
             ]
         },
@@ -717,7 +723,7 @@
                     "args": []
                 }
             ]
-        },        
+        },
         {
             "before": [
                 "<leader>",
