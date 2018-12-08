@@ -61,12 +61,12 @@ your own settings. To do so, press :kbd:`Ctrl + Shift + P`, enter ``user
 settings`` and then press :kbd:`Return`:
 
 - If you don't have any VSCodeVim configuration yet, you can simply copy/paste
-the content of `settings.json`_ (without the top-level brackets) somewhere into
-your ``settings.json``.
+  the content of `settings.json`_ (without the top-level brackets) somewhere
+  into your ``settings.json``.
 
 - If you already have some VSCodeVim configurations, you will have to manually
-copy/paste the parts of `settings.json`_ into the corresponding
-``vim.normalModeKeyBindings`` section of your ``settings.json``.
+  copy/paste the parts of `settings.json`_ into the corresponding
+  ``vim.normalModeKeyBindings`` section of your ``settings.json``.
 
 In any case it is recommended to keep the configurations you take from here
 grouped in your ``settings.json`` so you can easily update them by just
@@ -191,6 +191,7 @@ Key bindings                     Description                                 Rem
 :kbd:`Ctrl+j`                    Down                                        In: QuickOpen, SuggestWidget, ListFocus
 :kbd:`Ctrl+k`                    Up                                          In: QuickOpen, SuggestWidget, ListFocus
 :kbd:`Ctrl+l`                    Right                                       In: ListFocus
+===============================  =========================================== =========================
 
 Contributing
 ============
