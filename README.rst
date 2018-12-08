@@ -35,8 +35,8 @@ available in the `Keybindings`_ section.
 The `Installation`_ can currently not be automated as it requires manual
 interventions, and updates have also to be resolved manually. This project is
 young and the direction it should take is not really clear yet. This is
-discussed in `this issue`_. Feel free to participate in this discussion if you have
-insightful ideas.
+discussed in `this issue`_. Feel free to participate in this discussion if you
+have insightful ideas.
 
 :Author: Fabien Dubosson
 :License: MIT (See LICENSE_)
@@ -61,19 +61,20 @@ your own settings. To do so, press :kbd:`Ctrl + Shift + P`, enter ``user
 settings`` and then press :kbd:`Return`:
 
 - If you don't have any VSCodeVim configuration yet, you can simply copy/paste
-  the content of `settings.json`_ (without the top-level brackets) somewhere into
-  your ``settings.json``.
+the content of `settings.json`_ (without the top-level brackets) somewhere into
+your ``settings.json``.
 
 - If you already have some VSCodeVim configurations, you will have to manually
-  copy/paste the parts of `settings.json`_ into the corresponding
-  ``vim.normalModeKeyBindings`` section of your ``settings.json``.
+copy/paste the parts of `settings.json`_ into the corresponding
+``vim.normalModeKeyBindings`` section of your ``settings.json``.
 
 In any case it is recommended to keep the configurations you take from here
 grouped in your ``settings.json`` so you can easily update them by just
 copy/pasting the relevant parts.
 
-To enable :kbd:`Ctrl + H`, :kbd:`Ctrl + J`,  :kbd:`Ctrl + K`, :kbd:`Ctrl + L`  bindings merge 
-the content of `keybindings.json`_ into `your`_ ``keybindings.json``
+To enable :kbd:`Ctrl + h`, :kbd:`Ctrl + j`,  :kbd:`Ctrl + k`, :kbd:`Ctrl + l`
+bindings to navigate in some widgets outside the editor, merge the content of
+`keybindings.json`_ into `your`_ ``keybindings.json``.
 
 .. _VSCodeVim: https://github.com/VSCodeVim/Vim
 .. _VSpaceCode: https://github.com/StreakyCobra/VSpaceCode
@@ -97,7 +98,7 @@ to::
 Keybindings
 ===========
 
-The following keybindings are currently configured:
+The following keybindings are configured in the editor through VSCodeVim:
 
 ===============================  =========================================== =========================
 Key bindings                     Description                                 Remark
@@ -181,8 +182,15 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`x` :kbd:`w`  Trim whitespace
 ===============================  =========================================== =========================
 
-:kbd:`Ctrl + H`, :kbd:`Ctrl + J`,  :kbd:`Ctrl + K`, :kbd:`Ctrl + L` are bound to corresponding arrow keys 
-when working on dropdown list such as command palette, suggestion...
+The following keybindings are configured globally in VSCode in some modes:
+
+===============================  =========================================== =========================
+Key bindings                     Description                                 Remark
+===============================  =========================================== =========================
+:kbd:`Ctrl+h`                    Left                                        In: ListFocus
+:kbd:`Ctrl+j`                    Down                                        In: QuickOpen, SuggestWidget, ListFocus
+:kbd:`Ctrl+k`                    Up                                          In: QuickOpen, SuggestWidget, ListFocus
+:kbd:`Ctrl+l`                    Right                                       In: ListFocus
 
 Contributing
 ============
@@ -218,3 +226,4 @@ to this project:
 - `joefiorini <https://github.com/joefiorini>`_
 - `JuanCaicedo <https://github.com/JuanCaicedo>`_
 - `li-xinyang <https://github.com/li-xinyang>`_
+- `thanhvg <https://github.com/thanhvg>`_
