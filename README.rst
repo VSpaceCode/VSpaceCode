@@ -72,9 +72,15 @@ In any case it is recommended to keep the configurations you take from here
 grouped in your ``settings.json`` so you can easily update them by just
 copy/pasting the relevant parts.
 
+To enable :kbd:`Ctrl + H`, :kbd:`Ctrl + J`,  :kbd:`Ctrl + K`, :kbd:`Ctrl + L`  bindings merge 
+the content of `keybindings.json`_ into `your`_ ``keybindings.json``
+
 .. _VSCodeVim: https://github.com/VSCodeVim/Vim
 .. _VSpaceCode: https://github.com/StreakyCobra/VSpaceCode
 .. _`settings.json`: settings.json
+.. _`keybindings.json`: keybindings.json
+.. _`your`: https://code.visualstudio.com/docs/getstarted/keybindings
+
 
 Note for Mac users
 ------------------
@@ -175,6 +181,8 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`x` :kbd:`w`  Trim whitespace
 ===============================  =========================================== =========================
 
+:kbd:`Ctrl + H`, :kbd:`Ctrl + J`,  :kbd:`Ctrl + K`, :kbd:`Ctrl + L` are bound to corresponding arrow keys 
+when working on dropdown list such as command palette, suggestion...
 
 Contributing
 ============
