@@ -1,5 +1,21 @@
 {
     "vim.leader": "<space>",
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "<space>"
+
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
+        }
+    ],
     "vim.normalModeKeyBindings": [
         {
             "before": [
