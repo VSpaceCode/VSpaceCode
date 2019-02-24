@@ -322,7 +322,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "editor.action.marker.previous",
+                    "command": "editor.action.marker.prev",
                     "args": []
                 }
             ]
