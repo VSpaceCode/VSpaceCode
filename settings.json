@@ -5,7 +5,6 @@
             "before": [
                 "<leader>",
                 "<space>"
-
             ],
             "after": [],
             "commands": [
@@ -27,6 +26,15 @@
                     "command": "editor.action.commentLine",
                     "args": []
                 }
+            ]
+        },
+        {
+            "before": [
+                "f",
+                "d"
+            ],
+            "after": [
+                "<Esc>"
             ]
         },
         {
