@@ -415,6 +415,20 @@
             "before": [
                 "<leader>",
                 "f",
+                "T"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.files.action.showActiveFileInExplorer",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
                 "y"
             ],
             "after": [],
