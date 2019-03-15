@@ -170,6 +170,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`w` :kbd:`-`  Split window below
 :kbd:`leader` :kbd:`w` :kbd:`/`  Split window to right
 :kbd:`leader` :kbd:`w` :kbd:`d`  Close editors in group
+:kbd:`leader` :kbd:`w` :kbd:`D`  Close other editors
 :kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
 :kbd:`leader` :kbd:`w` :kbd:`H`  Move editor group to left
 :kbd:`leader` :kbd:`w` :kbd:`j`  Move window focus down

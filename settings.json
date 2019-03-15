@@ -1031,6 +1031,20 @@
             "before": [
                 "<leader>",
                 "w",
+                "D"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeOtherEditors",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
                 "h"
             ],
             "after": [],
