@@ -739,6 +739,20 @@
             "before": [
                 "<leader>",
                 "p",
+                "g"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showEditorsInActiveGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
                 "l"
             ],
             "after": [],
