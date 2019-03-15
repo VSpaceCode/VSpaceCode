@@ -457,6 +457,19 @@
             "before": [
                 "<leader>",
                 "g",
+                "b"
+            ],
+            "commands": [
+                {
+                    "command": "gitlens.toggleFileBlame",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "g",
                 "c"
             ],
             "after": [],

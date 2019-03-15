@@ -132,6 +132,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`f` :kbd:`T`  Select file in the explorer
 :kbd:`leader` :kbd:`f` :kbd:`y`  Copy current file path                      Doesn't show the path
 :kbd:`leader` :kbd:`g` :kbd:`b`  Git checkout
+:kbd:`leader` :kbd:`g` :kbd:`b`  Git blame                                   Requires the https://gitlens.amod.io/ VS code extension
 :kbd:`leader` :kbd:`g` :kbd:`c`  Git commit
 :kbd:`leader` :kbd:`g` :kbd:`d`  Git delete branch
 :kbd:`leader` :kbd:`g` :kbd:`f`  Git fetch
