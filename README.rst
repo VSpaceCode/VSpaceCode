@@ -150,6 +150,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`j` :kbd:`w`  Easymotion to word
 :kbd:`leader` :kbd:`l` :kbd:`d`  Close folder
 :kbd:`leader` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
+:kbd:`leader` :kbd:`p` :kbd:`g`  Open file from editor group
 :kbd:`leader` :kbd:`p` :kbd:`l`  Open folder project
 :kbd:`leader` :kbd:`p` :kbd:`p`  Open recent (show recent folders)
 :kbd:`leader` :kbd:`p` :kbd:`t`  Show explorer view
