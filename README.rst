@@ -229,3 +229,8 @@ to this project:
 - `li-xinyang <https://github.com/li-xinyang>`_
 - `Raphael-Duchaine <https://github.com/Raphael-Duchaine>`_
 - `thanhvg <https://github.com/thanhvg>`_
+
+Related projects
+================
+
+- `IntelliSpace <https://github.com/MarcoIeni/intelli-space>`_ - Spacemacs' like key bindings for IntelliJ platform.
