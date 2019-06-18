@@ -234,3 +234,4 @@ Related projects
 ================
 
 - `IntelliSpace <https://github.com/MarcoIeni/intelli-space>`_ - Spacemacs' like key bindings for IntelliJ platform.
+- `Spaceclipse <https://github.com/MarcoIeni/spaceclipse>`_ - Spacemacs' like key bindings for Eclipse.
