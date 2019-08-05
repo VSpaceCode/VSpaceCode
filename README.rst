@@ -229,6 +229,7 @@ to this project:
 - `li-xinyang <https://github.com/li-xinyang>`_
 - `Raphael-Duchaine <https://github.com/Raphael-Duchaine>`_
 - `thanhvg <https://github.com/thanhvg>`_
+- `wabilin <https://github.com/wabilin>`_
 
 Related projects
 ================
