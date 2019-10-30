@@ -18,7 +18,7 @@
   "homepage": "https://github.com/VSpaceCode/VSpaceCode#readme",
   "dependencies": {
     "fs-extra": "^5.0.0",
-    "lodash": "^4.17.5"
+    "lodash": "^4.17.13"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
