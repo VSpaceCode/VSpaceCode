@@ -233,5 +233,5 @@ to this project:
 Related projects
 ================
 
-- `IntelliSpace <https://github.com/MarcoIeni/intelli-space>`_ - Spacemacs' like key bindings for IntelliJ platform.
+- `Intellimacs <https://github.com/MarcoIeni/intellimacs>`_ - Spacemacs' like key bindings for IntelliJ platform.
 - `Spaceclipse <https://github.com/MarcoIeni/spaceclipse>`_ - Spacemacs' like key bindings for Eclipse.
