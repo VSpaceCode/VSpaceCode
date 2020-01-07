@@ -174,7 +174,7 @@ Key bindings                     Description                                 Rem
 :kbd:`leader` :kbd:`w` :kbd:`k`  Move window focus up
 :kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`L`  Move editor group to right
-:kbd:`leader` :kbd:`w` :kbd:`m`  Maximize
+:kbd:`leader` :kbd:`w` :kbd:`m`  Toggle maximized panel (layout unpreserved)
 :kbd:`leader` :kbd:`w` :kbd:`v`  Split window
 :kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
