@@ -1049,7 +1049,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.maximizeEditor",
+                    "command": "workbench.action.toggleEditorWidths",
                     "args": []
                 }
             ]
