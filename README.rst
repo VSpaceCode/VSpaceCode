@@ -13,6 +13,15 @@ VSpaceCode
 
 -----
 
+TL;DR
+=====
+
+This repository contains a **configuration** for VSCodeVim_ that tries to mimic
+Spacemacs_ key bindings in `VSCode`_. There is **nothing to install** but two
+configuration files to merge in your settings. See `Installation`_ for more
+details.
+
+
 Presentation
 ============
 
