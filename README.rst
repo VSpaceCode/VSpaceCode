@@ -24,7 +24,7 @@ using other text editors. The goal of this project is to provide a configuration
 that maps Spacemacs key bindings to VSCode functionalities. This will allow
 users to continue using their muscle memory and and the mnemonics they know in
 VSCode.
-/cotr
+
 It is not possible to replicate the full Spacemacs experience within VScode, but
 it is at least possible to map some key bindings to functions offering the same
 features as Spacemacs does. For instance, :kbd:`SPC g s` in Spacemacs opens git
