@@ -117,7 +117,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.openNextRecentlyUsedEditorInGroup",
+                    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
                     "args": []
                 }
             ]
