@@ -224,6 +224,7 @@ to this project:
 - `adrianstaniec <https://github.com/adrianstaniec>`_
 - `CodeFalling <https://github.com/CodeFalling>`_
 - `danielpa9708 <https://github.com/danielpa9708>`_
+- `emmanueltouzery <https://github.com/emmanueltouzery>`_
 - `fabrik42 <https://github.com/fabrik42>`_
 - `jamrizzi <https://github.com/jamrizzi>`_
 - `JJWJ <https://github.com/JJWJ>`_
