@@ -417,12 +417,6 @@
                 {
                     "command": "workbench.action.files.openFile",
                     "args": [],
-                    "when": "!isMac"
-                },
-                {
-                    "command": "workbench.action.files.openFileFolder",
-                    "args": [],
-                    "when": "isMac"
                 }
             ]
         },
