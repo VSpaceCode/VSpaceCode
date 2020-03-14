@@ -4,7 +4,7 @@ VSpaceCode
 
 .. raw:: html
 
-    <h3 style="color: red">THIS PROJECT IS LOOKING FOR A MAINTAINER</h3>
+    <p style="color: red; font-size: 1.5em;">THIS PROJECT IS LOOKING FOR A MAINTAINER</p>
 
 .. image:: resources/logo.png
    :align: center
