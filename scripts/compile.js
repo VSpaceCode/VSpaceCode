@@ -5,7 +5,7 @@ const lodash = require("lodash");
 const bigSetting = path.join(__dirname, "..", "./settings.json");
 const smallSetting = path.join(__dirname,  "./settings.json");
 
-const keys = ["vim.normalModeKeyBindings", "vim.insertModeKeyBindings"];
+const keys = ["vim.visualModeKeyBindings", "vim.normalModeKeyBindings", "vim.insertModeKeyBindings"];
 
 function getBigKeyBinding(obj) {
     const result = [];
