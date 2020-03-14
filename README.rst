@@ -100,90 +100,90 @@ Keybindings
 
 The following keybindings are configured in the editor through VSCodeVim:
 
-===============================  =========================================== =========================
-Key bindings                     Description                                 Remark
-===============================  =========================================== =========================
-:kbd:`leader` :kbd:`space`       Run command
-:kbd:`leader` :kbd:`tab`         Next editor
-:kbd:`leader` :kbd:`;` :kbd:`;`  Comment line
-:kbd:`leader` :kbd:`'`           Toggle terminal                             Open terminal effectively
-:kbd:`leader` :kbd:`/`           Find in files
-:kbd:`leader` :kbd:`1`           Focus first editor group
-:kbd:`leader` :kbd:`2`           Focus second editor group
-:kbd:`leader` :kbd:`3`           Focus third editor group
-:kbd:`leader` :kbd:`4`           Focus forth editor group
-:kbd:`leader` :kbd:`5`           Focus fifth editor group
-:kbd:`leader` :kbd:`6`           Focus sixth editor group
-:kbd:`leader` :kbd:`7`           Focus seventh editor group
-:kbd:`leader` :kbd:`8`           Focus eighth editor group
-:kbd:`leader` :kbd:`b` :kbd:`b`  Quick open (show current buffers)
-:kbd:`leader` :kbd:`b` :kbd:`d`  Close active editor
-:kbd:`leader` :kbd:`b` :kbd:`n`  Next editor
-:kbd:`leader` :kbd:`b` :kbd:`p`  Previous editor
-:kbd:`leader` :kbd:`b` :kbd:`s`  Scratch buffer
-:kbd:`leader` :kbd:`e` :kbd:`l`  List errors / problems
-:kbd:`leader` :kbd:`e` :kbd:`n`  Next error
-:kbd:`leader` :kbd:`e` :kbd:`p`  Previous error
-:kbd:`leader` :kbd:`f` :kbd:`e`  Show your settings file                     Shorter binding (by 'd')
-:kbd:`leader` :kbd:`f` :kbd:`f`  Open file
-:kbd:`leader` :kbd:`f` :kbd:`r`  Open recent (show recent files)
-:kbd:`leader` :kbd:`f` :kbd:`s`  Save file
-:kbd:`leader` :kbd:`f` :kbd:`t`  Show explorer view
-:kbd:`leader` :kbd:`f` :kbd:`T`  Select file in the explorer
-:kbd:`leader` :kbd:`f` :kbd:`y`  Copy current file path                      Doesn't show the path
-:kbd:`leader` :kbd:`g` :kbd:`b`  Git checkout
-:kbd:`leader` :kbd:`g` :kbd:`c`  Git commit
-:kbd:`leader` :kbd:`g` :kbd:`d`  Git delete branch
-:kbd:`leader` :kbd:`g` :kbd:`f`  Git fetch
-:kbd:`leader` :kbd:`g` :kbd:`i`  Git init
-:kbd:`leader` :kbd:`g` :kbd:`m`  Git merge
-:kbd:`leader` :kbd:`g` :kbd:`p`  Git publish
-:kbd:`leader` :kbd:`g` :kbd:`s`  Show source control view
-:kbd:`leader` :kbd:`g` :kbd:`S`  Git stage
-:kbd:`leader` :kbd:`g` :kbd:`U`  Git unstage
-:kbd:`leader` :kbd:`h` :kbd:`d`  Help describe keybindings
-:kbd:`leader` :kbd:`i` :kbd:`s`  Insert snippet
-:kbd:`leader` :kbd:`j` :kbd:`=`  Format document                             Better than Spacemacs
-:kbd:`leader` :kbd:`j` :kbd:`j`  Easymotion to character
-:kbd:`leader` :kbd:`j` :kbd:`l`  Easymotion to line
-:kbd:`leader` :kbd:`j` :kbd:`w`  Easymotion to word
-:kbd:`leader` :kbd:`l` :kbd:`d`  Close folder
-:kbd:`leader` :kbd:`p` :kbd:`f`  Quick open (allow to open any project file)
-:kbd:`leader` :kbd:`p` :kbd:`g`  Open file from editor group
-:kbd:`leader` :kbd:`p` :kbd:`l`  Open folder project
-:kbd:`leader` :kbd:`p` :kbd:`p`  Open recent (show recent folders)
-:kbd:`leader` :kbd:`p` :kbd:`t`  Show explorer view
-:kbd:`leader` :kbd:`q` :kbd:`f`  Close window
-:kbd:`leader` :kbd:`q` :kbd:`q`  Close window
-:kbd:`leader` :kbd:`q` :kbd:`r`  Reload window
-:kbd:`leader` :kbd:`r` :kbd:`s`  Find in files
-:kbd:`leader` :kbd:`s` :kbd:`e`  Rename symbol                               Works only on symbols
-:kbd:`leader` :kbd:`s` :kbd:`j`  Go to symbol in file
-:kbd:`leader` :kbd:`s` :kbd:`p`  Find in files
-:kbd:`leader` :kbd:`s` :kbd:`P`  Find in files with selection
-:kbd:`leader` :kbd:`T` :kbd:`F`  Toggle fullscreen
-:kbd:`leader` :kbd:`T` :kbd:`m`  Toggle menu bar
-:kbd:`leader` :kbd:`T` :kbd:`s`  Select color theme
-:kbd:`leader` :kbd:`T` :kbd:`t`  Toggle activity bar
-:kbd:`leader` :kbd:`v`           Expand region                               No transient state
-:kbd:`leader` :kbd:`V`           Shrink region                               No transient state
-:kbd:`leader` :kbd:`w` :kbd:`-`  Split window below
-:kbd:`leader` :kbd:`w` :kbd:`/`  Split window to right
-:kbd:`leader` :kbd:`w` :kbd:`d`  Close editors in group
-:kbd:`leader` :kbd:`w` :kbd:`D`  Close other editors
-:kbd:`leader` :kbd:`w` :kbd:`h`  Previous editor group
-:kbd:`leader` :kbd:`w` :kbd:`H`  Move editor group to left
-:kbd:`leader` :kbd:`w` :kbd:`j`  Move window focus down
-:kbd:`leader` :kbd:`w` :kbd:`k`  Move window focus up
-:kbd:`leader` :kbd:`w` :kbd:`l`  Next editor group
-:kbd:`leader` :kbd:`w` :kbd:`L`  Move editor group to right
-:kbd:`leader` :kbd:`w` :kbd:`m`  Toggle maximized panel (layout unpreserved)
-:kbd:`leader` :kbd:`w` :kbd:`v`  Split window
-:kbd:`leader` :kbd:`w` :kbd:`w`  Next editor group
-:kbd:`leader` :kbd:`w` :kbd:`W`  Previous editor group
-:kbd:`leader` :kbd:`x` :kbd:`s`  Sort lines
-:kbd:`leader` :kbd:`x` :kbd:`w`  Trim whitespace
-===============================  =========================================== =========================
+===============================   =========================================== =========================
+Key bindings                      Description                                 Remark
+===============================   =========================================== =========================
+:kbd:`leader` :kbd:`space`        Run command
+:kbd:`leader` :kbd:`tab`          Next editor
+:kbd:`leader` :kbd:`;` :kbd:`;`   Comment line
+:kbd:`leader` :kbd:`'`            Toggle terminal                             Open terminal effectively
+:kbd:`leader` :kbd:`/`            Find in files
+:kbd:`leader` :kbd:`1`            Focus first editor group
+:kbd:`leader` :kbd:`2`            Focus second editor group
+:kbd:`leader` :kbd:`3`            Focus third editor group
+:kbd:`leader` :kbd:`4`            Focus forth editor group
+:kbd:`leader` :kbd:`5`            Focus fifth editor group
+:kbd:`leader` :kbd:`6`            Focus sixth editor group
+:kbd:`leader` :kbd:`7`            Focus seventh editor group
+:kbd:`leader` :kbd:`8`            Focus eighth editor group
+:kbd:`leader` :kbd:`b` :kbd:`b`   Quick open (show current buffers)
+:kbd:`leader` :kbd:`b` :kbd:`d`   Close active editor
+:kbd:`leader` :kbd:`b` :kbd:`C-d` Close other editors
+:kbd:`leader` :kbd:`b` :kbd:`n`   Next editor
+:kbd:`leader` :kbd:`b` :kbd:`p`   Previous editor
+:kbd:`leader` :kbd:`b` :kbd:`s`   Scratch buffer
+:kbd:`leader` :kbd:`e` :kbd:`l`   List errors / problems
+:kbd:`leader` :kbd:`e` :kbd:`n`   Next error
+:kbd:`leader` :kbd:`e` :kbd:`p`   Previous error
+:kbd:`leader` :kbd:`f` :kbd:`e`   Show your settings file                     Shorter binding (by 'd')
+:kbd:`leader` :kbd:`f` :kbd:`f`   Open file
+:kbd:`leader` :kbd:`f` :kbd:`r`   Open recent (show recent files)
+:kbd:`leader` :kbd:`f` :kbd:`s`   Save file
+:kbd:`leader` :kbd:`f` :kbd:`t`   Show explorer view
+:kbd:`leader` :kbd:`f` :kbd:`T`   Select file in the explorer
+:kbd:`leader` :kbd:`f` :kbd:`y`   Copy current file path                      Doesn't show the path
+:kbd:`leader` :kbd:`g` :kbd:`b`   Git checkout
+:kbd:`leader` :kbd:`g` :kbd:`c`   Git commit
+:kbd:`leader` :kbd:`g` :kbd:`d`   Git delete branch
+:kbd:`leader` :kbd:`g` :kbd:`f`   Git fetch
+:kbd:`leader` :kbd:`g` :kbd:`i`   Git init
+:kbd:`leader` :kbd:`g` :kbd:`m`   Git merge
+:kbd:`leader` :kbd:`g` :kbd:`p`   Git publish
+:kbd:`leader` :kbd:`g` :kbd:`s`   Show source control view
+:kbd:`leader` :kbd:`g` :kbd:`S`   Git stage
+:kbd:`leader` :kbd:`g` :kbd:`U`   Git unstage
+:kbd:`leader` :kbd:`h` :kbd:`d`   Help describe keybindings
+:kbd:`leader` :kbd:`i` :kbd:`s`   Insert snippet
+:kbd:`leader` :kbd:`j` :kbd:`=`   Format document                             Better than Spacemacs
+:kbd:`leader` :kbd:`j` :kbd:`j`   Easymotion to character
+:kbd:`leader` :kbd:`j` :kbd:`l`   Easymotion to line
+:kbd:`leader` :kbd:`j` :kbd:`w`   Easymotion to word
+:kbd:`leader` :kbd:`l` :kbd:`d`   Close folder
+:kbd:`leader` :kbd:`p` :kbd:`f`   Quick open (allow to open any project file)
+:kbd:`leader` :kbd:`p` :kbd:`g`   Open file from editor group
+:kbd:`leader` :kbd:`p` :kbd:`l`   Open folder project
+:kbd:`leader` :kbd:`p` :kbd:`p`   Open recent (show recent folders)
+:kbd:`leader` :kbd:`p` :kbd:`t`   Show explorer view
+:kbd:`leader` :kbd:`q` :kbd:`f`   Close window
+:kbd:`leader` :kbd:`q` :kbd:`q`   Close window
+:kbd:`leader` :kbd:`q` :kbd:`r`   Reload window
+:kbd:`leader` :kbd:`r` :kbd:`s`   Find in files
+:kbd:`leader` :kbd:`s` :kbd:`e`   Rename symbol                               Works only on symbols
+:kbd:`leader` :kbd:`s` :kbd:`j`   Go to symbol in file
+:kbd:`leader` :kbd:`s` :kbd:`p`   Find in files
+:kbd:`leader` :kbd:`s` :kbd:`P`   Find in files with selection
+:kbd:`leader` :kbd:`T` :kbd:`F`   Toggle fullscreen
+:kbd:`leader` :kbd:`T` :kbd:`m`   Toggle menu bar
+:kbd:`leader` :kbd:`T` :kbd:`s`   Select color theme
+:kbd:`leader` :kbd:`T` :kbd:`t`   Toggle activity bar
+:kbd:`leader` :kbd:`v`            Expand region                               No transient state
+:kbd:`leader` :kbd:`V`            Shrink region                               No transient state
+:kbd:`leader` :kbd:`w` :kbd:`-`   Split window below
+:kbd:`leader` :kbd:`w` :kbd:`/`   Split window to right
+:kbd:`leader` :kbd:`w` :kbd:`d`   Close editors in group
+:kbd:`leader` :kbd:`w` :kbd:`h`   Previous editor group
+:kbd:`leader` :kbd:`w` :kbd:`H`   Move editor group to left
+:kbd:`leader` :kbd:`w` :kbd:`j`   Move window focus down
+:kbd:`leader` :kbd:`w` :kbd:`k`   Move window focus up
+:kbd:`leader` :kbd:`w` :kbd:`l`   Next editor group
+:kbd:`leader` :kbd:`w` :kbd:`L`   Move editor group to right
+:kbd:`leader` :kbd:`w` :kbd:`m`   Toggle maximized panel (layout unpreserved)
+:kbd:`leader` :kbd:`w` :kbd:`v`   Split window
+:kbd:`leader` :kbd:`w` :kbd:`w`   Next editor group
+:kbd:`leader` :kbd:`w` :kbd:`W`   Previous editor group
+:kbd:`leader` :kbd:`x` :kbd:`s`   Sort lines
+:kbd:`leader` :kbd:`x` :kbd:`w`   Trim whitespace
+===============================   =========================================== =========================
 
 The following keybindings are configured globally in VSCode in some modes:
 

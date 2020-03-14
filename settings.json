@@ -298,6 +298,20 @@
             "before": [
                 "<leader>",
                 "b",
+                "<C-d>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeOtherEditors",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "b",
                 "n"
             ],
             "after": [],
@@ -1023,20 +1037,6 @@
             "commands": [
                 {
                     "command": "workbench.action.closeEditorsInGroup",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "D"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeOtherEditors",
                     "args": []
                 }
             ]
