@@ -100,9 +100,9 @@ Keybindings
 
 The following keybindings are configured in the editor through VSCodeVim:
 
-===============================   =========================================== =========================
+================================= =========================================== =========================
 Key bindings                      Description                                 Remark
-===============================   =========================================== =========================
+================================= =========================================== =========================
 :kbd:`leader` :kbd:`space`        Run command
 :kbd:`leader` :kbd:`tab`          Next editor
 :kbd:`leader` :kbd:`;` :kbd:`;`   Comment line
@@ -183,7 +183,7 @@ Key bindings                      Description                                 Re
 :kbd:`leader` :kbd:`w` :kbd:`W`   Previous editor group
 :kbd:`leader` :kbd:`x` :kbd:`s`   Sort lines
 :kbd:`leader` :kbd:`x` :kbd:`w`   Trim whitespace
-===============================   =========================================== =========================
+================================= =========================================== =========================
 
 The following keybindings are configured globally in VSCode in some modes:
 
