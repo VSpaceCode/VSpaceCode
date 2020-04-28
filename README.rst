@@ -2,10 +2,6 @@
 VSpaceCode
 ==========
 
-.. raw:: html
-
-    <p style="color: red; font-size: 1.5em;">THIS PROJECT IS LOOKING FOR A MAINTAINER</p>
-
 .. image:: resources/logo.png
    :align: center
 
