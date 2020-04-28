@@ -240,6 +240,7 @@ to this project:
 - `joefiorini <https://github.com/joefiorini>`_
 - `JuanCaicedo <https://github.com/JuanCaicedo>`_
 - `li-xinyang <https://github.com/li-xinyang>`_
+- `MarcoIeni <https://github.com/MarcoIeni>`_
 - `ossoso <https://github.com/ossoso>`_
 - `Raphael-Duchaine <https://github.com/Raphael-Duchaine>`_
 - `thanhvg <https://github.com/thanhvg>`_
