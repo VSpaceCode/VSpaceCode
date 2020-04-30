@@ -1136,6 +1136,20 @@
             "before": [
                 "<leader>",
                 "w",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.splitEditorDown",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
                 "v"
             ],
             "after": [],
