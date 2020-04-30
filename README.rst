@@ -191,6 +191,7 @@ Key bindings                      Description                                 Re
 :kbd:`leader` :kbd:`w` :kbd:`l`   Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`L`   Move editor group to right
 :kbd:`leader` :kbd:`w` :kbd:`m`   Toggle maximized panel (layout unpreserved)
+:kbd:`leader` :kbd:`w` :kbd:`s`   Split window below
 :kbd:`leader` :kbd:`w` :kbd:`v`   Split window
 :kbd:`leader` :kbd:`w` :kbd:`w`   Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`W`   Previous editor group
