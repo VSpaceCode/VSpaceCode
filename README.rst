@@ -202,10 +202,10 @@ The following keybindings are configured globally in VSCode in some modes:
 ===============================  =========================================== =========================
 Key bindings                     Description                                 Remark
 ===============================  =========================================== =========================
-:kbd:`Ctrl+h`                    Left                                        In: ListFocus
-:kbd:`Ctrl+j`                    Down                                        In: QuickOpen, SuggestWidget, ListFocus
-:kbd:`Ctrl+k`                    Up                                          In: QuickOpen, SuggestWidget, ListFocus
-:kbd:`Ctrl+l`                    Right                                       In: ListFocus
+:kbd:`Ctrl + h`                  Left                                        In: ListFocus
+:kbd:`Ctrl + j`                  Down                                        In: QuickOpen, SuggestWidget, ListFocus
+:kbd:`Ctrl + k`                  Up                                          In: QuickOpen, SuggestWidget, ListFocus
+:kbd:`Ctrl + l`                  Right                                       In: ListFocus
 ===============================  =========================================== =========================
 
 Tips
@@ -216,7 +216,7 @@ Go back to code
 
 The key bindings work only when you are inside the code.
 For example, if you are inside the file explorer window they don't work.
-Press :kbd:`Ctrl+1` to focus the first editor group and you will be able to
+Press :kbd:`Ctrl + 1` to focus the first editor group and you will be able to
 use spacemacs key bindings again.
 
 Contributing
