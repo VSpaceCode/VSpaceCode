@@ -183,7 +183,9 @@ Key bindings                      Description                                 Re
 :kbd:`leader` :kbd:`w` :kbd:`h`   Previous editor group
 :kbd:`leader` :kbd:`w` :kbd:`H`   Move editor group to left
 :kbd:`leader` :kbd:`w` :kbd:`j`   Move window focus down
+:kbd:`leader` :kbd:`w` :kbd:`J`   Move editor group down
 :kbd:`leader` :kbd:`w` :kbd:`k`   Move window focus up
+:kbd:`leader` :kbd:`w` :kbd:`K`   Move editor group up
 :kbd:`leader` :kbd:`w` :kbd:`l`   Next editor group
 :kbd:`leader` :kbd:`w` :kbd:`L`   Move editor group to right
 :kbd:`leader` :kbd:`w` :kbd:`m`   Toggle maximized panel (layout unpreserved)

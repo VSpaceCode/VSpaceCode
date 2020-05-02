@@ -350,8 +350,16 @@
             "commands": ["workbench.action.focusBelowGroup"]
         },
         {
+            "before": ["<leader>", "w", "J"],
+            "commands": ["workbench.action.moveActiveEditorGroupDown"]
+        },
+        {
             "before": ["<leader>", "w", "k"],
             "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<leader>", "w", "K"],
+            "commands": ["workbench.action.moveActiveEditorGroupUp"]
         },
         {
             "before": ["<leader>", "w", "l"],
