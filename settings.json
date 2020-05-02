@@ -47,7 +47,7 @@
         {
             "before": ["<leader>", "x", "s"],
             "commands": ["editor.action.sortLinesAscending"]
-        },
+        }
     ],
     "vim.normalModeKeyBindings": [
         {
@@ -408,5 +408,6 @@
             "after": ["<Esc>"]
         }
     ],
-    "vim.easymotion": true
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true
 }
