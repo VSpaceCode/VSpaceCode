@@ -225,6 +225,9 @@ to update ``settings.json`` too large, you can use ``npm run dev`` to compile a
 a shorter syntax. Note: ``npm install`` should be run the first time to install
 the dependencies.
 
+In order to see all available VSCode commands press :kbd:`SPC h d` and mouse
+over the command name.
+
 Contributors
 ============
 
