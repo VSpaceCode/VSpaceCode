@@ -43,7 +43,11 @@
                 "d",
                 "w"
             ]
-        }
+        },
+        {
+            "before": ["<leader>", "x", "s"],
+            "commands": ["editor.action.sortLinesAscending"]
+        },
     ],
     "vim.normalModeKeyBindings": [
         {
