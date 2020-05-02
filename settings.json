@@ -2,72 +2,27 @@
     "vim.leader": "<space>",
     "vim.visualModeKeyBindings": [
         {
-            "before": [
-                "<leader>",
-                "<space>"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showCommands",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "<space>"],
+            "commands": ["workbench.action.showCommands"]
         },
         {
-            "before": [
-                "<leader>",
-                ";"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.commentLine",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", ";"],
+            "commands": ["editor.action.commentLine"]
         },
         {
-            "before": [
-                "f",
-                "d"
-            ],
-            "after": [
-                "<Esc>"
-            ]
+            "before": ["f", "d"],
+            "after": ["<Esc>"]
         },
         {
-            "before": [
-                "<leader>",
-                "j",
-                "="
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.format",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "j", "="],
+            "commands": ["editor.action.format"]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "j"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "s"
-            ]
+            "before": ["leader", "j", "j"],
+            "after": ["leader", "leader", "s"]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "l"
-            ],
+            "before": ["leader", "j", "l"],
             "after": [
                 "leader",
                 "leader",
@@ -79,11 +34,7 @@
             ]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "w"
-            ],
+            "before": ["leader", "j", "w"],
             "after": [
                 "leader",
                 "leader",
@@ -96,587 +47,175 @@
     ],
     "vim.normalModeKeyBindings": [
         {
-            "before": [
-                "<leader>",
-                "<space>"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showCommands",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "<space>"],
+            "commands": ["workbench.action.showCommands"]
         },
         {
-            "before": [
-                "<leader>",
-                "<tab>"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "<tab>"],
+            "commands": ["workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                ";",
-                ";"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.commentLine",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", ";", ";"],
+            "commands": ["editor.action.commentLine"]
         },
         {
-            "before": [
-                "<leader>",
-                "'"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.terminal.toggleTerminal",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "'"],
+            "commands": ["workbench.action.terminal.toggleTerminal"]
         },
         {
-            "before": [
-                "<leader>",
-                "/"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.findInFiles",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "/"],
+            "commands": ["workbench.action.findInFiles"]
         },
         {
-            "before": [
-                "<leader>",
-                "1"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusFirstEditorGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "1"],
+            "commands": ["workbench.action.focusFirstEditorGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "2"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusSecondEditorGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "2"],
+            "commands": ["workbench.action.focusSecondEditorGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "3"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusThirdEditorGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "3"],
+            "commands": ["workbench.action.focusThirdEditorGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "4"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusFourthEditorGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "4"],
+            "commands": ["workbench.action.focusFourthEditorGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "5"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusFifthEditorGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "5"],
+            "commands": ["workbench.action.focusFifthEditorGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "6"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusSixthEditorGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "6"],
+            "commands": ["workbench.action.focusSixthEditorGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "7"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusSeventhEditorGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "7"],
+            "commands": ["workbench.action.focusSeventhEditorGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "8"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusEighthEditorGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "8"],
+            "commands": ["workbench.action.focusEighthEditorGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "b"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showAllEditors",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "b", "b"],
+            "commands": ["workbench.action.showAllEditors"]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "d"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeActiveEditor",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "b", "d"],
+            "commands": ["workbench.action.closeActiveEditor"]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "<C-d>"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeOtherEditors",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "b", "<C-d>"],
+            "commands": ["workbench.action.closeOtherEditors"]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "n"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.nextEditor",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "b", "n"],
+            "commands": ["workbench.action.nextEditor"]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "p"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.previousEditor",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "b", "p"],
+            "commands": ["workbench.action.previousEditor"]
         },
         {
-            "before": [
-                "<leader>",
-                "b",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.newUntitledFile",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "b", "s"],
+            "commands": ["workbench.action.files.newUntitledFile"]
         },
         {
-            "before": [
-                "<leader>",
-                "e",
-                "l"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.actions.view.problems",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "e", "l"],
+            "commands": ["workbench.actions.view.problems"]
         },
         {
-            "before": [
-                "<leader>",
-                "e",
-                "n"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.marker.next",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "e", "n"],
+            "commands": ["editor.action.marker.next"]
         },
         {
-            "before": [
-                "<leader>",
-                "e",
-                "p"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.marker.prev",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "e", "p"],
+            "commands": ["editor.action.marker.prev"]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "e"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.openGlobalSettings",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "f", "e"],
+            "commands": ["workbench.action.openGlobalSettings"]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "f"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.openFile",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.files.openFile"]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "r"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.openRecent",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "f", "r"],
+            "commands": ["workbench.action.openRecent"]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "f", "s"],
+            "commands": ["workbench.action.files.save"]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "t"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.view.explorer",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "f", "t"],
+            "commands": ["workbench.view.explorer"]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "T"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.files.action.showActiveFileInExplorer",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "f", "T"],
+            "commands": ["workbench.files.action.showActiveFileInExplorer"]
         },
         {
-            "before": [
-                "<leader>",
-                "f",
-                "y"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.copyPathOfActiveFile",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "f", "y"],
+            "commands": ["workbench.action.files.copyPathOfActiveFile"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "b"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.checkout",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "b"],
+            "commands": ["git.checkout"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "c"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.commit",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "c"],
+            "commands": ["git.commit"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "d"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.deleteBranch",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "d"],
+            "commands": ["git.deleteBranch"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "f"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.fetch",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "f"],
+            "commands": ["git.fetch"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "i"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.init",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "i"],
+            "commands": ["git.init"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "m"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.merge",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "m"],
+            "commands": ["git.merge"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "p"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.publish",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "p"],
+            "commands": ["git.publish"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.view.scm",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "s"],
+            "commands": ["workbench.view.scm"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "S"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.stage",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "S"],
+            "commands": ["git.stage"]
         },
         {
-            "before": [
-                "<leader>",
-                "g",
-                "U"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "git.unstage",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "g", "U"],
+            "commands": ["git.unstage"]
         },
         {
-            "before": [
-                "<leader>",
-                "h",
-                "d"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.openGlobalKeybindings",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "h", "d"],
+            "commands": ["workbench.action.openGlobalKeybindings"]
         },
         {
-            "before": [
-                "<leader>",
-                "i",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.insertSnippet",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "i", "s"],
+            "commands": ["editor.action.insertSnippet"]
         },
         {
-            "before": [
-                "<leader>",
-                "j",
-                "="
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.formatDocument",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "j", "="],
+            "commands": ["editor.action.formatDocument"]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "j"
-            ],
+            "before": ["leader", "j", "j"],
             "after": [
                 "leader",
                 "leader",
@@ -684,11 +223,7 @@
             ]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "l"
-            ],
+            "before": ["leader", "j", "l"],
             "after": [
                 "leader",
                 "leader",
@@ -700,11 +235,7 @@
             ]
         },
         {
-            "before": [
-                "leader",
-                "j",
-                "w"
-            ],
+            "before": ["leader", "j", "w"],
             "after": [
                 "leader",
                 "leader",
@@ -715,517 +246,154 @@
             ]
         },
         {
-            "before": [
-                "<leader>",
-                "l",
-                "d"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeFolder",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "l", "d"],
+            "commands": ["workbench.action.closeFolder"]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "f"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.quickOpen",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "p", "f"],
+            "commands": ["workbench.action.quickOpen"]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "g"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showEditorsInActiveGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "p", "g"],
+            "commands": ["workbench.action.showEditorsInActiveGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "l"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.openFolder",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "p", "l"],
+            "commands": ["workbench.action.files.openFolder"]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "p"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.openRecent",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "p", "p"],
+            "commands": ["workbench.action.openRecent"]
         },
         {
-            "before": [
-                "<leader>",
-                "p",
-                "t"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.view.explorer",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "p", "t"],
+            "commands": ["workbench.view.explorer"]
         },
         {
-            "before": [
-                "<leader>",
-                "q",
-                "f"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeWindow",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "q", "f"],
+            "commands": ["workbench.action.closeWindow"]
         },
         {
-            "before": [
-                "<leader>",
-                "q",
-                "q"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeWindow",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "q", "q"],
+            "commands": ["workbench.action.closeWindow"]
         },
         {
-            "before": [
-                "<leader>",
-                "q",
-                "r"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.reloadWindow",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "q", "r"],
+            "commands": ["workbench.action.reloadWindow"]
         },
         {
-            "before": [
-                "<leader>",
-                "r",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.findInFiles",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "r", "s"],
+            "commands": ["workbench.action.findInFiles"]
         },
         {
-            "before": [
-                "<leader>",
-                "s",
-                "e"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.rename",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "s", "e"],
+            "commands": ["editor.action.rename"]
         },
         {
-            "before": [
-                "<leader>",
-                "s",
-                "j"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.gotoSymbol",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "s", "j"],
+            "commands": ["workbench.action.gotoSymbol"]
         },
         {
-            "before": [
-                "<leader>",
-                "s",
-                "p"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.findInFiles",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "s", "p"],
+            "commands": ["workbench.action.findInFiles"]
         },
         {
-            "before": [
-                "<leader>",
-                "s",
-                "P"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.findInFilesWithSelectedText",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "s", "P"],
+            "commands": ["workbench.action.findInFilesWithSelectedText"]
         },
         {
-            "before": [
-                "<leader>",
-                "T",
-                "F"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.toggleFullScreen",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "T", "F"],
+            "commands": ["workbench.action.toggleFullScreen"]
         },
         {
-            "before": [
-                "<leader>",
-                "T",
-                "m"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.toggleMenuBar",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "T", "m"],
+            "commands": ["workbench.action.toggleMenuBar"]
         },
         {
-            "before": [
-                "<leader>",
-                "T",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.selectTheme",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "T", "s"],
+            "commands": ["workbench.action.selectTheme"]
         },
         {
-            "before": [
-                "<leader>",
-                "T",
-                "t"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.toggleActivityBarVisibility",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "T", "t"],
+            "commands": ["workbench.action.toggleActivityBarVisibility"]
         },
         {
-            "before": [
-                "<leader>",
-                "v"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.smartSelect.grow",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "v"],
+            "commands": ["editor.action.smartSelect.grow"]
         },
         {
-            "before": [
-                "<leader>",
-                "V"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.smartSelect.shrink",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "V"],
+            "commands": ["editor.action.smartSelect.shrink"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "-"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.splitEditorDown",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "-"],
+            "commands": ["workbench.action.splitEditorDown"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "/"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.splitEditorRight",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "/"],
+            "commands": ["workbench.action.splitEditorRight"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "d"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.closeEditorsInGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "d"],
+            "commands": ["workbench.action.closeEditorsInGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "h"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusPreviousGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "h"],
+            "commands": ["workbench.action.focusPreviousGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "H"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.moveActiveEditorGroupLeft",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "H"],
+            "commands": ["workbench.action.moveActiveEditorGroupLeft"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "j"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusBelowGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "j"],
+            "commands": ["workbench.action.focusBelowGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "k"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusAboveGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "k"],
+            "commands": ["workbench.action.focusAboveGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "l"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusNextGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "l"],
+            "commands": ["workbench.action.focusNextGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "L"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.moveActiveEditorGroupRight",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "L"],
+            "commands": ["workbench.action.moveActiveEditorGroupRight"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "m"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.toggleEditorWidths",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "m"],
+            "commands": ["workbench.action.toggleEditorWidths"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.splitEditorDown",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "s"],
+            "commands": ["workbench.action.splitEditorDown"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "v"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.splitEditor",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "v"],
+            "commands": ["workbench.action.splitEditor"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "w"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusNextGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "w"],
+            "commands": ["workbench.action.focusNextGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "w",
-                "W"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.focusPreviousGroup",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "w", "W"],
+            "commands": ["workbench.action.focusPreviousGroup"]
         },
         {
-            "before": [
-                "<leader>",
-                "x",
-                "s"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.sortLinesAscending",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "x", "s"],
+            "commands": ["editor.action.sortLinesAscending"]
         },
         {
-            "before": [
-                "<leader>",
-                "x",
-                "w"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.trimTrailingWhitespace",
-                    "args": []
-                }
-            ]
+            "before": ["<leader>", "x", "w"],
+            "commands": ["editor.action.trimTrailingWhitespace"]
         }
     ],
     "vim.insertModeKeyBindings": [
         {
-            "before": [
-                "f",
-                "d"
-            ],
-            "after": [
-                "<Esc>"
-            ]
+            "before": ["f", "d"],
+            "after": ["<Esc>"]
         }
     ],
     "vim.easymotion": true
