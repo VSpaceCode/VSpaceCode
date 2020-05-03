@@ -45,6 +45,10 @@
             ]
         },
         {
+            "before": ["<leader>", "s", "p"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
             "before": ["<leader>", "x", "s"],
             "commands": ["editor.action.sortLinesAscending"]
         }
@@ -311,7 +315,7 @@
         },
         {
             "before": ["<leader>", "s", "P"],
-            "commands": ["workbench.action.findInFilesWithSelectedText"]
+            "after": ["v", "i", "w", "<leader>", "s", "p", "<Esc>"]
         },
         {
             "before": ["<leader>", "T", "F"],
