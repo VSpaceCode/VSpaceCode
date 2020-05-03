@@ -139,6 +139,7 @@ Key bindings                      Description                                 Re
 :kbd:`leader` :kbd:`f` :kbd:`f`   Open file
 :kbd:`leader` :kbd:`f` :kbd:`r`   Open recent (show recent files)
 :kbd:`leader` :kbd:`f` :kbd:`s`   Save file
+:kbd:`leader` :kbd:`f` :kbd:`S`   Save all
 :kbd:`leader` :kbd:`f` :kbd:`t`   Show explorer view
 :kbd:`leader` :kbd:`f` :kbd:`T`   Select file in the explorer
 :kbd:`leader` :kbd:`f` :kbd:`y`   Copy current file path                      Doesn't show the path

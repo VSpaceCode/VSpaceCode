@@ -159,6 +159,10 @@
             "commands": ["workbench.action.files.save"]
         },
         {
+            "before": ["<leader>", "f", "S"],
+            "commands": ["workbench.action.files.saveAll"]
+        },
+        {
             "before": ["<leader>", "f", "t"],
             "commands": ["workbench.view.explorer"]
         },
