@@ -127,6 +127,10 @@
             "commands": ["workbench.action.files.newUntitledFile"]
         },
         {
+            "before": ["<leader>", "b", "u"],
+            "commands": ["workbench.action.reopenClosedEditor"]
+        },
+        {
             "before": ["<leader>", "e", "l"],
             "commands": ["workbench.actions.view.problems"]
         },

@@ -131,6 +131,7 @@ Key bindings                      Description                                 Re
 :kbd:`leader` :kbd:`b` :kbd:`n`   Next editor
 :kbd:`leader` :kbd:`b` :kbd:`p`   Previous editor
 :kbd:`leader` :kbd:`b` :kbd:`s`   Scratch buffer
+:kbd:`leader` :kbd:`b` :kbd:`u`   Reopen closed editor
 :kbd:`leader` :kbd:`e` :kbd:`l`   List errors / problems
 :kbd:`leader` :kbd:`e` :kbd:`n`   Next error
 :kbd:`leader` :kbd:`e` :kbd:`p`   Previous error
