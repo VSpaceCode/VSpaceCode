@@ -114,6 +114,7 @@ Key bindings                      Description                                 Re
 ================================= =========================================== =========================
 :kbd:`leader` :kbd:`space`        Run command
 :kbd:`leader` :kbd:`tab`          Next editor
+:kbd:`leader` :kbd:`*`            Find all references
 :kbd:`leader` :kbd:`;` :kbd:`;`   Comment line
 :kbd:`leader` :kbd:`'`            Toggle terminal                             Open terminal effectively
 :kbd:`leader` :kbd:`/`            Find in files
