@@ -22,7 +22,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 
 ### Use other key to trigger the menu
 
-> The following instruction might changed in the preview
+> The following instructions might change during preview
 
 #### I don't use VSCode Vim
 Since the default key binding adding by this extensions will only tigger when Vim extension is active, you can just add a new binding in the your own `keybindings.json`. The following json is an example to bind `alt+space` to the action menu.
