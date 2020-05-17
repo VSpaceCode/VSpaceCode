@@ -1,9 +1,9 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import { commands, window, workspace } from 'vscode';
-import MenuItem from './menu/MenuItem';
+import { commands, workspace } from 'vscode';
 import { IBindingItem } from './IBindingItem';
+import MenuItem from './menu/MenuItem';
 import { createQuickPick } from './utils';
 
 class SpacecodeCmd {
