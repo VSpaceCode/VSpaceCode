@@ -50,22 +50,7 @@
 			{
 				"command": "spacecode.space",
 				"key": "space",
-				"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
-			},
-			{
-				"command": "spacecode.space",
-				"key": "space",
-				"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
-			},
-			{
-				"command": "spacecode.space",
-				"key": "space",
-				"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'VisualBlock'"
-			},
-			{
-				"command": "spacecode.space",
-				"key": "space",
-				"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'VisualLine'"
+				"when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode =~ /^Normal|Visual|VisualBlock|VisualLine$/"
 			}
 		],
 		"configuration": [
