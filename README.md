@@ -9,7 +9,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 - Action menu triggered by space key to reduce memorization of shortcuts
 - All menu items are customizable
 
-\!\[feature X\]\(images/feature-x.png\)
+![Space actions](images/feature.gif)
 
 ## Requirements
 
