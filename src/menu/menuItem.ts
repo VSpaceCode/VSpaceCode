@@ -4,15 +4,14 @@ import { createQuickPick } from "../utils";
 import { IMenuItem } from "./IMenuItem";
 
 export default class MenuItem implements IMenuItem {
-    description: string;
+    name: string;
     label: string;
     type: ActionType;
     command?: string;
     items?: MenuItem[];
 
     constructor(item: IBindingItem) {
-        // Add tab so the description is aligned
-        this.description = `\t${item.name}`;
+        this.name = item.name;
         this.label = item.key;
         this.type = item.type;
         this.command = item.command;
@@ -21,11 +20,16 @@ export default class MenuItem implements IMenuItem {
         }
     }
 
+    get description() {
+        // Add tab so the description is aligned
+        return `\t${this.name}`;
+    }
+
     action(): Thenable<unknown> {
         if (this.type === "command" && this.command) {
             return commands.executeCommand(this.command);
         } else if (this.type === "bindings" && this.items) {
-            return createQuickPick(this.description, this.items);
+            return createQuickPick(this.name, this.items);
         }
 
         return Promise.reject();
