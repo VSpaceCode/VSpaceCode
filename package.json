@@ -164,6 +164,9 @@
 							},
 							{"key": "w", "name": "Window...", "type": "bindings", "bindings":
 								[
+									{"key": "w", "name": "Toggle editor group", "type": "command", "command": "workbench.action.navigateEditorGroups"},
+									{"key": "-", "name": "Split editor below", "type": "command", "command": "workbench.action.splitEditorOrthogonal"},
+									{"key": "\\", "name": "Split editor right", "type": "command", "command": "workbench.action.splitEditor"},
 									{"key": "h", "name": "Move editor left", "type": "command", "command": "workbench.action.moveEditorToLeftGroup"},
 									{"key": "j", "name": "Move editor down", "type": "command", "command": "workbench.action.moveEditorToBelowGroup"},
 									{"key": "k", "name": "Move editor up", "type": "command", "command": "workbench.action.moveEditorToAboveGroup"},
@@ -175,9 +178,9 @@
 									{"key": "t", "name": "Toggle editor group sizes", "type": "command", "command": "workbench.action.toggleEditorWidths"},
 									{"key": "m", "name": "Maximize editor group", "type": "command", "command": "workbench.action.minimizeOtherEditors"},
 									{"key": "M", "name": "Maximize editor group and hide side bar", "type": "command", "command": "workbench.action.maximizeEditor"},
-									{"key": "r", "name": "Reset editor group sizes", "type": "command", "command": "workbench.action.evenEditorWidths"},
-									{"key": "c", "name": "Combine all editors", "type": "command", "command": "workbench.action.joinAllGroups"},
-									{"key": "x", "name": "Close all editors in group", "type": "command", "command": "workbench.action.closeEditorsInGroup"},
+									{"key": "=", "name": "Reset editor group sizes", "type": "command", "command": "workbench.action.evenEditorWidths"},
+									{"key": "z", "name": "Combine all editors", "type": "command", "command": "workbench.action.joinAllGroups"},
+									{"key": "x", "name": "Close editor group", "type": "command", "command": "workbench.action.closeEditorsInGroup"},
 									{"key": "X", "name": "Close all editor groups", "type": "command", "command": "workbench.action.closeAllGroups"}
 								]
 							},
