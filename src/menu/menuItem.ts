@@ -11,7 +11,8 @@ export default class MenuItem implements IMenuItem {
     items?: MenuItem[];
 
     constructor(item: IBindingItem) {
-        this.description = item.name;
+        // Add tab so the description is aligned
+        this.description = `\t${item.name}`;
         this.label = item.key;
         this.type = item.type;
         this.command = item.command;
