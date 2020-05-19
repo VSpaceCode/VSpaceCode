@@ -122,8 +122,8 @@
 							},
 							{"key": "d", "name": "Debug...", "type": "bindings", "bindings":
 								[
-									{"key": "r", "name": "Run", "type": "command", "command": "workbench.action.debug.run"},
 									{"key": "d", "name": "Start debug", "type": "command", "command": "workbench.action.debug.start"},
+									{"key": "D", "name": "Run without debugging", "type": "command", "command": "workbench.action.debug.run"},
 									{"key": "S", "name": "Stop debug", "type": "command", "command": "workbench.action.debug.stop"},
 									{"key": "c", "name": "Continue debug", "type": "command", "command": "workbench.action.debug.continue"},
 									{"key": "p", "name": "Pause debug", "type": "command", "command": "workbench.action.debug.pause"},
