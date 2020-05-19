@@ -71,6 +71,7 @@
 									{"key": "S", "name": "Save all files", "type": "command", "command": "workbench.action.files.saveAll"},
 									{"key": "r", "name": "Reveal file", "type": "command", "command": "revealFileInOS"},
 									{"key": "l", "name": "Change file language", "type": "command", "command": "workbench.action.editor.changeLanguageMode"},
+									{"key": "=", "name": "Format file", "type": "command", "command": "editor.action.formatDocument"},
 									{"key": "i", "name": "Indentation...", "type": "bindings", "bindings":
 										[
 											{"key": "i", "name": "Change indentation", "type": "command", "command": "changeEditorIndentation"},
@@ -91,7 +92,6 @@
 									{"key": ".", "name": "Quick fix", "type": "command", "command": "editor.action.quickFix"},
 									{"key": "a", "name": "Find all reference", "type": "command", "command": "editor.action.referenceSearch.trigger"},
 									{"key": "s", "name": "Select all occurance", "type": "command", "command": "editor.action.selectHighlights"},
-									{"key": "f", "name": "Format document", "type": "command", "command": "editor.action.formatDocument"},
 									{"key": "z", "name": "Fold...", "type": "bindings", "bindings":
 										[
 											{"key": "f", "name": "Fold", "type": "command", "command": "editor.fold"},
