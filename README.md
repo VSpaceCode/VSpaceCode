@@ -8,7 +8,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 
 - Spacemacs like action menu to reduce memorization of shortcuts
 - All menu items are customizable
-- The the menu key is customizable
+- The menu key is customizable
 
 ![Space actions](images/feature.gif)
 
@@ -16,7 +16,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 
 - [VSCode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) (required for default space key)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) (required for default bindings)
-- [edmagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) and its Vim bindings (required for default bindings)
+- [edamagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) and its Vim bindings (required for default bindings)
 
 ## Customization
 
@@ -64,6 +64,6 @@ See [CHANGELOG.md](CHANGELOG.md)
 All feature requests and help are welcome. Please open an issue to track.
 
 ## Credits
-Thanks @kahole for his implementation of quick pick menu in edamagit. 
+Thanks @kahole for his implementation of quick pick menu in edamagit.
 
 Icons made by [Icongeek26](https://www.flaticon.com/authors/icongeek26) from [www.flaticon.com](www.flaticon.com)
