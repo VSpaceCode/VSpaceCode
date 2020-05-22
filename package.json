@@ -51,6 +51,11 @@
 				"title": "Spacecode",
 				"type": "object",
 				"properties": {
+					"spacecode.checkVimConfig": {
+						"type":"boolean",
+						"markdownDescription": "Check Vim settings on every launch. Uncheck this if you are not using this extension with VSCode Vim.",
+						"default": true
+					},
 					"spacecode.bindings": {
 						"type": "array",
 						"markdownDescription": "The bindings of the space key",
