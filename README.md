@@ -18,14 +18,34 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) (required for default bindings)
 - [edmagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) and its Vim bindings (required for default bindings)
 
-## Customization
+## Installation
+After the installation of the extension, you will need to manually configure to set up the trigger for the action menu.
 
-### Use other key to trigger the menu
+### I am using VSCode Vim
+Add the trigger as follows in `settings.json`. This following example is to let VSCode Vim to capture the `space` key and trigger the action menu in normal mode and visual mode.
+> To access `settings.json`, you can search `Setting` in the command list with `Ctl+Shift+P` or `Cmd+Shift+P` and select `Preference: Open Settings (JSON)`.
 
-> The following instructions might change during preview
+> If you have existing config for `vim.normalModeKeyBindingsNonRecursive` or `vim.visualModeKeyBindingsNonRecursive`, make sure you add to the array instead of replace them.
 
-#### I don't use VSCode Vim
-Since the default key binding adding by this extensions will only tigger when Vim extension is active, you can just add a new binding in the your own `keybindings.json`. The following json is an example to bind `alt+space` to the action menu.
+```json
+"vim.normalModeKeyBindingsNonRecursive": [
+  {
+    "before": ["<space>"],
+    "commands": ["spacecode.space"]
+  }
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+  {
+    "before": ["<space>"],
+    "commands": ["spacecode.space"]
+  }
+]
+```
+
+### I am *not* using VSCode Vim
+Add the trigger as follows in `keybindings.json`. This following json is an example to bind `alt+space` to the action menu when a text editor is in focus.
+
+> To access `keybindings.json`, you can search `Keyboard` in the command list with `Ctl+Shift+P` or `Cmd+Shift+P` and select `Preference: Open Keyboard Shortcuts (JSON)`.
 
 ```json
 {
@@ -35,21 +55,7 @@ Since the default key binding adding by this extensions will only tigger when Vi
 },
 ```
 
-#### I use Vim, but I just don't like the `space` key
-You will have to remove the key binding added by this extension and replace that with your own. The following json is example to bind `alt+space` to the action menu.
-```json
-{
-  "command": "-spacecode.space",
-  "key": "space",
-  "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode =~ /^Normal|Visual|VisualBlock|VisualLine$/"
-},
-{
-  "command": "spacecode.space",
-  "key": "alt+space",
-  "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode =~ /^Normal|Visual|VisualBlock|VisualLine$/"
-},
-
-```
+## Customization
 
 ### Change the actions in the menu
 To customize the menu, copy the default `spacecode.bindings` value in `package.json` in this repo and put the updated `spacecode.bindings` config in your own `setting.json`.
