@@ -3,7 +3,7 @@
 import * as vscode from 'vscode';
 import { commands, workspace } from 'vscode';
 import { IBindingItem } from './IBindingItem';
-import MenuItem from './menu/MenuItem';
+import MenuItem from './menu/menuItem';
 import { createQuickPick } from './utils';
 
 class SpacecodeCmd {
