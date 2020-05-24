@@ -1,7 +1,7 @@
 import { commands } from "vscode";
 import { ActionType, IBindingItem } from "../iBindingItem";
-import { createQuickPick } from "../utils";
 import { IMenuItem } from "./iMenuItem";
+import { createQuickPick } from "./menu";
 
 export default class MenuItem implements IMenuItem {
     name: string;

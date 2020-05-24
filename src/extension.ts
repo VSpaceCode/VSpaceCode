@@ -3,7 +3,7 @@ import { ConfigKey, extensionId, extensionQualifiedId, GlobalState, spaceCmdId }
 import { IBindingItem } from './iBindingItem';
 import MenuItem from './menu/menuItem';
 import { checkVim, showWelcomeScreen } from './messages';
-import { createQuickPick } from './utils';
+import { createQuickPick } from './menu/menu';
 
 class SpacecodeCmd {
     private key: string;

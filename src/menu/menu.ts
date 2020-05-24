@@ -1,5 +1,5 @@
 import { window } from "vscode";
-import { IMenuItem } from "./menu/iMenuItem";
+import { IMenuItem } from "./iMenuItem";
 
 export function createQuickPick(title: string, items: IMenuItem[]) {
     return new Promise((resolve, reject) => {
@@ -22,7 +22,6 @@ export function createQuickPick(title: string, items: IMenuItem[]) {
                 eventListenerDisposable.dispose();
                 acceptListenerDisposable.dispose();
                 try {
-                    
                     await chosenItems[0].action();
                     resolve();
                 } catch (error) {
