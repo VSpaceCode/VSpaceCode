@@ -1,5 +1,5 @@
 import { window } from "vscode";
-import { IMenuItem } from "./menu/IMenuItem";
+import { IMenuItem } from "./menu/iMenuItem";
 
 export function createQuickPick(title: string, items: IMenuItem[]) {
     return new Promise((resolve, reject) => {

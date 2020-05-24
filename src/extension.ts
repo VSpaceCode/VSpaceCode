@@ -1,7 +1,7 @@
 import { commands, ExtensionContext, extensions, window, workspace } from 'vscode';
 import { ConfigKey, extensionId, extensionQualifiedId, GlobalState, spaceCmdId } from './constants';
-import { IBindingItem } from './IBindingItem';
-import MenuItem from './menu/MenuItem';
+import { IBindingItem } from './iBindingItem';
+import MenuItem from './menu/menuItem';
 import { checkVim, showWelcomeScreen } from './messages';
 import { createQuickPick } from './utils';
 
