@@ -52,9 +52,52 @@ You will have to remove the key binding added by this extension and replace that
 ```
 
 ### Change the actions in the menu
-To customize the menu, copy the default `spacecode.bindings` value in `package.json` in this repo and put the updated `spacecode.bindings` config in your own `setting.json`.
+To customize the menu, you can override the menu completely by putting your own `spacecode.bindings` into your `settings.json`.
+An example of a `settings.json` file that overrides space menu is as follows:
+```json
+{
+  "spacecode.bindings": [
+    {
+      "key": "f",
+      "name": "File...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "f",
+          "name": "Open file",
+          "type": "command",
+          "command": "workbench.action.files.openFileFolder"
+        },
+        {
+          "key": "i",
+          "name": "Indentation...",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "i",
+              "name": "Change indentation",
+              "type": "command",
+              "command": "changeEditorIndentation"
+            },
+            {
+              "key": "d",
+              "name": "Detect indentation",
+              "type": "command",
+              "command": "editor.action.detectIndentation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
-> The actions are subject to change before `1.0.0`. If you find something you think it should bind to a particular key, or you want some particular function, please open an issue as a feature request.
+The default value can be found in the `contributes.configuration.spacecode.bindings.default` section of the `package.json` in this repo. You can use the default value as an example to craft your own custom menu.
+
+> The key `q` is reversed to escape the menu.
+
+> The actions are subject to change before `1.0.0`. If you find something you that think it should bind to a particular key, or you want a particular command, please open an issue as a feature request.
 
 ## Release Notes
 
