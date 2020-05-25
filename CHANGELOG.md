@@ -6,9 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- Fix the issue where it cannot be use with Vim command such as `f <spc>` by changing how to key binding of `space`is setup.
-- Add a welcome notification to guide user to install the keybindings.
-- Check user's Vim settings on launch to ensure keybinding is set.
+
+
+## [0.3.0] - 2020-05-24
+### Added
+- Add a welcome notification to guide user to install the space keybindings.
+- Check the user's Vim settings on launch to ensure vim keybindings are set.
+
+### Fixed
+- Fix the issue where it cannot be use with Vim command such as `f <spc>` (#3).
+
+### Changed
+- Space key bindings are no longer added on installation to fix the bug (#3).
+
 
 ## [0.2.2] - 2020-05-23
 ### Fixed

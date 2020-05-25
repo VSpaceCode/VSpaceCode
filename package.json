@@ -7,7 +7,7 @@
 	"author": {
 		"name": "Steven Guh"
 	},
-	"version": "0.2.2",
+	"version": "0.3.0",
 	"engines": {
 		"vscode": "^1.45.0"
 	},
@@ -52,7 +52,7 @@
 				"type": "object",
 				"properties": {
 					"spacecode.checkVimConfig": {
-						"type":"boolean",
+						"type": "boolean",
 						"markdownDescription": "Check Vim settings on every launch. Uncheck this if you are not using this extension with VSCode Vim.",
 						"default": true
 					},
@@ -60,150 +60,693 @@
 						"type": "array",
 						"markdownDescription": "The bindings of the space key",
 						"default": [
-							{"key": "f", "name": "File...", "type": "bindings", "bindings":
-								[
-									{"key": "f", "name": "Open file", "type": "command", "command": "workbench.action.files.openFileFolder"},
-									{"key": "n", "name": "New Untitled", "type": "command", "command": "workbench.action.files.newUntitledFile"},
-									{"key": "w", "name": "Open active in new window", "type": "command", "command": "workbench.action.files.showOpenedFileInNewWindow"},
-									{"key": "s", "name": "Save file", "type": "command", "command": "workbench.action.files.save"},
-									{"key": "S", "name": "Save all files", "type": "command", "command": "workbench.action.files.saveAll"},
-									{"key": "r", "name": "Reveal file", "type": "command", "command": "revealFileInOS"},
-									{"key": "l", "name": "Change file language", "type": "command", "command": "workbench.action.editor.changeLanguageMode"},
-									{"key": "=", "name": "Format file", "type": "command", "command": "editor.action.formatDocument"},
-									{"key": "i", "name": "Indentation...", "type": "bindings", "bindings":
-										[
-											{"key": "i", "name": "Change indentation", "type": "command", "command": "changeEditorIndentation"},
-											{"key": "d", "name": "Detect indentation", "type": "command", "command": "editor.action.detectIndentation"},
-											{"key": "r", "name": "Reindent", "type": "command", "command": "editor.action.reindentlines"},
-											{"key": "R", "name": "Reindent selected", "type": "command", "command": "editor.action.reindentselectedlines"},
-											{"key": "t", "name": "Convert indentation to tabs", "type": "command", "command": "editor.action.indentationToTabs"},
-											{"key": "s", "name": "Convert indentation to spaces", "type": "command", "command": "editor.action.indentationToSpaces"}
+							{
+								"key": "f",
+								"name": "File...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "f",
+										"name": "Open file",
+										"type": "command",
+										"command": "workbench.action.files.openFileFolder"
+									},
+									{
+										"key": "n",
+										"name": "New Untitled",
+										"type": "command",
+										"command": "workbench.action.files.newUntitledFile"
+									},
+									{
+										"key": "w",
+										"name": "Open active in new window",
+										"type": "command",
+										"command": "workbench.action.files.showOpenedFileInNewWindow"
+									},
+									{
+										"key": "s",
+										"name": "Save file",
+										"type": "command",
+										"command": "workbench.action.files.save"
+									},
+									{
+										"key": "S",
+										"name": "Save all files",
+										"type": "command",
+										"command": "workbench.action.files.saveAll"
+									},
+									{
+										"key": "r",
+										"name": "Reveal file",
+										"type": "command",
+										"command": "revealFileInOS"
+									},
+									{
+										"key": "l",
+										"name": "Change file language",
+										"type": "command",
+										"command": "workbench.action.editor.changeLanguageMode"
+									},
+									{
+										"key": "=",
+										"name": "Format file",
+										"type": "command",
+										"command": "editor.action.formatDocument"
+									},
+									{
+										"key": "i",
+										"name": "Indentation...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "i",
+												"name": "Change indentation",
+												"type": "command",
+												"command": "changeEditorIndentation"
+											},
+											{
+												"key": "d",
+												"name": "Detect indentation",
+												"type": "command",
+												"command": "editor.action.detectIndentation"
+											},
+											{
+												"key": "r",
+												"name": "Reindent",
+												"type": "command",
+												"command": "editor.action.reindentlines"
+											},
+											{
+												"key": "R",
+												"name": "Reindent selected",
+												"type": "command",
+												"command": "editor.action.reindentselectedlines"
+											},
+											{
+												"key": "t",
+												"name": "Convert indentation to tabs",
+												"type": "command",
+												"command": "editor.action.indentationToTabs"
+											},
+											{
+												"key": "s",
+												"name": "Convert indentation to spaces",
+												"type": "command",
+												"command": "editor.action.indentationToSpaces"
+											}
 										]
 									}
 								]
 							},
-							{"key": "e", "name": "Editor...", "type": "bindings", "bindings":
-								[
-									{"key": "i", "name": "Organize Imports", "type": "command", "command": "editor.action.organizeImports"},
-									{"key": "r", "name": "Rename symbol", "type": "command", "command": "editor.action.rename"},
-									{"key": "R", "name": "Refactor", "type": "command", "command": "editor.action.refactor"},
-									{"key": ".", "name": "Quick fix", "type": "command", "command": "editor.action.quickFix"},
-									{"key": "a", "name": "Find all reference", "type": "command", "command": "editor.action.referenceSearch.trigger"},
-									{"key": "s", "name": "Select all occurance", "type": "command", "command": "editor.action.selectHighlights"},
-									{"key": "z", "name": "Fold...", "type": "bindings", "bindings":
-										[
-											{"key": "f", "name": "Fold", "type": "command", "command": "editor.fold"},
-											{"key": "F", "name": "Unfold", "type": "command", "command": "editor.unfold"},
-											{"key": "a", "name": "Fold all", "type": "command", "command": "editor.foldAll"},
-											{"key": "A", "name": "Unfold all", "type": "command", "command": "editor.unfoldAll"},
-											{"key": "r", "name": "Fold all regions", "type": "command", "command": "editor.foldAllMarkerRegions"},
-											{"key": "R", "name": "Unfold all regions", "type": "command", "command": "editor.unfoldAllMarkerRegions"},
-											{"key": "b", "name": "Fold all block comments", "type": "command", "command": "editor.foldAllBlockComments"},
-											{"key": "c", "name": "Unfold recursively", "type": "command", "command": "editor.unfoldRecursively"}
+							{
+								"key": "e",
+								"name": "Editor...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "i",
+										"name": "Organize Imports",
+										"type": "command",
+										"command": "editor.action.organizeImports"
+									},
+									{
+										"key": "r",
+										"name": "Rename symbol",
+										"type": "command",
+										"command": "editor.action.rename"
+									},
+									{
+										"key": "R",
+										"name": "Refactor",
+										"type": "command",
+										"command": "editor.action.refactor"
+									},
+									{
+										"key": ".",
+										"name": "Quick fix",
+										"type": "command",
+										"command": "editor.action.quickFix"
+									},
+									{
+										"key": "a",
+										"name": "Find all reference",
+										"type": "command",
+										"command": "editor.action.referenceSearch.trigger"
+									},
+									{
+										"key": "s",
+										"name": "Select all occurance",
+										"type": "command",
+										"command": "editor.action.selectHighlights"
+									},
+									{
+										"key": "z",
+										"name": "Fold...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "f",
+												"name": "Fold",
+												"type": "command",
+												"command": "editor.fold"
+											},
+											{
+												"key": "F",
+												"name": "Unfold",
+												"type": "command",
+												"command": "editor.unfold"
+											},
+											{
+												"key": "a",
+												"name": "Fold all",
+												"type": "command",
+												"command": "editor.foldAll"
+											},
+											{
+												"key": "A",
+												"name": "Unfold all",
+												"type": "command",
+												"command": "editor.unfoldAll"
+											},
+											{
+												"key": "r",
+												"name": "Fold all regions",
+												"type": "command",
+												"command": "editor.foldAllMarkerRegions"
+											},
+											{
+												"key": "R",
+												"name": "Unfold all regions",
+												"type": "command",
+												"command": "editor.unfoldAllMarkerRegions"
+											},
+											{
+												"key": "b",
+												"name": "Fold all block comments",
+												"type": "command",
+												"command": "editor.foldAllBlockComments"
+											},
+											{
+												"key": "c",
+												"name": "Unfold recursively",
+												"type": "command",
+												"command": "editor.unfoldRecursively"
+											}
 										]
 									},
-									{"key": "m", "name": "Merge conflict...", "type": "bindings", "bindings":
-										[
-											{"key": "b", "name": "Accept both", "type": "command", "command": "merge-conflict.accept.both"},
-											{"key": "c", "name": "Accept current", "type": "command", "command": "merge-conflict.accept.current"},
-											{"key": "i", "name": "Accept incoming", "type": "command", "command": "merge-conflict.accept.incoming"},
-											{"key": "B", "name": "Accept all both", "type": "command", "command": "merge-conflict.accept.all-both"},
-											{"key": "C", "name": "Accept all current", "type": "command", "command": "merge-conflict.accept.all-current"},
-											{"key": "I", "name": "Accept all incoming", "type": "command", "command": "merge-conflict.accept.all-incoming"},
-											{"key": "s", "name": "Accept selection", "type": "command", "command": "merge-conflict.accept.selection"},
-											{"key": "k", "name": "Compare current conflict", "type": "command", "command": "merge-conflict.compare"},
-											{"key": "n", "name": "Next Conflict", "type": "command", "command": "merge-conflict.next"},
-											{"key": "N", "name": "Previous Conflict", "type": "command", "command": "merge-conflict.previous"}
+									{
+										"key": "m",
+										"name": "Merge conflict...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "b",
+												"name": "Accept both",
+												"type": "command",
+												"command": "merge-conflict.accept.both"
+											},
+											{
+												"key": "c",
+												"name": "Accept current",
+												"type": "command",
+												"command": "merge-conflict.accept.current"
+											},
+											{
+												"key": "i",
+												"name": "Accept incoming",
+												"type": "command",
+												"command": "merge-conflict.accept.incoming"
+											},
+											{
+												"key": "B",
+												"name": "Accept all both",
+												"type": "command",
+												"command": "merge-conflict.accept.all-both"
+											},
+											{
+												"key": "C",
+												"name": "Accept all current",
+												"type": "command",
+												"command": "merge-conflict.accept.all-current"
+											},
+											{
+												"key": "I",
+												"name": "Accept all incoming",
+												"type": "command",
+												"command": "merge-conflict.accept.all-incoming"
+											},
+											{
+												"key": "s",
+												"name": "Accept selection",
+												"type": "command",
+												"command": "merge-conflict.accept.selection"
+											},
+											{
+												"key": "k",
+												"name": "Compare current conflict",
+												"type": "command",
+												"command": "merge-conflict.compare"
+											},
+											{
+												"key": "n",
+												"name": "Next Conflict",
+												"type": "command",
+												"command": "merge-conflict.next"
+											},
+											{
+												"key": "N",
+												"name": "Previous Conflict",
+												"type": "command",
+												"command": "merge-conflict.previous"
+											}
 										]
 									}
 								]
 							},
-							{"key": "d", "name": "Debug...", "type": "bindings", "bindings":
-								[
-									{"key": "d", "name": "Start debug", "type": "command", "command": "workbench.action.debug.start"},
-									{"key": "D", "name": "Run without debugging", "type": "command", "command": "workbench.action.debug.run"},
-									{"key": "S", "name": "Stop debug", "type": "command", "command": "workbench.action.debug.stop"},
-									{"key": "c", "name": "Continue debug", "type": "command", "command": "workbench.action.debug.continue"},
-									{"key": "p", "name": "Pause debug", "type": "command", "command": "workbench.action.debug.pause"},
-									{"key": "R", "name": "Restart debug", "type": "command", "command": "workbench.action.debug.restart"},
-									{"key": "i", "name": "Step into", "type": "command", "command": "workbench.action.debug.stepInto"},
-									{"key": "o", "name": "Step over", "type": "command", "command": "workbench.action.debug.stepOver"},
-									{"key": "O", "name": "Step out", "type": "command", "command": "workbench.action.debug.stepOut"},
-									{"key": "b", "name": "Toggle breakpoint", "type": "command", "command": "editor.debug.action.toggleBreakpoint"},
-									{"key": "B", "name": "Toggle inline breakpoint", "type": "command", "command": "editor.debug.action.toggleInlineBreakpoint"},
-									{"key": "j", "name": "Jump to cursor", "type": "command", "command": "debug.jumpToCursor"}
+							{
+								"key": "d",
+								"name": "Debug...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "d",
+										"name": "Start debug",
+										"type": "command",
+										"command": "workbench.action.debug.start"
+									},
+									{
+										"key": "D",
+										"name": "Run without debugging",
+										"type": "command",
+										"command": "workbench.action.debug.run"
+									},
+									{
+										"key": "S",
+										"name": "Stop debug",
+										"type": "command",
+										"command": "workbench.action.debug.stop"
+									},
+									{
+										"key": "c",
+										"name": "Continue debug",
+										"type": "command",
+										"command": "workbench.action.debug.continue"
+									},
+									{
+										"key": "p",
+										"name": "Pause debug",
+										"type": "command",
+										"command": "workbench.action.debug.pause"
+									},
+									{
+										"key": "R",
+										"name": "Restart debug",
+										"type": "command",
+										"command": "workbench.action.debug.restart"
+									},
+									{
+										"key": "i",
+										"name": "Step into",
+										"type": "command",
+										"command": "workbench.action.debug.stepInto"
+									},
+									{
+										"key": "o",
+										"name": "Step over",
+										"type": "command",
+										"command": "workbench.action.debug.stepOver"
+									},
+									{
+										"key": "O",
+										"name": "Step out",
+										"type": "command",
+										"command": "workbench.action.debug.stepOut"
+									},
+									{
+										"key": "b",
+										"name": "Toggle breakpoint",
+										"type": "command",
+										"command": "editor.debug.action.toggleBreakpoint"
+									},
+									{
+										"key": "B",
+										"name": "Toggle inline breakpoint",
+										"type": "command",
+										"command": "editor.debug.action.toggleInlineBreakpoint"
+									},
+									{
+										"key": "j",
+										"name": "Jump to cursor",
+										"type": "command",
+										"command": "debug.jumpToCursor"
+									}
 								]
 							},
-							{"key": "t", "name": "Toggles...", "type": "bindings", "bindings":
-								[
-									{"key": "f", "name": "Toggle fold", "type": "command", "command": "editor.toggleFold"},
-									{"key": "c", "name": "Toggle find case sensitive", "type": "command", "command": "toggleFindCaseSensitive"},
-									{"key": "w", "name": "Toggle ignore trim whitespace in diff", "type": "command", "command": "toggle.diff.ignoreTrimWhitespace"},
-									{"key": "W", "name": "Toggle word wrap", "type": "command", "command": "editor.action.toggleWordWrap"},
-									{"key": "b", "name": "Toggle side bar visbility", "type": "command", "command": "workbench.action.toggleSidebarVisibility"},
-									{"key": "j", "name": "Toggle panel visbility", "type": "command", "command": "workbench.action.togglePanel"},
-									{"key": "m", "name": "Toggle maximized panel", "type": "command", "command": "workbench.action.toggleMaximizedPanel"},
-									{"key": "t", "name": "Toggle tab visibility", "type": "command", "command": "workbench.action.toggleTabsVisibility"},
-									{"key": "z", "name": "Toggle zen mode", "type": "command", "command": "workbench.action.toggleZenMode"}
+							{
+								"key": "t",
+								"name": "Toggles...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "f",
+										"name": "Toggle fold",
+										"type": "command",
+										"command": "editor.toggleFold"
+									},
+									{
+										"key": "c",
+										"name": "Toggle find case sensitive",
+										"type": "command",
+										"command": "toggleFindCaseSensitive"
+									},
+									{
+										"key": "w",
+										"name": "Toggle ignore trim whitespace in diff",
+										"type": "command",
+										"command": "toggle.diff.ignoreTrimWhitespace"
+									},
+									{
+										"key": "W",
+										"name": "Toggle word wrap",
+										"type": "command",
+										"command": "editor.action.toggleWordWrap"
+									},
+									{
+										"key": "b",
+										"name": "Toggle side bar visbility",
+										"type": "command",
+										"command": "workbench.action.toggleSidebarVisibility"
+									},
+									{
+										"key": "j",
+										"name": "Toggle panel visbility",
+										"type": "command",
+										"command": "workbench.action.togglePanel"
+									},
+									{
+										"key": "m",
+										"name": "Toggle maximized panel",
+										"type": "command",
+										"command": "workbench.action.toggleMaximizedPanel"
+									},
+									{
+										"key": "t",
+										"name": "Toggle tab visibility",
+										"type": "command",
+										"command": "workbench.action.toggleTabsVisibility"
+									},
+									{
+										"key": "z",
+										"name": "Toggle zen mode",
+										"type": "command",
+										"command": "workbench.action.toggleZenMode"
+									}
 								]
 							},
-							{"key": "s", "name": "Show...", "type": "bindings", "bindings":
-								[
-									{"key": "e", "name": "Show explorer", "type": "command", "command": "workbench.view.explorer"},
-									{"key": "s", "name": "Show search", "type": "command", "command": "workbench.view.search"},
-									{"key": "g", "name": "Show source control", "type": "command", "command": "workbench.view.scm"},
-									{"key": "t", "name": "Show test", "type": "command", "command": "workbench.view.extension.test"},
-									{"key": "r", "name": "Show remote explorer", "type": "command", "command": "workbench.view.remote"},
-									{"key": "x", "name": "Show extensions", "type": "command", "command": "workbench.view.extensions"},
-									{"key": "p", "name": "Show problem", "type": "command", "command": "workbench.actions.view.problems"},
-									{"key": "o", "name": "Show output", "type": "command", "command": "workbench.action.output.toggleOutput"},
-									{"key": "d", "name": "Show debug console", "type": "command", "command": "workbench.debug.action.toggleRepl"}
+							{
+								"key": "s",
+								"name": "Show...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "e",
+										"name": "Show explorer",
+										"type": "command",
+										"command": "workbench.view.explorer"
+									},
+									{
+										"key": "s",
+										"name": "Show search",
+										"type": "command",
+										"command": "workbench.view.search"
+									},
+									{
+										"key": "g",
+										"name": "Show source control",
+										"type": "command",
+										"command": "workbench.view.scm"
+									},
+									{
+										"key": "t",
+										"name": "Show test",
+										"type": "command",
+										"command": "workbench.view.extension.test"
+									},
+									{
+										"key": "r",
+										"name": "Show remote explorer",
+										"type": "command",
+										"command": "workbench.view.remote"
+									},
+									{
+										"key": "x",
+										"name": "Show extensions",
+										"type": "command",
+										"command": "workbench.view.extensions"
+									},
+									{
+										"key": "p",
+										"name": "Show problem",
+										"type": "command",
+										"command": "workbench.actions.view.problems"
+									},
+									{
+										"key": "o",
+										"name": "Show output",
+										"type": "command",
+										"command": "workbench.action.output.toggleOutput"
+									},
+									{
+										"key": "d",
+										"name": "Show debug console",
+										"type": "command",
+										"command": "workbench.debug.action.toggleRepl"
+									}
 								]
 							},
-							{"key": "w", "name": "Window...", "type": "bindings", "bindings":
-								[
-									{"key": "w", "name": "Toggle editor group", "type": "command", "command": "workbench.action.navigateEditorGroups"},
-									{"key": "-", "name": "Split editor below", "type": "command", "command": "workbench.action.splitEditorOrthogonal"},
-									{"key": "\\", "name": "Split editor right", "type": "command", "command": "workbench.action.splitEditor"},
-									{"key": "h", "name": "Move editor left", "type": "command", "command": "workbench.action.moveEditorToLeftGroup"},
-									{"key": "j", "name": "Move editor down", "type": "command", "command": "workbench.action.moveEditorToBelowGroup"},
-									{"key": "k", "name": "Move editor up", "type": "command", "command": "workbench.action.moveEditorToAboveGroup"},
-									{"key": "l", "name": "Move editor right", "type": "command", "command": "workbench.action.moveEditorToRightGroup"},
-									{"key": "H", "name": "Move editor group left", "type": "command", "command": "workbench.action.moveActiveEditorGroupLeft"},
-									{"key": "J", "name": "Move editor group down", "type": "command", "command": "workbench.action.moveActiveEditorGroupDown"},
-									{"key": "K", "name": "Move editor group up", "type": "command", "command": "workbench.action.moveActiveEditorGroupUp"},
-									{"key": "L", "name": "Move editor group right", "type": "command", "command": "workbench.action.moveActiveEditorGroupRight"},
-									{"key": "t", "name": "Toggle editor group sizes", "type": "command", "command": "workbench.action.toggleEditorWidths"},
-									{"key": "m", "name": "Maximize editor group", "type": "command", "command": "workbench.action.minimizeOtherEditors"},
-									{"key": "M", "name": "Maximize editor group and hide side bar", "type": "command", "command": "workbench.action.maximizeEditor"},
-									{"key": "=", "name": "Reset editor group sizes", "type": "command", "command": "workbench.action.evenEditorWidths"},
-									{"key": "z", "name": "Combine all editors", "type": "command", "command": "workbench.action.joinAllGroups"},
-									{"key": "x", "name": "Close editor group", "type": "command", "command": "workbench.action.closeEditorsInGroup"},
-									{"key": "X", "name": "Close all editor groups", "type": "command", "command": "workbench.action.closeAllGroups"}
+							{
+								"key": "w",
+								"name": "Window...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "w",
+										"name": "Toggle editor group",
+										"type": "command",
+										"command": "workbench.action.navigateEditorGroups"
+									},
+									{
+										"key": "-",
+										"name": "Split editor below",
+										"type": "command",
+										"command": "workbench.action.splitEditorOrthogonal"
+									},
+									{
+										"key": "\\",
+										"name": "Split editor right",
+										"type": "command",
+										"command": "workbench.action.splitEditor"
+									},
+									{
+										"key": "h",
+										"name": "Move editor left",
+										"type": "command",
+										"command": "workbench.action.moveEditorToLeftGroup"
+									},
+									{
+										"key": "j",
+										"name": "Move editor down",
+										"type": "command",
+										"command": "workbench.action.moveEditorToBelowGroup"
+									},
+									{
+										"key": "k",
+										"name": "Move editor up",
+										"type": "command",
+										"command": "workbench.action.moveEditorToAboveGroup"
+									},
+									{
+										"key": "l",
+										"name": "Move editor right",
+										"type": "command",
+										"command": "workbench.action.moveEditorToRightGroup"
+									},
+									{
+										"key": "H",
+										"name": "Move editor group left",
+										"type": "command",
+										"command": "workbench.action.moveActiveEditorGroupLeft"
+									},
+									{
+										"key": "J",
+										"name": "Move editor group down",
+										"type": "command",
+										"command": "workbench.action.moveActiveEditorGroupDown"
+									},
+									{
+										"key": "K",
+										"name": "Move editor group up",
+										"type": "command",
+										"command": "workbench.action.moveActiveEditorGroupUp"
+									},
+									{
+										"key": "L",
+										"name": "Move editor group right",
+										"type": "command",
+										"command": "workbench.action.moveActiveEditorGroupRight"
+									},
+									{
+										"key": "t",
+										"name": "Toggle editor group sizes",
+										"type": "command",
+										"command": "workbench.action.toggleEditorWidths"
+									},
+									{
+										"key": "m",
+										"name": "Maximize editor group",
+										"type": "command",
+										"command": "workbench.action.minimizeOtherEditors"
+									},
+									{
+										"key": "M",
+										"name": "Maximize editor group and hide side bar",
+										"type": "command",
+										"command": "workbench.action.maximizeEditor"
+									},
+									{
+										"key": "=",
+										"name": "Reset editor group sizes",
+										"type": "command",
+										"command": "workbench.action.evenEditorWidths"
+									},
+									{
+										"key": "z",
+										"name": "Combine all editors",
+										"type": "command",
+										"command": "workbench.action.joinAllGroups"
+									},
+									{
+										"key": "x",
+										"name": "Close editor group",
+										"type": "command",
+										"command": "workbench.action.closeEditorsInGroup"
+									},
+									{
+										"key": "X",
+										"name": "Close all editor groups",
+										"type": "command",
+										"command": "workbench.action.closeAllGroups"
+									}
 								]
 							},
-							{"key": "g", "name": "Git...", "type": "bindings", "bindings":
-								[
-									{"key": "s", "name": "Magit: Status", "type": "command", "command": "magit.status"},
-									{"key": "f", "name": "Magit: File...", "type": "command", "command": "magit.file-popup"},
-									{"key": "m", "name": "Magit: Dispatch", "type": "command", "command": "magit.dispatch"},
-									{"key": "d", "name": "Gitlens: Diff...", "type": "bindings", "bindings":
-										[
-											{"key": "w", "name": "Diff working file", "type": "command", "command": "gitlens.diffWithWorking"},
-											{"key": "p", "name": "Diff previous file", "type": "command", "command": "gitlens.diffWithPrevious"},
-											{"key": "n", "name": "Diff next file", "type": "command", "command": "gitlens.diffWithNext"},
-											{"key": "W", "name": "Diff working line", "type": "command", "command": "gitlens.diffLineWithWorking"},
-											{"key": "P", "name": "Diff previous line", "type": "command", "command": "gitlens.diffLineWithPrevious"},
-											{"key": "N", "name": "Diff  next line", "type": "command", "command": "gitlens.diffLineWithNext"}
+							{
+								"key": "g",
+								"name": "Git...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "s",
+										"name": "Magit: Status",
+										"type": "command",
+										"command": "magit.status"
+									},
+									{
+										"key": "f",
+										"name": "Magit: File...",
+										"type": "command",
+										"command": "magit.file-popup"
+									},
+									{
+										"key": "m",
+										"name": "Magit: Dispatch",
+										"type": "command",
+										"command": "magit.dispatch"
+									},
+									{
+										"key": "d",
+										"name": "Gitlens: Diff...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "w",
+												"name": "Diff working file",
+												"type": "command",
+												"command": "gitlens.diffWithWorking"
+											},
+											{
+												"key": "p",
+												"name": "Diff previous file",
+												"type": "command",
+												"command": "gitlens.diffWithPrevious"
+											},
+											{
+												"key": "n",
+												"name": "Diff next file",
+												"type": "command",
+												"command": "gitlens.diffWithNext"
+											},
+											{
+												"key": "W",
+												"name": "Diff working line",
+												"type": "command",
+												"command": "gitlens.diffLineWithWorking"
+											},
+											{
+												"key": "P",
+												"name": "Diff previous line",
+												"type": "command",
+												"command": "gitlens.diffLineWithPrevious"
+											},
+											{
+												"key": "N",
+												"name": "Diff  next line",
+												"type": "command",
+												"command": "gitlens.diffLineWithNext"
+											}
 										]
 									},
-									{"key": "h", "name": "Gitlens: File history", "type": "command", "command": "gitlens.showQuickFileHistory"},
-									{"key": "l", "name": "Gitlens: Repo history", "type": "command", "command": "gitlens.showQuickRepoHistory"},
-									{"key": "b", "name": "Gitlens: Blame", "type": "command", "command": "gitlens.toggleFileBlame"},
-									{"key": "z", "name": "Gitlens: Stash", "type": "command", "command": "gitlens.showQuickStashList"},
-									{"key": "S", "name": "Stag lines", "type": "command", "command": "git.stageSelectedRanges"},
-									{"key": "U", "name": "Unstage lines", "type": "command", "command": "git.unstageSelectedRanges"},
-									{"key": "R", "name": "Revert lines", "type": "command", "command": "git.revertSelectedRanges"}
+									{
+										"key": "h",
+										"name": "Gitlens: File history",
+										"type": "command",
+										"command": "gitlens.showQuickFileHistory"
+									},
+									{
+										"key": "l",
+										"name": "Gitlens: Repo history",
+										"type": "command",
+										"command": "gitlens.showQuickRepoHistory"
+									},
+									{
+										"key": "b",
+										"name": "Gitlens: Blame",
+										"type": "command",
+										"command": "gitlens.toggleFileBlame"
+									},
+									{
+										"key": "z",
+										"name": "Gitlens: Stash",
+										"type": "command",
+										"command": "gitlens.showQuickStashList"
+									},
+									{
+										"key": "S",
+										"name": "Stag lines",
+										"type": "command",
+										"command": "git.stageSelectedRanges"
+									},
+									{
+										"key": "U",
+										"name": "Unstage lines",
+										"type": "command",
+										"command": "git.unstageSelectedRanges"
+									},
+									{
+										"key": "R",
+										"name": "Revert lines",
+										"type": "command",
+										"command": "git.revertSelectedRanges"
+									}
 								]
 							}
 						]
