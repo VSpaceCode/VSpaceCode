@@ -6,11 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- Fix the issue where it cannot be use with Vim command such as `f <spc>` by changing how to key binding of `space`is setup.
+- Add a welcome notification to guide user to install the keybindings.
+- Check user's Vim settings on launch to ensure keybinding is set.
 
 ## [0.2.1] - 2020-05-19
 ### Changed
-- Use `D` to run without debugging instead of `r`
-- Move format document action to file menu with `=` key
+- Use `D` to run without debugging instead of `r`.
+- Move format document action to file menu with `=` key.
 
 ## [0.2.0] - 2020-05-17
 ### Added
