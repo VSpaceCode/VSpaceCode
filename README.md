@@ -8,7 +8,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 
 - Spacemacs like action menu to reduce memorization of shortcuts
 - All menu items are customizable
-- The the menu key is customizable
+- The menu key is customizable
 
 ![Space actions](images/feature.gif)
 
@@ -16,7 +16,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 
 - [VSCode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) (required for default space key)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) (required for default bindings)
-- [edmagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) and its Vim bindings (required for default bindings)
+- [edamagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) and its Vim bindings (required for default bindings)
 
 ## Installation
 After the installation of the extension, a series of prompts in the vscode notification will guide you through the steps to set to setup the key binding for the menu. If you are a VSCode Vim user, the prompts can config the space key in Vim key binding section automatically. However, it will reformat `vim.normalModeKeyBindingsNonRecursive` or `vim.visualModeKeyBindingsNonRecursive` in your `settings.json`. If you want to keep the format, or are not a vim users, you can follow the instructions below to add key bindings manually.
@@ -59,9 +59,52 @@ Add the menu key as follows in `settings.json`. This following example is to let
 ## Customization
 
 ### Change the actions in the menu
-To customize the menu, copy the default `spacecode.bindings` value in `package.json` in this repo and put the updated `spacecode.bindings` config in your own `setting.json`.
+To customize the menu, you can override the menu completely by putting your own `spacecode.bindings` into your `settings.json`.
+An example of a `settings.json` file that overrides space menu is as follows:
+```json
+{
+  "spacecode.bindings": [
+    {
+      "key": "f",
+      "name": "File...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "f",
+          "name": "Open file",
+          "type": "command",
+          "command": "workbench.action.files.openFileFolder"
+        },
+        {
+          "key": "i",
+          "name": "Indentation...",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "i",
+              "name": "Change indentation",
+              "type": "command",
+              "command": "changeEditorIndentation"
+            },
+            {
+              "key": "d",
+              "name": "Detect indentation",
+              "type": "command",
+              "command": "editor.action.detectIndentation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
-> The actions are subject to change before `1.0.0`. If you find something you think it should bind to a particular key, or you want some particular function, please open an issue as a feature request.
+The default value can be found in the `contributes.configuration.spacecode.bindings.default` section of the `package.json` in this repo. You can use the default value as an example to craft your own custom menu.
+
+> The key `q` is reversed to escape the menu.
+
+> The actions are subject to change before `1.0.0`. If you find something you that think it should bind to a particular key, or you want a particular command, please open an issue as a feature request.
 
 ## Release Notes
 
@@ -71,6 +114,6 @@ See [CHANGELOG.md](CHANGELOG.md)
 All feature requests and help are welcome. Please open an issue to track.
 
 ## Credits
-Thanks @kahole for his implementation of quick pick menu in edamagit. 
+Thanks @kahole for his implementation of quick pick menu in edamagit.
 
 Icons made by [Icongeek26](https://www.flaticon.com/authors/icongeek26) from [www.flaticon.com](www.flaticon.com)

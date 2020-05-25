@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add a welcome notification to guide user to install the keybindings.
 - Check user's Vim settings on launch to ensure keybinding is set.
 
+## [0.2.2] - 2020-05-23
+### Fixed
+- Fix an typo in an import statement that can cause the extension to not load on Linux (@Mazurel)
+
 ## [0.2.1] - 2020-05-19
 ### Changed
 - Use `D` to run without debugging instead of `r`.

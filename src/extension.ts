@@ -1,9 +1,9 @@
 import { commands, ExtensionContext, extensions, window, workspace } from 'vscode';
 import { ConfigKey, extensionId, extensionQualifiedId, GlobalState, spaceCmdId } from './constants';
 import { IBindingItem } from './iBindingItem';
+import { createQuickPick } from './menu/menu';
 import MenuItem from './menu/menuItem';
 import { checkVim, showWelcomeScreen } from './messages';
-import { createQuickPick } from './menu/menu';
 
 class SpacecodeCmd {
     private key: string;
