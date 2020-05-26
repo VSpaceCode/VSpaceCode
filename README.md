@@ -10,7 +10,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 - All menu items are customizable
 - The menu key is customizable
 
-![Space actions](images/feature.gif)
+![Space actions](https://media.giphy.com/media/VdDdNbEPrYp282EC3Y/giphy.gif)
 
 ## Requirements
 
