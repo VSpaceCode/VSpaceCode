@@ -73,7 +73,13 @@
 								"bindings": [
 									{
 										"key": "f",
-										"name": "Open file",
+										"name": "Quick open...",
+										"type": "command",
+										"command": "workbench.action.quickOpen"
+									},
+									{
+										"key": "F",
+										"name": "Open file/folder",
 										"type": "command",
 										"command": "workbench.action.files.openFileFolder"
 									},
