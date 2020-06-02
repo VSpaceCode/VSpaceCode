@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use `<spc> /` to find in files like grep
 - Replace `<spc> f f` with quick file open menu
 - Add support to run multiple commands in series
+- Add `<spc> f R` to rename the current file
 
 ### Fixed
 - Fix the invisible space key in menu by replacing it with open box character `␣`.

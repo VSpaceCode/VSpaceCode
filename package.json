@@ -114,6 +114,15 @@
 										"command": "revealFileInOS"
 									},
 									{
+										"key": "R",
+										"name": "Rename file",
+										"type": "commands",
+										"commands": [
+											"workbench.view.explorer",
+											"renameFile"
+										]
+									},
+									{
 										"key": "l",
 										"name": "Change file language",
 										"type": "command",
