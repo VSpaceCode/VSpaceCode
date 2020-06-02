@@ -118,7 +118,7 @@
 										"name": "Rename file",
 										"type": "commands",
 										"commands": [
-											"workbench.view.explorer",
+											"workbench.files.action.showActiveFileInExplorer",
 											"renameFile"
 										]
 									},
