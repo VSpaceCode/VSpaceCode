@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Use `<spc> <spc>` to open command menu
+- Use `<spc> /` to find in files like grep
 
 ### Fixed
 - Fix the invisible space key in menu by replacing it with open box character `␣`.

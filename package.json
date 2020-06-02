@@ -754,6 +754,12 @@
 										"command": "git.revertSelectedRanges"
 									}
 								]
+							},
+							{
+								"key": "/",
+								"name": "Find in files",
+								"type": "command",
+								"command": "workbench.action.findInFiles"
 							}
 						]
 					}
