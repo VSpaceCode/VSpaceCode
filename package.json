@@ -61,6 +61,12 @@
 						"markdownDescription": "The bindings of the space key",
 						"default": [
 							{
+								"key": " ",
+								"name": "Commands...",
+								"type": "command",
+								"command": "workbench.action.showCommands"
+							},
+							{
 								"key": "f",
 								"name": "File...",
 								"type": "bindings",
