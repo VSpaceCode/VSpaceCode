@@ -15,14 +15,14 @@ export function createQuickPick(title: string, items: IMenuItem[]) {
                 acceptListenerDisposable.dispose();
                 resolve();
             }
-            const chosenItems = quickPick.items.filter(i => i.label === quickPick.value);
-            if (chosenItems.length > 0) {
+            const chosenItems = quickPick.items.find(i => i.key === quickPick.value);
+            if (chosenItems) {
                 quickPick.value = '';
                 quickPick.dispose();
                 eventListenerDisposable.dispose();
                 acceptListenerDisposable.dispose();
                 try {
-                    await chosenItems[0].action();
+                    await chosenItems.action();
                     resolve();
                 } catch (error) {
                     reject(error);

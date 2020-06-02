@@ -5,19 +5,23 @@ import { createQuickPick } from "./menu";
 
 export default class MenuItem implements IMenuItem {
     name: string;
-    label: string;
+    key: string;
     type: ActionType;
     command?: string;
     items?: MenuItem[];
 
     constructor(item: IBindingItem) {
         this.name = item.name;
-        this.label = item.key;
+        this.key = item.key;
         this.type = item.type;
         this.command = item.command;
         if (this.type === "bindings" && item.bindings) {
             this.items = MenuItem.createItems(item.bindings);
         }
+    }
+
+    get label() {
+        return this.key === ' ' ? '␣' : this.key;
     }
 
     get description() {
