@@ -123,6 +123,12 @@
 										]
 									},
 									{
+										"key": "o",
+										"name": "Open with...",
+										"type": "command",
+										"command": "explorer.openWith"
+									},
+									{
 										"key": "l",
 										"name": "Change file language",
 										"type": "command",

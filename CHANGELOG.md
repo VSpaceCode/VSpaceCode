@@ -7,17 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- Use `<spc> <spc>` to open command menu
-- Use `<spc> /` to find in files like grep
-- Replace `<spc> f f` with quick file open menu
-- Add support to run multiple commands in series
-- Add `<spc> f R` to rename the current file
+- Use `<spc> <spc>` to open command menu.
+- Use `<spc> /` to find in files like grep.
+- Replace `<spc> f f` with quick file open menu.
+- Add support to run multiple commands in series.
+- Add `<spc> f R` to rename the current file.
+- Add `<spc> f o` to open the current doc with other editor.
 
 ### Fixed
 - Fix the invisible space key in menu by replacing it with open box character `␣`.
 
 ### Changed
-- Change open file/folder from `<spc> f f` to `<spc> f F`
+- Change open file/folder from `<spc> f f` to `<spc> f F`.
 
 ## [0.3.0] - 2020-05-24
 ### Added
