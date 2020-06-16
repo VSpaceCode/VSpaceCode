@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Implemented transient menu
+- Add `<spc> z` for zoom menu
 
 ### Changed
 - `q` is no longer a reserve key to exit menu
