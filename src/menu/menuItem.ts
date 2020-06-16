@@ -1,7 +1,7 @@
 import { commands } from "vscode";
 import { ActionType, IBindingItem, IOverrideBindingItem } from "../iBindingItem";
 import { IMenuItem } from "./iMenuItem";
-import { createQuickPick } from "./menu";
+import { createQuickPick, createTransientQuickPick } from "./menu";
 
 export default class MenuItem implements IMenuItem {
     name: string;
@@ -19,6 +19,8 @@ export default class MenuItem implements IMenuItem {
         this.commands = item.commands;
         if (this.type === ActionType.Bindings && item.bindings) {
             this.items = MenuItem.createItems(item.bindings);
+        } else if (this.type === ActionType.Transient && item.bindings) {
+            this.items = MenuItem.createItems(item.bindings);
         }
     }
 
@@ -31,15 +33,21 @@ export default class MenuItem implements IMenuItem {
         return `\t${this.name}`;
     }
 
-    action(): Thenable<unknown> {
+    async action(): Promise<unknown> {
         if (this.type === ActionType.Command && this.command) {
-            return commands.executeCommand(this.command);
+            return await commands.executeCommand(this.command);
         } else if (this.type === ActionType.Commands && this.commands) {
-            return this.commands.reduce((prev, current) => {
-                return prev.then(() => commands.executeCommand(current));
-            }, Promise.resolve());
+            return await executeCommands(this.commands);
         } else if (this.type === ActionType.Bindings && this.items) {
-            return createQuickPick(this.name, this.items);
+            return await createQuickPick(this.name, this.items);
+        } else if (this.type === ActionType.Transient && this.items) {
+            // optionally execute command/s before transient
+            if (this.commands) {
+                await executeCommands(this.commands);
+            } else if (this.command) {
+                await commands.executeCommand(this.command);
+            }
+            return await createTransientQuickPick(this.name, this.items);
         }
 
         return Promise.reject();
@@ -117,4 +125,10 @@ function createMenuItem(o: IOverrideBindingItem, key: string) {
     } else {
         throw new Error('name or type of the override is undefined');
     }
+}
+
+function executeCommands(cmds: string[]) {
+    return cmds.reduce(
+        (prev, current) => prev.then(() => commands.executeCommand(current)),
+        Promise.resolve()); 
 }
