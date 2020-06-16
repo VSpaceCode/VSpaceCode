@@ -10,9 +10,6 @@ export function createQuickPick(title: string, items: IMenuItem[]) {
         let resolveOnAction = false;
         // Select with single key stroke
         const eventListenerDisposable = quickPick.onDidChangeValue(async () => {
-            if (quickPick.value === 'q') {
-                quickPick.hide();
-            }
             const chosenItems = quickPick.items.find(i => i.key === quickPick.value);
             if (chosenItems) {
                 resolveOnAction = true;
