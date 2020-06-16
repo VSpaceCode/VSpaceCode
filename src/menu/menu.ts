@@ -6,21 +6,17 @@ export function createQuickPick(title: string, items: IMenuItem[]) {
         const quickPick = window.createQuickPick<IMenuItem>();
         quickPick.title = title;
         quickPick.items = items;
-        
+
+        let resolveOnAction = false;
         // Select with single key stroke
         const eventListenerDisposable = quickPick.onDidChangeValue(async () => {
             if (quickPick.value === 'q') {
-                quickPick.dispose();
-                eventListenerDisposable.dispose();
-                acceptListenerDisposable.dispose();
-                resolve();
+                quickPick.hide();
             }
             const chosenItems = quickPick.items.find(i => i.key === quickPick.value);
             if (chosenItems) {
-                quickPick.value = '';
-                quickPick.dispose();
-                eventListenerDisposable.dispose();
-                acceptListenerDisposable.dispose();
+                resolveOnAction = true;
+                quickPick.hide();
                 try {
                     await chosenItems.action();
                     resolve();
@@ -29,14 +25,13 @@ export function createQuickPick(title: string, items: IMenuItem[]) {
                 }
             }
         });
-        
+
         // Select with arrows + enter
         const acceptListenerDisposable = quickPick.onDidAccept(async () => {
             if (quickPick.activeItems.length > 0) {
                 const chosenItems = quickPick.activeItems[0] as IMenuItem;
-                quickPick.dispose();
-                eventListenerDisposable.dispose();
-                acceptListenerDisposable.dispose();
+                resolveOnAction = true;
+                quickPick.hide();
                 try {
                     await chosenItems.action();
                     resolve();
@@ -45,7 +40,17 @@ export function createQuickPick(title: string, items: IMenuItem[]) {
                 }
             }
         });
-        
+
+        const didHideDisposable = quickPick.onDidHide(() => {
+            quickPick.dispose();
+            eventListenerDisposable.dispose();
+            acceptListenerDisposable.dispose();
+            didHideDisposable.dispose();
+            if (!resolveOnAction) {
+                resolve();
+            }
+        });
+
         quickPick.show();
     });
 }
