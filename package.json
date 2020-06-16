@@ -128,6 +128,62 @@
 								]
 							},
 							{
+								"key": "e",
+								"name": "Errors...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": ".",
+										"name": "Error transient",
+										"type": "transient",
+										"bindings": [
+											{
+												"key": "N",
+												"name": "Previous error",
+												"type": "command",
+												"command": "editor.action.marker.prev"
+											},
+											{
+												"key": "n",
+												"name": "Next error",
+												"type": "command",
+												"command": "editor.action.marker.next"
+											},
+											{
+												"key": "p",
+												"name": "Previous error",
+												"type": "command",
+												"command": "editor.action.marker.prev"
+											}
+										]
+									},
+									{
+										"key": "l",
+										"name": "List errors",
+										"type": "command",
+										"command": "workbench.actions.view.problems"
+									},
+									{
+										"key": "N",
+										"name": "Previous error",
+										"type": "command",
+										"command": "editor.action.marker.prev"
+									},
+									{
+										"key": "n",
+										"name": "Next error",
+										"type": "command",
+										"command": "editor.action.marker.next"
+									},
+									{
+										"key": "p",
+										"name": "Previous error",
+										"type": "command",
+										"command": "editor.action.marker.prev"
+									}
+								]
+							},
+							{
 								"key": "f",
 								"name": "File...",
 								"type": "bindings",
