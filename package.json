@@ -67,6 +67,67 @@
 								"command": "workbench.action.showCommands"
 							},
 							{
+								"key": "b",
+								"name": "Buffers/Editors...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "b",
+										"name": "Show all buffers/editors",
+										"type": "command",
+										"command": "workbench.action.showAllEditors"
+									},
+									{
+										"key": "d",
+										"name": "Close active editor",
+										"type": "command",
+										"command": "workbench.action.closeActiveEditor"
+									},
+									{
+										"key": "M",
+										"name": "Close other editors",
+										"type": "command",
+										"command": "workbench.action.closeOtherEditors"
+									},
+									{
+										"key": "n",
+										"name": "Next editor",
+										"type": "command",
+										"command": "workbench.action.nextEditor"
+									},
+									{
+										"key": "p",
+										"name": "Previous editor",
+										"type": "command",
+										"command": "workbench.action.previousEditor"
+									},
+									{
+										"key": "N",
+										"name": "New untitled editor",
+										"type": "command",
+										"command": "workbench.action.files.newUntitledFile"
+									},
+									{
+										"key": "u",
+										"name": "Reopen closed editor",
+										"type": "command",
+										"command": "workbench.action.reopenClosedEditor"
+									},
+									{
+										"key": "P",
+										"name": "Paste clipboard to buffer",
+										"type": "commands",
+										"commands": ["editor.action.selectAll", "editor.action.clipboardPasteAction"]
+									},
+									{
+										"key": "Y",
+										"name": "Copy buffer to clipboard",
+										"type": "commands",
+										"commands": ["editor.action.selectAll", "editor.action.clipboardCopyAction"]
+									}
+								]
+							},
+							{
 								"key": "f",
 								"name": "File...",
 								"type": "bindings",
