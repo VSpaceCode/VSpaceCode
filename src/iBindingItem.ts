@@ -1,7 +1,8 @@
 export const enum ActionType {
     Command = "command",
     Commands = "commands",
-    Bindings = "bindings"
+    Bindings = "bindings",
+    Transient = "transient",
 }
 
 export interface IBindingItem {
