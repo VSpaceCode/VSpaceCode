@@ -777,6 +777,100 @@
 								]
 							},
 							{
+								"key": "z",
+								"name": "Zoom...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "f",
+										"name": "Frame...",
+										"type": "transient",
+										"bindings": [
+											{
+												"key": "+",
+												"name": "Zoom in",
+												"type": "command",
+												"command": "workbench.action.zoomIn"
+											},
+											{
+												"key": "=",
+												"name": "Zoom in",
+												"type": "command",
+												"command": "workbench.action.zoomIn"
+											},
+											{
+												"key": "-",
+												"name": "Zoom out",
+												"type": "command",
+												"command": "workbench.action.zoomOut"
+											},
+											{
+												"key": "0",
+												"name": "Reset zoom",
+												"type": "command",
+												"command": "workbench.action.zoomReset"
+											}
+										]
+									},
+									{
+										"key": "x",
+										"name": "Font...",
+										"type": "transient",
+										"bindings": [
+											{
+												"key": "+",
+												"name": "Zoom in",
+												"type": "command",
+												"command": "editor.action.fontZoomIn"
+											},
+											{
+												"key": "=",
+												"name": "Zoom in",
+												"type": "command",
+												"command": "editor.action.fontZoomIn"
+											},
+											{
+												"key": "-",
+												"name": "Zoom out",
+												"type": "command",
+												"command": "editor.action.fontZoomOut"
+											},
+											{
+												"key": "0",
+												"name": "Reset zoom",
+												"type": "command",
+												"command": "editor.action.fontZoomReset"
+											}
+										]
+									},
+									{
+										"key": "i",
+										"name": "Image preview...",
+										"type": "transient",
+										"bindings": [
+											{
+												"key": "+",
+												"name": "Zoom in",
+												"type": "command",
+												"command": "imagePreview.zoomIn"
+											},
+											{
+												"key": "=",
+												"name": "Zoom in",
+												"type": "command",
+												"command": "imagePreview.zoomIn"
+											},
+											{
+												"key": "-",
+												"name": "Zoom out",
+												"type": "command",
+												"command": "imagePreview.zoomOut"
+											}
+										]
+									}
+								]
+							},
+							{
 								"key": "/",
 								"name": "Find in files",
 								"type": "command",
