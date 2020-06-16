@@ -12,3 +12,13 @@ export interface IBindingItem {
     commands?: string[],
     bindings?: IBindingItem[],
 }
+
+export interface IOverrideBindingItem {
+    keys: string | string[];
+    position?: number;
+    name?: string;
+    type?: ActionType,
+    command?: string,
+    commands?: string[],
+    bindings?: IBindingItem[],
+}

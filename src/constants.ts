@@ -6,6 +6,7 @@ export enum GlobalState {
 }
 export enum ConfigKey {
 	Bindings = "bindings",
+	Overrides = "bindingOverrides",
 	CheckVimConfig = "checkVimConfig",
 }
 export const manualInstallUrl = "https://github.com/stevenguh/spacecode#installation";

@@ -56,10 +56,70 @@ Add the menu key as follows in `settings.json`. This following example is to let
 },
 ```
 
-## Customization
+## Menu Customization
 
-### Change the actions in the menu
-To customize the menu, you can override the menu completely by putting your own `spacecode.bindings` into your `settings.json`.
+There are two ways to customize the menu: incrementally, and from scratch. Incrementally is great for when you only need to modify a few bindings from the default. Customizing from scratch is great for total control and the customization.
+
+> The key `q` is reversed to escape the menu.
+
+> The default bindings are subject to change before `1.0.0`. If you find something you that think it should bind to a particular key by default, or you want a particular command, please open an issue as a feature request.
+
+### Incrementally
+Using this option will allow to you surgically update the default bindings (`spacecode.bindings`). The extension will override bindings sequentially base on `spacecode.bindingOverrides`.
+
+#### Add/Replace
+The following json will replace `<SPC> g s` in the same position if the binding exists in `spacecode.bindings`, and append `s` to menu `<SPC> g` if it doesn't exists. This override will only execute if `<SPC> g` menu exists. An optional `position` key can be used to specified index of where the item should be inserted/moved to.
+
+```jsonc
+{
+  "spacecode.bindingOverrides": [
+    {
+      "keys": "g.s",
+      "name": "Go to line",
+      "type": "command",
+      "command":"workbench.action.gotoLine",
+    }
+  ]
+}
+```
+The following example will replace/append the whole `<SPC> g` menu with one binding `s` in it.
+```jsonc
+{
+  "spacecode.bindingOverrides": [
+    {
+      "keys": "g",
+      "name": "Go...",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "s",
+          "name": "Go to",
+          "type": "command",
+          "command": "workbench.action.gotoLine",   
+        }
+      ]
+    }
+  ]
+}
+```
+If the key binding's key uses character `.` like `<SPC> e .`, you can target that by using an array in the keys like `"keys": ["e", "."]`.
+
+### Removal
+Any negative number in position is denoting a removal operation. In the following example, any item bound to `<SPC> g s` will be remove.
+```jsonc
+{
+  "spacecode.bindingOverrides": [
+    {
+      "keys": "g.s",
+      "position": -1,
+    }
+  ]
+}
+```
+
+### From Scratch
+To customize the menu items from scratch, you can override the menu completely by putting your own `spacecode.bindings` into your `settings.json`. Using this option will prevent any update to your own bindings.
+
 An example of a `settings.json` file that overrides space menu is as follows:
 ```json
 {
@@ -101,10 +161,6 @@ An example of a `settings.json` file that overrides space menu is as follows:
 ```
 
 The default value can be found in the `contributes.configuration.spacecode.bindings.default` section of the `package.json` in this repo. You can use the default value as an example to craft your own custom menu.
-
-> The key `q` is reversed to escape the menu.
-
-> The actions are subject to change before `1.0.0`. If you find something you that think it should bind to a particular key, or you want a particular command, please open an issue as a feature request.
 
 ## Release Notes
 

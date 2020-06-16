@@ -1,25 +1,24 @@
 import { commands, ExtensionContext, extensions, window, workspace } from 'vscode';
 import { ConfigKey, extensionId, extensionQualifiedId, GlobalState, spaceCmdId } from './constants';
-import { IBindingItem } from './iBindingItem';
+import { IBindingItem, IOverrideBindingItem } from './iBindingItem';
 import { createQuickPick } from './menu/menu';
 import MenuItem from './menu/menuItem';
 import { checkVim, showWelcomeScreen } from './messages';
 
 class SpacecodeCmd {
-    private key: string;
     private items?: MenuItem[];
 
-    constructor(key: string) {
-        this.key = key;
-    }
-
     load() {
-        const bindings = workspace.getConfiguration(extensionId).get<IBindingItem[]>(this.key);
+        const config = workspace.getConfiguration(extensionId);
+        const bindings = config.get<IBindingItem[]>(ConfigKey.Bindings);
         if (bindings) {
             this.items = MenuItem.createItems(bindings);
         } else {
             this.items = undefined;
         }
+
+        const overrides = config.get<IOverrideBindingItem[]>(ConfigKey.Overrides);
+        MenuItem.overrideItems(this.items, overrides);
     }
 
     execute() {
@@ -32,7 +31,7 @@ class SpacecodeCmd {
 }
 
 export function activate(context: ExtensionContext) {
-    const cmd = new SpacecodeCmd(ConfigKey.Bindings);
+    const cmd = new SpacecodeCmd();
     cmd.load();
 
     workspace.onDidChangeConfiguration((e) => {

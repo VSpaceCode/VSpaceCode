@@ -783,6 +783,10 @@
 								"command": "workbench.action.findInFiles"
 							}
 						]
+					},
+					"spacecode.bindingOverrides": {
+						"type": "array",
+						"markdownDescription": "Overrides bindings of the (default) space key"
 					}
 				}
 			}
