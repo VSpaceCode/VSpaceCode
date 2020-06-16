@@ -104,7 +104,7 @@ The following example will replace/append the whole `<SPC> g` menu with one bind
 ```
 If the key binding's key uses character `.` like `<SPC> e .`, you can target that by using an array in the keys like `"keys": ["e", "."]`.
 
-### Removal
+#### Removal
 Any negative number in position is denoting a removal operation. In the following example, any item bound to `<SPC> g s` will be remove.
 ```jsonc
 {
