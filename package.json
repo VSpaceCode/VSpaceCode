@@ -875,6 +875,54 @@
 								"name": "Find in files",
 								"type": "command",
 								"command": "workbench.action.findInFiles"
+							},
+							{
+								"key": "1",
+								"name": "Focus 1st editor group",
+								"type": "command",
+								"command": "workbench.action.focusFirstEditorGroup"
+							},
+							{
+								"key": "2",
+								"name": "Focus 2nd editor group",
+								"type": "command",
+								"command": "workbench.action.focusSecondEditorGroup"
+							},
+							{
+								"key": "3",
+								"name": "Focus 3rd editor group",
+								"type": "command",
+								"command": "workbench.action.focusThirdEditorGroup"
+							},
+							{
+								"key": "4",
+								"name": "Focus 4th editor group",
+								"type": "command",
+								"command": "workbench.action.focusFourthEditorGroup"
+							},
+							{
+								"key": "5",
+								"name": "Focus 5th editor group",
+								"type": "command",
+								"command": "workbench.action.focusFifthEditorGroup"
+							},
+							{
+								"key": "6",
+								"name": "Focus 6th editor group",
+								"type": "command",
+								"command": "workbench.action.focusSixthEditorGroup"
+							},
+							{
+								"key": "7",
+								"name": "Focus 7th editor group",
+								"type": "command",
+								"command": "workbench.action.focusSeventhEditorGroup"
+							},
+							{
+								"key": "8",
+								"name": "Focus 8th editor group",
+								"type": "command",
+								"command": "workbench.action.focusEighthEditorGroup"
 							}
 						]
 					},
