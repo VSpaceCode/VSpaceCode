@@ -26,6 +26,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   + Use `O` instead of `c` to open recursively
   + Use `G` instead of `R` to open all regions
   + Use `r` instead of `A` to open all
+- Change the debug bindings to be more aligned with spcaemacs
+  + Use `s` instead of `o` for step over
+  + use `o` instead of `O` for step out
+  + Add `v` for REPL
+  + Add `w` to focus on watch window
+  + Add `W` to add to watch
 
 ## [0.3.2] - 2020-06-19
 ### Changed

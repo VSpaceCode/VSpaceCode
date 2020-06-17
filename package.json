@@ -521,13 +521,13 @@
 										"command": "workbench.action.debug.stepInto"
 									},
 									{
-										"key": "o",
+										"key": "s",
 										"name": "Step over",
 										"type": "command",
 										"command": "workbench.action.debug.stepOver"
 									},
 									{
-										"key": "O",
+										"key": "o",
 										"name": "Step out",
 										"type": "command",
 										"command": "workbench.action.debug.stepOut"
@@ -549,6 +549,24 @@
 										"name": "Jump to cursor",
 										"type": "command",
 										"command": "debug.jumpToCursor"
+									},
+									{
+										"key": "v",
+										"name": "REPL",
+										"type": "command",
+										"command": "workbench.debug.action.toggleRepl"
+									},
+									{
+										"key": "w",
+										"name": "Focus on watch window",
+										"type": "command",
+										"command": "workbench.debug.action.focusWatchView"
+									},
+									{
+										"key": "W",
+										"name": "Add to watch",
+										"type": "command",
+										"command": "editor.debug.action.selectionToWatch"
 									}
 								]
 							},
