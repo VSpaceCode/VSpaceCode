@@ -1110,13 +1110,13 @@
 										"type": "transient",
 										"bindings": [
 											{
-												"key": "+",
+												"key": "=",
 												"name": "Zoom in",
 												"type": "command",
 												"command": "workbench.action.zoomIn"
 											},
 											{
-												"key": "=",
+												"key": "+",
 												"name": "Zoom in",
 												"type": "command",
 												"command": "workbench.action.zoomIn"
@@ -1141,13 +1141,13 @@
 										"type": "transient",
 										"bindings": [
 											{
-												"key": "+",
+												"key": "=",
 												"name": "Zoom in",
 												"type": "command",
 												"command": "editor.action.fontZoomIn"
 											},
 											{
-												"key": "=",
+												"key": "+",
 												"name": "Zoom in",
 												"type": "command",
 												"command": "editor.action.fontZoomIn"
@@ -1172,13 +1172,13 @@
 										"type": "transient",
 										"bindings": [
 											{
-												"key": "+",
+												"key": "=",
 												"name": "Zoom in",
 												"type": "command",
 												"command": "imagePreview.zoomIn"
 											},
 											{
-												"key": "=",
+												"key": "+",
 												"name": "Zoom in",
 												"type": "command",
 												"command": "imagePreview.zoomIn"
