@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- Implemented transient menu
+- Implement transient menu
 - Add `<spc> z` for zoom menu
 - Add `<spc> 1...8` to focus different editor groups
 - Add `<spc> b` for buffers/editors menu
@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> !` to show terminal
 
 ### Changed
-- `q` is no longer a reserve key to exit menu
+- `q` is no longer a reserved key to exit menu
 - Change the bindings and names in the fold menu to be more aligned with spacemacs
   + Use `c` instead of `f` to close at a point
   + Use `g` instead of `r` to close all regions
