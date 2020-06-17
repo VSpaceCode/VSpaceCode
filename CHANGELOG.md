@@ -19,6 +19,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - `q` is no longer a reserved key to exit menu
+- Change the editor menu (`e`) to be text (`x`) menu to be more aligned with spacemacs
+  + Add `u` to transform text to lower case
+  + Add `U` to transform text to upper case
+  + Add `J` to move lines down with a transient menu
+  + Add `K` to move lines up with a transient menu
+  + Add lines (`l`) sub-menu
+    * Add `s` to sort lines ascendingly
+    * Add `S` to sort lines decendingly
+    * Add `d` to duplicate lines down
+    * Add `D` to duplicate lines up
+  + Add delete (`d`) sub-menu
+    * Add `w` to trim trailing whitespace
 - Change the bindings and names in the fold menu to be more aligned with spacemacs
   + Use `c` instead of `f` to close at a point
   + Use `g` instead of `r` to close all regions
