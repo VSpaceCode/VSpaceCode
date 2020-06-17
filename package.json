@@ -724,18 +724,36 @@
 								"bindings": [
 									{
 										"key": "w",
-										"name": "Toggle editor group",
+										"name": "Focus next editor group",
 										"type": "command",
-										"command": "workbench.action.navigateEditorGroups"
+										"command": "workbench.action.focusNextGroup"
+									},
+									{
+										"key": "W",
+										"name": "Focus previous editor group",
+										"type": "command",
+										"command": "workbench.action.focusPreviousGroup"
 									},
 									{
 										"key": "-",
 										"name": "Split editor below",
 										"type": "command",
-										"command": "workbench.action.splitEditorOrthogonal"
+										"command": "workbench.action.splitEditorDown"
 									},
 									{
-										"key": "\\",
+										"key": "/",
+										"name": "Split editor right",
+										"type": "command",
+										"command": "workbench.action.splitEditor"
+									},
+									{
+										"key": "s",
+										"name": "Split editor below",
+										"type": "command",
+										"command": "workbench.action.splitEditorDown"
+									},
+									{
+										"key": "v",
 										"name": "Split editor right",
 										"type": "command",
 										"command": "workbench.action.splitEditor"
@@ -744,25 +762,25 @@
 										"key": "h",
 										"name": "Move editor left",
 										"type": "command",
-										"command": "workbench.action.moveEditorToLeftGroup"
+										"command": "workbench.action.focusPreviousGroup"
 									},
 									{
 										"key": "j",
 										"name": "Move editor down",
 										"type": "command",
-										"command": "workbench.action.moveEditorToBelowGroup"
+										"command": "workbench.action.focusBelowGroup"
 									},
 									{
 										"key": "k",
 										"name": "Move editor up",
 										"type": "command",
-										"command": "workbench.action.moveEditorToAboveGroup"
+										"command": "workbench.action.focusAboveGroup"
 									},
 									{
 										"key": "l",
 										"name": "Move editor right",
 										"type": "command",
-										"command": "workbench.action.moveEditorToRightGroup"
+										"command": "workbench.action.focusNextGroup"
 									},
 									{
 										"key": "H",
@@ -819,13 +837,13 @@
 										"command": "workbench.action.joinAllGroups"
 									},
 									{
-										"key": "x",
+										"key": "d",
 										"name": "Close editor group",
 										"type": "command",
 										"command": "workbench.action.closeEditorsInGroup"
 									},
 									{
-										"key": "X",
+										"key": "x",
 										"name": "Close all editor groups",
 										"type": "command",
 										"command": "workbench.action.closeAllGroups"

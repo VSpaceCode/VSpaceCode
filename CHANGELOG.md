@@ -33,6 +33,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   + Add `v` for REPL
   + Add `w` to focus on watch window
   + Add `W` to add to watch
+- Change the window bindings to be more aligned with spacemacs
+  + Use `/` instead of `\` for splitting editor editor right
+  + Use `d` instead of `x` for closing editors in group
+  + Change `h` to focus on the left pane
+  + Change `j` to focus on the pane below
+  + Change `k` to focus on the pane above
+  + Change `l` to focus on the right pane
+  + Add `s` to split editor below
+  + Add `v` to split editor right
+  + Add `W` to focus previous editor group
+
+To get the old window pane behavior for `h`, `j`, `k` and `l` one can add the following overrides to your `settings.json`
+```json
+"spacecode.bindingOverrides": [
+    {
+        "keys": "w.h",
+        "name": "Move editor left",
+        "type": "command",
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "keys": "w.j",
+        "name": "Move editor down",
+        "type": "command",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        "keys": "w.k",
+        "name": "Move editor up",
+        "type": "command",
+        "command": "workbench.action.moveEditorToAboveGroup"
+    },
+    {
+        "keys": "w.l",
+        "name": "Move editor right",
+        "type": "command",
+        "command": "workbench.action.moveEditorToRightGroup"
+    }
+]
+```
 
 ## [0.3.2] - 2020-06-19
 ### Changed
