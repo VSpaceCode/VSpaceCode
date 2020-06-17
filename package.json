@@ -349,52 +349,58 @@
 										"type": "bindings",
 										"bindings": [
 											{
-												"key": "f",
-												"name": "Fold",
+												"key": "a",
+												"name": "Toggle: around a point",
+												"type": "command",
+												"command": "editor.toggleFold"
+											},
+											{
+												"key": "c",
+												"name": "Close: at a point",
 												"type": "command",
 												"command": "editor.fold"
 											},
 											{
-												"key": "F",
-												"name": "Unfold",
-												"type": "command",
-												"command": "editor.unfold"
-											},
-											{
-												"key": "a",
-												"name": "Fold all",
-												"type": "command",
-												"command": "editor.foldAll"
-											},
-											{
-												"key": "A",
-												"name": "Unfold all",
-												"type": "command",
-												"command": "editor.unfoldAll"
-											},
-											{
-												"key": "r",
-												"name": "Fold all regions",
-												"type": "command",
-												"command": "editor.foldAllMarkerRegions"
-											},
-											{
-												"key": "R",
-												"name": "Unfold all regions",
-												"type": "command",
-												"command": "editor.unfoldAllMarkerRegions"
-											},
-											{
 												"key": "b",
-												"name": "Fold all block comments",
+												"name": "Close: all block comments",
 												"type": "command",
 												"command": "editor.foldAllBlockComments"
 											},
 											{
-												"key": "c",
-												"name": "Unfold recursively",
+												"key": "g",
+												"name": "Close: all regions",
+												"type": "command",
+												"command": "editor.foldAllMarkerRegions"
+											},
+											{
+												"key": "m",
+												"name": "Close: all",
+												"type": "command",
+												"command": "editor.foldAll"
+											},
+											{
+												"key": "o",
+												"name": "Open: at a point",
+												"type": "command",
+												"command": "editor.unfold"
+											},
+											{
+												"key": "O",
+												"name": "Open: recursively",
 												"type": "command",
 												"command": "editor.unfoldRecursively"
+											},
+											{
+												"key": "G",
+												"name": "Open: all regions",
+												"type": "command",
+												"command": "editor.unfoldAllMarkerRegions"
+											},
+											{
+												"key": "r",
+												"name": "Open: all",
+												"type": "command",
+												"command": "editor.unfoldAll"
 											}
 										]
 									},
