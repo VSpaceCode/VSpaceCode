@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - `q` is no longer a reserved key to exit menu
+- Move fold to `<spc> z .` to be more aligned with spacemacs
 - Change the editor menu (`e`) to be text (`x`) menu to be more aligned with spacemacs
   + Add `u` to transform text to lower case
   + Add `U` to transform text to upper case

@@ -464,67 +464,6 @@
 										]
 									},
 									{
-										"key": "z",
-										"name": "Fold...",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "a",
-												"name": "Toggle: around a point",
-												"type": "command",
-												"command": "editor.toggleFold"
-											},
-											{
-												"key": "c",
-												"name": "Close: at a point",
-												"type": "command",
-												"command": "editor.fold"
-											},
-											{
-												"key": "b",
-												"name": "Close: all block comments",
-												"type": "command",
-												"command": "editor.foldAllBlockComments"
-											},
-											{
-												"key": "g",
-												"name": "Close: all regions",
-												"type": "command",
-												"command": "editor.foldAllMarkerRegions"
-											},
-											{
-												"key": "m",
-												"name": "Close: all",
-												"type": "command",
-												"command": "editor.foldAll"
-											},
-											{
-												"key": "o",
-												"name": "Open: at a point",
-												"type": "command",
-												"command": "editor.unfold"
-											},
-											{
-												"key": "O",
-												"name": "Open: recursively",
-												"type": "command",
-												"command": "editor.unfoldRecursively"
-											},
-											{
-												"key": "G",
-												"name": "Open: all regions",
-												"type": "command",
-												"command": "editor.unfoldAllMarkerRegions"
-											},
-											{
-												"key": "r",
-												"name": "Open: all",
-												"type": "command",
-												"command": "editor.unfoldAll"
-											}
-										]
-									},
-									{
 										"key": "m",
 										"name": "Merge conflict...",
 										"type": "bindings",
@@ -1101,9 +1040,70 @@
 							},
 							{
 								"key": "z",
-								"name": "Zoom...",
+								"name": "Zoom/Fold...",
 								"type": "bindings",
 								"bindings": [
+									{
+										"key": ".",
+										"name": "Fold...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "a",
+												"name": "Toggle: around a point",
+												"type": "command",
+												"command": "editor.toggleFold"
+											},
+											{
+												"key": "c",
+												"name": "Close: at a point",
+												"type": "command",
+												"command": "editor.fold"
+											},
+											{
+												"key": "b",
+												"name": "Close: all block comments",
+												"type": "command",
+												"command": "editor.foldAllBlockComments"
+											},
+											{
+												"key": "g",
+												"name": "Close: all regions",
+												"type": "command",
+												"command": "editor.foldAllMarkerRegions"
+											},
+											{
+												"key": "m",
+												"name": "Close: all",
+												"type": "command",
+												"command": "editor.foldAll"
+											},
+											{
+												"key": "o",
+												"name": "Open: at a point",
+												"type": "command",
+												"command": "editor.unfold"
+											},
+											{
+												"key": "O",
+												"name": "Open: recursively",
+												"type": "command",
+												"command": "editor.unfoldRecursively"
+											},
+											{
+												"key": "G",
+												"name": "Open: all regions",
+												"type": "command",
+												"command": "editor.unfoldAllMarkerRegions"
+											},
+											{
+												"key": "r",
+												"name": "Open: all",
+												"type": "command",
+												"command": "editor.unfoldAll"
+											}
+										]
+									},
 									{
 										"key": "f",
 										"name": "Frame...",
