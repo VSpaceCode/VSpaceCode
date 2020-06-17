@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> v` for smart selection
 - Add `<spc> *` to find all references
 - Add `<spc> !` to show terminal
+- Add `<spc> i` for insert menu
 
 ### Changed
 - `q` is no longer a reserved key to exit menu
