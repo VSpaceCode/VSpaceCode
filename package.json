@@ -327,8 +327,8 @@
 								]
 							},
 							{
-								"key": "e",
-								"name": "Editor...",
+								"key": "x",
+								"name": "Text...",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -363,9 +363,105 @@
 									},
 									{
 										"key": "s",
-										"name": "Select all occurance",
+										"name": "Select all occurrence",
 										"type": "command",
 										"command": "editor.action.selectHighlights"
+									},
+									{
+										"key": "u",
+										"name": "To lower case",
+										"type": "command",
+										"command": "editor.action.transformToLowercase"
+									},
+									{
+										"key": "U",
+										"name": "To upper case",
+										"type": "command",
+										"command": "editor.action.transformToUppercase"
+									},
+									{
+										"key": "J",
+										"name": "Move lines down",
+										"type": "transient",
+										"command": "editor.action.moveLinesDownAction",
+										"bindings": [
+											{
+												"key": "J",
+												"name": "Move lines down",
+												"type": "command",
+												"command": "editor.action.moveLinesDownAction"
+											},
+											{
+												"key": "K",
+												"name": "Move lines up",
+												"type": "command",
+												"command": "editor.action.moveLinesUpAction"
+											}
+										]
+									},
+									{
+										"key": "K",
+										"name": "Move lines up",
+										"type": "transient",
+										"command": "editor.action.moveLinesUpAction",
+										"bindings": [
+											{
+												"key": "J",
+												"name": "Move lines down",
+												"type": "command",
+												"command": "editor.action.moveLinesDownAction"
+											},
+											{
+												"key": "K",
+												"name": "Move lines up",
+												"type": "command",
+												"command": "editor.action.moveLinesUpAction"
+											}
+										]
+									},
+									{
+										"key": "l",
+										"name": "Lines...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "s",
+												"name": "Sort lines ascendingly",
+												"type": "command",
+												"command": "editor.action.sortLinesAscending"
+											},
+											{
+												"key": "S",
+												"name": "Sort lines descendingly",
+												"type": "command",
+												"command": "editor.action.sortLinesDescending"
+											},
+											{
+												"key": "d",
+												"name": "Duplicate lines down",
+												"type": "command",
+												"command": "editor.action.copyLinesDownAction"
+											},
+											{
+												"key": "D",
+												"name": "Duplicate lines up",
+												"type": "command",
+												"command": "editor.action.copyLinesUpAction"
+											}
+										]
+									},
+									{
+										"key": "d",
+										"name": "Delete...",
+										"type": "bindings",
+										"bindings" : [
+											{
+												"key": "w",
+												"name": "Delete trailing whitespace",
+												"type": "command",
+												"command": "editor.action.trimTrailingWhitespace"
+											}
+										]
 									},
 									{
 										"key": "z",
