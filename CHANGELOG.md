@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> e` for errors menu
 - Add `<spc> v` for smart selection
 - Add `<spc> *` to find all references
+- Add `<spc> !` to show terminal
 
 ### Changed
 - `q` is no longer a reserve key to exit menu

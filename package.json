@@ -988,6 +988,12 @@
 								]
 							},
 							{
+								"key": "!",
+								"name": "Show terminal",
+								"type": "command",
+								"command": "workbench.action.terminal.focus"
+							},
+							{
 								"key": "*",
 								"name": "Find all references",
 								"type": "command",
