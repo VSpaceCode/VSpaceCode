@@ -18,6 +18,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - `q` is no longer a reserve key to exit menu
+- Change the bindings and names in the fold menu to be more aligned with spacemacs
+  + Use `c` instead of `f` to close at a point
+  + Use `g` instead of `r` to close all regions
+  + Use `m` instead of `a` to close all
+  + Use `o` instead of `F` to open at a point
+  + Use `O` instead of `c` to open recursively
+  + Use `G` instead of `R` to open all regions
+  + Use `r` instead of `A` to open all
 
 ## [0.3.2] - 2020-06-19
 ### Changed
