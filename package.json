@@ -225,10 +225,16 @@
 										"command": "workbench.action.files.saveAll"
 									},
 									{
-										"key": "r",
-										"name": "Reveal file",
+										"key": "l",
+										"name": "Locate file",
 										"type": "command",
 										"command": "revealFileInOS"
+									},
+									{
+										"key": "r",
+										"name": "Open recent...",
+										"type": "command",
+										"command": "workbench.action.openRecent"
 									},
 									{
 										"key": "R",
@@ -238,6 +244,24 @@
 											"workbench.files.action.showActiveFileInExplorer",
 											"renameFile"
 										]
+									},
+									{
+										"key": "t",
+										"name": "Toggle explore view",
+										"type": "command",
+										"commands": "workbench.view.explorer"
+									},
+									{
+										"key": "T",
+										"name": "Show active file in explore",
+										"type": "command",
+										"commands": "workbench.view.explorer"
+									},
+									{
+										"key": "y",
+										"name": "Copy path of active file",
+										"type": "command",
+										"commands": "workbench.action.files.copyPathOfActiveFile"
 									},
 									{
 										"key": "o",

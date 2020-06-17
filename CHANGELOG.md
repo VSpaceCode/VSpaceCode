@@ -33,6 +33,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   + Add `v` for REPL
   + Add `w` to focus on watch window
   + Add `W` to add to watch
+- Change the file bindings to be more aligned with spacemacs
+  + Use `l` instead `r` to reval file in os
+  + Use `r` to open recent
+  + Add `t` to toggle explore view
+  + Add `T` to show active file in explore
+  + Add `y` to copy the path of the active file
 - Change the window bindings to be more aligned with spacemacs
   + Use `/` instead of `\` for splitting editor editor right
   + Use `d` instead of `x` for closing editors in group
