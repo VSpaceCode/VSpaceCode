@@ -994,6 +994,26 @@
 								"command": "workbench.action.findInFiles"
 							},
 							{
+								"key": "v",
+								"name": "Smart select/expand region",
+								"type": "transient",
+								"command": "editor.action.smartSelect.grow",
+								"bindings": [
+									{
+										"key": "v",
+										"name": "Grow selection",
+										"type": "command",
+										"command": "editor.action.smartSelect.grow"
+									},
+									{
+										"key": "V",
+										"name": "Shrink selection",
+										"type": "command",
+										"command": "editor.action.smartSelect.shrink"
+									}
+								]
+							},
+							{
 								"key": "1",
 								"name": "Focus 1st editor group",
 								"type": "command",
