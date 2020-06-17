@@ -721,12 +721,6 @@
 								"type": "bindings",
 								"bindings": [
 									{
-										"key": "f",
-										"name": "Toggle fold",
-										"type": "command",
-										"command": "editor.toggleFold"
-									},
-									{
 										"key": "c",
 										"name": "Toggle find case sensitive",
 										"type": "command",
@@ -743,7 +737,14 @@
 										"name": "Toggle word wrap",
 										"type": "command",
 										"command": "editor.action.toggleWordWrap"
-									},
+									}
+								]
+							},
+							{
+								"key": "T",
+								"name": "UI toggles...",
+								"type": "bindings",
+								"bindings": [
 									{
 										"key": "b",
 										"name": "Toggle side bar visbility",
@@ -757,6 +758,18 @@
 										"command": "workbench.action.togglePanel"
 									},
 									{
+										"key": "F",
+										"name": "Toggle full screen",
+										"type": "command",
+										"command": "workbench.action.toggleFullScreen"
+									},
+									{
+										"key": "s",
+										"name": "Select theme",
+										"type": "command",
+										"command": "workbench.action.selectTheme"
+									},
+									{
 										"key": "m",
 										"name": "Toggle maximized panel",
 										"type": "command",
@@ -764,6 +777,12 @@
 									},
 									{
 										"key": "t",
+										"name": "Toggle tool/activity bar visibility",
+										"type": "command",
+										"command": "workbench.action.toggleActivityBarVisibility"
+									},
+									{
+										"key": "T",
 										"name": "Toggle tab visibility",
 										"type": "command",
 										"command": "workbench.action.toggleTabsVisibility"
