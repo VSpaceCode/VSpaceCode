@@ -560,6 +560,75 @@
 							},
 							{
 								"key": "s",
+								"name": "Search/Symbol...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "e",
+										"name": "Edit symbol",
+										"type": "command",
+										"command": "editor.action.rename"
+									},
+									{
+										"key": "h",
+										"name": "Hightlight symbol",
+										"type": "transient",
+										"command": "editor.action.wordHighlight.trigger",
+										"bindings": [
+											{
+												"key": "p",
+												"name": "Previous occurrence",
+												"type": "command",
+												"command": "editor.action.wordHighlight.prev"
+											},
+											{
+												"key": "N",
+												"name": "Previous occurrence",
+												"type": "command",
+												"command": "editor.action.wordHighlight.prev"
+											},
+											{
+												"key": "n",
+												"name": "Next occurrence",
+												"type": "command",
+												"command": "editor.action.wordHighlight.next"
+											},
+											{
+												"key": "/",
+												"name": "Search in a project with a selection",
+												"type": "commands",
+												"commands": ["editor.action.addSelectionToNextFindMatch", "workbench.action.findInFiles"]
+											}
+										]
+									},
+									{
+										"key": "j",
+										"name": "Find all references",
+										"type": "command",
+										"command": "editor.action.referenceSearch.trigger"
+									},
+									{
+										"key": "p",
+										"name": "Search in a project",
+										"type": "command",
+										"command": "workbench.action.findInFiles"
+									},
+									{
+										"key": "P",
+										"name": "Search in a project with a selection",
+										"type": "commands",
+										"commands": ["editor.action.addSelectionToNextFindMatch", "workbench.action.findInFiles"]
+									},
+									{
+										"key": "s",
+										"name": "Search in current file",
+										"type": "command",
+										"command": "actions.find"
+									}
+								]
+							},
+							{
+								"key": "S",
 								"name": "Show...",
 								"type": "bindings",
 								"bindings": [
@@ -866,12 +935,6 @@
 										"name": "Find all references",
 										"type": "command",
 										"command": "editor.action.referenceSearch.trigger"
-									},
-									{
-										"key": "s",
-										"name": "Select all occurrence",
-										"type": "command",
-										"command": "editor.action.selectHighlights"
 									},
 									{
 										"key": "u",
@@ -1200,16 +1263,16 @@
 								"command": "workbench.action.terminal.focus"
 							},
 							{
-								"key": "*",
-								"name": "Find all references",
-								"type": "command",
-								"command": "editor.action.referenceSearch.trigger"
-							},
-							{
 								"key": "/",
-								"name": "Find in files",
+								"name": "Search in a project",
 								"type": "command",
 								"command": "workbench.action.findInFiles"
+							},
+							{
+								"key": "*",
+								"name": "Search in a project with a selection",
+								"type": "commands",
+								"commands": ["editor.action.addSelectionToNextFindMatch", "workbench.action.findInFiles"]
 							},
 							{
 								"key": "v",

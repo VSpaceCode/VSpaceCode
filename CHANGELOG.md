@@ -13,13 +13,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> b` for buffers/editors menu
 - Add `<spc> e` for errors menu
 - Add `<spc> v` for smart selection
-- Add `<spc> *` to find all references
+- Add `<spc> *` to search with input
 - Add `<spc> !` to show terminal
 - Add `<spc> i` for insert menu
+- Add `<spc> s` for search/symbol menu
 
 ### Changed
 - `q` is no longer a reserved key to exit menu
 - Move fold to `<spc> z .` to be more aligned with spacemacs
+- Move Show (`s`) menu to `S` for the addition of search/symbol menu
 - Change the editor menu (`e`) to be text (`x`) menu to be more aligned with spacemacs
   + Add `u` to transform text to lower case
   + Add `U` to transform text to upper case
