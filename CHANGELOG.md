@@ -39,6 +39,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   + Use `O` instead of `c` to open recursively
   + Use `G` instead of `R` to open all regions
   + Use `r` instead of `A` to open all
+- Break up toggles into toggles (`t`) and UI toggles (`T`) to be more aligned with spacemacs
+  + Add `F` to toggle ful screen in UI toggles (`T`)
+  + Add `s` to select theme in UI toggles (`T`)
+  + Change `t` to toggle activity bar visibility in UI toggles (`T`)
+  + Use `T` instead `t` to toggle tab visibility in UI toggles (`T`)
+  + Remove fold `t` in toggles menu (`t`) in favor of the added toggle in the fold menu 
 - Change the debug bindings to be more aligned with spcaemacs
   + Use `s` instead of `o` for step over
   + use `o` instead of `O` for step out
