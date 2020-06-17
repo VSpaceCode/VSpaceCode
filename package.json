@@ -333,7 +333,7 @@
 									},
 									{
 										"key": "a",
-										"name": "Find all reference",
+										"name": "Find all references",
 										"type": "command",
 										"command": "editor.action.referenceSearch.trigger"
 									},
@@ -986,6 +986,12 @@
 										]
 									}
 								]
+							},
+							{
+								"key": "*",
+								"name": "Find all references",
+								"type": "command",
+								"command": "editor.action.referenceSearch.trigger"
 							},
 							{
 								"key": "/",
