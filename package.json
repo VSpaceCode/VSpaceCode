@@ -78,6 +78,12 @@
 										"command": "workbench.action.showAllEditors"
 									},
 									{
+										"key": "B",
+										"name": "Show all buffers/editors in active group",
+										"type": "command",
+										"command": "workbench.action.showEditorsInActiveGroup"
+									},
+									{
 										"key": "d",
 										"name": "Close active editor",
 										"type": "command",
