@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> b` for buffers/editors menu
 - Add `<spc> e` for errors menu
 - Add `<spc> v` for smart selection
+- Add `<spc> *` to find all references
 
 ### Changed
 - `q` is no longer a reserve key to exit menu
