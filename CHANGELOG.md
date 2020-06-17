@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> 1...8` to focus different editor groups
 - Add `<spc> b` for buffers/editors menu
 - Add `<spc> e` for errors menu
+- Add `<spc> v` for smart selection
 
 ### Changed
 - `q` is no longer a reserve key to exit menu
