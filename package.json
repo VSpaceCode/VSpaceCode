@@ -570,6 +570,13 @@
 								"type": "bindings",
 								"bindings": [
 									{
+										"key": "c",
+										"name": "Clear hightlight",
+										"type": "command",
+										"command": "vim.remap",
+										"args": { "commands": [{ "command" :":noh"}] }
+									},
+									{
 										"key": "e",
 										"name": "Edit symbol",
 										"type": "command",
