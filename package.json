@@ -293,12 +293,6 @@
 								"bindings": [
 									{
 										"key": "f",
-										"name": "Quick open...",
-										"type": "command",
-										"command": "workbench.action.quickOpen"
-									},
-									{
-										"key": "F",
 										"name": "Open file/folder",
 										"type": "command",
 										"command": "workbench.action.files.openFileFolder"
@@ -561,6 +555,31 @@
 										"name": "Insert snippet",
 										"type": "command",
 										"command": "editor.action.insertSnippet"
+									}
+								]
+							},
+							{
+								"key": "p",
+								"name": "Project...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "f",
+										"name": "Find file in project...",
+										"type": "command",
+										"command": "workbench.action.quickOpen"
+									},
+									{
+										"key": "p",
+										"name": "Switch project...",
+										"type": "command",
+										"command": "workbench.action.openRecent"
+									},
+									{
+										"key": "t",
+										"name": "Toggle explore view",
+										"type": "command",
+										"commands": "workbench.view.explorer"
 									}
 								]
 							},

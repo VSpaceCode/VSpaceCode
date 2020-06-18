@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> !` to show terminal
 - Add `<spc> i` for insert menu
 - Add `<spc> s` for search/symbol menu
+- Add `<spc> p` for project menu
 - Implement `args` key in the bindings to executes command(s) with args
 For example, the follow the binding will map `y` in the menu to `y y` in vim to yank a line by passing a `args` for that command.
 ```jsonc
@@ -46,6 +47,7 @@ In this example: Only the second command has args. When `args` is used with `com
 
 ### Changed
 - `q` is no longer a reserved key to exit menu
+- Move the quick open in `<spc> f f` to `<spc> p f` to be more aligned with spacemacs
 - Move fold to `<spc> z .` to be more aligned with spacemacs
 - Move Show (`s`) menu to `S` for the addition of search/symbol menu
 - Change the editor menu (`e`) to be text (`x`) menu to be more aligned with spacemacs
