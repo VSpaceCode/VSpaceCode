@@ -102,7 +102,7 @@ export function createTransientQuickPick(title: string, items: IMenuItem[]) {
 
         function reshowQuickPick() {
             quickPick.value = '';
-            quickPick.items = [...quickPick.items];
+            quickPick.items = quickPick.items;
             quickPick.show();
         }
 
