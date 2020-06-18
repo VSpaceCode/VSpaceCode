@@ -10,6 +10,7 @@ export default class MenuItem implements IMenuItem {
     command?: string;
     commands?: string[];
     items?: MenuItem[];
+    args?: any;
 
     constructor(item: IBindingItem) {
         this.name = item.name;
@@ -17,6 +18,7 @@ export default class MenuItem implements IMenuItem {
         this.type = item.type;
         this.command = item.command;
         this.commands = item.commands;
+        this.args = item.args;
         if (this.type === ActionType.Bindings && item.bindings) {
             this.items = MenuItem.createItems(item.bindings);
         } else if (this.type === ActionType.Transient && item.bindings) {
@@ -35,17 +37,17 @@ export default class MenuItem implements IMenuItem {
 
     async action(): Promise<unknown> {
         if (this.type === ActionType.Command && this.command) {
-            return await commands.executeCommand(this.command);
+            return await executeCommand(this.command, this.args);
         } else if (this.type === ActionType.Commands && this.commands) {
-            return await executeCommands(this.commands);
+            return await executeCommands(this.commands, this.args);
         } else if (this.type === ActionType.Bindings && this.items) {
             return await createQuickPick(this.name, this.items);
         } else if (this.type === ActionType.Transient && this.items) {
             // optionally execute command/s before transient
             if (this.commands) {
-                await executeCommands(this.commands);
+                await executeCommands(this.commands, this.args);
             } else if (this.command) {
-                await commands.executeCommand(this.command);
+                await executeCommand(this.command, this.args);
             }
             return await createTransientQuickPick(this.name, this.items);
         }
@@ -120,15 +122,30 @@ function createMenuItem(o: IOverrideBindingItem, key: string) {
             type: o.type,
             command: o.command,
             commands: o.commands,
+            args: o.args,
             bindings: o.bindings,
         });
     } else {
         throw new Error('name or type of the override is undefined');
     }
 }
+function executeCommand(cmd: string, args: any) {
+    if (Array.isArray(args)) {
+        const arr = args as any[];
+        return commands.executeCommand(cmd, ...arr);
+    } else if (args) {
+        // undefined from the object chainning/indexing or
+        // null from the json deserialization
+        return commands.executeCommand(cmd, args);
+    } else {
+        return commands.executeCommand(cmd);
+    }
+}
 
-function executeCommands(cmds: string[]) {
-    return cmds.reduce(
-        (prev, current) => prev.then(() => commands.executeCommand(current)),
-        Promise.resolve()); 
+async function executeCommands(cmds: string[], args: any) {
+    for (let i = 0; i < cmds.length; i++) {
+        const cmd = cmds[i];
+        const arg = args?.[i];
+        await executeCommand(cmd, arg);
+    }
 }

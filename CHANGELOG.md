@@ -17,6 +17,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> !` to show terminal
 - Add `<spc> i` for insert menu
 - Add `<spc> s` for search/symbol menu
+- Implement `args` key in the bindings to executes command(s) with args
+For example, the follow the binding will map `y` in the menu to `y y` in vim to yank a line by passing a `args` for that command.
+```jsonc
+{
+    "key": "y",
+    "name": "Yank a line",
+    "type": "command",
+    "command": "vim.remap",
+    "args": {
+      "after": ["y", "y"]
+    }
+},
+```
+In this example: Only the second command has args. When `args` is used with `commands`, the `args` is expected to be an array. If the `null` is not present in the follow example, the first command (`formatDocument`) will receive the second element of `args` instead.
+```jsonc
+{
+    "key": "=",
+    "name": "Yank a line",
+    "type": "commands",
+    "commands": ["editor.action.formatDocument", "vim.remap"],
+    "args": [
+      null,
+      { "after": ["y", "y"]}
+    ]
+},
+```
 
 ### Changed
 - `q` is no longer a reserved key to exit menu

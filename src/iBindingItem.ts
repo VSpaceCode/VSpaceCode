@@ -11,6 +11,7 @@ export interface IBindingItem {
     type: ActionType,
     command?: string,
     commands?: string[],
+    args?: any,
     bindings?: IBindingItem[],
 }
 
@@ -21,5 +22,6 @@ export interface IOverrideBindingItem {
     type?: ActionType,
     command?: string,
     commands?: string[],
+    args?: any,
     bindings?: IBindingItem[],
 }
