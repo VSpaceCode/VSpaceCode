@@ -1,9 +1,9 @@
 {
-	"name": "spacecode",
+	"name": "VSpaceCode",
 	"preview": true,
-	"displayName": "Spacecode",
+	"displayName": "VSpaceCode",
 	"description": "Provide Spacemacs like key bindings in VSCode",
-	"publisher": "stevenguh",
+	"publisher": "VSpaceCode",
 	"author": {
 		"name": "Steven Guh"
 	},
@@ -27,13 +27,13 @@
 		"VSCodeVim"
 	],
 	"license": "SEE LICENSE IN LICENSE.txt",
-	"homepage": "https://github.com/stevenguh/spacecode",
+	"homepage": "https://github.com/VSpaceCode/VSpaceCode",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/stevenguh/spacecode.git"
+		"url": "https://github.com/VSpaceCode/VSpacecode.git"
 	},
 	"bugs": {
-		"url": "https://github.com/stevenguh/spacecode/issues"
+		"url": "https://github.com/VSpaceCode/VSpaceCode/issues"
 	},
 	"activationEvents": [
 		"*"
