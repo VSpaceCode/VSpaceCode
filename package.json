@@ -346,19 +346,19 @@
 										"key": "t",
 										"name": "Toggle explore view",
 										"type": "command",
-										"commands": "workbench.view.explorer"
+										"command": "workbench.view.explorer"
 									},
 									{
 										"key": "T",
 										"name": "Show active file in explore",
 										"type": "command",
-										"commands": "workbench.view.explorer"
+										"command": "workbench.files.action.showActiveFileInExplorer"
 									},
 									{
 										"key": "y",
 										"name": "Copy path of active file",
 										"type": "command",
-										"commands": "workbench.action.files.copyPathOfActiveFile"
+										"command": "workbench.action.files.copyPathOfActiveFile"
 									},
 									{
 										"key": "o",
@@ -579,7 +579,7 @@
 										"key": "t",
 										"name": "Toggle explore view",
 										"type": "command",
-										"commands": "workbench.view.explorer"
+										"command": "workbench.view.explorer"
 									}
 								]
 							},
