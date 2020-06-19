@@ -1,5 +1,5 @@
 {
-	"name": "VSpaceCode",
+	"name": "vspacecode",
 	"preview": true,
 	"displayName": "VSpaceCode",
 	"description": "Provide Spacemacs like key bindings in VSCode",
@@ -42,7 +42,7 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "spacecode.space",
+				"command": "vspacecode.space",
 				"title": "Trigger Spacecode Palette"
 			}
 		],
@@ -51,12 +51,12 @@
 				"title": "Spacecode",
 				"type": "object",
 				"properties": {
-					"spacecode.checkVimConfig": {
+					"vspacecode.checkVimConfig": {
 						"type": "boolean",
 						"markdownDescription": "Check Vim settings on every launch. Uncheck this if you are not using this extension with VSCode Vim.",
 						"default": true
 					},
-					"spacecode.bindings": {
+					"vspacecode.bindings": {
 						"type": "array",
 						"markdownDescription": "The bindings of the space key",
 						"default": [
@@ -784,7 +784,7 @@
 							}
 						]
 					},
-					"spacecode.bindingOverrides": {
+					"vspacecode.bindingOverrides": {
 						"type": "array",
 						"markdownDescription": "Overrides bindings of the (default) space key"
 					}

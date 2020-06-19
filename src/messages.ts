@@ -63,8 +63,8 @@ function showMissingBindingMessage(isNew: boolean) {
 }
 
 export async function checkVim(isNew = false) {
-    const spacecodeConfig = workspace.getConfiguration(extensionId);
-    const shouldCheck = spacecodeConfig.get(ConfigKey.CheckVimConfig);
+    const vspacecodeConfig = workspace.getConfiguration(extensionId);
+    const shouldCheck = vspacecodeConfig.get(ConfigKey.CheckVimConfig);
     if (!shouldCheck) { return; }
 
     const vim = extensions.getExtension(vimExtensionQualifiedId);
@@ -93,7 +93,7 @@ export async function checkVim(isNew = false) {
                     break;
 
                 case MissingVimBindingSelection.StopChecking:
-                    spacecodeConfig.update(ConfigKey.CheckVimConfig, false, ConfigurationTarget.Global);
+                    vspacecodeConfig.update(ConfigKey.CheckVimConfig, false, ConfigurationTarget.Global);
                     break;
             }
         }
@@ -105,7 +105,7 @@ export async function checkVim(isNew = false) {
                 break;
 
             case MissingVimSelection.StopChecking:
-                spacecodeConfig.update(ConfigKey.CheckVimConfig, false, ConfigurationTarget.Global);
+                vspacecodeConfig.update(ConfigKey.CheckVimConfig, false, ConfigurationTarget.Global);
                 break;
         }
     }

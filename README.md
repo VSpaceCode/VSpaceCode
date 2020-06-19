@@ -31,19 +31,19 @@ Add the menu key as follows in `settings.json`. This following example is to let
 "vim.normalModeKeyBindingsNonRecursive": [
   {
     "before": ["<space>"],
-    "commands": ["spacecode.space"]
+    "commands": ["vspacecode.space"]
   }
 ],
 "vim.visualModeKeyBindingsNonRecursive": [
   {
     "before": ["<space>"],
-    "commands": ["spacecode.space"]
+    "commands": ["vspacecode.space"]
   }
 ]
 ```
 
 ### I am *not* using VSCode Vim
-1. Change the `spacecode.checkVimConfig` to `false` in `settings.json` disable vim config checking on startup.
+1. Change the `vspacecode.checkVimConfig` to `false` in `settings.json` disable vim config checking on startup.
 2. Add the trigger as follows in `keybindings.json`. This following json is an example to bind `alt+space` to the action menu when a text editor is in focus.
 
 > To access `keybindings.json`, you can search `Keyboard` in the command list with `Ctl+Shift+P` or `Cmd+Shift+P` and select `Preference: Open Keyboard Shortcuts (JSON)`.
@@ -51,7 +51,7 @@ Add the menu key as follows in `settings.json`. This following example is to let
 ```json
 {
   "key": "alt+space",
-  "command": "spacecode.space",
+  "command": "vspacecode.space",
   "when": "editorTextFocus"
 },
 ```
@@ -65,14 +65,14 @@ There are two ways to customize the menu: incrementally, and from scratch. Incre
 > The default bindings are subject to change before `1.0.0`. If you find something you that think it should bind to a particular key by default, or you want a particular command, please open an issue as a feature request.
 
 ### Incrementally
-Using this option will allow to you surgically update the default bindings (`spacecode.bindings`). The extension will override bindings sequentially base on `spacecode.bindingOverrides`.
+Using this option will allow to you surgically update the default bindings (`vspacecode.bindings`). The extension will override bindings sequentially base on `vspacecode.bindingOverrides`.
 
 #### Add/Replace
-The following json will replace `<SPC> g s` in the same position if the binding exists in `spacecode.bindings`, and append `s` to menu `<SPC> g` if it doesn't exists. This override will only execute if `<SPC> g` menu exists. An optional `position` key can be used to specified index of where the item should be inserted/moved to.
+The following json will replace `<SPC> g s` in the same position if the binding exists in `vspacecode.bindings`, and append `s` to menu `<SPC> g` if it doesn't exists. This override will only execute if `<SPC> g` menu exists. An optional `position` key can be used to specified index of where the item should be inserted/moved to.
 
 ```jsonc
 {
-  "spacecode.bindingOverrides": [
+  "vspacecode.bindingOverrides": [
     {
       "keys": "g.s",
       "name": "Go to line",
@@ -85,7 +85,7 @@ The following json will replace `<SPC> g s` in the same position if the binding 
 The following example will replace/append the whole `<SPC> g` menu with one binding `s` in it.
 ```jsonc
 {
-  "spacecode.bindingOverrides": [
+  "vspacecode.bindingOverrides": [
     {
       "keys": "g",
       "name": "Go...",
@@ -108,7 +108,7 @@ If the key binding's key uses character `.` like `<SPC> e .`, you can target tha
 Any negative number in position is denoting a removal operation. In the following example, any item bound to `<SPC> g s` will be remove.
 ```jsonc
 {
-  "spacecode.bindingOverrides": [
+  "vspacecode.bindingOverrides": [
     {
       "keys": "g.s",
       "position": -1,
@@ -118,12 +118,12 @@ Any negative number in position is denoting a removal operation. In the followin
 ```
 
 ### From Scratch
-To customize the menu items from scratch, you can override the menu completely by putting your own `spacecode.bindings` into your `settings.json`. Using this option will prevent any update to your own bindings.
+To customize the menu items from scratch, you can override the menu completely by putting your own `vspacecode.bindings` into your `settings.json`. Using this option will prevent any update to your own bindings.
 
 An example of a `settings.json` file that overrides space menu is as follows:
 ```json
 {
-  "spacecode.bindings": [
+  "vspacecode.bindings": [
     {
       "key": "f",
       "name": "File...",
@@ -160,7 +160,7 @@ An example of a `settings.json` file that overrides space menu is as follows:
 }
 ```
 
-The default value can be found in the `contributes.configuration.spacecode.bindings.default` section of the `package.json` in this repo. You can use the default value as an example to craft your own custom menu.
+The default value can be found in the `contributes.configuration.vspacecode.bindings.default` section of the `package.json` in this repo. You can use the default value as an example to craft your own custom menu.
 
 ## Release Notes
 

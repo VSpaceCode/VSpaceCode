@@ -25,7 +25,7 @@ class SpacecodeCmd {
         if (this.items) {
             createQuickPick("Spacecode", this.items);
         } else {
-            window.showErrorMessage("The spacecode.bindings is undefined.");
+            window.showErrorMessage("The vspacecode.bindings is undefined.");
         }
     }
 }
@@ -41,8 +41,8 @@ export function activate(context: ExtensionContext) {
     });
     context.subscriptions.push(commands.registerTextEditorCommand(spaceCmdId, cmd.execute.bind(cmd)));
 
-    const spacecode = extensions.getExtension(extensionQualifiedId);
-    const currentVersion = spacecode!.packageJSON.version;
+    const vspacecode = extensions.getExtension(extensionQualifiedId);
+    const currentVersion = vspacecode!.packageJSON.version;
     const previousVersion = context.globalState.get<string>(GlobalState.SpacecodeVersion);
     console.log(`Spacecode loaded: v${previousVersion} -> v${currentVersion}`);
     context.globalState.update(GlobalState.SpacecodeVersion, currentVersion);
