@@ -26,6 +26,12 @@
 		"vim",
 		"VSCodeVim"
 	],
+	"extensionPack": [
+		"VSpaceCode.whichkey"
+	],
+	"extensionDependencies": [
+		"VSpaceCode.whichkey"
+	],
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"homepage": "https://github.com/VSpaceCode/VSpaceCode",
 	"repository": {
