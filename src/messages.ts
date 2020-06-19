@@ -1,5 +1,6 @@
 import { ConfigurationTarget, env, extensions, Uri, window, workspace } from 'vscode';
 import { ConfigKey, extensionId, spaceCmdId, VimConfigKey, vimExtensionId, vimExtensionQualifiedId, manualInstallUrl } from './constants';
+import { Version, ComparisonResult } from './version';
 
 interface VimKeyBinding {
     before: string[];
@@ -22,7 +23,7 @@ const enum MissingVimBindingSelection {
     StopChecking = "Don't Check Again",
 }
 
-export async function showWelcomeScreen() {
+export async function showWelcomeMessage() {
     const selection = await window.showInformationMessage(
         "Welcome to VSpaceCode. How do you want to configure your key binding?",
         WelcomeSelection.Manually,
@@ -60,6 +61,19 @@ function showMissingBindingMessage(isNew: boolean) {
         MissingVimBindingSelection.Manually,
         MissingVimBindingSelection.Continue
     );
+}
+
+export async function showUpdateMessage(cur: string, prev: string) {
+    if (Version.compare(cur, prev) === ComparisonResult.Newer) {
+        const changeLog = "Changelog";
+        const selection = await window.showInformationMessage(
+            `VspaceCode is updated to v${cur}. See what's new in the changelog.`,
+            changeLog
+        );
+        if (selection === changeLog) {
+            await env.openExternal(Uri.parse("https://github.com/VSpaceCode/VSpaceCode/blob/master/CHANGELOG.md"));
+        }
+    }
 }
 
 export async function checkVim(isNew = false) {

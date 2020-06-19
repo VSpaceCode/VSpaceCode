@@ -3,7 +3,7 @@ import { ConfigKey, extensionId, extensionQualifiedId, GlobalState, spaceCmdId }
 import { IBindingItem, IOverrideBindingItem } from './iBindingItem';
 import { createQuickPick } from './menu/menu';
 import MenuItem from './menu/menuItem';
-import { checkVim, showWelcomeScreen } from './messages';
+import { checkVim, showUpdateMessage, showWelcomeMessage } from './messages';
 
 class SpacecodeCmd {
     private items?: MenuItem[];
@@ -47,8 +47,9 @@ export function activate(context: ExtensionContext) {
     console.log(`VSpaceCode loaded: v${previousVersion} -> v${currentVersion}`);
     context.globalState.update(GlobalState.SpacecodeVersion, currentVersion);
     if (previousVersion === undefined) {
-        showWelcomeScreen();
+        showWelcomeMessage();
     } else {
+        showUpdateMessage(currentVersion, previousVersion);
         checkVim();
     }
 }
