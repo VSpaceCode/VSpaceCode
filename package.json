@@ -123,13 +123,19 @@
 										"key": "P",
 										"name": "Paste clipboard to buffer",
 										"type": "commands",
-										"commands": ["editor.action.selectAll", "editor.action.clipboardPasteAction"]
+										"commands": [
+											"editor.action.selectAll",
+											"editor.action.clipboardPasteAction"
+										]
 									},
 									{
 										"key": "Y",
 										"name": "Copy buffer to clipboard",
 										"type": "commands",
-										"commands": ["editor.action.selectAll", "editor.action.clipboardCopyAction"]
+										"commands": [
+											"editor.action.selectAll",
+											"editor.action.clipboardCopyAction"
+										]
 									}
 								]
 							},
@@ -593,7 +599,13 @@
 										"name": "Clear hightlight",
 										"type": "command",
 										"command": "vim.remap",
-										"args": { "commands": [{ "command" :":noh"}] }
+										"args": {
+											"commands": [
+												{
+													"command": ":noh"
+												}
+											]
+										}
 									},
 									{
 										"key": "e",
@@ -629,7 +641,10 @@
 												"key": "/",
 												"name": "Search in a project with a selection",
 												"type": "commands",
-												"commands": ["editor.action.addSelectionToNextFindMatch", "workbench.action.findInFiles"]
+												"commands": [
+													"editor.action.addSelectionToNextFindMatch",
+													"workbench.action.findInFiles"
+												]
 											}
 										]
 									},
@@ -649,7 +664,10 @@
 										"key": "P",
 										"name": "Search in a project with a selection",
 										"type": "commands",
-										"commands": ["editor.action.addSelectionToNextFindMatch", "workbench.action.findInFiles"]
+										"commands": [
+											"editor.action.addSelectionToNextFindMatch",
+											"workbench.action.findInFiles"
+										]
 									},
 									{
 										"key": "s",
@@ -1055,7 +1073,7 @@
 										"key": "d",
 										"name": "Delete...",
 										"type": "bindings",
-										"bindings" : [
+										"bindings": [
 											{
 												"key": "w",
 												"name": "Delete trailing whitespace",
@@ -1304,7 +1322,10 @@
 								"key": "*",
 								"name": "Search in a project with a selection",
 								"type": "commands",
-								"commands": ["editor.action.addSelectionToNextFindMatch", "workbench.action.findInFiles"]
+								"commands": [
+									"editor.action.addSelectionToNextFindMatch",
+									"workbench.action.findInFiles"
+								]
 							},
 							{
 								"key": "v",
