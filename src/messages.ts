@@ -24,7 +24,7 @@ const enum MissingVimBindingSelection {
 
 export async function showWelcomeScreen() {
     const selection = await window.showInformationMessage(
-        "Welcome to Spacecode. How do you want to configure your key binding?",
+        "Welcome to VSpaceCode. How do you want to configure your key binding?",
         WelcomeSelection.Manually,
         WelcomeSelection.SetupVim,
     );
@@ -40,7 +40,7 @@ export async function showWelcomeScreen() {
 }
 
 function showMissingVimMessage(isNew: boolean) {
-    const message = isNew ? "VSCode Vim is not installed." : "We detected VSCode is not install.";
+    const message = isNew ? "VSCode Vim is not installed." : "We detected VSCode Vim is not install.";
     return window.showWarningMessage(
         message,
         MissingVimSelection.StopChecking,
@@ -51,7 +51,7 @@ function showMissingVimMessage(isNew: boolean) {
 function showMissingBindingMessage(isNew: boolean) {
     let message = "Adding space key bindings automatically will reformat your vim key bindings in settings. Do you want to continue?";
     if (!isNew) {
-        message = `Spacecode key bindings are not present in the VSCode Vim config. ${message}`;
+        message = `VSpaceCode key bindings are not present in the VSCode Vim config. ${message}`;
     }
 
     return window.showWarningMessage(

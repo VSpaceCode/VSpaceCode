@@ -23,7 +23,7 @@ class SpacecodeCmd {
 
     execute() {
         if (this.items) {
-            createQuickPick("Spacecode", this.items);
+            createQuickPick("VSpaceCode", this.items);
         } else {
             window.showErrorMessage("The vspacecode.bindings is undefined.");
         }
@@ -44,7 +44,7 @@ export function activate(context: ExtensionContext) {
     const vspacecode = extensions.getExtension(extensionQualifiedId);
     const currentVersion = vspacecode!.packageJSON.version;
     const previousVersion = context.globalState.get<string>(GlobalState.SpacecodeVersion);
-    console.log(`Spacecode loaded: v${previousVersion} -> v${currentVersion}`);
+    console.log(`VSpaceCode loaded: v${previousVersion} -> v${currentVersion}`);
     context.globalState.update(GlobalState.SpacecodeVersion, currentVersion);
     if (previousVersion === undefined) {
         showWelcomeScreen();
