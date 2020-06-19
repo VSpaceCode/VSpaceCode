@@ -1,6 +1,6 @@
-# Spacecode (Preview)
+# VSpaceCode (Preview)
 
-![Space Code Icon](images/icon.png)
+![VSpaceCode Logo](resources/logo.png)
 
 This extension is inspired by spacemacs and aiming to provide similar experience in VSCode. An action menu trigger by space key is implemented to reduce memorization of shortcuts. You can change the editor group, change the file language, and check git status without leaving your keyboard. This provides speed to shortcut while minimizing typing comparing to fuzzy search in the command palette or shortcut memorizing.
 
@@ -10,7 +10,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 - All menu items are customizable
 - The menu key is customizable
 
-![Space actions](images/feature.gif)
+![VSpaceCode actions](resources/feature.gif)
 
 ## Requirements
 
