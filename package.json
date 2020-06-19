@@ -350,13 +350,13 @@
 									},
 									{
 										"key": "t",
-										"name": "Toggle explore view",
+										"name": "Show tree/explorer view",
 										"type": "command",
 										"command": "workbench.view.explorer"
 									},
 									{
 										"key": "T",
-										"name": "Show active file in explore",
+										"name": "Show active file in tree/explorer view",
 										"type": "command",
 										"command": "workbench.files.action.showActiveFileInExplorer"
 									},
@@ -583,7 +583,7 @@
 									},
 									{
 										"key": "t",
-										"name": "Toggle explore view",
+										"name": "Show tree/explorer view",
 										"type": "command",
 										"command": "workbench.view.explorer"
 									}
