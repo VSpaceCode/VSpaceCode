@@ -170,6 +170,60 @@ An example of a `settings.json` file that overrides space menu is as follows:
 
 The default value can be found in the `contributes.configuration.vspacecode.bindings.default` section of the `package.json` in this repo. You can use the default value as an example to craft your own custom menu.
 
+## Bonus
+This section contains additional config that might be helpful beyond the default bindings
+### Quick Window Navigation
+To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, you can add the following config system's key bindings to `keybinding.json`
+```json
+{
+  "key": "ctrl+h",
+  "command": "workbench.action.navigateLeft"
+},
+{
+  "key": "ctrl+j",
+  "command": "workbench.action.navigateDown"
+},
+{
+  "key": "ctrl+k",
+  "command": "workbench.action.navigateUp"
+},
+{
+  "key": "ctrl+l",
+  "command": "workbench.action.navigateRight"
+}
+```
+
+### Quick Editor Move
+Add the following overrides to `settings.json` will change `<spc> w h/j/k/l` to move the active editor to a window in that direction. Note that this is default behavior before `v0.4.0`
+```json
+"spacecode.bindingOverrides": [
+    {
+        "keys": "w.h",
+        "name": "Move editor left",
+        "type": "command",
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "keys": "w.j",
+        "name": "Move editor down",
+        "type": "command",
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        "keys": "w.k",
+        "name": "Move editor up",
+        "type": "command",
+        "command": "workbench.action.moveEditorToAboveGroup"
+    },
+    {
+        "keys": "w.l",
+        "name": "Move editor right",
+        "type": "command",
+        "command": "workbench.action.moveEditorToRightGroup"
+    }
+]
+```
+
 ## Release Notes
 
 See [CHANGELOG.md](CHANGELOG.md)
