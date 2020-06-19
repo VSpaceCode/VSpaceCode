@@ -12,6 +12,11 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 
 ![VSpaceCode actions](resources/feature.gif)
 
+## Project history
+
+This project was initially started by [StreakyCobra](https://github.com/StreakyCobra) as a configuration file for [VSCodeVim](https://github.com/VSCodeVim/Vim) to be merged in your `settings.json` file.
+If you prefer this approach, see the [vscode-vim](https://github.com/VSpaceCode/VSpaceCode/tree/vscode-vim) branch.
+
 ## Requirements
 
 - [VSCode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) (required for default space key)
