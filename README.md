@@ -171,5 +171,3 @@ All feature requests and help are welcome. Please open an issue to track.
 
 ## Credits
 Thanks @kahole for his implementation of quick pick menu in edamagit.
-
-Icons made by [Icongeek26](https://www.flaticon.com/authors/icongeek26) from [www.flaticon.com](www.flaticon.com)
