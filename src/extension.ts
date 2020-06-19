@@ -1,46 +1,8 @@
-import { commands, ExtensionContext, extensions, window, workspace } from 'vscode';
+import { commands, ExtensionContext, extensions } from 'vscode';
 import { ConfigKey, extensionId, extensionQualifiedId, GlobalState, spaceCmdId } from './constants';
-import { IBindingItem, IOverrideBindingItem } from './iBindingItem';
-import { createQuickPick } from './menu/menu';
-import MenuItem from './menu/menuItem';
 import { checkVim, showUpdateMessage, showWelcomeMessage } from './messages';
 
-class SpacecodeCmd {
-    private items?: MenuItem[];
-
-    load() {
-        const config = workspace.getConfiguration(extensionId);
-        const bindings = config.get<IBindingItem[]>(ConfigKey.Bindings);
-        if (bindings) {
-            this.items = MenuItem.createItems(bindings);
-        } else {
-            this.items = undefined;
-        }
-
-        const overrides = config.get<IOverrideBindingItem[]>(ConfigKey.Overrides);
-        MenuItem.overrideItems(this.items, overrides);
-    }
-
-    execute() {
-        if (this.items) {
-            createQuickPick("VSpaceCode", this.items);
-        } else {
-            window.showErrorMessage("The vspacecode.bindings is undefined.");
-        }
-    }
-}
-
-export function activate(context: ExtensionContext) {
-    const cmd = new SpacecodeCmd();
-    cmd.load();
-
-    workspace.onDidChangeConfiguration((e) => {
-        if (e.affectsConfiguration(extensionId)) {
-            cmd.load();
-        }
-    });
-    context.subscriptions.push(commands.registerTextEditorCommand(spaceCmdId, cmd.execute.bind(cmd)));
-
+export async function activate(context: ExtensionContext) {
     const vspacecode = extensions.getExtension(extensionQualifiedId);
     const currentVersion = vspacecode!.packageJSON.version;
     const previousVersion = context.globalState.get<string>(GlobalState.SpacecodeVersion);
@@ -52,6 +14,13 @@ export function activate(context: ExtensionContext) {
         showUpdateMessage(currentVersion, previousVersion);
         checkVim();
     }
+
+    const arg = { bindings: [extensionId, ConfigKey.Bindings], overrides: [extensionId, ConfigKey.Overrides], title: 'VSpaceCode' };
+    await commands.executeCommand('whichkey.register', arg);
+
+    context.subscriptions.push(commands.registerCommand(spaceCmdId, () => {
+        commands.executeCommand("whichkey.show", arg.bindings.join('.'));
+    }));
 }
 
 export function deactivate() { }

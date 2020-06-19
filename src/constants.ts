@@ -1,5 +1,5 @@
 export const extensionId = 'vspacecode';
-export const publisherId = 'VSpaceCode'
+export const publisherId = 'VSpaceCode';
 export const extensionQualifiedId = `${publisherId}.${extensionId}`;
 export const spaceCmdId = `${extensionId}.space`;
 export enum GlobalState {
