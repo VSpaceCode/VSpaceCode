@@ -166,7 +166,7 @@ The default value can be found in the `contributes.configuration.vspacecode.bind
 
 See [CHANGELOG.md](CHANGELOG.md)
 
-## Contribution
+## [Contribution](CONTRIBUTING.md)
 All feature requests and help are welcome. Please open an issue to track.
 
 ## Credits
