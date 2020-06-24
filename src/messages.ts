@@ -1,6 +1,6 @@
 import { ConfigurationTarget, env, extensions, Uri, window, workspace } from 'vscode';
-import { ConfigKey, extensionId, spaceCmdId, VimConfigKey, vimExtensionId, vimExtensionQualifiedId, manualInstallUrl } from './constants';
-import { Version, ComparisonResult } from './version';
+import { ConfigKey, extensionId, manualInstallUrl, spaceCmdId, VimConfigKey, vimExtensionId, vimExtensionQualifiedId } from './constants';
+import { ComparisonResult, Version } from './version';
 
 interface VimKeyBinding {
     before: string[];
@@ -13,10 +13,6 @@ const enum WelcomeSelection {
     Manually = "Manually",
 }
 
-const enum MissingVimSelection {
-    Install = "Install",
-    StopChecking = "Don't Check Again",
-}
 const enum MissingVimBindingSelection {
     Continue = "Continue",
     Manually = "Setup Manually",
@@ -38,15 +34,6 @@ export async function showWelcomeMessage() {
             checkVim(true);
             break;
     }
-}
-
-function showMissingVimMessage(isNew: boolean) {
-    const message = isNew ? "VSCode Vim is not installed." : "We detected VSCode Vim is not install.";
-    return window.showWarningMessage(
-        message,
-        MissingVimSelection.StopChecking,
-        MissingVimSelection.Install
-    );
 }
 
 function showMissingBindingMessage(isNew: boolean) {
@@ -81,44 +68,30 @@ export async function checkVim(isNew = false) {
     const shouldCheck = vspacecodeConfig.get(ConfigKey.CheckVimConfig);
     if (!shouldCheck) { return; }
 
-    const vim = extensions.getExtension(vimExtensionQualifiedId);
-    if (vim) {
-        const vimConfig = workspace.getConfiguration(vimExtensionId);
-        const normalBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.NormalNonRecursive) ?? [];
-        const visualBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.VisualNonRecursive) ?? [];
-        const hasNormalBinding = normalBindings.some(b => b.commands?.some(c => c === spaceCmdId));
-        const hasVisualBinding = visualBindings.some(b => b.commands?.some(c => c === spaceCmdId));
-        if (!hasNormalBinding || !hasVisualBinding) {
-            const missingBindingSelection = await showMissingBindingMessage(isNew);
-            switch (missingBindingSelection) {
-                case MissingVimBindingSelection.Continue:
-                    if (!hasNormalBinding) {
-                        normalBindings.push({ "before": ["<space>"], "commands": [spaceCmdId] });
-                        vimConfig.update(VimConfigKey.NormalNonRecursive, normalBindings, ConfigurationTarget.Global);
-                    }
-                    if (!hasVisualBinding) {
-                        visualBindings.push({ "before": ["<space>"], "commands": [spaceCmdId] });
-                        vimConfig.update(VimConfigKey.VisualNonRecursive, visualBindings, ConfigurationTarget.Global);
-                    }
-                    break;
-
-                case MissingVimBindingSelection.Manually:
-                    await env.openExternal(Uri.parse(manualInstallUrl));
-                    break;
-
-                case MissingVimBindingSelection.StopChecking:
-                    vspacecodeConfig.update(ConfigKey.CheckVimConfig, false, ConfigurationTarget.Global);
-                    break;
-            }
-        }
-    } else {
-        const missingVimSelection = await showMissingVimMessage(isNew);
-        switch (missingVimSelection) {
-            case MissingVimSelection.Install:
-                await env.openExternal(Uri.parse("vscode:extension/vscodevim.vim"));
+    const vimConfig = workspace.getConfiguration(vimExtensionId);
+    const normalBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.NormalNonRecursive) ?? [];
+    const visualBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.VisualNonRecursive) ?? [];
+    const hasNormalBinding = normalBindings.some(b => b.commands?.some(c => c === spaceCmdId));
+    const hasVisualBinding = visualBindings.some(b => b.commands?.some(c => c === spaceCmdId));
+    if (!hasNormalBinding || !hasVisualBinding) {
+        const missingBindingSelection = await showMissingBindingMessage(isNew);
+        switch (missingBindingSelection) {
+            case MissingVimBindingSelection.Continue:
+                if (!hasNormalBinding) {
+                    normalBindings.push({ "before": ["<space>"], "commands": [spaceCmdId] });
+                    vimConfig.update(VimConfigKey.NormalNonRecursive, normalBindings, ConfigurationTarget.Global);
+                }
+                if (!hasVisualBinding) {
+                    visualBindings.push({ "before": ["<space>"], "commands": [spaceCmdId] });
+                    vimConfig.update(VimConfigKey.VisualNonRecursive, visualBindings, ConfigurationTarget.Global);
+                }
                 break;
 
-            case MissingVimSelection.StopChecking:
+            case MissingVimBindingSelection.Manually:
+                await env.openExternal(Uri.parse(manualInstallUrl));
+                break;
+
+            case MissingVimBindingSelection.StopChecking:
                 vspacecodeConfig.update(ConfigKey.CheckVimConfig, false, ConfigurationTarget.Global);
                 break;
         }
