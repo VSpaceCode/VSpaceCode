@@ -27,7 +27,9 @@
 		"VSCodeVim"
 	],
 	"extensionPack": [
-		"VSpaceCode.whichkey"
+		"VSpaceCode.whichkey",
+		"vscodevim.vim",
+		"kahole.magit"
 	],
 	"extensionDependencies": [
 		"VSpaceCode.whichkey"
