@@ -1,5 +1,5 @@
-import { ConfigurationTarget, env, extensions, Uri, window, workspace } from 'vscode';
-import { ConfigKey, extensionId, manualInstallUrl, spaceCmdId, VimConfigKey, vimExtensionId, vimExtensionQualifiedId } from './constants';
+import { ConfigurationTarget, env, Uri, window, workspace } from 'vscode';
+import { ConfigKey, extensionId, manualInstallUrl, CommandId, VimConfigKey, vimExtensionId } from './constants';
 import { ComparisonResult, Version } from './version';
 import { VimKeyBinding } from './vimKeyBinding';
 
@@ -66,18 +66,18 @@ export async function checkVim(isNew = false) {
     const vimConfig = workspace.getConfiguration(vimExtensionId);
     const normalBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.NormalNonRecursive) ?? [];
     const visualBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.VisualNonRecursive) ?? [];
-    const hasNormalBinding = normalBindings.some(b => b.commands?.some(c => c === spaceCmdId));
-    const hasVisualBinding = visualBindings.some(b => b.commands?.some(c => c === spaceCmdId));
+    const hasNormalBinding = normalBindings.some(b => b.commands?.some(c => c === CommandId.ShowSpaceMenu));
+    const hasVisualBinding = visualBindings.some(b => b.commands?.some(c => c === CommandId.ShowSpaceMenu));
     if (!hasNormalBinding || !hasVisualBinding) {
         const missingBindingSelection = await showMissingBindingMessage(isNew);
         switch (missingBindingSelection) {
             case MissingVimBindingSelection.Continue:
                 if (!hasNormalBinding) {
-                    normalBindings.push({ "before": ["<space>"], "commands": [spaceCmdId] });
+                    normalBindings.push({ "before": ["<space>"], "commands": [CommandId.ShowSpaceMenu] });
                     vimConfig.update(VimConfigKey.NormalNonRecursive, normalBindings, ConfigurationTarget.Global);
                 }
                 if (!hasVisualBinding) {
-                    visualBindings.push({ "before": ["<space>"], "commands": [spaceCmdId] });
+                    visualBindings.push({ "before": ["<space>"], "commands": [CommandId.ShowSpaceMenu] });
                     vimConfig.update(VimConfigKey.VisualNonRecursive, visualBindings, ConfigurationTarget.Global);
                 }
                 break;
