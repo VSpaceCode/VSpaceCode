@@ -1,9 +1,10 @@
-import { commands, ExtensionContext, extensions } from 'vscode';
+import { commands, ExtensionContext, extensions, env, window } from 'vscode';
 import { configKeyBindings, configSettings } from './configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
-import { showUpdateMessage, showWelcomeMessage } from './messages';
+import { showUpdateMessage, showWelcomeMessage, showActionNotSupportedInRemote } from './messages';
 
 export async function activate(context: ExtensionContext) {
+    const isRemote = !!env.remoteName;
     const vspacecode = extensions.getExtension(extensionQualifiedId);
     const currentVersion = vspacecode!.packageJSON.version;
     const previousVersion = context.globalState.get<string>(GlobalState.SpacecodeVersion);
@@ -30,14 +31,26 @@ export async function activate(context: ExtensionContext) {
     }));
 
     context.subscriptions.push(commands.registerCommand(CommandId.Configure, () => {
-        configSettings();
-        configKeyBindings(context);
+        if (!isRemote) {
+            configSettings();
+            configKeyBindings(context);
+        } else {
+            showActionNotSupportedInRemote(CommandId.Configure);
+        }
     }));
     context.subscriptions.push(commands.registerCommand(CommandId.ConfigureSettings, () => {
-        configSettings();
+        if (!isRemote) {
+            configSettings();
+        } else {
+            showActionNotSupportedInRemote(CommandId.ConfigureSettings);
+        }
     }));
     context.subscriptions.push(commands.registerCommand(CommandId.ConfigureKeybindings, () => {
-        configKeyBindings(context);
+        if (!isRemote) {
+            configKeyBindings(context);
+        } else {
+            showActionNotSupportedInRemote(CommandId.ConfigureKeybindings);
+        }
     }));
 }
 
