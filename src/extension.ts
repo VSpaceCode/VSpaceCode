@@ -1,7 +1,7 @@
 import { commands, ExtensionContext, extensions } from 'vscode';
 import { configKeyBindings, configSettings } from './configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
-import { checkVim, showUpdateMessage, showWelcomeMessage } from './messages';
+import { showUpdateMessage, showWelcomeMessage } from './messages';
 
 export async function activate(context: ExtensionContext) {
     const vspacecode = extensions.getExtension(extensionQualifiedId);
@@ -13,7 +13,6 @@ export async function activate(context: ExtensionContext) {
         showWelcomeMessage();
     } else {
         showUpdateMessage(currentVersion, previousVersion);
-        checkVim();
     }
 
     const arg = { bindings: [extensionId, ConfigKey.Bindings], overrides: [extensionId, ConfigKey.Overrides], title: 'VSpaceCode' };

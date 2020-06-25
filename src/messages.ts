@@ -1,48 +1,27 @@
-import { ConfigurationTarget, env, Uri, window, workspace } from 'vscode';
-import { ConfigKey, extensionId, manualInstallUrl, CommandId, VimConfigKey, vimExtensionId } from './constants';
+import { commands, env, Uri, window } from 'vscode';
+import { CommandId, manualInstallUrl } from './constants';
 import { ComparisonResult, Version } from './version';
-import { VimKeyBinding } from './vimKeyBinding';
 
 const enum WelcomeSelection {
-    SetupVim = "Automatically for Vim",
+    Auto = "Automatically",
     Manually = "Manually",
-}
-
-const enum MissingVimBindingSelection {
-    Continue = "Continue",
-    Manually = "Setup Manually",
-    StopChecking = "Don't Check Again",
 }
 
 export async function showWelcomeMessage() {
     const selection = await window.showInformationMessage(
-        "Welcome to VSpaceCode. How do you want to configure your key binding?",
+        `Welcome to VSpaceCode. There are some user configurations needed to get started. By choosing ${WelcomeSelection.Auto}, we will configure your user's settings.json and keybindings.json. However, formatting in those file may be lost.`,
         WelcomeSelection.Manually,
-        WelcomeSelection.SetupVim,
+        WelcomeSelection.Auto,
     );
 
     switch (selection) {
         case WelcomeSelection.Manually:
             await env.openExternal(Uri.parse(manualInstallUrl));
             break;
-        case WelcomeSelection.SetupVim:
-            checkVim(true);
+        case WelcomeSelection.Auto:
+            await commands.executeCommand(CommandId.Configure);
             break;
     }
-}
-
-function showMissingBindingMessage(isNew: boolean) {
-    let message = "Adding space key bindings automatically will reformat your vim key bindings in settings. Do you want to continue?";
-    if (!isNew) {
-        message = `VSpaceCode key bindings are not present in the VSCode Vim config. ${message}`;
-    }
-
-    return window.showWarningMessage(
-        message,
-        MissingVimBindingSelection.StopChecking,
-        MissingVimBindingSelection.Manually,
-        MissingVimBindingSelection.Continue
-    );
 }
 
 export async function showUpdateMessage(cur: string, prev: string) {
@@ -54,41 +33,6 @@ export async function showUpdateMessage(cur: string, prev: string) {
         );
         if (selection === changeLog) {
             await env.openExternal(Uri.parse("https://github.com/VSpaceCode/VSpaceCode/blob/master/CHANGELOG.md"));
-        }
-    }
-}
-
-export async function checkVim(isNew = false) {
-    const vspacecodeConfig = workspace.getConfiguration(extensionId);
-    const shouldCheck = vspacecodeConfig.get(ConfigKey.CheckVimConfig);
-    if (!shouldCheck) { return; }
-
-    const vimConfig = workspace.getConfiguration(vimExtensionId);
-    const normalBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.NormalNonRecursive) ?? [];
-    const visualBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.VisualNonRecursive) ?? [];
-    const hasNormalBinding = normalBindings.some(b => b.commands?.some(c => c === CommandId.ShowSpaceMenu));
-    const hasVisualBinding = visualBindings.some(b => b.commands?.some(c => c === CommandId.ShowSpaceMenu));
-    if (!hasNormalBinding || !hasVisualBinding) {
-        const missingBindingSelection = await showMissingBindingMessage(isNew);
-        switch (missingBindingSelection) {
-            case MissingVimBindingSelection.Continue:
-                if (!hasNormalBinding) {
-                    normalBindings.push({ "before": ["<space>"], "commands": [CommandId.ShowSpaceMenu] });
-                    vimConfig.update(VimConfigKey.NormalNonRecursive, normalBindings, ConfigurationTarget.Global);
-                }
-                if (!hasVisualBinding) {
-                    visualBindings.push({ "before": ["<space>"], "commands": [CommandId.ShowSpaceMenu] });
-                    vimConfig.update(VimConfigKey.VisualNonRecursive, visualBindings, ConfigurationTarget.Global);
-                }
-                break;
-
-            case MissingVimBindingSelection.Manually:
-                await env.openExternal(Uri.parse(manualInstallUrl));
-                break;
-
-            case MissingVimBindingSelection.StopChecking:
-                vspacecodeConfig.update(ConfigKey.CheckVimConfig, false, ConfigurationTarget.Global);
-                break;
         }
     }
 }
