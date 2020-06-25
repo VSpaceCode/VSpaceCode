@@ -17,6 +17,128 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove continuos config checker on launch
 - Remove Gitlens bindings from the `<spc> g`
 
+  To restore the previous `<spc> g` menu, merge the following overrides to `settings.json`
+  <details><summary>settings.json</summary>
+  <p>
+
+  ```json
+  "spacecode.bindingOverrides": [
+      {
+          "keys": "g",
+          "name": "Git...",
+          "type": "bindings",
+          "bindings": [
+              {
+                  "key": "s",
+                  "name": "Magit: Status",
+                  "type": "command",
+                  "command": "magit.status"
+              },
+              {
+                  "key": "f",
+                  "name": "Magit: File...",
+                  "type": "command",
+                  "command": "magit.file-popup"
+              },
+              {
+                  "key": "m",
+                  "name": "Magit: Dispatch",
+                  "type": "command",
+                  "command": "magit.dispatch"
+              },
+              {
+                  "key": "d",
+                  "name": "Gitlens: Diff...",
+                  "type": "bindings",
+                  "bindings": [
+                      {
+                          "key": "w",
+                          "name": "Diff working file",
+                          "type": "command",
+                          "command": "gitlens.diffWithWorking"
+                      },
+                      {
+                          "key": "p",
+                          "name": "Diff previous file",
+                          "type": "command",
+                          "command": "gitlens.diffWithPrevious"
+                      },
+                      {
+                          "key": "n",
+                          "name": "Diff next file",
+                          "type": "command",
+                          "command": "gitlens.diffWithNext"
+                      },
+                      {
+                          "key": "W",
+                          "name": "Diff working line",
+                          "type": "command",
+                          "command": "gitlens.diffLineWithWorking"
+                      },
+                      {
+                          "key": "P",
+                          "name": "Diff previous line",
+                          "type": "command",
+                          "command": "gitlens.diffLineWithPrevious"
+                      },
+                      {
+                          "key": "N",
+                          "name": "Diff  next line",
+                          "type": "command",
+                          "command": "gitlens.diffLineWithNext"
+                      }
+                  ]
+              },
+              {
+                  "key": "h",
+                  "name": "Gitlens: File history",
+                  "type": "command",
+                  "command": "gitlens.showQuickFileHistory"
+              },
+              {
+                  "key": "l",
+                  "name": "Gitlens: Repo history",
+                  "type": "command",
+                  "command": "gitlens.showQuickRepoHistory"
+              },
+              {
+                  "key": "b",
+                  "name": "Gitlens: Blame",
+                  "type": "command",
+                  "command": "gitlens.toggleFileBlame"
+              },
+              {
+                  "key": "z",
+                  "name": "Gitlens: Stash",
+                  "type": "command",
+                  "command": "gitlens.showQuickStashList"
+              },
+              {
+                  "key": "S",
+                  "name": "Stag lines",
+                  "type": "command",
+                  "command": "git.stageSelectedRanges"
+              },
+              {
+                  "key": "U",
+                  "name": "Unstage lines",
+                  "type": "command",
+                  "command": "git.unstageSelectedRanges"
+              },
+              {
+                  "key": "R",
+                  "name": "Revert lines",
+                  "type": "command",
+                  "command": "git.revertSelectedRanges"
+              }
+          ]
+      }
+  ]
+  ```
+
+  </p>
+  </details>
+
 ## [0.4.0] - 2020-06-21
 ### Added
 - Implement transient menu
@@ -111,35 +233,40 @@ In this example: Only the second command has args. When `args` is used with `com
   + Add `v` to split editor right
   + Add `W` to focus previous editor group
 
-To get the old window pane behavior for `h`, `j`, `k` and `l` one can add the following overrides to your `settings.json`
-```json
-"spacecode.bindingOverrides": [
-    {
-        "keys": "w.h",
-        "name": "Move editor left",
-        "type": "command",
-        "command": "workbench.action.moveEditorToLeftGroup"
-    },
-    {
-        "keys": "w.j",
-        "name": "Move editor down",
-        "type": "command",
-        "command": "workbench.action.moveEditorToBelowGroup"
-    },
-    {
-        "keys": "w.k",
-        "name": "Move editor up",
-        "type": "command",
-        "command": "workbench.action.moveEditorToAboveGroup"
-    },
-    {
-        "keys": "w.l",
-        "name": "Move editor right",
-        "type": "command",
-        "command": "workbench.action.moveEditorToRightGroup"
-    }
-]
-```
+  To get the old window pane behavior for `h`, `j`, `k` and `l` one can merge the following overrides to your `settings.json`
+  <details><summary>settings.json</summary>
+  <p>
+
+  ```json
+  "spacecode.bindingOverrides": [
+      {
+          "keys": "w.h",
+          "name": "Move editor left",
+          "type": "command",
+          "command": "workbench.action.moveEditorToLeftGroup"
+      },
+      {
+          "keys": "w.j",
+          "name": "Move editor down",
+          "type": "command",
+          "command": "workbench.action.moveEditorToBelowGroup"
+      },
+      {
+          "keys": "w.k",
+          "name": "Move editor up",
+          "type": "command",
+          "command": "workbench.action.moveEditorToAboveGroup"
+      },
+      {
+          "keys": "w.l",
+          "name": "Move editor right",
+          "type": "command",
+          "command": "workbench.action.moveEditorToRightGroup"
+      }
+  ]
+  ```
+  </p>
+  </details>
 
 ## [0.3.2] - 2020-06-19
 ### Changed
