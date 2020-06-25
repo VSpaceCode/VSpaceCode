@@ -478,107 +478,34 @@
 								"type": "bindings",
 								"bindings": [
 									{
+										"key": "b",
+										"name": "Blame file",
+										"type": "command",
+										"command": "magit.blame-file"
+									},
+									{
 										"key": "s",
-										"name": "Magit: Status",
+										"name": "Status",
 										"type": "command",
 										"command": "magit.status"
 									},
 									{
-										"key": "f",
-										"name": "Magit: File...",
-										"type": "command",
-										"command": "magit.file-popup"
-									},
-									{
 										"key": "m",
-										"name": "Magit: Dispatch",
+										"name": "Magit dispatch",
 										"type": "command",
 										"command": "magit.dispatch"
 									},
 									{
-										"key": "d",
-										"name": "Gitlens: Diff...",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "w",
-												"name": "Diff working file",
-												"type": "command",
-												"command": "gitlens.diffWithWorking"
-											},
-											{
-												"key": "p",
-												"name": "Diff previous file",
-												"type": "command",
-												"command": "gitlens.diffWithPrevious"
-											},
-											{
-												"key": "n",
-												"name": "Diff next file",
-												"type": "command",
-												"command": "gitlens.diffWithNext"
-											},
-											{
-												"key": "W",
-												"name": "Diff working line",
-												"type": "command",
-												"command": "gitlens.diffLineWithWorking"
-											},
-											{
-												"key": "P",
-												"name": "Diff previous line",
-												"type": "command",
-												"command": "gitlens.diffLineWithPrevious"
-											},
-											{
-												"key": "N",
-												"name": "Diff  next line",
-												"type": "command",
-												"command": "gitlens.diffLineWithNext"
-											}
-										]
-									},
-									{
-										"key": "h",
-										"name": "Gitlens: File history",
-										"type": "command",
-										"command": "gitlens.showQuickFileHistory"
-									},
-									{
-										"key": "l",
-										"name": "Gitlens: Repo history",
-										"type": "command",
-										"command": "gitlens.showQuickRepoHistory"
-									},
-									{
-										"key": "b",
-										"name": "Gitlens: Blame",
-										"type": "command",
-										"command": "gitlens.toggleFileBlame"
-									},
-									{
-										"key": "z",
-										"name": "Gitlens: Stash",
-										"type": "command",
-										"command": "gitlens.showQuickStashList"
-									},
-									{
 										"key": "S",
-										"name": "Stag lines",
+										"name": "Stage file",
 										"type": "command",
-										"command": "git.stageSelectedRanges"
+										"command": "magit.stage-file"
 									},
 									{
 										"key": "U",
-										"name": "Unstage lines",
+										"name": "Unstage file",
 										"type": "command",
-										"command": "git.unstageSelectedRanges"
-									},
-									{
-										"key": "R",
-										"name": "Revert lines",
-										"type": "command",
-										"command": "git.revertSelectedRanges"
+										"command": "magit.unstage-file"
 									}
 								]
 							},
