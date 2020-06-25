@@ -1,4 +1,5 @@
 import { commands, ExtensionContext, extensions } from 'vscode';
+import { configKeyBindings, configSettings } from './configuration';
 import { ConfigKey, extensionId, extensionQualifiedId, GlobalState, spaceCmdId } from './constants';
 import { checkVim, showUpdateMessage, showWelcomeMessage } from './messages';
 
@@ -25,8 +26,19 @@ export async function activate(context: ExtensionContext) {
     context.subscriptions.push(commands.registerCommand(spaceCmdId, () => {
         commands.executeCommand("whichkey.show", arg.bindings.join('.'));
     }));
-    context.subscriptions.push(commands.registerCommand("vspacecode.showMagitRefMenu", (_args: any[]) => {
+    context.subscriptions.push(commands.registerCommand("vspacecode.showMagitRefMenu", () => {
         commands.executeCommand("whichkey.show", magitArg.bindings.join('.'));
+    }));
+
+    context.subscriptions.push(commands.registerCommand("vspacecode.configure", () => {
+        configSettings();
+        configKeyBindings(context);
+    }));
+    context.subscriptions.push(commands.registerCommand("vspacecode.configureSettings", () => {
+        configSettings();
+    }));
+    context.subscriptions.push(commands.registerCommand("vspacecode.configureKeyBindings", () => {
+        configKeyBindings(context);
     }));
 }
 
