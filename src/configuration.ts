@@ -5,6 +5,7 @@ import { CommandId, VimConfigKey, vimExtensionId } from "./constants";
 import { KeyBinding } from "./keyBinding";
 import requiredBindings from './keybindings.json';
 import { VimKeyBinding } from "./vimKeyBinding";
+import { logPath } from "./extension";
 
 export async function configSettings() {
     const vimConfig = workspace.getConfiguration(vimExtensionId);
@@ -24,8 +25,8 @@ export async function configSettings() {
     }
 }
 
-export async function configKeyBindings(context: ExtensionContext) {
-    let keybindingsPath = path.join(context.logPath, '..', '..', '..', '..', 'User', 'keybindings.json');
+export async function configKeyBindings() {
+    let keybindingsPath = path.join(logPath, '..', '..', '..', '..', 'User', 'keybindings.json');
     try {
         const doc = await workspace.openTextDocument(keybindingsPath);
         const text = doc.getText();
