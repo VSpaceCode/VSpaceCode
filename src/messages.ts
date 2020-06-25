@@ -1,12 +1,7 @@
 import { ConfigurationTarget, env, extensions, Uri, window, workspace } from 'vscode';
 import { ConfigKey, extensionId, manualInstallUrl, spaceCmdId, VimConfigKey, vimExtensionId, vimExtensionQualifiedId } from './constants';
 import { ComparisonResult, Version } from './version';
-
-interface VimKeyBinding {
-    before: string[];
-    after?: string[];
-    commands?: string[];
-}
+import { VimKeyBinding } from './vimKeyBinding';
 
 const enum WelcomeSelection {
     SetupVim = "Automatically for Vim",

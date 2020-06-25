@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add menu for magit ref `y` in normal mode
+- Add configuration commands for setting up both `settings.json` and `keybindings.json`
 
 ### Changed
 - Split the core menu logic to another extension (`vscode-which-key`) so this extension can be focused on Vim users
