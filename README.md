@@ -233,6 +233,10 @@ Add the following overrides to `settings.json` will change `<spc> w h/j/k/l` to 
 ]
 ```
 
+## Limitations
+
+- Key bindings cannot use `<tab>` or modifiers keys
+  
 ## Release Notes
 
 See [CHANGELOG.md](CHANGELOG.md)
