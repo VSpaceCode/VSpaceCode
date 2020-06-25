@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - Remove continuos config checker on launch
+- Remove Gitlens bindings from the `<spc> g`
 
 ## [0.4.0] - 2020-06-21
 ### Added
