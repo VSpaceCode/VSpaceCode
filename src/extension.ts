@@ -12,10 +12,13 @@ export async function activate(context: ExtensionContext) {
     const previousVersion = context.globalState.get<string>(GlobalState.SpacecodeVersion);
     console.log(`VSpaceCode loaded: v${previousVersion} -> v${currentVersion}`);
     context.globalState.update(GlobalState.SpacecodeVersion, currentVersion);
-    if (previousVersion === undefined) {
-        showWelcomeMessage();
-    } else {
-        showUpdateMessage(currentVersion, previousVersion);
+    const isRemote = !!env.remoteName;
+    if (!isRemote) {
+        if (previousVersion === undefined) {
+            showWelcomeMessage();
+        } else {
+            showUpdateMessage(currentVersion, previousVersion);
+        }
     }
 
     await setUpWhichKey();
