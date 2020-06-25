@@ -75,11 +75,6 @@
 				"title": "VSpaceCode",
 				"type": "object",
 				"properties": {
-					"vspacecode.checkVimConfig": {
-						"type": "boolean",
-						"markdownDescription": "Check Vim settings on every launch. Uncheck this if you are not using this extension with VSCode Vim.",
-						"default": true
-					},
 					"vspacecode.magitRefBindings": {
 						"type": "array",
 						"markdownDescription": "The bindings of magit ref menu",
