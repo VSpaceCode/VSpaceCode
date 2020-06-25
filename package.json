@@ -51,7 +51,11 @@
 		"commands": [
 			{
 				"command": "vspacecode.space",
-				"title": "Trigger VSpaceCode Palette"
+				"title": "Show VSpaceCode Menu"
+			},
+			{
+				"command": "vspacecode.showMagitRefMenu",
+				"title": "Show Magit Ref Menu"
 			}
 		],
 		"configuration": [
@@ -64,9 +68,33 @@
 						"markdownDescription": "Check Vim settings on every launch. Uncheck this if you are not using this extension with VSCode Vim.",
 						"default": true
 					},
+					"vspacecode.magitRefBindings": {
+						"type": "array",
+						"markdownDescription": "The bindings of magit ref menu",
+						"default": [
+							{
+								"key": "r",
+								"name": "Show Ref",
+								"type": "command",
+								"command": "magit.show-refs"
+							},
+							{
+								"key": "y",
+								"name": "Yank a line",
+								"type": "command",
+								"command": "vim.remap",
+								"args": {
+									"after": [
+										"y",
+										"y"
+									]
+								}
+							}
+						]
+					},
 					"vspacecode.bindings": {
 						"type": "array",
-						"markdownDescription": "The bindings of the space key",
+						"markdownDescription": "The bindings of VSpaceCode menu",
 						"default": [
 							{
 								"key": " ",

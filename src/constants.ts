@@ -8,6 +8,7 @@ export enum GlobalState {
 export enum ConfigKey {
 	Bindings = "bindings",
 	Overrides = "bindingOverrides",
+	RefBindings = "magitRefBindings",
 	CheckVimConfig = "checkVimConfig",
 }
 export const manualInstallUrl = "https://github.com/VSpaceCode/VSpaceCode#installation";
