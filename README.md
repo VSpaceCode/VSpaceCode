@@ -172,8 +172,17 @@ The default value can be found in the `contributes.configuration.vspacecode.bind
 
 ## Bonus
 This section contains additional config that might be helpful beyond the default bindings
+
+### Additional settings
+You may want to add the following additional settings to your `settings.json` file:
+```json
+{
+    "vim.useSystemClipboard": true
+}
+```
+
 ### Quick Window Navigation
-To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, you can add the following config system's key bindings to `keybinding.json`
+To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, you can add the following config system's key bindings to your `keybinding.json` file:
 ```json
 {
   "key": "ctrl+h",
