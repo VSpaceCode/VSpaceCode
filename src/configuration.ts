@@ -1,11 +1,11 @@
-import path = require("path");
 import { getNodeValue, Node, parseTree } from "jsonc-parser";
-import { ConfigurationTarget, ExtensionContext, Range, window, workspace, WorkspaceEdit } from "vscode";
+import * as path from 'path';
+import { ConfigurationTarget, Range, window, workspace, WorkspaceEdit } from "vscode";
 import { CommandId, VimConfigKey, vimExtensionId } from "./constants";
+import { logPath } from "./extension";
 import { KeyBinding } from "./keyBinding";
 import requiredBindings from './keybindings.json';
 import { VimKeyBinding } from "./vimKeyBinding";
-import { logPath } from "./extension";
 
 export async function configSettings() {
     const vimConfig = workspace.getConfiguration(vimExtensionId);
