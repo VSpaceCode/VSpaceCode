@@ -521,7 +521,7 @@
 									},
 									{
 										"key": "S",
-										"name": "Stag lines",
+										"name": "Stage lines",
 										"type": "command",
 										"command": "git.stageSelectedRanges"
 									},
