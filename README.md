@@ -182,7 +182,12 @@ You may want to add the following additional settings to your `settings.json` fi
 ```
 
 ### Quick Window Navigation
-To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, you can add the following config system's key bindings to your `keybinding.json` file:
+To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, you can merge the following config system's key bindings to your `keybindings.json` file.
+
+> This config cannot be used with "Easy Menu Navigation" below.
+<details><summary>keybindings.json</summary>
+<p>
+
 ```json
 {
   "key": "ctrl+h",
@@ -202,8 +207,16 @@ To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, 
 }
 ```
 
+</p>
+</details>
+
 ### Quick Editor Move
-Add the following overrides to `settings.json` will change `<spc> w h/j/k/l` to move the active editor to a window in that direction. Note that this is default behavior before `v0.4.0`
+Merge the following overrides to `settings.json` will change `<spc> w h/j/k/l` to move the active editor to a window in that direction. Note that this is default behavior before `v0.4.0`
+
+
+<details><summary>settings.json</summary>
+<p>
+
 ```json
 "spacecode.bindingOverrides": [
     {
@@ -232,6 +245,9 @@ Add the following overrides to `settings.json` will change `<spc> w h/j/k/l` to 
     }
 ]
 ```
+
+</p>
+</details>
 
 ## Limitations
 
