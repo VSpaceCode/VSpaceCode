@@ -1,6 +1,6 @@
 import { getNodeValue, Node, parseTree } from "jsonc-parser";
 import * as path from 'path';
-import { ConfigurationTarget, Range, window, workspace, WorkspaceEdit } from "vscode";
+import { ConfigurationTarget, Range, window, workspace, WorkspaceEdit, commands } from "vscode";
 import { CommandId, VimConfigKey, vimExtensionId } from "./constants";
 import { logPath } from "./extension";
 import { KeyBinding } from "./keyBinding";
@@ -28,6 +28,8 @@ export async function configSettings() {
 export async function configKeyBindings() {
     let keybindingsPath = path.join(logPath, '..', '..', '..', '..', 'User', 'keybindings.json');
     try {
+        // This step is to create the keybindings.json if needed
+        await commands.executeCommand("workbench.action.openGlobalKeybindingsFile");
         const doc = await workspace.openTextDocument(keybindingsPath);
         const text = doc.getText();
         // return undefined if text is an empty string
