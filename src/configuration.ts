@@ -60,12 +60,12 @@ export async function configKeyBindings() {
             // }
         }
 
-        const rootArray = node ? getNodeValue(node) : [] as KeyBinding[];
+        const rootArray = (node ? getNodeValue(node) : []) as KeyBinding[];
         for (const binding of additionBindings.values()) {
             rootArray.push(binding);
         }
 
-        if (rootArray.lenth > 0) {
+        if (rootArray.length > 0) {
             const updatedText = JSON.stringify(rootArray, undefined, '\t');
 
             const fullRange = new Range(

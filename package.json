@@ -66,7 +66,7 @@
 				"title": "Configure Settings for VSpaceCode"
 			},
 			{
-				"command": "vspacecode.configureKeyBindings",
+				"command": "vspacecode.configureKeybindings",
 				"title": "Configure Keybindings for VSpaceCode"
 			}
 		],
