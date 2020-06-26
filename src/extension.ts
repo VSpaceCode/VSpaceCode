@@ -3,10 +3,8 @@ import { configKeyBindings, configSettings } from './configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
 import { showUpdateMessage, showWelcomeMessage, showActionNotSupportedInRemote } from './messages';
 
-export let logPath: string;
 
 export async function activate(context: ExtensionContext) {
-    logPath = context.logPath;
     const vspacecode = extensions.getExtension(extensionQualifiedId);
     const currentVersion = vspacecode!.packageJSON.version;
     const previousVersion = context.globalState.get<string>(GlobalState.SpacecodeVersion);
