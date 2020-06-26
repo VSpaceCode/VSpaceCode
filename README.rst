@@ -129,6 +129,10 @@ Key bindings                      Description                                 Re
 :kbd:`leader` :kbd:`b` :kbd:`b`   Quick open (show current buffers)
 :kbd:`leader` :kbd:`b` :kbd:`d`   Close active editor
 :kbd:`leader` :kbd:`b` :kbd:`C-d` Close other editors
+:kbd:`leader` :kbd:`b` :kbd:`H`   Move editor left
+:kbd:`leader` :kbd:`b` :kbd:`J`   Move editor down
+:kbd:`leader` :kbd:`b` :kbd:`K`   Move editor up
+:kbd:`leader` :kbd:`b` :kbd:`L`   Move editor right
 :kbd:`leader` :kbd:`b` :kbd:`n`   Next editor
 :kbd:`leader` :kbd:`b` :kbd:`p`   Previous editor
 :kbd:`leader` :kbd:`b` :kbd:`s`   Scratch buffer

@@ -127,6 +127,22 @@
             "commands": ["workbench.action.closeOtherEditors"]
         },
         {
+            "before": ["<leader>", "b", "H"],
+            "commands": ["workbench.action.moveEditorToLeftGroup"]
+        },
+        {
+            "before": ["<leader>", "b", "J"],
+            "commands": ["workbench.action.moveEditorToBelowGroup"]
+        },
+        {
+            "before": ["<leader>", "b", "K"],
+            "commands": ["workbench.action.moveEditorToAboveGroup"]
+        },
+        {
+            "before": ["<leader>", "b", "L"],
+            "commands": ["workbench.action.moveEditorToRightGroup"]
+        },
+        {
             "before": ["<leader>", "b", "n"],
             "commands": ["workbench.action.nextEditor"]
         },
