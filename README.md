@@ -249,6 +249,63 @@ Merge the following overrides to `settings.json` will change `<spc> w h/j/k/l` t
 </p>
 </details>
 
+### Easy Menu Navigation
+
+To navigate menu with `Ctl-h/j/k/l`, you can merge the following to your `settings.json`.
+
+> This config cannot be used with "Quick Window Navigation" above.
+
+<details><summary>settings.json</summary>
+<p>
+
+```json
+[
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "list.expand",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    }
+]
+```
+
+</p>
+</details>
+
 ## Limitations
 
 - Key bindings cannot use `<tab>` or modifiers keys
