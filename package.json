@@ -396,12 +396,6 @@
 										"command": "workbench.action.files.saveAll"
 									},
 									{
-										"key": "l",
-										"name": "Locate file",
-										"type": "command",
-										"command": "revealFileInOS"
-									},
-									{
 										"key": "r",
 										"name": "Open recent...",
 										"type": "command",
@@ -445,6 +439,12 @@
 										"name": "Change file language",
 										"type": "command",
 										"command": "workbench.action.editor.changeLanguageMode"
+									},
+									{
+										"key": "L",
+										"name": "Locate file",
+										"type": "command",
+										"command": "revealFileInOS"
 									},
 									{
 										"key": "=",
