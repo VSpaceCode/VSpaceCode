@@ -1,7 +1,7 @@
-import { commands, ExtensionContext, extensions, env, window } from 'vscode';
+import { commands, ExtensionContext, extensions } from 'vscode';
 import { configKeyBindings, configSettings } from './configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
-import { showUpdateMessage, showWelcomeMessage, showActionNotSupportedInRemote } from './messages';
+import { showUpdateMessage, showWelcomeMessage } from './messages';
 
 
 export async function activate(context: ExtensionContext) {
@@ -10,21 +10,18 @@ export async function activate(context: ExtensionContext) {
     const previousVersion = context.globalState.get<string>(GlobalState.SpacecodeVersion);
     console.log(`VSpaceCode loaded: v${previousVersion} -> v${currentVersion}`);
     context.globalState.update(GlobalState.SpacecodeVersion, currentVersion);
-    const isRemote = !!env.remoteName;
-    if (!isRemote) {
-        if (previousVersion === undefined) {
-            showWelcomeMessage();
-        } else {
-            showUpdateMessage(currentVersion, previousVersion);
-        }
+    if (previousVersion === undefined) {
+        showWelcomeMessage();
+    } else {
+        showUpdateMessage(currentVersion, previousVersion);
     }
 
     await setUpWhichKey();
     context.subscriptions.push(commands.registerCommand(CommandId.ShowSpaceMenu, showSpaceMenu));
     context.subscriptions.push(commands.registerCommand(CommandId.ShowMagitRefMenu, showMagitRefMenu));
     context.subscriptions.push(commands.registerCommand(CommandId.Configure, configure));
-    context.subscriptions.push(commands.registerCommand(CommandId.ConfigureSettings, configureSettings));
-    context.subscriptions.push(commands.registerCommand(CommandId.ConfigureKeybindings, configureKeybindings));
+    context.subscriptions.push(commands.registerCommand(CommandId.ConfigureSettings, configSettings));
+    context.subscriptions.push(commands.registerCommand(CommandId.ConfigureKeybindings, configKeyBindings));
 }
 
 function setUpWhichKey() {
@@ -45,33 +42,10 @@ function showMagitRefMenu() {
 }
 
 function configure() {
-    const isRemote = !!env.remoteName;
-    if (!isRemote) {
-        return Promise.all([
-            commands.executeCommand(CommandId.ConfigureSettings),
-            commands.executeCommand(CommandId.ConfigureKeybindings)
-        ]);
-    } else {
-        return showActionNotSupportedInRemote(CommandId.Configure);
-    }
-}
-
-function configureSettings() {
-    const isRemote = !!env.remoteName;
-    if (!isRemote) {
-        return configSettings();
-    } else {
-        return showActionNotSupportedInRemote(CommandId.ConfigureSettings);
-    }
-}
-
-function configureKeybindings() {
-    const isRemote = !!env.remoteName;
-    if (!isRemote) {
-        return configKeyBindings();
-    } else {
-        return showActionNotSupportedInRemote(CommandId.ConfigureKeybindings);
-    }
+    return Promise.all([
+        commands.executeCommand(CommandId.ConfigureSettings),
+        commands.executeCommand(CommandId.ConfigureKeybindings)
+    ]);
 }
 
 export function deactivate() { }
