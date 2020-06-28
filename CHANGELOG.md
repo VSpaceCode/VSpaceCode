@@ -6,8 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
 ### Added
 - Add menu for magit ref `y` in normal mode
+  
+    This requires configuration of your `keybindings.json`, checkout the installation section of [README](./README.md) for more information
+
 - Add configuration commands for setting up both `settings.json` and `keybindings.json`
 - Add `<spc> b H/J/K/L` for directional editor moving
 - Add `<spc> j` for Jump/Joing/Split menu (#53)
