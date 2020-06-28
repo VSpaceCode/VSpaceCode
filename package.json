@@ -29,7 +29,8 @@
 	"extensionPack": [
 		"VSpaceCode.whichkey",
 		"vscodevim.vim",
-		"kahole.magit"
+		"kahole.magit",
+		"jacobdufault.fuzzy-search"
 	],
 	"extensionDependencies": [
 		"VSpaceCode.whichkey"
@@ -740,9 +741,9 @@
 									},
 									{
 										"key": "s",
-										"name": "Search in current file",
+										"name": "Fuzzy search in current editor",
 										"type": "command",
-										"command": "actions.find"
+										"command": "fuzzySearch.activeTextEditor"
 									}
 								]
 							},
