@@ -571,6 +571,18 @@
 										"command": "editor.action.formatDocument"
 									},
 									{
+										"key": "i",
+										"name": "Jump to symbol in editor",
+										"type": "command",
+										"command": "workbench.action.gotoSymbol"
+									},
+									{
+										"key": "I",
+										"name": "Jump to symbol in workspace",
+										"type": "command",
+										"command": "workbench.action.showAllSymbols"
+									},
+									{
 										"key": "j",
 										"name": "Jump to character",
 										"type": "command",
