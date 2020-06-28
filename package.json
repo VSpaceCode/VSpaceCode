@@ -672,6 +672,40 @@
 								]
 							},
 							{
+								"key": "q",
+								"name": "Quit..",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "q",
+										"name": "Close window",
+										"type": "command",
+										"command": "workbench.action.closeWindow"
+									},
+									{
+										"key": "Q",
+										"name": "Quit application",
+										"type": "command",
+										"command": "workbench.action.quit"
+									},
+									{
+										"key": "r",
+										"name": "Reload window",
+										"type": "command",
+										"command": "workbench.action.reloadWindow"
+									},
+									{
+										"key": "s",
+										"name": "Save all and close window",
+										"type": "commands",
+										"commands": [
+											"workbench.action.files.saveAll",
+											"workbench.action.closeWindow"
+										]
+									}
+								]
+							},
+							{
 								"key": "s",
 								"name": "Search/Symbol...",
 								"type": "bindings",

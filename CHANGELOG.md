@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add configuration commands for setting up both `settings.json` and `keybindings.json`
 - Add `<spc> b H/J/K/L` for directional editor moving
 - Add `<spc> j` for Jump/Joing/Split menu (#53)
+- Add `<spc> q` for Quit menu
 
   This requires `vim.easymotion` to be `true` in your `settings.json`
 
