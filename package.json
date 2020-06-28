@@ -133,6 +133,30 @@
 										"command": "workbench.action.closeActiveEditor"
 									},
 									{
+										"key": "H",
+										"name": "Move Editor into Left Group",
+										"type": "command",
+										"command": "workbench.action.moveEditorToLeftGroup"
+									},
+									{
+										"key": "J",
+										"name": "Move Editor into Below Group",
+										"type": "command",
+										"command": "workbench.action.moveEditorToBelowGroup"
+									},
+									{
+										"key": "K",
+										"name": "Move Editor into Above Group",
+										"type": "command",
+										"command": "workbench.action.moveEditorToAboveGroup"
+									},
+									{
+										"key": "L",
+										"name": "Move Editor into Right Group",
+										"type": "command",
+										"command": "workbench.action.moveEditorToRightGroup"
+									},
+									{
 										"key": "M",
 										"name": "Close other editors",
 										"type": "command",
