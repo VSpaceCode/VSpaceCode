@@ -13,18 +13,18 @@ export async function configSettings() {
 
         const config = workspace.getConfiguration(configName);
         const configValue = config.get(sectionName);
+
+        let updatedValue: any = requiredValue;
         if (Array.isArray(requiredValue) && Array.isArray(configValue)) {
-            const requiredList = [...configValue];
+            updatedValue = [...configValue];
             for (const item of requiredValue) {
                 if (!configValue.find(i => isEqual(i, item))) {
-                    requiredList.push(item);
+                    updatedValue.push(item);
                 }
             }
-            config.update(sectionName, requiredList, ConfigurationTarget.Global);
-        } else {
-            // Update directly if it is not array
-            config.update(sectionName, requiredValue, ConfigurationTarget.Global);
         }
+
+        config.update(sectionName, updatedValue, ConfigurationTarget.Global);
     }
 }
 
