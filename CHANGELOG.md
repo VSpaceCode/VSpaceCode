@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Remove continuos config checker on launch
 - Remove Gitlens bindings from the `<spc> g`
+- Remove support of non-vscodevim users.
+    If you are a non-vscodevim, please use `vscode-which-key` instead.
 
   To restore the previous `<spc> g` menu, merge the following overrides to `settings.json`
   <details><summary>settings.json</summary>
