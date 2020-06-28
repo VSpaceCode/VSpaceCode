@@ -1,4 +1,5 @@
 {
+    "vim.easymotion": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["<space>"],

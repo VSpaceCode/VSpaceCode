@@ -10,15 +10,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add menu for magit ref `y` in normal mode
 - Add configuration commands for setting up both `settings.json` and `keybindings.json`
 - Add `<spc> b H/J/K/L` for directional editor moving
+- Add `<spc> j` for Jump/Joing/Split menu
+
+  This requires `vim.easymotion` to be `true` in your `settings.json`
 
 ### Changed
 - Split the core menu logic to another extension (`vscode-which-key`) so this extension can be focused on Vim users
 
 ### Removed
-- Remove continuos config checker on launch
-- Remove Gitlens bindings from the `<spc> g`
 - Remove support of non-vscodevim users.
-    If you are a non-vscodevim, please use `vscode-which-key` instead.
+
+  If you are a non-vscodevim, please use `vscode-which-key` instead.
+
+- Remove continuos config checker on launch
+
+- Remove Gitlens bindings from the `<spc> g`
 
   To restore the previous `<spc> g` menu, merge the following overrides to `settings.json`
   <details><summary>settings.json</summary>
