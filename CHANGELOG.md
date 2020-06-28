@@ -18,6 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Split the core menu logic to another extension (`vscode-which-key`) so this extension can be focused on Vim users
 - Change `<spc> s s` to use fuzzy search to emulate Helm Swoop/Ivy Swiper (#56)
 
+### Fixed
+- Fix the duplicated `<spc> f l` by move locate file to `<spc> f L`
+
 ### Removed
 - Remove support of non-vscodevim users.
 
