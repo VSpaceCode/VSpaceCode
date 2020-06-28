@@ -185,8 +185,7 @@ To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, 
 </details>
 
 ### Quick Editor Move
-Merge the following overrides to `settings.json` will change `<spc> w h/j/k/l` to move the active editor to a window in that direction. Note that this is default behavior before `v0.4.0`
-
+Merge the following overrides to `settings.json` will change `<spc> w h/j/k/l` to move the active editor to a window in that direction like `<spc> b H/J/K/L` Note that this is default behavior before `v0.4.0`
 
 <details><summary>settings.json</summary>
 <p>
@@ -195,25 +194,25 @@ Merge the following overrides to `settings.json` will change `<spc> w h/j/k/l` t
 "spacecode.bindingOverrides": [
     {
         "keys": "w.h",
-        "name": "Move editor left",
+        "name": "Move editor into the left group",
         "type": "command",
         "command": "workbench.action.moveEditorToLeftGroup"
     },
     {
         "keys": "w.j",
-        "name": "Move editor down",
+        "name": "Move editor into below group",
         "type": "command",
         "command": "workbench.action.moveEditorToBelowGroup"
     },
     {
         "keys": "w.k",
-        "name": "Move editor up",
+        "name": "Move editor into above group",
         "type": "command",
         "command": "workbench.action.moveEditorToAboveGroup"
     },
     {
         "keys": "w.l",
-        "name": "Move editor right",
+        "name": "Move editor into the right group",
         "type": "command",
         "command": "workbench.action.moveEditorToRightGroup"
     }

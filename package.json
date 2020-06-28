@@ -134,25 +134,25 @@
 									},
 									{
 										"key": "H",
-										"name": "Move Editor into Left Group",
+										"name": "Move editor into left group",
 										"type": "command",
 										"command": "workbench.action.moveEditorToLeftGroup"
 									},
 									{
 										"key": "J",
-										"name": "Move Editor into Below Group",
+										"name": "Move editor into below group",
 										"type": "command",
 										"command": "workbench.action.moveEditorToBelowGroup"
 									},
 									{
 										"key": "K",
-										"name": "Move Editor into Above Group",
+										"name": "Move editor into above group",
 										"type": "command",
 										"command": "workbench.action.moveEditorToAboveGroup"
 									},
 									{
 										"key": "L",
-										"name": "Move Editor into Right Group",
+										"name": "Move editor into right group",
 										"type": "command",
 										"command": "workbench.action.moveEditorToRightGroup"
 									},
