@@ -1,24 +1,29 @@
 import { getNodeValue, Node, parseTree } from "jsonc-parser";
+import isEqual from 'lodash/isEqual';
 import { commands, ConfigurationTarget, Range, TextDocument, Uri, window, workspace, WorkspaceEdit } from "vscode";
-import { CommandId, VimConfigKey, vimExtensionId } from "./constants";
 import { KeyBinding } from "./keyBinding";
 import requiredBindings from './keybindings.json';
-import { VimKeyBinding } from "./vimKeyBinding";
+import requiredSettings from './settings.json';
 
 export async function configSettings() {
-    const vimConfig = workspace.getConfiguration(vimExtensionId);
-    const normalBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.NormalNonRecursive) ?? [];
-    const visualBindings = vimConfig.get<VimKeyBinding[]>(VimConfigKey.VisualNonRecursive) ?? [];
-    const hasNormalBinding = normalBindings.some(b => b.commands?.some(c => c === CommandId.ShowSpaceMenu));
-    const hasVisualBinding = visualBindings.some(b => b.commands?.some(c => c === CommandId.ShowSpaceMenu));
-    if (!hasNormalBinding || !hasVisualBinding) {
-        if (!hasNormalBinding) {
-            normalBindings.push({ "before": ["<space>"], "commands": [CommandId.ShowSpaceMenu] });
-            vimConfig.update(VimConfigKey.NormalNonRecursive, normalBindings, ConfigurationTarget.Global);
-        }
-        if (!hasVisualBinding) {
-            visualBindings.push({ "before": ["<space>"], "commands": [CommandId.ShowSpaceMenu] });
-            vimConfig.update(VimConfigKey.VisualNonRecursive, visualBindings, ConfigurationTarget.Global);
+    for (const [requiredKey, requiredValue] of Object.entries(requiredSettings)) {
+        const sections = requiredKey.split(".");
+        const sectionName = sections.pop()!;
+        const configName = sections.join(".");
+
+        const config = workspace.getConfiguration(configName);
+        const configValue = config.get(sectionName);
+        if (Array.isArray(requiredValue) && Array.isArray(configValue)) {
+            const requiredList = [...configValue];
+            for (const item of requiredValue) {
+                if (!configValue.find(i => isEqual(i, item))) {
+                    requiredList.push(item);
+                }
+            }
+            config.update(sectionName, requiredList, ConfigurationTarget.Global);
+        } else {
+            // Update directly if it is not array
+            config.update(sectionName, requiredValue, ConfigurationTarget.Global);
         }
     }
 }
