@@ -4,13 +4,14 @@
 
 **Update**: This project has been merged with [stevenguh/spacecode](https://github.com/stevenguh/spacecode) to share the efforts to bring the best Spacemacs integration into VSCode. It is not any longer a list of settings but is based on an extension. If you prefer the old way please read the section [Project history](#project-history).
 
-This extension is inspired by spacemacs and aiming to provide similar experience in VSCode. An action menu trigger by space key is implemented to reduce memorization of shortcuts. You can change the editor group, change the file language, and check git status without leaving your keyboard. This provides speed to shortcut while minimizing typing comparing to fuzzy search in the command palette or shortcut memorizing.
+This extension is inspired by spacemacs and aiming to provide similar experience in VSCode. An action menu trigger by space key is implemented to reduce memorization of shortcuts. You can change the editor group, change the file language, and check git status without leaving your keyboard. This provides the speed to shortcut while minimizing typing comparing to fuzzy search in the command palette or shortcut memorizing.
 
 ## Features
 
 - Spacemacs like action menu to reduce memorization of shortcuts
 - All menu items are customizable
 - The menu key is customizable
+- Bundle all the extensions needed out-of-the box
 
 ![VSpaceCode actions](resources/feature.gif)
 
@@ -20,57 +21,30 @@ This project was initially started by [StreakyCobra](https://github.com/StreakyC
 
 If you prefer this project's first approach using settings, see the [vscode-vim](https://github.com/VSpaceCode/VSpaceCode/tree/vscode-vim) branch.
 
-## Requirements
-
-- [VSCode Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) (required for default space key)
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) (required for default bindings)
-- [edamagit](https://marketplace.visualstudio.com/items?itemName=kahole.magit) and its Vim bindings (required for default bindings)
-
 ## Installation
-After the installation of the extension, a series of prompts in the vscode notification will guide you through the steps to set to setup the key binding for the menu. If you are a VSCode Vim user, the prompts can config the space key in Vim key binding section automatically. However, it will reformat `vim.normalModeKeyBindingsNonRecursive` or `vim.visualModeKeyBindingsNonRecursive` in your `settings.json`. If you want to keep the format, or are not a vim users, you can follow the instructions below to add key bindings manually.
+This extension is published as an extension pack, and should install all the necessary extensions for the best-of-the box experience; however, if you do not like the bundled extensions or are not using VSCode Vim, please go to the [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key) for a standalone which key menu function.
 
-### I am using VSCode Vim
-Add the menu key as follows in `settings.json`. This following example is to let VSCode Vim to capture the `space` key and trigger the action menu in normal mode and visual mode.
-> To access `settings.json`, you can search `Setting` in the command list with `Ctl+Shift+P` or `Cmd+Shift+P` and select `Preference: Open Settings (JSON)`.
+After the installation of the extension, a notification will help to to automatically install both the necessary settings and user bindings. However, the formatting of `settings.json` and `keybindings.json` may be lost. You can choose to follow the manual configuration below.
 
-> If you have existing config for `vim.normalModeKeyBindingsNonRecursive` or `vim.visualModeKeyBindingsNonRecursive`, make sure you add to the array instead of replace them.
+### Configuration
+- Configure Settings and Keybindings Config for VSpaceCode
 
-```json
-"vim.normalModeKeyBindingsNonRecursive": [
-  {
-    "before": ["<space>"],
-    "commands": ["vspacecode.space"]
-  }
-],
-"vim.visualModeKeyBindingsNonRecursive": [
-  {
-    "before": ["<space>"],
-    "commands": ["vspacecode.space"]
-  }
-]
-```
+  This command will run the below two commands and is also the command that runs when Automatically is clicked on the welcome notification
 
-### I am *not* using VSCode Vim
-1. Change the `vspacecode.checkVimConfig` to `false` in `settings.json` disable vim config checking on startup.
-2. Add the trigger as follows in `keybindings.json`. This following json is an example to bind `alt+space` to the action menu when a text editor is in focus.
+- Configure Settings for VSpaceCode
 
-> To access `keybindings.json`, you can search `Keyboard` in the command list with `Ctl+Shift+P` or `Cmd+Shift+P` and select `Preference: Open Keyboard Shortcuts (JSON)`.
+  This command will merge the [necessary settings](./src/settings.json) to your user's `settings.json`
 
-```json
-{
-  "key": "alt+space",
-  "command": "vspacecode.space",
-  "when": "editorTextFocus"
-},
-```
+- Configure Keybindings for VSpaceCode
+
+  This command will merge the [necessary key bindings](./src/keybindings.json) to your user's `keybindings.json`
+
+You can manually merge the [settings](./src/settings.json) and [keybindings](./src/keybindings.json) manually to your user's `settings.json` and `keybindings.json`
 
 ## Menu Customization
-
 There are two ways to customize the menu: incrementally, and from scratch. Incrementally is great for when you only need to modify a few bindings from the default. Customizing from scratch is great for total control and the customization.
 
-> The key `q` is reversed to escape the menu.
-
-> The default bindings are subject to change before `1.0.0`. If you find something you that think it should bind to a particular key by default, or you want a particular command, please open an issue as a feature request.
+> The default menu bindings are subject to change before `1.0.0`. If you find something that you think it should bind to a particular key by default, or you want a particular command, please open an issue as a feature request.
 
 ### Incrementally
 Using this option will allow to you surgically update the default bindings (`vspacecode.bindings`). The extension will override bindings sequentially base on `vspacecode.bindingOverrides`.
