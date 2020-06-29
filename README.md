@@ -24,12 +24,18 @@ If you prefer this project's first approach using settings, see the [vscode-vim]
 ## Installation
 This extension is published as an extension pack, and should install all the necessary extensions for the best-of-the box experience; however, if you do not like the bundled extensions or are not using VSCode Vim, please go to the [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key) for a standalone which key menu function.
 
-After the installation of the extension, a notification will help to to automatically install both the necessary settings and user bindings. However, the formatting of `settings.json` and `keybindings.json` may be lost. You can choose to follow the manual configuration below.
+After the installation of the extension, a notification will help you to configure both the necessary settings and user bindings. However, the formatting of `settings.json` and `keybindings.json` may be lost. You can choose to follow the manual configuration below.
 
 ### Configuration
+The [`settings.json`](./src/settings.json) and [`keybindings.json`](./src/keybindings.json) in the repo contains the configurations needed. You can merge them manually to your user's `settings.json` and `keybindings.json`.
+
+> You can access your user's `settings.json` and `keybindings.json` by searching "Preference: Open Settings (JSON)" and "Preference: Open Keyboard Shortcuts (JSON)" in the command palette (Ctl+Shift+p)
+
+We've added the following commands that can be access through command palette to rerun the automatic configuration step.
+
 - Configure Settings and Keybindings Config for VSpaceCode
 
-  This command will run the below two commands and is also the command that runs when Automatically is clicked on the welcome notification
+  This command will run the below two commands and is also the command that runs on the welcome notification
 
 - Configure Settings for VSpaceCode
 
@@ -39,10 +45,8 @@ After the installation of the extension, a notification will help to to automati
 
   This command will merge the [necessary key bindings](./src/keybindings.json) to your user's `keybindings.json`
 
-You can manually merge the [settings](./src/settings.json) and [keybindings](./src/keybindings.json) manually to your user's `settings.json` and `keybindings.json`
-
 ## Menu Customization
-There are two ways to customize the menu: incrementally, and from scratch. Incrementally is great for when you only need to modify a few bindings from the default. Customizing from scratch is great for total control and the customization.
+There are two ways to customize the menu: incrementally, and from scratch. Incrementally is great for when you only need to modify a few bindings from the default. Customizing from scratch is great for total control of the customization.
 
 > The default menu bindings are subject to change before `1.0.0`. If you find something that you think it should bind to a particular key by default, or you want a particular command, please open an issue as a feature request.
 
