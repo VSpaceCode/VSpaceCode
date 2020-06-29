@@ -9,7 +9,7 @@ const enum WelcomeSelection {
 
 export async function showWelcomeMessage() {
     const selection = await window.showInformationMessage(
-        `Welcome to VSpaceCode. There are some user configurations needed to get started. By choosing ${WelcomeSelection.Auto}, we will configure your user's settings.json and keybindings.json. However, formatting in those file may be lost.`,
+        `Welcome to VSpaceCode. Some configurations are needed to get started. Choose ${WelcomeSelection.Auto} to merge necessary configurations to your user's settings.json and keybindings.json. However, formatting in those file may be lost.`,
         WelcomeSelection.Manually,
         WelcomeSelection.Auto,
     );
