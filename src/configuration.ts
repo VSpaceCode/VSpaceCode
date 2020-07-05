@@ -1,4 +1,4 @@
-import { getNodeValue, Node, parseTree } from "jsonc-parser";
+import { getNodeValue, Node, parseTree, JSONPath, modify, applyEdits } from "jsonc-parser";
 import isEqual from 'lodash/isEqual';
 import { commands, ConfigurationTarget, Range, TextDocument, Uri, window, workspace, WorkspaceEdit } from "vscode";
 import { KeyBinding } from "./keyBinding";
@@ -60,41 +60,41 @@ async function editBindingsDoc(doc: TextDocument) {
         additionBindings.set(key, override);
     }
 
-    if (node && node.type === 'array' && node.children) {
-        // Exclude the bindings that exists
-        for (let child of node.children) {
-            const v = getNodeValue(child) as KeyBinding;
-            const key = `${v.key}${v.command}`;
-            if (additionBindings.has(key)) {
-                additionBindings.delete(key);
+    let updatedText;
+    if (node && node.type !== 'array') {
+        // Replace directly if it is not array, that means the keybindings contains the wrong config.
+        updatedText = JSON.stringify([...additionBindings.values()], undefined, '\t');
+    } else {
+        // Else if the either the node is not undefined, could be all comments
+        // or it is an array type and has children
+        if (node && node.type === 'array' && node.children) {
+            // If the root node is an array and has children
+            // Exclude the bindings that exists
+            for (let child of node.children) {
+                const v = getNodeValue(child) as KeyBinding;
+                const key = `${v.key}${v.command}`;
+                if (additionBindings.has(key)) {
+                    additionBindings.delete(key);
+                }
             }
         }
 
-        // TODO: wait for the support of array insert to preserved comment
-        // https://github.com/microsoft/node-jsonc-parser/pull/35
-        // let updatedText = text;
-        // let index = node.children.length;
-        // for (const binding of additionBindings.values()) {
-        //     const path = [index] as JSONPath;
-        //     const edits = modify(updatedText, path, binding, { formattingOptions: {} });
-        //     updatedText = applyEdits(updatedText, edits);
-        // }
+        // Update the text to avoid remove comments the much as possible
+        updatedText = text;
+        let index = node?.children?.length ?? 0;
+        for (const binding of additionBindings.values()) {
+            const path = [index] as JSONPath;
+            const edits = modify(updatedText, path, binding, { formattingOptions: { insertSpaces: false } });
+            updatedText = applyEdits(updatedText, edits);
+            index++;
+        }
     }
 
-    const rootArray = (node ? getNodeValue(node) : []) as KeyBinding[];
-    for (const binding of additionBindings.values()) {
-        rootArray.push(binding);
-    }
-
-    if (rootArray.length > 0) {
-        const updatedText = JSON.stringify(rootArray, undefined, '\t');
-
-        const fullRange = new Range(
-            doc.positionAt(0),
-            doc.positionAt(text.length));
-        const edit = new WorkspaceEdit();
-        edit.replace(doc.uri, fullRange, updatedText);
-        await workspace.applyEdit(edit);
-        await doc.save();
-    }
+    const fullRange = new Range(
+        doc.positionAt(0),
+        doc.positionAt(text.length));
+    const edit = new WorkspaceEdit();
+    edit.replace(doc.uri, fullRange, updatedText);
+    await workspace.applyEdit(edit);
+    await doc.save();
 }

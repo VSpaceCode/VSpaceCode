@@ -1548,7 +1548,7 @@
 		"webpack-cli": "^3.3.12"
 	},
 	"dependencies": {
-		"jsonc-parser": "^2.2.1",
+		"jsonc-parser": "^2.3.0",
 		"lodash": "^4.17.15"
 	}
 }
