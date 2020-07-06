@@ -2,8 +2,9 @@ import { getNodeValue, Node, parseTree, JSONPath, modify, applyEdits } from "jso
 import isEqual from 'lodash/isEqual';
 import { commands, ConfigurationTarget, Range, TextDocument, Uri, window, workspace, WorkspaceEdit } from "vscode";
 import { KeyBinding } from "./keyBinding";
-import requiredBindings from './keybindings.json';
-import requiredSettings from './settings.json';
+
+const requiredBindings = require('./keybindings.jsonc');
+const requiredSettings  = require('./settings.jsonc');
 
 export async function configSettings() {
     for (const [requiredKey, requiredValue] of Object.entries(requiredSettings)) {

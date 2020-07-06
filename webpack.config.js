@@ -27,6 +27,15 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.jsonc$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: path.resolve('./loaders/jsonc-loader.js'),
+          },
+        ],
+      },
+      {
         test: /\.ts$/,
         exclude: /node_modules/,
         use: [
