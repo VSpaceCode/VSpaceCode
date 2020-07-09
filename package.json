@@ -111,6 +111,15 @@
 								"command": "workbench.action.showCommands"
 							},
 							{
+								"key": "\t",
+								"name": "Last editor",
+								"type": "commands",
+								"commands": [
+									"workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+									"list.select"
+								]
+							},
+							{
 								"key": "b",
 								"name": "Buffers/Editors...",
 								"type": "bindings",

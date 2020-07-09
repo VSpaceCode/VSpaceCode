@@ -283,10 +283,12 @@ To navigate menu with `Ctl-h/j/k/l`, you can merge the following to your `settin
 </p>
 </details>
 
-## Limitations
+### Use non-character keys
+See in [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key#use-non-character-keys)
 
-- Key bindings cannot use `<tab>` or modifiers keys
-  
+### Display menu with a delay
+See in [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key#display-menu-with-a-delay)
+
 ## Release Notes
 
 See [CHANGELOG.md](CHANGELOG.md)
