@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 - Add `<spc> <tab>` to switch to last editor
+- Add `ctrl+j/k` for the follow actions
+    + Quick open menu/QuickPick
+    + Suggestion overlay/intellisense
+    + Parameter hint (i.e. the overlay when there's multiple overloads)
 
 ## [0.5.0] - 2020-06-29
 ### Added

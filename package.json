@@ -71,6 +71,38 @@
 				"title": "Configure Keybindings for VSpaceCode"
 			}
 		],
+		"keybindings": [
+			{
+				"key": "ctrl+j",
+				"command": "workbench.action.quickOpenSelectNext",
+				"when": "inQuickOpen"
+			},
+			{
+				"key": "ctrl+k",
+				"command": "workbench.action.quickOpenSelectPrevious",
+				"when": "inQuickOpen"
+			},
+			{
+				"key": "ctrl+j",
+				"command": "selectNextSuggestion",
+				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+			},
+			{
+				"key": "ctrl+k",
+				"command": "selectPrevSuggestion",
+				"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+			},
+			{
+				"key": "ctrl+j",
+				"command": "showNextParameterHint",
+				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+			},
+			{
+				"key": "ctrl+k",
+				"command": "showPrevParameterHint",
+				"when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+			}
+		],
 		"configuration": [
 			{
 				"title": "VSpaceCode",
