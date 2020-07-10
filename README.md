@@ -162,27 +162,34 @@ You may want to add the following additional settings to your `settings.json` fi
 ### Quick Window Navigation
 To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, you can merge the following config system's key bindings to your `keybindings.json` file.
 
-> This config cannot be used with "Easy Menu Navigation" below.
+> This config might conflict with "Easy List Navigation" below.
+
 <details><summary>keybindings.json</summary>
 <p>
 
 ```json
-{
-  "key": "ctrl+h",
-  "command": "workbench.action.navigateLeft"
-},
-{
-  "key": "ctrl+j",
-  "command": "workbench.action.navigateDown"
-},
-{
-  "key": "ctrl+k",
-  "command": "workbench.action.navigateUp"
-},
-{
-  "key": "ctrl+l",
-  "command": "workbench.action.navigateRight"
-}
+[
+	{
+		"key": "ctrl+h",
+		"command": "workbench.action.navigateLeft",
+		"when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.navigateDown",
+		"when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !inKeybindingsSearch && !problemsFilterFocus"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.navigateUp",
+		"when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "workbench.action.navigateRight",
+		"when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible"
+  }
+]
 ```
 
 </p>
@@ -226,37 +233,17 @@ Merge the following overrides to `settings.json` will change `<spc> w h/j/k/l` t
 </p>
 </details>
 
-### Easy Menu Navigation
+### Easy List Navigation
 
-To navigate menu with `Ctl-h/j/k/l`, you can merge the following to your `settings.json`.
+Although [VSCode Vim already bound](https://github.com/VSCodeVim/Vim/blob/v1.14.5/package.json#L124-L152) these to `h/j/k/l`, however, they might not work in all lists like in the problem pane. You can merge the following keybindings to `keybindings.json` to bind `ctrl+h/l/j/k` for those situations. 
 
-> This config cannot be used with "Quick Window Navigation" above.
+> This config might conflict with "Quick Window Navigation" above.
 
-<details><summary>settings.json</summary>
+<details><summary>keybindings.json</summary>
 <p>
 
 ```json
 [
-    {
-        "key": "ctrl+j",
-        "command": "workbench.action.quickOpenSelectNext",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "workbench.action.quickOpenSelectPrevious",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "selectPrevSuggestion",
-        "when": "editorTextFocus && suggestWidgetVisible"
-    },
     {
         "key": "ctrl+h",
         "command": "list.collapse",

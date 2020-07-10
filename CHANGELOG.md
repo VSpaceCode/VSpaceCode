@@ -7,10 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 - Add `<spc> <tab>` to switch to last editor
-- Add `ctrl+j/k` for the follow actions
+- Add `ctrl+j/k` for the follow actions by default
     + Quick open menu/QuickPick
     + Suggestion overlay/intellisense
     + Parameter hint (i.e. the overlay when there's multiple overloads)
+
+    If you bind `ctrl+h/j/k/l` for window navigation, you can add the `!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible` to the `when` section of those keybindings. See README the example of the bindings
 
 ## [0.5.0] - 2020-06-29
 ### Added
