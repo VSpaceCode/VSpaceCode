@@ -27,7 +27,7 @@ This extension is published as an extension pack, and should install all the nec
 After the installation of the extension, a notification will help you to configure both the necessary settings and user bindings. However, the formatting of `settings.json` and `keybindings.json` may be lost. You can choose to follow the manual configuration below.
 
 ### Configuration
-The [`settings.json`](./src/settings.json) and [`keybindings.json`](./src/keybindings.json) in the repo contains the configurations needed. You can merge them manually to your user's `settings.json` and `keybindings.json`.
+The [`settings.json`](./src/settings.jsonc) and [`keybindings.json`](./src/keybindings.jsonc) in the repo contains the configurations needed. You can merge them manually to your user's `settings.json` and `keybindings.json`.
 
 > You can access your user's `settings.json` and `keybindings.json` by searching "Preference: Open Settings (JSON)" and "Preference: Open Keyboard Shortcuts (JSON)" in the command palette (Ctl+Shift+p)
 
@@ -39,11 +39,11 @@ The following commands can be access through command palette to rerun the automa
 
 - Configure Settings for VSpaceCode
 
-  This command will merge the [necessary settings](./src/settings.json) to your user's `settings.json`
+  This command will merge the [necessary settings](./src/settings.jsonc) to your user's `settings.json`
 
 - Configure Keybindings for VSpaceCode
 
-  This command will merge the [necessary key bindings](./src/keybindings.json) to your user's `keybindings.json`
+  This command will merge the [necessary key bindings](./src/keybindings.jsonc) to your user's `keybindings.json`
 
 ## Menu Customization
 There are two ways to customize the menu: incrementally, and from scratch. Incrementally is great for when you only need to modify a few bindings from the default. Customizing from scratch is great for total control of the customization.
