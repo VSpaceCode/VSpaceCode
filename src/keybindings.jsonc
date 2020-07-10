@@ -64,5 +64,38 @@
         "key": "y",
         "command": "vspacecode.showMagitRefMenu",
         "when": "editorTextFocus && editorLangId == 'magit' && vim.mode == 'Normal'"
+    },
+    // Easy navigation in quick open/QuickPick
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    // Easy navigation in sugesstion/intellisense
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    // Easy navigation in parameter hint (i.e. traverse the hints when there's multiple overload for one method)
+    {
+        "key": "ctrl+j",
+        "command": "showNextParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "showPrevParameterHint",
+        "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
     }
 ]
