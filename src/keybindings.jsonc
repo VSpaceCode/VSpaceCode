@@ -7,6 +7,7 @@
 	},
     // Keybindings required for edamagit
     // https://github.com/kahole/edamagit#vim-support-vscodevim
+    // Cannot be added to package.json because keybinding replacements
     {
         "key": "tab",
         "command": "extension.vim_tab",
@@ -62,6 +63,7 @@
         "command": "-magit.reset-hard"
     },
     // Extra ref menu support for edamagit with the key "y"
+    // Cannot be added to package.json because keybinding replacements
     {
         "key": "y",
         "command": "-magit.show-refs"
@@ -83,6 +85,7 @@
         "when": "inQuickOpen"
     },
     // Easy navigation in sugesstion/intellisense
+    // Cannot be added to package.json because of conflict with vim's default bindings
     {
         "key": "ctrl+j",
         "command": "selectNextSuggestion",
@@ -94,6 +97,7 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     // Easy navigation in parameter hint (i.e. traverse the hints when there's multiple overload for one method)
+    // Cannot be added to package.json because of conflict with vim's default bindings
     {
         "key": "ctrl+j",
         "command": "showNextParameterHint",
