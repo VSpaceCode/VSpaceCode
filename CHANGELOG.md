@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 - Add `<spc> <tab>` to switch to last editor
+- Add `vim.useSystemClipboard` to the setting configuration command
 - Add `ctrl+j/k` for the follow actions by default
     + Quick open menu/QuickPick
     + Suggestion overlay/intellisense
