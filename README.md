@@ -29,7 +29,7 @@ After the installation of the extension, a notification will help you to configu
 ### Configuration
 The [`settings.json`](./src/settings.jsonc) and [`keybindings.json`](./src/keybindings.jsonc) in the repo contains the configurations needed. You can merge them manually to your user's `settings.json` and `keybindings.json`.
 
-> You can access your user's `settings.json` and `keybindings.json` by searching "Preference: Open Settings (JSON)" and "Preference: Open Keyboard Shortcuts (JSON)" in the command palette (Ctl+Shift+p)
+> You can access your user's `settings.json` and `keybindings.json` by searching `Preference: Open Settings (JSON)` and `Preference: Open Keyboard Shortcuts (JSON)` in the command palette (Ctl+Shift+P)
 
 The following commands can be access through command palette to rerun the automatic configuration step.
 
