@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add `<spc> <tab>` to switch to last editor
 - Add `<spc> p \`` to switch active project window (application window)
+- Add support to run VSpaceCode locally with VSCode Remote
 - ⚙️ Add `vim.useSystemClipboard` to the setting configuration command
 - ⌨️ Add `<spc>` to trigger which-key menu when the active editor group is empty
 - ⌨️ Add `ctrl+j/k` as a shortcut to traverse items in:

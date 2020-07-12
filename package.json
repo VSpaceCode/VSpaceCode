@@ -35,6 +35,10 @@
 	"extensionDependencies": [
 		"VSpaceCode.whichkey"
 	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"homepage": "https://github.com/VSpaceCode/VSpaceCode",
 	"repository": {
