@@ -7,10 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ⚙️ Require setting reconfiguration
-> You can run `Configure Settings for VSpaceCode` command to configure those automatically in your user's `settings.json`, or you can merge them manually to your `settings.json` 
+> You can run `VSpaceCode: Configure Default Settings` command to configure those automatically in your user's `settings.json`, or you can merge them manually to your `settings.json` 
 
 ⌨️️ Require keybinding reconfiguration
-> You can run `Configure Keybindings for VSpaceCode` command to configure those automatically in your user's `keybindings.json`, or you can merge them manually to your `keybindings.json` 
+> You can run `VSpaceCode: Configure Default Keybindings` command to configure those automatically in your user's `keybindings.json`, or you can merge them manually to your `keybindings.json` 
 
 - Add `<spc> <tab>` to switch to last editor
 - Add `<spc> p \`` to switch active project window (application window)

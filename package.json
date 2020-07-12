@@ -52,23 +52,23 @@
 		"commands": [
 			{
 				"command": "vspacecode.space",
-				"title": "Show VSpaceCode Menu"
+				"title": "VSpaceCode: Show VSpaceCode Menu"
 			},
 			{
 				"command": "vspacecode.showMagitRefMenu",
-				"title": "Show Magit Ref Menu"
+				"title": "VSpaceCode: Show Magit Ref Menu"
 			},
 			{
 				"command": "vspacecode.configure",
-				"title": "Configure Settings and Keybindings Config for VSpaceCode"
+				"title": "VSpaceCode: Configure Default Settings and Keybindings"
 			},
 			{
 				"command": "vspacecode.configureSettings",
-				"title": "Configure Settings for VSpaceCode"
+				"title": "VSpaceCode: Configure Default Settings"
 			},
 			{
 				"command": "vspacecode.configureKeybindings",
-				"title": "Configure Keybindings for VSpaceCode"
+				"title": "VSpaceCode: Configure Default Keybindings"
 			}
 		],
 		"configuration": [
