@@ -661,6 +661,12 @@
 								"type": "bindings",
 								"bindings": [
 									{
+										"key": "`",
+										"name": "Switch active project window...",
+										"type": "command",
+										"command": "workbench.action.switchWindow"
+									},
+									{
 										"key": "f",
 										"name": "Find file in project...",
 										"type": "command",
