@@ -774,7 +774,7 @@
 											},
 											{
 												"key": "/",
-												"name": "Search in a project with a selection",
+												"name": "Search in project with selection",
 												"type": "commands",
 												"commands": [
 													"editor.action.addSelectionToNextFindMatch",
@@ -791,13 +791,13 @@
 									},
 									{
 										"key": "p",
-										"name": "Search in a project",
+										"name": "Search in project",
 										"type": "command",
 										"command": "workbench.action.findInFiles"
 									},
 									{
 										"key": "P",
-										"name": "Search in a project with a selection",
+										"name": "Search in project with selection",
 										"type": "commands",
 										"commands": [
 											"editor.action.addSelectionToNextFindMatch",
@@ -1458,13 +1458,13 @@
 							},
 							{
 								"key": "/",
-								"name": "Search in a project",
+								"name": "Search in project",
 								"type": "command",
 								"command": "workbench.action.findInFiles"
 							},
 							{
 								"key": "*",
-								"name": "Search in a project with a selection",
+								"name": "Search in project with selection",
 								"type": "commands",
 								"commands": [
 									"editor.action.addSelectionToNextFindMatch",
