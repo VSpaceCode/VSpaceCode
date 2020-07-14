@@ -12,9 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ⌨️️ Require keybinding reconfiguration
 > You can run `VSpaceCode: Configure Default Keybindings` command to configure those automatically in your user's `keybindings.json`, or you can merge them manually to your `keybindings.json` 
 
+### Added
 - Add `<spc> <tab>` to switch to last editor
 - Add `<spc> p \`` to switch active project window (application window)
 - Add support to run VSpaceCode locally with VSCode Remote
+- Add `<spc> s S` to fuzzy search with selection
 - ⚙️ Add `vim.useSystemClipboard` to the setting configuration command
 - ⌨️ Add `<spc>` to trigger which-key menu when the active editor group is empty
 - ⌨️ Add `ctrl+j/k` as a shortcut to traverse items in:
@@ -23,6 +25,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     + Parameter hint (i.e. the overlay when there's multiple overloads)
 
     > If you bind `ctrl+h/j/k/l` for window navigation, you can add the `!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible` to the `when` section of those keybindings. See [README](./README.md) the example of the bindings
+
+### Changed
+- Change `<spc> s s` to search the selection automatically if there's one
 
 ## [0.5.0] - 2020-06-29
 ### Added

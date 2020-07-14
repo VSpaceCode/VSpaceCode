@@ -808,7 +808,16 @@
 										"key": "s",
 										"name": "Fuzzy search in current editor",
 										"type": "command",
-										"command": "fuzzySearch.activeTextEditor"
+										"command": "editor.action.addSelectionToNextFindMatch"
+									},
+									{
+										"key": "S",
+										"name": "Fuzzy search with selection in current editor",
+										"type": "commands",
+										"commands": [
+											"editor.action.addSelectionToNextFindMatch",
+											"fuzzySearch.activeTextEditorWithCurrentSelection"
+										]
 									}
 								]
 							},
