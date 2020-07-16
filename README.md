@@ -27,7 +27,7 @@ This extension is published as an extension pack, and should install all the nec
 After the installation of the extension, a notification will help you to configure both the necessary settings and user bindings. However, the formatting of `settings.json` and `keybindings.json` may be lost. You can choose to follow the manual configuration below.
 
 ### Configuration
-The [`settings.json`](./src/settings.jsonc) and [`keybindings.json`](./src/keybindings.jsonc) in the repo contains the configurations needed. You can merge them manually to your user's `settings.json` and `keybindings.json`.
+The [`settings.jsonc`](./src/settings.jsonc) and [`keybindings.jsonc`](./src/keybindings.jsonc) in the repo contains the configurations needed. You can merge them manually to your user's `settings.json` and `keybindings.json`.
 
 > You can access your user's `settings.json` and `keybindings.json` by searching `Preference: Open Settings (JSON)` and `Preference: Open Keyboard Shortcuts (JSON)` in the command palette (Ctl+Shift+P)
 
