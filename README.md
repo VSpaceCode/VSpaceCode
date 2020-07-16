@@ -33,15 +33,15 @@ The [`settings.jsonc`](./src/settings.jsonc) and [`keybindings.jsonc`](./src/key
 
 The following commands can be access through command palette to rerun the automatic configuration step.
 
-- Configure Settings and Keybindings Config for VSpaceCode
+- VSpaceCode: Configure Default Settings and Keybindings
 
   This command will run the below two commands and is also the command that runs on the welcome notification
 
-- Configure Settings for VSpaceCode
+- VSpaceCode: Configure Default Settings
 
   This command will merge the [necessary settings](./src/settings.jsonc) to your user's `settings.json`
 
-- Configure Keybindings for VSpaceCode
+- VSpaceCode: Configure Default Keybindings
 
   This command will merge the [necessary key bindings](./src/keybindings.jsonc) to your user's `keybindings.json`
 
