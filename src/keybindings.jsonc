@@ -1,10 +1,10 @@
 [
-	// Trigger vspacecode in empty editor group
-	{
-		"key": "space",
-		"command": "vspacecode.space",
-		"when": "activeEditorGroupEmpty && focusedView == '' && !whichkeyActive"
-	},
+    // Trigger vspacecode in empty editor group
+    {
+        "key": "space",
+        "command": "vspacecode.space",
+        "when": "activeEditorGroupEmpty && focusedView == '' && !whichkeyActive"
+    },
     // Keybindings required for edamagit
     // https://github.com/kahole/edamagit#vim-support-vscodevim
     // Cannot be added to package.json because keybinding replacements

@@ -3,7 +3,7 @@
     "vim.easymotion": true,
     // Use system clipboard for vim
     "vim.useSystemClipboard": true,
-    // Trigger the main which key with in the active editor with vim
+    // Trigger the main which key menu with in the active editor with vim
     // This cannot be put into keybindings.json because it will
     // create conflict with Vim.
     // https://github.com/stevenguh/spacecode/issues/3
