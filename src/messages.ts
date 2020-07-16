@@ -36,7 +36,3 @@ export async function showUpdateMessage(cur: string, prev: string) {
         }
     }
 }
-
-export function showActionNotSupportedInRemote(actionName: string) {
-    return window.showWarningMessage(`${actionName} is not supported in VSCode Remote`);
-}
