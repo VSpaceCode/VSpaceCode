@@ -731,7 +731,7 @@
 								"bindings": [
 									{
 										"key": "c",
-										"name": "Clear hightlight",
+										"name": "Clear highlight",
 										"type": "command",
 										"command": "vim.remap",
 										"args": {
@@ -750,7 +750,7 @@
 									},
 									{
 										"key": "h",
-										"name": "Hightlight symbol",
+										"name": "Highlight symbol",
 										"type": "transient",
 										"command": "editor.action.wordHighlight.trigger",
 										"bindings": [
@@ -914,13 +914,13 @@
 								"bindings": [
 									{
 										"key": "b",
-										"name": "Toggle side bar visbility",
+										"name": "Toggle side bar visibility",
 										"type": "command",
 										"command": "workbench.action.toggleSidebarVisibility"
 									},
 									{
 										"key": "j",
-										"name": "Toggle panel visbility",
+										"name": "Toggle panel visibility",
 										"type": "command",
 										"command": "workbench.action.togglePanel"
 									},
@@ -1189,13 +1189,13 @@
 										"bindings": [
 											{
 												"key": "s",
-												"name": "Sort lines ascendingly",
+												"name": "Sort lines ascending",
 												"type": "command",
 												"command": "editor.action.sortLinesAscending"
 											},
 											{
 												"key": "S",
-												"name": "Sort lines descendingly",
+												"name": "Sort lines descending",
 												"type": "command",
 												"command": "editor.action.sortLinesDescending"
 											},
