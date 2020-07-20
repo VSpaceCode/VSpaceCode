@@ -1189,13 +1189,13 @@
 										"bindings": [
 											{
 												"key": "s",
-												"name": "Sort lines ascending",
+												"name": "Sort lines in ascending order",
 												"type": "command",
 												"command": "editor.action.sortLinesAscending"
 											},
 											{
 												"key": "S",
-												"name": "Sort lines descending",
+												"name": "Sort lines in descending order",
 												"type": "command",
 												"command": "editor.action.sortLinesDescending"
 											},
