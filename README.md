@@ -259,6 +259,26 @@ Although [VSCode Vim already bound](https://github.com/VSCodeVim/Vim/blob/v1.14.
 ]
 ```
 
+### Rebind action menu for file-browser
+File browser, which is bound to `<spc> f f` by default, binds `ctrl+a` to open an action menu; however, `ctrl+a` can be used move the text cursor to the front. Your can merge the following example keybindings to `keybindings.json` to use `ctrl+o` instead of `ctrl+a` in the file browser to open an action menu.
+<details><summary>keybindings.json</summary>
+<p>
+
+```json
+[
+    {
+        "key": "ctrl+a",
+        "command": "-file-browser.actions",
+        "when": "inFileBrowser"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "file-browser.actions",
+        "when": "inFileBrowser"
+    }
+]
+```
+
 </p>
 </details>
 
@@ -267,6 +287,10 @@ See in [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key#use-non
 
 ### Display menu with a delay
 See in [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key#display-menu-with-a-delay)
+
+## Known Issues
+- File browser (bound to`<spc> f f`) doesn't work correctly when the active document is a local file with VScode Remote ([vscode-file-browser/#6](https://github.com/bodil/vscode-file-browser/issues/6))
+- File browser (bound to `<spc> f f`) doesn't have a button to open local file with VSCode Remote
 
 ## Release Notes
 

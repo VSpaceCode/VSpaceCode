@@ -30,7 +30,8 @@
 		"VSpaceCode.whichkey",
 		"vscodevim.vim",
 		"kahole.magit",
-		"jacobdufault.fuzzy-search"
+		"jacobdufault.fuzzy-search",
+		"bodil.file-browser"
 	],
 	"extensionDependencies": [
 		"VSpaceCode.whichkey"
@@ -382,7 +383,7 @@
 										"key": "f",
 										"name": "Open file/folder",
 										"type": "command",
-										"command": "workbench.action.files.openFileFolder"
+										"command": "file-browser.open"
 									},
 									{
 										"key": "n",

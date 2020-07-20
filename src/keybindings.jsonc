@@ -107,5 +107,16 @@
         "key": "ctrl+k",
         "command": "showPrevParameterHint",
         "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-    }
+    },
+    // Add ctrl+h/l to navigate in file browser
+	{
+		"key": "ctrl+h",
+		"command": "file-browser.stepOut",
+		"when": "inFileBrowser"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "file-browser.stepIn",
+		"when": "inFileBrowser"
+	}
 ]
