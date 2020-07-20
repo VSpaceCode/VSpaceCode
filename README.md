@@ -259,6 +259,9 @@ Although [VSCode Vim already bound](https://github.com/VSCodeVim/Vim/blob/v1.14.
 ]
 ```
 
+</p>
+</details>
+
 ### Rebind action menu for file-browser
 File browser, which is bound to `<spc> f f` by default, binds `ctrl+a` to open an action menu; however, `ctrl+a` can be used move the text cursor to the front. Your can merge the following example keybindings to `keybindings.json` to use `ctrl+o` instead of `ctrl+a` in the file browser to open an action menu.
 <details><summary>keybindings.json</summary>
