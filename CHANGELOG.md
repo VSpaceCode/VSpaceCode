@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.7.1] - 2020-07-20
 ### Fixed
-- Fixed README format
+- Fix README format
 
 ## [0.7.0] - 2020-07-20
 ### Changed
