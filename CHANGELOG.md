@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+### Added
+- Add `<spc> s r` to search reference
+- Add `<spc> s R` to search reference in side bar
+
+### Changed
+- Change `<spc> s j` to jump to symbol in file
 
 ## [0.7.1] - 2020-07-20
 ### Fixed

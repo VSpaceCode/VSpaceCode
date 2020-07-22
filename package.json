@@ -786,9 +786,9 @@
 									},
 									{
 										"key": "j",
-										"name": "Find all references",
+										"name": "Jump to symbol in file",
 										"type": "command",
-										"command": "editor.action.referenceSearch.trigger"
+										"command": "workbench.action.gotoSymbol"
 									},
 									{
 										"key": "p",
@@ -804,6 +804,18 @@
 											"editor.action.addSelectionToNextFindMatch",
 											"workbench.action.findInFiles"
 										]
+									},
+									{
+										"key": "r",
+										"name": "Search all references",
+										"type": "command",
+										"command": "editor.action.referenceSearch.trigger"
+									},
+									{
+										"key": "R",
+										"name": "Search all references in side bar",
+										"type": "command",
+										"command": "references-view.find"
 									},
 									{
 										"key": "s",
