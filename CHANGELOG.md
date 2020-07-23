@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add `<spc> s r` to search reference
 - Add `<spc> s R` to search reference in side bar
+- Add `<spc> s J` to jump symbol in the workspace
 
 ### Changed
 - Change `<spc> s j` to jump to symbol in file
