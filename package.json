@@ -1517,6 +1517,12 @@
 								]
 							},
 							{
+								"key": ";",
+								"name": "Toggle comment",
+								"type": "command",
+								"command": "editor.action.commentLine"
+							},
+							{
 								"key": "1",
 								"name": "Focus 1st editor group",
 								"type": "command",
