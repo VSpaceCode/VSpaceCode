@@ -1488,6 +1488,12 @@
 								"command": "workbench.action.findInFiles"
 							},
 							{
+								"key": "'",
+								"name": "Show terminal",
+								"type": "command",
+								"command": "workbench.action.terminal.focus"
+							},
+							{
 								"key": "*",
 								"name": "Search in project with selection",
 								"type": "commands",
