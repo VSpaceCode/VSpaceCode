@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+
+## [0.7.2] - 2020-07-23
 ### Added
 - Add `<spc> s r` to search reference
 - Add `<spc> s R` to search reference in side bar
