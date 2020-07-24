@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+### Added
+- Add `<spc> f e` to open settings
 
 ## [0.7.2] - 2020-07-23
 ### Added
@@ -60,7 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.5.0] - 2020-06-29
 ### Added
 - Add menu for magit ref `y` in normal mode
-  
+
     This requires configuration of your `keybindings.json`, checkout the installation section of [README](./README.md) for more information
 
 - Add configuration commands for setting up both `settings.json` and `keybindings.json`
@@ -278,7 +280,7 @@ In this example: Only the second command has args. When `args` is used with `com
   + Add `s` to select theme in UI toggles (`T`)
   + Change `t` to toggle activity bar visibility in UI toggles (`T`)
   + Use `T` instead `t` to toggle tab visibility in UI toggles (`T`)
-  + Remove fold `t` in toggles menu (`t`) in favor of the added toggle in the fold menu 
+  + Remove fold `t` in toggles menu (`t`) in favor of the added toggle in the fold menu
 - Change the debug bindings to be more aligned with spcaemacs
   + Use `s` instead of `o` for step over
   + use `o` instead of `O` for step out
