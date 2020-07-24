@@ -380,6 +380,12 @@
 								"type": "bindings",
 								"bindings": [
 									{
+										"key": "e",
+										"name": "Open Settings",
+										"type": "command",
+										"command": "workbench.action.openGlobalSettings"
+									},
+									{
 										"key": "f",
 										"name": "Open file/folder",
 										"type": "command",
