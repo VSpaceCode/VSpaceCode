@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add `<spc> f e` to open settings
+- ⌨️ Add `ctrl+h/l` to traverse VSCode file explorer
 
 ## [0.7.2] - 2020-07-23
 ### Added
