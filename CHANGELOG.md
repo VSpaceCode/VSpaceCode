@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add `<spc> f e` to open settings
+- Add `<spc> b s` to open a new scratch buffer
 - Add `<spc> ;` to toggle comment
 - Add `<spc> '` to show terminal
 - ⌨️ Add `ctrl+h/j/k/l` to traverse VSCode file explorer

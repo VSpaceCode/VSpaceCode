@@ -196,6 +196,12 @@
 										"command": "workbench.action.files.newUntitledFile"
 									},
 									{
+										"key": "s",
+										"name": "Scratch buffer",
+										"type": "command",
+										"command": "workbench.action.files.newUntitledFile"
+									},
+									{
 										"key": "u",
 										"name": "Reopen closed editor",
 										"type": "command",
