@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change `<spc> s j` to jump to symbol in file
 
 ### Fixed
-- Fix the `<spc> s s` by calling the right command
+- Fix `<spc> s s` by calling the right command
 
 ## [0.7.1] - 2020-07-20
 ### Fixed
