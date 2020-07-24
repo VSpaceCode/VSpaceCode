@@ -119,10 +119,20 @@
 		"command": "file-browser.stepIn",
 		"when": "inFileBrowser"
 	},
-    // Add ctrl+h/l to navigate in VSCode file explorer
+    // Navigate in VSCode file explorer
     {
         "key": "ctrl+h",
         "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "list.focusUp",
         "when": "listFocus && !inputFocus"
     },
     {
