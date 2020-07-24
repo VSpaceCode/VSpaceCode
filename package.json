@@ -1575,7 +1575,8 @@
 		"lint": "eslint src --ext ts",
 		"test-compile": "tsc -p ./",
 		"pretest": "npm run test-compile && npm run lint",
-		"test": "node ./out/test/runTest.js"
+		"test": "node ./out/test/runTest.js",
+		"generate-keybindings": "node ./scripts/keybindings.js"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
@@ -1587,6 +1588,7 @@
 		"@typescript-eslint/parser": "^2.30.0",
 		"eslint": "^6.8.0",
 		"glob": "^7.1.6",
+		"markdown-table": "^2.0.0",
 		"mocha": "^7.1.2",
 		"ts-loader": "^7.0.5",
 		"typescript": "^3.8.3",
