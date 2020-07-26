@@ -716,6 +716,12 @@
 										"command": "workbench.action.quickOpen"
 									},
 									{
+										"key": "l",
+										"name": "Switch project...",
+										"type": "command",
+										"command": "workbench.action.openRecent"
+									},
+									{
 										"key": "p",
 										"name": "Switch project...",
 										"type": "command",
