@@ -322,6 +322,10 @@
             "commands": ["workbench.action.reloadWindow"]
         },
         {
+            "before": ["<leader>", "r", "b"],
+            "commands": ["workbench.action.showAllEditorsByMostRecentlyUsed"]
+        },
+        {
             "before": ["<leader>", "r", "s"],
             "commands": ["workbench.action.findInFiles"]
         },
