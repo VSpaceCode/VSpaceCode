@@ -686,6 +686,19 @@
 								]
 							},
 							{
+								"key": "l",
+								"name": "Layouts...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "d",
+										"name": "Close workspace",
+										"type": "command",
+										"command": "workbench.action.closeFolder"
+									}
+								]
+							},
+							{
 								"key": "p",
 								"name": "Project...",
 								"type": "bindings",
