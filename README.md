@@ -81,7 +81,7 @@ The following example will replace/append the whole `<SPC> g` menu with one bind
           "key": "s",
           "name": "Go to",
           "type": "command",
-          "command": "workbench.action.gotoLine",   
+          "command": "workbench.action.gotoLine",
         }
       ]
     }
@@ -187,47 +187,9 @@ To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, 
 </p>
 </details>
 
-### Quick Editor Move
-Merge the following overrides to `settings.json` will change `<spc> w h/j/k/l` to move the active editor to a window in that direction like `<spc> b H/J/K/L` Note that this is default behavior before `v0.4.0`
-
-<details><summary>settings.json</summary>
-<p>
-
-```json
-"spacecode.bindingOverrides": [
-    {
-        "keys": "w.h",
-        "name": "Move editor into the left group",
-        "type": "command",
-        "command": "workbench.action.moveEditorToLeftGroup"
-    },
-    {
-        "keys": "w.j",
-        "name": "Move editor into below group",
-        "type": "command",
-        "command": "workbench.action.moveEditorToBelowGroup"
-    },
-    {
-        "keys": "w.k",
-        "name": "Move editor into above group",
-        "type": "command",
-        "command": "workbench.action.moveEditorToAboveGroup"
-    },
-    {
-        "keys": "w.l",
-        "name": "Move editor into the right group",
-        "type": "command",
-        "command": "workbench.action.moveEditorToRightGroup"
-    }
-]
-```
-
-</p>
-</details>
-
 ### Easy List Navigation
 
-Although [VSCode Vim already bound](https://github.com/VSCodeVim/Vim/blob/v1.14.5/package.json#L124-L152) these to `h/j/k/l`, however, they might not work in all lists like in the problem pane. You can merge the following keybindings to `keybindings.json` to bind `ctrl+h/l/j/k` for those situations. 
+Although [VSCode Vim already bound](https://github.com/VSCodeVim/Vim/blob/v1.14.5/package.json#L124-L152) these to `h/j/k/l`, however, they might not work in all lists like in the problem pane. You can merge the following keybindings to `keybindings.json` to bind `ctrl+h/l/j/k` for those situations.
 
 > This config might conflict with "Quick Window Navigation" above.
 
