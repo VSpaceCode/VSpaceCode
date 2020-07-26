@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> l d` to close current workspace
 - Add `<spc> p l` to open recent project (same as `<spc> p p`)
 - Add `<spc> q f` to close window (same as `<spc> q q`)
+- Add `<spc> r b` to open recent buffers
 - Add `<spc> r s` to search in project
 - Add `<spc> ;` to toggle comment
 - Add `<spc> '` to show terminal

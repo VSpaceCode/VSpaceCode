@@ -781,6 +781,12 @@
 								"type": "bindings",
 								"bindings": [
 										{
+											"key": "b",
+											"name": "Recent buffers",
+											"type": "command",
+											"command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+										},
+										{
 											"key": "s",
 											"name": "Search in project",
 											"type": "command",
