@@ -154,9 +154,7 @@ This section contains additional config that might be helpful beyond the default
 ### Quick Window Navigation
 To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, you can merge the following config system's key bindings to your `keybindings.json` file.
 
-> This config might conflict with "Easy List Navigation" below.
-
-<details><summary>keybindings.json</summary>
+<details><summary>entries to add to keybindings.json</summary>
 <p>
 
 ```json
@@ -187,13 +185,15 @@ To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, 
 </p>
 </details>
 
-### Easy List Navigation
+You need also to remove the following key bindings from your `keybindings.json`
+file, because they are in conflict.
+By removing them you cannot use `ctrl+h/l/j/k` for list
+navigation anymore (for example in the file explorer or in the problem pane).
+Anyway [VSCode Vim bound](https://github.com/VSCodeVim/Vim/blob/v1.14.5/package.json#L124-L152)
+`h/j/k/l`, to move inside the file explorer, so you will be still able to use
+them, instead.
 
-Although [VSCode Vim already bound](https://github.com/VSCodeVim/Vim/blob/v1.14.5/package.json#L124-L152) these to `h/j/k/l`, however, they might not work in all lists like in the problem pane. You can merge the following keybindings to `keybindings.json` to bind `ctrl+h/l/j/k` for those situations.
-
-> This config might conflict with "Quick Window Navigation" above.
-
-<details><summary>keybindings.json</summary>
+<details><summary>entries to remove from keybindings.json</summary>
 <p>
 
 ```json
