@@ -776,6 +776,19 @@
 								]
 							},
 							{
+								"key": "r",
+								"name": "Resume...",
+								"type": "bindings",
+								"bindings": [
+										{
+											"key": "s",
+											"name": "Search in project",
+											"type": "command",
+											"command": "workbench.action.findInFiles"
+										}
+									]
+								},
+							{
 								"key": "s",
 								"name": "Search/Symbol...",
 								"type": "bindings",
