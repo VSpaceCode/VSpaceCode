@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> h k` to open global key bindings
 - Add `<spc> l d` to close current workspace
 - Add `<spc> p l` to open recent project (same as `<spc> p p`)
+- Add `<spc> q f` to close window (same as `<spc> q q`)
 - Add `<spc> ;` to toggle comment
 - Add `<spc> '` to show terminal
 - ⌨️ Add `ctrl+h/j/k/l` to traverse VSCode file explorer. They are in conflict with [Quick Window Navigation](https://github.com/VSpaceCode/VSpaceCode/tree/develop#quick-window-navigation), so be sure to read the updated instructions.

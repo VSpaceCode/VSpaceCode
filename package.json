@@ -741,6 +741,12 @@
 								"type": "bindings",
 								"bindings": [
 									{
+										"key": "f",
+										"name": "Close window",
+										"type": "command",
+										"command": "workbench.action.closeWindow"
+									},
+									{
 										"key": "q",
 										"name": "Close window",
 										"type": "command",
