@@ -561,6 +561,19 @@
 								]
 							},
 							{
+								"key": "h",
+								"name": "Help...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "k",
+										"name": "Open global key bindings",
+										"type": "command",
+										"command": "workbench.action.openGlobalKeybindings"
+									}
+								]
+							},
+							{
 								"key": "i",
 								"name": "Insert...",
 								"type": "bindings",

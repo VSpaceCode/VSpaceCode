@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add `<spc> f e` to open settings
 - Add `<spc> b s` to open a new scratch buffer
+- Add `<spc> h k` to open global key bindings
 - Add `<spc> ;` to toggle comment
 - Add `<spc> '` to show terminal
 - ⌨️ Add `ctrl+h/j/k/l` to traverse VSCode file explorer. They are in conflict with [Quick Window Navigation](https://github.com/VSpaceCode/VSpaceCode/tree/develop#quick-window-navigation), so be sure to read the updated instructions.
