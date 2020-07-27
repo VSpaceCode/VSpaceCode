@@ -1140,16 +1140,10 @@
 										"command": "workbench.action.moveActiveEditorGroupRight"
 									},
 									{
-										"key": "t",
-										"name": "Toggle editor group sizes",
-										"type": "command",
-										"command": "workbench.action.toggleEditorWidths"
-									},
-									{
 										"key": "m",
 										"name": "Maximize editor group",
 										"type": "command",
-										"command": "workbench.action.minimizeOtherEditors"
+										"command": "workbench.action.toggleEditorWidths"
 									},
 									{
 										"key": "M",

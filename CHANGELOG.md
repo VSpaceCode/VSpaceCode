@@ -25,6 +25,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> '` to show terminal
 - ⌨️ Add `ctrl+h/j/k/l` to traverse VSCode file explorer. They are in conflict with [Quick Window Navigation](https://github.com/VSpaceCode/VSpaceCode/tree/develop#quick-window-navigation), so be sure to read the updated instructions.
 
+### Changed
+- Change `<spc> w m` to be able to toggle it
+
+### Removed
+- Remove `<spc> w t` since it has been replaced by `<spc> w m`
+
 ## [0.7.2] - 2020-07-23
 ### Added
 - Add `<spc> s r` to search reference
