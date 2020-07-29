@@ -49,7 +49,7 @@ The following commands can be access through command palette to rerun the automa
 There are two ways to customize the menu: incrementally, and from scratch. Incrementally is great for when you only need to modify a few bindings from the default. Customizing from scratch is great for total control of the customization.
 
 ### Default bindings
-See [KEYBINDINGS.md](./KEYBINDINGS.md) for default bindings.
+See [KEYBINDINGS.md](https://github.com/VSpaceCode/VSpaceCode/blob/gh-pages/KEYBINDINGS.md) for default bindings.
 
 > The default menu bindings are subject to change before `1.0.0`. If you find something that you think it should bind to a particular key by default, or you want a particular command, please open an issue as a feature request.
 
