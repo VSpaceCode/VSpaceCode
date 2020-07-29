@@ -1,0 +1,23 @@
+name: Keybindings Docs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      run: |
+        npm install
+        npm run generate-keybindings
+        mkdir deploy
+        mv KEYBINDINGS.md deploy
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./deploy
+        keep_files: true
