@@ -157,7 +157,7 @@ This section contains additional config that might be helpful beyond the default
 ### Quick Window Navigation
 To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, you can merge the following config system's key bindings to your `keybindings.json` file.
 
-> This config might conflict with "Easy List Navigation" below.
+> This config might be in conflict with "Easy List Navigation" below.
 
 <details><summary>keybindings.json</summary>
 <p>
@@ -194,7 +194,7 @@ To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, 
 
 Although [VSCode Vim already bound](https://github.com/VSCodeVim/Vim/blob/v1.14.5/package.json#L124-L152) these to `h/j/k/l`, however, they might not work in all lists like in the problem pane. You can merge the following keybindings to `keybindings.json` to bind `ctrl+h/l/j/k` for those situations.
 
-> This config might conflict with "Quick Window Navigation" above.
+> This config might be in conflict with "Quick Window Navigation" above.
 
 <details><summary>keybindings.json</summary>
 <p>
