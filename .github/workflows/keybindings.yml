@@ -2,8 +2,8 @@ name: Keybindings Docs
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - v*
 
 jobs:
   docs:
