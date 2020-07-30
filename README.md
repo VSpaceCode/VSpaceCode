@@ -172,7 +172,7 @@ To navigate all the windows including slide and bottom pane with `Ctl-h/j/k/l`, 
 	{
 		"key": "ctrl+j",
 		"command": "workbench.action.navigateDown",
-		"when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible && !inKeybindingsSearch && !problemsFilterFocus"
+		"when": "!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible"
 	},
 	{
 		"key": "ctrl+k",
