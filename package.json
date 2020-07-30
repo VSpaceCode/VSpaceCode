@@ -7,7 +7,7 @@
 	"author": {
 		"name": "Steven Guh"
 	},
-	"version": "0.7.2",
+	"version": "0.7.3",
 	"engines": {
 		"vscode": "^1.45.0"
 	},
@@ -780,20 +780,20 @@
 								"name": "Resume...",
 								"type": "bindings",
 								"bindings": [
-										{
-											"key": "b",
-											"name": "Recent buffers",
-											"type": "command",
-											"command": "workbench.action.showAllEditorsByMostRecentlyUsed"
-										},
-										{
-											"key": "s",
-											"name": "Search in project",
-											"type": "command",
-											"command": "workbench.action.findInFiles"
-										}
-									]
-								},
+									{
+										"key": "b",
+										"name": "Recent buffers",
+										"type": "command",
+										"command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+									},
+									{
+										"key": "s",
+										"name": "Search in project",
+										"type": "command",
+										"command": "workbench.action.findInFiles"
+									}
+								]
+							},
 							{
 								"key": "s",
 								"name": "Search/Symbol...",

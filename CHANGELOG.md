@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+
+## [0.7.3] - 2020-07-30
 ### Added
 - Add `<spc> f e` to open settings
 - Add `<spc> b s` to open a new scratch buffer
