@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+### Changed
+- Change `<spc> b Y` to deselect after copying
 
 ## [0.7.3] - 2020-07-30
 ### Added

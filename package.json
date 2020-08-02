@@ -222,7 +222,8 @@
 										"type": "commands",
 										"commands": [
 											"editor.action.selectAll",
-											"editor.action.clipboardCopyAction"
+											"editor.action.clipboardCopyAction",
+											"cancelSelection"
 										]
 									}
 								]
