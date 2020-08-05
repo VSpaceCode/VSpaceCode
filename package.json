@@ -92,6 +92,12 @@
 								"command": "magit.show-refs"
 							},
 							{
+								"key": "s",
+								"name": "Copy section value",
+								"type": "command",
+								"command": "magit.copy-section-value"
+							},
+							{
 								"key": "y",
 								"name": "Yank a line",
 								"type": "command",

@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+### Added
+- Add copy section value for magit ref menu
+
 ### Changed
 - Change `<spc> b Y` to deselect after copying
 
