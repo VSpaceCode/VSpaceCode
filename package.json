@@ -658,6 +658,12 @@
 												"name": "Diff",
 												"type": "command",
 												"command": "magit.diff-file"
+											},
+											{
+												"key": "l",
+												"name": "Log (focus timeline)",
+												"type": "command",
+												"command": "timeline.focus"
 											}
 										]
 									}
