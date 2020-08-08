@@ -399,6 +399,12 @@
 										"command": "workbench.action.openGlobalSettings"
 									},
 									{
+										"key": "E",
+										"name": "Open Settings JSON",
+										"type": "command",
+										"command": "workbench.action.openSettingsJson"
+									},
+									{
 										"key": "f",
 										"name": "Open file/folder",
 										"type": "command",
