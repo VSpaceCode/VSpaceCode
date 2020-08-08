@@ -513,6 +513,24 @@
 												"key": "l",
 												"name": "Open language settings",
 												"type": "command"
+											},
+											{
+												"command": "workbench.action.openSnippets",
+												"key": "s",
+												"name": "Configure user snippets",
+												"type": "command"
+											},
+											{
+												"key": "w",
+												"name": "Open Workspace Settings",
+												"type": "command",
+												"command": "workbench.action.openWorkspaceSettings"
+											},
+											{
+												"key": "W",
+												"name": "Open Workspace Settings JSON",
+												"type": "command",
+												"command": "workbench.action.openWorkspaceSettingsFile"
 											}
 										]
 									},
