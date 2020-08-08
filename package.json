@@ -619,6 +619,12 @@
 										"command": "git.clone"
 									},
 									{
+										"key": "i",
+										"name": "Initialize repository",
+										"type": "command",
+										"command": "git.init"
+									},
+									{
 										"key": "s",
 										"name": "Status",
 										"type": "command",
