@@ -512,16 +512,16 @@
 												"command": "workbench.action.openGlobalKeybindingsFile"
 											},
 											{
-												"command": "workbench.action.configureLanguageBasedSettings",
 												"key": "l",
 												"name": "Open language settings",
-												"type": "command"
+												"type": "command",
+												"command": "workbench.action.configureLanguageBasedSettings"
 											},
 											{
-												"command": "workbench.action.openSnippets",
 												"key": "s",
 												"name": "Configure user snippets",
-												"type": "command"
+												"type": "command",
+												"command": "workbench.action.openSnippets"
 											},
 											{
 												"key": "w",
