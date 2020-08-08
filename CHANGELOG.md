@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add copy section value for magit ref menu
+- Add `<spc> T i` to choose icon theme
 
 ### Changed
 - Change `<spc> b Y` to deselect after copying

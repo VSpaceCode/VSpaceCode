@@ -1014,6 +1014,12 @@
 										"command": "workbench.action.toggleSidebarVisibility"
 									},
 									{
+										"key": "i",
+										"name": "Select icon theme",
+										"type": "command",
+										"command": "workbench.action.selectIconTheme"
+									},
+									{
 										"key": "j",
 										"name": "Toggle panel visibility",
 										"type": "command",
