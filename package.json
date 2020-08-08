@@ -613,6 +613,12 @@
 										"command": "magit.blame-file"
 									},
 									{
+										"key": "c",
+										"name": "Clone",
+										"type": "command",
+										"command": "git.clone"
+									},
+									{
 										"key": "s",
 										"name": "Status",
 										"type": "command",
