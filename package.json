@@ -450,12 +450,6 @@
 										"command": "workbench.files.action.showActiveFileInExplorer"
 									},
 									{
-										"key": "y",
-										"name": "Copy path of active file",
-										"type": "command",
-										"command": "workbench.action.files.copyPathOfActiveFile"
-									},
-									{
 										"key": "o",
 										"name": "Open with...",
 										"type": "command",
@@ -574,6 +568,25 @@
 												"name": "Convert indentation to spaces",
 												"type": "command",
 												"command": "editor.action.indentationToSpaces"
+											}
+										]
+									},
+									{
+										"key": "y",
+										"name": "Yank...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "y",
+												"name": "Copy path of active file",
+												"type": "command",
+												"command": "workbench.action.files.copyPathOfActiveFile"
+											},
+											{
+												"key": "Y",
+												"name": "Copy relative path of active file",
+												"type": "command",
+												"command": "copyRelativeFilePath"
 											}
 										]
 									}
