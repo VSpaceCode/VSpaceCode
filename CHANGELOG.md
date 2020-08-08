@@ -15,11 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add copy section value for magit ref menu
 - Add `<spc> T i` to choose icon theme
-- Add `<spc> h K` to open global key bindings JSON
-- Add `<spc> f E` to open settings JSON
 
 ### Changed
 - Change `<spc> b Y` to deselect after copying
+- Change `<spc> f e` to open settings bindings
 
 ## [0.7.3] - 2020-07-30
 ### Added

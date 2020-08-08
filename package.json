@@ -393,18 +393,6 @@
 								"type": "bindings",
 								"bindings": [
 									{
-										"key": "e",
-										"name": "Open Settings",
-										"type": "command",
-										"command": "workbench.action.openGlobalSettings"
-									},
-									{
-										"key": "E",
-										"name": "Open Settings JSON",
-										"type": "command",
-										"command": "workbench.action.openSettingsJson"
-									},
-									{
 										"key": "f",
 										"name": "Open file/folder",
 										"type": "command",
@@ -490,6 +478,43 @@
 										"name": "Format file",
 										"type": "command",
 										"command": "editor.action.formatDocument"
+									},
+									{
+										"key": "e",
+										"name": "Emacs/VSpaceCode...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "d",
+												"name": "Open Settings",
+												"type": "command",
+												"command": "workbench.action.openGlobalSettings"
+											},
+											{
+												"key": "D",
+												"name": "Open Settings JSON",
+												"type": "command",
+												"command": "workbench.action.openSettingsJson"
+											},
+											{
+												"key": "k",
+												"name": "Open global key bindings",
+												"type": "command",
+												"command": "workbench.action.openGlobalKeybindings"
+											},
+											{
+												"key": "K",
+												"name": "Open global key bindings JSON",
+												"type": "command",
+												"command": "workbench.action.openGlobalKeybindingsFile"
+											},
+											{
+												"command": "workbench.action.configureLanguageBasedSettings",
+												"key": "l",
+												"name": "Open language settings",
+												"type": "command"
+											}
+										]
 									},
 									{
 										"key": "i",
@@ -583,12 +608,6 @@
 										"name": "Open global key bindings",
 										"type": "command",
 										"command": "workbench.action.openGlobalKeybindings"
-									},
-									{
-										"key": "K",
-										"name": "Open global key bindings JSON",
-										"type": "command",
-										"command": "workbench.action.openGlobalKeybindingsFile"
 									}
 								]
 							},
