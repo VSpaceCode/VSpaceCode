@@ -577,6 +577,12 @@
 										"name": "Open global key bindings",
 										"type": "command",
 										"command": "workbench.action.openGlobalKeybindings"
+									},
+									{
+										"key": "K",
+										"name": "Open global key bindings JSON",
+										"type": "command",
+										"command": "workbench.action.openGlobalKeybindingsFile"
 									}
 								]
 							},
