@@ -647,6 +647,19 @@
 										"name": "Unstage file",
 										"type": "command",
 										"command": "magit.unstage-file"
+									},
+									{
+										"key": "f",
+										"name": "File...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "d",
+												"name": "Diff",
+												"type": "command",
+												"command": "magit.diff-file"
+											}
+										]
 									}
 								]
 							},

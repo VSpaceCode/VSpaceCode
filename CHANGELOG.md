@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> f D` to delete current file
 - Add `<spc> g c` to clone git repository
 - Add `<spc> g i` to initialize git repository
+- Add `<spc> g f d` to view differences of current file
 
 ### Changed
 - Change `<spc> b Y` to deselect after copying
