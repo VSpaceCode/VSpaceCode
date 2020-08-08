@@ -31,8 +31,7 @@
 		"vscodevim.vim",
 		"kahole.magit",
 		"jacobdufault.fuzzy-search",
-		"bodil.file-browser",
-		"sleistner.vscode-fileutils"
+		"bodil.file-browser"
 	],
 	"extensionDependencies": [
 		"VSpaceCode.whichkey"
@@ -396,8 +395,11 @@
 									{
 										"key": "D",
 										"name": "Delete current file",
-										"type": "command",
-										"command": "fileutils.removeFile"
+										"type": "commands",
+										"commands": [
+											"workbench.files.action.showActiveFileInExplorer",
+											"deleteFile"
+										]
 									},
 									{
 										"key": "f",
