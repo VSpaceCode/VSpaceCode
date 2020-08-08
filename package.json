@@ -409,9 +409,9 @@
 									},
 									{
 										"key": "n",
-										"name": "New Untitled",
+										"name": "New File",
 										"type": "command",
-										"command": "workbench.action.files.newUntitledFile"
+										"command": "explorer.newFile"
 									},
 									{
 										"key": "w",

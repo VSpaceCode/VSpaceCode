@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Change `<spc> b Y` to deselect after copying
 - Change `<spc> f e` to open settings bindings
+- Change `<spc> f n` to create new file with explorer
 - Change `<spc> f y` to open yank bindings
 
 ## [0.7.3] - 2020-07-30
