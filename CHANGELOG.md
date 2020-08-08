@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> g i` to initialize git repository
 - Add `<spc> g f d` to view differences of current file
 - Add `<spc> g f l` to focus on timeline
+- Add `<spc> h d` to open VSCode documentation
 
 ### Changed
 - Change `<spc> b Y` to deselect after copying

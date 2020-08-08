@@ -675,6 +675,12 @@
 								"type": "bindings",
 								"bindings": [
 									{
+										"key": "d",
+										"name": "Open VSCode Documentation",
+										"type": "command",
+										"command": "workbench.action.openDocumentationUrl"
+									},
+									{
 										"key": "k",
 										"name": "Open global key bindings",
 										"type": "command",
