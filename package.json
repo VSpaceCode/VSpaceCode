@@ -904,6 +904,12 @@
 										"command": "workbench.action.reloadWindow"
 									},
 									{
+										"key": "R",
+										"name": "Reload window with extensions disabled",
+										"type": "command",
+										"command": "workbench.action.reloadWindowWithExtensionsDisabled"
+									},
+									{
 										"key": "s",
 										"name": "Save all and close window",
 										"type": "commands",
