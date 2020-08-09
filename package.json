@@ -861,6 +861,12 @@
 										"command": "workbench.action.openRecent"
 									},
 									{
+										"key": "R",
+										"name": "Replace in files...",
+										"type": "command",
+										"command": "workbench.action.replaceInFiles"
+									},
+									{
 										"key": "t",
 										"name": "Show tree/explorer view",
 										"type": "command",
