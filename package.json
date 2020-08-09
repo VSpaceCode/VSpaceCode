@@ -691,6 +691,12 @@
 										"name": "Report Issue",
 										"type": "command",
 										"command": "workbench.action.openRequestFeatureUrl"
+									},
+									{
+										"key": "T",
+										"name": "Open VSCode Tutorial",
+										"type": "command",
+										"command": "workbench.action.showInteractivePlayground"
 									}
 								]
 							},

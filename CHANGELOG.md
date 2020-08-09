@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> g f l` to focus on timeline
 - Add `<spc> h d` to open VSCode documentation
 - Add `<spc> h I` to report issue
+- Add `<spc> h T` to open VSCode tutorial
 
 ### Changed
 - Change `<spc> b Y` to deselect after copying
