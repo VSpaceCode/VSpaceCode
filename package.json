@@ -142,6 +142,12 @@
 										"command": "workbench.action.firstEditorInGroup"
 									},
 									{
+										"key": "0",
+										"name": "Last editor in group",
+										"type": "command",
+										"command": "workbench.action.lastEditorInGroup"
+									},
+									{
 										"key": "b",
 										"name": "Show all buffers/editors",
 										"type": "command",
