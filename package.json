@@ -685,6 +685,12 @@
 										"name": "Open global key bindings",
 										"type": "command",
 										"command": "workbench.action.openGlobalKeybindings"
+									},
+									{
+										"key": "I",
+										"name": "Report Issue",
+										"type": "command",
+										"command": "workbench.action.openRequestFeatureUrl"
 									}
 								]
 							},
