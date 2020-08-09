@@ -136,6 +136,12 @@
 								"type": "bindings",
 								"bindings": [
 									{
+										"key": "1",
+										"name": "First editor in group",
+										"type": "command",
+										"command": "workbench.action.firstEditorInGroup"
+									},
+									{
 										"key": "b",
 										"name": "Show all buffers/editors",
 										"type": "command",
