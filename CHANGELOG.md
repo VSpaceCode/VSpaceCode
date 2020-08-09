@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> h d` to open VSCode documentation
 - Add `<spc> h I` to report issue
 - Add `<spc> h T` to open VSCode tutorial
+- Add `<spc> j v` to Focus Breadcrumbs
 
 ### Changed
 - Change `<spc> b Y` to deselect after copying

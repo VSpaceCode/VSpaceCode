@@ -749,6 +749,12 @@
 										"command": "workbench.action.showAllSymbols"
 									},
 									{
+										"key": "v",
+										"name": "Focus Breadcrumbs (variables?)",
+										"type": "command",
+										"command": "breadcrumbs.focusAndSelect"
+									},
+									{
 										"key": "j",
 										"name": "Jump to character",
 										"type": "command",
