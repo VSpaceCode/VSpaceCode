@@ -1386,6 +1386,46 @@
 										"name": "Close all editor groups",
 										"type": "command",
 										"command": "workbench.action.closeAllGroups"
+									},
+									{
+										"key": "[",
+										"name": "Shrink window",
+										"type": "transient",
+										"command": "workbench.action.decreaseViewSize",
+										"bindings": [
+											{
+												"key": "[",
+												"name": "Shrink window",
+												"type": "command",
+												"command": "workbench.action.decreaseViewSize"
+											},
+											{
+												"key": "]",
+												"name": "Enlarge window",
+												"type": "command",
+												"command": "workbench.action.increaseViewSize"
+											}
+										]
+									},
+									{
+										"key": "]",
+										"name": "Enlarge window",
+										"type": "transient",
+										"command": "workbench.action.increaseViewSize",
+										"bindings": [
+											{
+												"key": "[",
+												"name": "Shrink window",
+												"type": "command",
+												"command": "workbench.action.decreaseViewSize"
+											},
+											{
+												"key": "]",
+												"name": "Enlarge window",
+												"type": "command",
+												"command": "workbench.action.increaseViewSize"
+											}
+										]
 									}
 								]
 							},
