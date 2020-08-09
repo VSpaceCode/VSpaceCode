@@ -1321,6 +1321,12 @@
 										"command": "workbench.action.closeEditorsInGroup"
 									},
 									{
+										"key": "D",
+										"name": "Close all other editor groups",
+										"type": "command",
+										"command": "workbench.action.closeEditorsInOtherGroups"
+									},
+									{
 										"key": "x",
 										"name": "Close all editor groups",
 										"type": "command",
