@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> h T` to open VSCode tutorial
 - Add `<spc> j v` to Focus Breadcrumbs
 - Add `<spc> p R` to replace in files
+- Add `<spc> w c` to toggle centered layout
 
 ### Changed
 - Change `<spc> b Y` to deselect after copying

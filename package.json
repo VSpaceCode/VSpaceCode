@@ -1146,6 +1146,12 @@
 										"command": "workbench.action.toggleSidebarVisibility"
 									},
 									{
+										"key": "c",
+										"name": "Toggle centered layout",
+										"type": "command",
+										"command": "workbench.action.toggleCenteredLayout"
+									},
+									{
 										"key": "i",
 										"name": "Select icon theme",
 										"type": "command",
