@@ -614,6 +614,31 @@
 								]
 							},
 							{
+								"key": "F",
+								"name": "Frame...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "n",
+										"name": "Duplicate workspace in new frame",
+										"type": "command",
+										"command": "workbench.action.duplicateWorkspaceInNewWindow"
+									},
+									{
+										"key": "N",
+										"name": "Open new empty frame",
+										"type": "command",
+										"command": "workbench.action.newWindow"
+									},
+									{
+										"key": "o",
+										"name": "Switch frame",
+										"type": "command",
+										"command": "workbench.action.quickSwitchWindow"
+									}
+								]
+							},
+							{
 								"key": "g",
 								"name": "Git...",
 								"type": "bindings",

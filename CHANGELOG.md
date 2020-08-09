@@ -18,6 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> b 1` to focus first editor in group
 - Add `<spc> b 0` to focus last editor in group
 - Add `<spc> f D` to delete current file
+- Add `<spc> F n` to duplicate workspace in new frame
+- Add `<spc> F N` to open a new empty frame
+- Add `<spc> F o` to switch frame
 - Add `<spc> g c` to clone git repository
 - Add `<spc> g i` to initialize git repository
 - Add `<spc> g f d` to view differences of current file
