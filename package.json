@@ -220,6 +220,18 @@
 										"command": "workbench.action.files.newUntitledFile"
 									},
 									{
+										"key": "t",
+										"name": "Pin editor",
+										"type": "command",
+										"command": "workbench.action.pinEditor"
+									},
+									{
+										"key": "T",
+										"name": "Unpin editor",
+										"type": "command",
+										"command": "workbench.action.unpinEditor"
+									},
+									{
 										"key": "u",
 										"name": "Reopen closed editor",
 										"type": "command",

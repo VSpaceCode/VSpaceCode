@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> T i` to choose icon theme
 - Add `<spc> b 1` to focus first editor in group
 - Add `<spc> b 0` to focus last editor in group
+- Add `<spc> b t` to pin editor
+- Add `<spc> b T` to unpin editor
 - Add `<spc> f D` to delete current file
 - Add `<spc> F n` to duplicate workspace in new frame
 - Add `<spc> F N` to open a new empty frame
