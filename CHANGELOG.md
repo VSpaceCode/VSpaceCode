@@ -44,6 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change `<spc> f n` to create new file with explorer
 - Change `<spc> f y` to open yank bindings
 
+### Removed
+- Remove `<spc> p '` since it has been replaced by `<spc> F o`
+
 ## [0.7.3] - 2020-07-30
 ### Added
 - Add `<spc> f e` to open settings
