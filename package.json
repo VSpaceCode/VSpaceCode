@@ -1280,6 +1280,12 @@
 										"command": "workbench.action.splitEditor"
 									},
 									{
+										"key": "F",
+										"name": "Open new empty frame",
+										"type": "command",
+										"command": "workbench.action.newWindow"
+									},
+									{
 										"key": "o",
 										"name": "Switch frame",
 										"type": "command",

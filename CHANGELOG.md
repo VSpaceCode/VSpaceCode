@@ -35,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> q R` to reload window with all extensions disabled
 - Add `<spc> w c` to toggle centered layout
 - Add `<spc> w D` to close all other editor groups
+- Add `<spc> w F` to open a new empty frame
 - Add `<spc> w o` to switch frame
 - Add `<spc> w [` to shrink window
 - Add `<spc> w ]` to enlarge window
