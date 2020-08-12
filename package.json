@@ -1280,6 +1280,12 @@
 										"command": "workbench.action.splitEditor"
 									},
 									{
+										"key": "o",
+										"name": "Switch frame",
+										"type": "command",
+										"command": "workbench.action.quickSwitchWindow"
+									},
+									{
 										"key": "s",
 										"name": "Split editor below",
 										"type": "command",
