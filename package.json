@@ -716,7 +716,7 @@
 											},
 											{
 												"key": "l",
-												"name": "Log (focus timeline)",
+												"name": "Show log/timeline",
 												"type": "command",
 												"command": "timeline.focus"
 											}
