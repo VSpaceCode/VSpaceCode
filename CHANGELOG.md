@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add copy section value for magit ref menu
+- Add copy buffer revision for magit ref menu
 - Add `<spc> T i` to choose icon theme
 - Add `<spc> b 1` to focus first editor in group
 - Add `<spc> b 0` to focus last editor in group

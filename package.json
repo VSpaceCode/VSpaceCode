@@ -86,6 +86,12 @@
 						"markdownDescription": "The bindings of magit ref menu",
 						"default": [
 							{
+								"key": "b",
+								"name": "Copy buffer revision",
+								"type": "command",
+								"command": "magit.copy-buffer-revision"
+							},
+							{
 								"key": "r",
 								"name": "Show Ref",
 								"type": "command",
