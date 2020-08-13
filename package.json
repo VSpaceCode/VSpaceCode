@@ -439,7 +439,7 @@
 									},
 									{
 										"key": "n",
-										"name": "New File",
+										"name": "New file",
 										"type": "command",
 										"command": "explorer.newFile"
 									},
@@ -519,13 +519,13 @@
 										"bindings": [
 											{
 												"key": "d",
-												"name": "Open Settings",
+												"name": "Open settings",
 												"type": "command",
 												"command": "workbench.action.openGlobalSettings"
 											},
 											{
 												"key": "D",
-												"name": "Open Settings JSON",
+												"name": "Open settings JSON",
 												"type": "command",
 												"command": "workbench.action.openSettingsJson"
 											},
@@ -555,13 +555,13 @@
 											},
 											{
 												"key": "w",
-												"name": "Open Workspace Settings",
+												"name": "Open workspace settings",
 												"type": "command",
 												"command": "workbench.action.openWorkspaceSettings"
 											},
 											{
 												"key": "W",
-												"name": "Open Workspace Settings JSON",
+												"name": "Open workspace settings JSON",
 												"type": "command",
 												"command": "workbench.action.openWorkspaceSettingsFile"
 											}
