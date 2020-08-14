@@ -805,7 +805,7 @@
 									},
 									{
 										"key": "v",
-										"name": "Focus Breadcrumbs (variables?)",
+										"name": "Jump to outline/variables",
 										"type": "command",
 										"command": "breadcrumbs.focusAndSelect"
 									},
