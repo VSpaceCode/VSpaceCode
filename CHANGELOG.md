@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+
+## [0.7.4] - 2020-08-14
 ### Added
 - Add copy section value for magit ref menu
 - Add copy buffer revision for magit ref menu
