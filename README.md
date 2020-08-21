@@ -2,8 +2,6 @@
 
 ![VSpaceCode Logo](resources/logo.png)
 
-**Update**: This project has been merged with [stevenguh/spacecode](https://github.com/stevenguh/spacecode) to share the efforts to bring the best Spacemacs integration into VSCode. It is not any longer a list of settings but is based on an extension. If you prefer the old way please read the section [Project history](#project-history).
-
 This extension is inspired by spacemacs and aiming to provide similar experience in VSCode. An action menu trigger by space key is implemented to reduce memorization of shortcuts. You can change the editor group, change the file language, and check git status without leaving your keyboard. This provides the speed to shortcut while minimizing typing comparing to fuzzy search in the command palette or shortcut memorizing.
 
 ## Features
@@ -17,9 +15,9 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 
 ## Project history
 
-This project was initially started by [StreakyCobra](https://github.com/StreakyCobra) as a configuration file for [VSCodeVim](https://github.com/VSCodeVim/Vim) to be merged in your `settings.json` file. [stevenguh](https://github.com/stevenguh) developed on his side an extension also with the goal to brings Spacemacs bindings to VSCode. After some discussion we agreed to merge the two projects to keep this niche community unified. stevenguh solution was technically better, and this project had a larger community and was better referenced, so it was decided move his extension here.
+This project was initially started by [StreakyCobra](https://github.com/StreakyCobra) as a configuration file for [VSCodeVim](https://github.com/VSCodeVim/Vim) to be merged in your `settings.json` file. [stevenguh](https://github.com/stevenguh) developed on his side [stevenguh/spacecode](https://github.com/stevenguh/spacecode) also with the goal to bring Spacemacs bindings to VSCode. After some discussion we agreed to merge the two projects to keep this niche community unified. stevenguh solution was technically better, but this project had a larger community and was better referenced, so it was decided move his extension here and to deprecate [stevenguh/spacecode](https://github.com/stevenguh/spacecode).
 
-If you prefer this project's first approach using settings, see the [vscode-vim](https://github.com/VSpaceCode/VSpaceCode/tree/vscode-vim) branch.
+If you prefer this project's first approach using settings without an extension, see the [vscode-vim](https://github.com/VSpaceCode/VSpaceCode/tree/vscode-vim) branch.
 
 ## Installation
 This extension is published as an extension pack, and should install all the necessary extensions for the best-of-the box experience; however, if you do not like the bundled extensions or are not using VSCode Vim, please go to the [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key) for a standalone which key menu function.
