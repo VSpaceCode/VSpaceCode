@@ -2,6 +2,7 @@ import { commands, ExtensionContext, extensions } from 'vscode';
 import { configKeyBindings, configSettings } from './configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
 import { showUpdateMessage, showWelcomeMessage } from './messages';
+import { getPath, getRelativePathWithLine, copyWrapper, getPathWithLine, getPathWithLineColumn, getRelativePath, getRelativePathWithLineColumn, getFilename, getFilenameBase, getDirectoryPath, getRelativeDirectoryPath } from './pathCommands';
 
 
 export async function activate(context: ExtensionContext) {
@@ -17,11 +18,24 @@ export async function activate(context: ExtensionContext) {
     }
 
     await setUpWhichKey();
+
     context.subscriptions.push(commands.registerCommand(CommandId.ShowSpaceMenu, showSpaceMenu));
     context.subscriptions.push(commands.registerCommand(CommandId.ShowMagitRefMenu, showMagitRefMenu));
+
     context.subscriptions.push(commands.registerCommand(CommandId.Configure, configure));
     context.subscriptions.push(commands.registerCommand(CommandId.ConfigureSettings, configSettings));
     context.subscriptions.push(commands.registerCommand(CommandId.ConfigureKeybindings, configKeyBindings));
+
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyPath, copyWrapper(getPath)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyPathWithLine, copyWrapper(getPathWithLine)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyPathWithLineColumn, copyWrapper(getPathWithLineColumn)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyDirectoryPath, copyWrapper(getDirectoryPath)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyRelativePath, copyWrapper(getRelativePath)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyRelativePathWithLine, copyWrapper(getRelativePathWithLine)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyRelativePathWithLineColumn, copyWrapper(getRelativePathWithLineColumn)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyRelativeDirectoryPath, copyWrapper(getRelativeDirectoryPath)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyFilename, copyWrapper(getFilename)));
+    context.subscriptions.push(commands.registerCommand(CommandId.CopyFilenameBase, copyWrapper(getFilenameBase)));
 }
 
 function setUpWhichKey() {
