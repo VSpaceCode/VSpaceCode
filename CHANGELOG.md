@@ -12,8 +12,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
-### Changed
+## Added
+- Implement the commands for rest of the menu items in `<spc> f y`
+    + `<spc> f y c` to copy path of active file with line and column
+    + `<spc> f y C` to copy relative path of active file with line and column
+    + `<spc> f y d` to copy directory path of the active file
+    + `<spc> f y D` to copy relative directory path of active file
+    + `<spc> f y l` to copy path of active file with line
+    + `<spc> f y L` to copy relative path of active file with line
+    + `<spc> f y n` to copy filename of active file
+    + `<spc> f y N` to copy filename without extension of active file
+
+## Change
 - Change `<spc> h I` (report issue) to better action
+- Change `<spc> f y y` and `<spc> f y Y` to own implementation to show the copied path on status bar
 
 ## [0.7.4] - 2020-08-14
 ### Added

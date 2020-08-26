@@ -616,16 +616,64 @@
 										"type": "bindings",
 										"bindings": [
 											{
+												"key": "c",
+												"name": "Copy path of active file with line and column",
+												"type": "command",
+												"command": "vspacecode.copyPathWithLineColumn"
+											},
+											{
+												"key": "C",
+												"name": "Copy relative path of active file with line and column",
+												"type": "command",
+												"command": "vspacecode.copyRelativePathWithLineColumn"
+											},
+											{
+												"key": "d",
+												"name": "Copy directory path of the active file",
+												"type": "command",
+												"command": "vspacecode.copyDirectory"
+											},
+											{
+												"key": "D",
+												"name": "Copy relative directory path of the active file",
+												"type": "command",
+												"command": "vspacecode.copyRelativeDirectory"
+											},
+											{
+												"key": "l",
+												"name": "Copy path of active file with line",
+												"type": "command",
+												"command": "vspacecode.copyPathWithLine"
+											},
+											{
+												"key": "L",
+												"name": "Copy relative path of active file with line",
+												"type": "command",
+												"command": "vspacecode.copyRelativePathWithLine"
+											},
+											{
+												"key": "n",
+												"name": "Copy filename of active file",
+												"type": "command",
+												"command": "vspacecode.copyFilename"
+											},
+											{
+												"key": "N",
+												"name": "Copy filename without extension of active file",
+												"type": "command",
+												"command": "vspacecode.copyFilenameBase"
+											},
+											{
 												"key": "y",
 												"name": "Copy path of active file",
 												"type": "command",
-												"command": "workbench.action.files.copyPathOfActiveFile"
+												"command": "vspacecode.copyPath"
 											},
 											{
 												"key": "Y",
 												"name": "Copy relative path of active file",
 												"type": "command",
-												"command": "copyRelativeFilePath"
+												"command": "vspacecode.copyRelativePath"
 											}
 										]
 									}
