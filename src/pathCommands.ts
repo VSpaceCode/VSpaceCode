@@ -63,15 +63,13 @@ export function getFilenameBase(activeEditor: TextEditor) {
 }
 
 function _getPath(activeEditor: TextEditor, relative: boolean) {
-    let fsPath = activeEditor.document.uri.fsPath;
+    let fsPath = relative
+        ? workspace.asRelativePath(activeEditor.document.uri)
+        : activeEditor.document.uri.fsPath;
 
     if (hasDriveLetter(fsPath)) {
         // Normalized from c:\path to => C:\path
         fsPath = fsPath[0].toUpperCase() + fsPath.substr(1);
-    }
-
-    if (relative) {
-        fsPath = workspace.asRelativePath(fsPath);
     }
     const activePos = activeEditor.selection.active;
     const line = activePos.line;
