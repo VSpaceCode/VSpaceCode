@@ -64,6 +64,12 @@ export function getFilenameBase(activeEditor: TextEditor) {
 
 function _getPath(activeEditor: TextEditor, relative: boolean) {
     let fsPath = activeEditor.document.uri.fsPath;
+
+    if (hasDriveLetter(fsPath)) {
+        // Normalized from c:\path to => C:\path
+        fsPath = fsPath[0].toUpperCase() + fsPath.substr(1);
+    }
+
     if (relative) {
         fsPath = workspace.asRelativePath(fsPath);
     }
@@ -71,4 +77,8 @@ function _getPath(activeEditor: TextEditor, relative: boolean) {
     const line = activePos.line;
     const col = activePos.character;
     return { fsPath, line, col };
+}
+
+function hasDriveLetter(path: string): boolean {
+	return !!(path && path[1] === ':');
 }
