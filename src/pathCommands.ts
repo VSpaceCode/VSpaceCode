@@ -1,5 +1,5 @@
 import path from "path";
-import { env, TextEditor, window, workspace } from "vscode";
+import { env, TextEditor, Uri, window, workspace } from "vscode";
 import { defaultStatusBarTimeout } from "./constants";
 
 export function copyWrapper(fn: (activeEditor: TextEditor) => string) {
@@ -63,14 +63,17 @@ export function getFilenameBase(activeEditor: TextEditor) {
 }
 
 function _getPath(activeEditor: TextEditor, relative: boolean) {
-    let fsPath = relative
-        ? workspace.asRelativePath(activeEditor.document.uri)
-        : activeEditor.document.uri.fsPath;
+    // uri.fsPath:
+    // Windows machine remoting into a linux will return a "\" as separator
+    // *nix machine remoting into a windows will return "/" as separator
+    const uri = activeEditor.document.uri;
+    let fsPath = relative ? asRelativePath(uri) : uri.fsPath;
 
     if (hasDriveLetter(fsPath)) {
         // Normalized from c:\path to => C:\path
         fsPath = fsPath[0].toUpperCase() + fsPath.substr(1);
     }
+
     const activePos = activeEditor.selection.active;
     const line = activePos.line;
     const col = activePos.character;
@@ -78,5 +81,20 @@ function _getPath(activeEditor: TextEditor, relative: boolean) {
 }
 
 function hasDriveLetter(path: string): boolean {
-	return !!(path && path[1] === ':');
+    return !!(path && path[1] === ':');
+}
+
+function asRelativePath(uri: Uri) {
+    // - asRelativePath always return "/" as separator
+    // - In comparison, "copyRelativeFilePath" returns the right separator regardless platform and remote status
+    // - If uri is not in any of the workspace directories, a full path will be returned (This is on par with "copyRelativeFilePath").
+    // - Needs to pass uri instead as a string so the information about scheme of the file is not lost like if the file is in network drive, vscode-remote or local drive.
+    // - Passing false to includeWorkspaceFolder because "copyRelativeFilePath" doesn't include the workspace folder.
+    let relative = workspace.asRelativePath(uri, false);
+    if (relative !== uri.fsPath) {
+        // Correction for the local platform
+        relative = relative.replace("/", path.sep);
+    }
+    return relative;
+
 }
