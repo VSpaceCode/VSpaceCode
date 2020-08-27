@@ -631,13 +631,13 @@
 												"key": "d",
 												"name": "Copy directory path of the active file",
 												"type": "command",
-												"command": "vspacecode.copyDirectory"
+												"command": "vspacecode.copyDirectoryPath"
 											},
 											{
 												"key": "D",
 												"name": "Copy relative directory path of the active file",
 												"type": "command",
-												"command": "vspacecode.copyRelativeDirectory"
+												"command": "vspacecode.copyRelativeDirectoryPath"
 											},
 											{
 												"key": "l",
