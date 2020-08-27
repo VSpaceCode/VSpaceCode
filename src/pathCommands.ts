@@ -79,7 +79,7 @@ function _getPath(activeEditor: TextEditor, relative: boolean) {
     // This is needed for handle vscode-remote to a server that's a different platform than the host
     // like Windows --remote--> *nix or *nix --remote--> to Windows
     const path = getPlatformPath(uri);
-    fsPath = path.normalize(fsPath);
+    fsPath = normalizePath(fsPath, path);
 
     const activePos = activeEditor.selection.active;
     const line = activePos.line;
@@ -148,4 +148,16 @@ function getPlatformPath(uri: Uri) {
         return (hasDriveLetter(fsPath) || isUNC(fsPath)) ? path.win32 : path.posix;
     }
     return path;
+}
+
+function normalizePath(fsPath: string, platformPath:PlatformPath) {
+    if (platformPath === path.win32 && path === path.posix) {
+        return path.normalize(fsPath);
+    } else if (platformPath === path.posix && path === path.win32){
+        // POSIX path doesn't normalize from "\user\path" to "/user/path"
+        // BUG: This doesn't work if the path contains \ as the name of the file or directory
+        return fsPath.replace(/\\/g, platformPath.sep);
+    } else {
+        return fsPath;
+    }
 }
