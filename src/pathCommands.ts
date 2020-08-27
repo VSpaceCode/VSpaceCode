@@ -31,7 +31,7 @@ export function getPathWithLineColumn(activeEditor: TextEditor) {
 
 export function getDirectoryPath(activeEditor: TextEditor) {
     const active = _getPath(activeEditor, false);
-    return path.dirname(active.fsPath);
+    return dirname(active.fsPath);
 }
 
 export function getRelativePath(activeEditor: TextEditor) {
@@ -50,7 +50,7 @@ export function getRelativePathWithLineColumn(activeEditor: TextEditor) {
 
 export function getRelativeDirectoryPath(activeEditor: TextEditor) {
     const active = _getPath(activeEditor, true);
-    return path.dirname(active.fsPath);
+    return dirname(active.fsPath);
 }
 export function getFilename(activeEditor: TextEditor) {
     const fsPath = activeEditor.document.uri.fsPath;
@@ -96,5 +96,9 @@ function asRelativePath(uri: Uri) {
         relative = relative.replace("/", path.sep);
     }
     return relative;
+}
 
+function dirname(fsPath: string) {
+    // Use the local path separator("/" or "\" depending on the system)
+    return path.dirname(fsPath) + path.sep;
 }
