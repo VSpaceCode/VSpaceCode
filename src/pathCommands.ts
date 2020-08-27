@@ -121,7 +121,7 @@ function asRelativePath(uri: Uri) {
     let relative = workspace.asRelativePath(uri, false);
     if (relative !== uri.fsPath) {
         // Correction for the local platform
-        relative = relative.replace("/", path.sep);
+        relative = relative.replace(/\//g, path.sep);
     }
     return relative;
 }
