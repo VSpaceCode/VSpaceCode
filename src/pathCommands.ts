@@ -1,15 +1,16 @@
-import path from "path";
+import path, { PlatformPath } from "path";
 import { env, TextEditor, Uri, window, workspace } from "vscode";
+import { CharCode } from "./charCode";
 import { defaultStatusBarTimeout } from "./constants";
 
 export function copyWrapper(fn: (activeEditor: TextEditor) => string) {
     return async () => {
         const activeEditor = window.activeTextEditor;
         if (activeEditor) {
-            const path = fn(activeEditor);
-            await env.clipboard.writeText(path);
-            window.setStatusBarMessage(path, defaultStatusBarTimeout);
-            return path;
+            const fsPath = fn(activeEditor);
+            await env.clipboard.writeText(fsPath);
+            window.setStatusBarMessage(fsPath, defaultStatusBarTimeout);
+            return fsPath;
         }
         return undefined;
     };
@@ -31,7 +32,7 @@ export function getPathWithLineColumn(activeEditor: TextEditor) {
 
 export function getDirectoryPath(activeEditor: TextEditor) {
     const active = _getPath(activeEditor, false);
-    return dirname(active.fsPath);
+    return dirname(active.fsPath, active.path);
 }
 
 export function getRelativePath(activeEditor: TextEditor) {
@@ -50,16 +51,16 @@ export function getRelativePathWithLineColumn(activeEditor: TextEditor) {
 
 export function getRelativeDirectoryPath(activeEditor: TextEditor) {
     const active = _getPath(activeEditor, true);
-    return dirname(active.fsPath);
+    return dirname(active.fsPath, active.path);
 }
 export function getFilename(activeEditor: TextEditor) {
-    const fsPath = activeEditor.document.uri.fsPath;
-    return path.basename(fsPath);
+    const active = _getPath(activeEditor, true);
+    return basename(active.fsPath, true, active.path);
 }
 
 export function getFilenameBase(activeEditor: TextEditor) {
-    const fsPath = activeEditor.document.uri.fsPath;
-    return path.basename(fsPath, path.extname(fsPath));
+    const active = _getPath(activeEditor, true);
+    return basename(active.fsPath, false, active.path);
 }
 
 function _getPath(activeEditor: TextEditor, relative: boolean) {
@@ -74,14 +75,41 @@ function _getPath(activeEditor: TextEditor, relative: boolean) {
         fsPath = fsPath[0].toUpperCase() + fsPath.substr(1);
     }
 
+    // Normalize path (e.g. C:/Users -> C:\Users or \home\user\ -> /home/user)
+    // This is needed for handle vscode-remote to a server that's a different platform than the host
+    // like Windows --remote--> *nix or *nix --remote--> to Windows
+    const path = getPlatformPath(uri);
+    fsPath = path.normalize(fsPath);
+
     const activePos = activeEditor.selection.active;
     const line = activePos.line;
     const col = activePos.character;
-    return { fsPath, line, col };
+    return { fsPath, path, line, col };
 }
 
-function hasDriveLetter(path: string): boolean {
-    return !!(path && path[1] === ':');
+function hasDriveLetter(fsPath: string): boolean {
+    if (fsPath.length >= 2) {
+        // Checks C:\Users
+        //        ^^
+        const char0 = fsPath.charCodeAt(0);
+        const char1 = fsPath.charCodeAt(1);
+        return char1 === CharCode.Colon &&
+            ((char0 >= CharCode.A && char0 <= CharCode.Z) || (char0 >= CharCode.a && char0 <= CharCode.z));
+    }
+    return false;
+}
+
+function isPathSeparator(code: number): boolean {
+    return code === CharCode.Slash || code === CharCode.Backslash;
+}
+
+function isUNC(fsPath: string) {
+    if (fsPath.length >= 3) {
+        // Checks \\localhost\shares\ddd
+        //        ^^^
+        return isPathSeparator(fsPath.charCodeAt(0)) && isPathSeparator(fsPath.charCodeAt(1)) && !isPathSeparator(fsPath.charCodeAt(2));
+    }
+    return false;
 }
 
 function asRelativePath(uri: Uri) {
@@ -98,7 +126,26 @@ function asRelativePath(uri: Uri) {
     return relative;
 }
 
-function dirname(fsPath: string) {
-    // Use the local path separator("/" or "\" depending on the system)
+function dirname(fsPath: string, path: PlatformPath) {
     return path.dirname(fsPath) + path.sep;
+}
+
+function basename(fsPath: string, withExt: boolean, path:PlatformPath) {
+    return withExt ? path.basename(fsPath) : path.basename(fsPath, path.extname(fsPath));
+}
+
+function getPlatformPath(uri: Uri) {
+    const isRemote = !!env.remoteName;
+    if (isRemote && uri.scheme === "vscode-remote") {
+        // Guess the remote path platform base on the path
+        // This is needed for vscode-remote uri before, because the fsPath returned
+        // has local platform's separator. (e.g. remoting from Windows to *nix, will have fsPath of \home\user\)
+        // 
+        // Another solution instead of guessing uri is to offload these path commands into a separate extension
+        // which requires local installation (extensionKind:workspace).
+        // The extension can then execute commands locally, which will have the right separator by default.
+        const fsPath = uri.fsPath;
+        return (hasDriveLetter(fsPath) || isUNC(fsPath)) ? path.win32 : path.posix;
+    }
+    return path;
 }
