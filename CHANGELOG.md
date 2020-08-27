@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+### Changed
+- Change `<spc> h I` (report issue) to better action
 
 ## [0.7.4] - 2020-08-14
 ### Added

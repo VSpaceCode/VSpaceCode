@@ -743,9 +743,9 @@
 									},
 									{
 										"key": "I",
-										"name": "Report Issue",
+										"name": "Report VSCode Issue",
 										"type": "command",
-										"command": "workbench.action.openRequestFeatureUrl"
+										"command": "workbench.action.openIssueReporter"
 									},
 									{
 										"key": "T",
