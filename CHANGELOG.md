@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+
+## [0.7.5] - 2020-08-27
 ## Added
 - Implement the commands for rest of the menu items in `<spc> f y`
     + `<spc> f y c` to copy path of active file with line and column
