@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+### Added
+- Add `ctrl+l` to accept suggestion
 
 ## [0.7.5] - 2020-08-27
 ## Added

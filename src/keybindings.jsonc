@@ -96,6 +96,11 @@
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
+    {
+        "key": "ctrl+l",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
     // Easy navigation in parameter hint (i.e. traverse the hints when there's multiple overload for one method)
     // Cannot be added to package.json because of conflict with vim's default bindings
     {
