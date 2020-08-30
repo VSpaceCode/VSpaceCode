@@ -27,6 +27,14 @@ If applicable, add screenshots to help explain your problem.
 **Additional context**
 Add any other context about the problem here.
 
+**Settings**
+Press `Ctrl+Shift+p` and run the action "Preferences: Open Settings (JSON)",
+or press `SPC f e D`  if key bindings work for you.
+
+```
+Copy paste the content of your settings.json file here.
+```
+
 **System information**
 - Press `Ctrl+Shift+p` and run the action "Help: Report Performance Issue", or
   press `SPC h I` if key bindings work for you.
