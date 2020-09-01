@@ -255,7 +255,6 @@ See in [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key#use-non
 See in [vscode-which-key](https://github.com/VSpaceCode/vscode-which-key#display-menu-with-a-delay)
 
 ## Known Issues
-- File browser (bound to`<spc> f f`) doesn't work correctly when the active document is a local file with VScode Remote ([vscode-file-browser/#6](https://github.com/bodil/vscode-file-browser/issues/6))
 - File browser (bound to `<spc> f f`) doesn't have a button to open local file with VSCode Remote
 
 ## Release Notes
