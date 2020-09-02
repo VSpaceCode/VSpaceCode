@@ -494,13 +494,13 @@
 										"bindings": [
 											{
 												"key": "",
-												"name": "default",
+												"name": "Show explorer view",
 												"type": "command",
 												"command": "workbench.view.explorer"
 											},
 											{
 												"key": "when:sideBarVisible && explorerViewletVisible",
-												"name": "Hide explorer",
+												"name": "Hide side bar",
 												"type": "command",
 												"command": "workbench.action.toggleSidebarVisibility"
 											}
