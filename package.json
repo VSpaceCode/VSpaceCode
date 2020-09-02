@@ -76,6 +76,17 @@
 				"title": "VSpaceCode: Configure Default Keybindings"
 			}
 		],
+		"keybindings": [
+			{
+				"key": "t",
+				"command": "whichkey.triggerKey",
+				"args": {
+					"key": "t",
+					"when": "sideBarVisible && explorerViewletVisible"
+				},
+				"when": "whichkeyVisible && sideBarVisible && explorerViewletVisible"
+			}
+		],
 		"configuration": [
 			{
 				"title": "VSpaceCode",
@@ -478,9 +489,22 @@
 									},
 									{
 										"key": "t",
-										"name": "Show tree/explorer view",
-										"type": "command",
-										"command": "workbench.view.explorer"
+										"name": "Toggle tree/explorer view",
+										"type": "conditional",
+										"bindings": [
+											{
+												"key": "",
+												"name": "default",
+												"type": "command",
+												"command": "workbench.view.explorer"
+											},
+											{
+												"key": "when:sideBarVisible && explorerViewletVisible",
+												"name": "Hide explorer",
+												"type": "command",
+												"command": "workbench.action.toggleSidebarVisibility"
+											}
+										]
 									},
 									{
 										"key": "T",

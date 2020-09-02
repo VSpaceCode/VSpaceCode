@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+### Changed
+- Change `<spc> f t` to toggle file explorer view
+
 ### Added
 - Add `ctrl+l` to accept suggestion
 
