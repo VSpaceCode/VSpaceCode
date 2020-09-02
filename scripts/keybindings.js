@@ -44,14 +44,16 @@ while (queue.length > 0) {
     );
 
     // Process the node
-    const tableContent = [['Key Binding', 'Name', 'Type']];
+    const isTransient = node.type === "transient";
+    const isConditional = node.type === "conditional";
+    const tableContent = [[isConditional ? 'Condition' : 'Key Binding', 'Name', 'Type']];
     for (const b of node.bindings) {
         b.keys = [...node.keys, replaceChar(b.key)];
 
-        const isTransient = node.type === "transient";
+        const shouldJoinKeys = !isTransient && !isConditional;
         const hasBindings = Array.isArray(b.bindings) && b.bindings.length > 0;
         tableContent.push([
-            `<code>${isTransient ? b.key : b.keys.join(" ")}</code>`,
+            `<code>${shouldJoinKeys ? b.keys.join(" ") : b.key}</code>`,
             b.name,
             hasBindings ? createHeadingLink(b.type, b.name) : b.type
         ]);
