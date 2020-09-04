@@ -1887,6 +1887,12 @@
 								"command": "workbench.action.terminal.focus"
 							},
 							{
+								"key": "\"",
+								"name": "Open new external terminal",
+								"type": "command",
+								"command": "workbench.action.terminal.openNativeConsole"
+							},
+							{
 								"key": "*",
 								"name": "Search in project with selection",
 								"type": "commands",
