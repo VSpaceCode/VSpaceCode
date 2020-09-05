@@ -386,19 +386,19 @@
 												"key": "N",
 												"name": "Previous error",
 												"type": "command",
-												"command": "editor.action.marker.prev"
+												"command": "editor.action.marker.prevInFiles"
 											},
 											{
 												"key": "n",
 												"name": "Next error",
 												"type": "command",
-												"command": "editor.action.marker.next"
+												"command": "editor.action.marker.nextInFiles"
 											},
 											{
 												"key": "p",
 												"name": "Previous error",
 												"type": "command",
-												"command": "editor.action.marker.prev"
+												"command": "editor.action.marker.prevInFiles"
 											}
 										]
 									},
@@ -412,19 +412,19 @@
 										"key": "N",
 										"name": "Previous error",
 										"type": "command",
-										"command": "editor.action.marker.prev"
+										"command": "editor.action.marker.prevInFiles"
 									},
 									{
 										"key": "n",
 										"name": "Next error",
 										"type": "command",
-										"command": "editor.action.marker.next"
+										"command": "editor.action.marker.nextInFiles"
 									},
 									{
 										"key": "p",
 										"name": "Previous error",
 										"type": "command",
-										"command": "editor.action.marker.prev"
+										"command": "editor.action.marker.prevInFiles"
 									}
 								]
 							},
