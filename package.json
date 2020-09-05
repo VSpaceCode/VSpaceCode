@@ -959,6 +959,26 @@
 								]
 							},
 							{
+								"key": "m",
+								"name": "Major...",
+								"type": "conditional",
+								"bindings": [
+									{
+										"key": "languageId:markdown",
+										"name": "Markdown",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "p",
+												"name": "Open preview to the side",
+												"type": "command",
+												"command": "markdown.showPreviewToSide"
+											}
+										]
+									}
+								]
+							},
+							{
 								"key": "p",
 								"name": "Project...",
 								"type": "bindings",
