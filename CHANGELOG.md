@@ -15,11 +15,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Change `<spc> f t` to toggle file explorer view
 - Change `<spc> e n`, `<spc> e N`, and `<spc> e p` to search in all project
+- Change `<spc> d b` to open a breakpoint menu
+    + `<spc> d b b` to toggle breakpoint
+    + `<spc> d b i` to toggle inline breakpoint
+    + `<spc> d b c` to add conditional breakpoint
+    + `<spc> d b f` to add function breakpoint
+    + `<spc> d b d` to delete breakpoint
+    + `<spc> d b D` to delete all breakpoints
+    + `<spc> d b e` to enable breakpoint
+    + `<spc> d b E` to enable all breakpoints
+    + `<spc> d b s` to disable breakpoint
+    + `<spc> d b S` to disable all breakpoints
+    + `<spc> d b n` to jump to next breakpoint
+    + `<spc> d b p` to jump to next breakpoint
+
 
 ### Added
 - Add `ctrl+l` to accept suggestion
 - Add `<spc> "` to open a new external terminal
 - Add major mode bindings for `markdown`
+
+### Removed
+- Remove `<spc> d B` since toggle inline breakpoint is now in `<spc> d b`
 
 ## [0.7.5] - 2020-08-27
 ## Added

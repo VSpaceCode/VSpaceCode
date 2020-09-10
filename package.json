@@ -336,15 +336,110 @@
 									},
 									{
 										"key": "b",
-										"name": "Toggle breakpoint",
-										"type": "command",
-										"command": "editor.debug.action.toggleBreakpoint"
-									},
-									{
-										"key": "B",
-										"name": "Toggle inline breakpoint",
-										"type": "command",
-										"command": "editor.debug.action.toggleInlineBreakpoint"
+										"name": "Breakpoint...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "b",
+												"name": "Toggle breakpoint",
+												"type": "command",
+												"command": "editor.debug.action.toggleBreakpoint"
+											},
+											{
+												"key": "i",
+												"name": "Toggle inline breakpoint",
+												"type": "command",
+												"command": "editor.debug.action.toggleInlineBreakpoint"
+											},
+											{
+												"key": "c",
+												"name": "Add conditional breakpoint",
+												"type": "command",
+												"command": "editor.debug.action.conditionalBreakpoint"
+											},
+											{
+												"key": "f",
+												"name": "Add function breakpoint",
+												"type": "command",
+												"command": "workbench.debug.viewlet.action.addFunctionBreakpointAction"
+											},
+											{
+												"key": "d",
+												"name": "Delete breakpoint",
+												"type": "command",
+												"command": "debug.removeBreakpoint"
+											},
+											{
+												"key": "D",
+												"name": "Delete all breakpoints",
+												"type": "command",
+												"command": "workbench.debug.viewlet.action.removeAllBreakpoints"
+											},
+											{
+												"key": "e",
+												"name": "Enable breakpoint",
+												"type": "command",
+												"command": "debug.enableOrDisableBreakpoint"
+											},
+											{
+												"key": "E",
+												"name": "Enable all breakpoints",
+												"type": "command",
+												"command": "workbench.debug.viewlet.action.enableAllBreakpoints"
+											},
+											{
+												"key": "s",
+												"name": "Disable breakpoint",
+												"type": "command",
+												"command": "debug.enableOrDisableBreakpoint"
+											},
+											{
+												"key": "S",
+												"name": "Disable all breakpoints",
+												"type": "command",
+												"command": "workbench.debug.viewlet.action.disableAllBreakpoints"
+											},
+											{
+												"key": "n",
+												"name": "Next breakpoint",
+												"type": "transient",
+												"command": "editor.debug.action.goToNextBreakpoint",
+												"bindings": [
+													{
+														"key": "n",
+														"name": "Next breakpoint",
+														"type": "command",
+														"command": "editor.debug.action.goToNextBreakpoint"
+													},
+													{
+														"key": "p",
+														"name": "Previous breakpoint",
+														"type": "command",
+														"command": "editor.debug.action.goToPreviousBreakpoint"
+													}
+												]
+											},
+											{
+												"key": "p",
+												"name": "Previous breakpoint",
+												"type": "transient",
+												"command": "editor.debug.action.goToPreviousBreakpoint",
+												"bindings": [
+													{
+														"key": "n",
+														"name": "Next breakpoint",
+														"type": "command",
+														"command": "editor.debug.action.goToNextBreakpoint"
+													},
+													{
+														"key": "p",
+														"name": "Previous breakpoint",
+														"type": "command",
+														"command": "editor.debug.action.goToPreviousBreakpoint"
+													}
+												]
+											}
+										]
 									},
 									{
 										"key": "j",
