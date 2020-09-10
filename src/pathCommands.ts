@@ -2,7 +2,7 @@ import path, { PlatformPath } from "path";
 import { env, TextEditor, Uri, window, workspace } from "vscode";
 import { CharCode } from "./charCode";
 import { defaultStatusBarTimeout } from "./constants";
-import { UriSchema } from "./uriSchema";
+import { UriScheme } from "./uriScheme";
 
 export function copyWrapper(fn: (activeEditor: TextEditor) => string) {
     return async () => {
@@ -194,7 +194,7 @@ function relativePath(from: Uri, to: Uri, ignorePathCasing = false): string | un
     if (from.scheme !== to.scheme || !isEqualAuthority(from.authority, to.authority)) {
         return undefined;
     }
-    if (from.scheme === UriSchema.File) {
+    if (from.scheme === UriScheme.File) {
         return path.posix.relative(uriToFsPath(from), uriToFsPath(to));
     }
     let fromPath = from.path || '/', toPath = to.path || '/';
