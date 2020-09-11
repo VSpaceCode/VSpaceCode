@@ -140,7 +140,7 @@
 							},
 							{
 								"key": "\t",
-								"name": "Last editor",
+								"name": "Last buffer",
 								"type": "commands",
 								"commands": [
 									"workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
@@ -149,84 +149,84 @@
 							},
 							{
 								"key": "b",
-								"name": "Buffers/Editors...",
+								"name": "Buffers...",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "1",
-										"name": "First editor in group",
+										"name": "First buffer in window",
 										"type": "command",
 										"command": "workbench.action.firstEditorInGroup"
 									},
 									{
 										"key": "0",
-										"name": "Last editor in group",
+										"name": "Last buffer in window",
 										"type": "command",
 										"command": "workbench.action.lastEditorInGroup"
 									},
 									{
 										"key": "b",
-										"name": "Show all buffers/editors",
+										"name": "Show all buffers",
 										"type": "command",
 										"command": "workbench.action.showAllEditors"
 									},
 									{
 										"key": "B",
-										"name": "Show all buffers/editors in active group",
+										"name": "Show all buffers in active window",
 										"type": "command",
 										"command": "workbench.action.showEditorsInActiveGroup"
 									},
 									{
 										"key": "d",
-										"name": "Close active editor",
+										"name": "Close active buffer",
 										"type": "command",
 										"command": "workbench.action.closeActiveEditor"
 									},
 									{
 										"key": "H",
-										"name": "Move editor into left group",
+										"name": "Move buffer into left window",
 										"type": "command",
 										"command": "workbench.action.moveEditorToLeftGroup"
 									},
 									{
 										"key": "J",
-										"name": "Move editor into below group",
+										"name": "Move buffer into below window",
 										"type": "command",
 										"command": "workbench.action.moveEditorToBelowGroup"
 									},
 									{
 										"key": "K",
-										"name": "Move editor into above group",
+										"name": "Move buffer into above window",
 										"type": "command",
 										"command": "workbench.action.moveEditorToAboveGroup"
 									},
 									{
 										"key": "L",
-										"name": "Move editor into right group",
+										"name": "Move buffer into right window",
 										"type": "command",
 										"command": "workbench.action.moveEditorToRightGroup"
 									},
 									{
 										"key": "M",
-										"name": "Close other editors",
+										"name": "Close other buffers",
 										"type": "command",
 										"command": "workbench.action.closeOtherEditors"
 									},
 									{
 										"key": "n",
-										"name": "Next editor",
+										"name": "Next buffer",
 										"type": "command",
 										"command": "workbench.action.nextEditor"
 									},
 									{
 										"key": "p",
-										"name": "Previous editor",
+										"name": "Previous buffer",
 										"type": "command",
 										"command": "workbench.action.previousEditor"
 									},
 									{
 										"key": "N",
-										"name": "New untitled editor",
+										"name": "New untitled buffer",
 										"type": "command",
 										"command": "workbench.action.files.newUntitledFile"
 									},
@@ -238,19 +238,19 @@
 									},
 									{
 										"key": "t",
-										"name": "Pin editor",
+										"name": "Pin buffer",
 										"type": "command",
 										"command": "workbench.action.pinEditor"
 									},
 									{
 										"key": "T",
-										"name": "Unpin editor",
+										"name": "Unpin buffer",
 										"type": "command",
 										"command": "workbench.action.unpinEditor"
 									},
 									{
 										"key": "u",
-										"name": "Reopen closed editor",
+										"name": "Reopen closed buffer",
 										"type": "command",
 										"command": "workbench.action.reopenClosedEditor"
 									},
@@ -960,7 +960,7 @@
 									},
 									{
 										"key": "i",
-										"name": "Jump to symbol in editor",
+										"name": "Jump to symbol in buffer",
 										"type": "command",
 										"command": "workbench.action.gotoSymbol"
 									},
@@ -1117,13 +1117,13 @@
 								"bindings": [
 									{
 										"key": "f",
-										"name": "Close window",
+										"name": "Close frame",
 										"type": "command",
 										"command": "workbench.action.closeWindow"
 									},
 									{
 										"key": "q",
-										"name": "Close window",
+										"name": "Close frame",
 										"type": "command",
 										"command": "workbench.action.closeWindow"
 									},
@@ -1135,19 +1135,19 @@
 									},
 									{
 										"key": "r",
-										"name": "Reload window",
+										"name": "Reload frame",
 										"type": "command",
 										"command": "workbench.action.reloadWindow"
 									},
 									{
 										"key": "R",
-										"name": "Reload window with extensions disabled",
+										"name": "Reload frame with extensions disabled",
 										"type": "command",
 										"command": "workbench.action.reloadWindowWithExtensionsDisabled"
 									},
 									{
 										"key": "s",
-										"name": "Save all and close window",
+										"name": "Save all and close frame",
 										"type": "commands",
 										"commands": [
 											"workbench.action.files.saveAll",
@@ -1236,7 +1236,7 @@
 									},
 									{
 										"key": "j",
-										"name": "Jump to symbol in file",
+										"name": "Jump to symbol in buffer",
 										"type": "command",
 										"command": "workbench.action.gotoSymbol"
 									},
@@ -1275,13 +1275,13 @@
 									},
 									{
 										"key": "s",
-										"name": "Fuzzy search in current editor",
+										"name": "Fuzzy search in current buffer",
 										"type": "command",
 										"command": "fuzzySearch.activeTextEditorWithCurrentSelection"
 									},
 									{
 										"key": "S",
-										"name": "Fuzzy search with selection in current editor",
+										"name": "Fuzzy search with selection in current buffer",
 										"type": "commands",
 										"commands": [
 											"editor.action.addSelectionToNextFindMatch",
@@ -1450,25 +1450,25 @@
 								"bindings": [
 									{
 										"key": "w",
-										"name": "Focus next editor group",
+										"name": "Focus next window",
 										"type": "command",
 										"command": "workbench.action.focusNextGroup"
 									},
 									{
 										"key": "W",
-										"name": "Focus previous editor group",
+										"name": "Focus previous window",
 										"type": "command",
 										"command": "workbench.action.focusPreviousGroup"
 									},
 									{
 										"key": "-",
-										"name": "Split editor below",
+										"name": "Split window below",
 										"type": "command",
 										"command": "workbench.action.splitEditorDown"
 									},
 									{
 										"key": "/",
-										"name": "Split editor right",
+										"name": "Split window right",
 										"type": "command",
 										"command": "workbench.action.splitEditor"
 									},
@@ -1486,103 +1486,103 @@
 									},
 									{
 										"key": "s",
-										"name": "Split editor below",
+										"name": "Split window below",
 										"type": "command",
 										"command": "workbench.action.splitEditorDown"
 									},
 									{
 										"key": "v",
-										"name": "Split editor right",
+										"name": "Split window right",
 										"type": "command",
 										"command": "workbench.action.splitEditor"
 									},
 									{
 										"key": "h",
-										"name": "Move editor left",
+										"name": "Focus window left",
 										"type": "command",
 										"command": "workbench.action.focusPreviousGroup"
 									},
 									{
 										"key": "j",
-										"name": "Move editor down",
+										"name": "Focus window down",
 										"type": "command",
 										"command": "workbench.action.focusBelowGroup"
 									},
 									{
 										"key": "k",
-										"name": "Move editor up",
+										"name": "Focus window up",
 										"type": "command",
 										"command": "workbench.action.focusAboveGroup"
 									},
 									{
 										"key": "l",
-										"name": "Move editor right",
+										"name": "Focus window right",
 										"type": "command",
 										"command": "workbench.action.focusNextGroup"
 									},
 									{
 										"key": "H",
-										"name": "Move editor group left",
+										"name": "Move window left",
 										"type": "command",
 										"command": "workbench.action.moveActiveEditorGroupLeft"
 									},
 									{
 										"key": "J",
-										"name": "Move editor group down",
+										"name": "Move window down",
 										"type": "command",
 										"command": "workbench.action.moveActiveEditorGroupDown"
 									},
 									{
 										"key": "K",
-										"name": "Move editor group up",
+										"name": "Move window up",
 										"type": "command",
 										"command": "workbench.action.moveActiveEditorGroupUp"
 									},
 									{
 										"key": "L",
-										"name": "Move editor group right",
+										"name": "Move window right",
 										"type": "command",
 										"command": "workbench.action.moveActiveEditorGroupRight"
 									},
 									{
 										"key": "m",
-										"name": "Maximize editor group",
+										"name": "Maximize window",
 										"type": "command",
 										"command": "workbench.action.toggleEditorWidths"
 									},
 									{
 										"key": "M",
-										"name": "Maximize editor group and hide side bar",
+										"name": "Maximize window and hide side bar",
 										"type": "command",
 										"command": "workbench.action.maximizeEditor"
 									},
 									{
 										"key": "=",
-										"name": "Reset editor group sizes",
+										"name": "Reset window sizes",
 										"type": "command",
 										"command": "workbench.action.evenEditorWidths"
 									},
 									{
 										"key": "z",
-										"name": "Combine all editors",
+										"name": "Combine all buffers",
 										"type": "command",
 										"command": "workbench.action.joinAllGroups"
 									},
 									{
 										"key": "d",
-										"name": "Close editor group",
+										"name": "Close window",
 										"type": "command",
 										"command": "workbench.action.closeEditorsInGroup"
 									},
 									{
 										"key": "D",
-										"name": "Close all other editor groups",
+										"name": "Close all other windows",
 										"type": "command",
 										"command": "workbench.action.closeEditorsInOtherGroups"
 									},
 									{
 										"key": "x",
-										"name": "Close all editor groups",
+										"name": "Close all windows",
 										"type": "command",
 										"command": "workbench.action.closeAllGroups"
 									},
@@ -2044,49 +2044,49 @@
 							},
 							{
 								"key": "1",
-								"name": "Focus 1st editor group",
+								"name": "Focus 1st window",
 								"type": "command",
 								"command": "workbench.action.focusFirstEditorGroup"
 							},
 							{
 								"key": "2",
-								"name": "Focus 2nd editor group",
+								"name": "Focus 2nd window",
 								"type": "command",
 								"command": "workbench.action.focusSecondEditorGroup"
 							},
 							{
 								"key": "3",
-								"name": "Focus 3rd editor group",
+								"name": "Focus 3rd window",
 								"type": "command",
 								"command": "workbench.action.focusThirdEditorGroup"
 							},
 							{
 								"key": "4",
-								"name": "Focus 4th editor group",
+								"name": "Focus 4th window",
 								"type": "command",
 								"command": "workbench.action.focusFourthEditorGroup"
 							},
 							{
 								"key": "5",
-								"name": "Focus 5th editor group",
+								"name": "Focus 5th window",
 								"type": "command",
 								"command": "workbench.action.focusFifthEditorGroup"
 							},
 							{
 								"key": "6",
-								"name": "Focus 6th editor group",
+								"name": "Focus 6th window",
 								"type": "command",
 								"command": "workbench.action.focusSixthEditorGroup"
 							},
 							{
 								"key": "7",
-								"name": "Focus 7th editor group",
+								"name": "Focus 7th window",
 								"type": "command",
 								"command": "workbench.action.focusSeventhEditorGroup"
 							},
 							{
 								"key": "8",
-								"name": "Focus 8th editor group",
+								"name": "Focus 8th window",
 								"type": "command",
 								"command": "workbench.action.focusEighthEditorGroup"
 							}
