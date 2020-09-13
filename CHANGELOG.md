@@ -32,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ### Added
-- Add `ctrl+l` to accept suggestion
+- ⌨️️ Add `ctrl+l` to accept suggestion
 - Add `<spc> "` to open a new external terminal
 - Add major mode bindings for `markdown`
 
