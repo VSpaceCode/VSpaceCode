@@ -1369,7 +1369,7 @@
 										"command": "toggle.diff.ignoreTrimWhitespace"
 									},
 									{
-										"key": "W",
+										"key": "l",
 										"name": "Toggle word wrap",
 										"type": "command",
 										"command": "editor.action.toggleWordWrap"
