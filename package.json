@@ -956,7 +956,7 @@
 										"key": "=",
 										"name": "Format file",
 										"type": "command",
-										"command": "editor.action.formatDocument"
+										"command": "editor.action.format"
 									},
 									{
 										"key": "i",

@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change `<spc> t l` to toggle word wrap instead of `<spc> t W`
 - Change `<spc> f t` to toggle file explorer view
 - Change `<spc> e n`, `<spc> e N`, and `<spc> e p` to search in all project
+- Change `<spc> j =` to format selection in visual mode
 - Change `<spc> d b` to open a breakpoint menu
     + `<spc> d b b` to toggle breakpoint
     + `<spc> d b i` to toggle inline breakpoint
@@ -30,7 +31,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     + `<spc> d b S` to disable all breakpoints
     + `<spc> d b n` to jump to next breakpoint
     + `<spc> d b p` to jump to next breakpoint
-
 
 ### Added
 - ⌨️️ Add `ctrl+l` to accept suggestion
