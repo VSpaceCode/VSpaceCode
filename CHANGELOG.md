@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - Adopt emacs terminology for key bindings names
-- `<spc> t l` toggles word wrap instead of `<spc> t W`
+- Change `<spc> t l` to toggle word wrap instead of `<spc> t W`
 - Change `<spc> f t` to toggle file explorer view
 - Change `<spc> e n`, `<spc> e N`, and `<spc> e p` to search in all project
 - Change `<spc> d b` to open a breakpoint menu
