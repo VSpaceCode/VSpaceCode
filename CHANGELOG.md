@@ -31,7 +31,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     + `<spc> d b S` to disable all breakpoints
     + `<spc> d b n` to jump to next breakpoint
     + `<spc> d b p` to jump to next breakpoint
-
+- Change `<spc> b N` to open a new buffer menu
+    + `<spc> b N n` to open new buffer
 ### Added
 - ⌨️️ Add `ctrl+l` to accept suggestion
 - Add `<spc> "` to open a new external terminal

@@ -226,9 +226,16 @@
 									},
 									{
 										"key": "N",
-										"name": "New untitled buffer",
-										"type": "command",
-										"command": "workbench.action.files.newUntitledFile"
+										"name": "New Buffer...",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "n",
+												"name": "New untitled buffer",
+												"type": "command",
+												"command": "workbench.action.files.newUntitledFile"
+											}
+										]
 									},
 									{
 										"key": "s",
