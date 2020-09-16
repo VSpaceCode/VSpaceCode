@@ -500,6 +500,43 @@
 								]
 							},
 							{
+								"key": "D",
+								"name": "Diff/Compare...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "c",
+										"name": "Compare active file with clipboard",
+										"type": "command",
+										"command": "workbench.files.action.compareWithClipboard"
+									},
+									{
+										"key": "D",
+										"name": "Compare active file with...",
+										"type": "command",
+										"command": "workbench.files.action.compareFileWith"
+									},
+									{
+										"key": "m",
+										"name": "Compare current merge conflict",
+										"type": "command",
+										"command": "merge-conflict.compare"
+									},
+									{
+										"key": "s",
+										"name": "Compare active file with saved",
+										"type": "command",
+										"command": "workbench.files.action.compareWithSaved"
+									},
+									{
+										"key": "w",
+										"name": "Toggle ignore trim whitespace",
+										"type": "command",
+										"command": "toggle.diff.ignoreTrimWhitespace"
+									}
+								]
+							},
+							{
 								"key": "e",
 								"name": "Errors...",
 								"type": "bindings",

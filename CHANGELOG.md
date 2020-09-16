@@ -42,6 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     + `<spc> c l` to toggle line comment
     + `<spc> c n` to go to next error
     + `<spc> c N` to go to previous error
+- Add `<spc> D` to open Diff/Compare menu
 
 ### Removed
 - Remove `<spc> d B` since toggle inline breakpoint is now in `<spc> d b`
