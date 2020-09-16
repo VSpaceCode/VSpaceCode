@@ -292,6 +292,18 @@
 										"name": "Toggle line comment",
 										"type": "command",
 										"command": "editor.action.commentLine"
+									},
+									{
+										"key": "n",
+										"name": "Next error",
+										"type": "command",
+										"command": "editor.action.marker.nextInFiles"
+									},
+									{
+										"key": "N",
+										"name": "Previous error",
+										"type": "command",
+										"command": "editor.action.marker.prevInFiles"
 									}
 								]
 							},

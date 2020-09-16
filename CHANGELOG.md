@@ -40,6 +40,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add major mode bindings for `markdown`
 - Add `<spc> c` to open Comments menu
     + `<spc> c l` to toggle line comment
+    + `<spc> c n` to go to next error
+    + `<spc> c N` to go to previous error
 
 ### Removed
 - Remove `<spc> d B` since toggle inline breakpoint is now in `<spc> d b`
