@@ -1433,9 +1433,9 @@
 									},
 									{
 										"key": "w",
-										"name": "Toggle ignore trim whitespace in diff",
+										"name": "Toggle render whitespace",
 										"type": "command",
-										"command": "toggle.diff.ignoreTrimWhitespace"
+										"command": "editor.action.toggleRenderWhitespace"
 									},
 									{
 										"key": "l",
