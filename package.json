@@ -283,6 +283,19 @@
 								]
 							},
 							{
+								"key": "c",
+								"name": "Comments...",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "l",
+										"name": "Toggle line comment",
+										"type": "command",
+										"command": "editor.action.commentLine"
+									}
+								]
+							},
+							{
 								"key": "d",
 								"name": "Debug...",
 								"type": "bindings",

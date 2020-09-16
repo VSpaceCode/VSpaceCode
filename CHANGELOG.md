@@ -33,11 +33,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     + `<spc> d b p` to jump to next breakpoint
 - Change `<spc> b N` to open a new buffer menu
     + `<spc> b N n` to open new buffer
-    
+
 ### Added
 - ⌨️️ Add `ctrl+l` to accept suggestion
 - Add `<spc> "` to open a new external terminal
 - Add major mode bindings for `markdown`
+- Add `<spc> c` to open Comments menu
+    + `<spc> c l` to toggle line comment
 
 ### Removed
 - Remove `<spc> d B` since toggle inline breakpoint is now in `<spc> d b`
