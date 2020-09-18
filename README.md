@@ -26,17 +26,6 @@ You can find installation instructions and documentation in the [VSpaceCode webs
 ## Known Issues
 - File browser (bound to `<spc> f f`) doesn't have a button to open local file with VSCode Remote
 
-## Terminology
-
-Key bindings name adopts spacemacs/emacs terminology. Here you can find the
-corresponding terms in VSCode:
-
-| Emacs  | VSCode       |
-| ------ | ------------ |
-| buffer | editor       |
-| window | editor group |
-| frame  | window       |
-
 ## Release Notes
 
 See [CHANGELOG.md](CHANGELOG.md)
