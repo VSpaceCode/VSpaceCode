@@ -11,7 +11,7 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 - The menu key is customizable
 - Bundle all the extensions needed out-of-the box
 
-![VSpaceCode actions](resources/feature.gif)
+![VSpaceCode actions](https://github.com/VSpaceCode/vspacecode.github.io/blob/master/static/img/demo.gif?raw=true)
 
 ## Project history
 
