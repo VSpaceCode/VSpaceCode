@@ -13,7 +13,8 @@ function createHeadingLink(text, name) {
     const link = `${name}`
         .replace(/^#+/, '')
         .replace(/[^a-zA-Z0-9 ]/g, '')
-        .replace(/ /g, '-');
+        .replace(/ /g, '-')
+        .toLowerCase();
     return `[${text}](#${link})`;
 }
 
