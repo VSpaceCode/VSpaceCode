@@ -9,15 +9,36 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - run: |
+    - name: Checkout VSpaceCode
+      uses: actions/checkout@v2
+      path: VSpaceCode
+
+    - name: Generate KEYBINDINGS.md
+      run: |
+        cd VSpaceCode
         npm install
         npm run generate-keybindings
-        mkdir deploy
         mv KEYBINDINGS.md deploy
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
+        cd ../
+
+    - name: Checkout vspacecode.github.io
+      uses: actions/checkout@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./deploy
-        keep_files: true
+        repository: VSpaceCode/vspacecode.github.io
+        path: vspacecode.github.io
+    
+    - name: Move KEYBINDINGS.md
+      run: |
+        cd vspacecode.github.io/docs
+        rm default-keybindings.md
+        mv ../../VSpaceCode/KEYBINDINGS.md default-keybindings.md
+        prepending='---\nid: default-keybindings\ntitle: Default Keybindings\n---\n\n<!-- AUTO GENERATED. DO NOT MODIFY MANUALLY -->\n\n'
+        echo -e "$prepending$(cat default-keybindings.md)" > default-keybindings.md
+
+    - name: Commit and Push
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add default-keybindings.md
+        git commit -m "Update default keybindings"
+        git push
