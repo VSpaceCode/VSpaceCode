@@ -19,7 +19,6 @@ jobs:
         cd VSpaceCode
         npm install
         npm run generate-keybindings
-        cd ../
 
     - name: Checkout vspacecode.github.io
       uses: actions/checkout@v2
@@ -37,8 +36,8 @@ jobs:
 
     - name: Commit and Push
       run: |
+        cd vspacecode.github.io/docs
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add default-keybindings.md
         git commit -m "Update default keybindings"
-        git push
