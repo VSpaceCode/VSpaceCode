@@ -25,6 +25,7 @@ jobs:
       with:
         repository: VSpaceCode/vspacecode.github.io
         path: vspacecode.github.io
+        ssh-key: ${{ secrets.KEYBINDING_DEPLOY }}
     
     - name: Move KEYBINDINGS.md
       run: |
