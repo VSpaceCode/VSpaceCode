@@ -33,6 +33,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     + `<spc> d b p` to jump to next breakpoint
 - Change `<spc> b N` to open a new buffer menu
     + `<spc> b N n` to open new buffer
+    + `<spc> b N h` to open new buffer (split left)
+    + `<spc> b N j` to open new buffer (split down)
+    + `<spc> b N k` to open new buffer (split up)
+    + `<spc> b N l` to open new buffer (split right)
 - Change `<spc> t w` to toggle render whitespace
 
 ### Added

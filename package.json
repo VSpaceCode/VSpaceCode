@@ -234,6 +234,46 @@
 												"name": "New untitled buffer",
 												"type": "command",
 												"command": "workbench.action.files.newUntitledFile"
+											},
+											{
+												"key": "l",
+												"name": "New untitled buffer (split right)",
+												"type": "commands",
+												"commands": [
+													"workbench.action.splitEditorRight",
+													"workbench.action.files.newUntitledFile",
+													"workbench.action.closeOtherEditors"
+												]
+											},
+											{
+												"key": "j",
+												"name": "New untitled buffer (split down)",
+												"type": "commands",
+												"commands": [
+													"workbench.action.splitEditorDown",
+													"workbench.action.files.newUntitledFile",
+													"workbench.action.closeOtherEditors"
+												]
+											},
+											{
+												"key": "k",
+												"name": "New untitled buffer (split up)",
+												"type": "commands",
+												"commands": [
+													"workbench.action.splitEditorUp",
+													"workbench.action.files.newUntitledFile",
+													"workbench.action.closeOtherEditors"
+												]
+											},
+											{
+												"key": "h",
+												"name": "New untitled buffer (split left)",
+												"type": "commands",
+												"commands": [
+													"workbench.action.splitEditorLeft",
+													"workbench.action.files.newUntitledFile",
+													"workbench.action.closeOtherEditors"
+												]
 											}
 										]
 									},
