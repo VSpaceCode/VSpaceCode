@@ -41,3 +41,4 @@ jobs:
         git config user.email github-actions@github.com
         git add default-keybindings.md
         git commit -m "Update default keybindings"
+        git push
