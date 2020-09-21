@@ -2,8 +2,8 @@ name: Keybindings Docs
 
 on:
   push:
-    tags:
-      - v*
+    branches:
+      - master
 
 jobs:
   docs:
@@ -11,14 +11,14 @@ jobs:
     steps:
     - name: Checkout VSpaceCode
       uses: actions/checkout@v2
-      path: VSpaceCode
+      with:
+        path: VSpaceCode
 
     - name: Generate KEYBINDINGS.md
       run: |
         cd VSpaceCode
         npm install
         npm run generate-keybindings
-        mv KEYBINDINGS.md deploy
         cd ../
 
     - name: Checkout vspacecode.github.io
