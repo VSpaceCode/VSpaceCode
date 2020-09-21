@@ -18,6 +18,14 @@ function createHeadingLink(text, name) {
     return `[${text}](#${link})`;
 }
 
+function wrapCode(text) {
+    if (text && text.length > 0) {
+        return `<code>${text}</code>`;
+    }
+
+    return text;
+}
+
 const package = JSON.parse(fs.readFileSync('./package.json'));
 const defaultBindings = package.contributes.configuration[0].properties['vspacecode.bindings'].default;
 const root = {
@@ -38,9 +46,9 @@ while (queue.length > 0) {
     strBuilder.push(
         heading,
         "\n\n",
-        `Key Binding: <code>${node.keys.join(" ")}</code>`,
+        `Key Binding: ${wrapCode(node.keys.join(" "))}`,
         "\n\n",
-        `Type: <code>${node.type}</code>`,
+        `Type: ${wrapCode(node.type)}`,
         "\n\n"
     );
 
@@ -54,7 +62,7 @@ while (queue.length > 0) {
         const shouldJoinKeys = !isTransient && !isConditional;
         const hasBindings = Array.isArray(b.bindings) && b.bindings.length > 0;
         tableContent.push([
-            `<code>${shouldJoinKeys ? b.keys.join(" ") : b.key}</code>`,
+            wrapCode(shouldJoinKeys ? b.keys.join(" ") : b.key),
             b.name,
             hasBindings ? createHeadingLink(b.type, b.name) : b.type
         ]);
