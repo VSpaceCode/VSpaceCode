@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+
+## [0.8.0] - 2020-09-21
 ### Changed
 - Adopt emacs terminology for key bindings names
 - Change `<spc> t l` to toggle word wrap instead of `<spc> t W`
