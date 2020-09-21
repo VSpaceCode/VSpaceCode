@@ -23,9 +23,6 @@ If you prefer this project's first approach using settings without an extension,
 
 You can find installation instructions and documentation in the [VSpaceCode website](https://vspacecode.github.io/docs/).
 
-## Known Issues
-- File browser (bound to `<spc> f f`) doesn't have a button to open local file with VSCode Remote
-
 ## Release Notes
 
 See [CHANGELOG.md](CHANGELOG.md)
