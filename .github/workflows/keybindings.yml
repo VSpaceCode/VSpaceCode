@@ -41,5 +41,9 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add default-keybindings.md
-        git commit -m "Update default keybindings"
-        git push
+        if [ -n "$(git status --porcelain)" ]; then
+          git commit -m "Deploy default-keybindings.md" -m "from $GITHUB_REPOSITORY@$GITHUB_SHA"
+          git push
+        else
+          echo "nothing to commit";
+        fi
