@@ -1,4 +1,8 @@
 # VSpaceCode (Preview)
+[![Docs](https://img.shields.io/website?label=vspacecode.github.io&url=https%3A%2F%2Fvspacecode.github.io)](https://vspacecode.github.io)
+[![Version](https://vsmarketplacebadge.apphb.com/version/vspacecode.vspacecode.svg)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/vspacecode.vspacecode.svg)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/vspacecode.vspacecode.svg)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
 
 ![VSpaceCode Logo](resources/logo.png)
 
