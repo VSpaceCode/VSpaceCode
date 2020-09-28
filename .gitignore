@@ -3,3 +3,6 @@ dist
 node_modules
 .vscode-test/
 *.vsix
+
+snipsnap.code-snippets
+which-key-snippets.code-snippets
