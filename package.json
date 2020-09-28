@@ -1167,20 +1167,159 @@
 								"name": "Major...",
 								"type": "conditional",
 								"bindings": [
-									{
-										"key": "languageId:markdown",
-										"name": "Markdown",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "p",
-												"name": "Open preview to the side",
-												"type": "command",
-												"command": "markdown.showPreviewToSide"
-											}
-										]
-									}
-								]
+                                    {
+                                        "key": "languageId:markdown",
+                                        "name": "Markdown",
+                                        "type": "bindings",
+                                        "bindings": [
+                                            {
+                                                "key": "t",
+                                                "name": "Table of Contents...",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "command": "markdown.extension.toc.create",
+                                                        "key": "c",
+                                                        "name": "Create ToC",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.toc.update",
+                                                        "key": "u",
+                                                        "name": "Update ToC",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.toc.addSecNumbers",
+                                                        "key": "n",
+                                                        "name": "Add section numbers",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.toc.removeSecNumbers",
+                                                        "key": "N",
+                                                        "name": "Remove section numbers",
+                                                        "type": "command"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "x",
+                                                "name": "Text...",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "command": "markdown.extension.editing.toggleBold",
+                                                        "key": "b",
+                                                        "name": "Toggle bold",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.editing.toggleCodeBlock",
+                                                        "key": "~",
+                                                        "name": "Toggle code block",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.editing.toggleCodeSpan",
+                                                        "key": "`",
+                                                        "name": "Toggle inline code",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.editing.toggleItalic",
+                                                        "key": "i",
+                                                        "name": "Toggle italic",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.editing.toggleList",
+                                                        "key": "l",
+                                                        "name": "Toggle list",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.editing.toggleMath",
+                                                        "key": "m",
+                                                        "name": "Toggle math",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.editing.toggleStrikethrough",
+                                                        "key": "s",
+                                                        "name": "Toggle strikethrough",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "key": "]",
+                                                        "name": "Increase Heading level",
+                                                        "type": "transient",
+                                                        "command": "markdown.extension.editing.toggleHeadingUp",
+                                                        "bindings": [
+                                                            {
+                                                                "key": "]",
+                                                                "name": "Increase Heading level",
+                                                                "type": "command",
+                                                                "command": "markdown.extension.editing.toggleHeadingUp"
+                                                            },
+                                                            {
+                                                                "key": "[",
+                                                                "name": "Decrease Heading level",
+                                                                "type": "command",
+                                                                "command": "markdown.extension.editing.toggleHeadingDown"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "key": "[",
+                                                        "name": "Decrease Heading level",
+                                                        "type": "transient",
+                                                        "command": "markdown.extension.editing.toggleHeadingDown",
+                                                        "bindings": [
+                                                            {
+                                                                "key": "]",
+                                                                "name": "Increase Heading level",
+                                                                "type": "command",
+                                                                "command": "markdown.extension.editing.toggleHeadingUp"
+                                                            },
+                                                            {
+                                                                "key": "[",
+                                                                "name": "Decrease Heading level",
+                                                                "type": "command",
+                                                                "command": "markdown.extension.editing.toggleHeadingDown"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "c",
+                                                "name": "Buffer commands...",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "command": "markdown.showPreview",
+                                                        "key": "P",
+                                                        "name": "Open preview in current group",
+                                                        "type": "command"
+                                                    },
+                                                    {
+                                                        "key": "p",
+                                                        "name": "Open preview to the side",
+                                                        "type": "command",
+                                                        "command": "markdown.showPreviewToSide"
+                                                    },
+                                                    {
+                                                        "command": "markdown.extension.printToHtml",
+                                                        "key": "e",
+                                                        "name": "Export to HTML",
+                                                        "type": "command"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
 							},
 							{
 								"key": "p",
