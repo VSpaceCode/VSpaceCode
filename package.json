@@ -1119,17 +1119,7 @@
 										"key": "n",
 										"name": "Split new line",
 										"type": "command",
-										"command": "vim.remap",
-										"args": {
-											"after": [
-												"leader",
-												"leader",
-												"leader",
-												"b",
-												"d",
-												"w"
-											]
-										}
+										"command": "lineBreakInsert"
 									},
 									{
 										"key": "w",

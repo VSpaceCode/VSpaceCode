@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fix the `<spc> j n` to split new line
+
 ## [0.8.0] - 2020-09-21
 ### Changed
 - Adopt emacs terminology for key bindings names
