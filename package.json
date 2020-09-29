@@ -1180,13 +1180,13 @@
                                                     {
                                                         "command": "markdown.extension.toc.create",
                                                         "key": "c",
-                                                        "name": "Create ToC",
+                                                        "name": "Create Table of Contents",
                                                         "type": "command"
                                                     },
                                                     {
                                                         "command": "markdown.extension.toc.update",
                                                         "key": "u",
-                                                        "name": "Update ToC",
+                                                        "name": "Update Table of Contents",
                                                         "type": "command"
                                                     },
                                                     {
