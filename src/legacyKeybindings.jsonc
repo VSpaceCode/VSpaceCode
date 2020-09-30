@@ -1,2 +1,7 @@
 [
+    {
+        "key": "space",
+        "command": "vspacecode.space",
+        "when": "activeEditorGroupEmpty && focusedView == '' && !whichkeyActive"
+    }
 ]
