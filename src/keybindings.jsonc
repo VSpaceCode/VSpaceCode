@@ -3,7 +3,7 @@
     {
         "key": "space",
         "command": "vspacecode.space",
-        "when": "activeEditorGroupEmpty && focusedView == '' && !whichkeyActive"
+        "when": "activeEditorGroupEmpty && focusedView == '' && !whichkeyActive && !inQuickOpen"
     },
     // Keybindings required for edamagit
     // https://github.com/kahole/edamagit#vim-support-vscodevim
