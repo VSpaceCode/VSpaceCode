@@ -1,10 +1,11 @@
-import { getNodeValue, Node, parseTree, JSONPath, modify, applyEdits } from "jsonc-parser";
+import { applyEdits, getNodeValue, JSONPath, modify, Node, parseTree } from "jsonc-parser";
 import isEqual from 'lodash/isEqual';
 import { commands, ConfigurationTarget, Range, TextDocument, Uri, window, workspace, WorkspaceEdit } from "vscode";
 import { KeyBinding } from "./keyBinding";
 
+const legacyBindings = require('./legacyKeybindings.jsonc');
 const requiredBindings = require('./keybindings.jsonc');
-const requiredSettings  = require('./settings.jsonc');
+const requiredSettings = require('./settings.jsonc');
 
 export async function configSettings() {
     for (const [requiredKey, requiredValue] of Object.entries(requiredSettings)) {
@@ -50,42 +51,61 @@ function getFilename(uri: Uri) {
     return '';
 }
 
+function toHashKey(b: KeyBinding) {
+    return `${b.key}${b.command}${b.when ?? ''}`;
+}
+
 async function editBindingsDoc(doc: TextDocument) {
     const text = doc.getText();
     // return undefined if text is an empty string
     const node = parseTree(text) as Node | undefined;
 
-    const additionBindings = new Map<string, KeyBinding>();
-    for (const override of requiredBindings) {
-        const key = `${override.key}${override.command}`;
-        additionBindings.set(key, override);
-    }
-
     let updatedText;
     if (node && node.type !== 'array') {
         // Replace directly if it is not array, that means the keybindings contains the wrong config.
-        updatedText = JSON.stringify([...additionBindings.values()], undefined, '\t');
+        updatedText = JSON.stringify(requiredBindings, undefined, '\t');
     } else {
-        // Else if the either the node is not undefined, could be all comments
+        // Else = if the either the node is not undefined, could be all comments
         // or it is an array type and has children
+        updatedText = text;
+
+        // Setup lookup tables
+        const requiredMap = new Map<string, KeyBinding>();
+        for (const b of requiredBindings) {
+            requiredMap.set(toHashKey(b), b);
+        }
+        const legacySet = new Set<string>();
+        for (const b of legacyBindings) {
+            legacySet.add(toHashKey(b));
+        }
+        const modOptions = { formattingOptions: { insertSpaces: false } };
+
+        // If the root node is an array and has children
         if (node && node.type === 'array' && node.children) {
-            // If the root node is an array and has children
-            // Exclude the bindings that exists
-            for (let child of node.children) {
+            for (let i = 0; i < node.children?.length ?? 0; i++) {
+                const idx = node.children.length - i - 1;
+                const child = node.children[idx];
                 const v = getNodeValue(child) as KeyBinding;
-                const key = `${v.key}${v.command}`;
-                if (additionBindings.has(key)) {
-                    additionBindings.delete(key);
+                const key = toHashKey(v);
+
+                if (legacySet.has(key)) {
+                    // Remove the legacy config
+                    const path = [idx] as JSONPath;
+                    const edits = modify(updatedText, path, undefined, modOptions);
+                    updatedText = applyEdits(updatedText, edits);
+                    node.children.splice(idx, 1);
+                } else if (requiredMap.has(key)) {
+                    // Exclude the bindings that exist
+                    requiredMap.delete(key);
                 }
             }
         }
 
-        // Update the text to avoid remove comments the much as possible
-        updatedText = text;
+        // Append (using update) to the text to avoid removal of comments the much as possible
         let index = node?.children?.length ?? 0;
-        for (const binding of additionBindings.values()) {
+        for (const binding of requiredMap.values()) {
             const path = [index] as JSONPath;
-            const edits = modify(updatedText, path, binding, { formattingOptions: { insertSpaces: false } });
+            const edits = modify(updatedText, path, binding, modOptions);
             updatedText = applyEdits(updatedText, edits);
             index++;
         }
