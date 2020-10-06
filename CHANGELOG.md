@@ -12,13 +12,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](./README.md#Configuration) section in README
 
 ## [Unreleased]
+
+## [0.8.2] - 2020-10-06
 ### Added
-- Add functions to Markdown "major mode" (`<spc> m`). Most functions require the [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension to be installed. These functions are:
-    + "Buffer commands..." functions (`<spc> m c`):
+- Add functions to Markdown "major mode" (`<spc> m`). Most functions require the [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension to be installed.
+    + "Buffer commands..." menu (`<spc> m c`):
         + `<spc> m c p` to open preview to the side
         + `<spc> m c P` to open preview in current group
         + `<spc> m c e` to export to HTML
-    + "Text..." functions (`<spc> m x`):
+    + "Text..." menu (`<spc> m x`):
         + `<spc> m x b` to toggle bold
         + `<spc> m x ~` to toggle code block
         + `` <spc> m x ` `` to toggle inline code
@@ -27,8 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         + `<spc> m x m` to toggle math
         + `<spc> m x s` to toggle strikethrough
         + `<spc> m x ]` to increase heading level (transient)
-        + `<spc> m x [` to decrease heading leavel (transient)
-    + "Table of contents..." fuctions (`<spc> m t`):
+        + `<spc> m x [` to decrease heading level (transient)
+    + "Table of contents..." menu (`<spc> m t`):
         + `<spc> m t c` to create table of contents
         + `<spc> m t u` to update table of contents
         + `<spc> m t n` to add section numbers
