@@ -14,7 +14,7 @@ export async function configSettings() {
         const configName = sections.join(".");
 
         const config = workspace.getConfiguration(configName);
-        const configValue = config.get(sectionName);
+        const configValue = config.inspect(sectionName)?.globalValue;
 
         let updatedValue: any = requiredValue;
         if (Array.isArray(requiredValue) && Array.isArray(configValue)) {

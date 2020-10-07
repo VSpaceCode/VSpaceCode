@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ` `) and can cause duplicate keybindings.
+  > To remove existing duplicate vim's bindings, go to your `settings.json` and check under `vim.normalModeKeyBindingsNonRecursive` and `vim.visualModeKeyBindingsNonRecursive`. Remove the binding that uses `[" "]` as `before` and have the commands of `["vspacecode.space"]`.
+
 ## [0.8.2] - 2020-10-06
 ### Added
 - Add functions to Markdown "major mode" (`<spc> m`). Most functions require the [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension to be installed.
