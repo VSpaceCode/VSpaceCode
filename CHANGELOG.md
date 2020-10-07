@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- ⚙️ Add `,` to trigger major mode
+
 ### Fixed
 - Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ` `) and can cause duplicate keybindings.
   > To remove existing duplicate vim's bindings, go to your `settings.json` and check under `vim.normalModeKeyBindingsNonRecursive` and `vim.visualModeKeyBindingsNonRecursive`. Remove the binding that uses `[" "]` as `before` and have the commands of `["vspacecode.space"]`.
