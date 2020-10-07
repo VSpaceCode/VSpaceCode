@@ -1,13 +1,36 @@
 import { applyEdits, getNodeValue, JSONPath, modify, Node, parseTree } from "jsonc-parser";
 import isEqual from 'lodash/isEqual';
+import remove from 'lodash/remove';
 import { commands, ConfigurationTarget, Range, TextDocument, Uri, window, workspace, WorkspaceEdit } from "vscode";
 import { KeyBinding } from "./keyBinding";
 
 const legacyBindings = require('./legacyKeybindings.jsonc');
+const legacySettings = require('./legacySettings.jsonc');
 const requiredBindings = require('./keybindings.jsonc');
 const requiredSettings = require('./settings.jsonc');
 
 export async function configSettings() {
+    // Remove legacy settings
+    for (const [legacyKey, legacyValue] of Object.entries(legacySettings)) {
+        const sections = legacyKey.split(".");
+        const sectionName = sections.pop()!;
+        const configName = sections.join(".");
+
+        const config = workspace.getConfiguration(configName);
+        const configValue = config.inspect(sectionName)?.globalValue;
+
+        let updatedValue: any = undefined; // Default to remove the legacy key
+        if (Array.isArray(legacyValue) && Array.isArray(configValue)) {
+            updatedValue = [...configValue];
+            for (const item of legacyValue) {
+                remove(updatedValue, i => isEqual(i, item));
+            }
+        }
+
+        await config.update(sectionName, updatedValue, ConfigurationTarget.Global);
+    }
+
+    // Update the required settings 
     for (const [requiredKey, requiredValue] of Object.entries(requiredSettings)) {
         const sections = requiredKey.split(".");
         const sectionName = sections.pop()!;
@@ -26,7 +49,7 @@ export async function configSettings() {
             }
         }
 
-        config.update(sectionName, updatedValue, ConfigurationTarget.Global);
+        await config.update(sectionName, updatedValue, ConfigurationTarget.Global);
     }
 }
 
