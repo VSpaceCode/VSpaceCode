@@ -1,5 +1,5 @@
 import { commands, ExtensionContext, extensions } from 'vscode';
-import { configKeyBindings, configSettings } from './configuration';
+import { configKeyBindings, configSettings } from './configuration/configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
 import { showUpdateMessage, showWelcomeMessage } from './messages';
 import { getPath, getRelativePathWithLine, copyWrapper, getPathWithLine, getPathWithLineColumn, getRelativePath, getRelativePathWithLineColumn, getFilename, getFilenameBase, getDirectoryPath, getRelativeDirectoryPath } from './pathCommands';
