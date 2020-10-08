@@ -313,12 +313,17 @@
 									{
 										"key": "Y",
 										"name": "Copy buffer to clipboard",
-										"type": "commands",
-										"commands": [
-											"editor.action.selectAll",
-											"editor.action.clipboardCopyAction",
-											"cancelSelection"
-										]
+										"type": "command",
+										"command": "vim.remap",
+										"args": {
+											"after": [
+												"g",
+												"g",
+												"y",
+												"G",
+												"<C-o>"
+											]
+										}
 									}
 								]
 							},
