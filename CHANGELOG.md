@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ⌨️️ Require keybinding reconfiguration
 
-> See [Configuration](./README.md#Configuration) section in README
+> See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
 
