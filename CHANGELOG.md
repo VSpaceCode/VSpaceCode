@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ⌨️️ Require keybinding reconfiguration
 
-> See [Configuration](./README.md#Configuration) section in README
+> See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
 
@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ` `) and can cause duplicate keybindings.
+- ⌨️️ Fix the inability to enter space key in any input when there is no editor opened
 - `<spc b Y>` doesn't change cursor position
 
 ## [0.8.2] - 2020-10-06
