@@ -18,9 +18,20 @@ function createHeadingLink(text, name) {
     return `[${text}](#${link})`;
 }
 
+function createCommandText(binding) {
+    if (binding.command)
+    {
+        return `\`${binding.command}\``;
+    } else if (binding.commands) {
+        return binding.commands.map(c => `\`${c}\``).join("<br />");
+    } else {
+        return "N/A";
+    }
+}
+
 function wrapCode(text) {
     if (text && text.length > 0) {
-        return `<code>${text}</code>`;
+        return `<code>${text.replace(/\`/g, '\\\`')}</code>`;
     }
 
     return text;
@@ -55,7 +66,7 @@ while (queue.length > 0) {
     // Process the node
     const isTransient = node.type === "transient";
     const isConditional = node.type === "conditional";
-    const tableContent = [[isConditional ? 'Condition' : 'Key Binding', 'Name', 'Type']];
+    const tableContent = [[(isConditional ? 'Condition' : 'Key Binding'), 'Name', 'Type', 'Command(s)']];
     for (const b of node.bindings) {
         b.keys = [...node.keys, replaceChar(b.key)];
 
@@ -64,7 +75,8 @@ while (queue.length > 0) {
         tableContent.push([
             wrapCode(shouldJoinKeys ? b.keys.join(" ") : b.key),
             b.name,
-            hasBindings ? createHeadingLink(b.type, b.name) : b.type
+            hasBindings ? createHeadingLink(b.type, b.name) : b.type,
+            createCommandText(b)
         ]);
 
         // Enqueue if it has binding
