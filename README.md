@@ -34,5 +34,11 @@ See [CHANGELOG.md](CHANGELOG.md)
 ## [Contribution](CONTRIBUTING.md)
 All feature requests and help are welcome. Please open an issue to track.
 
+## Related projects
+
+- [Intellimacs](https://github.com/MarcoIeni/intellimacs) - Spacemacs' like key bindings for IntelliJ platform
+- [Spaceclipse](https://github.com/MarcoIeni/spaceclipse) - Spacemacs’ like key bindings for Eclipse
+- [SpaceVim](https://github.com/SpaceVim/SpaceVim) - A community-driven modular vim distribution
+
 ## Credits
 Thanks @kahole for his implementation of quick pick menu in edamagit.
