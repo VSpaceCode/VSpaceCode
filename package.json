@@ -314,16 +314,7 @@
 										"key": "Y",
 										"name": "Copy buffer to clipboard",
 										"type": "command",
-										"command": "vim.remap",
-										"args": {
-											"after": [
-												"g",
-												"g",
-												"y",
-												"G",
-												"<C-o>"
-											]
-										}
+										"command": "vspacecode.copyWholeBuffer"
 									}
 								]
 							},

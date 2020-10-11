@@ -1,4 +1,5 @@
 import { commands, ExtensionContext, extensions } from 'vscode';
+import { copyWholeBuffer } from './bufferCommands';
 import { configKeyBindings, configSettings } from './configuration/configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
 import { showUpdateMessage, showWelcomeMessage } from './messages';
@@ -36,6 +37,8 @@ export async function activate(context: ExtensionContext) {
     context.subscriptions.push(commands.registerCommand(CommandId.CopyRelativeDirectoryPath, copyWrapper(getRelativeDirectoryPath)));
     context.subscriptions.push(commands.registerCommand(CommandId.CopyFilename, copyWrapper(getFilename)));
     context.subscriptions.push(commands.registerCommand(CommandId.CopyFilenameBase, copyWrapper(getFilenameBase)));
+
+    context.subscriptions.push(commands.registerTextEditorCommand(CommandId.CopyWholeBuffer, copyWholeBuffer));
 }
 
 function setUpWhichKey() {

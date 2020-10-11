@@ -21,6 +21,8 @@ export enum CommandId {
 	CopyFilename = "vspacecode.copyFilename",
 	CopyFilenameBase = "vspacecode.copyFilenameBase",
 
+	CopyWholeBuffer = "vspacecode.copyWholeBuffer",
+
 	RegisterWhichKey = "whichkey.register",
 	ShowWhichKey = "whichkey.show"
 };
