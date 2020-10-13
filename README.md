@@ -33,12 +33,9 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 ## Contributing
 
-This project is maintained by a group of people around the world on their free time. All feature requests and help are welcome. Please check out our [contributing guide](CONTRIBUTING.md) on how you can help.
+All feature requests and help are welcome. Please check out our [contributing guide](CONTRIBUTING.md) on how you can help.
 
-### Credits
-
-- Thank you to all the [contributors](https://github.com/VSpaceCode/VSpaceCode/graphs/contributors)
-- Thank you to @kahole for his implementation of quick pick menu in edamagit, which inspired the creation of this extension
+This project is maintained by a [group of people](https://github.com/VSpaceCode/VSpaceCode/graphs/contributors) around the world on their free time. Thank you for your contribution.❤️
 
 ## Related projects
 
