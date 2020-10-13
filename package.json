@@ -313,12 +313,8 @@
 									{
 										"key": "Y",
 										"name": "Copy buffer to clipboard",
-										"type": "commands",
-										"commands": [
-											"editor.action.selectAll",
-											"editor.action.clipboardCopyAction",
-											"cancelSelection"
-										]
+										"type": "command",
+										"command": "vspacecode.copyWholeBuffer"
 									}
 								]
 							},
