@@ -31,14 +31,14 @@ You can find installation instructions and documentation in the [VSpaceCode webs
 
 See [CHANGELOG.md](CHANGELOG.md)
 
-## [Contribution](CONTRIBUTING.md)
-All feature requests and help are welcome. Please open an issue to track.
+## Contributing
+
+All feature requests and help are welcome. Please check out our [contributing guide](CONTRIBUTING.md) on how you can help.
+
+This project is maintained by different [people](https://github.com/VSpaceCode/VSpaceCode/graphs/contributors) around the world in their free time. Thank you for your contribution. ❤️
 
 ## Related projects
 
 - [Intellimacs](https://github.com/MarcoIeni/intellimacs) - Spacemacs' like key bindings for IntelliJ platform
 - [Spaceclipse](https://github.com/MarcoIeni/spaceclipse) - Spacemacs’ like key bindings for Eclipse
 - [SpaceVim](https://github.com/SpaceVim/SpaceVim) - A community-driven modular vim distribution
-
-## Credits
-Thanks @kahole for his implementation of quick pick menu in edamagit.
