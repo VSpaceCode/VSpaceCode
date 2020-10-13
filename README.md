@@ -35,7 +35,7 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 All feature requests and help are welcome. Please check out our [contributing guide](CONTRIBUTING.md) on how you can help.
 
-This project is maintained by a [group of people](https://github.com/VSpaceCode/VSpaceCode/graphs/contributors) around the world on their free time. Thank you for your contribution.❤️
+This project is maintained by different [people](https://github.com/VSpaceCode/VSpaceCode/graphs/contributors) around the world in their free time. Thank you for your contribution. ❤️
 
 ## Related projects
 
