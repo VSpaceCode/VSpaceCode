@@ -153,16 +153,16 @@
 								"type": "bindings",
 								"bindings": [
 									{
-										"key": "1",
-										"name": "First buffer in window",
-										"type": "command",
-										"command": "workbench.action.firstEditorInGroup"
-									},
-									{
 										"key": "0",
 										"name": "Last buffer in window",
 										"type": "command",
 										"command": "workbench.action.lastEditorInGroup"
+									},
+									{
+										"key": "1",
+										"name": "First buffer in window",
+										"type": "command",
+										"command": "workbench.action.firstEditorInGroup"
 									},
 									{
 										"key": "b",
@@ -171,16 +171,46 @@
 										"command": "workbench.action.showAllEditors"
 									},
 									{
-										"key": "B",
-										"name": "Show all buffers in active window",
-										"type": "command",
-										"command": "workbench.action.showEditorsInActiveGroup"
-									},
-									{
 										"key": "d",
 										"name": "Close active buffer",
 										"type": "command",
 										"command": "workbench.action.closeActiveEditor"
+									},
+									{
+										"key": "n",
+										"name": "Next buffer",
+										"type": "command",
+										"command": "workbench.action.nextEditor"
+									},
+									{
+										"key": "p",
+										"name": "Previous buffer",
+										"type": "command",
+										"command": "workbench.action.previousEditor"
+									},
+									{
+										"key": "s",
+										"name": "Scratch buffer",
+										"type": "command",
+										"command": "workbench.action.files.newUntitledFile"
+									},
+									{
+										"key": "t",
+										"name": "Pin buffer",
+										"type": "command",
+										"command": "workbench.action.pinEditor"
+									},
+									{
+										"key": "u",
+										"name": "Reopen closed buffer",
+										"type": "command",
+										"command": "workbench.action.reopenClosedEditor"
+									},
+									{
+										"key": "B",
+										"name": "Show all buffers in active window",
+										"type": "command",
+										"command": "workbench.action.showEditorsInActiveGroup"
 									},
 									{
 										"key": "H",
@@ -213,34 +243,16 @@
 										"command": "workbench.action.closeOtherEditors"
 									},
 									{
-										"key": "n",
-										"name": "Next buffer",
-										"type": "command",
-										"command": "workbench.action.nextEditor"
-									},
-									{
-										"key": "p",
-										"name": "Previous buffer",
-										"type": "command",
-										"command": "workbench.action.previousEditor"
-									},
-									{
 										"key": "N",
 										"name": "New Buffer...",
 										"type": "bindings",
 										"bindings": [
 											{
-												"key": "n",
-												"name": "New untitled buffer",
-												"type": "command",
-												"command": "workbench.action.files.newUntitledFile"
-											},
-											{
-												"key": "l",
-												"name": "New untitled buffer (split right)",
+												"key": "h",
+												"name": "New untitled buffer (split left)",
 												"type": "commands",
 												"commands": [
-													"workbench.action.splitEditorRight",
+													"workbench.action.splitEditorLeft",
 													"workbench.action.files.newUntitledFile",
 													"workbench.action.closeOtherEditors"
 												]
@@ -266,40 +278,28 @@
 												]
 											},
 											{
-												"key": "h",
-												"name": "New untitled buffer (split left)",
+												"key": "l",
+												"name": "New untitled buffer (split right)",
 												"type": "commands",
 												"commands": [
-													"workbench.action.splitEditorLeft",
+													"workbench.action.splitEditorRight",
 													"workbench.action.files.newUntitledFile",
 													"workbench.action.closeOtherEditors"
 												]
+											},
+											{
+												"key": "n",
+												"name": "New untitled buffer",
+												"type": "command",
+												"command": "workbench.action.files.newUntitledFile"
 											}
 										]
-									},
-									{
-										"key": "s",
-										"name": "Scratch buffer",
-										"type": "command",
-										"command": "workbench.action.files.newUntitledFile"
-									},
-									{
-										"key": "t",
-										"name": "Pin buffer",
-										"type": "command",
-										"command": "workbench.action.pinEditor"
 									},
 									{
 										"key": "T",
 										"name": "Unpin buffer",
 										"type": "command",
 										"command": "workbench.action.unpinEditor"
-									},
-									{
-										"key": "u",
-										"name": "Reopen closed buffer",
-										"type": "command",
-										"command": "workbench.action.reopenClosedEditor"
 									},
 									{
 										"key": "P",
