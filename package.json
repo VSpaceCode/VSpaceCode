@@ -1202,39 +1202,89 @@
 												]
 											},
 											{
-												"key": "i",
-												"name": "Insert/remove...",
+												"key": "a",
+												"name": "Actions...",
 												"type": "bindings",
 												"bindings": [
 													{
-														"key": "f",
-														"name": "Fill struct",
+														"key": "P",
+														"name": "Run code on Go Playground",
 														"type": "command",
-														"command": "go.fill.struct"
+														"command": "go.playground"
 													},
 													{
-														"key": "t",
-														"name": "Add tags to struct fields",
-														"type": "command",
-														"command": "go.add.tags"
+														"key": "p",
+														"name": "Package actions...",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "b",
+																"name": "Build package",
+																"type": "command",
+																"command": "go.build.package"
+															},
+															{
+																"key": "g",
+																"name": "Get package",
+																"type": "command",
+																"command": "go.get.package"
+															},
+															{
+																"key": "i",
+																"name": "Install current package",
+																"type": "command",
+																"command": "go.install.package"
+															},
+															{
+																"key": "l",
+																"name": "Lint package",
+																"type": "command",
+																"command": "go.lint.package"
+															},
+															{
+																"key": "s",
+																"name": "Browse packages",
+																"type": "command",
+																"command": "go.browse.packages"
+															},
+															{
+																"key": "v",
+																"name": "Vet package",
+																"type": "command",
+																"command": "go.vet.package"
+															},
+															{
+																"key": "w",
+																"name": "Add package to workspace",
+																"type": "command",
+																"command": "go.add.package.workspace"
+															}
+														]
 													},
 													{
-														"key": "T",
-														"name": "Remove tags from struct fields",
-														"type": "command",
-														"command": "go.remove.tags"
-													},
-													{
-														"key": "i",
-														"name": "Add import",
-														"type": "command",
-														"command": "go.import.add"
-													},
-													{
-														"key": "I",
-														"name": "Generate interface stubs",
-														"type": "command",
-														"command": "go.impl.cursor"
+														"key": "w",
+														"name": "Workspace actions...",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "b",
+																"name": "Build workspace",
+																"type": "command",
+																"command": "go.build.workspace"
+															},
+															{
+																"key": "l",
+																"name": "Workspace",
+																"type": "command",
+																"command": "go.lint.workspace"
+															},
+															{
+																"key": "v",
+																"name": "Vet workspace",
+																"type": "command",
+																"command": "go.vet.workspace"
+															}
+														]
 													}
 												]
 											},
@@ -1243,12 +1293,6 @@
 												"name": "Backend/environment...",
 												"type": "bindings",
 												"bindings": [
-													{
-														"key": "R",
-														"name": "Restart language server",
-														"type": "command",
-														"command": "go.languageserver.restart"
-													},
 													{
 														"key": "c",
 														"name": "Choose Go environment",
@@ -1262,16 +1306,22 @@
 														"command": "go.gopath"
 													},
 													{
+														"key": "i",
+														"name": "Install/update tools",
+														"type": "command",
+														"command": "go.tools.install"
+													},
+													{
 														"key": "l",
 														"name": "Locate configured Go tools",
 														"type": "command",
 														"command": "go.locate.tools"
 													},
 													{
-														"key": "i",
-														"name": "Install/update tools",
+														"key": "R",
+														"name": "Restart language server",
 														"type": "command",
-														"command": "go.tools.install"
+														"command": "go.languageserver.restart"
 													}
 												]
 											},
@@ -1280,12 +1330,6 @@
 												"name": "Go to...",
 												"type": "bindings",
 												"bindings": [
-													{
-														"key": "g",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
 													{
 														"key": "d",
 														"name": "Go to definition",
@@ -1297,30 +1341,6 @@
 														"name": "Peek definition",
 														"type": "command",
 														"command": "editor.action.peekDefinition"
-													},
-													{
-														"key": "R",
-														"name": "Find all references",
-														"type": "command",
-														"command": "references-view.findReferences"
-													},
-													{
-														"key": "r",
-														"name": "Peek references",
-														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
-													},
-													{
-														"key": "t",
-														"name": "Go to type definition",
-														"type": "command",
-														"command": "editor.action.goToTypeDefinition"
-													},
-													{
-														"key": "T",
-														"name": "Peek type definition",
-														"type": "command",
-														"command": "editor.action.peekTypeDefinition"
 													},
 													{
 														"key": "E",
@@ -1335,10 +1355,10 @@
 														"command": "workbench.action.problems.focus"
 													},
 													{
-														"key": "m",
-														"name": "Go to method in file",
+														"key": "g",
+														"name": "Go to definition",
 														"type": "command",
-														"command": "workbench.action.gotoMethod"
+														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "i",
@@ -1351,6 +1371,73 @@
 														"name": "Find symbol in project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
+													},
+													{
+														"key": "m",
+														"name": "Go to method in file",
+														"type": "command",
+														"command": "workbench.action.gotoMethod"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													},
+													{
+														"key": "t",
+														"name": "Go to type definition",
+														"type": "command",
+														"command": "editor.action.goToTypeDefinition"
+													},
+													{
+														"key": "T",
+														"name": "Peek type definition",
+														"type": "command",
+														"command": "editor.action.peekTypeDefinition"
+													}
+												]
+											},
+											{
+												"key": "i",
+												"name": "Insert/remove...",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "f",
+														"name": "Fill struct",
+														"type": "command",
+														"command": "go.fill.struct"
+													},
+													{
+														"key": "i",
+														"name": "Add import",
+														"type": "command",
+														"command": "go.import.add"
+													},
+													{
+														"key": "I",
+														"name": "Generate interface stubs",
+														"type": "command",
+														"command": "go.impl.cursor"
+													},
+													{
+														"key": "t",
+														"name": "Add tags to struct fields",
+														"type": "command",
+														"command": "go.add.tags"
+													},
+													{
+														"key": "T",
+														"name": "Remove tags from struct fields",
+														"type": "command",
+														"command": "go.remove.tags"
 													}
 												]
 											},
@@ -1359,6 +1446,12 @@
 												"name": "Refactor...",
 												"type": "bindings",
 												"bindings": [
+													{
+														"key": ".",
+														"name": "Quick fix",
+														"type": "command",
+														"command": "editor.action.quickFix"
+													},
 													{
 														"key": "e",
 														"name": "Extract to function or variable",
@@ -1373,99 +1466,6 @@
 														"name": "Rename symbol",
 														"type": "command",
 														"command": "editor.action.rename"
-													},
-													{
-														"key": ".",
-														"name": "Quick fix",
-														"type": "command",
-														"command": "editor.action.quickFix"
-													}
-												]
-											},
-											{
-												"key": "a",
-												"name": "Actions...",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "P",
-														"name": "Run code on Go Playground",
-														"type": "command",
-														"command": "go.playground"
-													},
-													{
-														"key": "w",
-														"name": "Workspace actions...",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "l",
-																"name": "Workspace",
-																"type": "command",
-																"command": "go.lint.workspace"
-															},
-															{
-																"key": "b",
-																"name": "Build workspace",
-																"type": "command",
-																"command": "go.build.workspace"
-															},
-															{
-																"key": "v",
-																"name": "Vet workspace",
-																"type": "command",
-																"command": "go.vet.workspace"
-															}
-														]
-													},
-													{
-														"key": "p",
-														"name": "Package actions...",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "v",
-																"name": "Vet package",
-																"type": "command",
-																"command": "go.vet.package"
-															},
-															{
-																"key": "b",
-																"name": "Build package",
-																"type": "command",
-																"command": "go.build.package"
-															},
-															{
-																"key": "l",
-																"name": "Lint package",
-																"type": "command",
-																"command": "go.lint.package"
-															},
-															{
-																"key": "i",
-																"name": "Install current package",
-																"type": "command",
-																"command": "go.install.package"
-															},
-															{
-																"key": "s",
-																"name": "Browse packages",
-																"type": "command",
-																"command": "go.browse.packages"
-															},
-															{
-																"key": "g",
-																"name": "Get package",
-																"type": "command",
-																"command": "go.get.package"
-															},
-															{
-																"key": "w",
-																"name": "Add package to workspace",
-																"type": "command",
-																"command": "go.add.package.workspace"
-															}
-														]
 													}
 												]
 											},
@@ -1474,60 +1474,6 @@
 												"name": "Test...",
 												"type": "bindings",
 												"bindings": [
-													{
-														"key": "c",
-														"name": "Cancel running tets",
-														"type": "command",
-														"command": "go.test.cancel"
-													},
-													{
-														"key": "P",
-														"name": "Apply cover profile",
-														"type": "command",
-														"command": "go.apply.coverprofile"
-													},
-													{
-														"key": "s",
-														"name": "Subtest at cursor",
-														"type": "command",
-														"command": "go.subtest.cursor"
-													},
-													{
-														"key": "d",
-														"name": "Debug test at cursor",
-														"type": "command",
-														"command": "go.debug.cursor"
-													},
-													{
-														"key": "f",
-														"name": "Test function at cursor",
-														"type": "command",
-														"command": "go.test.cursor"
-													},
-													{
-														"key": "F",
-														"name": "Test file",
-														"type": "command",
-														"command": "go.test.file"
-													},
-													{
-														"key": "p",
-														"name": "Test package",
-														"type": "command",
-														"command": "go.test.package"
-													},
-													{
-														"key": "w",
-														"name": "Test packages in workspace",
-														"type": "command",
-														"command": "go.test.workspace"
-													},
-													{
-														"key": "l",
-														"name": "Test previous",
-														"type": "command",
-														"command": "go.test.previous"
-													},
 													{
 														"key": "b",
 														"name": "Benchmarks...",
@@ -1554,23 +1500,28 @@
 														]
 													},
 													{
-														"key": "t",
-														"name": "Toggle...",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "c",
-																"name": "Toggle test coverage in current package",
-																"type": "command",
-																"command": "go.test.coverage"
-															},
-															{
-																"key": "f",
-																"name": "Toggle open test file",
-																"type": "command",
-																"command": "go.toggle.test.file"
-															}
-														]
+														"key": "c",
+														"name": "Cancel running tets",
+														"type": "command",
+														"command": "go.test.cancel"
+													},
+													{
+														"key": "d",
+														"name": "Debug test at cursor",
+														"type": "command",
+														"command": "go.debug.cursor"
+													},
+													{
+														"key": "f",
+														"name": "Test function at cursor",
+														"type": "command",
+														"command": "go.test.cursor"
+													},
+													{
+														"key": "F",
+														"name": "Test file",
+														"type": "command",
+														"command": "go.test.file"
 													},
 													{
 														"key": "g",
@@ -1596,6 +1547,55 @@
 																"command": "go.test.generate.function"
 															}
 														]
+													},
+													{
+														"key": "l",
+														"name": "Test previous",
+														"type": "command",
+														"command": "go.test.previous"
+													},
+													{
+														"key": "P",
+														"name": "Apply cover profile",
+														"type": "command",
+														"command": "go.apply.coverprofile"
+													},
+													{
+														"key": "p",
+														"name": "Test package",
+														"type": "command",
+														"command": "go.test.package"
+													},
+													{
+														"key": "s",
+														"name": "Subtest at cursor",
+														"type": "command",
+														"command": "go.subtest.cursor"
+													},
+													{
+														"key": "t",
+														"name": "Toggle...",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "c",
+																"name": "Toggle test coverage in current package",
+																"type": "command",
+																"command": "go.test.coverage"
+															},
+															{
+																"key": "f",
+																"name": "Toggle open test file",
+																"type": "command",
+																"command": "go.toggle.test.file"
+															}
+														]
+													},
+													{
+														"key": "w",
+														"name": "Test packages in workspace",
+														"type": "command",
+														"command": "go.test.workspace"
 													}
 												]
 											}
