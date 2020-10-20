@@ -15,6 +15,77 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - ⚙️ Add `,` to trigger major mode
+- Add functions to Go "major mode" (`<spc> m`). Most functions require the [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go) extension to be installed.
+    - `<spc> m <spc>` to show all Go extension commands
+    - "Format..." menu (`<spc> m =`):
+        - `<spc> m = =` to format document
+        - `<spc> m = d` to format document with... (choose formatter)
+        - `<spc> m = m` to format modified lines only
+        - `<spc> m = s` to format selection
+        - `<spc> m = S` to format selection with... (choose formatter)
+    - "Actions..." menu (`<spc> m a`):
+        - `<spc> m a P` to run code in Go Playground
+        - "Package actions..." menu (`<spc> m a p`):
+            - `<spc> m a p b` to build current package
+            - `<spc> m a p g` to get a package
+            - `<spc> m a p i` to install current package
+            - `<spc> m a p l` to lint current package
+            - `<spc> m a p s` to browse packages
+            - `<spc> m a p v` to vet current package
+        - "Workspace actions...." menu (`<spc> m a w`):
+            - `<spc> m a w b` to build workspace
+            - `<spc> m a w l` to lint workspace
+            - `<spc> m a w b` to vet workspace
+            - `<spc> m a w p` to add package to workspace
+    - "Backend/environment..." menu (`<spc> m b`):
+        - `<spc> m b e` to choose Go environment
+        - `<spc> m b g` to show current GOPATH
+        - `<spc> m b i` to install/update tools
+        - `<spc> m b l` to locate configured Go tools
+        - `<spc> m b R` to restart language server
+    - "Go to..." menu (`<spc> m g`):
+        - `<spc> m g d` to go to definition
+        - `<spc> m g D` to peek definition
+        - `<spc> m g e` to go to errors/problems
+        - `<spc> m g g` to go to definition
+        - `<spc> m g i` to find symbol in file
+        - `<spc> m g I` to find symbol in project
+        - `<spc> m g m` to go to method in file
+        - `<spc> m g r` to peek references
+        - `<spc> m g R` to find all references
+        - `<spc> m g t` to go to type definition
+        - `<spc> m g T` to peek type definition
+    - "Insert/remove..." menu (`<spc> m i`):
+        - `<spc> m i f` to fill struct
+        - `<spc> m i i` to add import
+        - `<spc> m i I` to generate interface stubs
+        - `<spc> m i t` to add tags to struct fields
+        - `<spc> m i T` to remove tags from struct fields
+    - "Refactor..." menu (`<spc> m r`):
+        - `<spc> m r .` to quick fix
+        - `<spc> m r e` to extract to function or variable
+        - `<spc> m r r` to rename symbol
+    - "Test..." menu (`<spc> m t`):
+        - "Benchmarks..." menu (`<spc> m t b`):
+            - `<spc> m t b f` to benchmark function at cursor
+            - `<spc> m t b f` to benchmark file
+            - `<spc> m t b f` to benchmark package
+        - `<spc> m t c` to cancel running tests
+        - `<spc> m t d` to debug test at cursor
+        - `<spc> m t f` to test function at cursor
+        - `<spc> m t F` to test the current file
+        - "Generate..." menu (`<spc> m t g`):
+            - `<spc> m t g f` to generate unit tests for function
+            - `<spc> m t g F` to generate unit tests for file
+            - `<spc> m t g p` to generate unit tests for package
+        - `<spc> m t l` to test previous
+        - `<spc> m t p` to test package
+        - `<spc> m t P` to apply cover profile
+        - `<spc> m t s` to subtest at cursor
+        - "Toggle..." menu (`<spc> m t t`):
+            - `<spc> m t t c` to toggle test coverage in current package
+            - `<spc> m t t f` to toggle open test file
+        - `<spc> m t w` to test packages in workspace
 
 ### Fixed
 - Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ` `) and can cause duplicate keybindings.
