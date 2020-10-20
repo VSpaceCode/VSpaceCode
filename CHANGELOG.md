@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ` `) and can cause duplicate keybindings.
 - ⌨️️ Fix the inability to enter space key in any input when there is no editor opened
 - Keep cursor position after `<spc> b Y`
-- Bindings in `<spc> b` are now alphabetical
+- Changed bindings in `<spc> b` and `<spc> d` to be sorted alphabetically
 
 ## [0.8.2] - 2020-10-06
 ### Added
