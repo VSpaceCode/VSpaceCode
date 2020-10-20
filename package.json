@@ -153,16 +153,16 @@
 								"type": "bindings",
 								"bindings": [
 									{
-										"key": "1",
-										"name": "First buffer in window",
-										"type": "command",
-										"command": "workbench.action.firstEditorInGroup"
-									},
-									{
 										"key": "0",
 										"name": "Last buffer in window",
 										"type": "command",
 										"command": "workbench.action.lastEditorInGroup"
+									},
+									{
+										"key": "1",
+										"name": "First buffer in window",
+										"type": "command",
+										"command": "workbench.action.firstEditorInGroup"
 									},
 									{
 										"key": "b",
@@ -171,16 +171,46 @@
 										"command": "workbench.action.showAllEditors"
 									},
 									{
-										"key": "B",
-										"name": "Show all buffers in active window",
-										"type": "command",
-										"command": "workbench.action.showEditorsInActiveGroup"
-									},
-									{
 										"key": "d",
 										"name": "Close active buffer",
 										"type": "command",
 										"command": "workbench.action.closeActiveEditor"
+									},
+									{
+										"key": "n",
+										"name": "Next buffer",
+										"type": "command",
+										"command": "workbench.action.nextEditor"
+									},
+									{
+										"key": "p",
+										"name": "Previous buffer",
+										"type": "command",
+										"command": "workbench.action.previousEditor"
+									},
+									{
+										"key": "s",
+										"name": "Scratch buffer",
+										"type": "command",
+										"command": "workbench.action.files.newUntitledFile"
+									},
+									{
+										"key": "t",
+										"name": "Pin buffer",
+										"type": "command",
+										"command": "workbench.action.pinEditor"
+									},
+									{
+										"key": "u",
+										"name": "Reopen closed buffer",
+										"type": "command",
+										"command": "workbench.action.reopenClosedEditor"
+									},
+									{
+										"key": "B",
+										"name": "Show all buffers in active window",
+										"type": "command",
+										"command": "workbench.action.showEditorsInActiveGroup"
 									},
 									{
 										"key": "H",
@@ -213,34 +243,16 @@
 										"command": "workbench.action.closeOtherEditors"
 									},
 									{
-										"key": "n",
-										"name": "Next buffer",
-										"type": "command",
-										"command": "workbench.action.nextEditor"
-									},
-									{
-										"key": "p",
-										"name": "Previous buffer",
-										"type": "command",
-										"command": "workbench.action.previousEditor"
-									},
-									{
 										"key": "N",
 										"name": "New Buffer...",
 										"type": "bindings",
 										"bindings": [
 											{
-												"key": "n",
-												"name": "New untitled buffer",
-												"type": "command",
-												"command": "workbench.action.files.newUntitledFile"
-											},
-											{
-												"key": "l",
-												"name": "New untitled buffer (split right)",
+												"key": "h",
+												"name": "New untitled buffer (split left)",
 												"type": "commands",
 												"commands": [
-													"workbench.action.splitEditorRight",
+													"workbench.action.splitEditorLeft",
 													"workbench.action.files.newUntitledFile",
 													"workbench.action.closeOtherEditors"
 												]
@@ -266,40 +278,28 @@
 												]
 											},
 											{
-												"key": "h",
-												"name": "New untitled buffer (split left)",
+												"key": "l",
+												"name": "New untitled buffer (split right)",
 												"type": "commands",
 												"commands": [
-													"workbench.action.splitEditorLeft",
+													"workbench.action.splitEditorRight",
 													"workbench.action.files.newUntitledFile",
 													"workbench.action.closeOtherEditors"
 												]
+											},
+											{
+												"key": "n",
+												"name": "New untitled buffer",
+												"type": "command",
+												"command": "workbench.action.files.newUntitledFile"
 											}
 										]
-									},
-									{
-										"key": "s",
-										"name": "Scratch buffer",
-										"type": "command",
-										"command": "workbench.action.files.newUntitledFile"
-									},
-									{
-										"key": "t",
-										"name": "Pin buffer",
-										"type": "command",
-										"command": "workbench.action.pinEditor"
 									},
 									{
 										"key": "T",
 										"name": "Unpin buffer",
 										"type": "command",
 										"command": "workbench.action.unpinEditor"
-									},
-									{
-										"key": "u",
-										"name": "Reopen closed buffer",
-										"type": "command",
-										"command": "workbench.action.reopenClosedEditor"
 									},
 									{
 										"key": "P",
@@ -349,60 +349,6 @@
 								"type": "bindings",
 								"bindings": [
 									{
-										"key": "d",
-										"name": "Start debug",
-										"type": "command",
-										"command": "workbench.action.debug.start"
-									},
-									{
-										"key": "D",
-										"name": "Run without debugging",
-										"type": "command",
-										"command": "workbench.action.debug.run"
-									},
-									{
-										"key": "S",
-										"name": "Stop debug",
-										"type": "command",
-										"command": "workbench.action.debug.stop"
-									},
-									{
-										"key": "c",
-										"name": "Continue debug",
-										"type": "command",
-										"command": "workbench.action.debug.continue"
-									},
-									{
-										"key": "p",
-										"name": "Pause debug",
-										"type": "command",
-										"command": "workbench.action.debug.pause"
-									},
-									{
-										"key": "R",
-										"name": "Restart debug",
-										"type": "command",
-										"command": "workbench.action.debug.restart"
-									},
-									{
-										"key": "i",
-										"name": "Step into",
-										"type": "command",
-										"command": "workbench.action.debug.stepInto"
-									},
-									{
-										"key": "s",
-										"name": "Step over",
-										"type": "command",
-										"command": "workbench.action.debug.stepOver"
-									},
-									{
-										"key": "o",
-										"name": "Step out",
-										"type": "command",
-										"command": "workbench.action.debug.stepOut"
-									},
-									{
 										"key": "b",
 										"name": "Breakpoint...",
 										"type": "bindings",
@@ -414,22 +360,10 @@
 												"command": "editor.debug.action.toggleBreakpoint"
 											},
 											{
-												"key": "i",
-												"name": "Toggle inline breakpoint",
-												"type": "command",
-												"command": "editor.debug.action.toggleInlineBreakpoint"
-											},
-											{
 												"key": "c",
 												"name": "Add conditional breakpoint",
 												"type": "command",
 												"command": "editor.debug.action.conditionalBreakpoint"
-											},
-											{
-												"key": "f",
-												"name": "Add function breakpoint",
-												"type": "command",
-												"command": "workbench.debug.viewlet.action.addFunctionBreakpointAction"
 											},
 											{
 												"key": "d",
@@ -438,34 +372,22 @@
 												"command": "debug.removeBreakpoint"
 											},
 											{
-												"key": "D",
-												"name": "Delete all breakpoints",
-												"type": "command",
-												"command": "workbench.debug.viewlet.action.removeAllBreakpoints"
-											},
-											{
 												"key": "e",
 												"name": "Enable breakpoint",
 												"type": "command",
 												"command": "debug.enableOrDisableBreakpoint"
 											},
 											{
-												"key": "E",
-												"name": "Enable all breakpoints",
+												"key": "f",
+												"name": "Add function breakpoint",
 												"type": "command",
-												"command": "workbench.debug.viewlet.action.enableAllBreakpoints"
+												"command": "workbench.debug.viewlet.action.addFunctionBreakpointAction"
 											},
 											{
-												"key": "s",
-												"name": "Disable breakpoint",
+												"key": "i",
+												"name": "Toggle inline breakpoint",
 												"type": "command",
-												"command": "debug.enableOrDisableBreakpoint"
-											},
-											{
-												"key": "S",
-												"name": "Disable all breakpoints",
-												"type": "command",
-												"command": "workbench.debug.viewlet.action.disableAllBreakpoints"
+												"command": "editor.debug.action.toggleInlineBreakpoint"
 											},
 											{
 												"key": "n",
@@ -506,14 +428,74 @@
 														"command": "editor.debug.action.goToPreviousBreakpoint"
 													}
 												]
+											},
+											{
+												"key": "s",
+												"name": "Disable breakpoint",
+												"type": "command",
+												"command": "debug.enableOrDisableBreakpoint"
+											},
+											{
+												"key": "D",
+												"name": "Delete all breakpoints",
+												"type": "command",
+												"command": "workbench.debug.viewlet.action.removeAllBreakpoints"
+											},
+											{
+												"key": "E",
+												"name": "Enable all breakpoints",
+												"type": "command",
+												"command": "workbench.debug.viewlet.action.enableAllBreakpoints"
+											},
+											{
+												"key": "S",
+												"name": "Disable all breakpoints",
+												"type": "command",
+												"command": "workbench.debug.viewlet.action.disableAllBreakpoints"
 											}
 										]
+									},
+									{
+										"key": "c",
+										"name": "Continue debug",
+										"type": "command",
+										"command": "workbench.action.debug.continue"
+									},
+									{
+										"key": "d",
+										"name": "Start debug",
+										"type": "command",
+										"command": "workbench.action.debug.start"
+									},
+									{
+										"key": "i",
+										"name": "Step into",
+										"type": "command",
+										"command": "workbench.action.debug.stepInto"
 									},
 									{
 										"key": "j",
 										"name": "Jump to cursor",
 										"type": "command",
 										"command": "debug.jumpToCursor"
+									},
+									{
+										"key": "o",
+										"name": "Step out",
+										"type": "command",
+										"command": "workbench.action.debug.stepOut"
+									},
+									{
+										"key": "p",
+										"name": "Pause debug",
+										"type": "command",
+										"command": "workbench.action.debug.pause"
+									},
+									{
+										"key": "s",
+										"name": "Step over",
+										"type": "command",
+										"command": "workbench.action.debug.stepOver"
 									},
 									{
 										"key": "v",
@@ -526,6 +508,24 @@
 										"name": "Focus on watch window",
 										"type": "command",
 										"command": "workbench.debug.action.focusWatchView"
+									},
+									{
+										"key": "D",
+										"name": "Run without debugging",
+										"type": "command",
+										"command": "workbench.action.debug.run"
+									},
+									{
+										"key": "R",
+										"name": "Restart debug",
+										"type": "command",
+										"command": "workbench.action.debug.restart"
+									},
+									{
+										"key": "S",
+										"name": "Stop debug",
+										"type": "command",
+										"command": "workbench.action.debug.stop"
 									},
 									{
 										"key": "W",
