@@ -50,7 +50,12 @@
 		"url": "https://github.com/VSpaceCode/VSpaceCode/issues"
 	},
 	"activationEvents": [
-		"*"
+		"onStartupFinished",
+		"onCommand:vspacecode.space",
+		"onCommand:vspacecode.showMagitRefMenu",
+		"onCommand:vspacecode.configure",
+		"onCommand:vspacecode.configureSettings",
+		"onCommand:vspacecode.configureKeybindings"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {

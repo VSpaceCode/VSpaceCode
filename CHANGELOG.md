@@ -87,11 +87,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
             - `<spc> m t t f` to toggle open test file
         - `<spc> m t w` to test packages in workspace
 
+### Changed
+- Speed up vscode startup by deferred extension activation
+- Change bindings in `<spc> b` and `<spc> d` to be sorted alphabetically
+
 ### Fixed
 - Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ` `) and can cause duplicate keybindings.
 - ⌨️️ Fix the inability to enter space key in any input when there is no editor opened
 - Keep cursor position after `<spc> b Y`
-- Changed bindings in `<spc> b` and `<spc> d` to be sorted alphabetically
 
 ## [0.8.2] - 2020-10-06
 ### Added
