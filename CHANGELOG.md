@@ -91,6 +91,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Speed up vscode startup by deferred extension activation
 - Reorder the default keybindings in alphabetical order similar to spacemacs
+- Focus on the search result after `<spc> *`
 
 ### Fixed
 - Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ` `) and can cause duplicate keybindings.
