@@ -1252,12 +1252,6 @@
 																"name": "Vet package",
 																"type": "command",
 																"command": "go.vet.package"
-															},
-															{
-																"key": "w",
-																"name": "Add package to workspace",
-																"type": "command",
-																"command": "go.add.package.workspace"
 															}
 														]
 													},
@@ -1274,10 +1268,16 @@
 															},
 															{
 																"key": "l",
-																"name": "Workspace",
+																"name": "Lint workspace",
 																"type": "command",
 																"command": "go.lint.workspace"
 															},
+															{
+																"key": "p",
+																"name": "Add package to workspace",
+																"type": "command",
+																"command": "go.add.package.workspace"
+															}
 															{
 																"key": "v",
 																"name": "Vet workspace",
@@ -1294,7 +1294,7 @@
 												"type": "bindings",
 												"bindings": [
 													{
-														"key": "c",
+														"key": "e",
 														"name": "Choose Go environment",
 														"type": "command",
 														"command": "go.environment.choose"
@@ -1341,12 +1341,6 @@
 														"name": "Peek definition",
 														"type": "command",
 														"command": "editor.action.peekDefinition"
-													},
-													{
-														"key": "E",
-														"name": "Go to documentation in Dash",
-														"type": "command",
-														"command": "extension.dash.specific"
 													},
 													{
 														"key": "e",
