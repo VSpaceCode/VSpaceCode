@@ -1277,7 +1277,7 @@
 																"name": "Add package to workspace",
 																"type": "command",
 																"command": "go.add.package.workspace"
-															}
+															},
 															{
 																"key": "v",
 																"name": "Vet workspace",
