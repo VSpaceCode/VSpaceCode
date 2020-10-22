@@ -1109,7 +1109,7 @@
 								"bindings": [
 									{
 										"key": "=",
-										"name": "Format file",
+										"name": "Format region or buffer",
 										"type": "command",
 										"command": "editor.action.format"
 									},
