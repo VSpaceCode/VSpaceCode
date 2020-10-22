@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.3] - 2020-10-22
 ### Added
 - ⚙️ Add `,` to trigger major mode
 - Add functions to Go "major mode" (`<spc> m`). Most functions require the [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go) extension to be installed.
