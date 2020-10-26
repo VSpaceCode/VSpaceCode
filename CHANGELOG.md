@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
+### Changed
+- Focus on the search result after `<spc> *`
 
 ## [0.8.3] - 2020-10-22
 ### Added
