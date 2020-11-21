@@ -281,7 +281,7 @@
 										"key": "b",
 										"name": "Show all buffers",
 										"type": "command",
-										"command": "workbench.action.showAllEditors"
+										"command": "workbench.action.showAllEditorsByMostRecentlyUsed"
 									},
 									{
 										"key": "d",

@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Focus on the search result after `<spc> *`
+- `<spc> b b` shows recent buffers first
 
 ## [0.8.3] - 2020-10-22
 ### Added
