@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
+### Added
+- Add `<spc> z f j/k` to zoom out/in frame
+- Add `<spc> z x j/k` to zoom out/in text
+
 ### Changed
 - Focus on the search result after `<spc> *`
 

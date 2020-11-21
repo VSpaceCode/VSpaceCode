@@ -1859,6 +1859,18 @@
 												"name": "Zoom in",
 												"type": "command",
 												"command": "workbench.action.zoomIn"
+											},
+											{
+												"key": "j",
+												"name": "Zoom out",
+												"type": "command",
+												"command": "workbench.action.zoomOut"
+											},
+											{
+												"key": "k",
+												"name": "Zoom in",
+												"type": "command",
+												"command": "workbench.action.zoomIn"
 											}
 										]
 									},
@@ -1912,6 +1924,18 @@
 											},
 											{
 												"key": "=",
+												"name": "Zoom in",
+												"type": "command",
+												"command": "editor.action.fontZoomIn"
+											},
+											{
+												"key": "j",
+												"name": "Zoom out",
+												"type": "command",
+												"command": "editor.action.fontZoomOut"
+											},
+											{
+												"key": "k",
 												"name": "Zoom in",
 												"type": "command",
 												"command": "editor.action.fontZoomIn"
