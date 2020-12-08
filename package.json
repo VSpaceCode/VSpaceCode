@@ -187,6 +187,12 @@
 								"command": "workbench.action.findInFiles"
 							},
 							{
+								"key": "0",
+								"name": "Focus on files explorer",
+								"type": "command",
+								"command": "workbench.files.action.showActiveFileInExplorer"
+							},
+							{
 								"key": "1",
 								"name": "Focus 1st window",
 								"type": "command",
