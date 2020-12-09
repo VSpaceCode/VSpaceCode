@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add `<spc> p c` to run the default build task for the current project
 - Add `<spc> p T` to run the default test task for the current project
+- Add `<spc> 0` to show active file in explorer
 
 ## [0.8.4] - 2020-11-23
 ### Added
