@@ -1211,6 +1211,12 @@
 								"type": "bindings",
 								"bindings": [
 									{
+										"key": "c",
+										"name": "Compile project",
+										"type": "command",
+										"command": "workbench.action.tasks.build"
+									},
+									{
 										"key": "f",
 										"name": "Find file in project...",
 										"type": "command",
@@ -1239,6 +1245,12 @@
 										"name": "Replace in files...",
 										"type": "command",
 										"command": "workbench.action.replaceInFiles"
+									},
+									{
+										"key": "T",
+										"name": "Test project",
+										"type": "command",
+										"command": "workbench.action.tasks.test"
 									}
 								]
 							},
