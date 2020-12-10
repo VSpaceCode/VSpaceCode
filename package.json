@@ -139,7 +139,7 @@
 						"default": [
 							{
 								"key": " ",
-								"name": "Commands...",
+								"name": "Commands",
 								"type": "command",
 								"command": "workbench.action.showCommands"
 							},
@@ -268,7 +268,7 @@
 							},
 							{
 								"key": "b",
-								"name": "Buffers...",
+								"name": "+Buffers",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -384,7 +384,7 @@
 									},
 									{
 										"key": "N",
-										"name": "New Buffer...",
+										"name": "+New Buffer",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -439,7 +439,7 @@
 							},
 							{
 								"key": "c",
-								"name": "Comments...",
+								"name": "+Comments",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -464,7 +464,7 @@
 							},
 							{
 								"key": "d",
-								"name": "Debug...",
+								"name": "+Debug",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -547,7 +547,7 @@
 									},
 									{
 										"key": "b",
-										"name": "Breakpoint...",
+										"name": "+Breakpoint",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -656,7 +656,7 @@
 							},
 							{
 								"key": "e",
-								"name": "Errors...",
+								"name": "+Errors",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -712,7 +712,7 @@
 							},
 							{
 								"key": "f",
-								"name": "File...",
+								"name": "+File",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -741,13 +741,13 @@
 									},
 									{
 										"key": "o",
-										"name": "Open with...",
+										"name": "+Open with",
 										"type": "command",
 										"command": "explorer.openWith"
 									},
 									{
 										"key": "r",
-										"name": "Open recent...",
+										"name": "+Open recent",
 										"type": "command",
 										"command": "workbench.action.openRecent"
 									},
@@ -820,7 +820,7 @@
 									},
 									{
 										"key": "e",
-										"name": "Emacs/VSpaceCode...",
+										"name": "+Emacs/VSpaceCode",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -875,7 +875,7 @@
 									},
 									{
 										"key": "i",
-										"name": "Indentation...",
+										"name": "+Indentation",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -918,7 +918,7 @@
 									},
 									{
 										"key": "y",
-										"name": "Yank...",
+										"name": "+Yank",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -987,7 +987,7 @@
 							},
 							{
 								"key": "g",
-								"name": "Git...",
+								"name": "+Git",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1034,7 +1034,7 @@
 									},
 									{
 										"key": "f",
-										"name": "File...",
+										"name": "+File",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -1055,7 +1055,7 @@
 							},
 							{
 								"key": "h",
-								"name": "Help...",
+								"name": "+Help",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1086,7 +1086,7 @@
 							},
 							{
 								"key": "i",
-								"name": "Insert...",
+								"name": "+Insert",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1111,7 +1111,7 @@
 							},
 							{
 								"key": "j",
-								"name": "Jump/Join/Split...",
+								"name": "+Jump/Join/Split",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1194,7 +1194,7 @@
 							},
 							{
 								"key": "l",
-								"name": "Layouts...",
+								"name": "+Layouts",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1207,7 +1207,7 @@
 							},
 							{
 								"key": "p",
-								"name": "Project...",
+								"name": "+Project",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1218,19 +1218,19 @@
 									},
 									{
 										"key": "f",
-										"name": "Find file in project...",
+										"name": "+Find file in project",
 										"type": "command",
 										"command": "workbench.action.quickOpen"
 									},
 									{
 										"key": "l",
-										"name": "Switch project...",
+										"name": "+Switch project",
 										"type": "command",
 										"command": "workbench.action.openRecent"
 									},
 									{
 										"key": "p",
-										"name": "Switch project...",
+										"name": "+Switch project",
 										"type": "command",
 										"command": "workbench.action.openRecent"
 									},
@@ -1242,7 +1242,7 @@
 									},
 									{
 										"key": "R",
-										"name": "Replace in files...",
+										"name": "+Replace in files",
 										"type": "command",
 										"command": "workbench.action.replaceInFiles"
 									},
@@ -1256,7 +1256,7 @@
 							},
 							{
 								"key": "q",
-								"name": "Quit..",
+								"name": "+Quit",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1302,7 +1302,7 @@
 							},
 							{
 								"key": "r",
-								"name": "Resume...",
+								"name": "+Resume",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1321,7 +1321,7 @@
 							},
 							{
 								"key": "s",
-								"name": "Search/Symbol...",
+								"name": "+Search/Symbol",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1436,7 +1436,7 @@
 							},
 							{
 								"key": "t",
-								"name": "Toggles...",
+								"name": "+Toggles",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1461,7 +1461,7 @@
 							},
 							{
 								"key": "w",
-								"name": "Window...",
+								"name": "+Window",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1646,7 +1646,7 @@
 							},
 							{
 								"key": "x",
-								"name": "Text...",
+								"name": "+Text",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -1733,7 +1733,7 @@
 									},
 									{
 										"key": "d",
-										"name": "Delete...",
+										"name": "+Delete",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -1746,7 +1746,7 @@
 									},
 									{
 										"key": "l",
-										"name": "Lines...",
+										"name": "+Lines",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -1777,7 +1777,7 @@
 									},
 									{
 										"key": "m",
-										"name": "Merge conflict...",
+										"name": "+Merge conflict",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -1846,12 +1846,12 @@
 							},
 							{
 								"key": "z",
-								"name": "Zoom/Fold...",
+								"name": "+Zoom/Fold",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "f",
-										"name": "Frame...",
+										"name": "+Frame",
 										"type": "transient",
 										"bindings": [
 											{
@@ -1894,7 +1894,7 @@
 									},
 									{
 										"key": "i",
-										"name": "Image preview...",
+										"name": "+Image preview",
 										"type": "transient",
 										"bindings": [
 											{
@@ -1919,7 +1919,7 @@
 									},
 									{
 										"key": "x",
-										"name": "Font...",
+										"name": "+Font",
 										"type": "transient",
 										"bindings": [
 											{
@@ -1962,7 +1962,7 @@
 									},
 									{
 										"key": ".",
-										"name": "Fold...",
+										"name": "+Fold",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -2025,7 +2025,7 @@
 							},
 							{
 								"key": "D",
-								"name": "Diff/Compare...",
+								"name": "+Diff/Compare",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -2054,7 +2054,7 @@
 									},
 									{
 										"key": "D",
-										"name": "Compare active file with...",
+										"name": "+Compare active file with",
 										"type": "command",
 										"command": "workbench.files.action.compareFileWith"
 									}
@@ -2062,7 +2062,7 @@
 							},
 							{
 								"key": "F",
-								"name": "Frame...",
+								"name": "+Frame",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -2087,7 +2087,7 @@
 							},
 							{
 								"key": "m",
-								"name": "Major...",
+								"name": "+Major",
 								"type": "conditional",
 								"bindings": [
 									{
@@ -2103,7 +2103,7 @@
 											},
 											{
 												"key": "=",
-												"name": "Format...",
+												"name": "+Format",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2114,7 +2114,7 @@
 													},
 													{
 														"key": "d",
-														"name": "Format document with...",
+														"name": "+Format document with",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
@@ -2132,7 +2132,7 @@
 													},
 													{
 														"key": "S",
-														"name": "Format selection with...",
+														"name": "+Format selection with",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -2140,7 +2140,7 @@
 											},
 											{
 												"key": "a",
-												"name": "Actions...",
+												"name": "+Actions",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2151,7 +2151,7 @@
 													},
 													{
 														"key": "p",
-														"name": "Package actions...",
+														"name": "+Package actions",
 														"type": "bindings",
 														"bindings": [
 															{
@@ -2194,7 +2194,7 @@
 													},
 													{
 														"key": "w",
-														"name": "Workspace actions...",
+														"name": "+Workspace actions",
 														"type": "bindings",
 														"bindings": [
 															{
@@ -2227,7 +2227,7 @@
 											},
 											{
 												"key": "b",
-												"name": "Backend/environment...",
+												"name": "+Backend/environment",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2264,7 +2264,7 @@
 											},
 											{
 												"key": "g",
-												"name": "Go to...",
+												"name": "+Go to",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2337,7 +2337,7 @@
 											},
 											{
 												"key": "i",
-												"name": "Insert/remove...",
+												"name": "+Insert/remove",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2374,7 +2374,7 @@
 											},
 											{
 												"key": "r",
-												"name": "Refactor...",
+												"name": "+Refactor",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2402,7 +2402,7 @@
 											},
 											{
 												"key": "t",
-												"name": "Test...",
+												"name": "+Test",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2461,7 +2461,7 @@
 													},
 													{
 														"key": "b",
-														"name": "Benchmarks...",
+														"name": "+Benchmarks",
 														"type": "bindings",
 														"bindings": [
 															{
@@ -2486,7 +2486,7 @@
 													},
 													{
 														"key": "g",
-														"name": "Generate...",
+														"name": "+Generate",
 														"type": "bindings",
 														"bindings": [
 															{
@@ -2511,7 +2511,7 @@
 													},
 													{
 														"key": "t",
-														"name": "Toggle...",
+														"name": "+Toggle",
 														"type": "bindings",
 														"bindings": [
 															{
@@ -2539,7 +2539,7 @@
 										"bindings": [
 											{
 												"key": "c",
-												"name": "Buffer commands...",
+												"name": "+Buffer commands",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2564,7 +2564,7 @@
 											},
 											{
 												"key": "t",
-												"name": "Table of Contents...",
+												"name": "+Table of Contents",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2595,7 +2595,7 @@
 											},
 											{
 												"key": "x",
-												"name": "Text...",
+												"name": "+Text",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2688,7 +2688,7 @@
 							},
 							{
 								"key": "S",
-								"name": "Show...",
+								"name": "+Show",
 								"type": "bindings",
 								"bindings": [
 									{
@@ -2749,7 +2749,7 @@
 							},
 							{
 								"key": "T",
-								"name": "UI toggles...",
+								"name": "+UI toggles",
 								"type": "bindings",
 								"bindings": [
 									{

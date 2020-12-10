@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> p T` to run the default test task for the current project
 - Add `<spc> 0` to show active file in explorer
 
+### Changed
+- Indicate submenus with `+` instead of `...`
+
 ## [0.8.4] - 2020-11-23
 ### Added
 - Add `<spc> z f j/k` to zoom out/in frame
