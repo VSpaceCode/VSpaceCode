@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Add `<spc> h D` to open VSpaceCode documentation website
 - Add `<spc> p c` to run the default build task for the current project
 - Add `<spc> p T` to run the default test task for the current project
 - Add `<spc> 0` to show active file in explorer
