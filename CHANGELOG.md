@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
+
+## [0.8.5] - 2020-11-22
 ### Added
 - Add `<spc> h D` to open VSpaceCode documentation website
 - Add `<spc> p c` to run the default build task for the current project
