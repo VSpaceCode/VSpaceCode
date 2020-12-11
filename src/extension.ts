@@ -1,4 +1,4 @@
-import { commands, ExtensionContext, extensions } from 'vscode';
+import { commands, env, ExtensionContext, extensions, Uri } from 'vscode';
 import { copyWholeBuffer } from './bufferCommands';
 import { configKeyBindings, configSettings } from './configuration/configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
@@ -26,6 +26,8 @@ export async function activate(context: ExtensionContext) {
     context.subscriptions.push(commands.registerCommand(CommandId.Configure, configure));
     context.subscriptions.push(commands.registerCommand(CommandId.ConfigureSettings, configSettings));
     context.subscriptions.push(commands.registerCommand(CommandId.ConfigureKeybindings, configKeyBindings));
+
+    context.subscriptions.push(commands.registerCommand(CommandId.OpenDocumentationUrl, openDocumentationUrl));
 
     context.subscriptions.push(commands.registerCommand(CommandId.CopyPath, copyWrapper(getPath)));
     context.subscriptions.push(commands.registerCommand(CommandId.CopyPathWithLine, copyWrapper(getPathWithLine)));
@@ -63,6 +65,10 @@ function configure() {
         commands.executeCommand(CommandId.ConfigureSettings),
         commands.executeCommand(CommandId.ConfigureKeybindings)
     ]);
+}
+
+function openDocumentationUrl() {
+    return env.openExternal(Uri.parse("https://vspacecode.github.io/docs/"));
 }
 
 export function deactivate() { }

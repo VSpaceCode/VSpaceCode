@@ -55,7 +55,8 @@
 		"onCommand:vspacecode.showMagitRefMenu",
 		"onCommand:vspacecode.configure",
 		"onCommand:vspacecode.configureSettings",
-		"onCommand:vspacecode.configureKeybindings"
+		"onCommand:vspacecode.configureKeybindings",
+		"onCommand:vspacecode.openDocumentationUrl"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -79,6 +80,10 @@
 			{
 				"command": "vspacecode.configureKeybindings",
 				"title": "VSpaceCode: Configure Default Keybindings"
+			},
+			{
+				"command": "vspacecode.openDocumentationUrl",
+				"title": "VSpaceCode: Open Documentation"
 			}
 		],
 		"keybindings": [
@@ -1069,6 +1074,12 @@
 										"name": "Open global key bindings",
 										"type": "command",
 										"command": "workbench.action.openGlobalKeybindings"
+									},
+									{
+										"key": "D",
+										"name": "Open VSpaceCode Documentation",
+										"type": "command",
+										"command": "vspacecode.openDocumentationUrl"
 									},
 									{
 										"key": "I",
