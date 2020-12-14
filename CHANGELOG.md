@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
+### Added
+- Add `<spc> T n` to toggle notification center
+- Add `<spc> S n` to show notification center
 
 ## [0.8.5] - 2020-11-22
 ### Added
