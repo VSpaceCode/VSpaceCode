@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
-
+### Added
+- Add `<spc> b h/j/k/l` for directional editor moving
 ## [0.8.5] - 2020-11-22
 ### Added
 - Add `<spc> h D` to open VSpaceCode documentation website
