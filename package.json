@@ -301,6 +301,30 @@
 										"command": "workbench.action.closeActiveEditor"
 									},
 									{
+										"key": "h",
+										"name": "Move buffer into left window",
+										"type": "command",
+										"command": "workbench.action.moveEditorToLeftGroup"
+									},
+									{
+										"key": "j",
+										"name": "Move buffer into below window",
+										"type": "command",
+										"command": "workbench.action.moveEditorToBelowGroup"
+									},
+									{
+										"key": "k",
+										"name": "Move buffer into above window",
+										"type": "command",
+										"command": "workbench.action.moveEditorToAboveGroup"
+									},
+									{
+										"key": "l",
+										"name": "Move buffer into right window",
+										"type": "command",
+										"command": "workbench.action.moveEditorToRightGroup"
+									},
+									{
 										"key": "n",
 										"name": "Next buffer",
 										"type": "command",
@@ -335,30 +359,6 @@
 										"name": "Show all buffers in active window",
 										"type": "command",
 										"command": "workbench.action.showEditorsInActiveGroup"
-									},
-																		{
-										"key": "h",
-										"name": "Move buffer into left window",
-										"type": "command",
-										"command": "workbench.action.moveEditorToLeftGroup"
-									},
-									{
-										"key": "j",
-										"name": "Move buffer into below window",
-										"type": "command",
-										"command": "workbench.action.moveEditorToBelowGroup"
-									},
-									{
-										"key": "k",
-										"name": "Move buffer into above window",
-										"type": "command",
-										"command": "workbench.action.moveEditorToAboveGroup"
-									},
-									{
-										"key": "l",
-										"name": "Move buffer into right window",
-										"type": "command",
-										"command": "workbench.action.moveEditorToRightGroup"
 									},
 									{
 										"key": "H",
