@@ -2745,6 +2745,12 @@
 										"command": "workbench.view.scm"
 									},
 									{
+										"key": "n",
+										"name": "Show notification",
+										"type": "command",
+										"command": "notifications.showList"
+									},
+									{
 										"key": "o",
 										"name": "Show output",
 										"type": "command",
@@ -2816,6 +2822,12 @@
 										"name": "Toggle maximized panel",
 										"type": "command",
 										"command": "workbench.action.toggleMaximizedPanel"
+									},
+									{
+										"key": "n",
+										"name": "Toggle notification",
+										"type": "command",
+										"command": "notifications.toggleList"
 									},
 									{
 										"key": "s",
