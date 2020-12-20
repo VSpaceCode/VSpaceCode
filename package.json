@@ -2694,6 +2694,150 @@
 												]
 											}
 										]
+									},
+									{
+										"key": "languageId:python",
+										"name": "Python",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format document",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "d",
+														"name": "+Format document with",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "m",
+														"name": "Format modified lines only",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "c",
+												"name": "+Execute",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "Execute file in terminal",
+														"type": "command",
+														"command": "python.execInTerminal"
+													},
+													{
+														"key": "C",
+														"name": "Execute file in terminal",
+														"type": "command",
+														"command": "python.execInTerminal"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "I",
+														"name": "Sort imports",
+														"type": "command",
+														"command": "python.sortImports"
+													}
+												]
+											},
+											{
+												"key": "s",
+												"name": "+REPL",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "i",
+														"name": "Start REPL",
+														"type": "command",
+														"command": "python.startREPL"
+													},
+													{
+														"key": "l",
+														"name": "Send line/selection to terminal",
+														"type": "command",
+														"command": "python.execSelectionInTerminal"
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+Test",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Run all tests",
+														"type": "command",
+														"command": "python.runtests"
+													},
+													{
+														"key": "b",
+														"name": "Run current test file",
+														"type": "command",
+														"command": "python.runCurrentTestFile"
+													},
+													{
+														"key": "t",
+														"name": "Select and run test",
+														"type": "command",
+														"command": "python.selectAndRunTestMethod"
+													},
+													{
+														"key": "x",
+														"name": "Run failed tests",
+														"type": "command",
+														"command": "python.runFailedTests"
+													},
+													{
+														"key": "A",
+														"name": "Debug all tests",
+														"type": "command",
+														"command": "python.debugtests"
+													},
+													{
+														"key": "T",
+														"name": "Select and debug test",
+														"type": "command",
+														"command": "python.selectAndDebugTestMethod"
+													}
+												]
+											},
+											{
+												"key": "v",
+												"name": "+Virtualenv",
+												"type": "command",
+												"command": "python.setInterpreter"
+											}
+										]
 									}
 								]
 							},
