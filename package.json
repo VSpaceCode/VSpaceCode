@@ -1156,6 +1156,12 @@
 										"command": "editor.action.format"
 									},
 									{
+										"key": "c",
+										"name": "Jump to previous change",
+										"type": "command",
+										"command": "workbench.action.editor.previousChange"
+									},
+									{
 										"key": "i",
 										"name": "Jump to symbol in buffer",
 										"type": "command",
@@ -1218,6 +1224,12 @@
 												"w"
 											]
 										}
+									},
+									{
+										"key": "C",
+										"name": "Jump to next change",
+										"type": "command",
+										"command": "workbench.action.editor.nextChange"
 									},
 									{
 										"key": "I",
