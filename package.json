@@ -1156,16 +1156,16 @@
 										"command": "editor.action.format"
 									},
 									{
-										"key": "C",
-										"name": "Jump to next change",
-										"type": "command",
-										"command": "workbench.action.editor.nextChange"
-									},
-									{
 										"key": "c",
 										"name": "Jump to previous change",
 										"type": "command",
 										"command": "workbench.action.editor.previousChange"
+									},
+									{
+										"key": "C",
+										"name": "Jump to next change",
+										"type": "command",
+										"command": "workbench.action.editor.nextChange"
 									},
 									{
 										"key": "i",
