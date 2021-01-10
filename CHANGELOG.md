@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> b h/j/k/l` for directional editor moving
 - Add `<spc> S n` to show notification center
 - Add `<spc> j c` for previous change, `<spc> j C` for next change
+- Add Python major mode key bindings
 
 ## [0.8.5] - 2020-12-11
 ### Added
