@@ -301,6 +301,30 @@
 										"command": "workbench.action.closeActiveEditor"
 									},
 									{
+										"key": "h",
+										"name": "Move buffer into left window",
+										"type": "command",
+										"command": "workbench.action.moveEditorToLeftGroup"
+									},
+									{
+										"key": "j",
+										"name": "Move buffer into below window",
+										"type": "command",
+										"command": "workbench.action.moveEditorToBelowGroup"
+									},
+									{
+										"key": "k",
+										"name": "Move buffer into above window",
+										"type": "command",
+										"command": "workbench.action.moveEditorToAboveGroup"
+									},
+									{
+										"key": "l",
+										"name": "Move buffer into right window",
+										"type": "command",
+										"command": "workbench.action.moveEditorToRightGroup"
+									},
+									{
 										"key": "n",
 										"name": "Next buffer",
 										"type": "command",
@@ -1132,6 +1156,12 @@
 										"command": "editor.action.format"
 									},
 									{
+										"key": "c",
+										"name": "Jump to previous change",
+										"type": "command",
+										"command": "workbench.action.editor.previousChange"
+									},
+									{
 										"key": "i",
 										"name": "Jump to symbol in buffer",
 										"type": "command",
@@ -1194,6 +1224,12 @@
 												"w"
 											]
 										}
+									},
+									{
+										"key": "C",
+										"name": "Jump to next change",
+										"type": "command",
+										"command": "workbench.action.editor.nextChange"
 									},
 									{
 										"key": "I",
@@ -2097,6 +2133,140 @@
 								]
 							},
 							{
+								"key": "S",
+								"name": "+Show",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "d",
+										"name": "Show debug console",
+										"type": "command",
+										"command": "workbench.debug.action.toggleRepl"
+									},
+									{
+										"key": "e",
+										"name": "Show explorer",
+										"type": "command",
+										"command": "workbench.view.explorer"
+									},
+									{
+										"key": "g",
+										"name": "Show source control",
+										"type": "command",
+										"command": "workbench.view.scm"
+									},
+									{
+										"key": "n",
+										"name": "Show notification",
+										"type": "command",
+										"command": "notifications.toggleList"
+									},
+									{
+										"key": "o",
+										"name": "Show output",
+										"type": "command",
+										"command": "workbench.action.output.toggleOutput"
+									},
+									{
+										"key": "p",
+										"name": "Show problem",
+										"type": "command",
+										"command": "workbench.actions.view.problems"
+									},
+									{
+										"key": "r",
+										"name": "Show remote explorer",
+										"type": "command",
+										"command": "workbench.view.remote"
+									},
+									{
+										"key": "s",
+										"name": "Show search",
+										"type": "command",
+										"command": "workbench.view.search"
+									},
+									{
+										"key": "t",
+										"name": "Show test",
+										"type": "command",
+										"command": "workbench.view.extension.test"
+									},
+									{
+										"key": "x",
+										"name": "Show extensions",
+										"type": "command",
+										"command": "workbench.view.extensions"
+									}
+								]
+							},
+							{
+								"key": "T",
+								"name": "+UI toggles",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "b",
+										"name": "Toggle side bar visibility",
+										"type": "command",
+										"command": "workbench.action.toggleSidebarVisibility"
+									},
+									{
+										"key": "c",
+										"name": "Toggle centered layout",
+										"type": "command",
+										"command": "workbench.action.toggleCenteredLayout"
+									},
+									{
+										"key": "i",
+										"name": "Select icon theme",
+										"type": "command",
+										"command": "workbench.action.selectIconTheme"
+									},
+									{
+										"key": "j",
+										"name": "Toggle panel visibility",
+										"type": "command",
+										"command": "workbench.action.togglePanel"
+									},
+									{
+										"key": "m",
+										"name": "Toggle maximized panel",
+										"type": "command",
+										"command": "workbench.action.toggleMaximizedPanel"
+									},
+									{
+										"key": "s",
+										"name": "Select theme",
+										"type": "command",
+										"command": "workbench.action.selectTheme"
+									},
+									{
+										"key": "t",
+										"name": "Toggle tool/activity bar visibility",
+										"type": "command",
+										"command": "workbench.action.toggleActivityBarVisibility"
+									},
+									{
+										"key": "z",
+										"name": "Toggle zen mode",
+										"type": "command",
+										"command": "workbench.action.toggleZenMode"
+									},
+									{
+										"key": "F",
+										"name": "Toggle full screen",
+										"type": "command",
+										"command": "workbench.action.toggleFullScreen"
+									},
+									{
+										"key": "T",
+										"name": "Toggle tab visibility",
+										"type": "command",
+										"command": "workbench.action.toggleTabsVisibility"
+									}
+								]
+							},
+							{
 								"key": "m",
 								"name": "+Major",
 								"type": "conditional",
@@ -2840,134 +3010,6 @@
 										]
 									}
 								]
-							},
-							{
-								"key": "S",
-								"name": "+Show",
-								"type": "bindings",
-								"bindings": [
-									{
-										"key": "d",
-										"name": "Show debug console",
-										"type": "command",
-										"command": "workbench.debug.action.toggleRepl"
-									},
-									{
-										"key": "e",
-										"name": "Show explorer",
-										"type": "command",
-										"command": "workbench.view.explorer"
-									},
-									{
-										"key": "g",
-										"name": "Show source control",
-										"type": "command",
-										"command": "workbench.view.scm"
-									},
-									{
-										"key": "o",
-										"name": "Show output",
-										"type": "command",
-										"command": "workbench.action.output.toggleOutput"
-									},
-									{
-										"key": "p",
-										"name": "Show problem",
-										"type": "command",
-										"command": "workbench.actions.view.problems"
-									},
-									{
-										"key": "r",
-										"name": "Show remote explorer",
-										"type": "command",
-										"command": "workbench.view.remote"
-									},
-									{
-										"key": "s",
-										"name": "Show search",
-										"type": "command",
-										"command": "workbench.view.search"
-									},
-									{
-										"key": "t",
-										"name": "Show test",
-										"type": "command",
-										"command": "workbench.view.extension.test"
-									},
-									{
-										"key": "x",
-										"name": "Show extensions",
-										"type": "command",
-										"command": "workbench.view.extensions"
-									}
-								]
-							},
-							{
-								"key": "T",
-								"name": "+UI toggles",
-								"type": "bindings",
-								"bindings": [
-									{
-										"key": "b",
-										"name": "Toggle side bar visibility",
-										"type": "command",
-										"command": "workbench.action.toggleSidebarVisibility"
-									},
-									{
-										"key": "c",
-										"name": "Toggle centered layout",
-										"type": "command",
-										"command": "workbench.action.toggleCenteredLayout"
-									},
-									{
-										"key": "i",
-										"name": "Select icon theme",
-										"type": "command",
-										"command": "workbench.action.selectIconTheme"
-									},
-									{
-										"key": "j",
-										"name": "Toggle panel visibility",
-										"type": "command",
-										"command": "workbench.action.togglePanel"
-									},
-									{
-										"key": "m",
-										"name": "Toggle maximized panel",
-										"type": "command",
-										"command": "workbench.action.toggleMaximizedPanel"
-									},
-									{
-										"key": "s",
-										"name": "Select theme",
-										"type": "command",
-										"command": "workbench.action.selectTheme"
-									},
-									{
-										"key": "t",
-										"name": "Toggle tool/activity bar visibility",
-										"type": "command",
-										"command": "workbench.action.toggleActivityBarVisibility"
-									},
-									{
-										"key": "z",
-										"name": "Toggle zen mode",
-										"type": "command",
-										"command": "workbench.action.toggleZenMode"
-									},
-									{
-										"key": "F",
-										"name": "Toggle full screen",
-										"type": "command",
-										"command": "workbench.action.toggleFullScreen"
-									},
-									{
-										"key": "T",
-										"name": "Toggle tab visibility",
-										"type": "command",
-										"command": "workbench.action.toggleTabsVisibility"
-									}
-								]
 							}
 						]
 					},
@@ -2987,7 +3029,8 @@
 		"test-compile": "tsc -p ./",
 		"pretest": "npm run test-compile && npm run lint",
 		"test": "node ./out/test/runTest.js",
-		"generate-keybindings": "node ./scripts/keybindings.js"
+		"generate-keybindings": "node ./scripts/keybindings.js",
+		"sort-bindings": "node ./scripts/sort.js"
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
