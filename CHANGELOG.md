@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Add Ruby major mode key bindings
 - ⌨ Trigger vspacecode when sidebar is in focus
 - Add `<spc> b h/j/k/l` for directional editor moving
 - Add `<spc> c c` to compile the project
