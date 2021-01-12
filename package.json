@@ -2976,16 +2976,16 @@
 														"command": "python.runCurrentTestFile"
 													},
 													{
+														"key": "r",
+														"name": "Re-run failed tests",
+														"type": "command",
+														"command": "python.runFailedTests"
+													},
+													{
 														"key": "t",
 														"name": "Select and run test",
 														"type": "command",
 														"command": "python.selectAndRunTestMethod"
-													},
-													{
-														"key": "x",
-														"name": "Run failed tests",
-														"type": "command",
-														"command": "python.runFailedTests"
 													},
 													{
 														"key": "A",
