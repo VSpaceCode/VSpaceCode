@@ -18,7 +18,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> j c` for previous change, `<spc> j C` for next change
 - Add Clojure major mode key bindings to support the Calva extension for Clojure & ClojureScript development
 
-
 ## [0.8.5] - 2020-12-11
 ### Added
 - Add `<spc> h D` to open VSpaceCode documentation website
