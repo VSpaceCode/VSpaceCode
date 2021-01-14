@@ -2946,7 +2946,13 @@
 													},
 													{
 														"key": "l",
-														"name": "Send line/selection to terminal",
+														"name": "Send line/selection to REPL",
+														"type": "command",
+														"command": "python.execSelectionInTerminal"
+													},
+													{
+														"key": "r",
+														"name": "Send line/selection to REPL",
 														"type": "command",
 														"command": "python.execSelectionInTerminal"
 													}
