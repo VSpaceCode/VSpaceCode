@@ -2272,6 +2272,550 @@
 								"type": "conditional",
 								"bindings": [
 									{
+										"key": "languageId:clojure",
+										"name": "Clojure",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": ".",
+												"name": "Connect or jack-in",
+												"type": "command",
+												"command": "calva.jackInOrConnect"
+											},
+											{
+												"key": "'",
+												"name": "Connect to REPL",
+												"type": "command",
+												"command": "calva.connect"
+											},
+											{
+												"key": "\"",
+												"name": "Jack-in to REPL",
+												"type": "command",
+												"command": "calva.jackIn"
+											},
+											{
+												"key": "!",
+												"name": "Disconnect from REPL",
+												"type": "command",
+												"command": "calva.disconnect"
+											},
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format current form",
+														"type": "command",
+														"command": "calva-fmt.formatCurrentForm"
+													},
+													{
+														"key": "a",
+														"name": "Align current form",
+														"type": "command",
+														"command": "calva-fmt.alignCurrentForm"
+													},
+													{
+														"key": "d",
+														"name": "Dedent line",
+														"type": "command",
+														"command": "calva-fmt.tabDedent"
+													},
+													{
+														"key": "i",
+														"name": "Indent line",
+														"type": "command",
+														"command": "calva-fmt.tabIndent"
+													}
+												]
+											},
+											{
+												"key": "d",
+												"name": "+Debug",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "i",
+														"name": "Last evaluation results",
+														"type": "command",
+														"command": "calva.debug.instrument"
+													},
+													{
+														"key": "r",
+														"name": "Last evaluation results",
+														"type": "command",
+														"command": "calva.copyLastResults"
+													},
+													{
+														"key": "s",
+														"name": "Last stacktrace",
+														"type": "command",
+														"command": "calva.printLastStacktrace"
+													}
+												]
+											},
+											{
+												"key": "e",
+												"name": "+Evaluate",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ";",
+														"name": "Evaluate top-level form as comment",
+														"type": "command",
+														"command": "calva.evaluateTopLevelFormAsComment"
+													},
+													{
+														"key": ":",
+														"name": "Evaluate current form as comment",
+														"type": "command",
+														"command": "calva.evaluateSelectionAsComment"
+													},
+													{
+														"key": "e",
+														"name": "Evaluate current expression",
+														"type": "command",
+														"command": "calva.evaluateSelection"
+													},
+													{
+														"key": "f",
+														"name": "Evaluate top-level expression",
+														"type": "command",
+														"command": "calva.evaluateCurrentTopLevelForm"
+													},
+													{
+														"key": "i",
+														"name": "Interrupt evaluation",
+														"type": "command",
+														"command": "calva.interruptAllEvaluations"
+													},
+													{
+														"key": "l",
+														"name": "Clear evaluation results",
+														"type": "command",
+														"command": "calva.clearInlineResults"
+													},
+													{
+														"key": "n",
+														"name": "Evaluate all code in namespace",
+														"type": "command",
+														"command": "calva.loadFile"
+													},
+													{
+														"key": "s",
+														"name": "Select expression",
+														"type": "command",
+														"command": "calva.selectCurrentForm"
+													},
+													{
+														"key": "t",
+														"name": "Clear evaluation results",
+														"type": "command",
+														"command": "calva.requireREPLUtilities"
+													},
+													{
+														"key": "w",
+														"name": "Replace form with evaluation result",
+														"type": "command",
+														"command": "calva.evaluateSelectionReplace"
+													}
+												]
+											},
+											{
+												"key": "k",
+												"name": "+Structural editing",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ".",
+														"name": "Toggle paredit mode",
+														"type": "command",
+														"command": "paredit.togglemode"
+													},
+													{
+														"key": "b",
+														"name": "Barf expression forward",
+														"type": "command",
+														"command": "paredit.barfSexpForward"
+													},
+													{
+														"key": "c",
+														"name": "Convolute expression",
+														"type": "command",
+														"command": "paredit.convolute"
+													},
+													{
+														"key": "h",
+														"name": "Backward expression",
+														"type": "command",
+														"command": "paredit.backwardSexp"
+													},
+													{
+														"key": "j",
+														"name": "Forward down expression",
+														"type": "command",
+														"command": "paredit.forwardDownSexp"
+													},
+													{
+														"key": "k",
+														"name": "Backward down expression",
+														"type": "command",
+														"command": "paredit.backwardDownSexp"
+													},
+													{
+														"key": "l",
+														"name": "Forward expression",
+														"type": "command",
+														"command": "paredit.forwardSexp"
+													},
+													{
+														"key": "r",
+														"name": "Raise expression",
+														"type": "command",
+														"command": "paredit.raiseSexp"
+													},
+													{
+														"key": "s",
+														"name": "Slurp expression forward",
+														"type": "command",
+														"command": "paredit.slurpSexpForward"
+													},
+													{
+														"key": "t",
+														"name": "Transpose expression",
+														"type": "command",
+														"command": "paredit.transpose"
+													},
+													{
+														"key": "B",
+														"name": "Barf expression backward",
+														"type": "command",
+														"command": "paredit.barfSexpBackward"
+													},
+													{
+														"key": "H",
+														"name": "Backward up expression",
+														"type": "command",
+														"command": "paredit.backwardUpSexp"
+													},
+													{
+														"key": "J",
+														"name": "Join expression",
+														"type": "command",
+														"command": "paredit.joinSexp"
+													},
+													{
+														"key": "L",
+														"name": "Forward up expression",
+														"type": "command",
+														"command": "paredit.forwardUpSexp"
+													},
+													{
+														"key": "S",
+														"name": "Slurp expression backward",
+														"type": "command",
+														"command": "paredit.slurpSexpBackward"
+													},
+													{
+														"key": "w",
+														"name": "+Wrap",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "(",
+																"name": "Wrap around ()",
+																"type": "command",
+																"command": "paredit.wrapAroundParens"
+															},
+															{
+																"key": "[",
+																"name": "Wrap around []",
+																"type": "command",
+																"command": "paredit.wrapAroundSquare"
+															},
+															{
+																"key": "{",
+																"name": "Wrap around {}",
+																"type": "command",
+																"command": "paredit.wrapAroundCurly"
+															},
+															{
+																"key": "\"",
+																"name": "Wrap around \"\"",
+																"type": "command",
+																"command": "paredit.wrapAroundQuote"
+															},
+															{
+																"key": "p",
+																"name": "Rewrap ()",
+																"type": "command",
+																"command": "paredit.rewrapParens"
+															},
+															{
+																"key": "s",
+																"name": "Rewrap []",
+																"type": "command",
+																"command": "paredit.rewrapSquare"
+															},
+															{
+																"key": "c",
+																"name": "Rewrap {}",
+																"type": "command",
+																"command": "paredit.rewrapCurly"
+															},
+															{
+																"key": "q",
+																"name": "Rewrap \"\"",
+																"type": "command",
+																"command": "paredit.rewrapQuote"
+															}
+														]
+													}
+												]
+											},
+											{
+												"key": "m",
+												"name": "+Manage REPL session",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ".",
+														"name": "Connect or jack-in",
+														"type": "command",
+														"command": "calva.jackInOrConnect"
+													},
+													{
+														"key": "c",
+														"name": "Connect to REPL server for project",
+														"type": "command",
+														"command": "calva.connect"
+													},
+													{
+														"key": "j",
+														"name": "Start REPL server for project (jack-in)",
+														"type": "command",
+														"command": "calva.jackIn"
+													},
+													{
+														"key": "r",
+														"name": "Refresh changed namespaces",
+														"type": "command",
+														"command": "calva.refresh"
+													},
+													{
+														"key": "s",
+														"name": "Select cljs build connection",
+														"type": "command",
+														"command": "calva.switchCljsBuild"
+													},
+													{
+														"key": "t",
+														"name": "Toggle cljc session (clj, cljs)",
+														"type": "command",
+														"command": "calva.toggleCLJCSession"
+													},
+													{
+														"key": "q",
+														"name": "Disconnect (quit) from REPL server",
+														"type": "command",
+														"command": "calva.disconnect"
+													},
+													{
+														"key": "C",
+														"name": "Run custom REPL command",
+														"type": "command",
+														"command": "calva.runCustomREPLCommand"
+													},
+													{
+														"key": "R",
+														"name": "Refresh all namespaces",
+														"type": "command",
+														"command": "calva.refreshAll"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "+Add",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "l",
+																"name": "Add missing library specfication",
+																"type": "command",
+																"command": "calva.refactor.addMissingLibspec"
+															}
+														]
+													},
+													{
+														"key": "c",
+														"name": "+Cycle clean convert",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "n",
+																"name": "Clean namespace definition",
+																"type": "command",
+																"command": "calva.refactor.cleanNs"
+															},
+															{
+																"key": "p",
+																"name": "Cycle privacy",
+																"type": "command",
+																"command": "calva.refactor.cyclePrivacy"
+															}
+														]
+													},
+													{
+														"key": "e",
+														"name": "+Extract expand",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "f",
+																"name": "Extract function",
+																"type": "command",
+																"command": "calva.refactor.extractFunction"
+															},
+															{
+																"key": "l",
+																"name": "Expand let",
+																"type": "command",
+																"command": "calva.refactor.expandLet"
+															}
+														]
+													},
+													{
+														"key": "i",
+														"name": "+Introduce inline",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "l",
+																"name": "Introduce let",
+																"type": "command",
+																"command": "calva.refactor.introduceLet"
+															},
+															{
+																"key": "s",
+																"name": "Inline symbol",
+																"type": "command",
+																"command": "calva.refactor.inlineSymbol"
+															}
+														]
+													},
+													{
+														"key": "m",
+														"name": "+Move",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "l",
+																"name": "Move to let",
+																"type": "command",
+																"command": "calva.refactor.moveToLet"
+															}
+														]
+													},
+													{
+														"key": "t",
+														"name": "+Thread macros",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "f",
+																"name": "Thread first",
+																"type": "command",
+																"command": "calva.refactor.threadFirst"
+															},
+															{
+																"key": "l",
+																"name": "Thread last",
+																"type": "command",
+																"command": "calva.refactor.threadLast"
+															},
+															{
+																"key": "u",
+																"name": "Unwind thread",
+																"type": "command",
+																"command": "calva.refactor.unwindThread"
+															},
+															{
+																"key": "F",
+																"name": "Thread first all",
+																"type": "command",
+																"command": "calva.refactor.threadFirstAll"
+															},
+															{
+																"key": "L",
+																"name": "Thread last all",
+																"type": "command",
+																"command": "calva.refactor.threadLastAll"
+															},
+															{
+																"key": "U",
+																"name": "Unwind thread all",
+																"type": "command",
+																"command": "calva.refactor.unwindThread"
+															}
+														]
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+Tests",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Run all tests",
+														"type": "command",
+														"command": "calva.runAllTests"
+													},
+													{
+														"key": "f",
+														"name": "Run failing tests",
+														"type": "command",
+														"command": "calva.rerunTests"
+													},
+													{
+														"key": "n",
+														"name": "Run tests in current namespace",
+														"type": "command",
+														"command": "calva.runNamespaceTests"
+													},
+													{
+														"key": "t",
+														"name": "Run current test",
+														"type": "command",
+														"command": "calva.runTestUnderCursor"
+													}
+												]
+											},
+											{
+												"key": "T",
+												"name": "+Toggle",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "p",
+														"name": "Toggle pretty print results",
+														"type": "command",
+														"command": "calva.togglePrettyPrint"
+													}
+												]
+											}
+										]
+									},
+									{
 										"key": "languageId:go",
 										"name": "Go",
 										"type": "bindings",
