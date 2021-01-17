@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- ⌨ Trigger vspacecode when sidebar is in focus
 - Add `<spc> b h/j/k/l` for directional editor moving
 - Add `<spc> S n` to show notification center
 - Add `<spc> j c` for previous change, `<spc> j C` for next change
