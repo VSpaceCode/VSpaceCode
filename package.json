@@ -468,9 +468,15 @@
 							},
 							{
 								"key": "c",
-								"name": "+Comments",
+								"name": "+Compile/Comments",
 								"type": "bindings",
 								"bindings": [
+									{
+										"key": "c",
+										"name": "Compile project",
+										"type": "command",
+										"command": "workbench.action.tasks.build"
+									},
 									{
 										"key": "l",
 										"name": "Toggle line comment",

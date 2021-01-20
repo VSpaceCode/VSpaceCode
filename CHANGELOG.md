@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - ⌨ Trigger vspacecode when sidebar is in focus
 - Add `<spc> b h/j/k/l` for directional editor moving
+- Add `<spc> c c` to compile the project
 - Add `<spc> S n` to show notification center
 - Add `<spc> j c` for previous change, `<spc> j C` for next change
 - Add Python major mode key bindings
