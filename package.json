@@ -751,12 +751,6 @@
 								"type": "bindings",
 								"bindings": [
 									{
-										"key": "=",
-										"name": "Format file",
-										"type": "command",
-										"command": "editor.action.formatDocument"
-									},
-									{
 										"key": "f",
 										"name": "Open file/folder",
 										"type": "command",
@@ -1160,6 +1154,12 @@
 										"name": "Format region or buffer",
 										"type": "command",
 										"command": "editor.action.format"
+									},
+									{
+										"key": "+",
+										"name": "Format buffer",
+										"type": "command",
+										"command": "editor.action.formatDocument"
 									},
 									{
 										"key": "c",
