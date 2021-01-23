@@ -3631,12 +3631,6 @@
 														"command": "editor.action.formatDocument"
 													},
 													{
-														"key": "d",
-														"name": "Format document",
-														"type": "command",
-														"command": "editor.action.formatDocument"
-													},
-													{
 														"key": "m",
 														"name": "Format modified lines only",
 														"type": "command",
