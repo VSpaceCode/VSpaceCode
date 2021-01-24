@@ -3558,6 +3558,112 @@
 												"command": "python.setInterpreter"
 											}
 										]
+									},
+									{
+										"key": "languageId:ruby",
+										"name": "Ruby",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "g",
+												"name": "+Go to",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "g",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "i",
+														"name": "Find symbol in file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "D",
+														"name": "Peek definition",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find symbol in project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													}
+												]
+											},
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format document",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "m",
+														"name": "Format modified lines only",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "r",
+														"name": "Rename symbol",
+														"type": "command",
+														"command": "editor.action.rename"
+													}
+												]
+											}
+										]
 									}
 								]
 							}
