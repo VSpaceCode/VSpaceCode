@@ -2851,7 +2851,7 @@
 													},
 													{
 														"key": "c",
-														"name": "Format changes only",
+														"name": "Format changes",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
@@ -3445,7 +3445,7 @@
 													},
 													{
 														"key": "c",
-														"name": "Format changes only",
+														"name": "Format changes",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
@@ -3656,7 +3656,7 @@
 													},
 													{
 														"key": "c",
-														"name": "Format changes only",
+														"name": "Format changes",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
