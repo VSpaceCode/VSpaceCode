@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Clojure major mode key bindings to support the Calva extension for Clojure & ClojureScript development
 
 ### Changed
-- Move `<spc> f =` to `<spc> j +`
+- Move "Format buffer" action from `<spc> f =` to `<spc> j +`
 
 ## [0.8.5] - 2020-12-11
 ### Added
