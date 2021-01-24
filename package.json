@@ -2839,19 +2839,19 @@
 												"bindings": [
 													{
 														"key": "=",
-														"name": "Format document",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
-														"key": "d",
-														"name": "+Format document with",
-														"type": "command",
-														"command": "editor.action.formatDocument"
-													},
-													{
-														"key": "m",
-														"name": "Format modified lines only",
+														"key": "c",
+														"name": "Format changes only",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
@@ -2862,8 +2862,14 @@
 														"command": "editor.action.formatSelection"
 													},
 													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
 														"key": "S",
-														"name": "+Format selection with",
+														"name": "+Format selection with formatter",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -3427,13 +3433,19 @@
 												"bindings": [
 													{
 														"key": "=",
-														"name": "Format document",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
-														"key": "m",
-														"name": "Format modified lines only",
+														"key": "c",
+														"name": "Format changes only",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
@@ -3444,8 +3456,14 @@
 														"command": "editor.action.formatSelection"
 													},
 													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
 														"key": "S",
-														"name": "+Format selection with",
+														"name": "+Format selection with formatter",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -3626,13 +3644,19 @@
 												"bindings": [
 													{
 														"key": "=",
-														"name": "Format document",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
-														"key": "m",
-														"name": "Format modified lines only",
+														"key": "c",
+														"name": "Format changes only",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
@@ -3643,8 +3667,14 @@
 														"command": "editor.action.formatSelection"
 													},
 													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
 														"key": "S",
-														"name": "+Format selection with",
+														"name": "+Format selection with formatter",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
