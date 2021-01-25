@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
+### Added
+- Add Rust major mode key bindings
 
 ## [0.9.0] - 2021-01-25
 ### Added
