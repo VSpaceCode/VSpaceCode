@@ -12,13 +12,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
+
+## [0.9.0] - 2021-01-25
 ### Added
-- Add Ruby major mode key bindings
 - ⌨ Trigger vspacecode when sidebar is in focus
 - Add `<spc> b h/j/k/l` for directional editor moving
 - Add `<spc> c c` to compile the project
 - Add `<spc> S n` to show notification center
 - Add `<spc> j c` for previous change, `<spc> j C` for next change
+- Add Ruby major mode key bindings
 - Add Python major mode key bindings
 - Add Clojure major mode key bindings to support the Calva extension for Clojure & ClojureScript development
 
