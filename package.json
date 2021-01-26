@@ -3625,16 +3625,16 @@
 														"command": "rust-analyzer.reload"
 													},
 													{
-														"key": "R",
-														"name": "Rust analyzer: reload workspace",
-														"type": "command",
-														"command": "rust-analyzer.reloadWorkspace"
-													},
-													{
 														"key": "v",
 														"name": "Rust analyzer: Show version",
 														"type": "command",
 														"command": "rust-analyzer.serverVersion"
+													},
+													{
+														"key": "R",
+														"name": "Rust analyzer: reload workspace",
+														"type": "command",
+														"command": "rust-analyzer.reloadWorkspace"
 													}
 												]
 											},
