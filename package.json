@@ -3578,6 +3578,75 @@
 										]
 									},
 									{
+										"key": "languageId:rust",
+										"name": "Rust",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.format"
+													}
+												]
+											},
+											{
+												"key": "b",
+												"name": "+Backend",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Rust analyzer: describe status",
+														"type": "command",
+														"command": "rust-analyzer.analyzerStatus"
+													},
+													{
+														"key": "r",
+														"name": "Rust analyzer: restart server",
+														"type": "command",
+														"command": "rust-analyzer.reload"
+													},
+													{
+														"key": "v",
+														"name": "Rust analyzer: Show version",
+														"type": "command",
+														"command": "rust-analyzer.serverVersion"
+													},
+													{
+														"key": "R",
+														"name": "Rust analyzer: reload workspace",
+														"type": "command",
+														"command": "rust-analyzer.reloadWorkspace"
+													}
+												]
+											},
+											{
+												"key": "T",
+												"name": "Toggle inlay hints",
+												"type": "command",
+												"command": "rust-analyzer.toggleInlayHints"
+											}
+										]
+									},
+									{
 										"key": "languageId:ruby",
 										"name": "Ruby",
 										"type": "bindings",
