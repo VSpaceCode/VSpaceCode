@@ -3805,6 +3805,12 @@
 														"command": "editor.action.referenceSearch.trigger"
 													},
 													{
+														"key": "t",
+														"name": "Go to type definition",
+														"type": "command",
+														"command": "editor.action.goToTypeDefinition"
+													},
+													{
 														"key": "D",
 														"name": "Peek definition",
 														"type": "command",
@@ -3821,6 +3827,12 @@
 														"name": "Find all references",
 														"type": "command",
 														"command": "references-view.findReferences"
+													},
+													{
+														"key": "T",
+														"name": "Peek type definition",
+														"type": "command",
+														"command": "editor.action.peekTypeDefinition"
 													}
 												]
 											},
