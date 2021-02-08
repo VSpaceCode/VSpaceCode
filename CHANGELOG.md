@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Add Rust major mode key bindings
+- Add F# major mode key bindings
 
 ## [0.9.0] - 2021-01-25
 ### Added
