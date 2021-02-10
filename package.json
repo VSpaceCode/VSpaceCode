@@ -3770,6 +3770,43 @@
 										"type": "bindings",
 										"bindings": [
 											{
+												"key": "c",
+												"name": "+Compile",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "MSBuild: Build current solution",
+														"type": "command",
+														"command": "MSBuild.buildCurrentSolution"
+													},
+													{
+														"key": "l",
+														"name": "MSBuild: Clean current solution",
+														"type": "command",
+														"command": "MSBuild.cleanCurrentSolution"
+													},
+													{
+														"key": "L",
+														"name": "MSBuild: Clean current project",
+														"type": "command",
+														"command": "MSBuild.cleanCurrent"
+													},
+													{
+														"key": "p",
+														"name": "MSBuild: Build current project",
+														"type": "command",
+														"command": "MSBuild.buildCurrent"
+													},
+													{
+														"key": "r",
+														"name": "MSBuild: Re-build current solution",
+														"type": "command",
+														"command": "MSBuild.rebuildCurrentSolution"
+													}
+												]
+											},
+											{
 												"key": "g",
 												"name": "+Go to",
 												"type": "bindings",
@@ -3889,6 +3926,55 @@
 														"name": "Rename symbol",
 														"type": "command",
 														"command": "editor.action.rename"
+													}
+												]
+											},
+											{
+												"key": "s",
+												"name": "+FSI REPL",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "f",
+														"name": "FSI: Send file",
+														"type": "command",
+														"command": "fsi.SendFile"
+													},
+													{
+														"key": "G",
+														"name": "FSI: Generate project references",
+														"type": "command",
+														"command": "fsi.GenerateProjectReferences"
+													},
+													{
+														"key": "l",
+														"name": "FSI: Send line",
+														"type": "command",
+														"command": "fsi.SendLine"
+													},
+													{
+														"key": "L",
+														"name": "FSI: Send last selection",
+														"type": "command",
+														"command": "fsi.SendLastSelection"
+													},
+													{
+														"key": "P",
+														"name": "FSI: Send references from project",
+														"type": "command",
+														"command": "fsi.SendProjectReferences"
+													},
+													{
+														"key": "s",
+														"name": "FSI: Send selection",
+														"type": "command",
+														"command": "fsi.SendSelection"
+													},
+													{
+														"key": "S",
+														"name": "FSI: Start",
+														"type": "command",
+														"command": "fsi.Start"
 													}
 												]
 											}
