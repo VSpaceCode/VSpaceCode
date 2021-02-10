@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add Rust major mode key bindings
 
+### Changed
+- Reorder major mode bindings have command binding first
+
+
 ## [0.9.0] - 2021-01-25
 ### Added
 - ⌨ Trigger vspacecode when sidebar is in focus

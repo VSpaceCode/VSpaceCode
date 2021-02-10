@@ -3427,6 +3427,12 @@
 										"type": "bindings",
 										"bindings": [
 											{
+												"key": "v",
+												"name": "+Virtualenv",
+												"type": "command",
+												"command": "python.setInterpreter"
+											},
+											{
 												"key": "=",
 												"name": "+Format",
 												"type": "bindings",
@@ -3568,12 +3574,6 @@
 														"command": "python.selectAndDebugTestMethod"
 													}
 												]
-											},
-											{
-												"key": "v",
-												"name": "+Virtualenv",
-												"type": "command",
-												"command": "python.setInterpreter"
 											}
 										]
 									},
@@ -3582,6 +3582,12 @@
 										"name": "Rust",
 										"type": "bindings",
 										"bindings": [
+											{
+												"key": "T",
+												"name": "Toggle inlay hints",
+												"type": "command",
+												"command": "rust-analyzer.toggleInlayHints"
+											},
 											{
 												"key": "=",
 												"name": "+Format",
@@ -3637,12 +3643,6 @@
 														"command": "rust-analyzer.reloadWorkspace"
 													}
 												]
-											},
-											{
-												"key": "T",
-												"name": "Toggle inlay hints",
-												"type": "command",
-												"command": "rust-analyzer.toggleInlayHints"
 											}
 										]
 									},
