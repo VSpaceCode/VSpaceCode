@@ -3427,6 +3427,12 @@
 										"type": "bindings",
 										"bindings": [
 											{
+												"key": "v",
+												"name": "+Virtualenv",
+												"type": "command",
+												"command": "python.setInterpreter"
+											},
+											{
 												"key": "=",
 												"name": "+Format",
 												"type": "bindings",
@@ -3568,12 +3574,6 @@
 														"command": "python.selectAndDebugTestMethod"
 													}
 												]
-											},
-											{
-												"key": "v",
-												"name": "+Virtualenv",
-												"type": "command",
-												"command": "python.setInterpreter"
 											}
 										]
 									},
@@ -3582,6 +3582,12 @@
 										"name": "Rust",
 										"type": "bindings",
 										"bindings": [
+											{
+												"key": "T",
+												"name": "Toggle inlay hints",
+												"type": "command",
+												"command": "rust-analyzer.toggleInlayHints"
+											},
 											{
 												"key": "=",
 												"name": "+Format",
@@ -3637,12 +3643,6 @@
 														"command": "rust-analyzer.reloadWorkspace"
 													}
 												]
-											},
-											{
-												"key": "T",
-												"name": "Toggle inlay hints",
-												"type": "command",
-												"command": "rust-analyzer.toggleInlayHints"
 											}
 										]
 									},
@@ -3787,22 +3787,10 @@
 														"command": "fsharp.runDefaultProject"
 													},
 													{
-														"key": "D",
-														"name": "F#: Debug default project",
-														"type": "command",
-														"command": "fsharp.debugDefaultProject"
-													},
-													{
 														"key": "l",
 														"name": "MSBuild: Clean current solution",
 														"type": "command",
 														"command": "MSBuild.cleanCurrentSolution"
-													},
-													{
-														"key": "L",
-														"name": "MSBuild: Clean current project",
-														"type": "command",
-														"command": "MSBuild.cleanCurrent"
 													},
 													{
 														"key": "p",
@@ -3815,6 +3803,18 @@
 														"name": "MSBuild: Re-build current solution",
 														"type": "command",
 														"command": "MSBuild.rebuildCurrentSolution"
+													},
+													{
+														"key": "D",
+														"name": "F#: Debug default project",
+														"type": "command",
+														"command": "fsharp.debugDefaultProject"
+													},
+													{
+														"key": "L",
+														"name": "MSBuild: Clean current project",
+														"type": "command",
+														"command": "MSBuild.cleanCurrent"
 													}
 												]
 											},
@@ -3953,16 +3953,22 @@
 														"command": "fsi.SendFile"
 													},
 													{
-														"key": "G",
-														"name": "FSI: Generate project references",
-														"type": "command",
-														"command": "fsi.GenerateProjectReferences"
-													},
-													{
 														"key": "l",
 														"name": "FSI: Send line",
 														"type": "command",
 														"command": "fsi.SendLine"
+													},
+													{
+														"key": "s",
+														"name": "FSI: Send selection",
+														"type": "command",
+														"command": "fsi.SendSelection"
+													},
+													{
+														"key": "G",
+														"name": "FSI: Generate project references",
+														"type": "command",
+														"command": "fsi.GenerateProjectReferences"
 													},
 													{
 														"key": "L",
@@ -3975,12 +3981,6 @@
 														"name": "FSI: Send references from project",
 														"type": "command",
 														"command": "fsi.SendProjectReferences"
-													},
-													{
-														"key": "s",
-														"name": "FSI: Send selection",
-														"type": "command",
-														"command": "fsi.SendSelection"
 													},
 													{
 														"key": "S",
