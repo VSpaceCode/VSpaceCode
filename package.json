@@ -3781,6 +3781,18 @@
 														"command": "MSBuild.buildCurrentSolution"
 													},
 													{
+														"key": "d",
+														"name": "F#: Run default project",
+														"type": "command",
+														"command": "fsharp.runDefaultProject"
+													},
+													{
+														"key": "D",
+														"name": "F#: Debug default project",
+														"type": "command",
+														"command": "fsharp.debugDefaultProject"
+													},
+													{
 														"key": "l",
 														"name": "MSBuild: Clean current solution",
 														"type": "command",
