@@ -29,9 +29,9 @@ function createCommandText(binding) {
     }
 }
 
-function kbdWrap(text) {
+function wrapCode(text) {
     if (text && text.length > 0) {
-        return `<kbd>${text}</kbd>`;
+        return `<code>${text.replace(/\`/g, '\\\`')}</code>`;
     }
 
     return text;
@@ -57,9 +57,9 @@ while (queue.length > 0) {
     strBuilder.push(
         heading,
         "\n\n",
-        `Key Binding: ${node.keys.map(kbdWrap).join(" ")}`,
+        `Key Binding: ${wrapCode(node.keys.join(" "))}`,
         "\n\n",
-        `Type: \`${node.type}\``,
+        `Type: ${wrapCode(node.type)}`,
         "\n\n"
     );
 
@@ -73,7 +73,7 @@ while (queue.length > 0) {
         const shouldJoinKeys = !isTransient && !isConditional;
         const hasBindings = Array.isArray(b.bindings) && b.bindings.length > 0;
         tableContent.push([
-            shouldJoinKeys ? b.keys.map(kbdWrap).join(" ") : kbdWrap(b.key),
+            wrapCode(shouldJoinKeys ? b.keys.join(" ") : b.key),
             b.name,
             hasBindings ? createHeadingLink(b.type, b.name) : b.type,
             createCommandText(b)
