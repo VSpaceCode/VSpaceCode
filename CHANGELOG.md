@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add Rust major mode key bindings
 - Add F# major mode key bindings
+- Add C# major mode key bindings
 
 ### Changed
 - Reorder major mode bindings have command binding first
