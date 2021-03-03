@@ -63,27 +63,33 @@
 		"commands": [
 			{
 				"command": "vspacecode.space",
-				"title": "VSpaceCode: Show VSpaceCode Menu"
+				"title": "Show VSpaceCode Menu",
+				"category": "VSpaceCode"
 			},
 			{
 				"command": "vspacecode.showMagitRefMenu",
-				"title": "VSpaceCode: Show Magit Ref Menu"
+				"title": "Show Magit Ref Menu",
+				"category": "VSpaceCode"
 			},
 			{
 				"command": "vspacecode.configure",
-				"title": "VSpaceCode: Configure Default Settings and Keybindings"
+				"title": "Configure Default Settings and Keybindings",
+				"category": "VSpaceCode"
 			},
 			{
 				"command": "vspacecode.configureSettings",
-				"title": "VSpaceCode: Configure Default Settings"
+				"title": "Configure Default Settings",
+				"category": "VSpaceCode"
 			},
 			{
 				"command": "vspacecode.configureKeybindings",
-				"title": "VSpaceCode: Configure Default Keybindings"
+				"title": "Configure Default Keybindings",
+				"category": "VSpaceCode"
 			},
 			{
 				"command": "vspacecode.openDocumentationUrl",
-				"title": "VSpaceCode: Open Documentation"
+				"title": "Open Documentation",
+				"category": "VSpaceCode"
 			}
 		],
 		"keybindings": [
