@@ -2660,7 +2660,7 @@
 														"bindings": [
 															{
 																"key": "l",
-																"name": "Add missing library specfication",
+																"name": "Add missing library specification",
 																"type": "command",
 																"command": "calva.refactor.addMissingLibspec"
 															}
