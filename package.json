@@ -2988,8 +2988,8 @@
 												]
 											},
 											{
-												"key": "s",
-												"name": "OmniSharp Server",
+												"key": "b",
+												"name": "+Backend/OmniSharp",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -3014,7 +3014,7 @@
 											},
 											{
 												"key": "p",
-												"name": "Project",
+												"name": "+Project",
 												"type": "bindings",
 												"bindings": [
 													{
