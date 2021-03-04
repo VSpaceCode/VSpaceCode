@@ -1156,16 +1156,16 @@
 								"type": "bindings",
 								"bindings": [
 									{
-										"key": "=",
-										"name": "Format region or buffer",
-										"type": "command",
-										"command": "editor.action.format"
-									},
-									{
 										"key": "+",
 										"name": "Format buffer",
 										"type": "command",
 										"command": "editor.action.formatDocument"
+									},
+									{
+										"key": "=",
+										"name": "Format region or buffer",
+										"type": "command",
+										"command": "editor.action.format"
 									},
 									{
 										"key": "c",
@@ -1261,6 +1261,1728 @@
 										"name": "Close workspace",
 										"type": "command",
 										"command": "workbench.action.closeFolder"
+									}
+								]
+							},
+							{
+								"key": "m",
+								"name": "+Major",
+								"type": "conditional",
+								"bindings": [
+									{
+										"key": "languageId:clojure",
+										"name": "Clojure",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "!",
+												"name": "Disconnect from REPL",
+												"type": "command",
+												"command": "calva.disconnect"
+											},
+											{
+												"key": "\"",
+												"name": "Jack-in to REPL",
+												"type": "command",
+												"command": "calva.jackIn"
+											},
+											{
+												"key": "'",
+												"name": "Connect to REPL",
+												"type": "command",
+												"command": "calva.connect"
+											},
+											{
+												"key": ".",
+												"name": "Connect or jack-in",
+												"type": "command",
+												"command": "calva.jackInOrConnect"
+											},
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format current form",
+														"type": "command",
+														"command": "calva-fmt.formatCurrentForm"
+													},
+													{
+														"key": "a",
+														"name": "Align current form",
+														"type": "command",
+														"command": "calva-fmt.alignCurrentForm"
+													},
+													{
+														"key": "d",
+														"name": "Dedent line",
+														"type": "command",
+														"command": "calva-fmt.tabDedent"
+													},
+													{
+														"key": "i",
+														"name": "Indent line",
+														"type": "command",
+														"command": "calva-fmt.tabIndent"
+													}
+												]
+											},
+											{
+												"key": "d",
+												"name": "+Debug",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "i",
+														"name": "Last evaluation results",
+														"type": "command",
+														"command": "calva.debug.instrument"
+													},
+													{
+														"key": "r",
+														"name": "Last evaluation results",
+														"type": "command",
+														"command": "calva.copyLastResults"
+													},
+													{
+														"key": "s",
+														"name": "Last stacktrace",
+														"type": "command",
+														"command": "calva.printLastStacktrace"
+													}
+												]
+											},
+											{
+												"key": "e",
+												"name": "+Evaluate",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ":",
+														"name": "Evaluate current form as comment",
+														"type": "command",
+														"command": "calva.evaluateSelectionAsComment"
+													},
+													{
+														"key": ";",
+														"name": "Evaluate top-level form as comment",
+														"type": "command",
+														"command": "calva.evaluateTopLevelFormAsComment"
+													},
+													{
+														"key": "e",
+														"name": "Evaluate current expression",
+														"type": "command",
+														"command": "calva.evaluateSelection"
+													},
+													{
+														"key": "f",
+														"name": "Evaluate top-level expression",
+														"type": "command",
+														"command": "calva.evaluateCurrentTopLevelForm"
+													},
+													{
+														"key": "i",
+														"name": "Interrupt evaluation",
+														"type": "command",
+														"command": "calva.interruptAllEvaluations"
+													},
+													{
+														"key": "l",
+														"name": "Clear evaluation results",
+														"type": "command",
+														"command": "calva.clearInlineResults"
+													},
+													{
+														"key": "n",
+														"name": "Evaluate all code in namespace",
+														"type": "command",
+														"command": "calva.loadFile"
+													},
+													{
+														"key": "s",
+														"name": "Select expression",
+														"type": "command",
+														"command": "calva.selectCurrentForm"
+													},
+													{
+														"key": "t",
+														"name": "Clear evaluation results",
+														"type": "command",
+														"command": "calva.requireREPLUtilities"
+													},
+													{
+														"key": "w",
+														"name": "Replace form with evaluation result",
+														"type": "command",
+														"command": "calva.evaluateSelectionReplace"
+													}
+												]
+											},
+											{
+												"key": "k",
+												"name": "+Structural editing",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ".",
+														"name": "Toggle paredit mode",
+														"type": "command",
+														"command": "paredit.togglemode"
+													},
+													{
+														"key": "b",
+														"name": "Barf expression forward",
+														"type": "command",
+														"command": "paredit.barfSexpForward"
+													},
+													{
+														"key": "c",
+														"name": "Convolute expression",
+														"type": "command",
+														"command": "paredit.convolute"
+													},
+													{
+														"key": "h",
+														"name": "Backward expression",
+														"type": "command",
+														"command": "paredit.backwardSexp"
+													},
+													{
+														"key": "j",
+														"name": "Forward down expression",
+														"type": "command",
+														"command": "paredit.forwardDownSexp"
+													},
+													{
+														"key": "k",
+														"name": "Backward down expression",
+														"type": "command",
+														"command": "paredit.backwardDownSexp"
+													},
+													{
+														"key": "l",
+														"name": "Forward expression",
+														"type": "command",
+														"command": "paredit.forwardSexp"
+													},
+													{
+														"key": "r",
+														"name": "Raise expression",
+														"type": "command",
+														"command": "paredit.raiseSexp"
+													},
+													{
+														"key": "s",
+														"name": "Slurp expression forward",
+														"type": "command",
+														"command": "paredit.slurpSexpForward"
+													},
+													{
+														"key": "t",
+														"name": "Transpose expression",
+														"type": "command",
+														"command": "paredit.transpose"
+													},
+													{
+														"key": "B",
+														"name": "Barf expression backward",
+														"type": "command",
+														"command": "paredit.barfSexpBackward"
+													},
+													{
+														"key": "H",
+														"name": "Backward up expression",
+														"type": "command",
+														"command": "paredit.backwardUpSexp"
+													},
+													{
+														"key": "J",
+														"name": "Join expression",
+														"type": "command",
+														"command": "paredit.joinSexp"
+													},
+													{
+														"key": "L",
+														"name": "Forward up expression",
+														"type": "command",
+														"command": "paredit.forwardUpSexp"
+													},
+													{
+														"key": "S",
+														"name": "Slurp expression backward",
+														"type": "command",
+														"command": "paredit.slurpSexpBackward"
+													},
+													{
+														"key": "w",
+														"name": "+Wrap",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "\"",
+																"name": "Wrap around \"\"",
+																"type": "command",
+																"command": "paredit.wrapAroundQuote"
+															},
+															{
+																"key": "(",
+																"name": "Wrap around ()",
+																"type": "command",
+																"command": "paredit.wrapAroundParens"
+															},
+															{
+																"key": "[",
+																"name": "Wrap around []",
+																"type": "command",
+																"command": "paredit.wrapAroundSquare"
+															},
+															{
+																"key": "c",
+																"name": "Rewrap {}",
+																"type": "command",
+																"command": "paredit.rewrapCurly"
+															},
+															{
+																"key": "p",
+																"name": "Rewrap ()",
+																"type": "command",
+																"command": "paredit.rewrapParens"
+															},
+															{
+																"key": "q",
+																"name": "Rewrap \"\"",
+																"type": "command",
+																"command": "paredit.rewrapQuote"
+															},
+															{
+																"key": "s",
+																"name": "Rewrap []",
+																"type": "command",
+																"command": "paredit.rewrapSquare"
+															},
+															{
+																"key": "{",
+																"name": "Wrap around {}",
+																"type": "command",
+																"command": "paredit.wrapAroundCurly"
+															}
+														]
+													}
+												]
+											},
+											{
+												"key": "m",
+												"name": "+Manage REPL session",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ".",
+														"name": "Connect or jack-in",
+														"type": "command",
+														"command": "calva.jackInOrConnect"
+													},
+													{
+														"key": "c",
+														"name": "Connect to REPL server for project",
+														"type": "command",
+														"command": "calva.connect"
+													},
+													{
+														"key": "j",
+														"name": "Start REPL server for project (jack-in)",
+														"type": "command",
+														"command": "calva.jackIn"
+													},
+													{
+														"key": "q",
+														"name": "Disconnect (quit) from REPL server",
+														"type": "command",
+														"command": "calva.disconnect"
+													},
+													{
+														"key": "r",
+														"name": "Refresh changed namespaces",
+														"type": "command",
+														"command": "calva.refresh"
+													},
+													{
+														"key": "s",
+														"name": "Select cljs build connection",
+														"type": "command",
+														"command": "calva.switchCljsBuild"
+													},
+													{
+														"key": "t",
+														"name": "Toggle cljc session (clj, cljs)",
+														"type": "command",
+														"command": "calva.toggleCLJCSession"
+													},
+													{
+														"key": "C",
+														"name": "Run custom REPL command",
+														"type": "command",
+														"command": "calva.runCustomREPLCommand"
+													},
+													{
+														"key": "R",
+														"name": "Refresh all namespaces",
+														"type": "command",
+														"command": "calva.refreshAll"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "+Add",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "l",
+																"name": "Add missing library specification",
+																"type": "command",
+																"command": "calva.refactor.addMissingLibspec"
+															}
+														]
+													},
+													{
+														"key": "c",
+														"name": "+Cycle clean convert",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "n",
+																"name": "Clean namespace definition",
+																"type": "command",
+																"command": "calva.refactor.cleanNs"
+															},
+															{
+																"key": "p",
+																"name": "Cycle privacy",
+																"type": "command",
+																"command": "calva.refactor.cyclePrivacy"
+															}
+														]
+													},
+													{
+														"key": "e",
+														"name": "+Extract expand",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "f",
+																"name": "Extract function",
+																"type": "command",
+																"command": "calva.refactor.extractFunction"
+															},
+															{
+																"key": "l",
+																"name": "Expand let",
+																"type": "command",
+																"command": "calva.refactor.expandLet"
+															}
+														]
+													},
+													{
+														"key": "i",
+														"name": "+Introduce inline",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "l",
+																"name": "Introduce let",
+																"type": "command",
+																"command": "calva.refactor.introduceLet"
+															},
+															{
+																"key": "s",
+																"name": "Inline symbol",
+																"type": "command",
+																"command": "calva.refactor.inlineSymbol"
+															}
+														]
+													},
+													{
+														"key": "m",
+														"name": "+Move",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "l",
+																"name": "Move to let",
+																"type": "command",
+																"command": "calva.refactor.moveToLet"
+															}
+														]
+													},
+													{
+														"key": "t",
+														"name": "+Thread macros",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "f",
+																"name": "Thread first",
+																"type": "command",
+																"command": "calva.refactor.threadFirst"
+															},
+															{
+																"key": "l",
+																"name": "Thread last",
+																"type": "command",
+																"command": "calva.refactor.threadLast"
+															},
+															{
+																"key": "u",
+																"name": "Unwind thread",
+																"type": "command",
+																"command": "calva.refactor.unwindThread"
+															},
+															{
+																"key": "F",
+																"name": "Thread first all",
+																"type": "command",
+																"command": "calva.refactor.threadFirstAll"
+															},
+															{
+																"key": "L",
+																"name": "Thread last all",
+																"type": "command",
+																"command": "calva.refactor.threadLastAll"
+															},
+															{
+																"key": "U",
+																"name": "Unwind thread all",
+																"type": "command",
+																"command": "calva.refactor.unwindThread"
+															}
+														]
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+Tests",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Run all tests",
+														"type": "command",
+														"command": "calva.runAllTests"
+													},
+													{
+														"key": "f",
+														"name": "Run failing tests",
+														"type": "command",
+														"command": "calva.rerunTests"
+													},
+													{
+														"key": "n",
+														"name": "Run tests in current namespace",
+														"type": "command",
+														"command": "calva.runNamespaceTests"
+													},
+													{
+														"key": "t",
+														"name": "Run current test",
+														"type": "command",
+														"command": "calva.runTestUnderCursor"
+													}
+												]
+											},
+											{
+												"key": "T",
+												"name": "+Toggle",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "p",
+														"name": "Toggle pretty print results",
+														"type": "command",
+														"command": "calva.togglePrettyPrint"
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "languageId:fsharp",
+										"name": "F#",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "c",
+												"name": "+Compile",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "MSBuild: Build current solution",
+														"type": "command",
+														"command": "MSBuild.buildCurrentSolution"
+													},
+													{
+														"key": "d",
+														"name": "F#: Run default project",
+														"type": "command",
+														"command": "fsharp.runDefaultProject"
+													},
+													{
+														"key": "l",
+														"name": "MSBuild: Clean current solution",
+														"type": "command",
+														"command": "MSBuild.cleanCurrentSolution"
+													},
+													{
+														"key": "p",
+														"name": "MSBuild: Build current project",
+														"type": "command",
+														"command": "MSBuild.buildCurrent"
+													},
+													{
+														"key": "r",
+														"name": "MSBuild: Re-build current solution",
+														"type": "command",
+														"command": "MSBuild.rebuildCurrentSolution"
+													},
+													{
+														"key": "D",
+														"name": "F#: Debug default project",
+														"type": "command",
+														"command": "fsharp.debugDefaultProject"
+													},
+													{
+														"key": "L",
+														"name": "MSBuild: Clean current project",
+														"type": "command",
+														"command": "MSBuild.cleanCurrent"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "g",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "i",
+														"name": "Find symbol in file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "t",
+														"name": "Go to type definition",
+														"type": "command",
+														"command": "editor.action.goToTypeDefinition"
+													},
+													{
+														"key": "D",
+														"name": "Peek definition",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find symbol in project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													},
+													{
+														"key": "T",
+														"name": "Peek type definition",
+														"type": "command",
+														"command": "editor.action.peekTypeDefinition"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "r",
+														"name": "Rename symbol",
+														"type": "command",
+														"command": "editor.action.rename"
+													}
+												]
+											},
+											{
+												"key": "s",
+												"name": "+FSI REPL",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "f",
+														"name": "FSI: Send file",
+														"type": "command",
+														"command": "fsi.SendFile"
+													},
+													{
+														"key": "l",
+														"name": "FSI: Send line",
+														"type": "command",
+														"command": "fsi.SendLine"
+													},
+													{
+														"key": "s",
+														"name": "FSI: Send selection",
+														"type": "command",
+														"command": "fsi.SendSelection"
+													},
+													{
+														"key": "G",
+														"name": "FSI: Generate project references",
+														"type": "command",
+														"command": "fsi.GenerateProjectReferences"
+													},
+													{
+														"key": "L",
+														"name": "FSI: Send last selection",
+														"type": "command",
+														"command": "fsi.SendLastSelection"
+													},
+													{
+														"key": "P",
+														"name": "FSI: Send references from project",
+														"type": "command",
+														"command": "fsi.SendProjectReferences"
+													},
+													{
+														"key": "S",
+														"name": "FSI: Start",
+														"type": "command",
+														"command": "fsi.Start"
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "languageId:go",
+										"name": "Go",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": " ",
+												"name": "Show all commands",
+												"type": "command",
+												"command": "go.show.commands"
+											},
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "a",
+												"name": "+Actions",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "P",
+														"name": "Run code on Go Playground",
+														"type": "command",
+														"command": "go.playground"
+													},
+													{
+														"key": "p",
+														"name": "+Package actions",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "b",
+																"name": "Build package",
+																"type": "command",
+																"command": "go.build.package"
+															},
+															{
+																"key": "g",
+																"name": "Get package",
+																"type": "command",
+																"command": "go.get.package"
+															},
+															{
+																"key": "i",
+																"name": "Install current package",
+																"type": "command",
+																"command": "go.install.package"
+															},
+															{
+																"key": "l",
+																"name": "Lint package",
+																"type": "command",
+																"command": "go.lint.package"
+															},
+															{
+																"key": "s",
+																"name": "Browse packages",
+																"type": "command",
+																"command": "go.browse.packages"
+															},
+															{
+																"key": "v",
+																"name": "Vet package",
+																"type": "command",
+																"command": "go.vet.package"
+															}
+														]
+													},
+													{
+														"key": "w",
+														"name": "+Workspace actions",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "b",
+																"name": "Build workspace",
+																"type": "command",
+																"command": "go.build.workspace"
+															},
+															{
+																"key": "l",
+																"name": "Lint workspace",
+																"type": "command",
+																"command": "go.lint.workspace"
+															},
+															{
+																"key": "p",
+																"name": "Add package to workspace",
+																"type": "command",
+																"command": "go.add.package.workspace"
+															},
+															{
+																"key": "v",
+																"name": "Vet workspace",
+																"type": "command",
+																"command": "go.vet.workspace"
+															}
+														]
+													}
+												]
+											},
+											{
+												"key": "b",
+												"name": "+Backend/environment",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "e",
+														"name": "Choose Go environment",
+														"type": "command",
+														"command": "go.environment.choose"
+													},
+													{
+														"key": "g",
+														"name": "Show current GOPATH",
+														"type": "command",
+														"command": "go.gopath"
+													},
+													{
+														"key": "i",
+														"name": "Install/update tools",
+														"type": "command",
+														"command": "go.tools.install"
+													},
+													{
+														"key": "l",
+														"name": "Locate configured Go tools",
+														"type": "command",
+														"command": "go.locate.tools"
+													},
+													{
+														"key": "R",
+														"name": "Restart language server",
+														"type": "command",
+														"command": "go.languageserver.restart"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "g",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "i",
+														"name": "Find symbol in file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "m",
+														"name": "Go to method in file",
+														"type": "command",
+														"command": "workbench.action.gotoMethod"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "t",
+														"name": "Go to type definition",
+														"type": "command",
+														"command": "editor.action.goToTypeDefinition"
+													},
+													{
+														"key": "D",
+														"name": "Peek definition",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find symbol in project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													},
+													{
+														"key": "T",
+														"name": "Peek type definition",
+														"type": "command",
+														"command": "editor.action.peekTypeDefinition"
+													}
+												]
+											},
+											{
+												"key": "i",
+												"name": "+Insert/remove",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "f",
+														"name": "Fill struct",
+														"type": "command",
+														"command": "go.fill.struct"
+													},
+													{
+														"key": "i",
+														"name": "Add import",
+														"type": "command",
+														"command": "go.import.add"
+													},
+													{
+														"key": "t",
+														"name": "Add tags to struct fields",
+														"type": "command",
+														"command": "go.add.tags"
+													},
+													{
+														"key": "I",
+														"name": "Generate interface stubs",
+														"type": "command",
+														"command": "go.impl.cursor"
+													},
+													{
+														"key": "T",
+														"name": "Remove tags from struct fields",
+														"type": "command",
+														"command": "go.remove.tags"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ".",
+														"name": "Quick fix",
+														"type": "command",
+														"command": "editor.action.quickFix"
+													},
+													{
+														"key": "e",
+														"name": "Extract to function or variable",
+														"type": "command",
+														"command": "editor.action.codeAction",
+														"args": {
+															"kind": "refactor.extract"
+														}
+													},
+													{
+														"key": "r",
+														"name": "Rename symbol",
+														"type": "command",
+														"command": "editor.action.rename"
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+Test",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "Cancel running tets",
+														"type": "command",
+														"command": "go.test.cancel"
+													},
+													{
+														"key": "d",
+														"name": "Debug test at cursor",
+														"type": "command",
+														"command": "go.debug.cursor"
+													},
+													{
+														"key": "f",
+														"name": "Test function at cursor",
+														"type": "command",
+														"command": "go.test.cursor"
+													},
+													{
+														"key": "l",
+														"name": "Test previous",
+														"type": "command",
+														"command": "go.test.previous"
+													},
+													{
+														"key": "p",
+														"name": "Test package",
+														"type": "command",
+														"command": "go.test.package"
+													},
+													{
+														"key": "s",
+														"name": "Subtest at cursor",
+														"type": "command",
+														"command": "go.subtest.cursor"
+													},
+													{
+														"key": "w",
+														"name": "Test packages in workspace",
+														"type": "command",
+														"command": "go.test.workspace"
+													},
+													{
+														"key": "F",
+														"name": "Test file",
+														"type": "command",
+														"command": "go.test.file"
+													},
+													{
+														"key": "P",
+														"name": "Apply cover profile",
+														"type": "command",
+														"command": "go.apply.coverprofile"
+													},
+													{
+														"key": "b",
+														"name": "+Benchmarks",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "f",
+																"name": "Benchmark function at cursor",
+																"type": "command",
+																"command": "go.benchmark.cursor"
+															},
+															{
+																"key": "p",
+																"name": "Benchmark package",
+																"type": "command",
+																"command": "go.benchmark.package"
+															},
+															{
+																"key": "F",
+																"name": "Benchmark file",
+																"type": "command",
+																"command": "go.benchmark.file"
+															}
+														]
+													},
+													{
+														"key": "g",
+														"name": "+Generate",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "f",
+																"name": "Generate unit tests for function",
+																"type": "command",
+																"command": "go.test.generate.function"
+															},
+															{
+																"key": "p",
+																"name": "Generate unit tests for package",
+																"type": "command",
+																"command": "go.test.generate.package"
+															},
+															{
+																"key": "F",
+																"name": "Generate unit tests for file",
+																"type": "command",
+																"command": "go.test.generate.file"
+															}
+														]
+													},
+													{
+														"key": "t",
+														"name": "+Toggle",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "c",
+																"name": "Toggle test coverage in current package",
+																"type": "command",
+																"command": "go.test.coverage"
+															},
+															{
+																"key": "f",
+																"name": "Toggle open test file",
+																"type": "command",
+																"command": "go.toggle.test.file"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "languageId:markdown",
+										"name": "Markdown",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "c",
+												"name": "+Buffer commands",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "e",
+														"name": "Export to HTML",
+														"type": "command",
+														"command": "markdown.extension.printToHtml"
+													},
+													{
+														"key": "p",
+														"name": "Open preview to the side",
+														"type": "command",
+														"command": "markdown.showPreviewToSide"
+													},
+													{
+														"key": "P",
+														"name": "Open preview in current group",
+														"type": "command",
+														"command": "markdown.showPreview"
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+Table of Contents",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "Create Table of Contents",
+														"type": "command",
+														"command": "markdown.extension.toc.create"
+													},
+													{
+														"key": "n",
+														"name": "Add section numbers",
+														"type": "command",
+														"command": "markdown.extension.toc.addSecNumbers"
+													},
+													{
+														"key": "u",
+														"name": "Update Table of Contents",
+														"type": "command",
+														"command": "markdown.extension.toc.update"
+													},
+													{
+														"key": "N",
+														"name": "Remove section numbers",
+														"type": "command",
+														"command": "markdown.extension.toc.removeSecNumbers"
+													}
+												]
+											},
+											{
+												"key": "x",
+												"name": "+Text",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "[",
+														"name": "Decrease Heading level",
+														"type": "transient",
+														"command": "markdown.extension.editing.toggleHeadingDown",
+														"bindings": [
+															{
+																"key": "[",
+																"name": "Decrease Heading level",
+																"type": "command",
+																"command": "markdown.extension.editing.toggleHeadingDown"
+															},
+															{
+																"key": "]",
+																"name": "Increase Heading level",
+																"type": "command",
+																"command": "markdown.extension.editing.toggleHeadingUp"
+															}
+														]
+													},
+													{
+														"key": "]",
+														"name": "Increase Heading level",
+														"type": "transient",
+														"command": "markdown.extension.editing.toggleHeadingUp",
+														"bindings": [
+															{
+																"key": "[",
+																"name": "Decrease Heading level",
+																"type": "command",
+																"command": "markdown.extension.editing.toggleHeadingDown"
+															},
+															{
+																"key": "]",
+																"name": "Increase Heading level",
+																"type": "command",
+																"command": "markdown.extension.editing.toggleHeadingUp"
+															}
+														]
+													},
+													{
+														"key": "`",
+														"name": "Toggle inline code",
+														"type": "command",
+														"command": "markdown.extension.editing.toggleCodeSpan"
+													},
+													{
+														"key": "b",
+														"name": "Toggle bold",
+														"type": "command",
+														"command": "markdown.extension.editing.toggleBold"
+													},
+													{
+														"key": "i",
+														"name": "Toggle italic",
+														"type": "command",
+														"command": "markdown.extension.editing.toggleItalic"
+													},
+													{
+														"key": "l",
+														"name": "Toggle list",
+														"type": "command",
+														"command": "markdown.extension.editing.toggleList"
+													},
+													{
+														"key": "m",
+														"name": "Toggle math",
+														"type": "command",
+														"command": "markdown.extension.editing.toggleMath"
+													},
+													{
+														"key": "s",
+														"name": "Toggle strikethrough",
+														"type": "command",
+														"command": "markdown.extension.editing.toggleStrikethrough"
+													},
+													{
+														"key": "~",
+														"name": "Toggle code block",
+														"type": "command",
+														"command": "markdown.extension.editing.toggleCodeBlock"
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "languageId:python",
+										"name": "Python",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "v",
+												"name": "+Virtualenv",
+												"type": "command",
+												"command": "python.setInterpreter"
+											},
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "c",
+												"name": "+Execute",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "Execute file in terminal",
+														"type": "command",
+														"command": "python.execInTerminal"
+													},
+													{
+														"key": "C",
+														"name": "Execute file in terminal",
+														"type": "command",
+														"command": "python.execInTerminal"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "I",
+														"name": "Sort imports",
+														"type": "command",
+														"command": "python.sortImports"
+													}
+												]
+											},
+											{
+												"key": "s",
+												"name": "+REPL",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "i",
+														"name": "Start REPL",
+														"type": "command",
+														"command": "python.startREPL"
+													},
+													{
+														"key": "l",
+														"name": "Send line/selection to REPL",
+														"type": "command",
+														"command": "python.execSelectionInTerminal"
+													},
+													{
+														"key": "r",
+														"name": "Send line/selection to REPL",
+														"type": "command",
+														"command": "python.execSelectionInTerminal"
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+Test",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Run all tests",
+														"type": "command",
+														"command": "python.runtests"
+													},
+													{
+														"key": "b",
+														"name": "Run current test file",
+														"type": "command",
+														"command": "python.runCurrentTestFile"
+													},
+													{
+														"key": "r",
+														"name": "Re-run failed tests",
+														"type": "command",
+														"command": "python.runFailedTests"
+													},
+													{
+														"key": "t",
+														"name": "Select and run test",
+														"type": "command",
+														"command": "python.selectAndRunTestMethod"
+													},
+													{
+														"key": "A",
+														"name": "Debug all tests",
+														"type": "command",
+														"command": "python.debugtests"
+													},
+													{
+														"key": "T",
+														"name": "Select and debug test",
+														"type": "command",
+														"command": "python.selectAndDebugTestMethod"
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "languageId:ruby",
+										"name": "Ruby",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "g",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "i",
+														"name": "Find symbol in file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "D",
+														"name": "Peek definition",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find symbol in project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "r",
+														"name": "Rename symbol",
+														"type": "command",
+														"command": "editor.action.rename"
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "languageId:rust",
+										"name": "Rust",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "T",
+												"name": "Toggle inlay hints",
+												"type": "command",
+												"command": "rust-analyzer.toggleInlayHints"
+											},
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.format"
+													}
+												]
+											},
+											{
+												"key": "b",
+												"name": "+Backend",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Rust analyzer: describe status",
+														"type": "command",
+														"command": "rust-analyzer.analyzerStatus"
+													},
+													{
+														"key": "r",
+														"name": "Rust analyzer: restart server",
+														"type": "command",
+														"command": "rust-analyzer.reload"
+													},
+													{
+														"key": "v",
+														"name": "Rust analyzer: Show version",
+														"type": "command",
+														"command": "rust-analyzer.serverVersion"
+													},
+													{
+														"key": "R",
+														"name": "Rust analyzer: reload workspace",
+														"type": "command",
+														"command": "rust-analyzer.reloadWorkspace"
+													}
+												]
+											}
+										]
 									}
 								]
 							},
@@ -2275,1728 +3997,6 @@
 										"name": "Toggle tab visibility",
 										"type": "command",
 										"command": "workbench.action.toggleTabsVisibility"
-									}
-								]
-							},
-							{
-								"key": "m",
-								"name": "+Major",
-								"type": "conditional",
-								"bindings": [
-									{
-										"key": "languageId:clojure",
-										"name": "Clojure",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": ".",
-												"name": "Connect or jack-in",
-												"type": "command",
-												"command": "calva.jackInOrConnect"
-											},
-											{
-												"key": "'",
-												"name": "Connect to REPL",
-												"type": "command",
-												"command": "calva.connect"
-											},
-											{
-												"key": "\"",
-												"name": "Jack-in to REPL",
-												"type": "command",
-												"command": "calva.jackIn"
-											},
-											{
-												"key": "!",
-												"name": "Disconnect from REPL",
-												"type": "command",
-												"command": "calva.disconnect"
-											},
-											{
-												"key": "=",
-												"name": "+Format",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "=",
-														"name": "Format current form",
-														"type": "command",
-														"command": "calva-fmt.formatCurrentForm"
-													},
-													{
-														"key": "a",
-														"name": "Align current form",
-														"type": "command",
-														"command": "calva-fmt.alignCurrentForm"
-													},
-													{
-														"key": "d",
-														"name": "Dedent line",
-														"type": "command",
-														"command": "calva-fmt.tabDedent"
-													},
-													{
-														"key": "i",
-														"name": "Indent line",
-														"type": "command",
-														"command": "calva-fmt.tabIndent"
-													}
-												]
-											},
-											{
-												"key": "d",
-												"name": "+Debug",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "i",
-														"name": "Last evaluation results",
-														"type": "command",
-														"command": "calva.debug.instrument"
-													},
-													{
-														"key": "r",
-														"name": "Last evaluation results",
-														"type": "command",
-														"command": "calva.copyLastResults"
-													},
-													{
-														"key": "s",
-														"name": "Last stacktrace",
-														"type": "command",
-														"command": "calva.printLastStacktrace"
-													}
-												]
-											},
-											{
-												"key": "e",
-												"name": "+Evaluate",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": ";",
-														"name": "Evaluate top-level form as comment",
-														"type": "command",
-														"command": "calva.evaluateTopLevelFormAsComment"
-													},
-													{
-														"key": ":",
-														"name": "Evaluate current form as comment",
-														"type": "command",
-														"command": "calva.evaluateSelectionAsComment"
-													},
-													{
-														"key": "e",
-														"name": "Evaluate current expression",
-														"type": "command",
-														"command": "calva.evaluateSelection"
-													},
-													{
-														"key": "f",
-														"name": "Evaluate top-level expression",
-														"type": "command",
-														"command": "calva.evaluateCurrentTopLevelForm"
-													},
-													{
-														"key": "i",
-														"name": "Interrupt evaluation",
-														"type": "command",
-														"command": "calva.interruptAllEvaluations"
-													},
-													{
-														"key": "l",
-														"name": "Clear evaluation results",
-														"type": "command",
-														"command": "calva.clearInlineResults"
-													},
-													{
-														"key": "n",
-														"name": "Evaluate all code in namespace",
-														"type": "command",
-														"command": "calva.loadFile"
-													},
-													{
-														"key": "s",
-														"name": "Select expression",
-														"type": "command",
-														"command": "calva.selectCurrentForm"
-													},
-													{
-														"key": "t",
-														"name": "Clear evaluation results",
-														"type": "command",
-														"command": "calva.requireREPLUtilities"
-													},
-													{
-														"key": "w",
-														"name": "Replace form with evaluation result",
-														"type": "command",
-														"command": "calva.evaluateSelectionReplace"
-													}
-												]
-											},
-											{
-												"key": "k",
-												"name": "+Structural editing",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": ".",
-														"name": "Toggle paredit mode",
-														"type": "command",
-														"command": "paredit.togglemode"
-													},
-													{
-														"key": "b",
-														"name": "Barf expression forward",
-														"type": "command",
-														"command": "paredit.barfSexpForward"
-													},
-													{
-														"key": "c",
-														"name": "Convolute expression",
-														"type": "command",
-														"command": "paredit.convolute"
-													},
-													{
-														"key": "h",
-														"name": "Backward expression",
-														"type": "command",
-														"command": "paredit.backwardSexp"
-													},
-													{
-														"key": "j",
-														"name": "Forward down expression",
-														"type": "command",
-														"command": "paredit.forwardDownSexp"
-													},
-													{
-														"key": "k",
-														"name": "Backward down expression",
-														"type": "command",
-														"command": "paredit.backwardDownSexp"
-													},
-													{
-														"key": "l",
-														"name": "Forward expression",
-														"type": "command",
-														"command": "paredit.forwardSexp"
-													},
-													{
-														"key": "r",
-														"name": "Raise expression",
-														"type": "command",
-														"command": "paredit.raiseSexp"
-													},
-													{
-														"key": "s",
-														"name": "Slurp expression forward",
-														"type": "command",
-														"command": "paredit.slurpSexpForward"
-													},
-													{
-														"key": "t",
-														"name": "Transpose expression",
-														"type": "command",
-														"command": "paredit.transpose"
-													},
-													{
-														"key": "B",
-														"name": "Barf expression backward",
-														"type": "command",
-														"command": "paredit.barfSexpBackward"
-													},
-													{
-														"key": "H",
-														"name": "Backward up expression",
-														"type": "command",
-														"command": "paredit.backwardUpSexp"
-													},
-													{
-														"key": "J",
-														"name": "Join expression",
-														"type": "command",
-														"command": "paredit.joinSexp"
-													},
-													{
-														"key": "L",
-														"name": "Forward up expression",
-														"type": "command",
-														"command": "paredit.forwardUpSexp"
-													},
-													{
-														"key": "S",
-														"name": "Slurp expression backward",
-														"type": "command",
-														"command": "paredit.slurpSexpBackward"
-													},
-													{
-														"key": "w",
-														"name": "+Wrap",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "(",
-																"name": "Wrap around ()",
-																"type": "command",
-																"command": "paredit.wrapAroundParens"
-															},
-															{
-																"key": "[",
-																"name": "Wrap around []",
-																"type": "command",
-																"command": "paredit.wrapAroundSquare"
-															},
-															{
-																"key": "{",
-																"name": "Wrap around {}",
-																"type": "command",
-																"command": "paredit.wrapAroundCurly"
-															},
-															{
-																"key": "\"",
-																"name": "Wrap around \"\"",
-																"type": "command",
-																"command": "paredit.wrapAroundQuote"
-															},
-															{
-																"key": "p",
-																"name": "Rewrap ()",
-																"type": "command",
-																"command": "paredit.rewrapParens"
-															},
-															{
-																"key": "s",
-																"name": "Rewrap []",
-																"type": "command",
-																"command": "paredit.rewrapSquare"
-															},
-															{
-																"key": "c",
-																"name": "Rewrap {}",
-																"type": "command",
-																"command": "paredit.rewrapCurly"
-															},
-															{
-																"key": "q",
-																"name": "Rewrap \"\"",
-																"type": "command",
-																"command": "paredit.rewrapQuote"
-															}
-														]
-													}
-												]
-											},
-											{
-												"key": "m",
-												"name": "+Manage REPL session",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": ".",
-														"name": "Connect or jack-in",
-														"type": "command",
-														"command": "calva.jackInOrConnect"
-													},
-													{
-														"key": "c",
-														"name": "Connect to REPL server for project",
-														"type": "command",
-														"command": "calva.connect"
-													},
-													{
-														"key": "j",
-														"name": "Start REPL server for project (jack-in)",
-														"type": "command",
-														"command": "calva.jackIn"
-													},
-													{
-														"key": "r",
-														"name": "Refresh changed namespaces",
-														"type": "command",
-														"command": "calva.refresh"
-													},
-													{
-														"key": "s",
-														"name": "Select cljs build connection",
-														"type": "command",
-														"command": "calva.switchCljsBuild"
-													},
-													{
-														"key": "t",
-														"name": "Toggle cljc session (clj, cljs)",
-														"type": "command",
-														"command": "calva.toggleCLJCSession"
-													},
-													{
-														"key": "q",
-														"name": "Disconnect (quit) from REPL server",
-														"type": "command",
-														"command": "calva.disconnect"
-													},
-													{
-														"key": "C",
-														"name": "Run custom REPL command",
-														"type": "command",
-														"command": "calva.runCustomREPLCommand"
-													},
-													{
-														"key": "R",
-														"name": "Refresh all namespaces",
-														"type": "command",
-														"command": "calva.refreshAll"
-													}
-												]
-											},
-											{
-												"key": "r",
-												"name": "+Refactor",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "a",
-														"name": "+Add",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "l",
-																"name": "Add missing library specification",
-																"type": "command",
-																"command": "calva.refactor.addMissingLibspec"
-															}
-														]
-													},
-													{
-														"key": "c",
-														"name": "+Cycle clean convert",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "n",
-																"name": "Clean namespace definition",
-																"type": "command",
-																"command": "calva.refactor.cleanNs"
-															},
-															{
-																"key": "p",
-																"name": "Cycle privacy",
-																"type": "command",
-																"command": "calva.refactor.cyclePrivacy"
-															}
-														]
-													},
-													{
-														"key": "e",
-														"name": "+Extract expand",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "f",
-																"name": "Extract function",
-																"type": "command",
-																"command": "calva.refactor.extractFunction"
-															},
-															{
-																"key": "l",
-																"name": "Expand let",
-																"type": "command",
-																"command": "calva.refactor.expandLet"
-															}
-														]
-													},
-													{
-														"key": "i",
-														"name": "+Introduce inline",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "l",
-																"name": "Introduce let",
-																"type": "command",
-																"command": "calva.refactor.introduceLet"
-															},
-															{
-																"key": "s",
-																"name": "Inline symbol",
-																"type": "command",
-																"command": "calva.refactor.inlineSymbol"
-															}
-														]
-													},
-													{
-														"key": "m",
-														"name": "+Move",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "l",
-																"name": "Move to let",
-																"type": "command",
-																"command": "calva.refactor.moveToLet"
-															}
-														]
-													},
-													{
-														"key": "t",
-														"name": "+Thread macros",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "f",
-																"name": "Thread first",
-																"type": "command",
-																"command": "calva.refactor.threadFirst"
-															},
-															{
-																"key": "l",
-																"name": "Thread last",
-																"type": "command",
-																"command": "calva.refactor.threadLast"
-															},
-															{
-																"key": "u",
-																"name": "Unwind thread",
-																"type": "command",
-																"command": "calva.refactor.unwindThread"
-															},
-															{
-																"key": "F",
-																"name": "Thread first all",
-																"type": "command",
-																"command": "calva.refactor.threadFirstAll"
-															},
-															{
-																"key": "L",
-																"name": "Thread last all",
-																"type": "command",
-																"command": "calva.refactor.threadLastAll"
-															},
-															{
-																"key": "U",
-																"name": "Unwind thread all",
-																"type": "command",
-																"command": "calva.refactor.unwindThread"
-															}
-														]
-													}
-												]
-											},
-											{
-												"key": "t",
-												"name": "+Tests",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "a",
-														"name": "Run all tests",
-														"type": "command",
-														"command": "calva.runAllTests"
-													},
-													{
-														"key": "f",
-														"name": "Run failing tests",
-														"type": "command",
-														"command": "calva.rerunTests"
-													},
-													{
-														"key": "n",
-														"name": "Run tests in current namespace",
-														"type": "command",
-														"command": "calva.runNamespaceTests"
-													},
-													{
-														"key": "t",
-														"name": "Run current test",
-														"type": "command",
-														"command": "calva.runTestUnderCursor"
-													}
-												]
-											},
-											{
-												"key": "T",
-												"name": "+Toggle",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "p",
-														"name": "Toggle pretty print results",
-														"type": "command",
-														"command": "calva.togglePrettyPrint"
-													}
-												]
-											}
-										]
-									},
-									{
-										"key": "languageId:go",
-										"name": "Go",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": " ",
-												"name": "Show all commands",
-												"type": "command",
-												"command": "go.show.commands"
-											},
-											{
-												"key": "=",
-												"name": "+Format",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "=",
-														"name": "Format region or buffer",
-														"type": "command",
-														"command": "editor.action.format"
-													},
-													{
-														"key": "b",
-														"name": "Format buffer",
-														"type": "command",
-														"command": "editor.action.formatDocument"
-													},
-													{
-														"key": "c",
-														"name": "Format changes",
-														"type": "command",
-														"command": "editor.action.formatChanges"
-													},
-													{
-														"key": "s",
-														"name": "Format selection",
-														"type": "command",
-														"command": "editor.action.formatSelection"
-													},
-													{
-														"key": "B",
-														"name": "+Format buffer with formatter",
-														"type": "command",
-														"command": "editor.action.formatDocument.multiple"
-													},
-													{
-														"key": "S",
-														"name": "+Format selection with formatter",
-														"type": "command",
-														"command": "editor.action.formatSelection.multiple"
-													}
-												]
-											},
-											{
-												"key": "a",
-												"name": "+Actions",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "P",
-														"name": "Run code on Go Playground",
-														"type": "command",
-														"command": "go.playground"
-													},
-													{
-														"key": "p",
-														"name": "+Package actions",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "b",
-																"name": "Build package",
-																"type": "command",
-																"command": "go.build.package"
-															},
-															{
-																"key": "g",
-																"name": "Get package",
-																"type": "command",
-																"command": "go.get.package"
-															},
-															{
-																"key": "i",
-																"name": "Install current package",
-																"type": "command",
-																"command": "go.install.package"
-															},
-															{
-																"key": "l",
-																"name": "Lint package",
-																"type": "command",
-																"command": "go.lint.package"
-															},
-															{
-																"key": "s",
-																"name": "Browse packages",
-																"type": "command",
-																"command": "go.browse.packages"
-															},
-															{
-																"key": "v",
-																"name": "Vet package",
-																"type": "command",
-																"command": "go.vet.package"
-															}
-														]
-													},
-													{
-														"key": "w",
-														"name": "+Workspace actions",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "b",
-																"name": "Build workspace",
-																"type": "command",
-																"command": "go.build.workspace"
-															},
-															{
-																"key": "l",
-																"name": "Lint workspace",
-																"type": "command",
-																"command": "go.lint.workspace"
-															},
-															{
-																"key": "p",
-																"name": "Add package to workspace",
-																"type": "command",
-																"command": "go.add.package.workspace"
-															},
-															{
-																"key": "v",
-																"name": "Vet workspace",
-																"type": "command",
-																"command": "go.vet.workspace"
-															}
-														]
-													}
-												]
-											},
-											{
-												"key": "b",
-												"name": "+Backend/environment",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "e",
-														"name": "Choose Go environment",
-														"type": "command",
-														"command": "go.environment.choose"
-													},
-													{
-														"key": "g",
-														"name": "Show current GOPATH",
-														"type": "command",
-														"command": "go.gopath"
-													},
-													{
-														"key": "i",
-														"name": "Install/update tools",
-														"type": "command",
-														"command": "go.tools.install"
-													},
-													{
-														"key": "l",
-														"name": "Locate configured Go tools",
-														"type": "command",
-														"command": "go.locate.tools"
-													},
-													{
-														"key": "R",
-														"name": "Restart language server",
-														"type": "command",
-														"command": "go.languageserver.restart"
-													}
-												]
-											},
-											{
-												"key": "g",
-												"name": "+Go to",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "d",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
-													{
-														"key": "e",
-														"name": "Go to errors/problems",
-														"type": "command",
-														"command": "workbench.action.problems.focus"
-													},
-													{
-														"key": "g",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
-													{
-														"key": "i",
-														"name": "Find symbol in file",
-														"type": "command",
-														"command": "workbench.action.gotoSymbol"
-													},
-													{
-														"key": "m",
-														"name": "Go to method in file",
-														"type": "command",
-														"command": "workbench.action.gotoMethod"
-													},
-													{
-														"key": "r",
-														"name": "Peek references",
-														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
-													},
-													{
-														"key": "t",
-														"name": "Go to type definition",
-														"type": "command",
-														"command": "editor.action.goToTypeDefinition"
-													},
-													{
-														"key": "D",
-														"name": "Peek definition",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
-														"key": "I",
-														"name": "Find symbol in project",
-														"type": "command",
-														"command": "workbench.action.showAllSymbols"
-													},
-													{
-														"key": "R",
-														"name": "Find all references",
-														"type": "command",
-														"command": "references-view.findReferences"
-													},
-													{
-														"key": "T",
-														"name": "Peek type definition",
-														"type": "command",
-														"command": "editor.action.peekTypeDefinition"
-													}
-												]
-											},
-											{
-												"key": "i",
-												"name": "+Insert/remove",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "f",
-														"name": "Fill struct",
-														"type": "command",
-														"command": "go.fill.struct"
-													},
-													{
-														"key": "i",
-														"name": "Add import",
-														"type": "command",
-														"command": "go.import.add"
-													},
-													{
-														"key": "t",
-														"name": "Add tags to struct fields",
-														"type": "command",
-														"command": "go.add.tags"
-													},
-													{
-														"key": "I",
-														"name": "Generate interface stubs",
-														"type": "command",
-														"command": "go.impl.cursor"
-													},
-													{
-														"key": "T",
-														"name": "Remove tags from struct fields",
-														"type": "command",
-														"command": "go.remove.tags"
-													}
-												]
-											},
-											{
-												"key": "r",
-												"name": "+Refactor",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": ".",
-														"name": "Quick fix",
-														"type": "command",
-														"command": "editor.action.quickFix"
-													},
-													{
-														"key": "e",
-														"name": "Extract to function or variable",
-														"type": "command",
-														"command": "editor.action.codeAction",
-														"args": {
-															"kind": "refactor.extract"
-														}
-													},
-													{
-														"key": "r",
-														"name": "Rename symbol",
-														"type": "command",
-														"command": "editor.action.rename"
-													}
-												]
-											},
-											{
-												"key": "t",
-												"name": "+Test",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "c",
-														"name": "Cancel running tets",
-														"type": "command",
-														"command": "go.test.cancel"
-													},
-													{
-														"key": "d",
-														"name": "Debug test at cursor",
-														"type": "command",
-														"command": "go.debug.cursor"
-													},
-													{
-														"key": "f",
-														"name": "Test function at cursor",
-														"type": "command",
-														"command": "go.test.cursor"
-													},
-													{
-														"key": "l",
-														"name": "Test previous",
-														"type": "command",
-														"command": "go.test.previous"
-													},
-													{
-														"key": "p",
-														"name": "Test package",
-														"type": "command",
-														"command": "go.test.package"
-													},
-													{
-														"key": "s",
-														"name": "Subtest at cursor",
-														"type": "command",
-														"command": "go.subtest.cursor"
-													},
-													{
-														"key": "w",
-														"name": "Test packages in workspace",
-														"type": "command",
-														"command": "go.test.workspace"
-													},
-													{
-														"key": "F",
-														"name": "Test file",
-														"type": "command",
-														"command": "go.test.file"
-													},
-													{
-														"key": "P",
-														"name": "Apply cover profile",
-														"type": "command",
-														"command": "go.apply.coverprofile"
-													},
-													{
-														"key": "b",
-														"name": "+Benchmarks",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "f",
-																"name": "Benchmark function at cursor",
-																"type": "command",
-																"command": "go.benchmark.cursor"
-															},
-															{
-																"key": "p",
-																"name": "Benchmark package",
-																"type": "command",
-																"command": "go.benchmark.package"
-															},
-															{
-																"key": "F",
-																"name": "Benchmark file",
-																"type": "command",
-																"command": "go.benchmark.file"
-															}
-														]
-													},
-													{
-														"key": "g",
-														"name": "+Generate",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "f",
-																"name": "Generate unit tests for function",
-																"type": "command",
-																"command": "go.test.generate.function"
-															},
-															{
-																"key": "p",
-																"name": "Generate unit tests for package",
-																"type": "command",
-																"command": "go.test.generate.package"
-															},
-															{
-																"key": "F",
-																"name": "Generate unit tests for file",
-																"type": "command",
-																"command": "go.test.generate.file"
-															}
-														]
-													},
-													{
-														"key": "t",
-														"name": "+Toggle",
-														"type": "bindings",
-														"bindings": [
-															{
-																"key": "c",
-																"name": "Toggle test coverage in current package",
-																"type": "command",
-																"command": "go.test.coverage"
-															},
-															{
-																"key": "f",
-																"name": "Toggle open test file",
-																"type": "command",
-																"command": "go.toggle.test.file"
-															}
-														]
-													}
-												]
-											}
-										]
-									},
-									{
-										"key": "languageId:markdown",
-										"name": "Markdown",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "c",
-												"name": "+Buffer commands",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "e",
-														"name": "Export to HTML",
-														"type": "command",
-														"command": "markdown.extension.printToHtml"
-													},
-													{
-														"key": "p",
-														"name": "Open preview to the side",
-														"type": "command",
-														"command": "markdown.showPreviewToSide"
-													},
-													{
-														"key": "P",
-														"name": "Open preview in current group",
-														"type": "command",
-														"command": "markdown.showPreview"
-													}
-												]
-											},
-											{
-												"key": "t",
-												"name": "+Table of Contents",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "c",
-														"name": "Create Table of Contents",
-														"type": "command",
-														"command": "markdown.extension.toc.create"
-													},
-													{
-														"key": "n",
-														"name": "Add section numbers",
-														"type": "command",
-														"command": "markdown.extension.toc.addSecNumbers"
-													},
-													{
-														"key": "u",
-														"name": "Update Table of Contents",
-														"type": "command",
-														"command": "markdown.extension.toc.update"
-													},
-													{
-														"key": "N",
-														"name": "Remove section numbers",
-														"type": "command",
-														"command": "markdown.extension.toc.removeSecNumbers"
-													}
-												]
-											},
-											{
-												"key": "x",
-												"name": "+Text",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "[",
-														"name": "Decrease Heading level",
-														"type": "transient",
-														"command": "markdown.extension.editing.toggleHeadingDown",
-														"bindings": [
-															{
-																"key": "[",
-																"name": "Decrease Heading level",
-																"type": "command",
-																"command": "markdown.extension.editing.toggleHeadingDown"
-															},
-															{
-																"key": "]",
-																"name": "Increase Heading level",
-																"type": "command",
-																"command": "markdown.extension.editing.toggleHeadingUp"
-															}
-														]
-													},
-													{
-														"key": "]",
-														"name": "Increase Heading level",
-														"type": "transient",
-														"command": "markdown.extension.editing.toggleHeadingUp",
-														"bindings": [
-															{
-																"key": "[",
-																"name": "Decrease Heading level",
-																"type": "command",
-																"command": "markdown.extension.editing.toggleHeadingDown"
-															},
-															{
-																"key": "]",
-																"name": "Increase Heading level",
-																"type": "command",
-																"command": "markdown.extension.editing.toggleHeadingUp"
-															}
-														]
-													},
-													{
-														"key": "`",
-														"name": "Toggle inline code",
-														"type": "command",
-														"command": "markdown.extension.editing.toggleCodeSpan"
-													},
-													{
-														"key": "b",
-														"name": "Toggle bold",
-														"type": "command",
-														"command": "markdown.extension.editing.toggleBold"
-													},
-													{
-														"key": "i",
-														"name": "Toggle italic",
-														"type": "command",
-														"command": "markdown.extension.editing.toggleItalic"
-													},
-													{
-														"key": "l",
-														"name": "Toggle list",
-														"type": "command",
-														"command": "markdown.extension.editing.toggleList"
-													},
-													{
-														"key": "m",
-														"name": "Toggle math",
-														"type": "command",
-														"command": "markdown.extension.editing.toggleMath"
-													},
-													{
-														"key": "s",
-														"name": "Toggle strikethrough",
-														"type": "command",
-														"command": "markdown.extension.editing.toggleStrikethrough"
-													},
-													{
-														"key": "~",
-														"name": "Toggle code block",
-														"type": "command",
-														"command": "markdown.extension.editing.toggleCodeBlock"
-													}
-												]
-											}
-										]
-									},
-									{
-										"key": "languageId:python",
-										"name": "Python",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "v",
-												"name": "+Virtualenv",
-												"type": "command",
-												"command": "python.setInterpreter"
-											},
-											{
-												"key": "=",
-												"name": "+Format",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "=",
-														"name": "Format region or buffer",
-														"type": "command",
-														"command": "editor.action.format"
-													},
-													{
-														"key": "b",
-														"name": "Format buffer",
-														"type": "command",
-														"command": "editor.action.formatDocument"
-													},
-													{
-														"key": "c",
-														"name": "Format changes",
-														"type": "command",
-														"command": "editor.action.formatChanges"
-													},
-													{
-														"key": "s",
-														"name": "Format selection",
-														"type": "command",
-														"command": "editor.action.formatSelection"
-													},
-													{
-														"key": "B",
-														"name": "+Format buffer with formatter",
-														"type": "command",
-														"command": "editor.action.formatDocument.multiple"
-													},
-													{
-														"key": "S",
-														"name": "+Format selection with formatter",
-														"type": "command",
-														"command": "editor.action.formatSelection.multiple"
-													}
-												]
-											},
-											{
-												"key": "c",
-												"name": "+Execute",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "c",
-														"name": "Execute file in terminal",
-														"type": "command",
-														"command": "python.execInTerminal"
-													},
-													{
-														"key": "C",
-														"name": "Execute file in terminal",
-														"type": "command",
-														"command": "python.execInTerminal"
-													}
-												]
-											},
-											{
-												"key": "r",
-												"name": "+Refactor",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "I",
-														"name": "Sort imports",
-														"type": "command",
-														"command": "python.sortImports"
-													}
-												]
-											},
-											{
-												"key": "s",
-												"name": "+REPL",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "i",
-														"name": "Start REPL",
-														"type": "command",
-														"command": "python.startREPL"
-													},
-													{
-														"key": "l",
-														"name": "Send line/selection to REPL",
-														"type": "command",
-														"command": "python.execSelectionInTerminal"
-													},
-													{
-														"key": "r",
-														"name": "Send line/selection to REPL",
-														"type": "command",
-														"command": "python.execSelectionInTerminal"
-													}
-												]
-											},
-											{
-												"key": "t",
-												"name": "+Test",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "a",
-														"name": "Run all tests",
-														"type": "command",
-														"command": "python.runtests"
-													},
-													{
-														"key": "b",
-														"name": "Run current test file",
-														"type": "command",
-														"command": "python.runCurrentTestFile"
-													},
-													{
-														"key": "r",
-														"name": "Re-run failed tests",
-														"type": "command",
-														"command": "python.runFailedTests"
-													},
-													{
-														"key": "t",
-														"name": "Select and run test",
-														"type": "command",
-														"command": "python.selectAndRunTestMethod"
-													},
-													{
-														"key": "A",
-														"name": "Debug all tests",
-														"type": "command",
-														"command": "python.debugtests"
-													},
-													{
-														"key": "T",
-														"name": "Select and debug test",
-														"type": "command",
-														"command": "python.selectAndDebugTestMethod"
-													}
-												]
-											}
-										]
-									},
-									{
-										"key": "languageId:rust",
-										"name": "Rust",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "T",
-												"name": "Toggle inlay hints",
-												"type": "command",
-												"command": "rust-analyzer.toggleInlayHints"
-											},
-											{
-												"key": "=",
-												"name": "+Format",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "=",
-														"name": "Format region or buffer",
-														"type": "command",
-														"command": "editor.action.format"
-													},
-													{
-														"key": "b",
-														"name": "Format buffer",
-														"type": "command",
-														"command": "editor.action.formatDocument"
-													},
-													{
-														"key": "s",
-														"name": "Format selection",
-														"type": "command",
-														"command": "editor.action.format"
-													}
-												]
-											},
-											{
-												"key": "b",
-												"name": "+Backend",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "d",
-														"name": "Rust analyzer: describe status",
-														"type": "command",
-														"command": "rust-analyzer.analyzerStatus"
-													},
-													{
-														"key": "r",
-														"name": "Rust analyzer: restart server",
-														"type": "command",
-														"command": "rust-analyzer.reload"
-													},
-													{
-														"key": "v",
-														"name": "Rust analyzer: Show version",
-														"type": "command",
-														"command": "rust-analyzer.serverVersion"
-													},
-													{
-														"key": "R",
-														"name": "Rust analyzer: reload workspace",
-														"type": "command",
-														"command": "rust-analyzer.reloadWorkspace"
-													}
-												]
-											}
-										]
-									},
-									{
-										"key": "languageId:ruby",
-										"name": "Ruby",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "g",
-												"name": "+Go to",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "d",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
-													{
-														"key": "e",
-														"name": "Go to errors/problems",
-														"type": "command",
-														"command": "workbench.action.problems.focus"
-													},
-													{
-														"key": "g",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
-													{
-														"key": "i",
-														"name": "Find symbol in file",
-														"type": "command",
-														"command": "workbench.action.gotoSymbol"
-													},
-													{
-														"key": "r",
-														"name": "Peek references",
-														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
-													},
-													{
-														"key": "D",
-														"name": "Peek definition",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
-														"key": "I",
-														"name": "Find symbol in project",
-														"type": "command",
-														"command": "workbench.action.showAllSymbols"
-													},
-													{
-														"key": "R",
-														"name": "Find all references",
-														"type": "command",
-														"command": "references-view.findReferences"
-													}
-												]
-											},
-											{
-												"key": "=",
-												"name": "+Format",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "=",
-														"name": "Format region or buffer",
-														"type": "command",
-														"command": "editor.action.format"
-													},
-													{
-														"key": "b",
-														"name": "Format buffer",
-														"type": "command",
-														"command": "editor.action.formatDocument"
-													},
-													{
-														"key": "c",
-														"name": "Format changes",
-														"type": "command",
-														"command": "editor.action.formatChanges"
-													},
-													{
-														"key": "s",
-														"name": "Format selection",
-														"type": "command",
-														"command": "editor.action.formatSelection"
-													},
-													{
-														"key": "B",
-														"name": "+Format buffer with formatter",
-														"type": "command",
-														"command": "editor.action.formatDocument.multiple"
-													},
-													{
-														"key": "S",
-														"name": "+Format selection with formatter",
-														"type": "command",
-														"command": "editor.action.formatSelection.multiple"
-													}
-												]
-											},
-											{
-												"key": "r",
-												"name": "+Refactor",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "r",
-														"name": "Rename symbol",
-														"type": "command",
-														"command": "editor.action.rename"
-													}
-												]
-											}
-										]
-									},
-									{
-										"key": "languageId:fsharp",
-										"name": "F#",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "c",
-												"name": "+Compile",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "c",
-														"name": "MSBuild: Build current solution",
-														"type": "command",
-														"command": "MSBuild.buildCurrentSolution"
-													},
-													{
-														"key": "d",
-														"name": "F#: Run default project",
-														"type": "command",
-														"command": "fsharp.runDefaultProject"
-													},
-													{
-														"key": "l",
-														"name": "MSBuild: Clean current solution",
-														"type": "command",
-														"command": "MSBuild.cleanCurrentSolution"
-													},
-													{
-														"key": "p",
-														"name": "MSBuild: Build current project",
-														"type": "command",
-														"command": "MSBuild.buildCurrent"
-													},
-													{
-														"key": "r",
-														"name": "MSBuild: Re-build current solution",
-														"type": "command",
-														"command": "MSBuild.rebuildCurrentSolution"
-													},
-													{
-														"key": "D",
-														"name": "F#: Debug default project",
-														"type": "command",
-														"command": "fsharp.debugDefaultProject"
-													},
-													{
-														"key": "L",
-														"name": "MSBuild: Clean current project",
-														"type": "command",
-														"command": "MSBuild.cleanCurrent"
-													}
-												]
-											},
-											{
-												"key": "g",
-												"name": "+Go to",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "d",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
-													{
-														"key": "e",
-														"name": "Go to errors/problems",
-														"type": "command",
-														"command": "workbench.action.problems.focus"
-													},
-													{
-														"key": "g",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
-													{
-														"key": "i",
-														"name": "Find symbol in file",
-														"type": "command",
-														"command": "workbench.action.gotoSymbol"
-													},
-													{
-														"key": "r",
-														"name": "Peek references",
-														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
-													},
-													{
-														"key": "t",
-														"name": "Go to type definition",
-														"type": "command",
-														"command": "editor.action.goToTypeDefinition"
-													},
-													{
-														"key": "D",
-														"name": "Peek definition",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
-														"key": "I",
-														"name": "Find symbol in project",
-														"type": "command",
-														"command": "workbench.action.showAllSymbols"
-													},
-													{
-														"key": "R",
-														"name": "Find all references",
-														"type": "command",
-														"command": "references-view.findReferences"
-													},
-													{
-														"key": "T",
-														"name": "Peek type definition",
-														"type": "command",
-														"command": "editor.action.peekTypeDefinition"
-													}
-												]
-											},
-											{
-												"key": "=",
-												"name": "+Format",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "=",
-														"name": "Format region or buffer",
-														"type": "command",
-														"command": "editor.action.format"
-													},
-													{
-														"key": "b",
-														"name": "Format buffer",
-														"type": "command",
-														"command": "editor.action.formatDocument"
-													},
-													{
-														"key": "c",
-														"name": "Format changes",
-														"type": "command",
-														"command": "editor.action.formatChanges"
-													},
-													{
-														"key": "s",
-														"name": "Format selection",
-														"type": "command",
-														"command": "editor.action.formatSelection"
-													},
-													{
-														"key": "B",
-														"name": "+Format buffer with formatter",
-														"type": "command",
-														"command": "editor.action.formatDocument.multiple"
-													},
-													{
-														"key": "S",
-														"name": "+Format selection with formatter",
-														"type": "command",
-														"command": "editor.action.formatSelection.multiple"
-													}
-												]
-											},
-											{
-												"key": "r",
-												"name": "+Refactor",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "r",
-														"name": "Rename symbol",
-														"type": "command",
-														"command": "editor.action.rename"
-													}
-												]
-											},
-											{
-												"key": "s",
-												"name": "+FSI REPL",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "f",
-														"name": "FSI: Send file",
-														"type": "command",
-														"command": "fsi.SendFile"
-													},
-													{
-														"key": "l",
-														"name": "FSI: Send line",
-														"type": "command",
-														"command": "fsi.SendLine"
-													},
-													{
-														"key": "s",
-														"name": "FSI: Send selection",
-														"type": "command",
-														"command": "fsi.SendSelection"
-													},
-													{
-														"key": "G",
-														"name": "FSI: Generate project references",
-														"type": "command",
-														"command": "fsi.GenerateProjectReferences"
-													},
-													{
-														"key": "L",
-														"name": "FSI: Send last selection",
-														"type": "command",
-														"command": "fsi.SendLastSelection"
-													},
-													{
-														"key": "P",
-														"name": "FSI: Send references from project",
-														"type": "command",
-														"command": "fsi.SendProjectReferences"
-													},
-													{
-														"key": "S",
-														"name": "FSI: Start",
-														"type": "command",
-														"command": "fsi.Start"
-													}
-												]
-											}
-										]
 									}
 								]
 							}
