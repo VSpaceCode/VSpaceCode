@@ -1,16 +1,13 @@
 const fs = require('fs');
 
-const UPPERCASE = "QWERTYUIOPASDFGHJKLZXCVBNM";
-const lowercase = "qwertyuiopasdfghjklzxcvbnm";
-
 const package = JSON.parse(fs.readFileSync('./package.json'));
 const defaultBindings = package.contributes.configuration[0].properties['vspacecode.bindings'].default;
 
 const queue = [defaultBindings];
-while(queue.length > 0) {
+while (queue.length > 0) {
     const bindings = queue.pop();
-    for(const b of bindings) {
-        if(b.bindings) {
+    for (const b of bindings) {
+        if (b.bindings) {
             queue.push(b.bindings);
         }
     }
@@ -29,56 +26,82 @@ function getType(b) {
     return type;
 }
 
-/**
- * Binding compare function
- * Modified from https://github.com/VSpaceCode/VSpaceCode/pull/132
- */
-function compareFunction(a, b) {
-
-    /*
-      From https://github.com/VSpaceCode/VSpaceCode/issues/121
-  
-      1. Symbols/numbers (I can't really tell what order here?)
-      2. Lowercase commands (transient/single commands, doesn't matter)
-      3. Uppercase commands (transient/single commands, doesn't matter)
-      4. Menus (symbols, lowercase, then uppercase)
-    */
-
-    if ((a.key === " " || b.key === " ") && a.key !== b.key) {
-        // Usually "space" is the most important command, so bubbling it up to the top
-        return (a.key === " ") ? -1 : 1;
+function getTypeOrder(type) {
+    if (type === "bindings") {
+        return 1;
     }
 
-    if ((a.name === "+Major" || b.name === "+Major") && a.name !== b.name) {
-        // Special case major mode to be at the bottom
-        return (a.name === "+Major") ? 1 : -1;
-    }
+    // non-bindings type have precedence
+    return 0;
+}
 
-    const aType = getType(a);
-    const bType = getType(b);
-    if (aType !== bType) {
-        // order non-bindings type first
-        if (aType === "bindings") {
-            return 1;
-        }
-        if (bType === "bindings") {
-            return -1;
-        }
+function getKeyTypeOrder(b) {
+    // 1. Single key
+    // 2. Normal
+    // 3. Combo key with dash like C-v
 
+    // Use array from to handle unicode correctly
+    const len = Array.from(b.key).length;
+    if (len === 1) {
         return 0;
+    } else if (/.+-.+/g.test(b.key)) {
+        return 3;
     } else {
-        return compareUpperLower(a, b);
+        return 2;
     }
 }
 
-function compareUpperLower(a, b) {
-    if (UPPERCASE.includes(a.key) && UPPERCASE.includes(b.key)) {
-        return a.key - b.key;
-    } else if (UPPERCASE.includes(a.key) && lowercase.includes(b.key)) {
-        return 1;
-    } else if (lowercase.includes(a.key) && UPPERCASE.includes(b.key)) {
-        return -1;
-    } else {
-        return a.key - b.key;
+/**
+ * Get order for each character
+ * 1. Swap SPACE and TAB so SPACE key order first
+ * 2. Shift capital character to the end of ASCII (before)
+ * @param {string} a A single character string
+ * @returns a shifted character for ordering
+ */
+function codePointOrder(a) {
+    codePoint = a.codePointAt(0);
+
+    if (codePoint >= 65 && codePoint <= 90) {
+        // shift A-Z back to the end of ASCII set
+        codePoint += 36;
+    } else if (codePoint >= 91 && codePoint <= 126) {
+        // shift ] - ~ forward
+        codePoint -= 26;
+    } else if (codePoint === 32) {
+        // Swap SPACE to TAB
+        codePoint = 9;
+    } else if (codePoint === 9) {
+        // Swap TAB to SPACE
+        codePoint = 32;
     }
+    return codePoint;
+}
+
+function compareKeyString(a, b) {
+    a = Array.from(a).map(codePointOrder);
+    b = Array.from(b).map(codePointOrder);
+    const len = Math.min(a.length, b.length);
+    for (let i = 0; i < len; i++) {
+        // Swap the case of the letter to sort lower case character first
+        const diff = a[i] - b[i];
+        if (diff !== 0) { return diff; }
+    }
+
+    return a.length - b.length;
+}
+
+/**
+ * Binding compare function
+ * 1. Sort non binding first
+ * 2. 
+ */
+function compareFunction(a, b) {
+    let diff = getTypeOrder(getType(a)) - getTypeOrder(getType(b));
+    if (diff !== 0) { return diff; }
+
+    diff = getKeyTypeOrder(a) - getKeyTypeOrder(b);
+    if (diff !== 0) { return diff; }
+
+    diff = compareKeyString(a.key, b.key);
+    return diff;
 }

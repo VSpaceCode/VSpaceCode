@@ -17,8 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add F# major mode key bindings
 
 ### Changed
-- Reorder major mode bindings have command binding first
-
+- Change the order of the spacemacs to be more aligned with spacemacs
 
 ## [0.9.0] - 2021-01-25
 ### Added
