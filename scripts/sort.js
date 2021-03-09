@@ -102,9 +102,6 @@ function compareFunction(a, b) {
     diff = getKeyTypeOrder(a) - getKeyTypeOrder(b);
     if (diff !== 0) { return diff; }
 
-    diff = getKeyTypeOrder(a) - getKeyTypeOrder(b);
-    if (diff !== 0) { return diff; }
-
     diff = compareKeyString(a.key, b.key);
     return diff;
 }
