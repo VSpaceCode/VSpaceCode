@@ -1814,6 +1814,212 @@
 										]
 									},
 									{
+										"key": "languageId:csharp",
+										"name": "C#",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "b",
+												"name": "+Backend/OmniSharp",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "o",
+														"name": "Show output",
+														"type": "command",
+														"command": "o.showOutput"
+													},
+													{
+														"key": "r",
+														"name": "Restart OmniSharp",
+														"type": "command",
+														"command": "o.restart"
+													},
+													{
+														"key": "s",
+														"name": "Select a project and start",
+														"type": "command",
+														"command": "o.pickProjectAndStart"
+													}
+												]
+											},
+											{
+												"key": "d",
+												"name": "+Debug",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "l",
+														"name": "List process for attach",
+														"type": "command",
+														"command": "csharp.listProcess"
+													},
+													{
+														"key": "L",
+														"name": "List remote processes for attach",
+														"type": "command",
+														"command": "csharp.listRemoteProcess"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "g",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "i",
+														"name": "Go to implementations",
+														"type": "command",
+														"command": "editor.action.goToImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "D",
+														"name": "Peek definition",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find all implementation",
+														"type": "command",
+														"command": "references-view.findImplementations"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													}
+												]
+											},
+											{
+												"key": "p",
+												"name": "+Project",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "r",
+														"name": "Restore project",
+														"type": "command",
+														"command": "dotnet.restore.project"
+													},
+													{
+														"key": "R",
+														"name": "Restore all projects",
+														"type": "command",
+														"command": "dotnet.restore.all"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ".",
+														"name": "Quick fix",
+														"type": "command",
+														"command": "editor.action.quickFix"
+													},
+													{
+														"key": "r",
+														"name": "Rename symbol",
+														"type": "command",
+														"command": "editor.action.rename"
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+Test",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Debug test under cursor",
+														"type": "command",
+														"command": "dotnet.test.debugTestsInContext"
+													},
+													{
+														"key": "t",
+														"name": "Run test under cursor",
+														"type": "command",
+														"command": "dotnet.test.runTestsInContext"
+													}
+												]
+											}
+										]
+									},
+									{
 										"key": "languageId:fsharp",
 										"name": "F#",
 										"type": "bindings",
@@ -2792,212 +2998,6 @@
 														"name": "Select and debug test",
 														"type": "command",
 														"command": "python.selectAndDebugTestMethod"
-													}
-												]
-											}
-										]
-									},
-									{
-										"key": "languageId:csharp",
-										"name": "C#",
-										"type": "bindings",
-										"bindings": [
-											{
-												"key": "=",
-												"name": "+Format",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "=",
-														"name": "Format region or buffer",
-														"type": "command",
-														"command": "editor.action.format"
-													},
-													{
-														"key": "b",
-														"name": "Format buffer",
-														"type": "command",
-														"command": "editor.action.formatDocument"
-													},
-													{
-														"key": "c",
-														"name": "Format changes",
-														"type": "command",
-														"command": "editor.action.formatChanges"
-													},
-													{
-														"key": "s",
-														"name": "Format selection",
-														"type": "command",
-														"command": "editor.action.formatSelection"
-													},
-													{
-														"key": "B",
-														"name": "+Format buffer with formatter",
-														"type": "command",
-														"command": "editor.action.formatDocument.multiple"
-													},
-													{
-														"key": "S",
-														"name": "+Format selection with formatter",
-														"type": "command",
-														"command": "editor.action.formatSelection.multiple"
-													}
-												]
-											},
-											{
-												"key": "d",
-												"name": "+Debug",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "l",
-														"name": "List process for attach",
-														"type": "command",
-														"command": "csharp.listProcess"
-													},
-													{
-														"key": "L",
-														"name": "List remote processes for attach",
-														"type": "command",
-														"command": "csharp.listRemoteProcess"
-													}
-												]
-											},
-											{
-												"key": "g",
-												"name": "+Go to",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "d",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
-													{
-														"key": "e",
-														"name": "Go to errors/problems",
-														"type": "command",
-														"command": "workbench.action.problems.focus"
-													},
-													{
-														"key": "g",
-														"name": "Go to definition",
-														"type": "command",
-														"command": "editor.action.revealDefinition"
-													},
-													{
-														"key": "i",
-														"name": "Go to implementations",
-														"type": "command",
-														"command": "editor.action.goToImplementation"
-													},
-													{
-														"key": "r",
-														"name": "Peek references",
-														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
-													},
-													{
-														"key": "D",
-														"name": "Peek definition",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
-														"key": "I",
-														"name": "Find all implementation",
-														"type": "command",
-														"command": "references-view.findImplementations"
-													},
-													{
-														"key": "R",
-														"name": "Find all references",
-														"type": "command",
-														"command": "references-view.findReferences"
-													}
-												]
-											},
-											{
-												"key": "r",
-												"name": "+Refactor",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": ".",
-														"name": "Quick fix",
-														"type": "command",
-														"command": "editor.action.quickFix"
-													},
-													{
-														"key": "r",
-														"name": "Rename symbol",
-														"type": "command",
-														"command": "editor.action.rename"
-													}
-												]
-											},
-											{
-												"key": "t",
-												"name": "+Test",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "t",
-														"name": "Run test under cursor",
-														"type": "command",
-														"command": "dotnet.test.runTestsInContext"
-													},
-													{
-														"key": "d",
-														"name": "Debug test under cursor",
-														"type": "command",
-														"command": "dotnet.test.debugTestsInContext"
-													}
-												]
-											},
-											{
-												"key": "b",
-												"name": "+Backend/OmniSharp",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "r",
-														"name": "Restart OmniSharp",
-														"type": "command",
-														"command": "o.restart"
-													},
-													{
-														"key": "s",
-														"name": "Select a project and start",
-														"type": "command",
-														"command": "o.pickProjectAndStart"
-													},
-													{
-														"key": "o",
-														"name": "Show output",
-														"type": "command",
-														"command": "o.showOutput"
-													}
-												]
-											},
-											{
-												"key": "p",
-												"name": "+Project",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "r",
-														"name": "Restore project",
-														"type": "command",
-														"command": "dotnet.restore.project"
-													},
-													{
-														"key": "R",
-														"name": "Restore all projects",
-														"type": "command",
-														"command": "dotnet.restore.all"
 													}
 												]
 											}
