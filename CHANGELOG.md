@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Rust major mode key bindings
 - Add F# major mode key bindings
 - Add C# major mode key bindings
+- Add C++ major mode key bindings
 
 ### Changed
 - Change the order of the spacemacs to be more aligned with spacemacs
