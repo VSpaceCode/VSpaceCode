@@ -15,7 +15,7 @@ resources/*
 !resources/logo.png
 
 .gitignore
-.eslintrc.json
+.eslintrc.js
 tsconfig.json
 tslint.json
 webpack.config.js

@@ -197,7 +197,8 @@ function relativePath(from: Uri, to: Uri, ignorePathCasing = false): string | un
     if (from.scheme === UriScheme.File) {
         return path.posix.relative(uriToFsPath(from), uriToFsPath(to));
     }
-    let fromPath = from.path || '/', toPath = to.path || '/';
+    let fromPath = from.path || '/';
+    const toPath = to.path || '/';
     if (ignorePathCasing) {
         // make casing of fromPath match toPath
         let i = 0;

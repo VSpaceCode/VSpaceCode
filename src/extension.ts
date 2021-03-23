@@ -70,5 +70,3 @@ function configure() {
 function openDocumentationUrl() {
     return env.openExternal(Uri.parse("https://vspacecode.github.io/docs/"));
 }
-
-export function deactivate() { }

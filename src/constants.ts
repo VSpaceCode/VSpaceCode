@@ -27,7 +27,7 @@ export enum CommandId {
 
 	RegisterWhichKey = "whichkey.register",
 	ShowWhichKey = "whichkey.show"
-};
+}
 export enum GlobalState {
 	SpacecodeVersion = 'vspacecodeVersion'
 }

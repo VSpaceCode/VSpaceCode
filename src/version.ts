@@ -41,7 +41,7 @@ export class Version {
     }
 
     static parse(v: string) {
-        let [major, minor, patch] = v.split('.').map(v => parseInt(v, 10));
+        const [major, minor, patch] = v.split('.').map(v => parseInt(v, 10));
         return new Version(major, minor, patch);
     }
 }
