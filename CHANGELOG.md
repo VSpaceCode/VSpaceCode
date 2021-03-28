@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.1] - 2021-03-28
+
 ### Added
 
 - Add Rust major mode key bindings
@@ -20,10 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add C# major mode key bindings
 - Add C++ major mode key bindings
 - Add LaTeX major mode key bindings
-
-### Changed
-
-- Change the order of the spacemacs to be more aligned with spacemacs
 - Add functions to Python "major mode" (`<spc> m`). Most functions require the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension to be installed.
   - "Go to commands..." menu (`<spc> m g`):
     - `<spc> m g d` to go to definition
@@ -34,6 +32,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - `<spc> m g D` to peek definition
     - `<spc> m g I` to find symbols in project
     - `<spc> m g R` to find all references
+
+### Changed
+
+- Change the order of the spacemacs to be more aligned with spacemacs
 
 ## [0.9.0] - 2021-01-25
 
