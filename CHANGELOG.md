@@ -12,7 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
+
 ### Added
+
 - Add Rust major mode key bindings
 - Add F# major mode key bindings
 - Add C# major mode key bindings
@@ -20,20 +22,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add LaTeX major mode key bindings
 
 ### Changed
+
 - Change the order of the spacemacs to be more aligned with spacemacs
 - Add functions to Python "major mode" (`<spc> m`). Most functions require the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension to be installed.
-    + "Go to commands..." menu (`<spc> m g`):
-        + `<spc> m g d` to go to definition
-        + `<spc> m g e` to go to errors/problems
-        + `<spc> m g g` to go to definition
-        + `<spc> m g i` to find symbol in file
-        + `<spc> m g r` to peek references
-        + `<spc> m g D` to peek definition
-        + `<spc> m g I` to find symbols in project
-        + `<spc> m g R` to find all references
+  - "Go to commands..." menu (`<spc> m g`):
+    - `<spc> m g d` to go to definition
+    - `<spc> m g e` to go to errors/problems
+    - `<spc> m g g` to go to definition
+    - `<spc> m g i` to find symbol in file
+    - `<spc> m g r` to peek references
+    - `<spc> m g D` to peek definition
+    - `<spc> m g I` to find symbols in project
+    - `<spc> m g R` to find all references
 
 ## [0.9.0] - 2021-01-25
+
 ### Added
+
 - ⌨ Trigger vspacecode when sidebar is in focus
 - Add `<spc> b h/j/k/l` for directional editor moving
 - Add `<spc> c c` to compile the project
@@ -44,199 +49,223 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add Clojure major mode key bindings to support the Calva extension for Clojure & ClojureScript development
 
 ### Changed
+
 - Move "Format buffer" action from `<spc> f =` to `<spc> j +`
 
 ## [0.8.5] - 2020-12-11
+
 ### Added
+
 - Add `<spc> h D` to open VSpaceCode documentation website
 - Add `<spc> p c` to run the default build task for the current project
 - Add `<spc> p T` to run the default test task for the current project
 - Add `<spc> 0` to show active file in explorer
 
 ### Changed
+
 - Indicate submenus with `+` instead of `...`
 
 ## [0.8.4] - 2020-11-23
+
 ### Added
+
 - Add `<spc> z f j/k` to zoom out/in frame
 - Add `<spc> z x j/k` to zoom out/in text
 
 ### Changed
+
 - Focus on the search result after `<spc> *`
 - `<spc> b b` shows recent buffers first
 
 ## [0.8.3] - 2020-10-22
+
 ### Added
+
 - ⚙️ Add `,` to trigger major mode
 - Add functions to Go "major mode" (`<spc> m`). Most functions require the [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go) extension to be installed.
-    - `<spc> m <spc>` to show all Go extension commands
-    - "Format..." menu (`<spc> m =`):
-        - `<spc> m = =` to format document
-        - `<spc> m = d` to format document with... (choose formatter)
-        - `<spc> m = m` to format modified lines only
-        - `<spc> m = s` to format selection
-        - `<spc> m = S` to format selection with... (choose formatter)
-    - "Actions..." menu (`<spc> m a`):
-        - `<spc> m a P` to run code in Go Playground
-        - "Package actions..." menu (`<spc> m a p`):
-            - `<spc> m a p b` to build current package
-            - `<spc> m a p g` to get a package
-            - `<spc> m a p i` to install current package
-            - `<spc> m a p l` to lint current package
-            - `<spc> m a p s` to browse packages
-            - `<spc> m a p v` to vet current package
-        - "Workspace actions...." menu (`<spc> m a w`):
-            - `<spc> m a w b` to build workspace
-            - `<spc> m a w l` to lint workspace
-            - `<spc> m a w b` to vet workspace
-            - `<spc> m a w p` to add package to workspace
-    - "Backend/environment..." menu (`<spc> m b`):
-        - `<spc> m b e` to choose Go environment
-        - `<spc> m b g` to show current GOPATH
-        - `<spc> m b i` to install/update tools
-        - `<spc> m b l` to locate configured Go tools
-        - `<spc> m b R` to restart language server
-    - "Go to..." menu (`<spc> m g`):
-        - `<spc> m g d` to go to definition
-        - `<spc> m g D` to peek definition
-        - `<spc> m g e` to go to errors/problems
-        - `<spc> m g g` to go to definition
-        - `<spc> m g i` to find symbol in file
-        - `<spc> m g I` to find symbol in project
-        - `<spc> m g m` to go to method in file
-        - `<spc> m g r` to peek references
-        - `<spc> m g R` to find all references
-        - `<spc> m g t` to go to type definition
-        - `<spc> m g T` to peek type definition
-    - "Insert/remove..." menu (`<spc> m i`):
-        - `<spc> m i f` to fill struct
-        - `<spc> m i i` to add import
-        - `<spc> m i I` to generate interface stubs
-        - `<spc> m i t` to add tags to struct fields
-        - `<spc> m i T` to remove tags from struct fields
-    - "Refactor..." menu (`<spc> m r`):
-        - `<spc> m r .` to quick fix
-        - `<spc> m r e` to extract to function or variable
-        - `<spc> m r r` to rename symbol
-    - "Test..." menu (`<spc> m t`):
-        - "Benchmarks..." menu (`<spc> m t b`):
-            - `<spc> m t b f` to benchmark function at cursor
-            - `<spc> m t b f` to benchmark file
-            - `<spc> m t b f` to benchmark package
-        - `<spc> m t c` to cancel running tests
-        - `<spc> m t d` to debug test at cursor
-        - `<spc> m t f` to test function at cursor
-        - `<spc> m t F` to test the current file
-        - "Generate..." menu (`<spc> m t g`):
-            - `<spc> m t g f` to generate unit tests for function
-            - `<spc> m t g F` to generate unit tests for file
-            - `<spc> m t g p` to generate unit tests for package
-        - `<spc> m t l` to test previous
-        - `<spc> m t p` to test package
-        - `<spc> m t P` to apply cover profile
-        - `<spc> m t s` to subtest at cursor
-        - "Toggle..." menu (`<spc> m t t`):
-            - `<spc> m t t c` to toggle test coverage in current package
-            - `<spc> m t t f` to toggle open test file
-        - `<spc> m t w` to test packages in workspace
+  - `<spc> m <spc>` to show all Go extension commands
+  - "Format..." menu (`<spc> m =`):
+    - `<spc> m = =` to format document
+    - `<spc> m = d` to format document with... (choose formatter)
+    - `<spc> m = m` to format modified lines only
+    - `<spc> m = s` to format selection
+    - `<spc> m = S` to format selection with... (choose formatter)
+  - "Actions..." menu (`<spc> m a`):
+    - `<spc> m a P` to run code in Go Playground
+    - "Package actions..." menu (`<spc> m a p`):
+      - `<spc> m a p b` to build current package
+      - `<spc> m a p g` to get a package
+      - `<spc> m a p i` to install current package
+      - `<spc> m a p l` to lint current package
+      - `<spc> m a p s` to browse packages
+      - `<spc> m a p v` to vet current package
+    - "Workspace actions...." menu (`<spc> m a w`):
+      - `<spc> m a w b` to build workspace
+      - `<spc> m a w l` to lint workspace
+      - `<spc> m a w b` to vet workspace
+      - `<spc> m a w p` to add package to workspace
+  - "Backend/environment..." menu (`<spc> m b`):
+    - `<spc> m b e` to choose Go environment
+    - `<spc> m b g` to show current GOPATH
+    - `<spc> m b i` to install/update tools
+    - `<spc> m b l` to locate configured Go tools
+    - `<spc> m b R` to restart language server
+  - "Go to..." menu (`<spc> m g`):
+    - `<spc> m g d` to go to definition
+    - `<spc> m g D` to peek definition
+    - `<spc> m g e` to go to errors/problems
+    - `<spc> m g g` to go to definition
+    - `<spc> m g i` to find symbol in file
+    - `<spc> m g I` to find symbol in project
+    - `<spc> m g m` to go to method in file
+    - `<spc> m g r` to peek references
+    - `<spc> m g R` to find all references
+    - `<spc> m g t` to go to type definition
+    - `<spc> m g T` to peek type definition
+  - "Insert/remove..." menu (`<spc> m i`):
+    - `<spc> m i f` to fill struct
+    - `<spc> m i i` to add import
+    - `<spc> m i I` to generate interface stubs
+    - `<spc> m i t` to add tags to struct fields
+    - `<spc> m i T` to remove tags from struct fields
+  - "Refactor..." menu (`<spc> m r`):
+    - `<spc> m r .` to quick fix
+    - `<spc> m r e` to extract to function or variable
+    - `<spc> m r r` to rename symbol
+  - "Test..." menu (`<spc> m t`):
+    - "Benchmarks..." menu (`<spc> m t b`):
+      - `<spc> m t b f` to benchmark function at cursor
+      - `<spc> m t b f` to benchmark file
+      - `<spc> m t b f` to benchmark package
+    - `<spc> m t c` to cancel running tests
+    - `<spc> m t d` to debug test at cursor
+    - `<spc> m t f` to test function at cursor
+    - `<spc> m t F` to test the current file
+    - "Generate..." menu (`<spc> m t g`):
+      - `<spc> m t g f` to generate unit tests for function
+      - `<spc> m t g F` to generate unit tests for file
+      - `<spc> m t g p` to generate unit tests for package
+    - `<spc> m t l` to test previous
+    - `<spc> m t p` to test package
+    - `<spc> m t P` to apply cover profile
+    - `<spc> m t s` to subtest at cursor
+    - "Toggle..." menu (`<spc> m t t`):
+      - `<spc> m t t c` to toggle test coverage in current package
+      - `<spc> m t t f` to toggle open test file
+    - `<spc> m t w` to test packages in workspace
 
 ### Changed
+
 - Speed up vscode startup by deferred extension activation
 - Reorder the default keybindings in alphabetical order similar to spacemacs
 
 ### Fixed
-- Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ` `) and can cause duplicate keybindings.
+
+- Fix the issue where config default setting command normalized existing vim's keybindings (e.g. `<space>` to ``) and can cause duplicate keybindings.
 - ⌨️️ Fix the inability to enter space key in any input when there is no editor opened
 - Keep cursor position after `<spc> b Y`
 - Fix the item name of `<spc> j =`
 
 ## [0.8.2] - 2020-10-06
+
 ### Added
+
 - Add functions to Markdown "major mode" (`<spc> m`). Most functions require the [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension to be installed.
-    + "Buffer commands..." menu (`<spc> m c`):
-        + `<spc> m c p` to open preview to the side
-        + `<spc> m c P` to open preview in current group
-        + `<spc> m c e` to export to HTML
-    + "Text..." menu (`<spc> m x`):
-        + `<spc> m x b` to toggle bold
-        + `<spc> m x ~` to toggle code block
-        + `` <spc> m x ` `` to toggle inline code
-        + `<spc> m x i` to toggle italic
-        + `<spc> m x l` to toggle list
-        + `<spc> m x m` to toggle math
-        + `<spc> m x s` to toggle strikethrough
-        + `<spc> m x ]` to increase heading level (transient)
-        + `<spc> m x [` to decrease heading level (transient)
-    + "Table of contents..." menu (`<spc> m t`):
-        + `<spc> m t c` to create table of contents
-        + `<spc> m t u` to update table of contents
-        + `<spc> m t n` to add section numbers
-        + `<spc> m t N` to remove section numbers
+  - "Buffer commands..." menu (`<spc> m c`):
+    - `<spc> m c p` to open preview to the side
+    - `<spc> m c P` to open preview in current group
+    - `<spc> m c e` to export to HTML
+  - "Text..." menu (`<spc> m x`):
+    - `<spc> m x b` to toggle bold
+    - `<spc> m x ~` to toggle code block
+    - `` <spc> m x ` `` to toggle inline code
+    - `<spc> m x i` to toggle italic
+    - `<spc> m x l` to toggle list
+    - `<spc> m x m` to toggle math
+    - `<spc> m x s` to toggle strikethrough
+    - `<spc> m x ]` to increase heading level (transient)
+    - `<spc> m x [` to decrease heading level (transient)
+  - "Table of contents..." menu (`<spc> m t`):
+    - `<spc> m t c` to create table of contents
+    - `<spc> m t u` to update table of contents
+    - `<spc> m t n` to add section numbers
+    - `<spc> m t N` to remove section numbers
 
 ## [0.8.1] - 2020-09-29
+
 ### Fixed
+
 - Fix the `<spc> j n` to split new line
 - ⌨️️ Fix which-key taking over when typing `<spc>` in the quick open dialog without an editor open
 
 ## [0.8.0] - 2020-09-21
+
 ### Changed
+
 - Adopt emacs terminology for key bindings names
 - Change `<spc> t l` to toggle word wrap instead of `<spc> t W`
 - Change `<spc> f t` to toggle file explorer view
 - Change `<spc> e n`, `<spc> e N`, and `<spc> e p` to search in all project
 - Change `<spc> j =` to format selection in visual mode
 - Change `<spc> d b` to open a breakpoint menu
-    + `<spc> d b b` to toggle breakpoint
-    + `<spc> d b i` to toggle inline breakpoint
-    + `<spc> d b c` to add conditional breakpoint
-    + `<spc> d b f` to add function breakpoint
-    + `<spc> d b d` to delete breakpoint
-    + `<spc> d b D` to delete all breakpoints
-    + `<spc> d b e` to enable breakpoint
-    + `<spc> d b E` to enable all breakpoints
-    + `<spc> d b s` to disable breakpoint
-    + `<spc> d b S` to disable all breakpoints
-    + `<spc> d b n` to jump to next breakpoint
-    + `<spc> d b p` to jump to next breakpoint
+  - `<spc> d b b` to toggle breakpoint
+  - `<spc> d b i` to toggle inline breakpoint
+  - `<spc> d b c` to add conditional breakpoint
+  - `<spc> d b f` to add function breakpoint
+  - `<spc> d b d` to delete breakpoint
+  - `<spc> d b D` to delete all breakpoints
+  - `<spc> d b e` to enable breakpoint
+  - `<spc> d b E` to enable all breakpoints
+  - `<spc> d b s` to disable breakpoint
+  - `<spc> d b S` to disable all breakpoints
+  - `<spc> d b n` to jump to next breakpoint
+  - `<spc> d b p` to jump to next breakpoint
 - Change `<spc> b N` to open a new buffer menu
-    + `<spc> b N n` to open new buffer
-    + `<spc> b N h` to open new buffer (split left)
-    + `<spc> b N j` to open new buffer (split down)
-    + `<spc> b N k` to open new buffer (split up)
-    + `<spc> b N l` to open new buffer (split right)
+  - `<spc> b N n` to open new buffer
+  - `<spc> b N h` to open new buffer (split left)
+  - `<spc> b N j` to open new buffer (split down)
+  - `<spc> b N k` to open new buffer (split up)
+  - `<spc> b N l` to open new buffer (split right)
 - Change `<spc> t w` to toggle render whitespace
 
 ### Added
+
 - ⌨️️ Add `ctrl+l` to accept suggestion
 - Add `<spc> "` to open a new external terminal
 - Add major mode bindings for `markdown`
 - Add `<spc> c` to open Comments menu
-    + `<spc> c l` to toggle line comment
-    + `<spc> c n` to go to next error
-    + `<spc> c N` to go to previous error
+  - `<spc> c l` to toggle line comment
+  - `<spc> c n` to go to next error
+  - `<spc> c N` to go to previous error
 - Add `<spc> D` to open Diff/Compare menu
 
 ### Removed
+
 - Remove `<spc> d B` since toggle inline breakpoint is now in `<spc> d b`
 
 ## [0.7.5] - 2020-08-27
+
 ## Added
+
 - Implement the commands for rest of the menu items in `<spc> f y`
-    + `<spc> f y c` to copy path of active file with line and column
-    + `<spc> f y C` to copy relative path of active file with line and column
-    + `<spc> f y d` to copy directory path of the active file
-    + `<spc> f y D` to copy relative directory path of active file
-    + `<spc> f y l` to copy path of active file with line
-    + `<spc> f y L` to copy relative path of active file with line
-    + `<spc> f y n` to copy filename of active file
-    + `<spc> f y N` to copy filename without extension of active file
+  - `<spc> f y c` to copy path of active file with line and column
+  - `<spc> f y C` to copy relative path of active file with line and column
+  - `<spc> f y d` to copy directory path of the active file
+  - `<spc> f y D` to copy relative directory path of active file
+  - `<spc> f y l` to copy path of active file with line
+  - `<spc> f y L` to copy relative path of active file with line
+  - `<spc> f y n` to copy filename of active file
+  - `<spc> f y N` to copy filename without extension of active file
 
 ## Change
+
 - Change `<spc> h I` (report issue) to better action
 - Change `<spc> f y y` and `<spc> f y Y` to own implementation to show the copied path on status bar
 
 ## [0.7.4] - 2020-08-14
+
 ### Added
+
 - Add copy section value for magit ref menu
 - Add copy buffer revision for magit ref menu
 - Add `<spc> T i` to choose icon theme
@@ -266,16 +295,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> w ]` to enlarge window
 
 ### Changed
+
 - Change `<spc> b Y` to deselect after copying
 - Change `<spc> f e` to open settings bindings
 - Change `<spc> f n` to create new file with explorer
 - Change `<spc> f y` to open yank bindings
 
 ### Removed
+
 - Remove `<spc> p '` since it has been replaced by `<spc> F o`
 
 ## [0.7.3] - 2020-07-30
+
 ### Added
+
 - Add `<spc> f e` to open settings
 - Add `<spc> b s` to open a new scratch buffer
 - Add `<spc> h k` to open global key bindings
@@ -288,39 +321,53 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> '` to show terminal
 
 ### Changed
+
 - Change `<spc> w m` to be able to toggle it
 
 ### Removed
+
 - Remove `<spc> w t` since it has been replaced by `<spc> w m`
 
 ## [0.7.2] - 2020-07-23
+
 ### Added
+
 - Add `<spc> s r` to search reference
 - Add `<spc> s R` to search reference in side bar
 - Add `<spc> s J` to jump symbol in the workspace
 
 ### Changed
+
 - Change `<spc> s j` to jump to symbol in file
 
 ### Fixed
+
 - Fix `<spc> s s` by calling the right command
 
 ## [0.7.1] - 2020-07-20
+
 ### Fixed
+
 - Fix README format
 
 ## [0.7.0] - 2020-07-20
+
 ### Changed
+
 - Change `<spc> f f` to use `bodil.file-browser`
 
 ### Added
+
 - ⌨️ Add `ctrl+h/l` to traverse `bodil.file-browser` menu
 
 ### Fixed
+
 - Fix typo and grammar in default binding names
 
 ## [0.6.0] - 2020-07-16
+
 ### Added
+
 - Add `<spc> <tab>` to switch to last editor
 - Add <code>&lt;spc&gt; p `</code> to switch active project window (application window)
 - Add support to run VSpaceCode locally with VSCode Remote
@@ -328,17 +375,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ⚙️ Add `vim.useSystemClipboard` to the setting configuration command
 - ⌨️ Add `<spc>` to trigger which-key menu when the active editor group is empty
 - ⌨️ Add `ctrl+j/k` as a shortcut to traverse items in:
-    + Quick open menu/QuickPick
-    + Suggestion overlay/intellisense
-    + Parameter hint (i.e. the overlay when there's multiple overloads)
+  - Quick open menu/QuickPick
+  - Suggestion overlay/intellisense
+  - Parameter hint (i.e. the overlay when there's multiple overloads)
 
     > If you bind `ctrl+h/j/k/l` for window navigation, you can add the `!inQuickOpen && !suggestWidgetVisible && !parameterHintsVisible` to the `when` section of those keybindings. See [README](./README.md) the example of the bindings
 
 ### Changed
+
 - Change `<spc> s s` to search the selection automatically if there's one
 
 ## [0.5.0] - 2020-06-29
+
 ### Added
+
 - Add menu for magit ref `y` in normal mode
 
     This requires configuration of your `keybindings.json`, checkout the installation section of [README](./README.md) for more information
@@ -351,13 +401,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   This requires `vim.easymotion` to be `true` in your `settings.json`
 
 ### Changed
+
 - Split the core menu logic to another extension (`vscode-which-key`) so this extension can be focused on Vim users
 - Change `<spc> s s` to use fuzzy search to emulate Helm Swoop/Ivy Swiper (#56)
 
 ### Fixed
+
 - Fix the duplicated `<spc> f l` by move locate file to `<spc> f L`
 
 ### Removed
+
 - Remove support of non-vscodevim users.
 
   If you are a non-vscodevim, please use `vscode-which-key` instead.
@@ -489,7 +542,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   </details>
 
 ## [0.4.0] - 2020-06-21
+
 ### Added
+
 - Implement transient menu
 - Add `<spc> z` for zoom menu
 - Add `<spc> 1...8` to focus different editor groups
@@ -503,6 +558,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> p` for project menu
 - Implement `args` key in the bindings to executes command(s) with args
 For example, the follow the binding will map `y` in the menu to `y y` in vim to yank a line by passing a `args` for that command.
+
 ```jsonc
 {
     "key": "y",
@@ -514,7 +570,9 @@ For example, the follow the binding will map `y` in the menu to `y y` in vim to 
     }
 },
 ```
+
 In this example: Only the second command has args. When `args` is used with `commands`, the `args` is expected to be an array. If the `null` is not present in the follow example, the first command (`formatDocument`) will receive the second element of `args` instead.
+
 ```jsonc
 {
     "key": "=",
@@ -529,58 +587,59 @@ In this example: Only the second command has args. When `args` is used with `com
 ```
 
 ### Changed
+
 - `q` is no longer a reserved key to exit menu
 - Move the quick open in `<spc> f f` to `<spc> p f` to be more aligned with spacemacs
 - Move fold to `<spc> z .` to be more aligned with spacemacs
 - Move Show (`s`) menu to `S` for the addition of search/symbol menu
 - Change the editor menu (`e`) to be text (`x`) menu to be more aligned with spacemacs
-  + Add `u` to transform text to lower case
-  + Add `U` to transform text to upper case
-  + Add `J` to move lines down with a transient menu
-  + Add `K` to move lines up with a transient menu
-  + Add lines (`l`) sub-menu
-    * Add `s` to sort lines ascendingly
-    * Add `S` to sort lines decendingly
-    * Add `d` to duplicate lines down
-    * Add `D` to duplicate lines up
-  + Add delete (`d`) sub-menu
-    * Add `w` to trim trailing whitespace
+  - Add `u` to transform text to lower case
+  - Add `U` to transform text to upper case
+  - Add `J` to move lines down with a transient menu
+  - Add `K` to move lines up with a transient menu
+  - Add lines (`l`) sub-menu
+    - Add `s` to sort lines ascendingly
+    - Add `S` to sort lines decendingly
+    - Add `d` to duplicate lines down
+    - Add `D` to duplicate lines up
+  - Add delete (`d`) sub-menu
+    - Add `w` to trim trailing whitespace
 - Change the bindings and names in the fold menu to be more aligned with spacemacs
-  + Use `c` instead of `f` to close at a point
-  + Use `g` instead of `r` to close all regions
-  + Use `m` instead of `a` to close all
-  + Use `o` instead of `F` to open at a point
-  + Use `O` instead of `c` to open recursively
-  + Use `G` instead of `R` to open all regions
-  + Use `r` instead of `A` to open all
+  - Use `c` instead of `f` to close at a point
+  - Use `g` instead of `r` to close all regions
+  - Use `m` instead of `a` to close all
+  - Use `o` instead of `F` to open at a point
+  - Use `O` instead of `c` to open recursively
+  - Use `G` instead of `R` to open all regions
+  - Use `r` instead of `A` to open all
 - Break up toggles into toggles (`t`) and UI toggles (`T`) to be more aligned with spacemacs
-  + Add `F` to toggle ful screen in UI toggles (`T`)
-  + Add `s` to select theme in UI toggles (`T`)
-  + Change `t` to toggle activity bar visibility in UI toggles (`T`)
-  + Use `T` instead `t` to toggle tab visibility in UI toggles (`T`)
-  + Remove fold `t` in toggles menu (`t`) in favor of the added toggle in the fold menu
+  - Add `F` to toggle ful screen in UI toggles (`T`)
+  - Add `s` to select theme in UI toggles (`T`)
+  - Change `t` to toggle activity bar visibility in UI toggles (`T`)
+  - Use `T` instead `t` to toggle tab visibility in UI toggles (`T`)
+  - Remove fold `t` in toggles menu (`t`) in favor of the added toggle in the fold menu
 - Change the debug bindings to be more aligned with spcaemacs
-  + Use `s` instead of `o` for step over
-  + use `o` instead of `O` for step out
-  + Add `v` for REPL
-  + Add `w` to focus on watch window
-  + Add `W` to add to watch
+  - Use `s` instead of `o` for step over
+  - use `o` instead of `O` for step out
+  - Add `v` for REPL
+  - Add `w` to focus on watch window
+  - Add `W` to add to watch
 - Change the file bindings to be more aligned with spacemacs
-  + Use `l` instead `r` to reval file in os
-  + Use `r` to open recent
-  + Add `t` to toggle explore view
-  + Add `T` to show active file in explore
-  + Add `y` to copy the path of the active file
+  - Use `l` instead `r` to reval file in os
+  - Use `r` to open recent
+  - Add `t` to toggle explore view
+  - Add `T` to show active file in explore
+  - Add `y` to copy the path of the active file
 - Change the window bindings to be more aligned with spacemacs
-  + Use `/` instead of `\` for splitting editor editor right
-  + Use `d` instead of `x` for closing editors in group
-  + Change `h` to focus on the left pane
-  + Change `j` to focus on the pane below
-  + Change `k` to focus on the pane above
-  + Change `l` to focus on the right pane
-  + Add `s` to split editor below
-  + Add `v` to split editor right
-  + Add `W` to focus previous editor group
+  - Use `/` instead of `\` for splitting editor editor right
+  - Use `d` instead of `x` for closing editors in group
+  - Change `h` to focus on the left pane
+  - Change `j` to focus on the pane below
+  - Change `k` to focus on the pane above
+  - Change `l` to focus on the right pane
+  - Add `s` to split editor below
+  - Add `v` to split editor right
+  - Add `W` to focus previous editor group
 
   To get the old window pane behavior for `h`, `j`, `k` and `l` one can merge the following overrides to your `settings.json`
   <details><summary>settings.json</summary>
@@ -614,9 +673,12 @@ In this example: Only the second command has args. When `args` is used with `com
       }
   ]
   ```
+
   </p>
   </details>
 
 ## [0.3.2] - 2020-06-19
+
 ### Changed
+
 - Re-release v0.3.2 in `VSpaceCode`
