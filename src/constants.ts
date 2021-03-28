@@ -11,6 +11,7 @@ export enum CommandId {
 	ConfigureKeybindings = "vspacecode.configureKeybindings",
 
 	OpenDocumentationUrl = "vspacecode.openDocumentationUrl",
+	EnsureExtensions = "vspacecode.ensureExtensions",
 
 	CopyPath = "vspacecode.copyPath",
 	CopyPathWithLine = "vspacecode.copyPathWithLine",

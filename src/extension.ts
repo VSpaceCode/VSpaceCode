@@ -1,4 +1,4 @@
-import { commands, env, ExtensionContext, extensions, Uri } from 'vscode';
+import { commands, env, ExtensionContext, extensions, Uri, window, workspace } from 'vscode';
 import { copyWholeBuffer } from './bufferCommands';
 import { configKeyBindings, configSettings } from './configuration/configuration';
 import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
@@ -28,6 +28,7 @@ export async function activate(context: ExtensionContext) {
     context.subscriptions.push(commands.registerCommand(CommandId.ConfigureKeybindings, configKeyBindings));
 
     context.subscriptions.push(commands.registerCommand(CommandId.OpenDocumentationUrl, openDocumentationUrl));
+    context.subscriptions.push(commands.registerCommand(CommandId.EnsureExtensions, ensureExtensions));
 
     context.subscriptions.push(commands.registerCommand(CommandId.CopyPath, copyWrapper(getPath)));
     context.subscriptions.push(commands.registerCommand(CommandId.CopyPathWithLine, copyWrapper(getPathWithLine)));
@@ -41,6 +42,7 @@ export async function activate(context: ExtensionContext) {
     context.subscriptions.push(commands.registerCommand(CommandId.CopyFilenameBase, copyWrapper(getFilenameBase)));
 
     context.subscriptions.push(commands.registerTextEditorCommand(CommandId.CopyWholeBuffer, copyWholeBuffer));
+
 }
 
 function setUpWhichKey() {
@@ -69,4 +71,24 @@ function configure() {
 
 function openDocumentationUrl() {
     return env.openExternal(Uri.parse("https://vspacecode.github.io/docs/"));
+}
+
+async function ensureExtensions(ids: string[]) {
+    if (!Array.isArray(ids)) {
+        ids = [ids];
+    }
+
+    const nonExistsId = ids
+        .map(id => ({
+            id: id,
+            exists: !!extensions.getExtension(id)
+        }))
+        .filter(x => !x.exists).map(x => x.id);
+
+    const item = await window.showWarningMessage("The binding requires " + nonExistsId.join(", "), "Install", "Dismiss");
+    if (item === "Install") {
+        await Promise.all(nonExistsId.map(
+            id => commands.executeCommand('workbench.extensions.installExtension', id)
+        ));
+    }
 }
