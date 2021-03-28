@@ -20,6 +20,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Change the order of the spacemacs to be more aligned with spacemacs
+- Add functions to Python "major mode" (`<spc> m`). Most functions require the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension to be installed.
+    + "Go to commands..." menu (`<spc> m g`):
+        + `<spc> m g d` to go to definition
+        + `<spc> m g e` to go to errors/problems
+        + `<spc> m g g` to go to definition
+        + `<spc> m g i` to find symbol in file
+        + `<spc> m g r` to peek references
+        + `<spc> m g D` to peek definition
+        + `<spc> m g I` to find symbols in project
+        + `<spc> m g R` to find all references
 
 ## [0.9.0] - 2021-01-25
 ### Added
