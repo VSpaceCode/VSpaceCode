@@ -2845,6 +2845,316 @@
 										]
 									},
 									{
+										"key": "languageId:latex",
+										"name": "LaTeX",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													}
+												]
+											},
+											{
+												"key": "b",
+												"name": "+Backend",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "l",
+														"name": "View Workshop Messages",
+														"type": "command",
+														"command": "latex-workshop.log"
+													},
+													{
+														"key": "m",
+														"name": "Insert root magic comment",
+														"type": "command",
+														"command": "latex-workshop.addtexroot"
+													},
+													{
+														"key": "s",
+														"name": "Select the current environment name",
+														"type": "command",
+														"command": "latex-workshop.select-envname"
+													},
+													{
+														"key": "S",
+														"name": "Select the current environment content",
+														"type": "command",
+														"command": "latex-workshop.select-envcontent"
+													}
+												]
+											},
+											{
+												"key": "c",
+												"name": "+Build",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "Build Project",
+														"type": "command",
+														"command": "latex-workshop.build"
+													},
+													{
+														"key": "i",
+														"name": "Show compilation info",
+														"type": "command",
+														"command": "latex-workshop.showCompilationPanel"
+													},
+													{
+														"key": "k",
+														"name": "Kill compiler process",
+														"type": "command",
+														"command": "latex-workshop.kill"
+													},
+													{
+														"key": "l",
+														"name": "Clean up auxiliary files",
+														"type": "command",
+														"command": "latex-workshop.clean"
+													},
+													{
+														"key": "l",
+														"name": "View compiler logs",
+														"type": "command",
+														"command": "latex-workshop.compilerlog"
+													},
+													{
+														"key": "r",
+														"name": "Build with recipe",
+														"type": "command",
+														"command": "latex-workshop.recipes"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Goto",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "e",
+														"name": "Navigate to matching begin/end pair",
+														"type": "command",
+														"command": "latex-workshop.navigate-envpair"
+													}
+												]
+											},
+											{
+												"key": "i",
+												"name": "+Insert",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "e",
+														"name": "Close current environment",
+														"type": "command",
+														"command": "latex-workshop.close-env"
+													},
+													{
+														"key": "i",
+														"name": "item",
+														"type": "command",
+														"command": "latex-workshop.shortcut.item"
+													},
+													{
+														"key": "w",
+														"name": "Surround/wrap selection with begin/end",
+														"type": "command",
+														"command": "latex-workshop.wrap-env"
+													}
+												]
+											},
+											{
+												"key": "l",
+												"name": "+Bibtex",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Align",
+														"type": "command",
+														"command": "latex-workshop.bibalign"
+													},
+													{
+														"key": "s",
+														"name": "Sort",
+														"type": "command",
+														"command": "latex-workshop.bibsort"
+													},
+													{
+														"key": "S",
+														"name": "Sort & Align",
+														"type": "command",
+														"command": "latex-workshop.bibalignsort"
+													}
+												]
+											},
+											{
+												"key": "p",
+												"name": "+Preview",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "View Document",
+														"type": "command",
+														"command": "latex-workshop.view"
+													},
+													{
+														"key": "m",
+														"name": "Toggle Match Preview Panel",
+														"type": "command",
+														"command": "latex-workshop.toggleMathPreviewPanel"
+													},
+													{
+														"key": "p",
+														"name": "SyncTeX from cursor",
+														"type": "command",
+														"command": "latex-workshop.synctex"
+													},
+													{
+														"key": "r",
+														"name": "Refresh all viewers",
+														"type": "command",
+														"command": "latex-workshop.refresh-viewer"
+													}
+												]
+											},
+											{
+												"key": "x",
+												"name": "+Text",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "b",
+														"name": "Bold",
+														"type": "command",
+														"command": "latex-workshop.shortcut.textbf"
+													},
+													{
+														"key": "c",
+														"name": "Small Caps",
+														"type": "command",
+														"command": "latex-workshop.shortcut.textsc"
+													},
+													{
+														"key": "e",
+														"name": "Emphasis",
+														"type": "command",
+														"command": "latex-workshop.shortcut.emph"
+													},
+													{
+														"key": "f",
+														"name": "Sans Serif",
+														"type": "command",
+														"command": "latex-workshop.shortcut.textsf"
+													},
+													{
+														"key": "i",
+														"name": "Italic",
+														"type": "command",
+														"command": "latex-workshop.shortcut.textit"
+													},
+													{
+														"key": "n",
+														"name": "Normal",
+														"type": "command",
+														"command": "latex-workshop.shortcut.textnormal"
+													},
+													{
+														"key": "r",
+														"name": "Roman",
+														"type": "command",
+														"command": "latex-workshop.shortcut.textrm"
+													},
+													{
+														"key": "t",
+														"name": "Terminal",
+														"type": "command",
+														"command": "latex-workshop.shortcut.texttt"
+													},
+													{
+														"key": "u",
+														"name": "Underline",
+														"type": "command",
+														"command": "latex-workshop.shortcut.underline"
+													},
+													{
+														"key": "m",
+														"name": "+Math Fonts",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "a",
+																"name": "Calligraphic",
+																"type": "command",
+																"command": "latex-workshop.shortcut.mathcal"
+															},
+															{
+																"key": "b",
+																"name": "Bold",
+																"type": "command",
+																"command": "latex-workshop.shortcut.mathbf"
+															},
+															{
+																"key": "f",
+																"name": "Sans Serif",
+																"type": "command",
+																"command": "latex-workshop.shortcut.mathsf"
+															},
+															{
+																"key": "i",
+																"name": "Italic",
+																"type": "command",
+																"command": "latex-workshop.shortcut.mathit"
+															},
+															{
+																"key": "r",
+																"name": "Roman",
+																"type": "command",
+																"command": "latex-workshop.shortcut.mathrm"
+															},
+															{
+																"key": "t",
+																"name": "Terminal",
+																"type": "command",
+																"command": "latex-workshop.shortcut.mathtt"
+															}
+														]
+													}
+												]
+											}
+										]
+									},
+									{
 										"key": "languageId:markdown",
 										"name": "Markdown",
 										"type": "bindings",
