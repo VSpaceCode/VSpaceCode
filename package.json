@@ -3361,6 +3361,25 @@
 												]
 											},
 											{
+												"key": "b",
+												"name": "+Backend",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "o",
+														"name": "Show LSP output",
+														"type": "command",
+														"command": "python.viewLanguageServerOutput"
+													},
+													{
+														"key": "r",
+														"name": "Restart LSP",
+														"type": "command",
+														"command": "python.analysis.restartLanguageServer"
+													}
+												]
+											},
+											{
 												"key": "c",
 												"name": "+Execute",
 												"type": "bindings",
