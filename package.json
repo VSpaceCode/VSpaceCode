@@ -3381,7 +3381,7 @@
 											},
 											{
 												"key": "g",
-												"name": "Go to",
+												"name": "+Go to",
 												"type": "bindings",
 												"bindings": [
 													{
