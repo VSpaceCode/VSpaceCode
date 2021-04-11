@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `b` backend to Python major mode
+
 ### Fixed
 
 - Fix the missing `+` prefix for "Go to" key in python major mode
