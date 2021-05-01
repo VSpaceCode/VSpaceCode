@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fix the missing `+` prefix for "Go to" key in python major mode
+- Fix `<spc> 0` command when triggered in file outside of workspace
 
 ## [0.9.1] - 2021-03-28
 
