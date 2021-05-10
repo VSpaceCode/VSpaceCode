@@ -2845,6 +2845,277 @@
 										]
 									},
 									{
+										"key": "languageId:typescript",
+										"name": "TypeScript",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "i",
+														"name": "Find symbol in file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "D",
+														"name": "Peek definition",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find symbol in project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "mark function as async",
+														"type": "command",
+														"command": "cmstead.jsRefactor.markAsAsync"
+													},
+													{
+														"key": "e",
+														"name": "export",
+														"type": "command",
+														"command": "cmstead.jsRefactor.addExport"
+													},
+													{
+														"key": "f",
+														"name": "introduce function",
+														"type": "command",
+														"command": "cmstead.jsRefactor.introduceFunction"
+													},
+													{
+														"key": "i",
+														"name": "inline variable",
+														"type": "command",
+														"command": "cmstead.jsRefactor.inlineVariable"
+													},
+													{
+														"key": "l",
+														"name": "lift and name function expression",
+														"type": "command",
+														"command": "cmstead.jsRefactor.liftAndNameFunctionExpression"
+													},
+													{
+														"key": "n",
+														"name": "negate expression",
+														"type": "command",
+														"command": "cmstead.jsRefactor.negateExpression"
+													},
+													{
+														"key": "p",
+														"name": "shift params",
+														"type": "command",
+														"command": "cmstead.jsRefactor.shiftParams"
+													},
+													{
+														"key": "r",
+														"name": "rename",
+														"type": "command",
+														"command": "cmstead.jsRefactor.rename"
+													},
+													{
+														"key": "s",
+														"name": "select from all refactorings",
+														"type": "command",
+														"command": "cmstead.jsRefactor.selectRefactoring"
+													},
+													{
+														"key": "c",
+														"name": "convert",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": ">",
+																"name": "convert function to arrow function",
+																"type": "command",
+																"command": "cmstead.jsRefactor.convertToArrowFunction"
+															},
+															{
+																"key": "d",
+																"name": "convert function expression to function declaration",
+																"type": "command",
+																"command": "cmstead.jsRefactor.convertToFunctionDeclaration"
+															},
+															{
+																"key": "e",
+																"name": "convert arrow function to function expression",
+																"type": "command",
+																"command": "cmstead.jsRefactor.convertToFunctionExpression"
+															},
+															{
+																"key": "t",
+																"name": "convert string concat to template literal",
+																"type": "command",
+																"command": "cmstead.jsRefactor.convertToTemplateLiteral"
+															}
+														]
+													},
+													{
+														"key": "w",
+														"name": "wrap",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": ">",
+																"name": "wrap in arrow function",
+																"type": "command",
+																"command": "cmstead.jsRefactor.wrapInArrowFunction"
+															},
+															{
+																"key": "a",
+																"name": "wrap in async function",
+																"type": "command",
+																"command": "cmstead.jsRefactor.wrapInAsyncFunction"
+															},
+															{
+																"key": "c",
+																"name": "wrap in condition",
+																"type": "command",
+																"command": "cmstead.jsRefactor.wrapInCondition"
+															},
+															{
+																"key": "f",
+																"name": "wrap in function",
+																"type": "command",
+																"command": "cmstead.jsRefactor.wrapInFunction"
+															},
+															{
+																"key": "g",
+																"name": "wrap in generator",
+																"type": "command",
+																"command": "cmstead.jsRefactor.wrapInGenerator"
+															},
+															{
+																"key": "i",
+																"name": "wrap in IIFE",
+																"type": "command",
+																"command": "cmstead.jsRefactor.wrapInIIFE"
+															},
+															{
+																"key": "t",
+																"name": "wrap in try/catch",
+																"type": "command",
+																"command": "cmstead.jsRefactor.wrapInTryCatch"
+															}
+														]
+													},
+													{
+														"key": "x",
+														"name": "extract",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "m",
+																"name": "selection into method",
+																"type": "command",
+																"command": "cmstead.jsRefactor.extractMethod"
+															},
+															{
+																"key": "v",
+																"name": "value into variable",
+																"type": "command",
+																"command": "cmstead.jsRefactor.extractVariable"
+															}
+														]
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "Tasks",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "n",
+														"name": "npm",
+														"type": "command",
+														"command": "npm-script.run"
+													},
+													{
+														"key": "v",
+														"name": "vscode",
+														"type": "command",
+														"command": "workbench.action.tasks.runTask"
+													},
+													{
+														"key": "y",
+														"name": "yarn",
+														"type": "command",
+														"command": "yarn-script.runScript"
+													}
+												]
+											}
+										]
+									},
+									{
 										"key": "languageId:latex",
 										"name": "LaTeX",
 										"type": "bindings",
