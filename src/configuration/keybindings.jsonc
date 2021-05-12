@@ -9,7 +9,7 @@
     {
         "key": "space",
         "command": "vspacecode.space",
-        "when": "sideBarFocus && !inputFocus && !whichkeyActive"
+        "when": "!inputFocus && !whichkeyActive"
     },
     // Keybindings required for edamagit
     // https://github.com/kahole/edamagit#vim-support-vscodevim
