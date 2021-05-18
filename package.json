@@ -2845,6 +2845,140 @@
 										]
 									},
 									{
+										"key": "languageId:javascript",
+										"name": "JavaScript",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "i",
+														"name": "Find symbol in file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "D",
+														"name": "Peek definition",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find symbol in project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ".",
+														"name": "Quick fix",
+														"type": "command",
+														"command": "editor.action.quickFix"
+													},
+													{
+														"key": "e",
+														"name": "Extract to function or variable",
+														"type": "command",
+														"command": "editor.action.codeAction",
+														"args": {
+															"kind": "refactor.extract"
+														}
+													},
+													{
+														"key": "r",
+														"name": "Rename symbol",
+														"type": "command",
+														"command": "editor.action.rename"
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+NPM",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "r",
+														"name": "NPM Run",
+														"type": "command",
+														"command": "npm.runScript"
+													},
+													{
+														"key": "i",
+														"name": "NPM Install",
+														"type": "command",
+														"command": "npm.runInstall"
+													}
+												]
+											}
+										]
+									},
+									{
 										"key": "languageId:latex",
 										"name": "LaTeX",
 										"type": "bindings",
