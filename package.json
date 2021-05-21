@@ -151,12 +151,14 @@
 							{
 								"key": " ",
 								"name": "Commands",
+								"icon": "rocket",
 								"type": "command",
 								"command": "workbench.action.showCommands"
 							},
 							{
 								"key": "\t",
 								"name": "Last buffer",
+								"icon": "go-to-file",
 								"type": "commands",
 								"commands": [
 									"workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
@@ -166,24 +168,28 @@
 							{
 								"key": "!",
 								"name": "Show terminal",
+								"icon": "terminal",
 								"type": "command",
 								"command": "workbench.action.terminal.focus"
 							},
 							{
 								"key": "\"",
 								"name": "Open new external terminal",
+								"icon": "chevron-right",
 								"type": "command",
 								"command": "workbench.action.terminal.openNativeConsole"
 							},
 							{
 								"key": "'",
 								"name": "Show terminal",
+								"icon": "terminal",
 								"type": "command",
 								"command": "workbench.action.terminal.focus"
 							},
 							{
 								"key": "*",
 								"name": "Search in project with selection",
+								"icon": "search",
 								"type": "commands",
 								"commands": [
 									"editor.action.addSelectionToNextFindMatch",
@@ -194,6 +200,7 @@
 							{
 								"key": ".",
 								"name": "Repeat most recent action",
+								"icon": "redo",
 								"type": "command",
 								"command": "whichkey.repeatMostRecent",
 								"args": "vspacecode.bindings"
@@ -201,90 +208,105 @@
 							{
 								"key": "/",
 								"name": "Search in project",
+								"icon": "search",
 								"type": "command",
 								"command": "workbench.action.findInFiles"
 							},
 							{
 								"key": "0",
 								"name": "Focus on files explorer",
+								"icon": "list-tree",
 								"type": "command",
 								"command": "workbench.files.action.focusFilesExplorer"
 							},
 							{
 								"key": "1",
 								"name": "Focus 1st window",
+								"icon": "files",
 								"type": "command",
 								"command": "workbench.action.focusFirstEditorGroup"
 							},
 							{
 								"key": "2",
 								"name": "Focus 2nd window",
+								"icon": "files",
 								"type": "command",
 								"command": "workbench.action.focusSecondEditorGroup"
 							},
 							{
 								"key": "3",
 								"name": "Focus 3rd window",
+								"icon": "files",
 								"type": "command",
 								"command": "workbench.action.focusThirdEditorGroup"
 							},
 							{
 								"key": "4",
 								"name": "Focus 4th window",
+								"icon": "files",
 								"type": "command",
 								"command": "workbench.action.focusFourthEditorGroup"
 							},
 							{
 								"key": "5",
 								"name": "Focus 5th window",
+								"icon": "files",
 								"type": "command",
 								"command": "workbench.action.focusFifthEditorGroup"
 							},
 							{
 								"key": "6",
 								"name": "Focus 6th window",
+								"icon": "files",
 								"type": "command",
 								"command": "workbench.action.focusSixthEditorGroup"
 							},
 							{
 								"key": "7",
 								"name": "Focus 7th window",
+								"icon": "files",
 								"type": "command",
 								"command": "workbench.action.focusSeventhEditorGroup"
 							},
 							{
 								"key": "8",
 								"name": "Focus 8th window",
+								"icon": "files",
 								"type": "command",
 								"command": "workbench.action.focusEighthEditorGroup"
 							},
 							{
 								"key": ";",
 								"name": "Toggle comment",
+								"icon": "comment",
 								"type": "command",
 								"command": "editor.action.commentLine"
 							},
 							{
 								"key": "?",
 								"name": "Search keybindings",
+								"icon": "keyboard",
 								"type": "command",
 								"command": "whichkey.searchBindings"
 							},
 							{
 								"key": "v",
 								"name": "Smart select/expand region",
+								"icon": "selection",
 								"type": "transient",
 								"command": "editor.action.smartSelect.grow",
 								"bindings": [
 									{
 										"key": "v",
 										"name": "Grow selection",
+										"icon": "add",
 										"type": "command",
 										"command": "editor.action.smartSelect.grow"
 									},
 									{
 										"key": "V",
 										"name": "Shrink selection",
+										"icon": "remove",
 										"type": "command",
 										"command": "editor.action.smartSelect.shrink"
 									}
@@ -293,125 +315,146 @@
 							{
 								"key": "b",
 								"name": "+Buffers",
+								"icon": "file",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "0",
 										"name": "Last buffer in window",
+										"icon": "arrow-both",
 										"type": "command",
 										"command": "workbench.action.lastEditorInGroup"
 									},
 									{
 										"key": "1",
 										"name": "First buffer in window",
+										"icon": "arrow-both",
 										"type": "command",
 										"command": "workbench.action.firstEditorInGroup"
 									},
 									{
 										"key": "b",
 										"name": "Show all buffers",
+										"icon": "files",
 										"type": "command",
 										"command": "workbench.action.showAllEditorsByMostRecentlyUsed"
 									},
 									{
 										"key": "d",
 										"name": "Close active buffer",
+										"icon": "x",
 										"type": "command",
 										"command": "workbench.action.closeActiveEditor"
 									},
 									{
 										"key": "h",
 										"name": "Move buffer into left window",
+										"icon": "triangle-left",
 										"type": "command",
 										"command": "workbench.action.moveEditorToLeftGroup"
 									},
 									{
 										"key": "j",
 										"name": "Move buffer into below window",
+										"icon": "triangle-down",
 										"type": "command",
 										"command": "workbench.action.moveEditorToBelowGroup"
 									},
 									{
 										"key": "k",
 										"name": "Move buffer into above window",
+										"icon": "triangle-up",
 										"type": "command",
 										"command": "workbench.action.moveEditorToAboveGroup"
 									},
 									{
 										"key": "l",
 										"name": "Move buffer into right window",
+										"icon": "triangle-right",
 										"type": "command",
 										"command": "workbench.action.moveEditorToRightGroup"
 									},
 									{
 										"key": "n",
 										"name": "Next buffer",
+										"icon": "arrow-down",
 										"type": "command",
 										"command": "workbench.action.nextEditor"
 									},
 									{
 										"key": "p",
 										"name": "Previous buffer",
+										"icon": "arrow-up",
 										"type": "command",
 										"command": "workbench.action.previousEditor"
 									},
 									{
 										"key": "s",
 										"name": "Scratch buffer",
+										"icon": "note",
 										"type": "command",
 										"command": "workbench.action.files.newUntitledFile"
 									},
 									{
 										"key": "t",
 										"name": "Pin buffer",
+										"icon": "pin",
 										"type": "command",
 										"command": "workbench.action.pinEditor"
 									},
 									{
 										"key": "u",
 										"name": "Reopen closed buffer",
+										"icon": "history",
 										"type": "command",
 										"command": "workbench.action.reopenClosedEditor"
 									},
 									{
 										"key": "B",
 										"name": "Show all buffers in active window",
+										"icon": "files",
 										"type": "command",
 										"command": "workbench.action.showEditorsInActiveGroup"
 									},
 									{
 										"key": "H",
 										"name": "Move buffer into left window",
+										"icon": "triangle-left",
 										"type": "command",
 										"command": "workbench.action.moveEditorToLeftGroup"
 									},
 									{
 										"key": "J",
 										"name": "Move buffer into below window",
+										"icon": "triangle-down",
 										"type": "command",
 										"command": "workbench.action.moveEditorToBelowGroup"
 									},
 									{
 										"key": "K",
 										"name": "Move buffer into above window",
+										"icon": "triangle-up",
 										"type": "command",
 										"command": "workbench.action.moveEditorToAboveGroup"
 									},
 									{
 										"key": "L",
 										"name": "Move buffer into right window",
+										"icon": "triangle-right",
 										"type": "command",
 										"command": "workbench.action.moveEditorToRightGroup"
 									},
 									{
 										"key": "M",
 										"name": "Close other buffers",
+										"icon": "close-all",
 										"type": "command",
 										"command": "workbench.action.closeOtherEditors"
 									},
 									{
 										"key": "P",
 										"name": "Paste clipboard to buffer",
+										"icon": "clippy",
 										"type": "commands",
 										"commands": [
 											"editor.action.selectAll",
@@ -421,23 +464,27 @@
 									{
 										"key": "T",
 										"name": "Unpin buffer",
+										"icon": "pinned",
 										"type": "command",
 										"command": "workbench.action.unpinEditor"
 									},
 									{
 										"key": "Y",
 										"name": "Copy buffer to clipboard",
+										"icon": "clippy",
 										"type": "command",
 										"command": "vspacecode.copyWholeBuffer"
 									},
 									{
 										"key": "N",
 										"name": "+New Buffer",
+										"icon": "file-add",
 										"type": "bindings",
 										"bindings": [
 											{
 												"key": "h",
 												"name": "New untitled buffer (split left)",
+												"icon": "arrow-small-left",
 												"type": "commands",
 												"commands": [
 													"workbench.action.splitEditorLeft",
@@ -448,6 +495,7 @@
 											{
 												"key": "j",
 												"name": "New untitled buffer (split down)",
+												"icon": "arrow-small-down",
 												"type": "commands",
 												"commands": [
 													"workbench.action.splitEditorDown",
@@ -458,6 +506,7 @@
 											{
 												"key": "k",
 												"name": "New untitled buffer (split up)",
+												"icon": "arrow-small-up",
 												"type": "commands",
 												"commands": [
 													"workbench.action.splitEditorUp",
@@ -468,6 +517,7 @@
 											{
 												"key": "l",
 												"name": "New untitled buffer (split right)",
+												"icon": "arrow-small-right",
 												"type": "commands",
 												"commands": [
 													"workbench.action.splitEditorRight",
@@ -478,6 +528,7 @@
 											{
 												"key": "n",
 												"name": "New untitled buffer",
+												"icon": "file-add",
 												"type": "command",
 												"command": "workbench.action.files.newUntitledFile"
 											}
@@ -488,29 +539,34 @@
 							{
 								"key": "c",
 								"name": "+Compile/Comments",
+								"icon": "gear",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "c",
 										"name": "Compile project",
+										"icon": "gear",
 										"type": "command",
 										"command": "workbench.action.tasks.build"
 									},
 									{
 										"key": "l",
 										"name": "Toggle line comment",
+										"icon": "comment",
 										"type": "command",
 										"command": "editor.action.commentLine"
 									},
 									{
 										"key": "n",
 										"name": "Next error",
+										"icon": "arrow-down",
 										"type": "command",
 										"command": "editor.action.marker.nextInFiles"
 									},
 									{
 										"key": "N",
 										"name": "Previous error",
+										"icon": "arrow-up",
 										"type": "command",
 										"command": "editor.action.marker.prevInFiles"
 									}
@@ -519,142 +575,166 @@
 							{
 								"key": "d",
 								"name": "+Debug",
+								"icon": "bug",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "c",
 										"name": "Continue debug",
+										"icon": "debug-continue",
 										"type": "command",
 										"command": "workbench.action.debug.continue"
 									},
 									{
 										"key": "d",
 										"name": "Start debug",
+										"icon": "debug-start",
 										"type": "command",
 										"command": "workbench.action.debug.start"
 									},
 									{
 										"key": "i",
 										"name": "Step into",
+										"icon": "debug-step-into",
 										"type": "command",
 										"command": "workbench.action.debug.stepInto"
 									},
 									{
 										"key": "j",
 										"name": "Jump to cursor",
+										"icon": "whole-word",
 										"type": "command",
 										"command": "debug.jumpToCursor"
 									},
 									{
 										"key": "o",
 										"name": "Step out",
+										"icon": "debug-step-out",
 										"type": "command",
 										"command": "workbench.action.debug.stepOut"
 									},
 									{
 										"key": "p",
 										"name": "Pause debug",
+										"icon": "debug-pause",
 										"type": "command",
 										"command": "workbench.action.debug.pause"
 									},
 									{
 										"key": "s",
 										"name": "Step over",
+										"icon": "debug-step-over",
 										"type": "command",
 										"command": "workbench.action.debug.stepOver"
 									},
 									{
 										"key": "v",
 										"name": "REPL",
+										"icon": "debug-console",
 										"type": "command",
 										"command": "workbench.debug.action.toggleRepl"
 									},
 									{
 										"key": "w",
 										"name": "Focus on watch window",
+										"icon": "eye-watch",
 										"type": "command",
 										"command": "workbench.debug.action.focusWatchView"
 									},
 									{
 										"key": "D",
 										"name": "Run without debugging",
+										"icon": "run",
 										"type": "command",
 										"command": "workbench.action.debug.run"
 									},
 									{
 										"key": "R",
 										"name": "Restart debug",
+										"icon": "debug-restart",
 										"type": "command",
 										"command": "workbench.action.debug.restart"
 									},
 									{
 										"key": "S",
 										"name": "Stop debug",
+										"icon": "debug-stop",
 										"type": "command",
 										"command": "workbench.action.debug.stop"
 									},
 									{
 										"key": "W",
 										"name": "Add to watch",
+										"icon": "watch-expressions-add",
 										"type": "command",
 										"command": "editor.debug.action.selectionToWatch"
 									},
 									{
 										"key": "b",
 										"name": "+Breakpoint",
+										"icon": "debug-breakpoint",
 										"type": "bindings",
 										"bindings": [
 											{
 												"key": "b",
 												"name": "Toggle breakpoint",
+												"icon": "activate-breakpoints",
 												"type": "command",
 												"command": "editor.debug.action.toggleBreakpoint"
 											},
 											{
 												"key": "c",
 												"name": "Add conditional breakpoint",
+												"icon": "debug-breakpoint-conditional",
 												"type": "command",
 												"command": "editor.debug.action.conditionalBreakpoint"
 											},
 											{
 												"key": "d",
 												"name": "Delete breakpoint",
+												"icon": "trash",
 												"type": "command",
 												"command": "debug.removeBreakpoint"
 											},
 											{
 												"key": "e",
 												"name": "Enable breakpoint",
+												"icon": "debug-breakpoint",
 												"type": "command",
 												"command": "debug.enableOrDisableBreakpoint"
 											},
 											{
 												"key": "f",
 												"name": "Add function breakpoint",
+												"icon": "debug-breakpoint-function",
 												"type": "command",
 												"command": "workbench.debug.viewlet.action.addFunctionBreakpointAction"
 											},
 											{
 												"key": "i",
 												"name": "Toggle inline breakpoint",
+												"icon": "activate-breakpoints",
 												"type": "command",
 												"command": "editor.debug.action.toggleInlineBreakpoint"
 											},
 											{
 												"key": "n",
 												"name": "Next breakpoint",
+												"icon": "arrow-down",
 												"type": "transient",
 												"command": "editor.debug.action.goToNextBreakpoint",
 												"bindings": [
 													{
 														"key": "n",
 														"name": "Next breakpoint",
+														"icon": "arrow-down",
 														"type": "command",
 														"command": "editor.debug.action.goToNextBreakpoint"
 													},
 													{
 														"key": "p",
 														"name": "Previous breakpoint",
+														"icon": "arrow-up",
 														"type": "command",
 														"command": "editor.debug.action.goToPreviousBreakpoint"
 													}
@@ -663,18 +743,21 @@
 											{
 												"key": "p",
 												"name": "Previous breakpoint",
+												"icon": "arrow-up",
 												"type": "transient",
 												"command": "editor.debug.action.goToPreviousBreakpoint",
 												"bindings": [
 													{
 														"key": "n",
 														"name": "Next breakpoint",
+														"icon": "arrow-down",
 														"type": "command",
 														"command": "editor.debug.action.goToNextBreakpoint"
 													},
 													{
 														"key": "p",
 														"name": "Previous breakpoint",
+														"icon": "arrow-up",
 														"type": "command",
 														"command": "editor.debug.action.goToPreviousBreakpoint"
 													}
@@ -683,24 +766,28 @@
 											{
 												"key": "s",
 												"name": "Disable breakpoint",
+												"icon": "debug-breakpoint-disabled",
 												"type": "command",
 												"command": "debug.enableOrDisableBreakpoint"
 											},
 											{
 												"key": "D",
 												"name": "Delete all breakpoints",
+												"icon": "trash",
 												"type": "command",
 												"command": "workbench.debug.viewlet.action.removeAllBreakpoints"
 											},
 											{
 												"key": "E",
 												"name": "Enable all breakpoints",
+												"icon": "expand-all",
 												"type": "command",
 												"command": "workbench.debug.viewlet.action.enableAllBreakpoints"
 											},
 											{
 												"key": "S",
 												"name": "Disable all breakpoints",
+												"icon": "collapse-all",
 												"type": "command",
 												"command": "workbench.debug.viewlet.action.disableAllBreakpoints"
 											}
@@ -711,28 +798,33 @@
 							{
 								"key": "e",
 								"name": "+Errors",
+								"icon": "error",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": ".",
 										"name": "Error transient",
+										"icon": "window",
 										"type": "transient",
 										"bindings": [
 											{
 												"key": "n",
 												"name": "Next error",
+												"icon": "arrow-down",
 												"type": "command",
 												"command": "editor.action.marker.nextInFiles"
 											},
 											{
 												"key": "p",
 												"name": "Previous error",
+												"icon": "arrow-up",
 												"type": "command",
 												"command": "editor.action.marker.prevInFiles"
 											},
 											{
 												"key": "N",
 												"name": "Previous error",
+												"icon": "arrow-up",
 												"type": "command",
 												"command": "editor.action.marker.prevInFiles"
 											}
@@ -741,24 +833,28 @@
 									{
 										"key": "l",
 										"name": "List errors",
+										"icon": "list-flat",
 										"type": "command",
 										"command": "workbench.actions.view.problems"
 									},
 									{
 										"key": "n",
 										"name": "Next error",
+										"icon": "arrow-down",
 										"type": "command",
 										"command": "editor.action.marker.nextInFiles"
 									},
 									{
 										"key": "p",
 										"name": "Previous error",
+										"icon": "arrow-up",
 										"type": "command",
 										"command": "editor.action.marker.prevInFiles"
 									},
 									{
 										"key": "N",
 										"name": "Previous error",
+										"icon": "arrow-up",
 										"type": "command",
 										"command": "editor.action.marker.prevInFiles"
 									}
@@ -767,47 +863,55 @@
 							{
 								"key": "f",
 								"name": "+File",
+								"icon": "file",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "f",
 										"name": "Open file/folder",
+										"icon": "folder-opened",
 										"type": "command",
 										"command": "file-browser.open"
 									},
 									{
 										"key": "l",
 										"name": "Change file language",
+										"icon": "code",
 										"type": "command",
 										"command": "workbench.action.editor.changeLanguageMode"
 									},
 									{
 										"key": "n",
 										"name": "New file",
+										"icon": "new-file",
 										"type": "command",
 										"command": "explorer.newFile"
 									},
 									{
 										"key": "o",
 										"name": "+Open with",
+										"icon": "file-code",
 										"type": "command",
 										"command": "explorer.openWith"
 									},
 									{
 										"key": "r",
 										"name": "+Open recent",
+										"icon": "clock",
 										"type": "command",
 										"command": "workbench.action.openRecent"
 									},
 									{
 										"key": "s",
 										"name": "Save file",
+										"icon": "save",
 										"type": "command",
 										"command": "workbench.action.files.save"
 									},
 									{
 										"key": "t",
 										"name": "Toggle tree/explorer view",
+										"icon": "list-tree",
 										"type": "conditional",
 										"bindings": [
 											{
@@ -827,12 +931,14 @@
 									{
 										"key": "w",
 										"name": "Open active in new window",
+										"icon": "window",
 										"type": "command",
 										"command": "workbench.action.files.showOpenedFileInNewWindow"
 									},
 									{
 										"key": "D",
 										"name": "Delete current file",
+										"icon": "trash",
 										"type": "commands",
 										"commands": [
 											"workbench.files.action.showActiveFileInExplorer",
@@ -842,12 +948,14 @@
 									{
 										"key": "L",
 										"name": "Locate file",
+										"icon": "file-symlink-directory",
 										"type": "command",
 										"command": "revealFileInOS"
 									},
 									{
 										"key": "R",
 										"name": "Rename file",
+										"icon": "edit",
 										"type": "commands",
 										"commands": [
 											"workbench.files.action.showActiveFileInExplorer",
@@ -857,65 +965,76 @@
 									{
 										"key": "S",
 										"name": "Save all files",
+										"icon": "save-all",
 										"type": "command",
 										"command": "workbench.action.files.saveAll"
 									},
 									{
 										"key": "T",
 										"name": "Show active file in tree/explorer view",
+										"icon": "list-tree",
 										"type": "command",
 										"command": "workbench.files.action.showActiveFileInExplorer"
 									},
 									{
 										"key": "e",
 										"name": "+Emacs/VSpaceCode",
+										"icon": "settings",
 										"type": "bindings",
 										"bindings": [
 											{
 												"key": "d",
 												"name": "Open settings",
+												"icon": "settings",
 												"type": "command",
 												"command": "workbench.action.openGlobalSettings"
 											},
 											{
 												"key": "k",
 												"name": "Open global key bindings",
+												"icon": "keyboard",
 												"type": "command",
 												"command": "workbench.action.openGlobalKeybindings"
 											},
 											{
 												"key": "l",
 												"name": "Open language settings",
+												"icon": "code",
 												"type": "command",
 												"command": "workbench.action.configureLanguageBasedSettings"
 											},
 											{
 												"key": "s",
 												"name": "Configure user snippets",
+												"icon": "symbol-snippet",
 												"type": "command",
 												"command": "workbench.action.openSnippets"
 											},
 											{
 												"key": "w",
 												"name": "Open workspace settings",
+												"icon": "settings-edit",
 												"type": "command",
 												"command": "workbench.action.openWorkspaceSettings"
 											},
 											{
 												"key": "D",
 												"name": "Open settings JSON",
+												"icon": "json",
 												"type": "command",
 												"command": "workbench.action.openSettingsJson"
 											},
 											{
 												"key": "K",
 												"name": "Open global key bindings JSON",
+												"icon": "json",
 												"type": "command",
 												"command": "workbench.action.openGlobalKeybindingsFile"
 											},
 											{
 												"key": "W",
 												"name": "Open workspace settings JSON",
+												"icon": "json",
 												"type": "command",
 												"command": "workbench.action.openWorkspaceSettingsFile"
 											}
@@ -924,6 +1043,7 @@
 									{
 										"key": "i",
 										"name": "+Indentation",
+										"icon": "arrow-right",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -967,6 +1087,7 @@
 									{
 										"key": "y",
 										"name": "+Yank",
+										"icon": "clippy",
 										"type": "bindings",
 										"bindings": [
 											{
@@ -1036,64 +1157,75 @@
 							{
 								"key": "g",
 								"name": "+Git",
+								"icon": "git-branch",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "b",
 										"name": "Blame file",
+										"icon": "file",
 										"type": "command",
 										"command": "magit.blame-file"
 									},
 									{
 										"key": "c",
 										"name": "Clone",
+										"icon": "repo-clone",
 										"type": "command",
 										"command": "git.clone"
 									},
 									{
 										"key": "i",
 										"name": "Initialize repository",
+										"icon": "repo-create",
 										"type": "command",
 										"command": "git.init"
 									},
 									{
 										"key": "m",
 										"name": "Magit dispatch",
+										"icon": "repo",
 										"type": "command",
 										"command": "magit.dispatch"
 									},
 									{
 										"key": "s",
 										"name": "Status",
+										"icon": "preview",
 										"type": "command",
 										"command": "magit.status"
 									},
 									{
 										"key": "S",
 										"name": "Stage file",
+										"icon": "file-add",
 										"type": "command",
 										"command": "magit.stage-file"
 									},
 									{
 										"key": "U",
 										"name": "Unstage file",
+										"icon": "file",
 										"type": "command",
 										"command": "magit.unstage-file"
 									},
 									{
 										"key": "f",
 										"name": "+File",
+										"icon": "file",
 										"type": "bindings",
 										"bindings": [
 											{
 												"key": "d",
 												"name": "Diff",
+												"icon": "diff",
 												"type": "command",
 												"command": "magit.diff-file"
 											},
 											{
 												"key": "l",
 												"name": "Show log/timeline",
+												"icon": "history",
 												"type": "command",
 												"command": "timeline.focus"
 											}
@@ -1104,35 +1236,41 @@
 							{
 								"key": "h",
 								"name": "+Help",
+								"icon": "question",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "d",
 										"name": "Open VSCode Documentation",
+										"icon": "book",
 										"type": "command",
 										"command": "workbench.action.openDocumentationUrl"
 									},
 									{
 										"key": "k",
 										"name": "Open global key bindings",
+										"icon": "keyboard",
 										"type": "command",
 										"command": "workbench.action.openGlobalKeybindings"
 									},
 									{
 										"key": "D",
 										"name": "Open VSpaceCode Documentation",
+										"icon": "book",
 										"type": "command",
 										"command": "vspacecode.openDocumentationUrl"
 									},
 									{
 										"key": "I",
 										"name": "Report VSCode Issue",
+										"icon": "issues",
 										"type": "command",
 										"command": "workbench.action.openIssueReporter"
 									},
 									{
 										"key": "T",
 										"name": "Open VSCode Tutorial",
+										"icon": "lightbulb",
 										"type": "command",
 										"command": "workbench.action.showInteractivePlayground"
 									}
@@ -1141,23 +1279,27 @@
 							{
 								"key": "i",
 								"name": "+Insert",
+								"icon": "add",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "j",
 										"name": "Insert line below",
+										"icon": "arrow-down",
 										"type": "command",
 										"command": "editor.action.insertLineAfter"
 									},
 									{
 										"key": "k",
 										"name": "Insert line above",
+										"icon": "arrow-up",
 										"type": "command",
 										"command": "editor.action.insertLineBefore"
 									},
 									{
 										"key": "s",
 										"name": "Insert snippet",
+										"icon": "symbol-snippet",
 										"type": "command",
 										"command": "editor.action.insertSnippet"
 									}
@@ -1166,35 +1308,41 @@
 							{
 								"key": "j",
 								"name": "+Jump/Join/Split",
+								"icon": "gather",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "+",
 										"name": "Format buffer",
+										"icon": "file",
 										"type": "command",
 										"command": "editor.action.formatDocument"
 									},
 									{
 										"key": "=",
 										"name": "Format region or buffer",
+										"icon": "list-flat",
 										"type": "command",
 										"command": "editor.action.format"
 									},
 									{
 										"key": "c",
 										"name": "Jump to previous change",
+										"icon": "arrow-up",
 										"type": "command",
 										"command": "workbench.action.editor.previousChange"
 									},
 									{
 										"key": "i",
 										"name": "Jump to symbol in buffer",
+										"icon": "symbol-class",
 										"type": "command",
 										"command": "workbench.action.gotoSymbol"
 									},
 									{
 										"key": "j",
 										"name": "Jump to character",
+										"icon": "case-sensitive",
 										"type": "command",
 										"command": "vim.remap",
 										"args": {
@@ -1208,6 +1356,7 @@
 									{
 										"key": "l",
 										"name": "Jump to line",
+										"icon": "list-flat",
 										"type": "command",
 										"command": "vim.remap",
 										"args": {
@@ -1225,18 +1374,21 @@
 									{
 										"key": "n",
 										"name": "Split new line",
+										"icon": "whitespace",
 										"type": "command",
 										"command": "lineBreakInsert"
 									},
 									{
 										"key": "v",
 										"name": "Jump to outline/variables",
+										"icon": "variable",
 										"type": "command",
 										"command": "breadcrumbs.focusAndSelect"
 									},
 									{
 										"key": "w",
 										"name": "Jump to word",
+										"icon": "symbol-keyword",
 										"type": "command",
 										"command": "vim.remap",
 										"args": {
@@ -1253,12 +1405,14 @@
 									{
 										"key": "C",
 										"name": "Jump to next change",
+										"icon": "arrow-down",
 										"type": "command",
 										"command": "workbench.action.editor.nextChange"
 									},
 									{
 										"key": "I",
 										"name": "Jump to symbol in workspace",
+										"icon": "project",
 										"type": "command",
 										"command": "workbench.action.showAllSymbols"
 									}
@@ -1267,11 +1421,13 @@
 							{
 								"key": "l",
 								"name": "+Layouts",
+								"icon": "editor-layout",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "d",
 										"name": "Close workspace",
+										"icon": "close-all",
 										"type": "command",
 										"command": "workbench.action.closeFolder"
 									}
@@ -1280,6 +1436,7 @@
 							{
 								"key": "m",
 								"name": "+Major",
+								"icon": "code",
 								"type": "conditional",
 								"bindings": [
 									{
@@ -1290,53 +1447,62 @@
 											{
 												"key": "!",
 												"name": "Disconnect from REPL",
+												"icon": "debug-disconnect",
 												"type": "command",
 												"command": "calva.disconnect"
 											},
 											{
 												"key": "\"",
 												"name": "Jack-in to REPL",
+												"icon": "repl",
 												"type": "command",
 												"command": "calva.jackIn"
 											},
 											{
 												"key": "'",
 												"name": "Connect to REPL",
+												"icon": "repl",
 												"type": "command",
 												"command": "calva.connect"
 											},
 											{
 												"key": ".",
 												"name": "Connect or jack-in",
+												"icon": "repl",
 												"type": "command",
 												"command": "calva.jackInOrConnect"
 											},
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format current form",
+														"icon": "list-selection",
 														"type": "command",
 														"command": "calva-fmt.formatCurrentForm"
 													},
 													{
 														"key": "a",
 														"name": "Align current form",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "calva-fmt.alignCurrentForm"
 													},
 													{
 														"key": "d",
 														"name": "Dedent line",
+														"icon": "arrow-left",
 														"type": "command",
 														"command": "calva-fmt.tabDedent"
 													},
 													{
 														"key": "i",
 														"name": "Indent line",
+														"icon": "arrow-right",
 														"type": "command",
 														"command": "calva-fmt.tabIndent"
 													}
@@ -1345,23 +1511,27 @@
 											{
 												"key": "d",
 												"name": "+Debug",
+												"icon": "bug",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "i",
 														"name": "Last evaluation results",
+														"icon": "chevron-right",
 														"type": "command",
 														"command": "calva.debug.instrument"
 													},
 													{
 														"key": "r",
 														"name": "Last evaluation results",
+														"icon": "chevron-right",
 														"type": "command",
 														"command": "calva.copyLastResults"
 													},
 													{
 														"key": "s",
 														"name": "Last stacktrace",
+														"icon": "debug-stackframe",
 														"type": "command",
 														"command": "calva.printLastStacktrace"
 													}
@@ -1370,6 +1540,7 @@
 											{
 												"key": "e",
 												"name": "+Evaluate",
+												"icon": "chevron-right",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -1437,6 +1608,7 @@
 											{
 												"key": "k",
 												"name": "+Structural editing",
+												"icon": "symbol-struct",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -1589,6 +1761,7 @@
 											{
 												"key": "m",
 												"name": "+Manage REPL session",
+												"icon": "repl",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -1650,6 +1823,7 @@
 											{
 												"key": "r",
 												"name": "+Refactor",
+												"icon": "edit",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -1783,29 +1957,34 @@
 											{
 												"key": "t",
 												"name": "+Tests",
+												"icon": "beaker",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "a",
 														"name": "Run all tests",
+														"icon": "beaker",
 														"type": "command",
 														"command": "calva.runAllTests"
 													},
 													{
 														"key": "f",
 														"name": "Run failing tests",
+														"icon": "close",
 														"type": "command",
 														"command": "calva.rerunTests"
 													},
 													{
 														"key": "n",
 														"name": "Run tests in current namespace",
+														"icon": "symbol-namespace",
 														"type": "command",
 														"command": "calva.runNamespaceTests"
 													},
 													{
 														"key": "t",
 														"name": "Run current test",
+														"icon": "whole-word",
 														"type": "command",
 														"command": "calva.runTestUnderCursor"
 													}
@@ -1814,6 +1993,7 @@
 											{
 												"key": "T",
 												"name": "+Toggle",
+												"icon": "settings",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -1834,41 +2014,48 @@
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format region or buffer",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "editor.action.format"
 													},
 													{
 														"key": "b",
 														"name": "Format buffer",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
 														"key": "c",
 														"name": "Format changes",
+														"icon": "diff",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
 													{
 														"key": "s",
 														"name": "Format selection",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													},
 													{
 														"key": "B",
 														"name": "Format buffer with formatter",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument.multiple"
 													},
 													{
 														"key": "S",
 														"name": "Format selection with formatter",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -1877,17 +2064,20 @@
 											{
 												"key": "b",
 												"name": "+Backend",
+												"icon": "circuit-board",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "Reset Database",
+														"icon": "database",
 														"type": "command",
 														"command": "C_Cpp.ResetDatabase"
 													},
 													{
 														"key": "w",
 														"name": "Rescan Workspace",
+														"icon": "project",
 														"type": "command",
 														"command": "C_Cpp.RescanWorkspace"
 													}
@@ -1896,65 +2086,76 @@
 											{
 												"key": "g",
 												"name": "+Go to",
+												"icon": "go-to-file",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "a",
 														"name": "Switch Header/Source",
+														"icon": "files",
 														"type": "command",
 														"command": "C_Cpp.SwitchHeaderSource"
 													},
 													{
 														"key": "d",
 														"name": "Go to declaration",
+														"icon": "symbol-struct",
 														"type": "command",
 														"command": "editor.action.revealDeclaration"
 													},
 													{
 														"key": "e",
 														"name": "Go to errors/problems",
+														"icon": "error",
 														"type": "command",
 														"command": "workbench.actions.view.problems"
 													},
 													{
 														"key": "f",
 														"name": "Go to file in explorer",
+														"icon": "file",
 														"type": "command",
 														"command": "workbench.files.action.showActiveFileInExplorer"
 													},
 													{
 														"key": "g",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "r",
 														"name": "Peek references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "editor.action.referencesSearch.trigger"
 													},
 													{
 														"key": "s",
 														"name": "Go to symbol in editor",
+														"icon": "symbol-class",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
 													},
 													{
 														"key": "D",
 														"name": "Peek declaration",
+														"icon": "symbol-struct",
 														"type": "command",
 														"command": "editor.action.peekDeclaration"
 													},
 													{
 														"key": "G",
 														"name": "Peek definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.peekDefinition"
 													},
 													{
 														"key": "R",
 														"name": "Find all references",
+														"icon": "references",
 														"type": "command",
 														"command": "references-view.findReferences"
 													}
@@ -1963,11 +2164,13 @@
 											{
 												"key": "r",
 												"name": "+Refactor",
+												"icon": "edit",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "r",
 														"name": "Rename Symbol",
+														"icon": "symbol-keyword",
 														"type": "command",
 														"command": "editor.action.rename"
 													}
@@ -1983,41 +2186,48 @@
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format region or buffer",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "editor.action.format"
 													},
 													{
 														"key": "b",
 														"name": "Format buffer",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
 														"key": "c",
 														"name": "Format changes",
+														"icon": "diff",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
 													{
 														"key": "s",
 														"name": "Format selection",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													},
 													{
 														"key": "B",
 														"name": "+Format buffer with formatter",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument.multiple"
 													},
 													{
 														"key": "S",
 														"name": "+Format selection with formatter",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -2026,23 +2236,27 @@
 											{
 												"key": "b",
 												"name": "+Backend/OmniSharp",
+												"icon": "circuit-board",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "o",
 														"name": "Show output",
+														"icon": "output",
 														"type": "command",
 														"command": "o.showOutput"
 													},
 													{
 														"key": "r",
 														"name": "Restart OmniSharp",
+														"icon": "server-process",
 														"type": "command",
 														"command": "o.restart"
 													},
 													{
 														"key": "s",
 														"name": "Select a project and start",
+														"icon": "project",
 														"type": "command",
 														"command": "o.pickProjectAndStart"
 													}
@@ -2051,17 +2265,20 @@
 											{
 												"key": "d",
 												"name": "+Debug",
+												"icon": "bug",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "l",
 														"name": "List process for attach",
+														"icon": "server-process",
 														"type": "command",
 														"command": "csharp.listProcess"
 													},
 													{
 														"key": "L",
 														"name": "List remote processes for attach",
+														"icon": "remote",
 														"type": "command",
 														"command": "csharp.listRemoteProcess"
 													}
@@ -2070,53 +2287,62 @@
 											{
 												"key": "g",
 												"name": "+Go to",
+												"icon": "go-to-file",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "e",
 														"name": "Go to errors/problems",
+														"icon": "error",
 														"type": "command",
 														"command": "workbench.action.problems.focus"
 													},
 													{
 														"key": "g",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "i",
 														"name": "Go to implementations",
+														"icon": "symbol-module",
 														"type": "command",
 														"command": "editor.action.goToImplementation"
 													},
 													{
 														"key": "r",
 														"name": "Peek references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "editor.action.referenceSearch.trigger"
 													},
 													{
 														"key": "D",
 														"name": "Peek definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.peekDefinition"
 													},
 													{
 														"key": "I",
 														"name": "Find all implementation",
+														"icon": "symbol-module",
 														"type": "command",
 														"command": "references-view.findImplementations"
 													},
 													{
 														"key": "R",
 														"name": "Find all references",
+														"icon": "references",
 														"type": "command",
 														"command": "references-view.findReferences"
 													}
@@ -2125,17 +2351,20 @@
 											{
 												"key": "p",
 												"name": "+Project",
+												"icon": "project",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "r",
 														"name": "Restore project",
+														"icon": "clock",
 														"type": "command",
 														"command": "dotnet.restore.project"
 													},
 													{
 														"key": "R",
 														"name": "Restore all projects",
+														"icon": "clock",
 														"type": "command",
 														"command": "dotnet.restore.all"
 													}
@@ -2144,17 +2373,20 @@
 											{
 												"key": "r",
 												"name": "+Refactor",
+												"icon": "edit",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": ".",
 														"name": "Quick fix",
+														"icon": "lightbulb-autofix",
 														"type": "command",
 														"command": "editor.action.quickFix"
 													},
 													{
 														"key": "r",
 														"name": "Rename symbol",
+														"icon": "symbol-keyword",
 														"type": "command",
 														"command": "editor.action.rename"
 													}
@@ -2163,17 +2395,20 @@
 											{
 												"key": "t",
 												"name": "+Test",
+												"icon": "beaker",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "Debug test under cursor",
+														"icon": "testing-debug-icon",
 														"type": "command",
 														"command": "dotnet.test.debugTestsInContext"
 													},
 													{
 														"key": "t",
 														"name": "Run test under cursor",
+														"icon": "testing-run-icon",
 														"type": "command",
 														"command": "dotnet.test.runTestsInContext"
 													}
@@ -2189,41 +2424,48 @@
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format region or buffer",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "editor.action.format"
 													},
 													{
 														"key": "b",
 														"name": "Format buffer",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
 														"key": "c",
 														"name": "Format changes",
+														"icon": "diff",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
 													{
 														"key": "s",
 														"name": "Format selection",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													},
 													{
 														"key": "B",
 														"name": "+Format buffer with formatter",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument.multiple"
 													},
 													{
 														"key": "S",
 														"name": "+Format selection with formatter",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -2232,6 +2474,7 @@
 											{
 												"key": "c",
 												"name": "+Compile",
+												"icon": "gear",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2281,65 +2524,76 @@
 											{
 												"key": "g",
 												"name": "+Go to",
+												"icon": "go-to-file",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "e",
 														"name": "Go to errors/problems",
+														"icon": "error",
 														"type": "command",
 														"command": "workbench.action.problems.focus"
 													},
 													{
 														"key": "g",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "i",
 														"name": "Find symbol in file",
+														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
 													},
 													{
 														"key": "r",
 														"name": "Peek references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "editor.action.referenceSearch.trigger"
 													},
 													{
 														"key": "t",
 														"name": "Go to type definition",
+														"icon": "symbol-struct",
 														"type": "command",
 														"command": "editor.action.goToTypeDefinition"
 													},
 													{
 														"key": "D",
 														"name": "Peek definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.peekDefinition"
 													},
 													{
 														"key": "I",
 														"name": "Find symbol in project",
+														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
 													},
 													{
 														"key": "R",
 														"name": "Find all references",
+														"icon": "references",
 														"type": "command",
 														"command": "references-view.findReferences"
 													},
 													{
 														"key": "T",
 														"name": "Peek type definition",
+														"icon": "symbol-struct",
 														"type": "command",
 														"command": "editor.action.peekTypeDefinition"
 													}
@@ -2348,11 +2602,13 @@
 											{
 												"key": "r",
 												"name": "+Refactor",
+												"icon": "edit",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "r",
 														"name": "Rename symbol",
+														"icon": "symbol-keyword",
 														"type": "command",
 														"command": "editor.action.rename"
 													}
@@ -2361,6 +2617,7 @@
 											{
 												"key": "s",
 												"name": "+FSI REPL",
+												"icon": "repl",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -2417,47 +2674,55 @@
 											{
 												"key": " ",
 												"name": "Show all commands",
+												"icon": "rocket",
 												"type": "command",
 												"command": "go.show.commands"
 											},
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format region or buffer",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "editor.action.format"
 													},
 													{
 														"key": "b",
 														"name": "Format buffer",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
 														"key": "c",
 														"name": "Format changes",
+														"icon": "diff",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
 													{
 														"key": "s",
 														"name": "Format selection",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													},
 													{
 														"key": "B",
 														"name": "+Format buffer with formatter",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument.multiple"
 													},
 													{
 														"key": "S",
 														"name": "+Format selection with formatter",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -2466,52 +2731,61 @@
 											{
 												"key": "a",
 												"name": "+Actions",
+												"icon": "zap",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "P",
 														"name": "Run code on Go Playground",
+														"icon": "squirrel",
 														"type": "command",
 														"command": "go.playground"
 													},
 													{
 														"key": "p",
 														"name": "+Package actions",
+														"icon": "package",
 														"type": "bindings",
 														"bindings": [
 															{
 																"key": "b",
 																"name": "Build package",
+																"icon": "gear",
 																"type": "command",
 																"command": "go.build.package"
 															},
 															{
 																"key": "g",
 																"name": "Get package",
+																"icon": "cloud-download",
 																"type": "command",
 																"command": "go.get.package"
 															},
 															{
 																"key": "i",
 																"name": "Install current package",
+																"icon": "package",
 																"type": "command",
 																"command": "go.install.package"
 															},
 															{
 																"key": "l",
 																"name": "Lint package",
+																"icon": "warning",
 																"type": "command",
 																"command": "go.lint.package"
 															},
 															{
 																"key": "s",
 																"name": "Browse packages",
+																"icon": "search",
 																"type": "command",
 																"command": "go.browse.packages"
 															},
 															{
 																"key": "v",
 																"name": "Vet package",
+																"icon": "dashboard",
 																"type": "command",
 																"command": "go.vet.package"
 															}
@@ -2520,29 +2794,34 @@
 													{
 														"key": "w",
 														"name": "+Workspace actions",
+														"icon": "project",
 														"type": "bindings",
 														"bindings": [
 															{
 																"key": "b",
 																"name": "Build workspace",
+																"icon": "gear",
 																"type": "command",
 																"command": "go.build.workspace"
 															},
 															{
 																"key": "l",
 																"name": "Lint workspace",
+																"icon": "warning",
 																"type": "command",
 																"command": "go.lint.workspace"
 															},
 															{
 																"key": "p",
 																"name": "Add package to workspace",
+																"icon": "add",
 																"type": "command",
 																"command": "go.add.package.workspace"
 															},
 															{
 																"key": "v",
 																"name": "Vet workspace",
+																"icon": "dashboard",
 																"type": "command",
 																"command": "go.vet.workspace"
 															}
@@ -2553,35 +2832,41 @@
 											{
 												"key": "b",
 												"name": "+Backend/environment",
+												"icon": "circuit-board",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "e",
 														"name": "Choose Go environment",
+														"icon": "package",
 														"type": "command",
 														"command": "go.environment.choose"
 													},
 													{
 														"key": "g",
 														"name": "Show current GOPATH",
+														"icon": "file-submodule",
 														"type": "command",
 														"command": "go.gopath"
 													},
 													{
 														"key": "i",
 														"name": "Install/update tools",
+														"icon": "cloud-download",
 														"type": "command",
 														"command": "go.tools.install"
 													},
 													{
 														"key": "l",
 														"name": "Locate configured Go tools",
+														"icon": "tools",
 														"type": "command",
 														"command": "go.locate.tools"
 													},
 													{
 														"key": "R",
 														"name": "Restart language server",
+														"icon": "server-process",
 														"type": "command",
 														"command": "go.languageserver.restart"
 													}
@@ -2590,71 +2875,83 @@
 											{
 												"key": "g",
 												"name": "+Go to",
+												"icon": "go-to-file",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "e",
 														"name": "Go to errors/problems",
+														"icon": "error",
 														"type": "command",
 														"command": "workbench.action.problems.focus"
 													},
 													{
 														"key": "g",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "i",
 														"name": "Find symbol in file",
+														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
 													},
 													{
 														"key": "m",
 														"name": "Go to method in file",
+														"icon": "symbol-method",
 														"type": "command",
 														"command": "workbench.action.gotoMethod"
 													},
 													{
 														"key": "r",
 														"name": "Peek references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "editor.action.referenceSearch.trigger"
 													},
 													{
 														"key": "t",
 														"name": "Go to type definition",
+														"icon": "symbol-struct",
 														"type": "command",
 														"command": "editor.action.goToTypeDefinition"
 													},
 													{
 														"key": "D",
 														"name": "Peek definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.peekDefinition"
 													},
 													{
 														"key": "I",
 														"name": "Find symbol in project",
+														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
 													},
 													{
 														"key": "R",
 														"name": "Find all references",
+														"icon": "references",
 														"type": "command",
 														"command": "references-view.findReferences"
 													},
 													{
 														"key": "T",
 														"name": "Peek type definition",
+														"icon": "symbol-struct",
 														"type": "command",
 														"command": "editor.action.peekTypeDefinition"
 													}
@@ -2663,35 +2960,41 @@
 											{
 												"key": "i",
 												"name": "+Insert/remove",
+												"icon": "add",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "f",
 														"name": "Fill struct",
+														"icon": "symbol-struct",
 														"type": "command",
 														"command": "go.fill.struct"
 													},
 													{
 														"key": "i",
 														"name": "Add import",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "go.import.add"
 													},
 													{
 														"key": "t",
 														"name": "Add tags to struct fields",
+														"icon": "add",
 														"type": "command",
 														"command": "go.add.tags"
 													},
 													{
 														"key": "I",
 														"name": "Generate interface stubs",
+														"icon": "symbol-interface",
 														"type": "command",
 														"command": "go.impl.cursor"
 													},
 													{
 														"key": "T",
 														"name": "Remove tags from struct fields",
+														"icon": "remove",
 														"type": "command",
 														"command": "go.remove.tags"
 													}
@@ -2700,17 +3003,20 @@
 											{
 												"key": "r",
 												"name": "+Refactor",
+												"icon": "edit",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": ".",
 														"name": "Quick fix",
+														"icon": "lightbulb-autofix",
 														"type": "command",
 														"command": "editor.action.quickFix"
 													},
 													{
 														"key": "e",
 														"name": "Extract to function or variable",
+														"icon": "gather",
 														"type": "command",
 														"command": "editor.action.codeAction",
 														"args": {
@@ -2720,6 +3026,7 @@
 													{
 														"key": "r",
 														"name": "Rename symbol",
+														"icon": "symbol-keyword",
 														"type": "command",
 														"command": "editor.action.rename"
 													}
@@ -2728,82 +3035,96 @@
 											{
 												"key": "t",
 												"name": "+Test",
+												"icon": "beaker",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "c",
-														"name": "Cancel running tets",
+														"name": "Cancel running tests",
+														"icon": "close",
 														"type": "command",
 														"command": "go.test.cancel"
 													},
 													{
 														"key": "d",
 														"name": "Debug test at cursor",
+														"icon": "bug",
 														"type": "command",
 														"command": "go.debug.cursor"
 													},
 													{
 														"key": "f",
 														"name": "Test function at cursor",
+														"icon": "whole-word",
 														"type": "command",
 														"command": "go.test.cursor"
 													},
 													{
 														"key": "l",
 														"name": "Test previous",
+														"icon": "clock",
 														"type": "command",
 														"command": "go.test.previous"
 													},
 													{
 														"key": "p",
 														"name": "Test package",
+														"icon": "package",
 														"type": "command",
 														"command": "go.test.package"
 													},
 													{
 														"key": "s",
 														"name": "Subtest at cursor",
+														"icon": "whole-word",
 														"type": "command",
 														"command": "go.subtest.cursor"
 													},
 													{
 														"key": "w",
 														"name": "Test packages in workspace",
+														"icon": "project",
 														"type": "command",
 														"command": "go.test.workspace"
 													},
 													{
 														"key": "F",
 														"name": "Test file",
+														"icon": "file",
 														"type": "command",
 														"command": "go.test.file"
 													},
 													{
 														"key": "P",
 														"name": "Apply cover profile",
+														"icon": "jersey",
 														"type": "command",
 														"command": "go.apply.coverprofile"
 													},
 													{
 														"key": "b",
 														"name": "+Benchmarks",
+														"icon": "dashboard",
 														"type": "bindings",
 														"bindings": [
 															{
 																"key": "f",
 																"name": "Benchmark function at cursor",
+																"icon": "whole-word",
 																"type": "command",
 																"command": "go.benchmark.cursor"
 															},
 															{
 																"key": "p",
 																"name": "Benchmark package",
+																"icon": "package",
 																"type": "command",
 																"command": "go.benchmark.package"
 															},
 															{
 																"key": "F",
 																"name": "Benchmark file",
+																"icon": "file",
 																"type": "command",
 																"command": "go.benchmark.file"
 															}
@@ -2812,23 +3133,27 @@
 													{
 														"key": "g",
 														"name": "+Generate",
+														"icon": "gear",
 														"type": "bindings",
 														"bindings": [
 															{
 																"key": "f",
 																"name": "Generate unit tests for function",
+																"icon": "symbol-function",
 																"type": "command",
 																"command": "go.test.generate.function"
 															},
 															{
 																"key": "p",
 																"name": "Generate unit tests for package",
+																"icon": "package",
 																"type": "command",
 																"command": "go.test.generate.package"
 															},
 															{
 																"key": "F",
 																"name": "Generate unit tests for file",
+																"icon": "file",
 																"type": "command",
 																"command": "go.test.generate.file"
 															}
@@ -2837,17 +3162,20 @@
 													{
 														"key": "t",
 														"name": "+Toggle",
+														"icon": "settings",
 														"type": "bindings",
 														"bindings": [
 															{
 																"key": "c",
 																"name": "Toggle test coverage in current package",
+																"icon": "package",
 																"type": "command",
 																"command": "go.test.coverage"
 															},
 															{
 																"key": "f",
 																"name": "Toggle open test file",
+																"icon": "file",
 																"type": "command",
 																"command": "go.toggle.test.file"
 															}
@@ -2865,29 +3193,34 @@
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format region or buffer",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "editor.action.format"
 													},
 													{
 														"key": "b",
 														"name": "Format buffer",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
 														"key": "c",
 														"name": "Format changes",
+														"icon": "diff",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
 													{
 														"key": "s",
 														"name": "Format selection",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													}
@@ -2896,29 +3229,34 @@
 											{
 												"key": "b",
 												"name": "+Backend",
+												"icon": "circuit-board",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "l",
 														"name": "View Workshop Messages",
+														"icon": "output",
 														"type": "command",
 														"command": "latex-workshop.log"
 													},
 													{
 														"key": "m",
 														"name": "Insert root magic comment",
+														"icon": "comment",
 														"type": "command",
 														"command": "latex-workshop.addtexroot"
 													},
 													{
 														"key": "s",
 														"name": "Select the current environment name",
+														"icon": "package",
 														"type": "command",
 														"command": "latex-workshop.select-envname"
 													},
 													{
 														"key": "S",
 														"name": "Select the current environment content",
+														"icon": "package",
 														"type": "command",
 														"command": "latex-workshop.select-envcontent"
 													}
@@ -2927,41 +3265,48 @@
 											{
 												"key": "c",
 												"name": "+Build",
+												"icon": "gear",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "c",
 														"name": "Build Project",
+														"icon": "project",
 														"type": "command",
 														"command": "latex-workshop.build"
 													},
 													{
 														"key": "i",
 														"name": "Show compilation info",
+														"icon": "info",
 														"type": "command",
 														"command": "latex-workshop.showCompilationPanel"
 													},
 													{
 														"key": "k",
 														"name": "Kill compiler process",
+														"icon": "stop",
 														"type": "command",
 														"command": "latex-workshop.kill"
 													},
 													{
 														"key": "l",
 														"name": "Clean up auxiliary files",
+														"icon": "trash",
 														"type": "command",
 														"command": "latex-workshop.clean"
 													},
 													{
 														"key": "l",
 														"name": "View compiler logs",
+														"icon": "output",
 														"type": "command",
 														"command": "latex-workshop.compilerlog"
 													},
 													{
 														"key": "r",
 														"name": "Build with recipe",
+														"icon": "heart",
 														"type": "command",
 														"command": "latex-workshop.recipes"
 													}
@@ -2970,11 +3315,13 @@
 											{
 												"key": "g",
 												"name": "+Goto",
+												"icon": "go-to-file",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "e",
 														"name": "Navigate to matching begin/end pair",
+														"icon": "arrow-both",
 														"type": "command",
 														"command": "latex-workshop.navigate-envpair"
 													}
@@ -2983,23 +3330,27 @@
 											{
 												"key": "i",
 												"name": "+Insert",
+												"icon": "add",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "e",
 														"name": "Close current environment",
+														"icon": "close",
 														"type": "command",
 														"command": "latex-workshop.close-env"
 													},
 													{
 														"key": "i",
 														"name": "item",
+														"icon": "list-unordered",
 														"type": "command",
 														"command": "latex-workshop.shortcut.item"
 													},
 													{
 														"key": "w",
 														"name": "Surround/wrap selection with begin/end",
+														"icon": "selection",
 														"type": "command",
 														"command": "latex-workshop.wrap-env"
 													}
@@ -3008,23 +3359,27 @@
 											{
 												"key": "l",
 												"name": "+Bibtex",
+												"icon": "book",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "a",
 														"name": "Align",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "latex-workshop.bibalign"
 													},
 													{
 														"key": "s",
 														"name": "Sort",
+														"icon": "selection",
 														"type": "command",
 														"command": "latex-workshop.bibsort"
 													},
 													{
 														"key": "S",
 														"name": "Sort & Align",
+														"icon": "list-tree",
 														"type": "command",
 														"command": "latex-workshop.bibalignsort"
 													}
@@ -3033,29 +3388,34 @@
 											{
 												"key": "p",
 												"name": "+Preview",
+												"icon": "open-preview",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "View Document",
+														"icon": "preview",
 														"type": "command",
 														"command": "latex-workshop.view"
 													},
 													{
 														"key": "m",
-														"name": "Toggle Match Preview Panel",
+														"name": "Toggle Math Preview Panel",
+														"icon": "symbol-operator",
 														"type": "command",
 														"command": "latex-workshop.toggleMathPreviewPanel"
 													},
 													{
 														"key": "p",
 														"name": "SyncTeX from cursor",
+														"icon": "open-preview",
 														"type": "command",
 														"command": "latex-workshop.synctex"
 													},
 													{
 														"key": "r",
 														"name": "Refresh all viewers",
+														"icon": "refresh",
 														"type": "command",
 														"command": "latex-workshop.refresh-viewer"
 													}
@@ -3064,100 +3424,117 @@
 											{
 												"key": "x",
 												"name": "+Text",
+												"icon": "symbol-text",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "b",
 														"name": "Bold",
+														"icon": "bold",
 														"type": "command",
 														"command": "latex-workshop.shortcut.textbf"
 													},
 													{
 														"key": "c",
 														"name": "Small Caps",
+														"icon": "preserve-case",
 														"type": "command",
 														"command": "latex-workshop.shortcut.textsc"
 													},
 													{
 														"key": "e",
 														"name": "Emphasis",
+														"icon": "eye",
 														"type": "command",
 														"command": "latex-workshop.shortcut.emph"
 													},
 													{
 														"key": "f",
 														"name": "Sans Serif",
+														"icon": "text-size",
 														"type": "command",
 														"command": "latex-workshop.shortcut.textsf"
 													},
 													{
 														"key": "i",
 														"name": "Italic",
+														"icon": "italic",
 														"type": "command",
 														"command": "latex-workshop.shortcut.textit"
 													},
 													{
 														"key": "n",
 														"name": "Normal",
+														"icon": "symbol-text",
 														"type": "command",
 														"command": "latex-workshop.shortcut.textnormal"
 													},
 													{
 														"key": "r",
 														"name": "Roman",
+														"icon": "symbol-text",
 														"type": "command",
 														"command": "latex-workshop.shortcut.textrm"
 													},
 													{
 														"key": "t",
 														"name": "Terminal",
+														"icon": "chevron-right",
 														"type": "command",
 														"command": "latex-workshop.shortcut.texttt"
 													},
 													{
 														"key": "u",
 														"name": "Underline",
+														"icon": "remove",
 														"type": "command",
 														"command": "latex-workshop.shortcut.underline"
 													},
 													{
 														"key": "m",
 														"name": "+Math Fonts",
+														"icon": "symbol-operator",
 														"type": "bindings",
 														"bindings": [
 															{
 																"key": "a",
 																"name": "Calligraphic",
+																"icon": "edit",
 																"type": "command",
 																"command": "latex-workshop.shortcut.mathcal"
 															},
 															{
 																"key": "b",
 																"name": "Bold",
+																"icon": "bold",
 																"type": "command",
 																"command": "latex-workshop.shortcut.mathbf"
 															},
 															{
 																"key": "f",
 																"name": "Sans Serif",
+																"icon": "text-size",
 																"type": "command",
 																"command": "latex-workshop.shortcut.mathsf"
 															},
 															{
 																"key": "i",
 																"name": "Italic",
+																"icon": "italic",
 																"type": "command",
 																"command": "latex-workshop.shortcut.mathit"
 															},
 															{
 																"key": "r",
 																"name": "Roman",
+																"icon": "symbol-text",
 																"type": "command",
 																"command": "latex-workshop.shortcut.mathrm"
 															},
 															{
 																"key": "t",
 																"name": "Terminal",
+																"icon": "chevron-right",
 																"type": "command",
 																"command": "latex-workshop.shortcut.mathtt"
 															}
@@ -3175,23 +3552,27 @@
 											{
 												"key": "c",
 												"name": "+Buffer commands",
+												"icon": "file",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "e",
 														"name": "Export to HTML",
+														"icon": "file-code",
 														"type": "command",
 														"command": "markdown.extension.printToHtml"
 													},
 													{
 														"key": "p",
 														"name": "Open preview to the side",
+														"icon": "open-preview",
 														"type": "command",
 														"command": "markdown.showPreviewToSide"
 													},
 													{
 														"key": "P",
 														"name": "Open preview in current group",
+														"icon": "preview",
 														"type": "command",
 														"command": "markdown.showPreview"
 													}
@@ -3200,29 +3581,34 @@
 											{
 												"key": "t",
 												"name": "+Table of Contents",
+												"icon": "list-tree",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "c",
 														"name": "Create Table of Contents",
+														"icon": "list-tree",
 														"type": "command",
 														"command": "markdown.extension.toc.create"
 													},
 													{
 														"key": "n",
 														"name": "Add section numbers",
+														"icon": "list-ordered",
 														"type": "command",
 														"command": "markdown.extension.toc.addSecNumbers"
 													},
 													{
 														"key": "u",
 														"name": "Update Table of Contents",
+														"icon": "refresh",
 														"type": "command",
 														"command": "markdown.extension.toc.update"
 													},
 													{
 														"key": "N",
 														"name": "Remove section numbers",
+														"icon": "list-unordered",
 														"type": "command",
 														"command": "markdown.extension.toc.removeSecNumbers"
 													}
@@ -3231,23 +3617,27 @@
 											{
 												"key": "x",
 												"name": "+Text",
+												"icon": "symbol-text",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "[",
 														"name": "Decrease Heading level",
+														"icon": "chevron-left",
 														"type": "transient",
 														"command": "markdown.extension.editing.toggleHeadingDown",
 														"bindings": [
 															{
 																"key": "[",
 																"name": "Decrease Heading level",
+																"icon": "chevron-left",
 																"type": "command",
 																"command": "markdown.extension.editing.toggleHeadingDown"
 															},
 															{
 																"key": "]",
 																"name": "Increase Heading level",
+																"icon": "chevron-right",
 																"type": "command",
 																"command": "markdown.extension.editing.toggleHeadingUp"
 															}
@@ -3256,18 +3646,21 @@
 													{
 														"key": "]",
 														"name": "Increase Heading level",
+														"icon": "chevron-right",
 														"type": "transient",
 														"command": "markdown.extension.editing.toggleHeadingUp",
 														"bindings": [
 															{
 																"key": "[",
 																"name": "Decrease Heading level",
+																"icon": "chevron-left",
 																"type": "command",
 																"command": "markdown.extension.editing.toggleHeadingDown"
 															},
 															{
 																"key": "]",
 																"name": "Increase Heading level",
+																"icon": "chevron-right",
 																"type": "command",
 																"command": "markdown.extension.editing.toggleHeadingUp"
 															}
@@ -3276,42 +3669,49 @@
 													{
 														"key": "`",
 														"name": "Toggle inline code",
+														"icon": "code",
 														"type": "command",
 														"command": "markdown.extension.editing.toggleCodeSpan"
 													},
 													{
 														"key": "b",
 														"name": "Toggle bold",
+														"icon": "bold",
 														"type": "command",
 														"command": "markdown.extension.editing.toggleBold"
 													},
 													{
 														"key": "i",
 														"name": "Toggle italic",
+														"icon": "italic",
 														"type": "command",
 														"command": "markdown.extension.editing.toggleItalic"
 													},
 													{
 														"key": "l",
 														"name": "Toggle list",
+														"icon": "list-unordered",
 														"type": "command",
 														"command": "markdown.extension.editing.toggleList"
 													},
 													{
 														"key": "m",
 														"name": "Toggle math",
+														"icon": "symbol-operator",
 														"type": "command",
 														"command": "markdown.extension.editing.toggleMath"
 													},
 													{
 														"key": "s",
 														"name": "Toggle strikethrough",
+														"icon": "remove",
 														"type": "command",
 														"command": "markdown.extension.editing.toggleStrikethrough"
 													},
 													{
 														"key": "~",
 														"name": "Toggle code block",
+														"icon": "file-code",
 														"type": "command",
 														"command": "markdown.extension.editing.toggleCodeBlock"
 													}
@@ -3327,47 +3727,55 @@
 											{
 												"key": "v",
 												"name": "+Virtualenv",
+												"icon": "package",
 												"type": "command",
 												"command": "python.setInterpreter"
 											},
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format region or buffer",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "editor.action.format"
 													},
 													{
 														"key": "b",
 														"name": "Format buffer",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
 														"key": "c",
 														"name": "Format changes",
+														"icon": "diff",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
 													{
 														"key": "s",
 														"name": "Format selection",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													},
 													{
 														"key": "B",
 														"name": "+Format buffer with formatter",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument.multiple"
 													},
 													{
 														"key": "S",
 														"name": "+Format selection with formatter",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -3376,17 +3784,20 @@
 											{
 												"key": "b",
 												"name": "+Backend",
+												"icon": "circuit-board",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "o",
 														"name": "Show LSP output",
+														"icon": "output",
 														"type": "command",
 														"command": "python.viewLanguageServerOutput"
 													},
 													{
 														"key": "r",
 														"name": "Restart LSP",
+														"icon": "server-process",
 														"type": "command",
 														"command": "python.analysis.restartLanguageServer"
 													}
@@ -3395,17 +3806,20 @@
 											{
 												"key": "c",
 												"name": "+Execute",
+												"icon": "play",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "c",
 														"name": "Execute file in terminal",
+														"icon": "terminal",
 														"type": "command",
 														"command": "python.execInTerminal"
 													},
 													{
 														"key": "C",
 														"name": "Execute file in terminal",
+														"icon": "terminal",
 														"type": "command",
 														"command": "python.execInTerminal"
 													}
@@ -3414,53 +3828,62 @@
 											{
 												"key": "g",
 												"name": "+Go to",
+												"icon": "go-to-file",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "e",
 														"name": "Go to errors/problems",
+														"icon": "error",
 														"type": "command",
 														"command": "workbench.action.problems.focus"
 													},
 													{
 														"key": "g",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "i",
 														"name": "Find symbol in file",
+														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
 													},
 													{
 														"key": "r",
 														"name": "Peek references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "editor.action.referenceSearch.trigger"
 													},
 													{
 														"key": "D",
 														"name": "Peek definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.peekDefinition"
 													},
 													{
 														"key": "I",
 														"name": "Find symbol in project",
+														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
 													},
 													{
 														"key": "R",
 														"name": "Find all references",
+														"icon": "references",
 														"type": "command",
 														"command": "references-view.findReferences"
 													}
@@ -3469,11 +3892,13 @@
 											{
 												"key": "r",
 												"name": "+Refactor",
+												"icon": "edit",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "I",
 														"name": "Sort imports",
+														"icon": "selection",
 														"type": "command",
 														"command": "python.sortImports"
 													}
@@ -3482,23 +3907,27 @@
 											{
 												"key": "s",
 												"name": "+REPL",
+												"icon": "repl",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "i",
 														"name": "Start REPL",
+														"icon": "repl",
 														"type": "command",
 														"command": "python.startREPL"
 													},
 													{
 														"key": "l",
 														"name": "Send line/selection to REPL",
+														"icon": "selection",
 														"type": "command",
 														"command": "python.execSelectionInTerminal"
 													},
 													{
 														"key": "r",
 														"name": "Send line/selection to REPL",
+														"icon": "selection",
 														"type": "command",
 														"command": "python.execSelectionInTerminal"
 													}
@@ -3507,41 +3936,48 @@
 											{
 												"key": "t",
 												"name": "+Test",
+												"icon": "beaker",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "a",
 														"name": "Run all tests",
+														"icon": "beaker",
 														"type": "command",
 														"command": "python.runtests"
 													},
 													{
 														"key": "b",
 														"name": "Run current test file",
+														"icon": "file",
 														"type": "command",
 														"command": "python.runCurrentTestFile"
 													},
 													{
 														"key": "r",
 														"name": "Re-run failed tests",
+														"icon": "close",
 														"type": "command",
 														"command": "python.runFailedTests"
 													},
 													{
 														"key": "t",
 														"name": "Select and run test",
+														"icon": "list-unordered",
 														"type": "command",
 														"command": "python.selectAndRunTestMethod"
 													},
 													{
 														"key": "A",
 														"name": "Debug all tests",
+														"icon": "bug",
 														"type": "command",
 														"command": "python.debugtests"
 													},
 													{
 														"key": "T",
 														"name": "Select and debug test",
+														"icon": "debug-alt",
 														"type": "command",
 														"command": "python.selectAndDebugTestMethod"
 													}
@@ -3557,41 +3993,48 @@
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format region or buffer",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "editor.action.format"
 													},
 													{
 														"key": "b",
 														"name": "Format buffer",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
 														"key": "c",
 														"name": "Format changes",
+														"icon": "diff",
 														"type": "command",
 														"command": "editor.action.formatChanges"
 													},
 													{
 														"key": "s",
 														"name": "Format selection",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													},
 													{
 														"key": "B",
 														"name": "+Format buffer with formatter",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument.multiple"
 													},
 													{
 														"key": "S",
 														"name": "+Format selection with formatter",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
 													}
@@ -3600,53 +4043,62 @@
 											{
 												"key": "g",
 												"name": "+Go to",
+												"icon": "go-to-file",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "e",
 														"name": "Go to errors/problems",
+														"icon": "error",
 														"type": "command",
 														"command": "workbench.action.problems.focus"
 													},
 													{
 														"key": "g",
 														"name": "Go to definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "i",
 														"name": "Find symbol in file",
+														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
 													},
 													{
 														"key": "r",
 														"name": "Peek references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "editor.action.referenceSearch.trigger"
 													},
 													{
 														"key": "D",
 														"name": "Peek definition",
+														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.peekDefinition"
 													},
 													{
 														"key": "I",
 														"name": "Find symbol in project",
+														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
 													},
 													{
 														"key": "R",
 														"name": "Find all references",
+														"icon": "references",
 														"type": "command",
 														"command": "references-view.findReferences"
 													}
@@ -3655,11 +4107,13 @@
 											{
 												"key": "r",
 												"name": "+Refactor",
+												"icon": "edit",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "r",
 														"name": "Rename symbol",
+														"icon": "symbol-keyword",
 														"type": "command",
 														"command": "editor.action.rename"
 													}
@@ -3675,29 +4129,34 @@
 											{
 												"key": "T",
 												"name": "Toggle inlay hints",
+												"icon": "book",
 												"type": "command",
 												"command": "rust-analyzer.toggleInlayHints"
 											},
 											{
 												"key": "=",
 												"name": "+Format",
+												"icon": "list-flat",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "=",
 														"name": "Format region or buffer",
+														"icon": "list-flat",
 														"type": "command",
 														"command": "editor.action.format"
 													},
 													{
 														"key": "b",
 														"name": "Format buffer",
+														"icon": "file",
 														"type": "command",
 														"command": "editor.action.formatDocument"
 													},
 													{
 														"key": "s",
 														"name": "Format selection",
+														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.format"
 													}
@@ -3706,29 +4165,34 @@
 											{
 												"key": "b",
 												"name": "+Backend",
+												"icon": "circuit-board",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "d",
 														"name": "Rust analyzer: describe status",
+														"icon": "dashboard",
 														"type": "command",
 														"command": "rust-analyzer.analyzerStatus"
 													},
 													{
 														"key": "r",
 														"name": "Rust analyzer: restart server",
+														"icon": "server-process",
 														"type": "command",
 														"command": "rust-analyzer.reload"
 													},
 													{
 														"key": "v",
 														"name": "Rust analyzer: Show version",
+														"icon": "info",
 														"type": "command",
 														"command": "rust-analyzer.serverVersion"
 													},
 													{
 														"key": "R",
 														"name": "Rust analyzer: reload workspace",
+														"icon": "refresh",
 														"type": "command",
 														"command": "rust-analyzer.reloadWorkspace"
 													}
@@ -3741,47 +4205,55 @@
 							{
 								"key": "p",
 								"name": "+Project",
+								"icon": "project",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "c",
 										"name": "Compile project",
+										"icon": "gear",
 										"type": "command",
 										"command": "workbench.action.tasks.build"
 									},
 									{
 										"key": "f",
 										"name": "+Find file in project",
+										"icon": "file",
 										"type": "command",
 										"command": "workbench.action.quickOpen"
 									},
 									{
 										"key": "l",
 										"name": "+Switch project",
+										"icon": "project",
 										"type": "command",
 										"command": "workbench.action.openRecent"
 									},
 									{
 										"key": "p",
 										"name": "+Switch project",
+										"icon": "project",
 										"type": "command",
 										"command": "workbench.action.openRecent"
 									},
 									{
 										"key": "t",
 										"name": "Show tree/explorer view",
+										"icon": "list-tree",
 										"type": "command",
 										"command": "workbench.view.explorer"
 									},
 									{
 										"key": "R",
 										"name": "+Replace in files",
+										"icon": "find-replace",
 										"type": "command",
 										"command": "workbench.action.replaceInFiles"
 									},
 									{
 										"key": "T",
 										"name": "Test project",
+										"icon": "beaker",
 										"type": "command",
 										"command": "workbench.action.tasks.test"
 									}
@@ -3790,29 +4262,34 @@
 							{
 								"key": "q",
 								"name": "+Quit",
+								"icon": "x",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "f",
 										"name": "Close frame",
+										"icon": "close",
 										"type": "command",
 										"command": "workbench.action.closeWindow"
 									},
 									{
 										"key": "q",
 										"name": "Close frame",
+										"icon": "close",
 										"type": "command",
 										"command": "workbench.action.closeWindow"
 									},
 									{
 										"key": "r",
 										"name": "Reload frame",
+										"icon": "refresh",
 										"type": "command",
 										"command": "workbench.action.reloadWindow"
 									},
 									{
 										"key": "s",
 										"name": "Save all and close frame",
+										"icon": "save-all",
 										"type": "commands",
 										"commands": [
 											"workbench.action.files.saveAll",
@@ -3822,12 +4299,14 @@
 									{
 										"key": "Q",
 										"name": "Quit application",
+										"icon": "log-out",
 										"type": "command",
 										"command": "workbench.action.quit"
 									},
 									{
 										"key": "R",
 										"name": "Reload frame with extensions disabled",
+										"icon": "refresh",
 										"type": "command",
 										"command": "workbench.action.reloadWindowWithExtensionsDisabled"
 									}
@@ -3836,11 +4315,13 @@
 							{
 								"key": "r",
 								"name": "+Resume/Repeat",
+								"icon": "clock",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": ".",
 										"name": "Repeat recent actions",
+										"icon": "redo",
 										"type": "command",
 										"command": "whichkey.repeatRecent",
 										"args": "vspacecode.bindings"
@@ -3848,12 +4329,14 @@
 									{
 										"key": "b",
 										"name": "Recent buffers",
+										"icon": "versions",
 										"type": "command",
 										"command": "workbench.action.showAllEditorsByMostRecentlyUsed"
 									},
 									{
 										"key": "s",
 										"name": "Search in project",
+										"icon": "search",
 										"type": "command",
 										"command": "workbench.action.findInFiles"
 									}
@@ -3862,11 +4345,13 @@
 							{
 								"key": "s",
 								"name": "+Search/Symbol",
+								"icon": "search",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "c",
 										"name": "Clear highlight",
+										"icon": "clear-all",
 										"type": "command",
 										"command": "vim.remap",
 										"args": {
@@ -3880,18 +4365,21 @@
 									{
 										"key": "e",
 										"name": "Edit symbol",
+										"icon": "edit",
 										"type": "command",
 										"command": "editor.action.rename"
 									},
 									{
 										"key": "h",
 										"name": "Highlight symbol",
+										"icon": "symbol-color",
 										"type": "transient",
 										"command": "editor.action.wordHighlight.trigger",
 										"bindings": [
 											{
 												"key": "/",
 												"name": "Search in project with selection",
+												"icon": "selection",
 												"type": "commands",
 												"commands": [
 													"editor.action.addSelectionToNextFindMatch",
@@ -3901,18 +4389,21 @@
 											{
 												"key": "n",
 												"name": "Next occurrence",
+												"icon": "arrow-down",
 												"type": "command",
 												"command": "editor.action.wordHighlight.next"
 											},
 											{
 												"key": "p",
 												"name": "Previous occurrence",
+												"icon": "arrow-up",
 												"type": "command",
 												"command": "editor.action.wordHighlight.prev"
 											},
 											{
 												"key": "N",
 												"name": "Previous occurrence",
+												"icon": "arrow-up",
 												"type": "command",
 												"command": "editor.action.wordHighlight.prev"
 											}
@@ -3921,36 +4412,42 @@
 									{
 										"key": "j",
 										"name": "Jump to symbol in buffer",
+										"icon": "symbol-class",
 										"type": "command",
 										"command": "workbench.action.gotoSymbol"
 									},
 									{
 										"key": "p",
 										"name": "Search in project",
+										"icon": "search",
 										"type": "command",
 										"command": "workbench.action.findInFiles"
 									},
 									{
 										"key": "r",
 										"name": "Search all references",
+										"icon": "references",
 										"type": "command",
 										"command": "editor.action.referenceSearch.trigger"
 									},
 									{
 										"key": "s",
 										"name": "Fuzzy search in current buffer",
+										"icon": "file",
 										"type": "command",
 										"command": "fuzzySearch.activeTextEditorWithCurrentSelection"
 									},
 									{
 										"key": "J",
 										"name": "Jump to symbol in workspace",
+										"icon": "symbol-class",
 										"type": "command",
 										"command": "workbench.action.showAllSymbols"
 									},
 									{
 										"key": "P",
 										"name": "Search in project with selection",
+										"icon": "selection",
 										"type": "commands",
 										"commands": [
 											"editor.action.addSelectionToNextFindMatch",
@@ -3960,12 +4457,14 @@
 									{
 										"key": "R",
 										"name": "Search all references in side bar",
+										"icon": "references",
 										"type": "command",
 										"command": "references-view.find"
 									},
 									{
 										"key": "S",
 										"name": "Fuzzy search with selection in current buffer",
+										"icon": "selection",
 										"type": "commands",
 										"commands": [
 											"editor.action.addSelectionToNextFindMatch",
@@ -3977,23 +4476,27 @@
 							{
 								"key": "t",
 								"name": "+Toggles",
+								"icon": "settings",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "c",
 										"name": "Toggle find case sensitive",
+										"icon": "case-sensitive",
 										"type": "command",
 										"command": "toggleFindCaseSensitive"
 									},
 									{
 										"key": "l",
 										"name": "Toggle word wrap",
+										"icon": "word-wrap",
 										"type": "command",
 										"command": "editor.action.toggleWordWrap"
 									},
 									{
 										"key": "w",
 										"name": "Toggle render whitespace",
+										"icon": "whitespace",
 										"type": "command",
 										"command": "editor.action.toggleRenderWhitespace"
 									}
@@ -4002,41 +4505,48 @@
 							{
 								"key": "w",
 								"name": "+Window",
+								"icon": "split-horizontal",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "-",
 										"name": "Split window below",
+										"icon": "split-vertical",
 										"type": "command",
 										"command": "workbench.action.splitEditorDown"
 									},
 									{
 										"key": "/",
 										"name": "Split window right",
+										"icon": "split-horizontal",
 										"type": "command",
 										"command": "workbench.action.splitEditor"
 									},
 									{
 										"key": "=",
 										"name": "Reset window sizes",
+										"icon": "move",
 										"type": "command",
 										"command": "workbench.action.evenEditorWidths"
 									},
 									{
 										"key": "[",
 										"name": "Shrink window",
+										"icon": "remove",
 										"type": "transient",
 										"command": "workbench.action.decreaseViewSize",
 										"bindings": [
 											{
 												"key": "[",
 												"name": "Shrink window",
+												"icon": "remove",
 												"type": "command",
 												"command": "workbench.action.decreaseViewSize"
 											},
 											{
 												"key": "]",
 												"name": "Enlarge window",
+												"icon": "add",
 												"type": "command",
 												"command": "workbench.action.increaseViewSize"
 											}
@@ -4045,18 +4555,21 @@
 									{
 										"key": "]",
 										"name": "Enlarge window",
+										"icon": "add",
 										"type": "transient",
 										"command": "workbench.action.increaseViewSize",
 										"bindings": [
 											{
 												"key": "[",
 												"name": "Shrink window",
+												"icon": "remove",
 												"type": "command",
 												"command": "workbench.action.decreaseViewSize"
 											},
 											{
 												"key": "]",
 												"name": "Enlarge window",
+												"icon": "add",
 												"type": "command",
 												"command": "workbench.action.increaseViewSize"
 											}
@@ -4065,120 +4578,140 @@
 									{
 										"key": "d",
 										"name": "Close window",
+										"icon": "close",
 										"type": "command",
 										"command": "workbench.action.closeEditorsInGroup"
 									},
 									{
 										"key": "h",
 										"name": "Focus window left",
+										"icon": "arrow-left",
 										"type": "command",
 										"command": "workbench.action.focusPreviousGroup"
 									},
 									{
 										"key": "j",
 										"name": "Focus window down",
+										"icon": "arrow-down",
 										"type": "command",
 										"command": "workbench.action.focusBelowGroup"
 									},
 									{
 										"key": "k",
 										"name": "Focus window up",
+										"icon": "arrow-up",
 										"type": "command",
 										"command": "workbench.action.focusAboveGroup"
 									},
 									{
 										"key": "l",
 										"name": "Focus window right",
+										"icon": "arrow-right",
 										"type": "command",
 										"command": "workbench.action.focusNextGroup"
 									},
 									{
 										"key": "m",
 										"name": "Maximize window",
+										"icon": "chrome-maximize",
 										"type": "command",
 										"command": "workbench.action.toggleEditorWidths"
 									},
 									{
 										"key": "o",
 										"name": "Switch frame",
+										"icon": "multiple-windows",
 										"type": "command",
 										"command": "workbench.action.quickSwitchWindow"
 									},
 									{
 										"key": "s",
 										"name": "Split window below",
+										"icon": "split-vertical",
 										"type": "command",
 										"command": "workbench.action.splitEditorDown"
 									},
 									{
 										"key": "v",
 										"name": "Split window right",
+										"icon": "split-horizontal",
 										"type": "command",
 										"command": "workbench.action.splitEditor"
 									},
 									{
 										"key": "w",
 										"name": "Focus next window",
+										"icon": "arrow-small-down",
 										"type": "command",
 										"command": "workbench.action.focusNextGroup"
 									},
 									{
 										"key": "x",
 										"name": "Close all windows",
+										"icon": "close-all",
 										"type": "command",
 										"command": "workbench.action.closeAllGroups"
 									},
 									{
 										"key": "z",
 										"name": "Combine all buffers",
+										"icon": "combine",
 										"type": "command",
 										"command": "workbench.action.joinAllGroups"
 									},
 									{
 										"key": "D",
 										"name": "Close all other windows",
+										"icon": "close-all",
 										"type": "command",
 										"command": "workbench.action.closeEditorsInOtherGroups"
 									},
 									{
 										"key": "F",
 										"name": "Open new empty frame",
+										"icon": "empty-window",
 										"type": "command",
 										"command": "workbench.action.newWindow"
 									},
 									{
 										"key": "H",
 										"name": "Move window left",
+										"icon": "triangle-left",
 										"type": "command",
 										"command": "workbench.action.moveActiveEditorGroupLeft"
 									},
 									{
 										"key": "J",
 										"name": "Move window down",
+										"icon": "triangle-down",
 										"type": "command",
 										"command": "workbench.action.moveActiveEditorGroupDown"
 									},
 									{
 										"key": "K",
 										"name": "Move window up",
+										"icon": "triangle-up",
 										"type": "command",
 										"command": "workbench.action.moveActiveEditorGroupUp"
 									},
 									{
 										"key": "L",
 										"name": "Move window right",
+										"icon": "triangle-right",
 										"type": "command",
 										"command": "workbench.action.moveActiveEditorGroupRight"
 									},
 									{
 										"key": "M",
 										"name": "Maximize window and hide side bar",
+										"icon": "screen-full",
 										"type": "command",
 										"command": "workbench.action.maximizeEditor"
 									},
 									{
 										"key": "W",
 										"name": "Focus previous window",
+										"icon": "arrow-small-up",
 										"type": "command",
 										"command": "workbench.action.focusPreviousGroup"
 									}
@@ -4187,53 +4720,62 @@
 							{
 								"key": "x",
 								"name": "+Text",
+								"icon": "symbol-text",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": ".",
 										"name": "Quick fix",
+										"icon": "lightbulb-autofix",
 										"type": "command",
 										"command": "editor.action.quickFix"
 									},
 									{
 										"key": "a",
 										"name": "Find all references",
+										"icon": "references",
 										"type": "command",
 										"command": "editor.action.referenceSearch.trigger"
 									},
 									{
 										"key": "i",
 										"name": "Organize Imports",
+										"icon": "selection",
 										"type": "command",
 										"command": "editor.action.organizeImports"
 									},
 									{
 										"key": "r",
 										"name": "Rename symbol",
+										"icon": "symbol-keyword",
 										"type": "command",
 										"command": "editor.action.rename"
 									},
 									{
 										"key": "u",
 										"name": "To lower case",
+										"icon": "case-sensitive",
 										"type": "command",
 										"command": "editor.action.transformToLowercase"
 									},
 									{
 										"key": "J",
 										"name": "Move lines down",
+										"icon": "triangle-down",
 										"type": "transient",
 										"command": "editor.action.moveLinesDownAction",
 										"bindings": [
 											{
 												"key": "J",
 												"name": "Move lines down",
+												"icon": "triangle-down",
 												"type": "command",
 												"command": "editor.action.moveLinesDownAction"
 											},
 											{
 												"key": "K",
 												"name": "Move lines up",
+												"icon": "triangle-up",
 												"type": "command",
 												"command": "editor.action.moveLinesUpAction"
 											}
@@ -4242,18 +4784,21 @@
 									{
 										"key": "K",
 										"name": "Move lines up",
+										"icon": "triangle-up",
 										"type": "transient",
 										"command": "editor.action.moveLinesUpAction",
 										"bindings": [
 											{
 												"key": "J",
 												"name": "Move lines down",
+												"icon": "triangle-down",
 												"type": "command",
 												"command": "editor.action.moveLinesDownAction"
 											},
 											{
 												"key": "K",
 												"name": "Move lines up",
+												"icon": "triangle-up",
 												"type": "command",
 												"command": "editor.action.moveLinesUpAction"
 											}
@@ -4262,23 +4807,27 @@
 									{
 										"key": "R",
 										"name": "Refactor",
+										"icon": "edit",
 										"type": "command",
 										"command": "editor.action.refactor"
 									},
 									{
 										"key": "U",
 										"name": "To upper case",
+										"icon": "preserve-case",
 										"type": "command",
 										"command": "editor.action.transformToUppercase"
 									},
 									{
 										"key": "d",
 										"name": "+Delete",
+										"icon": "trash",
 										"type": "bindings",
 										"bindings": [
 											{
 												"key": "w",
 												"name": "Delete trailing whitespace",
+												"icon": "whitespace",
 												"type": "command",
 												"command": "editor.action.trimTrailingWhitespace"
 											}
@@ -4287,29 +4836,34 @@
 									{
 										"key": "l",
 										"name": "+Lines",
+										"icon": "list-flat",
 										"type": "bindings",
 										"bindings": [
 											{
 												"key": "d",
 												"name": "Duplicate lines down",
+												"icon": "fold-down",
 												"type": "command",
 												"command": "editor.action.copyLinesDownAction"
 											},
 											{
 												"key": "s",
 												"name": "Sort lines in ascending order",
+												"icon": "chevron-left",
 												"type": "command",
 												"command": "editor.action.sortLinesAscending"
 											},
 											{
 												"key": "D",
 												"name": "Duplicate lines up",
+												"icon": "fold-up",
 												"type": "command",
 												"command": "editor.action.copyLinesUpAction"
 											},
 											{
 												"key": "S",
 												"name": "Sort lines in descending order",
+												"icon": "chevron-right",
 												"type": "command",
 												"command": "editor.action.sortLinesDescending"
 											}
@@ -4318,65 +4872,76 @@
 									{
 										"key": "m",
 										"name": "+Merge conflict",
+										"icon": "git-merge",
 										"type": "bindings",
 										"bindings": [
 											{
 												"key": "b",
 												"name": "Accept both",
+												"icon": "arrow-both",
 												"type": "command",
 												"command": "merge-conflict.accept.both"
 											},
 											{
 												"key": "c",
 												"name": "Accept current",
+												"icon": "arrow-small-right",
 												"type": "command",
 												"command": "merge-conflict.accept.current"
 											},
 											{
 												"key": "i",
 												"name": "Accept incoming",
+												"icon": "arrow-small-left",
 												"type": "command",
 												"command": "merge-conflict.accept.incoming"
 											},
 											{
 												"key": "k",
 												"name": "Compare current conflict",
+												"icon": "diff",
 												"type": "command",
 												"command": "merge-conflict.compare"
 											},
 											{
 												"key": "n",
 												"name": "Next Conflict",
+												"icon": "arrow-down",
 												"type": "command",
 												"command": "merge-conflict.next"
 											},
 											{
 												"key": "s",
 												"name": "Accept selection",
+												"icon": "selection",
 												"type": "command",
 												"command": "merge-conflict.accept.selection"
 											},
 											{
 												"key": "B",
 												"name": "Accept all both",
+												"icon": "arrow-both",
 												"type": "command",
 												"command": "merge-conflict.accept.all-both"
 											},
 											{
 												"key": "C",
 												"name": "Accept all current",
+												"icon": "arrow-right",
 												"type": "command",
 												"command": "merge-conflict.accept.all-current"
 											},
 											{
 												"key": "I",
 												"name": "Accept all incoming",
+												"icon": "arrow-left",
 												"type": "command",
 												"command": "merge-conflict.accept.all-incoming"
 											},
 											{
 												"key": "N",
 												"name": "Previous Conflict",
+												"icon": "arrow-up",
 												"type": "command",
 												"command": "merge-conflict.previous"
 											}
@@ -4387,46 +4952,54 @@
 							{
 								"key": "z",
 								"name": "+Zoom/Fold",
+								"icon": "zoom-in",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "f",
 										"name": "+Frame",
+										"icon": "window",
 										"type": "transient",
 										"bindings": [
 											{
 												"key": "+",
 												"name": "Zoom in",
+												"icon": "zoom-in",
 												"type": "command",
 												"command": "workbench.action.zoomIn"
 											},
 											{
 												"key": "-",
 												"name": "Zoom out",
+												"icon": "zoom-out",
 												"type": "command",
 												"command": "workbench.action.zoomOut"
 											},
 											{
 												"key": "0",
 												"name": "Reset zoom",
+												"icon": "search",
 												"type": "command",
 												"command": "workbench.action.zoomReset"
 											},
 											{
 												"key": "=",
 												"name": "Zoom in",
+												"icon": "zoom-in",
 												"type": "command",
 												"command": "workbench.action.zoomIn"
 											},
 											{
 												"key": "j",
 												"name": "Zoom out",
+												"icon": "zoom-out",
 												"type": "command",
 												"command": "workbench.action.zoomOut"
 											},
 											{
 												"key": "k",
 												"name": "Zoom in",
+												"icon": "zoom-in",
 												"type": "command",
 												"command": "workbench.action.zoomIn"
 											}
@@ -4435,23 +5008,27 @@
 									{
 										"key": "i",
 										"name": "+Image preview",
+										"icon": "eye",
 										"type": "transient",
 										"bindings": [
 											{
 												"key": "+",
 												"name": "Zoom in",
+												"icon": "zoom-in",
 												"type": "command",
 												"command": "imagePreview.zoomIn"
 											},
 											{
 												"key": "-",
 												"name": "Zoom out",
+												"icon": "zoom-out",
 												"type": "command",
 												"command": "imagePreview.zoomOut"
 											},
 											{
 												"key": "=",
 												"name": "Zoom in",
+												"icon": "zoom-in",
 												"type": "command",
 												"command": "imagePreview.zoomIn"
 											}
@@ -4460,41 +5037,48 @@
 									{
 										"key": "x",
 										"name": "+Font",
+										"icon": "case-sensitive",
 										"type": "transient",
 										"bindings": [
 											{
 												"key": "+",
 												"name": "Zoom in",
+												"icon": "zoom-in",
 												"type": "command",
 												"command": "editor.action.fontZoomIn"
 											},
 											{
 												"key": "-",
 												"name": "Zoom out",
+												"icon": "zoom-out",
 												"type": "command",
 												"command": "editor.action.fontZoomOut"
 											},
 											{
 												"key": "0",
 												"name": "Reset zoom",
+												"icon": "search",
 												"type": "command",
 												"command": "editor.action.fontZoomReset"
 											},
 											{
 												"key": "=",
 												"name": "Zoom in",
+												"icon": "zoom-in",
 												"type": "command",
 												"command": "editor.action.fontZoomIn"
 											},
 											{
 												"key": "j",
 												"name": "Zoom out",
+												"icon": "zoom-out",
 												"type": "command",
 												"command": "editor.action.fontZoomOut"
 											},
 											{
 												"key": "k",
 												"name": "Zoom in",
+												"icon": "zoom-in",
 												"type": "command",
 												"command": "editor.action.fontZoomIn"
 											}
@@ -4503,59 +5087,69 @@
 									{
 										"key": ".",
 										"name": "+Fold",
+										"icon": "fold",
 										"type": "bindings",
 										"bindings": [
 											{
 												"key": "a",
 												"name": "Toggle: around a point",
+												"icon": "selection",
 												"type": "command",
 												"command": "editor.toggleFold"
 											},
 											{
 												"key": "b",
 												"name": "Close: all block comments",
+												"icon": "fold",
 												"type": "command",
 												"command": "editor.foldAllBlockComments"
 											},
 											{
 												"key": "c",
 												"name": "Close: at a point",
+												"icon": "fold",
 												"type": "command",
 												"command": "editor.fold"
 											},
 											{
 												"key": "g",
 												"name": "Close: all regions",
+												"icon": "fold",
 												"type": "command",
 												"command": "editor.foldAllMarkerRegions"
 											},
 											{
 												"key": "m",
 												"name": "Close: all",
+												"icon": "fold",
 												"type": "command",
 												"command": "editor.foldAll"
 											},
 											{
 												"key": "o",
 												"name": "Open: at a point",
+												"icon": "unfold",
 												"type": "command",
 												"command": "editor.unfold"
 											},
 											{
 												"key": "r",
 												"name": "Open: all",
+												"icon": "unfold",
 												"type": "command",
 												"command": "editor.unfoldAll"
 											},
 											{
 												"key": "G",
 												"name": "Open: all regions",
+												"icon": "unfold",
 												"type": "command",
 												"command": "editor.unfoldAllMarkerRegions"
 											},
 											{
 												"key": "O",
 												"name": "Open: recursively",
+												"icon": "unfold",
 												"type": "command",
 												"command": "editor.unfoldRecursively"
 											}
@@ -4566,35 +5160,41 @@
 							{
 								"key": "D",
 								"name": "+Diff/Compare",
+								"icon": "diff",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "c",
 										"name": "Compare active file with clipboard",
+										"icon": "clippy",
 										"type": "command",
 										"command": "workbench.files.action.compareWithClipboard"
 									},
 									{
 										"key": "m",
 										"name": "Compare current merge conflict",
+										"icon": "git-merge",
 										"type": "command",
 										"command": "merge-conflict.compare"
 									},
 									{
 										"key": "s",
 										"name": "Compare active file with saved",
+										"icon": "save-as",
 										"type": "command",
 										"command": "workbench.files.action.compareWithSaved"
 									},
 									{
 										"key": "w",
 										"name": "Toggle ignore trim whitespace",
+										"icon": "whitespace",
 										"type": "command",
 										"command": "toggle.diff.ignoreTrimWhitespace"
 									},
 									{
 										"key": "D",
 										"name": "+Compare active file with",
+										"icon": "diff",
 										"type": "command",
 										"command": "workbench.files.action.compareFileWith"
 									}
@@ -4603,23 +5203,27 @@
 							{
 								"key": "F",
 								"name": "+Frame",
+								"icon": "window",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "n",
 										"name": "Duplicate workspace in new frame",
+										"icon": "window",
 										"type": "command",
 										"command": "workbench.action.duplicateWorkspaceInNewWindow"
 									},
 									{
 										"key": "o",
 										"name": "Switch frame",
+										"icon": "multiple-windows",
 										"type": "command",
 										"command": "workbench.action.quickSwitchWindow"
 									},
 									{
 										"key": "N",
 										"name": "Open new empty frame",
+										"icon": "empty-window",
 										"type": "command",
 										"command": "workbench.action.newWindow"
 									}
@@ -4628,65 +5232,76 @@
 							{
 								"key": "S",
 								"name": "+Show",
+								"icon": "info",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "d",
 										"name": "Show debug console",
+										"icon": "debug-console",
 										"type": "command",
 										"command": "workbench.debug.action.toggleRepl"
 									},
 									{
 										"key": "e",
 										"name": "Show explorer",
+										"icon": "list-tree",
 										"type": "command",
 										"command": "workbench.view.explorer"
 									},
 									{
 										"key": "g",
 										"name": "Show source control",
+										"icon": "source-control",
 										"type": "command",
 										"command": "workbench.view.scm"
 									},
 									{
 										"key": "n",
 										"name": "Show notification",
+										"icon": "comment",
 										"type": "command",
 										"command": "notifications.toggleList"
 									},
 									{
 										"key": "o",
 										"name": "Show output",
+										"icon": "output",
 										"type": "command",
 										"command": "workbench.action.output.toggleOutput"
 									},
 									{
 										"key": "p",
 										"name": "Show problem",
+										"icon": "error",
 										"type": "command",
 										"command": "workbench.actions.view.problems"
 									},
 									{
 										"key": "r",
 										"name": "Show remote explorer",
+										"icon": "remote-explorer",
 										"type": "command",
 										"command": "workbench.view.remote"
 									},
 									{
 										"key": "s",
 										"name": "Show search",
+										"icon": "search",
 										"type": "command",
 										"command": "workbench.view.search"
 									},
 									{
 										"key": "t",
 										"name": "Show test",
+										"icon": "beaker",
 										"type": "command",
 										"command": "workbench.view.extension.test"
 									},
 									{
 										"key": "x",
 										"name": "Show extensions",
+										"icon": "extensions",
 										"type": "command",
 										"command": "workbench.view.extensions"
 									}
@@ -4695,65 +5310,76 @@
 							{
 								"key": "T",
 								"name": "+UI toggles",
+								"icon": "tools",
 								"type": "bindings",
 								"bindings": [
 									{
 										"key": "b",
 										"name": "Toggle side bar visibility",
+										"icon": "split-horizontal",
 										"type": "command",
 										"command": "workbench.action.toggleSidebarVisibility"
 									},
 									{
 										"key": "c",
 										"name": "Toggle centered layout",
+										"icon": "list-flat",
 										"type": "command",
 										"command": "workbench.action.toggleCenteredLayout"
 									},
 									{
 										"key": "i",
 										"name": "Select icon theme",
+										"icon": "symbol-misc",
 										"type": "command",
 										"command": "workbench.action.selectIconTheme"
 									},
 									{
 										"key": "j",
 										"name": "Toggle panel visibility",
+										"icon": "output",
 										"type": "command",
 										"command": "workbench.action.togglePanel"
 									},
 									{
 										"key": "m",
 										"name": "Toggle maximized panel",
+										"icon": "chevron-up",
 										"type": "command",
 										"command": "workbench.action.toggleMaximizedPanel"
 									},
 									{
 										"key": "s",
 										"name": "Select theme",
+										"icon": "paintcan",
 										"type": "command",
 										"command": "workbench.action.selectTheme"
 									},
 									{
 										"key": "t",
 										"name": "Toggle tool/activity bar visibility",
+										"icon": "tools",
 										"type": "command",
 										"command": "workbench.action.toggleActivityBarVisibility"
 									},
 									{
 										"key": "z",
 										"name": "Toggle zen mode",
+										"icon": "eye",
 										"type": "command",
 										"command": "workbench.action.toggleZenMode"
 									},
 									{
 										"key": "F",
 										"name": "Toggle full screen",
+										"icon": "screen-full",
 										"type": "command",
 										"command": "workbench.action.toggleFullScreen"
 									},
 									{
 										"key": "T",
 										"name": "Toggle tab visibility",
+										"icon": "files",
 										"type": "command",
 										"command": "workbench.action.toggleTabsVisibility"
 									}
