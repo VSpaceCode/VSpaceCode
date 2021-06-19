@@ -266,6 +266,12 @@
 							},
 							{
 								"key": "?",
+								"name": "Search keybindings",
+								"type": "command",
+								"command": "whichkey.searchBindings"
+							},
+							{
+								"key": "?",
 								"name": "Show terminal",
 								"type": "command",
 								"command": "workbench.action.terminal.focus"

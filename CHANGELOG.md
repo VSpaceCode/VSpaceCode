@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `b` backend to Python major mode
 - Add `<spc> .` to repeat most recent action
 - Add `<spc> r .` to show recent actions
+- Add `<spc> ?` to search keybindings
 
 ### Fixed
 
