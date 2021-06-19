@@ -192,6 +192,13 @@
 								]
 							},
 							{
+								"key": ".",
+								"name": "Repeat most recent action",
+								"type": "command",
+								"command": "whichkey.repeatMostRecent",
+								"args": "vspacecode.bindings"
+							},
+							{
 								"key": "/",
 								"name": "Search in project",
 								"type": "command",
@@ -256,6 +263,12 @@
 								"name": "Toggle comment",
 								"type": "command",
 								"command": "editor.action.commentLine"
+							},
+							{
+								"key": "?",
+								"name": "Show terminal",
+								"type": "command",
+								"command": "workbench.action.terminal.focus"
 							},
 							{
 								"key": "v",
@@ -3822,9 +3835,16 @@
 							},
 							{
 								"key": "r",
-								"name": "+Resume",
+								"name": "+Resume/Repeat",
 								"type": "bindings",
 								"bindings": [
+									{
+										"key": ".",
+										"name": "Repeat recent actions",
+										"type": "command",
+										"command": "whichkey.repeatRecent",
+										"args": "vspacecode.bindings"
+									},
 									{
 										"key": "b",
 										"name": "Recent buffers",
