@@ -271,12 +271,6 @@
 								"command": "whichkey.searchBindings"
 							},
 							{
-								"key": "?",
-								"name": "Show terminal",
-								"type": "command",
-								"command": "workbench.action.terminal.focus"
-							},
-							{
 								"key": "v",
 								"name": "Smart select/expand region",
 								"type": "transient",
