@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> .` to repeat most recent action
 - Add `<spc> r .` to show recent actions
 - Add `<spc> ?` to search keybindings
+- Add icons to most default bindings
 
 ### Fixed
 
