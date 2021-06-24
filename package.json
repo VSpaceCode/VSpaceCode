@@ -115,24 +115,28 @@
 							{
 								"key": "b",
 								"name": "Copy buffer revision",
+								"icon": "file",
 								"type": "command",
 								"command": "magit.copy-buffer-revision"
 							},
 							{
 								"key": "r",
 								"name": "Show Ref",
+								"icon": "eye",
 								"type": "command",
 								"command": "magit.show-refs"
 							},
 							{
 								"key": "s",
 								"name": "Copy section value",
+								"icon": "list-selection",
 								"type": "command",
 								"command": "magit.copy-section-value"
 							},
 							{
 								"key": "y",
 								"name": "Yank a line",
+								"icon": "list-flat",
 								"type": "command",
 								"command": "vim.remap",
 								"args": {
@@ -1049,36 +1053,42 @@
 											{
 												"key": "d",
 												"name": "Detect indentation",
+												"icon": "whitespace",
 												"type": "command",
 												"command": "editor.action.detectIndentation"
 											},
 											{
 												"key": "i",
 												"name": "Change indentation",
+												"icon": "edit",
 												"type": "command",
 												"command": "changeEditorIndentation"
 											},
 											{
 												"key": "r",
 												"name": "Reindent",
+												"icon": "list-flat",
 												"type": "command",
 												"command": "editor.action.reindentlines"
 											},
 											{
 												"key": "s",
 												"name": "Convert indentation to spaces",
+												"icon": "arrow-small-right",
 												"type": "command",
 												"command": "editor.action.indentationToSpaces"
 											},
 											{
 												"key": "t",
 												"name": "Convert indentation to tabs",
+												"icon": "export",
 												"type": "command",
 												"command": "editor.action.indentationToTabs"
 											},
 											{
 												"key": "R",
 												"name": "Reindent selected",
+												"icon": "selection",
 												"type": "command",
 												"command": "editor.action.reindentselectedlines"
 											}
@@ -1093,60 +1103,70 @@
 											{
 												"key": "c",
 												"name": "Copy path of active file with line and column",
+												"icon": "list-selection",
 												"type": "command",
 												"command": "vspacecode.copyPathWithLineColumn"
 											},
 											{
 												"key": "d",
 												"name": "Copy directory path of the active file",
+												"icon": "file-directory",
 												"type": "command",
 												"command": "vspacecode.copyDirectoryPath"
 											},
 											{
 												"key": "l",
 												"name": "Copy path of active file with line",
+												"icon": "list-flat",
 												"type": "command",
 												"command": "vspacecode.copyPathWithLine"
 											},
 											{
 												"key": "n",
 												"name": "Copy filename of active file",
+												"icon": "file",
 												"type": "command",
 												"command": "vspacecode.copyFilename"
 											},
 											{
 												"key": "y",
 												"name": "Copy path of active file",
+												"icon": "go-to-file",
 												"type": "command",
 												"command": "vspacecode.copyPath"
 											},
 											{
 												"key": "C",
 												"name": "Copy relative path of active file with line and column",
+												"icon": "list-selection",
 												"type": "command",
 												"command": "vspacecode.copyRelativePathWithLineColumn"
 											},
 											{
 												"key": "D",
 												"name": "Copy relative directory path of the active file",
+												"icon": "file-directory",
 												"type": "command",
 												"command": "vspacecode.copyRelativeDirectoryPath"
 											},
 											{
 												"key": "L",
 												"name": "Copy relative path of active file with line",
+												"icon": "list-flat",
 												"type": "command",
 												"command": "vspacecode.copyRelativePathWithLine"
 											},
 											{
 												"key": "N",
 												"name": "Copy filename without extension of active file",
+												"icon": "file",
 												"type": "command",
 												"command": "vspacecode.copyFilenameBase"
 											},
 											{
 												"key": "Y",
 												"name": "Copy relative path of active file",
+												"icon": "go-to-file",
 												"type": "command",
 												"command": "vspacecode.copyRelativePath"
 											}
@@ -1999,6 +2019,7 @@
 													{
 														"key": "p",
 														"name": "Toggle pretty print results",
+														"icon": "eye",
 														"type": "command",
 														"command": "calva.togglePrettyPrint"
 													}
@@ -2480,42 +2501,49 @@
 													{
 														"key": "c",
 														"name": "MSBuild: Build current solution",
+														"icon": "package",
 														"type": "command",
 														"command": "MSBuild.buildCurrentSolution"
 													},
 													{
 														"key": "d",
 														"name": "F#: Run default project",
+														"icon": "play",
 														"type": "command",
 														"command": "fsharp.runDefaultProject"
 													},
 													{
 														"key": "l",
 														"name": "MSBuild: Clean current solution",
+														"icon": "trash",
 														"type": "command",
 														"command": "MSBuild.cleanCurrentSolution"
 													},
 													{
 														"key": "p",
 														"name": "MSBuild: Build current project",
+														"icon": "project",
 														"type": "command",
 														"command": "MSBuild.buildCurrent"
 													},
 													{
 														"key": "r",
 														"name": "MSBuild: Re-build current solution",
+														"icon": "refresh",
 														"type": "command",
 														"command": "MSBuild.rebuildCurrentSolution"
 													},
 													{
 														"key": "D",
 														"name": "F#: Debug default project",
+														"icon": "bug",
 														"type": "command",
 														"command": "fsharp.debugDefaultProject"
 													},
 													{
 														"key": "L",
 														"name": "MSBuild: Clean current project",
+														"icon": "trash",
 														"type": "command",
 														"command": "MSBuild.cleanCurrent"
 													}
@@ -2623,6 +2651,7 @@
 													{
 														"key": "f",
 														"name": "FSI: Send file",
+														"icon": "file",
 														"type": "command",
 														"command": "fsi.SendFile"
 													},
@@ -2630,35 +2659,41 @@
 														"key": "l",
 														"name": "FSI: Send line",
 														"type": "command",
+														"icon": "list-flat",
 														"command": "fsi.SendLine"
 													},
 													{
 														"key": "s",
 														"name": "FSI: Send selection",
+														"icon": "list-selection",
 														"type": "command",
 														"command": "fsi.SendSelection"
 													},
 													{
 														"key": "G",
 														"name": "FSI: Generate project references",
+														"icon": "references",
 														"type": "command",
 														"command": "fsi.GenerateProjectReferences"
 													},
 													{
 														"key": "L",
 														"name": "FSI: Send last selection",
+														"icon": "list-selection",
 														"type": "command",
 														"command": "fsi.SendLastSelection"
 													},
 													{
 														"key": "P",
 														"name": "FSI: Send references from project",
+														"icon": "project",
 														"type": "command",
 														"command": "fsi.SendProjectReferences"
 													},
 													{
 														"key": "S",
 														"name": "FSI: Start",
+														"icon": "repl",
 														"type": "command",
 														"command": "fsi.Start"
 													}
