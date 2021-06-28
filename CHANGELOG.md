@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.0] - 2021-06-27
+
 ### Added
 
 - Add `b` backend to Python major mode
@@ -20,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `<spc> r .` to show recent actions
 - Add `<spc> ?` to search keybindings
 - Add icons to most default bindings
+  (See [#206](https://github.com/VSpaceCode/VSpaceCode/issues/206) for the tracker)
 
 ### Fixed
 
