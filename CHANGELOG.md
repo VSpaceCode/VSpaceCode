@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add additional refactoring bindings in Python major mode
+  + `r v` to extract variable
+  + `r m` to extract method
+
 ## [0.10.0] - 2021-06-27
 
 ### Added
