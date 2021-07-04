@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   + `r v` to extract variable
   + `r m` to extract method
 
+### Changed
+
+- Use the newer whichkey menu registering API, which means this version require v0.9 and above of whichkey to work.
+
 ## [0.10.0] - 2021-06-27
 
 ### Added

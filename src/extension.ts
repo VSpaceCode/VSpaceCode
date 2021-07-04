@@ -1,9 +1,9 @@
 import { commands, env, ExtensionContext, extensions, Uri } from 'vscode';
 import { copyWholeBuffer } from './bufferCommands';
 import { configKeyBindings, configSettings } from './configuration/configuration';
-import { CommandId, ConfigKey, extensionId, extensionQualifiedId, GlobalState } from './constants';
+import { BindingsId, CommandId, extensionQualifiedId, GlobalState } from './constants';
 import { showUpdateMessage, showWelcomeMessage } from './messages';
-import { getPath, getRelativePathWithLine, copyWrapper, getPathWithLine, getPathWithLineColumn, getRelativePath, getRelativePathWithLineColumn, getFilename, getFilenameBase, getDirectoryPath, getRelativeDirectoryPath } from './pathCommands';
+import { copyWrapper, getDirectoryPath, getFilename, getFilenameBase, getPath, getPathWithLine, getPathWithLineColumn, getRelativeDirectoryPath, getRelativePath, getRelativePathWithLine, getRelativePathWithLineColumn } from './pathCommands';
 
 
 export async function activate(context: ExtensionContext) {
@@ -44,8 +44,8 @@ export async function activate(context: ExtensionContext) {
 }
 
 function setUpWhichKey() {
-    const arg = { bindings: [extensionId, ConfigKey.Bindings], overrides: [extensionId, ConfigKey.Overrides], title: 'VSpaceCode' };
-    const magitArg = { bindings: [extensionId, ConfigKey.RefBindings] };
+    const arg = { bindings: BindingsId.VSpaceCode, overrides: BindingsId.Overrides, title: 'VSpaceCode' };
+    const magitArg = { bindings: BindingsId.RefBindings };
     return Promise.all([
         commands.executeCommand(CommandId.RegisterWhichKey, arg),
         commands.executeCommand(CommandId.RegisterWhichKey, magitArg)
@@ -53,11 +53,11 @@ function setUpWhichKey() {
 }
 
 function showSpaceMenu() {
-    return commands.executeCommand(CommandId.ShowWhichKey, `${extensionId}.${ConfigKey.Bindings}`);
+    return commands.executeCommand(CommandId.ShowWhichKey, BindingsId.VSpaceCode);
 }
 
 function showMagitRefMenu() {
-    return commands.executeCommand(CommandId.ShowWhichKey, `${extensionId}.${ConfigKey.RefBindings}`);
+    return commands.executeCommand(CommandId.ShowWhichKey, BindingsId.RefBindings);
 }
 
 function configure() {

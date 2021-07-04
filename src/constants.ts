@@ -36,6 +36,13 @@ export enum ConfigKey {
 	Overrides = "bindingOverrides",
 	RefBindings = "magitRefBindings",
 }
+
+export const BindingsId = {
+	VSpaceCode: `${extensionId}.${ConfigKey.Bindings}`,
+	Overrides: `${extensionId}.${ConfigKey.Overrides}`,
+	RefBindings: `${extensionId}.${ConfigKey.RefBindings}`
+};
+
 export const manualInstallUrl = "https://github.com/VSpaceCode/VSpaceCode#installation";
 
 export const defaultStatusBarTimeout = 5000;
