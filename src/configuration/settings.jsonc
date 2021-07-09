@@ -1,4 +1,9 @@
 {
+    // Disable Automatic Keyboard Navigation so
+    // keys like h, j, k, l work under a peek tree view
+    // with keybinding contributed from VsCode Vim.
+    // This setting is needed since vscode 1.58
+    "workbench.list.automaticKeyboardNavigation": false,
     // Vim easymotion is required for Jump menu - <SPC> j
     "vim.easymotion": true,
     // Use system clipboard for vim

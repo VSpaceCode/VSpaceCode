@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add default setting config to fix vim navigation keys in peek view for vscode 1.58
+
 ## [0.10.1] - 2021-07-04
 
 ### Added
