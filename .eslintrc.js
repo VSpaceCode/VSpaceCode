@@ -17,6 +17,7 @@ module.exports = {
     ],
     rules: {
         'semi': [2, "always"],
+        'eol-last': 'error',
         '@typescript-eslint/no-unused-vars': 0,
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/no-explicit-any': 0,

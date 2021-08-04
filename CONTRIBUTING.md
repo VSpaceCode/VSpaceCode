@@ -28,4 +28,4 @@ This extension aims to provide the best out-of-the-box experience like spacemacs
 Feel free to open an issue if the issue you are experiencing is not in already in the [Github issues](https://github.com/VSpaceCode/VSpaceCode/issues).
 
 ## Submitting Pull Requests
-If you are submitting an pull request (PR) without a tracking issue, consider create an issue first. This is so that we can discuss different implementations if necessary. 
+If you are submitting an pull request (PR) without a tracking issue, consider create an issue first. This is so that we can discuss different implementations if necessary.
