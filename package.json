@@ -1,4 +1,4 @@
-
+{
 	"name": "vspacecode",
 	"preview": true,
 	"displayName": "VSpaceCode",
@@ -2772,7 +2772,7 @@
 														"icon": "clock",
 														"type": "command",
 														"command": "flutter.openTimeline"
-													},
+													}
 												]
 											},
 											{
@@ -2870,7 +2870,7 @@
 																"icon": "package",
 																"type": "command",
 																"commmand": "flutter.createProject.package"
-															},
+															}
 														]
 													}
 												]
@@ -3008,7 +3008,7 @@
 														"icon": "bug",
 														"type": "command",
 														"command": "flutter.toggleDebugModeBanner"
-													},
+													}
 												]
 											}
 										]
