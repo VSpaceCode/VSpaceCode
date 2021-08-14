@@ -1,4 +1,4 @@
-{
+
 	"name": "vspacecode",
 	"preview": true,
 	"displayName": "VSpaceCode",
@@ -2433,6 +2433,582 @@
 														"type": "command",
 														"command": "dotnet.test.runTestsInContext"
 													}
+												]
+											}
+										]
+									},
+									{
+										"key": "languageId:dart",
+										"name": "Dart/Flutter",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": ";",
+												"name": "Toggle Dartdoc comment",
+												"icon": "comment",
+												"type": "command",
+												"command": "dart.toggleDartdocComment"
+											},
+											{
+												"key": "a",
+												"name": "Attach",
+												"icon": "remote-explorer",
+												"type": "command",
+												"command": "flutter.attach"
+											},
+											{
+												"key": "c",
+												"name": "Clean",
+												"icon": "trash",
+												"type": "command",
+												"command": "flutter.clean"
+											},
+											{
+												"key": "i",
+												"name": "Inspect widget",
+												"icon": "telescope",
+												"type": "command",
+												"command": "flutter.inspectWidget"
+											},
+											{
+												"key": "m",
+												"name": "Sort members",
+												"icon": "selection",
+												"type": "command",
+												"command": "dart.sortMembers"
+											},
+											{
+												"key": "r",
+												"name": "Hot reload",
+												"icon": "zap",
+												"type": "command",
+												"command": "flutter.hotReload"
+											},
+											{
+												"key": "s",
+												"name": "Select device",
+												"icon": "vm-active",
+												"type": "command",
+												"command": "flutter.selectDevice"
+											},
+											{
+												"key": "u",
+												"name": "Flutter upgrade",
+												"icon": "cloud-upload",
+												"type": "command",
+												"command": "flutter.upgrade"
+											},
+											{
+												"key": "A",
+												"name": "Attach to process",
+												"icon": "server-process",
+												"type": "command",
+												"command": "flutter.attachProcess"
+											},
+											{
+												"key": "D",
+												"name": "Flutter doctor",
+												"icon": "hubot",
+												"type": "command",
+												"command": "flutter.doctor"
+											},
+											{
+												"key": "E",
+												"name": "Launch emulator",
+												"icon": "rocket",
+												"type": "command",
+												"command": "flutter.launchEmulator"
+											},
+											{
+												"key": "P",
+												"name": "Profile app",
+												"icon": "search",
+												"type": "command",
+												"command": "flutter.profileApp"
+											},
+											{
+												"key": "R",
+												"name": "Hot restart",
+												"icon": "sync",
+												"type": "command",
+												"command": "flutter.hotRestart"
+											},
+											{
+												"key": "S",
+												"name": "Screenshot",
+												"icon": "device-camera",
+												"type": "command",
+												"command": "flutter.screenshot"
+											},
+											{
+												"key": "=",
+												"name": "+Format",
+												"icon": "list-flat",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"icon": "list-flat",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"icon": "diff",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"icon": "go-to-file",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"icon": "error",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "g",
+														"name": "Go to definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "i",
+														"name": "Go to implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "editor.action.goToImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "s",
+														"name": "Go to super",
+														"icon": "symbol-class",
+														"type": "command",
+														"command": "dart.goToSuper"
+													},
+													{
+														"key": "t",
+														"name": "Go to test/implimentation file",
+														"icon": "beaker",
+														"type": "command",
+														"command": "dart.goToTestOrImplimentationFile"
+													},
+													{
+														"key": "T",
+														"name": "Go to tests",
+														"icon": "list-tree",
+														"type": "command",
+														"command": "dart.goToTests"
+													},
+													{
+														"key": "D",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find all implementation",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "references-view.findImplementations"
+													},
+													{
+														"key": "R",
+														"name": "Find all references",
+														"icon": "references",
+														"type": "command",
+														"command": "references-view.findReferences"
+													}
+												]
+											},
+											{
+												"key": "l",
+												"name": "+Logging",
+												"icon": "output",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Start logging analysis server",
+														"icon": "server-process",
+														"type": "command",
+														"command": "dart.startLoggingAnalysisServer"
+													},
+													{
+														"key": "d",
+														"name": "Start logging debugging",
+														"icon": "bug",
+														"type": "command",
+														"command": "dart.startLoggingDebugging"
+													},
+													{
+														"key": "e",
+														"name": "Start logging extension only",
+														"icon": "output",
+														"type": "command",
+														"command": "dart.startLoggingExtensionOnly"
+													},
+													{
+														"key": "s",
+														"name": "Start logging",
+														"icon": "output",
+														"type": "command",
+														"command": "dart.startLogging"
+													},
+													{
+														"key": "S",
+														"name": "Stop logging",
+														"icon": "output",
+														"type": "command",
+														"command": "dart.stopLogging"
+													}
+												]
+											},
+											{
+												"key": "o",
+												"name": "+Open",
+												"icon": "folder-opened",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Analyzer diagnostics",
+														"icon": "output",
+														"type": "command",
+														"command": "dart.openAnalyzerDiagnostics"
+													},
+													{
+														"key": "c",
+														"name": "DevTools CPU profiler",
+														"icon": "telescope",
+														"type": "command",
+														"command": "dart.startLoggingDebugging"
+													},
+													{
+														"key": "d",
+														"name": "Devtools",
+														"icon": "tools",
+														"type": "command",
+														"command": "flutter.openDevTools"
+													},
+													{
+														"key": "l",
+														"name": "DevTools logging",
+														"icon": "output",
+														"type": "command",
+														"command": "dart.openDevToolsLogging"
+													},
+													{
+														"key": "m",
+														"name": "DevTools memory",
+														"icon": "files",
+														"type": "command",
+														"command": "dart.openDevToolsMemory"
+													},
+													{
+														"key": "n",
+														"name": "DevTools network",
+														"icon": "pulse",
+														"type": "command",
+														"command": "dart.openDevToolsNetwork"
+													},
+													{
+														"key": "t",
+														"name": "Timeline",
+														"icon": "clock",
+														"type": "command",
+														"command": "flutter.openTimeline"
+													},
+												]
+											},
+											{
+												"key": "p",
+												"name": "+Project/Packages",
+												"icon": "project",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Add dependency",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "dart.addDependency"
+													},
+													{
+														"key": "g",
+														"name": "Pub get",
+														"icon": "cloud-download",
+														"type": "command",
+														"command": "flutter.packages.get"
+													},
+													{
+														"key": "o",
+														"name": "Pub outdated",
+														"icon": "compare-changes",
+														"type": "command",
+														"command": "flutter.packages.outdated"
+													},
+													{
+														"key": "u",
+														"name": "Pub upgrade",
+														"icon": "cloud-upload",
+														"type": "command",
+														"command": "flutter.packages.upgrade"
+													},
+													{
+														"key": "D",
+														"name": "Add dev dependency",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "dart.addDevDependency"
+													},
+													{
+														"key": "U",
+														"name": "Pub upgrade -major versions",
+														"icon": "cloud-upload",
+														"type": "command",
+														"command": "flutter.packages.upgrade.majorVersions"
+													},
+													{
+														"key": "c",
+														"name": "+Create",
+														"icon": "add",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": "d",
+																"name": "Dart project",
+																"icon": "rocket",
+																"type": "command",
+																"commmand": "dart.createProject"
+															},
+															{
+																"key": "l",
+																"name": "Flutter plugin project",
+																"icon": "plug",
+																"type": "command",
+																"commmand": "flutter.createProject.plugin"
+															},
+															{
+																"key": "m",
+																"name": "Flutter module project",
+																"icon": "module",
+																"type": "command",
+																"commmand": "flutter.createProject.module"
+															},
+															{
+																"key": "p",
+																"name": "Flutter project",
+																"icon": "project",
+																"type": "command",
+																"commmand": "flutter.createProject"
+															},
+															{
+																"key": "D",
+																"name": "Create DartDoc",
+																"icon": "book",
+																"type": "command",
+																"commmand": "dart.task.dartdoc"
+															},
+															{
+																"key": "P",
+																"name": "Flutter package project",
+																"icon": "package",
+																"type": "command",
+																"commmand": "flutter.createProject.package"
+															},
+														]
+													}
+												]
+											},
+											{
+												"key": "r",
+												"name": "+Refactor",
+												"icon": "edit",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": ".",
+														"name": "Quick fix",
+														"icon": "lightbulb-autofix",
+														"type": "command",
+														"command": "editor.action.quickFix"
+													},
+													{
+														"key": "r",
+														"name": "Rename symbol",
+														"icon": "symbol-keyword",
+														"type": "command",
+														"command": "editor.action.rename"
+													}
+												]
+											},
+											{
+												"key": "t",
+												"name": "+Test",
+												"icon": "beaker",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "Clear test results",
+														"icon": "trash",
+														"type": "command",
+														"command": "dart.clearTestResults"
+													},
+													{
+														"key": "d",
+														"name": "Debug test at cursor",
+														"icon": "testing-debug-icon",
+														"type": "command",
+														"command": "dart.debugTestAtCursor"
+													},
+													{
+														"key": "f",
+														"name": "Run failed tests",
+														"icon": "testing-failed-icon",
+														"type": "command",
+														"command": "dart.runAllFailedTestsWithoutDebugging"
+													},
+													{
+														"key": "r",
+														"name": "Run tests",
+														"icon": "run-all",
+														"type": "command",
+														"command": "dart.runAllTestsWithoutDebugging"
+													},
+													{
+														"key": "s",
+														"name": "Run skipped tests",
+														"icon": "debug-step-over",
+														"type": "command",
+														"command": "dart.runAllTestsWithoutDebugging"
+													},
+													{
+														"key": "t",
+														"name": "Run test at cursor",
+														"icon": "testing-run-icon",
+														"type": "command",
+														"command": "dart.runTestAtCursor"
+													}
+												]
+											},
+											{
+												"key": "T",
+												"name": "+Toggle",
+												"icon": "settings",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "b",
+														"name": "Brightness",
+														"icon": "star-half",
+														"type": "command",
+														"command": "flutter.toggleBrightness"
+													},
+													{
+														"key": "d",
+														"name": "Debug painting",
+														"icon": "paintcan",
+														"type": "command",
+														"command": "flutter.toggleDebugPainting"
+													},
+													{
+														"key": "e",
+														"name": "Check elevations",
+														"icon": "check",
+														"type": "command",
+														"command": "flutter.toggleCheckElevations"
+													},
+													{
+														"key": "o",
+														"name": "Performance overlay",
+														"icon": "output",
+														"type": "command",
+														"command": "flutter.togglePerformanceOverlay"
+													},
+													{
+														"key": "p",
+														"name": "Paint baselines",
+														"icon": "paintcan",
+														"type": "command",
+														"command": "flutter.togglePaintBaselines"
+													},
+													{
+														"key": "r",
+														"name": "Repaint rainbow",
+														"icon": "symbol-color",
+														"type": "command",
+														"command": "flutter.toggleRepaintRainbow"
+													},
+													{
+														"key": "s",
+														"name": "Slow animations",
+														"icon": "clock",
+														"type": "command",
+														"command": "flutter.toggleSlowAnimations"
+													},
+													{
+														"key": "B",
+														"name": "Debug mode banner",
+														"icon": "bug",
+														"type": "command",
+														"command": "flutter.toggleDebugModeBanner"
+													},
 												]
 											}
 										]
