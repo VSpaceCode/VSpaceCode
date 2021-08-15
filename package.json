@@ -2646,13 +2646,6 @@
 														"command": "dart.goToTestOrImplimentationFile"
 													},
 													{
-														"key": "T",
-														"name": "Go to tests",
-														"icon": "list-tree",
-														"type": "command",
-														"command": "dart.goToTests"
-													},
-													{
 														"key": "D",
 														"name": "Peek definition",
 														"icon": "symbol-function",
@@ -2672,6 +2665,13 @@
 														"icon": "references",
 														"type": "command",
 														"command": "references-view.findReferences"
+													},
+													{
+														"key": "T",
+														"name": "Go to tests",
+														"icon": "list-tree",
+														"type": "command",
+														"command": "dart.goToTests"
 													}
 												]
 											},
