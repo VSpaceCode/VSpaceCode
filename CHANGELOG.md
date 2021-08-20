@@ -19,6 +19,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add major mode for Dart/Flutter
 
+### Changed
+
+- Update some bindings in the go to menu for Go lang
+  - Add `g c` to peak call hierarchy
+  - Add `g C` to show call hierarchy in the side bar
+  - Change `g i` to go to implementations from go to symbol which exists in `<spc> j i`
+  - Change `g I` to find all implementations from show all symbols which exists in `<spc> j I`
+  - Remove `g m` as the command is not valid
+  - Move `t t` toggle test  to `t T`
+  - Move `t f` test function at cursor to `t t`
+  - Move `t F` test file to `t f`
+
 ## [0.10.1] - 2021-07-04
 
 ### Added
