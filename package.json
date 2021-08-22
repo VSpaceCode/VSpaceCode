@@ -3490,6 +3490,13 @@
 												"type": "bindings",
 												"bindings": [
 													{
+														"key": "c",
+														"name": "Peak call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "editor.showCallHierarchy"
+													},
+													{
 														"key": "d",
 														"name": "Go to definition",
 														"icon": "symbol-function",
@@ -3512,17 +3519,10 @@
 													},
 													{
 														"key": "i",
-														"name": "Find symbol in file",
-														"icon": "file",
+														"name": "Go to implementations",
+														"icon": "symbol-module",
 														"type": "command",
-														"command": "workbench.action.gotoSymbol"
-													},
-													{
-														"key": "m",
-														"name": "Go to method in file",
-														"icon": "symbol-method",
-														"type": "command",
-														"command": "workbench.action.gotoMethod"
+														"command": "editor.action.goToImplementation"
 													},
 													{
 														"key": "r",
@@ -3539,6 +3539,13 @@
 														"command": "editor.action.goToTypeDefinition"
 													},
 													{
+														"key": "C",
+														"name": "Show call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "references-view.showCallHierarchy"
+													},
+													{
 														"key": "D",
 														"name": "Peek definition",
 														"icon": "symbol-function",
@@ -3547,10 +3554,10 @@
 													},
 													{
 														"key": "I",
-														"name": "Find symbol in project",
-														"icon": "project",
+														"name": "Find all implementation",
+														"icon": "symbol-module",
 														"type": "command",
-														"command": "workbench.action.showAllSymbols"
+														"command": "references-view.findImplementations"
 													},
 													{
 														"key": "R",
@@ -3665,10 +3672,10 @@
 													},
 													{
 														"key": "f",
-														"name": "Test function at cursor",
-														"icon": "whole-word",
+														"name": "Test file",
+														"icon": "file",
 														"type": "command",
-														"command": "go.test.cursor"
+														"command": "go.test.file"
 													},
 													{
 														"key": "l",
@@ -3692,18 +3699,18 @@
 														"command": "go.subtest.cursor"
 													},
 													{
+														"key": "t",
+														"name": "Test function at cursor",
+														"icon": "whole-word",
+														"type": "command",
+														"command": "go.test.cursor"
+													},
+													{
 														"key": "w",
 														"name": "Test packages in workspace",
 														"icon": "project",
 														"type": "command",
 														"command": "go.test.workspace"
-													},
-													{
-														"key": "F",
-														"name": "Test file",
-														"icon": "file",
-														"type": "command",
-														"command": "go.test.file"
 													},
 													{
 														"key": "P",
@@ -3771,7 +3778,7 @@
 														]
 													},
 													{
-														"key": "t",
+														"key": "T",
 														"name": "+Toggle",
 														"icon": "settings",
 														"type": "bindings",
