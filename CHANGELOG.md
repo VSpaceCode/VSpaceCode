@@ -12,7 +12,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
 ## [Unreleased]
-
+- Add some bindings for test explorer(hbenl.vscode-test-explorer)
+  - Add `u u` to run unittest under cursor
+  - Add `u t` to open test explorer
+  - Add `u r` to redebug last unittest
+  - Add `u d` to debug unittest under cursor
+  - Add `u f` to debug failed test
+  - Add `u l` to show unittest failed log
+  - Add `u b` to run unittest in current file
+  - Add `u c` to cancel running unittest
 ## [0.10.2] - 2021-08-22
 
 ### Added

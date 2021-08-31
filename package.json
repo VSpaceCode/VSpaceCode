@@ -5135,6 +5135,70 @@
 								]
 							},
 							{
+								"key": "u",
+								"name": "+Unittest...",
+								"icon": "tools",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": "u",
+										"name": "Run current test",
+										"icon": "run",
+										"type": "command",
+										"command": "testing.runAtCursor"
+									},
+									{
+										"key": "t",
+										"name": "Open test explorer",
+										"icon": "list-selection",
+										"type": "command",
+										"command": "workbench.view.testing.focus"
+									},
+									{
+										"key": "r",
+										"name": "Redebug last test",
+										"icon": "debug-restart",
+										"type": "command",
+										"command": "testing.debugLastRun"
+									},
+									{
+										"key": "d",
+										"name": "Debug current test",
+										"icon": "debug-start",
+										"type": "command",
+										"command": "test-explorer.debug-test-at-cursor"
+									},
+									{
+										"key": "f",
+										"name": "Debug fail tests",
+										"icon": "error",
+										"type": "command",
+										"command": "testing.debugFailTests"
+									},
+									{
+										"key": "l",
+										"name": "Show test log",
+										"icon": "list-flat",
+										"type": "command",
+										"command": "testing.debugAtCursor"
+									},
+									{
+										"key": "b",
+										"name": "Run current test file",
+										"icon": "file",
+										"type": "command",
+										"command": "test-explorer.run-file"
+									},
+									{
+										"key": "c",
+										"name": "Cancel running tests",
+										"icon": "close",
+										"type": "command",
+										"command": "testing.cancelRun"
+									}
+								]
+							},
+							{
 								"key": "w",
 								"name": "+Window",
 								"icon": "split-horizontal",
