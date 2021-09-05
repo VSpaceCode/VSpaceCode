@@ -48,6 +48,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - `<SPC> m G r` to peek references
 - Add open-link in Text related commands (`SPC x o`)
 - Add support for web extension
+- Add `<spc> d C` to continue debug to cursor
 
 ## [0.10.2] - 2021-08-22
 
