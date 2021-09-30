@@ -4795,6 +4795,57 @@
 												]
 											},
 											{
+												"key": "a",
+												"name": "+Actions",
+												"icon": "zap",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Execute code action",
+														"icon": "lightbulb",
+														"type": "command",
+														"command": "editor.action.codeAction"
+													},
+													{
+														"key": "f",
+														"name": "Execute fix action",
+														"icon": "lightbulb-autofix",
+														"type": "command",
+														"command": "editor.action.quickFix"
+													},
+													{
+														"key": "s",
+														"name": "Execute source action",
+														"icon": "lightbulb",
+														"type": "command",
+														"command": "editor.action.sourceAction"
+													},
+													{
+														"key": "r",
+														"name": "+Refactor",
+														"icon": "edit",
+														"type": "bindings",
+														"bindings": [
+															{
+																"key": ".",
+																"name": "Execute refactor action",
+																"icon": "lightbulb-autofix",
+																"type": "command",
+																"command": "editor.action.refactor"
+															},
+															{
+																"key": "r",
+																"name": "Rename symbol",
+																"icon": "symbol-keyword",
+																"type": "command",
+																"command": "editor.action.rename"
+															}
+														]
+													}
+												]
+											},
+											{
 												"key": "b",
 												"name": "+Backend",
 												"icon": "circuit-board",
@@ -4827,6 +4878,99 @@
 														"icon": "refresh",
 														"type": "command",
 														"command": "rust-analyzer.reloadWorkspace"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Goto",
+												"icon": "go-to-file",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Find defenition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "h",
+														"name": "Go to call hierachy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "references-view.showCallHierarchy"
+													},
+													{
+														"key": "i",
+														"name": "Find implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "editor.action.goToImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Find references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "references-view.findReferences"
+													},
+													{
+														"key": "s",
+														"name": "Find symbol in file",
+														"icon": "file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "t",
+														"name": "Go to type definition",
+														"icon": "symbol-struct",
+														"type": "command",
+														"command": "editor.action.goToTypeDefinition"
+													},
+													{
+														"key": "S",
+														"name": "Find symbol in project",
+														"icon": "project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													}
+												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "h",
+														"name": "show call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "editor.showCallHierarchy"
+													},
+													{
+														"key": "i",
+														"name": "Peek implementation",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "editor.action.peekImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
 													}
 												]
 											}
