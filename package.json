@@ -1202,6 +1202,13 @@
 										"command": "git.init"
 									},
 									{
+										"key": "l",
+										"name": "Magit logging",
+										"icon": "history",
+										"type": "command",
+										"command": "magit.logging"
+									},
+									{
 										"key": "m",
 										"name": "Magit dispatch",
 										"icon": "repo",
