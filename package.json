@@ -885,7 +885,7 @@
 										"bindings": [
 											{
 												"key": "f",
-												"name": "Fix",
+												"name": "Fix error",
 												"icon": "lightbulb-autofix",
 												"type": "command",
 												"command": "editor.action.quickFix"
@@ -914,8 +914,15 @@
 										]
 									},
 									{
+										"key": "e",
+										"name": "Show error",
+										"icon": "error",
+										"type": "command",
+										"command": "editor.action.showHover"
+									},
+									{
 										"key": "f",
-										"name": "Fix",
+										"name": "Fix error",
 										"icon": "lightbulb-autofix",
 										"type": "command",
 										"command": "editor.action.quickFix"
