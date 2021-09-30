@@ -884,6 +884,13 @@
 										"type": "transient",
 										"bindings": [
 											{
+												"key": "f",
+												"name": "Fix",
+												"icon": "lightbulb-autofix",
+												"type": "command",
+												"command": "editor.action.quickFix"
+											},
+											{
 												"key": "n",
 												"name": "Next error",
 												"icon": "arrow-down",
@@ -905,6 +912,13 @@
 												"command": "editor.action.marker.prevInFiles"
 											}
 										]
+									},
+									{
+										"key": "f",
+										"name": "Fix",
+										"icon": "lightbulb-autofix",
+										"type": "command",
+										"command": "editor.action.quickFix"
 									},
 									{
 										"key": "l",

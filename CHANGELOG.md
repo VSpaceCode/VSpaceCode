@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `SPC : t` to run test task
   - `SPC : :` to run task
   - `SPC : R` to restart running task
+- Add `<SPC> e f` to fix an error
 - Add additional bindings in Rust major mode
   - "+Action" menu (`<SPC> m a`):
     - `<SPC> m a a` to execute code action
