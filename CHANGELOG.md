@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - `<SPC> m a s` to execute source action
     - `<SPC> m a r` to show "+Refactor" menu
       - `<SPC> m a r .` to execute refactor action
-      - `<SPC> m a r r` to renable symbol
+      - `<SPC> m a r r` to rename symbol
   - "+Goto" menu (`<SPC> m g`):
     - `<SPC> m g d` to find definition
     - `<SPC> m g h` to go to call hierarchy
