@@ -4896,7 +4896,7 @@
 													},
 													{
 														"key": "h",
-														"name": "Go to call hierachy",
+														"name": "Go to call hierarchy",
 														"icon": "type-hierarchy",
 														"type": "command",
 														"command": "references-view.showCallHierarchy"
