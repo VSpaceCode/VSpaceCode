@@ -13,6 +13,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add additional bindings in Rust major mode
+  - "+Action" menu (`<SPC> m a`):
+    - `<SPC> m a a` to execute code action
+    - `<SPC> m a f` to execute fix action
+    - `<SPC> m a s` to execute source action
+    - `<SPC> m a r` to show "+Refactor" menu
+      - `<SPC> m a r .` to execute refactor action
+      - `<SPC> m a r r` to renable symbol
+  - "+Goto" menu (`<SPC> m g`):
+    - `<SPC> m g d` to find definition
+    - `<SPC> m g h` to go to call hierarchy
+    - `<SPC> m g i` to find implementations
+    - `<SPC> m g r` to find references
+    - `<SPC> m g s` to find symbol in file
+    - `<SPC> m g t` to go to type definition
+    - `<SPC> m g S` to find symbol in project
+  - "+Peek" menu (`SPC m G`):
+    - `<SPC> m G d` to peek definition
+    - `<SPC> m G h` to show call hierarchy
+    - `<SPC> m G i` to peek implementation
+    - `<SPC> m G r` to peek references
+
 ## [0.10.2] - 2021-08-22
 
 ### Added
