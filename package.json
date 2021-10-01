@@ -4953,7 +4953,7 @@
 													},
 													{
 														"key": "h",
-														"name": "show call hierarchy",
+														"name": "Show call hierarchy",
 														"icon": "type-hierarchy",
 														"type": "command",
 														"command": "editor.showCallHierarchy"
