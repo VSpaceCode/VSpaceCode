@@ -36,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - `<SPC> m G h` to show call hierarchy
     - `<SPC> m G i` to peek implementation
     - `<SPC> m G r` to peek references
+- Add open-link in Text related commands (`SPC x o`)
 
 ## [0.10.2] - 2021-08-22
 
