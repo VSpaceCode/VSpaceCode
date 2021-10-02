@@ -317,6 +317,77 @@
 								]
 							},
 							{
+								"key": ":",
+								"name": "+Tasks",
+								"icon": "tasklist",
+								"type": "bindings",
+								"bindings": [
+									{
+										"key": ".",
+										"name": "Rerun last task",
+										"icon": "debug-rerun",
+										"type": "command",
+										"command": "workbench.action.tasks.reRunTask"
+									},
+									{
+										"key": "b",
+										"name": "Run build tasks",
+										"icon": "server-process",
+										"type": "command",
+										"command": "workbench.action.tasks.build"
+									},
+									{
+										"key": "c",
+										"name": "Configure task runner",
+										"icon": "gear",
+										"type": "command",
+										"command": "workbench.action.tasks.configureTaskRunner"
+									},
+									{
+										"key": "g",
+										"name": "Show running tasks",
+										"icon": "checklist",
+										"type": "command",
+										"command": "workbench.action.tasks.showTasks"
+									},
+									{
+										"key": "k",
+										"name": "Kill task",
+										"icon": "trash",
+										"type": "command",
+										"command": "workbench.action.tasks.terminate"
+									},
+									{
+										"key": "l",
+										"name": "Show task log",
+										"icon": "history",
+										"type": "command",
+										"command": "workbench.action.tasks.showLog"
+									},
+									{
+										"key": "t",
+										"name": "Run test task",
+										"icon": "beaker",
+										"type": "command",
+										"command": "workbench.action.tasks.test"
+									},
+									{
+										"key": "x",
+										"name": "Run task",
+										"icon": "play",
+										"type": "command",
+										"command": "workbench.action.tasks.runTask"
+									},
+									{
+										"key": "R",
+										"name": "Restart running task",
+										"icon": "refresh",
+										"type": "command",
+										"command": "workbench.action.tasks.restartTask"
+									}
+								]
+							},
+							{
 								"key": "b",
 								"name": "+Buffers",
 								"icon": "file",
