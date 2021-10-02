@@ -5377,6 +5377,13 @@
 										"command": "editor.action.organizeImports"
 									},
 									{
+										"key": "o",
+										"name": "Open link",
+										"icon": "link-external",
+										"type": "command",
+										"command": "editor.action.openLink"
+									},
+									{
 										"key": "r",
 										"name": "Rename symbol",
 										"icon": "symbol-keyword",
