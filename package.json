@@ -3932,7 +3932,7 @@
 											},
 											{
 												"key": "g",
-												"name": "+Goto",
+												"name": "+Go to",
 												"icon": "go-to-file",
 												"type": "bindings",
 												"bindings": [
@@ -4889,7 +4889,7 @@
 												"bindings": [
 													{
 														"key": "d",
-														"name": "Find defenition",
+														"name": "Find definition",
 														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
