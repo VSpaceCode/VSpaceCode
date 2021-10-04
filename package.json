@@ -330,6 +330,13 @@
 										"command": "workbench.action.tasks.reRunTask"
 									},
 									{
+										"key": ":",
+										"name": "Run task",
+										"icon": "play",
+										"type": "command",
+										"command": "workbench.action.tasks.runTask"
+									},
+									{
 										"key": "b",
 										"name": "Run build tasks",
 										"icon": "server-process",
@@ -351,13 +358,6 @@
 										"command": "workbench.action.tasks.showTasks"
 									},
 									{
-										"key": "k",
-										"name": "Kill task",
-										"icon": "trash",
-										"type": "command",
-										"command": "workbench.action.tasks.terminate"
-									},
-									{
 										"key": "l",
 										"name": "Show task log",
 										"icon": "history",
@@ -373,10 +373,10 @@
 									},
 									{
 										"key": "x",
-										"name": "Run task",
-										"icon": "play",
+										"name": "Terminate task",
+										"icon": "trash",
 										"type": "command",
-										"command": "workbench.action.tasks.runTask"
+										"command": "workbench.action.tasks.terminate"
 									},
 									{
 										"key": "R",
