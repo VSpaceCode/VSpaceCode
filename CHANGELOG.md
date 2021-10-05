@@ -15,6 +15,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add Tasks-related SPC bindings (start with `SPC :`)
+  - `SPC : .` to rerun last task
+  - `SPC : b` to run build task
+  - `SPC : c` to configure task runner
+  - `SPC : g` to show running task
+  - `SPC : x` to terminate task
+  - `SPC : l` to show task log
+  - `SPC : t` to run test task
+  - `SPC : :` to run task
+  - `SPC : R` to restart running task
 - Add additional bindings in Rust major mode
   - "+Action" menu (`<SPC> m a`):
     - `<SPC> m a a` to execute code action
