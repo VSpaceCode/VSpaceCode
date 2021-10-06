@@ -90,7 +90,7 @@
         "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
     },
-    // Easy navigation in sugesstion/intellisense
+    // Easy navigation in suggestion/intellisense
     // Cannot be added to package.json because of conflict with vim's default bindings
     {
         "key": "ctrl+j",
