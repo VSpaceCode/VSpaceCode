@@ -58,7 +58,8 @@
 		"onCommand:vspacecode.configureKeybindings",
 		"onCommand:vspacecode.openDocumentationUrl"
 	],
-	"main": "./dist/extension.js",
+	"main": "./dist/extension-node",
+	"browser": "./dist/extension-web",
 	"contributes": {
 		"commands": [
 			{
@@ -6252,11 +6253,11 @@
 	"scripts": {
 		"vscode:prepublish": "webpack --mode production",
 		"compile": "webpack --mode development",
-		"watch": "tsc -watch -p ./",
+		"watch": "webpack --watch",
 		"lint": "eslint src --ext ts",
-		"test-compile": "tsc -p ./",
-		"pretest": "npm run test-compile && npm run lint",
-		"test": "node ./out/test/runTest.js",
+		"test": "npm run compile && npm run test-node && npm run test-web",
+		"test-node": "node ./dist/test/runTest.js",
+		"test-web": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=./dist/test/suite/index-web.js",
 		"generate-keybindings": "node ./scripts/keybindings.js",
 		"sort-bindings": "node ./scripts/sort.js"
 	},
@@ -6266,12 +6267,17 @@
 		"@types/mocha": "^8.2.2",
 		"@types/node": "^14.14.35",
 		"@types/vscode": "1.45.0",
+		"@types/webpack-env": "^1.16.0",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
+		"@vscode/test-electron": "^1.6.2",
+		"@vscode/test-web": "^0.0.15",
+		"assert": "^2.0.0",
 		"eslint": "^7.22.0",
 		"glob": "^7.1.6",
 		"markdown-table": "^2.0.0",
 		"mocha": "^8.3.2",
+		"process": "^0.11.10",
 		"ts-loader": "^8.0.18",
 		"typescript": "^4.2.3",
 		"vscode-test": "^1.5.1",
@@ -6280,6 +6286,7 @@
 	},
 	"dependencies": {
 		"jsonc-parser": "^3.0.0",
-		"lodash": "^4.17.21"
+		"lodash": "^4.17.21",
+		"path-browserify": "^1.0.1"
 	}
 }

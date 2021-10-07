@@ -2,6 +2,7 @@
 
 .vscode/**
 .vscode-test/**
+.vscode-test-web/**
 
 **/*.ts
 **/*.map
@@ -9,6 +10,8 @@
 
 src/**
 out/**
+dist/test/**
+dist/**/*.map
 node_modules/**
 
 resources/*
