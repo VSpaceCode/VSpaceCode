@@ -6256,8 +6256,8 @@
 		"watch": "webpack --watch",
 		"lint": "eslint src --ext ts",
 		"test": "npm run compile && npm run test-node && npm run test-web",
-		"test-node": "node ./dist/test/runTest.js",
-		"test-web": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. --extensionTestsPath=./dist/test/suite/index-web.js",
+		"test-node": "node ./dist/test/runTest-node.js",
+		"test-web": "node ./dist/test/runTest-web.js",
 		"generate-keybindings": "node ./scripts/keybindings.js",
 		"sort-bindings": "node ./scripts/sort.js"
 	},
@@ -6272,6 +6272,7 @@
 		"@typescript-eslint/parser": "^4.19.0",
 		"@vscode/test-electron": "^1.6.2",
 		"@vscode/test-web": "^0.0.15",
+		"adm-zip": "^0.5.7",
 		"assert": "^2.0.0",
 		"eslint": "^7.22.0",
 		"glob": "^7.1.6",

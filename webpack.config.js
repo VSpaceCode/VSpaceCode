@@ -71,7 +71,8 @@ const nodeConfig = /** @type WebpackConfig */ {
     "extension-node": "./src/extension.ts", // source of the node extension main file
     "test/suite/index-node": "./src/test/suite/index-node.ts", // source of the node extension test runner
     "test/suite/extension.test": "./src/test/suite/extension.test.ts", // create a separate file for the tests, to be found by glob
-    "test/runTest": "./src/test/runTest", // used to start the VS Code test runner (@vscode/test-electron)
+    "test/runTest-node": "./src/test/runTest-node", // used to start the VS Code test runner (@vscode/test-electron)
+    "test/runTest-web": "./src/test/runTest-web", // used to start the VS Code test runner (@vscode/test-web)
   },
   output: {
     filename: "[name].js",
@@ -107,7 +108,9 @@ const nodeConfig = /** @type WebpackConfig */ {
   externals: {
     vscode: "commonjs vscode", // ignored because it doesn't exist
     mocha: "commonjs mocha", // don't bundle
-    '@vscode/test-electron': "commonjs @vscode/test-electron" // don't bundle
+    '@vscode/test-electron': "commonjs @vscode/test-electron", // don't bundle
+    '@vscode/test-web': "commonjs @vscode/test-web", // don't bundle
+    'adm-zip': "commonjs adm-zip", // don't bundle
   },
   performance: {
     hints: false,
