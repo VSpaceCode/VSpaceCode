@@ -1,0 +1,23 @@
+on: [push, pull_request]
+
+name: Build Extension
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vscode-which-key
+        uses: actions/checkout@v2
+
+      - name: Set up node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: xvfb-run -a npm run test
