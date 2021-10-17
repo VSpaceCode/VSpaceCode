@@ -718,6 +718,13 @@
 										"command": "workbench.debug.action.focusWatchView"
 									},
 									{
+										"key": "C",
+										"name": "Continue to cursor",
+										"icon": "debug-continue",
+										"type": "command",
+										"command": "editor.debug.action.runToCursor"
+									},
+									{
 										"key": "D",
 										"name": "Run without debugging",
 										"icon": "run",
