@@ -5,7 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout vscode-which-key
+      - name: Checkout VSpaceCode
         uses: actions/checkout@v2
 
       - name: Set up node.js
