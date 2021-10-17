@@ -36,14 +36,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - `<SPC> m a r` to show "+Refactor" menu
       - `<SPC> m a r .` to execute refactor action
       - `<SPC> m a r r` to rename symbol
-  - "+Goto" menu (`<SPC> m g`):
-    - `<SPC> m g d` to find definition
-    - `<SPC> m g h` to go to call hierarchy
-    - `<SPC> m g i` to find implementations
-    - `<SPC> m g r` to find references
-    - `<SPC> m g s` to find symbol in file
+  - "+Go to" menu (`<SPC> m g`):
+    - `<SPC> m g d` to go to definition
+    - `<SPC> m g h` to show call hierarchy
+    - `<SPC> m g i` to go to implementations
+    - `<SPC> m g r` to go to references
+    - `<SPC> m g s` to go to symbol in buffer
     - `<SPC> m g t` to go to type definition
-    - `<SPC> m g S` to find symbol in project
+    - `<SPC> m g S` to go to symbol in project
+    - `<SPC> m g I` to find implementations
+    - `<SPC> m g R` to find references
   - "+Peek" menu (`SPC m G`):
     - `<SPC> m G d` to peek definition
     - `<SPC> m G h` to show call hierarchy
@@ -52,6 +54,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add open-link in Text related commands (`SPC x o`)
 - Add support for web extension
 - Add `<spc> d C` to continue debug to cursor
+
+### Changed
+
+- Unify existing "+Go to" menu in major modes to our [convention](https://vspacecode.github.io/docs/conventions)
+
+### Fixed
+
+- Fix "Go to test/implementation file" `<SPC> m g t` for dart major mode
 
 ## [0.10.2] - 2021-08-22
 

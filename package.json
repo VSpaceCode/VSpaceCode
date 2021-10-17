@@ -1531,7 +1531,7 @@
 									},
 									{
 										"key": "I",
-										"name": "Jump to symbol in workspace",
+										"name": "Jump to symbol in project",
 										"icon": "project",
 										"type": "command",
 										"command": "workbench.action.showAllSymbols"
@@ -2247,38 +2247,31 @@
 													},
 													{
 														"key": "r",
-														"name": "Peek references",
+														"name": "Go to reference",
 														"icon": "symbol-reference",
 														"type": "command",
-														"command": "editor.action.referencesSearch.trigger"
+														"command": "editor.action.goToReferences"
 													},
 													{
 														"key": "s",
-														"name": "Go to symbol in editor",
+														"name": "Go to symbol in buffer",
 														"icon": "symbol-class",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
 													},
 													{
-														"key": "D",
-														"name": "Peek declaration",
-														"icon": "symbol-struct",
-														"type": "command",
-														"command": "editor.action.peekDeclaration"
-													},
-													{
-														"key": "G",
-														"name": "Peek definition",
-														"icon": "symbol-function",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
 														"key": "R",
-														"name": "Find all references",
-														"icon": "references",
+														"name": "Find references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "references-view.findReferences"
+													},
+													{
+														"key": "S",
+														"name": "Go to symbol in project",
+														"icon": "symbol-class",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
 													}
 												]
 											},
@@ -2294,6 +2287,35 @@
 														"icon": "symbol-keyword",
 														"type": "command",
 														"command": "editor.action.rename"
+													}
+												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek declaration",
+														"icon": "symbol-struct",
+														"type": "command",
+														"command": "editor.action.peekDeclaration"
+													},
+													{
+														"key": "g",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
 													}
 												]
 											}
@@ -2441,29 +2463,22 @@
 													},
 													{
 														"key": "r",
-														"name": "Peek references",
+														"name": "Go to references",
 														"icon": "symbol-reference",
 														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
-													},
-													{
-														"key": "D",
-														"name": "Peek definition",
-														"icon": "symbol-function",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
+														"command": "editor.action.goToReferences"
 													},
 													{
 														"key": "I",
-														"name": "Find all implementation",
+														"name": "Find implementations",
 														"icon": "symbol-module",
 														"type": "command",
 														"command": "references-view.findImplementations"
 													},
 													{
 														"key": "R",
-														"name": "Find all references",
-														"icon": "references",
+														"name": "Find references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "references-view.findReferences"
 													}
@@ -2532,6 +2547,35 @@
 														"icon": "testing-run-icon",
 														"type": "command",
 														"command": "dotnet.test.runTestsInContext"
+													}
+												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "i",
+														"name": "Peek implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "editor.action.peekImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
 													}
 												]
 											}
@@ -2726,10 +2770,10 @@
 													},
 													{
 														"key": "r",
-														"name": "Peek references",
+														"name": "Go to references",
 														"icon": "symbol-reference",
 														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
+														"command": "editor.action.goToReferences"
 													},
 													{
 														"key": "s",
@@ -2740,29 +2784,22 @@
 													},
 													{
 														"key": "t",
-														"name": "Go to test/implimentation file",
+														"name": "Go to test/implementation file",
 														"icon": "beaker",
 														"type": "command",
-														"command": "dart.goToTestOrImplimentationFile"
-													},
-													{
-														"key": "D",
-														"name": "Peek definition",
-														"icon": "symbol-function",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
+														"command": "dart.goToTestOrImplementationFile"
 													},
 													{
 														"key": "I",
-														"name": "Find all implementation",
+														"name": "Find implementations",
 														"icon": "symbol-module",
 														"type": "command",
 														"command": "references-view.findImplementations"
 													},
 													{
 														"key": "R",
-														"name": "Find all references",
-														"icon": "references",
+														"name": "Find references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "references-view.findReferences"
 													},
@@ -3048,6 +3085,35 @@
 												]
 											},
 											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "i",
+														"name": "Peek implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "editor.action.peekImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													}
+												]
+											},
+											{
 												"key": "T",
 												"name": "+Toggle",
 												"icon": "settings",
@@ -3253,18 +3319,18 @@
 														"command": "editor.action.revealDefinition"
 													},
 													{
-														"key": "i",
-														"name": "Find symbol in file",
+														"key": "r",
+														"name": "Go to reference",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.goToReferences"
+													},
+													{
+														"key": "s",
+														"name": "Find symbol in buffer",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
-													},
-													{
-														"key": "r",
-														"name": "Peek references",
-														"icon": "symbol-reference",
-														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
 													},
 													{
 														"key": "t",
@@ -3274,32 +3340,18 @@
 														"command": "editor.action.goToTypeDefinition"
 													},
 													{
-														"key": "D",
-														"name": "Peek definition",
-														"icon": "symbol-function",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
 														"key": "I",
-														"name": "Find symbol in project",
-														"icon": "project",
+														"name": "Find implementations",
+														"icon": "symbol-module",
 														"type": "command",
-														"command": "workbench.action.showAllSymbols"
+														"command": "references-view.findImplementations"
 													},
 													{
 														"key": "R",
-														"name": "Find all references",
-														"icon": "references",
+														"name": "Find references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "references-view.findReferences"
-													},
-													{
-														"key": "T",
-														"name": "Peek type definition",
-														"icon": "symbol-struct",
-														"type": "command",
-														"command": "editor.action.peekTypeDefinition"
 													}
 												]
 											},
@@ -3372,6 +3424,35 @@
 														"icon": "repl",
 														"type": "command",
 														"command": "fsi.Start"
+													}
+												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "t",
+														"name": "Peek type definition",
+														"icon": "symbol-struct",
+														"type": "command",
+														"command": "editor.action.peekTypeDefinition"
 													}
 												]
 											}
@@ -3590,13 +3671,6 @@
 												"type": "bindings",
 												"bindings": [
 													{
-														"key": "c",
-														"name": "Peak call hierarchy",
-														"icon": "type-hierarchy",
-														"type": "command",
-														"command": "editor.showCallHierarchy"
-													},
-													{
 														"key": "d",
 														"name": "Go to definition",
 														"icon": "symbol-function",
@@ -3618,6 +3692,13 @@
 														"command": "editor.action.revealDefinition"
 													},
 													{
+														"key": "h",
+														"name": "Show call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "references-view.showCallHierarchy"
+													},
+													{
 														"key": "i",
 														"name": "Go to implementations",
 														"icon": "symbol-module",
@@ -3626,10 +3707,10 @@
 													},
 													{
 														"key": "r",
-														"name": "Peek references",
+														"name": "Go to references",
 														"icon": "symbol-reference",
 														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
+														"command": "editor.action.goToReferences"
 													},
 													{
 														"key": "t",
@@ -3639,39 +3720,18 @@
 														"command": "editor.action.goToTypeDefinition"
 													},
 													{
-														"key": "C",
-														"name": "Show call hierarchy",
-														"icon": "type-hierarchy",
-														"type": "command",
-														"command": "references-view.showCallHierarchy"
-													},
-													{
-														"key": "D",
-														"name": "Peek definition",
-														"icon": "symbol-function",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
 														"key": "I",
-														"name": "Find all implementation",
+														"name": "Find implementations",
 														"icon": "symbol-module",
 														"type": "command",
 														"command": "references-view.findImplementations"
 													},
 													{
 														"key": "R",
-														"name": "Find all references",
-														"icon": "references",
+														"name": "Find references",
+														"icon": "symbol-reference",
 														"type": "command",
 														"command": "references-view.findReferences"
-													},
-													{
-														"key": "T",
-														"name": "Peek type definition",
-														"icon": "symbol-struct",
-														"type": "command",
-														"command": "editor.action.peekTypeDefinition"
 													}
 												]
 											},
@@ -3898,6 +3958,42 @@
 																"command": "go.toggle.test.file"
 															}
 														]
+													}
+												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "h",
+														"name": "Peek call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "editor.showCallHierarchy"
+													},
+													{
+														"key": "i",
+														"name": "Peek implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "editor.action.peekImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
 													}
 												]
 											}
@@ -4571,39 +4667,32 @@
 														"command": "editor.action.revealDefinition"
 													},
 													{
-														"key": "i",
-														"name": "Find symbol in file",
+														"key": "r",
+														"name": "Go to references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.goToReferences"
+													},
+													{
+														"key": "s",
+														"name": "Go to symbol in file",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
 													},
 													{
-														"key": "r",
-														"name": "Peek references",
+														"key": "R",
+														"name": "Find references",
 														"icon": "symbol-reference",
 														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
+														"command": "references-view.findReferences"
 													},
 													{
-														"key": "D",
-														"name": "Peek definition",
-														"icon": "symbol-function",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
-														"key": "I",
-														"name": "Find symbol in project",
+														"key": "S",
+														"name": "Go to symbol in project",
 														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
-													},
-													{
-														"key": "R",
-														"name": "Find all references",
-														"icon": "references",
-														"type": "command",
-														"command": "references-view.findReferences"
 													}
 												]
 											},
@@ -4714,6 +4803,28 @@
 														"command": "python.selectAndDebugTestMethod"
 													}
 												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													}
+												]
 											}
 										]
 									},
@@ -4800,39 +4911,32 @@
 														"command": "editor.action.revealDefinition"
 													},
 													{
-														"key": "i",
-														"name": "Find symbol in file",
+														"key": "r",
+														"name": "Go to references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.goToReferences"
+													},
+													{
+														"key": "s",
+														"name": "Find symbol in buffer",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
 													},
 													{
-														"key": "r",
-														"name": "Peek references",
+														"key": "R",
+														"name": "Find references",
 														"icon": "symbol-reference",
 														"type": "command",
-														"command": "editor.action.referenceSearch.trigger"
+														"command": "references-view.findReferences"
 													},
 													{
-														"key": "D",
-														"name": "Peek definition",
-														"icon": "symbol-function",
-														"type": "command",
-														"command": "editor.action.peekDefinition"
-													},
-													{
-														"key": "I",
+														"key": "S",
 														"name": "Find symbol in project",
 														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
-													},
-													{
-														"key": "R",
-														"name": "Find all references",
-														"icon": "references",
-														"type": "command",
-														"command": "references-view.findReferences"
 													}
 												]
 											},
@@ -4848,6 +4952,28 @@
 														"icon": "symbol-keyword",
 														"type": "command",
 														"command": "editor.action.rename"
+													}
+												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
 													}
 												]
 											}
@@ -4989,35 +5115,35 @@
 												"bindings": [
 													{
 														"key": "d",
-														"name": "Find definition",
+														"name": "Go to definition",
 														"icon": "symbol-function",
 														"type": "command",
 														"command": "editor.action.revealDefinition"
 													},
 													{
 														"key": "h",
-														"name": "Go to call hierarchy",
+														"name": "Show call hierarchy",
 														"icon": "type-hierarchy",
 														"type": "command",
 														"command": "references-view.showCallHierarchy"
 													},
 													{
 														"key": "i",
-														"name": "Find implementations",
+														"name": "Go to implementations",
 														"icon": "symbol-module",
 														"type": "command",
 														"command": "editor.action.goToImplementation"
 													},
 													{
 														"key": "r",
-														"name": "Find references",
+														"name": "Go to references",
 														"icon": "symbol-reference",
 														"type": "command",
-														"command": "references-view.findReferences"
+														"command": "editor.action.goToReferences"
 													},
 													{
 														"key": "s",
-														"name": "Find symbol in file",
+														"name": "Go to symbol in buffer",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
@@ -5030,8 +5156,22 @@
 														"command": "editor.action.goToTypeDefinition"
 													},
 													{
+														"key": "I",
+														"name": "Find implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "references-view.findImplementations"
+													},
+													{
+														"key": "R",
+														"name": "Find references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "references-view.findReferences"
+													},
+													{
 														"key": "S",
-														"name": "Find symbol in project",
+														"name": "Go to symbol in project",
 														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
@@ -5053,14 +5193,14 @@
 													},
 													{
 														"key": "h",
-														"name": "Show call hierarchy",
+														"name": "Peek call hierarchy",
 														"icon": "type-hierarchy",
 														"type": "command",
 														"command": "editor.showCallHierarchy"
 													},
 													{
 														"key": "i",
-														"name": "Peek implementation",
+														"name": "Peek implementations",
 														"icon": "symbol-module",
 														"type": "command",
 														"command": "editor.action.peekImplementation"
@@ -5315,7 +5455,7 @@
 									},
 									{
 										"key": "J",
-										"name": "Jump to symbol in workspace",
+										"name": "Jump to symbol in project",
 										"icon": "symbol-class",
 										"type": "command",
 										"command": "workbench.action.showAllSymbols"
