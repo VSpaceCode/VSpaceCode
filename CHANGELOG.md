@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix testing commands `<SPC> m t ...` for python major mode
+
 ## [0.10.3] - 2021-10-17
 
 ### Added
