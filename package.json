@@ -6449,7 +6449,7 @@
 		"process": "^0.11.10",
 		"ts-loader": "^8.0.18",
 		"typescript": "^4.2.3",
-		"vsce": "1.97.0",
+		"vsce": "^1.103.0",
 		"vscode-test": "^1.5.1",
 		"webpack": "^5.27.2",
 		"webpack-cli": "^4.5.0"
