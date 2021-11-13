@@ -4009,7 +4009,7 @@
 												"name": "Execute code in REPL",
 												"icon": "play",
 												"type": "command",
-												"command": "language-julia.executeJuliaCodeInREPL",
+												"command": "language-julia.executeJuliaCodeInREPL"
 											},
 											{
 												"key": "d",
@@ -4023,14 +4023,14 @@
 												"name": "Show plots",
 												"icon": "pulse",
 												"type": "command",
-												"command": "language-julia.show-plotpane",
+												"command": "language-julia.show-plotpane"
 											},
 											{
 												"key": "w",
 												"name": "Focus on workspace view",
 												"icon": "play",
 												"type": "command",
-												"command": "REPLVariables.focus",
+												"command": "REPLVariables.focus"
 											},
 											{
 												"key": "e",
@@ -4079,7 +4079,7 @@
 														"icon": "tag",
 														"type": "command",
 														"command": "language-julia.tagNewPackageVersion"
-													},
+													}
 												]
 											},
 											{
@@ -4115,7 +4115,7 @@
 														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
-													},
+													}
 												]
 											},
 											{
@@ -4129,14 +4129,14 @@
 														"icon": "output",
 														"type": "command",
 														"command": "language-julia.refreshLanguageServer",
-														"name": "Re-index language server cache",
+														"name": "Re-index language server cache"
 													},
 													{
 														"key": "r",
 														"name": "Restart language server",
 														"icon": "server-process",
 														"type": "command",
-														"command": "language-julia.restartLanguageServer",
+														"command": "language-julia.restartLanguageServer"
 													},
 													{
 														"key": "l",
@@ -4144,7 +4144,7 @@
 														"icon": "check",
 														"type": "command",
 														"command": "language-julia.toggleLinter"
-													},
+													}
 												]
 											},
 											{
@@ -4250,7 +4250,7 @@
 														"icon": "debug-stop",
 														"type": "command",
 														"command": "language-julia.stopKernel"
-													},
+													}
 												]
 											},
 											{
@@ -4385,7 +4385,7 @@
 														"icon": "file",
 														"type": "command",
 														"command": "language-julia.executeActiveFile"
-													},
+													}
 												]
 											},
 											{
@@ -4414,9 +4414,9 @@
 														"icon": "clear-all",
 														"type": "command",
 														"command": "language-julia.clearAllInlineResultsInEditor"
-													},
+													}
 												]
-											},
+											}
 										]},
 									{
 										"key": "languageId:latex",
