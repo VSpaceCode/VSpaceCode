@@ -4033,56 +4033,6 @@
 												"command": "REPLVariables.focus"
 											},
 											{
-												"key": "e",
-												"name": "+Environment/package",
-												"icon": "library",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "a",
-														"name": "Activate this environment",
-														"icon": "check",
-														"type": "command",
-														"command": "language-julia.changeCurrentEnvironment"
-													},
-													{
-														"key": "c",
-														"name": "Change current environment",
-														"icon": "issue-reopened",
-														"type": "command",
-														"command": "language-julia.changeCurrentEnvironment"
-													},
-													{
-														"key": "p",
-														"name": "Activate parent environment",
-														"icon": "root-folder-opened",
-														"type": "command",
-														"command": "language-julia.changeCurrentEnvironment"
-													},
-													{
-														"key": "m",
-														"name": "Choose module",
-														"icon": "symbol-variable",
-														"type": "command",
-														"command": "language-julia.chooseModule"
-													},
-													{
-														"key": "p",
-														"name": "Open package directory",
-														"icon": "new-folder",
-														"type": "command",
-														"command": "language-julia.openPackageDirectory"
-													},
-													{
-														"key": "t",
-														"name": "Tag new package version",
-														"icon": "tag",
-														"type": "command",
-														"command": "language-julia.tagNewPackageVersion"
-													}
-												]
-											},
-											{
 												"key": "=",
 												"name": "+Format",
 												"icon": "list-flat",
@@ -4132,18 +4082,18 @@
 														"name": "Re-index language server cache"
 													},
 													{
-														"key": "r",
-														"name": "Restart language server",
-														"icon": "server-process",
-														"type": "command",
-														"command": "language-julia.restartLanguageServer"
-													},
-													{
 														"key": "l",
 														"name": "Toggle linter",
 														"icon": "check",
 														"type": "command",
 														"command": "language-julia.toggleLinter"
+													},
+													{
+														"key": "r",
+														"name": "Restart language server",
+														"icon": "server-process",
+														"type": "command",
+														"command": "language-julia.restartLanguageServer"
 													}
 												]
 											},
@@ -4154,11 +4104,11 @@
 												"type": "bindings",
 												"bindings": [
 													{
-														"key": "d",
-														"name": "Debug file in new process",
-														"icon": "debug-alt",
+														"key": "a",
+														"name": "Add to compiled modules/functions",
+														"icon": "plus",
 														"type": "command",
-														"command": "language-julia.debugEditorContents"
+														"command": "language-julia.switchToCompiled"
 													},
 													{
 														"key": "c",
@@ -4168,6 +4118,13 @@
 														"command": "language-julia.switchAllToCompiled"
 													},
 													{
+														"key": "d",
+														"name": "Debug file in new process",
+														"icon": "debug-alt",
+														"type": "command",
+														"command": "language-julia.debugEditorContents"
+													},
+													{
 														"key": "i",
 														"name": "Switch all to interpreted",
 														"icon": "run-below",
@@ -4175,18 +4132,11 @@
 														"command": "language-julia.switchAllToInterpreted"
 													},
 													{
-														"key": "x",
-														"name": "Remove from compiled modules/functions",
-														"icon": "diff-removed",
+														"key": "m",
+														"name": "Enable compiled mode for the debugger",
+														"icon": "debug-breakpoint-log",
 														"type": "command",
-														"command": "language-julia.switchToInterpreted"
-													},
-													{
-														"key": "a",
-														"name": "Add to compiled modules/functions",
-														"icon": "plus",
-														"type": "command",
-														"command": "language-julia.switchToCompiled"
+														"command": "language-julia.enable-compiled-mode"
 													},
 													{
 														"key": "r",
@@ -4194,6 +4144,13 @@
 														"icon": "refresh",
 														"type": "command",
 														"command": "language-julia.refreshCompiled"
+													},
+													{
+														"key": "x",
+														"name": "Remove from compiled modules/functions",
+														"icon": "diff-removed",
+														"type": "command",
+														"command": "language-julia.switchToInterpreted"
 													},
 													{
 														"key": "A",
@@ -4210,25 +4167,11 @@
 														"command": "language-julia.reset-compiled"
 													},
 													{
-														"key": "Y",
-														"name": "Add symbol to compiled modules/functions",
-														"icon": "symbol-key",
-														"type": "command",
-														"command": "language-julia.set-compiled-for-name"
-													},
-													{
 														"key": "F",
 														"name": "Set current compiled modules/functions as default",
 														"icon": "symbol-constant",
 														"type": "command",
 														"command": "language-julia.set-current-as-default-compiled"
-													},
-													{
-														"key": "m",
-														"name": "Enable compiled mode for the debugger",
-														"icon": "debug-breakpoint-log",
-														"type": "command",
-														"command": "language-julia.enable-compiled-mode"
 													},
 													{
 														"key": "M",
@@ -4250,6 +4193,63 @@
 														"icon": "debug-stop",
 														"type": "command",
 														"command": "language-julia.stopKernel"
+													},
+													{
+														"key": "Y",
+														"name": "Add symbol to compiled modules/functions",
+														"icon": "symbol-key",
+														"type": "command",
+														"command": "language-julia.set-compiled-for-name"
+													}
+												]
+											},
+											{
+												"key": "e",
+												"name": "+Environment/package",
+												"icon": "library",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Activate this environment",
+														"icon": "check",
+														"type": "command",
+														"command": "language-julia.changeCurrentEnvironment"
+													},
+													{
+														"key": "c",
+														"name": "Change current environment",
+														"icon": "issue-reopened",
+														"type": "command",
+														"command": "language-julia.changeCurrentEnvironment"
+													},
+													{
+														"key": "m",
+														"name": "Choose module",
+														"icon": "symbol-variable",
+														"type": "command",
+														"command": "language-julia.chooseModule"
+													},
+													{
+														"key": "p",
+														"name": "Activate parent environment",
+														"icon": "root-folder-opened",
+														"type": "command",
+														"command": "language-julia.changeCurrentEnvironment"
+													},
+													{
+														"key": "p",
+														"name": "Open package directory",
+														"icon": "new-folder",
+														"type": "command",
+														"command": "language-julia.openPackageDirectory"
+													},
+													{
+														"key": "t",
+														"name": "Tag new package version",
+														"icon": "tag",
+														"type": "command",
+														"command": "language-julia.tagNewPackageVersion"
 													}
 												]
 											},
@@ -4317,46 +4317,11 @@
 												"type": "bindings",
 												"bindings": [
 													{
-														"key": "i",
-														"name": "Start REPL",
-														"icon": "repl",
+														"key": "b",
+														"name": "Execute block or selection in REPL",
+														"icon": "selection",
 														"type": "command",
-														"command": "language-julia.startREPL"
-													},
-													{
-														"key": "d",
-														"name": "Change directory here",
-														"icon": "folder-opened",
-														"type": "command",
-														"command": "language-julia.cdHere"
-													},
-													{
-														"key": "D",
-														"name": "Stop REPL",
-														"icon": "stop",
-														"type": "command",
-														"command": "language-julia.stopREPL"
-													},
-													{
-														"key": "C",
-														"name": "Connect external REPL",
-														"icon": "vm-connect",
-														"type": "command",
-														"command": "language-julia.connectREPL"
-													},
-													{
-														"key": "s",
-														"name": "Execute code in REPL",
-														"icon": "play",
-														"type": "command",
-														"command": "language-julia.executeJuliaCodeInREPL"
-													},
-													{
-														"key": "m",
-														"name": "Execute code in REPL and move",
-														"icon": "debug-continue",
-														"type": "command",
-														"command": "language-julia.executeCodeBlockOrSelectionAndMove"
+														"command": "language-julia.executeCodeBlockOrSelection"
 													},
 													{
 														"key": "c",
@@ -4366,11 +4331,11 @@
 														"command": "language-julia.executeCellAndMove"
 													},
 													{
-														"key": "b",
-														"name": "Execute block or selection in REPL",
-														"icon": "selection",
+														"key": "d",
+														"name": "Change directory here",
+														"icon": "folder-opened",
 														"type": "command",
-														"command": "language-julia.executeCodeBlockOrSelection"
+														"command": "language-julia.cdHere"
 													},
 													{
 														"key": "f",
@@ -4378,6 +4343,41 @@
 														"icon": "file",
 														"type": "command",
 														"command": "language-julia.executeFile"
+													},
+													{
+														"key": "i",
+														"name": "Start REPL",
+														"icon": "repl",
+														"type": "command",
+														"command": "language-julia.startREPL"
+													},
+													{
+														"key": "m",
+														"name": "Execute code in REPL and move",
+														"icon": "debug-continue",
+														"type": "command",
+														"command": "language-julia.executeCodeBlockOrSelectionAndMove"
+													},
+													{
+														"key": "s",
+														"name": "Execute code in REPL",
+														"icon": "play",
+														"type": "command",
+														"command": "language-julia.executeJuliaCodeInREPL"
+													},
+													{
+														"key": "C",
+														"name": "Connect external REPL",
+														"icon": "vm-connect",
+														"type": "command",
+														"command": "language-julia.connectREPL"
+													},
+													{
+														"key": "D",
+														"name": "Stop REPL",
+														"icon": "stop",
+														"type": "command",
+														"command": "language-julia.stopREPL"
 													},
 													{
 														"key": "F",
@@ -4417,7 +4417,8 @@
 													}
 												]
 											}
-										]},
+										]
+									},
 									{
 										"key": "languageId:latex",
 										"name": "LaTeX",
