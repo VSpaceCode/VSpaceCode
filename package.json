@@ -4311,42 +4311,6 @@
 												]
 											},
 											{
-												"key": "x",
-												"name": "+Clear",
-												"icon": "trash",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "c",
-														"name": "Change directory here",
-														"icon": "folder-opened",
-														"type": "command",
-														"command": "language-julia.cdHere"
-													},
-													{
-														"key": "d",
-														"name": "Clear сurrent inline results",
-														"icon": "chrome-close",
-														"type": "command",
-														"command": "language-julia.clearCurrentInlineResult"
-													},
-													{
-														"key": "D",
-														"name": "Clear all inline results",
-														"icon": "clear-all",
-														"type": "command",
-														"command": "language-julia.clearAllInlineResults"
-													},
-													{
-														"key": "K",
-														"name": "Clear all inline results in editor",
-														"icon": "clear-all",
-														"type": "command",
-														"command": "language-julia.clearAllInlineResultsInEditor"
-													},
-												]
-											},
-											{
 												"key": "s",
 												"name": "+Send/REPL",
 												"icon": "repl",
@@ -4358,6 +4322,13 @@
 														"icon": "repl",
 														"type": "command",
 														"command": "language-julia.startREPL"
+													},
+													{
+														"key": "d",
+														"name": "Change directory here",
+														"icon": "folder-opened",
+														"type": "command",
+														"command": "language-julia.cdHere"
 													},
 													{
 														"key": "D",
@@ -4414,6 +4385,35 @@
 														"icon": "file",
 														"type": "command",
 														"command": "language-julia.executeActiveFile"
+													},
+												]
+											},
+											{
+												"key": "x",
+												"name": "+Clear",
+												"icon": "trash",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Clear сurrent inline results",
+														"icon": "chrome-close",
+														"type": "command",
+														"command": "language-julia.clearCurrentInlineResult"
+													},
+													{
+														"key": "D",
+														"name": "Clear all inline results",
+														"icon": "clear-all",
+														"type": "command",
+														"command": "language-julia.clearAllInlineResults"
+													},
+													{
+														"key": "K",
+														"name": "Clear all inline results in editor",
+														"icon": "clear-all",
+														"type": "command",
+														"command": "language-julia.clearAllInlineResultsInEditor"
 													},
 												]
 											},
