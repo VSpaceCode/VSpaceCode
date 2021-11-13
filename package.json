@@ -4005,8 +4005,8 @@
 										"type": "bindings",
 										"bindings": [
 											{
-												"key": "x",
-												"name": "Execute code in REPL (ctrl+Enter)",
+												"key": ",",
+												"name": "Execute code in REPL",
 												"icon": "play",
 												"type": "command",
 												"command": "language-julia.executeJuliaCodeInREPL",
@@ -4075,7 +4075,7 @@
 													},
 													{
 														"key": "t",
-														"name": "Tag new package version (experimental)",
+														"name": "Tag new package version",
 														"icon": "tag",
 														"type": "command",
 														"command": "language-julia.tagNewPackageVersion"
@@ -4116,20 +4116,6 @@
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													},
-													{
-														"key": "B",
-														"name": "+Format buffer with formatter",
-														"icon": "file",
-														"type": "command",
-														"command": "editor.action.formatDocument.multiple"
-													},
-													{
-														"key": "S",
-														"name": "+Format selection with formatter",
-														"icon": "selection",
-														"type": "command",
-														"command": "editor.action.formatSelection.multiple"
-													}
 												]
 											},
 											{
@@ -4143,21 +4129,14 @@
 														"icon": "output",
 														"type": "command",
 														"command": "language-julia.refreshLanguageServer",
-														"name": "Julia: Re-Index Language Server Cache",
+														"name": "Re-index language server cache",
 													},
 													{
 														"key": "r",
+														"name": "Restart language server",
 														"icon": "server-process",
-														"type": "issue-reopened",
-														"command": "language-julia.restartLanguageServer",
-														"name": "Julia: Restart Language Server",
-													},
-													{
-														"key": "R",
-														"name": "Re-index language server cache",
-														"icon": "checklist",
 														"type": "command",
-														"command": "language-julia.refreshLanguageServer"
+														"command": "language-julia.restartLanguageServer",
 													},
 													{
 														"key": "l",
@@ -4332,9 +4311,9 @@
 												]
 											},
 											{
-												"key": "m",
-												"name": "+Miscellaneous",
-												"icon": "symbol-property",
+												"key": "x",
+												"name": "+Clear",
+												"icon": "trash",
 												"type": "bindings",
 												"bindings": [
 													{
@@ -4369,7 +4348,7 @@
 											},
 											{
 												"key": "s",
-												"name": "+REPL",
+												"name": "+Send/REPL",
 												"icon": "repl",
 												"type": "bindings",
 												"bindings": [
@@ -4396,21 +4375,21 @@
 													},
 													{
 														"key": "s",
-														"name": "Execute code in REPL (ctrl+Enter)",
+														"name": "Execute code in REPL",
 														"icon": "play",
 														"type": "command",
 														"command": "language-julia.executeJuliaCodeInREPL"
 													},
 													{
 														"key": "m",
-														"name": "Execute code in REPL and move (alt+Enter)",
+														"name": "Execute code in REPL and move",
 														"icon": "debug-continue",
 														"type": "command",
 														"command": "language-julia.executeCodeBlockOrSelectionAndMove"
 													},
 													{
 														"key": "c",
-														"name": "Execute code cell in REPL and move (shift+Enter)",
+														"name": "Execute code cell in REPL and move",
 														"icon": "export",
 														"type": "command",
 														"command": "language-julia.executeCellAndMove"
