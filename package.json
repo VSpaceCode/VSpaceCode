@@ -4933,7 +4933,7 @@
 													},
 													{
 														"key": "S",
-														"name": "Find symbol in project",
+														"name": "Go to symbol in project",
 														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
