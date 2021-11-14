@@ -4066,7 +4066,7 @@
 														"type": "command",
 														"command": "editor.action.formatSelection"
 													},
-													{													{
+													{
 														"key": "B",
 														"name": "+Format buffer with formatter",
 														"icon": "file",
