@@ -4252,7 +4252,7 @@
 														"command": "language-julia.changeCurrentEnvironment"
 													},
 													{
-														"key": "p",
+														"key": "P",
 														"name": "Open package directory",
 														"icon": "new-folder",
 														"type": "command",
