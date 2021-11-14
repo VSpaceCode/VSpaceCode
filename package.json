@@ -4065,6 +4065,20 @@
 														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection"
+													},
+													{													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
 													}
 												]
 											},
