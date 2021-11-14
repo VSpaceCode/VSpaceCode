@@ -4090,10 +4090,10 @@
 												"bindings": [
 													{
 														"key": "i",
+														"name": "Re-index language server cache",
 														"icon": "output",
 														"type": "command",
-														"command": "language-julia.refreshLanguageServer",
-														"name": "Re-index language server cache"
+														"command": "language-julia.refreshLanguageServer"
 													},
 													{
 														"key": "l",
