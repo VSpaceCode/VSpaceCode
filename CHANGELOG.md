@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add basic major modes bindings for JavaScript/TypeScript
+
 ### Changed
 
 - Unify the name to "Go to symbol in buffer" of `SPC g s` for ruby and fsharp
