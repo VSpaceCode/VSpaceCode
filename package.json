@@ -4403,20 +4403,20 @@
 												]
 											},
 											{
-												"key": "x",
+												"key": "c",
 												"name": "+Clear",
 												"icon": "trash",
 												"type": "bindings",
 												"bindings": [
 													{
-														"key": "d",
+														"key": "c",
 														"name": "Clear сurrent inline results",
 														"icon": "chrome-close",
 														"type": "command",
 														"command": "language-julia.clearCurrentInlineResult"
 													},
 													{
-														"key": "D",
+														"key": "C",
 														"name": "Clear all inline results",
 														"icon": "clear-all",
 														"type": "command",
