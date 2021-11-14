@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Unify the name to "Go to symbol in buffer" of `SPC g s` for ruby and fsharp
+
 ## [0.10.4] - 2021-10-24
 
 ### Fixed

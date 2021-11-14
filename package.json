@@ -3327,7 +3327,7 @@
 													},
 													{
 														"key": "s",
-														"name": "Find symbol in buffer",
+														"name": "Go to symbol in buffer",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
@@ -4919,7 +4919,7 @@
 													},
 													{
 														"key": "s",
-														"name": "Find symbol in buffer",
+														"name": "Go to symbol in buffer",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
