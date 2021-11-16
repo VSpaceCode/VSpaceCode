@@ -3327,7 +3327,7 @@
 													},
 													{
 														"key": "s",
-														"name": "Find symbol in buffer",
+														"name": "Go to symbol in buffer",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
@@ -4000,6 +4000,170 @@
 										]
 									},
 									{
+										"key": "languageId:javascript",
+										"name": "JavaScript",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"icon": "list-flat",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"icon": "list-flat",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"icon": "diff",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"icon": "go-to-file",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "h",
+														"name": "Show call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "references-view.showCallHierarchy"
+													},
+													{
+														"key": "r",
+														"name": "Go to reference",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.goToReferences"
+													},
+													{
+														"key": "s",
+														"name": "Go to symbol in buffer",
+														"icon": "file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "t",
+														"name": "Go to type definition",
+														"icon": "symbol-struct",
+														"type": "command",
+														"command": "editor.action.goToTypeDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "references-view.findImplementations"
+													},
+													{
+														"key": "R",
+														"name": "Find references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "references-view.findReferences"
+													},
+													{
+														"key": "S",
+														"name": "Go to symbol in project",
+														"icon": "project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													}
+												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "h",
+														"name": "Peek call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "editor.showCallHierarchy"
+													},
+													{
+														"key": "i",
+														"name": "Peek implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "editor.action.peekImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "t",
+														"name": "Peek type definition",
+														"icon": "symbol-struct",
+														"type": "command",
+														"command": "editor.action.peekTypeDefinition"
+													}
+												]
+											}
+										]
+									},
+                  {
 										"key": "languageId:julia",
 										"name": "Julia",
 										"type": "bindings",
@@ -4303,7 +4467,7 @@
 													},
 													{
 														"key": "s",
-														"name": "Go to symbol in file",
+														"name": "Go to symbol in buffer",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
@@ -4410,7 +4574,7 @@
 												"bindings": [
 													{
 														"key": "c",
-														"name": "Clear сurrent inline results",
+														"name": "Clear current inline results",
 														"icon": "chrome-close",
 														"type": "command",
 														"command": "language-julia.clearCurrentInlineResult"
@@ -5353,7 +5517,7 @@
 													},
 													{
 														"key": "s",
-														"name": "Find symbol in buffer",
+														"name": "Go to symbol in buffer",
 														"icon": "file",
 														"type": "command",
 														"command": "workbench.action.gotoSymbol"
@@ -5367,7 +5531,7 @@
 													},
 													{
 														"key": "S",
-														"name": "Find symbol in project",
+														"name": "Go to symbol in project",
 														"icon": "project",
 														"type": "command",
 														"command": "workbench.action.showAllSymbols"
@@ -5645,6 +5809,170 @@
 														"icon": "symbol-reference",
 														"type": "command",
 														"command": "editor.action.referenceSearch.trigger"
+													}
+												]
+											}
+										]
+									},
+									{
+										"key": "languageId:typescript",
+										"name": "TypeScript",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": "=",
+												"name": "+Format",
+												"icon": "list-flat",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"icon": "list-flat",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"icon": "diff",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"icon": "go-to-file",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "h",
+														"name": "Show call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "references-view.showCallHierarchy"
+													},
+													{
+														"key": "r",
+														"name": "Go to reference",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.goToReferences"
+													},
+													{
+														"key": "s",
+														"name": "Go to symbol in buffer",
+														"icon": "file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "t",
+														"name": "Go to type definition",
+														"icon": "symbol-struct",
+														"type": "command",
+														"command": "editor.action.goToTypeDefinition"
+													},
+													{
+														"key": "I",
+														"name": "Find implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "references-view.findImplementations"
+													},
+													{
+														"key": "R",
+														"name": "Find references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "references-view.findReferences"
+													},
+													{
+														"key": "S",
+														"name": "Go to symbol in project",
+														"icon": "project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													}
+												]
+											},
+											{
+												"key": "G",
+												"name": "+Peek",
+												"icon": "eye",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Peek definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.peekDefinition"
+													},
+													{
+														"key": "h",
+														"name": "Peek call hierarchy",
+														"icon": "type-hierarchy",
+														"type": "command",
+														"command": "editor.showCallHierarchy"
+													},
+													{
+														"key": "i",
+														"name": "Peek implementations",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "editor.action.peekImplementation"
+													},
+													{
+														"key": "r",
+														"name": "Peek references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.referenceSearch.trigger"
+													},
+													{
+														"key": "t",
+														"name": "Peek type definition",
+														"icon": "symbol-struct",
+														"type": "command",
+														"command": "editor.action.peekTypeDefinition"
 													}
 												]
 											}
