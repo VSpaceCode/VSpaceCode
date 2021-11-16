@@ -4163,6 +4163,440 @@
 											}
 										]
 									},
+                  {
+										"key": "languageId:julia",
+										"name": "Julia",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": ",",
+												"name": "Execute code in REPL",
+												"icon": "play",
+												"type": "command",
+												"command": "language-julia.executeJuliaCodeInREPL"
+											},
+											{
+												"key": "d",
+												"name": "Show documentation",
+												"icon": "book",
+												"type": "command",
+												"command": "language-julia.show-documentation"
+											},
+											{
+												"key": "p",
+												"name": "Show plots",
+												"icon": "pulse",
+												"type": "command",
+												"command": "language-julia.show-plotpane"
+											},
+											{
+												"key": "w",
+												"name": "Focus on workspace view",
+												"icon": "play",
+												"type": "command",
+												"command": "REPLVariables.focus"
+											},
+											{
+												"key": "=",
+												"name": "+Format",
+												"icon": "list-flat",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "=",
+														"name": "Format region or buffer",
+														"icon": "list-flat",
+														"type": "command",
+														"command": "editor.action.format"
+													},
+													{
+														"key": "b",
+														"name": "Format buffer",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument"
+													},
+													{
+														"key": "c",
+														"name": "Format changes",
+														"icon": "diff",
+														"type": "command",
+														"command": "editor.action.formatChanges"
+													},
+													{
+														"key": "s",
+														"name": "Format selection",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection"
+													},
+													{
+														"key": "B",
+														"name": "+Format buffer with formatter",
+														"icon": "file",
+														"type": "command",
+														"command": "editor.action.formatDocument.multiple"
+													},
+													{
+														"key": "S",
+														"name": "+Format selection with formatter",
+														"icon": "selection",
+														"type": "command",
+														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "b",
+												"name": "+Backend",
+												"icon": "circuit-board",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "i",
+														"name": "Re-index language server cache",
+														"icon": "output",
+														"type": "command",
+														"command": "language-julia.refreshLanguageServer"
+													},
+													{
+														"key": "l",
+														"name": "Toggle linter",
+														"icon": "check",
+														"type": "command",
+														"command": "language-julia.toggleLinter"
+													},
+													{
+														"key": "r",
+														"name": "Restart language server",
+														"icon": "server-process",
+														"type": "command",
+														"command": "language-julia.restartLanguageServer"
+													}
+												]
+											},
+											{
+												"key": "c",
+												"name": "+Compile/debug",
+												"icon": "play",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Add to compiled modules/functions",
+														"icon": "plus",
+														"type": "command",
+														"command": "language-julia.switchToCompiled"
+													},
+													{
+														"key": "c",
+														"name": "Switch all to compiled",
+														"icon": "debug",
+														"type": "command",
+														"command": "language-julia.switchAllToCompiled"
+													},
+													{
+														"key": "d",
+														"name": "Debug file in new process",
+														"icon": "debug-alt",
+														"type": "command",
+														"command": "language-julia.debugEditorContents"
+													},
+													{
+														"key": "i",
+														"name": "Switch all to interpreted",
+														"icon": "run-below",
+														"type": "command",
+														"command": "language-julia.switchAllToInterpreted"
+													},
+													{
+														"key": "m",
+														"name": "Enable compiled mode for the debugger",
+														"icon": "debug-breakpoint-log",
+														"type": "command",
+														"command": "language-julia.enable-compiled-mode"
+													},
+													{
+														"key": "r",
+														"name": "Refresh compiled/interpreted pane",
+														"icon": "refresh",
+														"type": "command",
+														"command": "language-julia.refreshCompiled"
+													},
+													{
+														"key": "x",
+														"name": "Remove from compiled modules/functions",
+														"icon": "diff-removed",
+														"type": "command",
+														"command": "language-julia.switchToInterpreted"
+													},
+													{
+														"key": "A",
+														"name": "Apply default compiled modules/functions",
+														"icon": "diff-renamed",
+														"type": "command",
+														"command": "language-julia.apply-compiled-defaults"
+													},
+													{
+														"key": "D",
+														"name": "Clear compiled modules/functions",
+														"icon": "diff-removed",
+														"type": "command",
+														"command": "language-julia.reset-compiled"
+													},
+													{
+														"key": "F",
+														"name": "Set current compiled modules/functions as default",
+														"icon": "symbol-constant",
+														"type": "command",
+														"command": "language-julia.set-current-as-default-compiled"
+													},
+													{
+														"key": "M",
+														"name": "Disable compiled mode for the debugger",
+														"icon": "debug-breakpoint-unverified",
+														"type": "command",
+														"command": "language-julia.disable-compiled-mode"
+													},
+													{
+														"key": "R",
+														"name": "Restart kernel",
+														"icon": "debug-restart",
+														"type": "command",
+														"command": "language-julia.restartKernel"
+													},
+													{
+														"key": "S",
+														"name": "Stop kernel",
+														"icon": "debug-stop",
+														"type": "command",
+														"command": "language-julia.stopKernel"
+													},
+													{
+														"key": "Y",
+														"name": "Add symbol to compiled modules/functions",
+														"icon": "symbol-key",
+														"type": "command",
+														"command": "language-julia.set-compiled-for-name"
+													}
+												]
+											},
+											{
+												"key": "e",
+												"name": "+Environment/package",
+												"icon": "library",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "Activate this environment",
+														"icon": "check",
+														"type": "command",
+														"command": "language-julia.changeCurrentEnvironment"
+													},
+													{
+														"key": "c",
+														"name": "Change current environment",
+														"icon": "issue-reopened",
+														"type": "command",
+														"command": "language-julia.changeCurrentEnvironment"
+													},
+													{
+														"key": "m",
+														"name": "Choose module",
+														"icon": "symbol-variable",
+														"type": "command",
+														"command": "language-julia.chooseModule"
+													},
+													{
+														"key": "p",
+														"name": "Activate parent environment",
+														"icon": "root-folder-opened",
+														"type": "command",
+														"command": "language-julia.changeCurrentEnvironment"
+													},
+													{
+														"key": "P",
+														"name": "Open package directory",
+														"icon": "new-folder",
+														"type": "command",
+														"command": "language-julia.openPackageDirectory"
+													},
+													{
+														"key": "t",
+														"name": "Tag new package version",
+														"icon": "tag",
+														"type": "command",
+														"command": "language-julia.tagNewPackageVersion"
+													}
+												]
+											},
+											{
+												"key": "g",
+												"name": "+Go to",
+												"icon": "go-to-file",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "d",
+														"name": "Go to definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "e",
+														"name": "Go to errors/problems",
+														"icon": "error",
+														"type": "command",
+														"command": "workbench.action.problems.focus"
+													},
+													{
+														"key": "g",
+														"name": "Go to definition",
+														"icon": "symbol-function",
+														"type": "command",
+														"command": "editor.action.revealDefinition"
+													},
+													{
+														"key": "r",
+														"name": "Go to references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "editor.action.goToReferences"
+													},
+													{
+														"key": "s",
+														"name": "Go to symbol in buffer",
+														"icon": "file",
+														"type": "command",
+														"command": "workbench.action.gotoSymbol"
+													},
+													{
+														"key": "R",
+														"name": "Find references",
+														"icon": "symbol-reference",
+														"type": "command",
+														"command": "references-view.findReferences"
+													},
+													{
+														"key": "S",
+														"name": "Go to symbol in project",
+														"icon": "project",
+														"type": "command",
+														"command": "workbench.action.showAllSymbols"
+													}
+												]
+											},
+											{
+												"key": "s",
+												"name": "+Send/REPL",
+												"icon": "repl",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "b",
+														"name": "Execute block or selection in REPL",
+														"icon": "selection",
+														"type": "command",
+														"command": "language-julia.executeCodeBlockOrSelection"
+													},
+													{
+														"key": "c",
+														"name": "Execute code cell in REPL and move",
+														"icon": "export",
+														"type": "command",
+														"command": "language-julia.executeCellAndMove"
+													},
+													{
+														"key": "d",
+														"name": "Change directory here",
+														"icon": "folder-opened",
+														"type": "command",
+														"command": "language-julia.cdHere"
+													},
+													{
+														"key": "f",
+														"name": "Execute file in REPL",
+														"icon": "file",
+														"type": "command",
+														"command": "language-julia.executeFile"
+													},
+													{
+														"key": "i",
+														"name": "Start REPL",
+														"icon": "repl",
+														"type": "command",
+														"command": "language-julia.startREPL"
+													},
+													{
+														"key": "m",
+														"name": "Execute code in REPL and move",
+														"icon": "debug-continue",
+														"type": "command",
+														"command": "language-julia.executeCodeBlockOrSelectionAndMove"
+													},
+													{
+														"key": "s",
+														"name": "Execute code in REPL",
+														"icon": "play",
+														"type": "command",
+														"command": "language-julia.executeJuliaCodeInREPL"
+													},
+													{
+														"key": "C",
+														"name": "Connect external REPL",
+														"icon": "vm-connect",
+														"type": "command",
+														"command": "language-julia.connectREPL"
+													},
+													{
+														"key": "D",
+														"name": "Stop REPL",
+														"icon": "stop",
+														"type": "command",
+														"command": "language-julia.stopREPL"
+													},
+													{
+														"key": "F",
+														"name": "Execute active file in REPL",
+														"icon": "file",
+														"type": "command",
+														"command": "language-julia.executeActiveFile"
+													}
+												]
+											},
+											{
+												"key": "c",
+												"name": "+Clear",
+												"icon": "trash",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "c",
+														"name": "Clear current inline results",
+														"icon": "chrome-close",
+														"type": "command",
+														"command": "language-julia.clearCurrentInlineResult"
+													},
+													{
+														"key": "C",
+														"name": "Clear all inline results",
+														"icon": "clear-all",
+														"type": "command",
+														"command": "language-julia.clearAllInlineResults"
+													},
+													{
+														"key": "K",
+														"name": "Clear all inline results in editor",
+														"icon": "clear-all",
+														"type": "command",
+														"command": "language-julia.clearAllInlineResultsInEditor"
+													}
+												]
+											}
+										]
+									},
 									{
 										"key": "languageId:latex",
 										"name": "LaTeX",
