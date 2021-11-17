@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add basic major modes bindings for JavaScript/TypeScript
 - Add major mode for Julia
+- Add major mode for Agda
 
 ### Changed
 
