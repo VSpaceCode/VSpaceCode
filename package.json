@@ -2202,6 +2202,13 @@
 														"command": "extension.coq.query.prompt.check"
 													},
 													{
+														"key": "f",
+														"name": "Find",
+														"icon": "search",
+														"type": "command",
+														"command": "extension.coq.query.prompt.search"
+													},
+													{
 														"key": "l",
 														"name": "Locate",
 														"icon": "location",
@@ -2214,13 +2221,6 @@
 														"icon": "eye",
 														"type": "command",
 														"command": "extension.coq.query.prompt.print"
-													},
-													{
-														"key": "s",
-														"name": "Search",
-														"icon": "search",
-														"type": "command",
-														"command": "extension.coq.query.prompt.search"
 													}
 												]
 											},
@@ -2281,6 +2281,13 @@
 														"command": "extension.coq.query.check"
 													},
 													{
+														"key": "f",
+														"name": "Find",
+														"icon": "search",
+														"type": "command",
+														"command": "extension.coq.query.search"
+													},
+													{
 														"key": "l",
 														"name": "Locate",
 														"icon": "location",
@@ -2293,74 +2300,67 @@
 														"icon": "eye",
 														"type": "command",
 														"command": "extension.coq.query.print"
-													},
-													{
-														"key": "s",
-														"name": "Search",
-														"icon": "search",
-														"type": "command",
-														"command": "extension.coq.query.search"
 													}
 												]
 											},
 											{
-												"key": "s",
-												"name": "Set display options",
+												"key": "T",
+												"name": "UI toggle",
 												"icon": "gear",
 												"type": "bindings",
 												"bindings": [
 													{
 														"key": "b",
-														"name": "Display all basic low level contents on/off",
+														"name": "Toggle display of all basic low level contents",
 														"icon": "symbol-interface",
 														"type": "command",
 														"command": "extension.coq.display.toggle.allBasicLowLevelContents"
 													},
 													{
 														"key": "c",
-														"name": "Display coercions on/off",
+														"name": "Toggle display of coercions",
 														"icon": "symbol-enum",
 														"type": "command",
 														"command": "extension.coq.display.toggle.coercions"
 													},
 													{
 														"key": "e",
-														"name": "Display existential variable instances on/off",
+														"name": "Toggle display of existential variable instances",
 														"icon": "symbol-keyword",
 														"type": "command",
 														"command": "extension.coq.display.toggle.existentialVariableInstances"
 													},
 													{
 														"key": "i",
-														"name": "Display implicit arguments on/off",
+														"name": "Toggle display of implicit arguments",
 														"icon": "symbol-parameter",
 														"type": "command",
 														"command": "extension.coq.display.toggle.implicitArguments"
 													},
 													{
 														"key": "l",
-														"name": "Display all lowLevel contents on/off",
+														"name": "Toggle display of all lowLevel contents",
 														"type": "command",
 														"icon": "symbol-constant",
 														"command": "extension.coq.display.toggle.allLowLevelContents"
 													},
 													{
 														"key": "n",
-														"name": "Display notations on/off",
+														"name": "Toggle display of notations",
 														"icon": "symbol-key",
 														"type": "command",
 														"command": "extension.coq.display.toggle.notations"
 													},
 													{
 														"key": "r",
-														"name": "Display raw matching expressions on/off",
+														"name": "Toggle display of raw matching expressions",
 														"icon": "symbol-constructor",
 														"type": "command",
 														"command": "extension.coq.display.toggle.rawMatchingExpressions"
 													},
 													{
 														"key": "u",
-														"name": "Display universe levels on/off",
+														"name": "Toggle display of universe levels",
 														"icon": "symbol-module",
 														"type": "command",
 														"command": "extension.coq.display.toggle.universeLevels"
