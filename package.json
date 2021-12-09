@@ -1580,35 +1580,35 @@
 											},
 											{
 												"key": ",",
-												"name": "Goal type and context (simplified)",
+												"name": "Show goal type and context (simplified)",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.goal-type-and-context[Simplified]"
 											},
 											{
 												"key": ".",
-												"name": "Goal type, context and inferred type (simplified)",
+												"name": "Show goal type, context and inferred type (simplified)",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.goal-type-context-and-inferred-type[Simplified]"
 											},
 											{
 												"key": "a",
-												"name": "Auto",
+												"name": "Automatic proof search",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.auto"
 											},
 											{
 												"key": "b",
-												"name": "Previous goal",
+												"name": "Move to previous goal",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.previous-goal"
 											},
 											{
 												"key": "c",
-												"name": "Case",
+												"name": "Case split",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.case"
@@ -1622,28 +1622,28 @@
 											},
 											{
 												"key": "e",
-												"name": "Context (simplified)",
+												"name": "Show context (simplified)",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.context[Simplified]"
 											},
 											{
 												"key": "f",
-												"name": "Next goal",
+												"name": "Move to next goal",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.next-goal"
 											},
 											{
 												"key": "h",
-												"name": "Helper function type (simplified)",
+												"name": "Show helper function type (simplified)",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.helper-function-type[Simplified]"
 											},
 											{
 												"key": "l",
-												"name": "Load",
+												"name": "Load file",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.load"
@@ -1671,7 +1671,7 @@
 											},
 											{
 												"key": "t",
-												"name": "Goal type (simplified)",
+												"name": "Show goal type (simplified)",
 												"icon": "repl",
 												"type": "command",
 												"command": "agda-mode.goal-type[Simplified]"
