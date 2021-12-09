@@ -2290,6 +2290,248 @@
 										]
 									},
 									{
+										"key": "languageId:coq",
+										"name": "coq",
+										"type": "bindings",
+										"bindings": [
+											{
+												"key": ".",
+												"name": "Proof goto current point",
+												"icon": "debug-start",
+												"type": "command",
+												"command": "extension.coq.interpretToPoint"
+											},
+											{
+												"key": "b",
+												"name": "Proof step back",
+												"icon": "debug-step-back",
+												"type": "command",
+												"command": "extension.coq.stepBackward"
+											},
+											{
+												"key": "f",
+												"name": "Proof step forward",
+												"icon": "debug-step-over",
+												"type": "command",
+												"command": "extension.coq.stepForward"
+											},
+											{
+												"key": "g",
+												"name": "Go to the current focus location",
+												"icon": "sync",
+												"type": "command",
+												"command": "extension.coq.moveCursorToFocus"
+											},
+											{
+												"key": "o",
+												"name": "Open proof view",
+												"icon": "open-preview",
+												"type": "command",
+												"command": "extension.coq.proofView.open"
+											},
+											{
+												"key": "v",
+												"name": "View the proof-state at the cursor position",
+												"icon": "eye",
+												"type": "command",
+												"command": "extension.coq.proofView.viewStateAt"
+											},
+											{
+												"key": "G",
+												"name": "Proof goto end",
+												"icon": "debug-continue",
+												"type": "command",
+												"command": "extension.coq.interpretToEnd"
+											},
+											{
+												"key": "a",
+												"name": "Ask prover",
+												"icon": "question",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "About",
+														"icon": "info",
+														"type": "command",
+														"command": "extension.coq.query.prompt.about"
+													},
+													{
+														"key": "c",
+														"name": "Check",
+														"icon": "check",
+														"type": "command",
+														"command": "extension.coq.query.prompt.check"
+													},
+													{
+														"key": "f",
+														"name": "Find",
+														"icon": "search",
+														"type": "command",
+														"command": "extension.coq.query.prompt.search"
+													},
+													{
+														"key": "l",
+														"name": "Locate",
+														"icon": "location",
+														"type": "command",
+														"command": "extension.coq.query.prompt.locate"
+													},
+													{
+														"key": "p",
+														"name": "Print",
+														"icon": "eye",
+														"type": "command",
+														"command": "extension.coq.query.prompt.print"
+													}
+												]
+											},
+											{
+												"key": "p",
+												"name": "Send command to prover",
+												"icon": "console",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "f",
+														"name": "Finish coq computations",
+														"icon": "notebook-state-success",
+														"type": "command",
+														"command": "extension.coq.finishComputations"
+													},
+													{
+														"key": "i",
+														"name": "Interrupt coqtop backend",
+														"icon": "notebook-stop",
+														"type": "command",
+														"command": "extension.coq.interrupt"
+													},
+													{
+														"key": "q",
+														"name": "Quit coqtop backend",
+														"icon": "panel-close",
+														"type": "command",
+														"command": "extension.coq.quit"
+													},
+													{
+														"key": "r",
+														"name": "Reset coqtop backend",
+														"icon": "notebook-delete-cell",
+														"type": "command",
+														"command": "extension.coq.reset"
+													}
+												]
+											},
+											{
+												"key": "q",
+												"name": "Query prover about foucsed symbol",
+												"icon": "info",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "a",
+														"name": "About",
+														"icon": "info",
+														"type": "command",
+														"command": "extension.coq.query.about"
+													},
+													{
+														"key": "c",
+														"name": "Check",
+														"icon": "check",
+														"type": "command",
+														"command": "extension.coq.query.check"
+													},
+													{
+														"key": "f",
+														"name": "Find",
+														"icon": "search",
+														"type": "command",
+														"command": "extension.coq.query.search"
+													},
+													{
+														"key": "l",
+														"name": "Locate",
+														"icon": "location",
+														"type": "command",
+														"command": "extension.coq.query.locate"
+													},
+													{
+														"key": "p",
+														"name": "Print",
+														"icon": "eye",
+														"type": "command",
+														"command": "extension.coq.query.print"
+													}
+												]
+											},
+											{
+												"key": "T",
+												"name": "UI toggle",
+												"icon": "gear",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "b",
+														"name": "Toggle display of all basic low level contents",
+														"icon": "symbol-interface",
+														"type": "command",
+														"command": "extension.coq.display.toggle.allBasicLowLevelContents"
+													},
+													{
+														"key": "c",
+														"name": "Toggle display of coercions",
+														"icon": "symbol-enum",
+														"type": "command",
+														"command": "extension.coq.display.toggle.coercions"
+													},
+													{
+														"key": "e",
+														"name": "Toggle display of existential variable instances",
+														"icon": "symbol-keyword",
+														"type": "command",
+														"command": "extension.coq.display.toggle.existentialVariableInstances"
+													},
+													{
+														"key": "i",
+														"name": "Toggle display of implicit arguments",
+														"icon": "symbol-parameter",
+														"type": "command",
+														"command": "extension.coq.display.toggle.implicitArguments"
+													},
+													{
+														"key": "l",
+														"name": "Toggle display of all lowLevel contents",
+														"type": "command",
+														"icon": "symbol-constant",
+														"command": "extension.coq.display.toggle.allLowLevelContents"
+													},
+													{
+														"key": "n",
+														"name": "Toggle display of notations",
+														"icon": "symbol-key",
+														"type": "command",
+														"command": "extension.coq.display.toggle.notations"
+													},
+													{
+														"key": "r",
+														"name": "Toggle display of raw matching expressions",
+														"icon": "symbol-constructor",
+														"type": "command",
+														"command": "extension.coq.display.toggle.rawMatchingExpressions"
+													},
+													{
+														"key": "u",
+														"name": "Toggle display of universe levels",
+														"icon": "symbol-module",
+														"type": "command",
+														"command": "extension.coq.display.toggle.universeLevels"
+													}
+												]
+											}
+										]
+									},
+									{
 										"key": "languageId:cpp",
 										"name": "C++",
 										"type": "bindings",
