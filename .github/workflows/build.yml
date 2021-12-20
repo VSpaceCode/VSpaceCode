@@ -1,4 +1,10 @@
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+    tags-ignore:
+      - '**'
+  pull_request:
 
 name: Build Extension
 jobs:
