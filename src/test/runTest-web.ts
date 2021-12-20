@@ -106,7 +106,7 @@ async function main() {
 		// Start a web server that serves VSCode in a browser, run the tests
 		await runTests({
 			browserType: 'chromium',
-			version: 'stable',
+			version: 'insiders',
 			extensionDevelopmentPath,
 			extensionTestsPath,
 			extensionPaths,
