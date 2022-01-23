@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.6] - 2022-01-23
+
 ### Added
 
 - Add major mode for PHP
