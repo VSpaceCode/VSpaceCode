@@ -5863,18 +5863,11 @@
 												"type": "bindings",
 												"bindings": [
 													{
-														"key": "m",
-														"name": "Extract method",
-														"icon": "symbol-method",
+														"key": ".",
+														"name": "Refactor menu",
+														"icon": "lightbulb",
 														"type": "command",
-														"command": "python.refactorExtractMethod"
-													},
-													{
-														"key": "v",
-														"name": "Extract variable",
-														"icon": "variable",
-														"type": "command",
-														"command": "python.refactorExtractVariable"
+														"command": "editor.action.refactor"
 													},
 													{
 														"key": "I",
