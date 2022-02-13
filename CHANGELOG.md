@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Python major mode:
+  - `SPC m r m` and `SPC m r v` commands have been removed, as they no longer do anything.
+  - `SPC m r .` has been added in their stead, which now invokes the built-in refactor methods.
+
 ## [0.10.6] - 2022-01-23
 
 ### Added
