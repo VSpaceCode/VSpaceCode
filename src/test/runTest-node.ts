@@ -1,4 +1,4 @@
-import { downloadAndUnzipVSCode, resolveCliPathFromVSCodeExecutablePath, runTests } from '@vscode/test-electron';
+import { downloadAndUnzipVSCode, resolveCliArgsFromVSCodeExecutablePath, runTests } from '@vscode/test-electron';
 import { spawnSync } from 'child_process';
 import * as path from 'path';
 
@@ -16,8 +16,8 @@ async function main() {
 		const vscodeExecutablePath = await downloadAndUnzipVSCode('stable');
 
 		// Install dependent extension
-		const cliPath = resolveCliPathFromVSCodeExecutablePath(vscodeExecutablePath);
-		spawnSync(cliPath, ['--install-extension', 'VSpaceCode.whichkey'], {
+		const [cli, ...args] = resolveCliArgsFromVSCodeExecutablePath(vscodeExecutablePath);
+		spawnSync(cli, [...args, '--install-extension', 'VSpaceCode.whichkey'], {
 			encoding: 'utf-8',
 			stdio: 'inherit'
 		});

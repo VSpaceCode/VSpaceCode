@@ -4567,7 +4567,7 @@
 											}
 										]
 									},
-                  {
+									{
 										"key": "languageId:julia",
 										"name": "Julia",
 										"type": "bindings",
@@ -7755,8 +7755,8 @@
 		"@types/webpack-env": "^1.16.0",
 		"@typescript-eslint/eslint-plugin": "^5.3.0",
 		"@typescript-eslint/parser": "^5.3.0",
-		"@vscode/test-electron": "^1.6.2",
-		"@vscode/test-web": "^0.0.15",
+		"@vscode/test-electron": "^2.1.2",
+		"@vscode/test-web": "^0.0.22",
 		"adm-zip": "^0.5.7",
 		"assert": "^2.0.0",
 		"eslint": "^8.1.0",
