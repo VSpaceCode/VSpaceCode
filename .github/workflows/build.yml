@@ -29,4 +29,5 @@ jobs:
               run: npm run format-check
 
             - name: Test
+              timeout-minutes: 30
               run: xvfb-run -a npm run test
