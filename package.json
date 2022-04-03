@@ -7,7 +7,7 @@
     "author": {
         "name": "Steven Guh"
     },
-    "version": "0.10.8",
+    "version": "0.10.9",
     "engines": {
         "vscode": "^1.45.0"
     },
