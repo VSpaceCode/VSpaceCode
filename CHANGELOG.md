@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add major mode for ObjectPascal
+
 ## [0.10.8] - 2022-04-03
 
 ### Fixed
