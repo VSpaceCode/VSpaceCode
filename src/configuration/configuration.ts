@@ -1,13 +1,29 @@
-import { applyEdits, getNodeValue, JSONPath, modify, Node, parseTree } from "jsonc-parser";
-import isEqual from 'lodash/isEqual';
-import remove from 'lodash/remove';
-import { commands, ConfigurationTarget, Range, TextDocument, Uri, window, workspace, WorkspaceEdit } from "vscode";
+import {
+    applyEdits,
+    getNodeValue,
+    JSONPath,
+    modify,
+    Node,
+    parseTree,
+} from "jsonc-parser";
+import isEqual from "lodash/isEqual";
+import remove from "lodash/remove";
+import {
+    commands,
+    ConfigurationTarget,
+    Range,
+    TextDocument,
+    Uri,
+    window,
+    workspace,
+    WorkspaceEdit,
+} from "vscode";
 import { KeyBinding } from "./keyBinding";
 
-const legacyBindings = require('./legacyKeybindings.jsonc');
-const legacySettings = require('./legacySettings.jsonc');
-const requiredBindings = require('./keybindings.jsonc');
-const requiredSettings = require('./settings.jsonc');
+const legacyBindings = require("./legacyKeybindings.jsonc");
+const legacySettings = require("./legacySettings.jsonc");
+const requiredBindings = require("./keybindings.jsonc");
+const requiredSettings = require("./settings.jsonc");
 
 export async function configSettings() {
     // Remove legacy settings
@@ -23,15 +39,21 @@ export async function configSettings() {
         if (Array.isArray(legacyValue) && Array.isArray(configValue)) {
             updatedValue = [...configValue];
             for (const item of legacyValue) {
-                remove(updatedValue, i => isEqual(i, item));
+                remove(updatedValue, (i) => isEqual(i, item));
             }
         }
 
-        await config.update(sectionName, updatedValue, ConfigurationTarget.Global);
+        await config.update(
+            sectionName,
+            updatedValue,
+            ConfigurationTarget.Global
+        );
     }
 
-    // Update the required settings 
-    for (const [requiredKey, requiredValue] of Object.entries(requiredSettings)) {
+    // Update the required settings
+    for (const [requiredKey, requiredValue] of Object.entries(
+        requiredSettings
+    )) {
         const sections = requiredKey.split(".");
         const sectionName = sections.pop()!;
         const configName = sections.join(".");
@@ -43,13 +65,17 @@ export async function configSettings() {
         if (Array.isArray(requiredValue) && Array.isArray(configValue)) {
             updatedValue = [...configValue];
             for (const item of requiredValue) {
-                if (!configValue.find(i => isEqual(i, item))) {
+                if (!configValue.find((i) => isEqual(i, item))) {
                     updatedValue.push(item);
                 }
             }
         }
 
-        await config.update(sectionName, updatedValue, ConfigurationTarget.Global);
+        await config.update(
+            sectionName,
+            updatedValue,
+            ConfigurationTarget.Global
+        );
     }
 }
 
@@ -57,7 +83,7 @@ export async function configKeyBindings() {
     await commands.executeCommand("workbench.action.openGlobalKeybindingsFile");
     if (window.activeTextEditor) {
         const document = window.activeTextEditor.document;
-        if (getFilename(document.uri) === 'keybindings.json') {
+        if (getFilename(document.uri) === "keybindings.json") {
             await editBindingsDoc(document);
         }
     }
@@ -71,11 +97,11 @@ function getFilename(uri: Uri) {
     if (pieces.length > 0) {
         return pieces[pieces.length - 1];
     }
-    return '';
+    return "";
 }
 
 function toHashKey(b: KeyBinding) {
-    return `${b.key}${b.command}${b.when ?? ''}`;
+    return `${b.key}${b.command}${b.when ?? ""}`;
 }
 
 async function editBindingsDoc(doc: TextDocument) {
@@ -84,9 +110,9 @@ async function editBindingsDoc(doc: TextDocument) {
     const node = parseTree(text) as Node | undefined;
 
     let updatedText;
-    if (node && node.type !== 'array') {
+    if (node && node.type !== "array") {
         // Replace directly if it is not array, that means the keybindings contains the wrong config.
-        updatedText = JSON.stringify(requiredBindings, undefined, '\t');
+        updatedText = JSON.stringify(requiredBindings, undefined, "\t");
     } else {
         // Else = if the either the node is not undefined, could be all comments
         // or it is an array type and has children
@@ -104,7 +130,7 @@ async function editBindingsDoc(doc: TextDocument) {
         const modOptions = { formattingOptions: { insertSpaces: false } };
 
         // If the root node is an array and has children
-        if (node && node.type === 'array' && node.children) {
+        if (node && node.type === "array" && node.children) {
             for (let i = 0; i < node.children?.length ?? 0; i++) {
                 const idx = node.children.length - i - 1;
                 const child = node.children[idx];
@@ -114,7 +140,12 @@ async function editBindingsDoc(doc: TextDocument) {
                 if (legacySet.has(key)) {
                     // Remove the legacy config
                     const path = [idx] as JSONPath;
-                    const edits = modify(updatedText, path, undefined, modOptions);
+                    const edits = modify(
+                        updatedText,
+                        path,
+                        undefined,
+                        modOptions
+                    );
                     updatedText = applyEdits(updatedText, edits);
                     node.children.splice(idx, 1);
                 } else if (requiredMap.has(key)) {
@@ -134,9 +165,7 @@ async function editBindingsDoc(doc: TextDocument) {
         }
     }
 
-    const fullRange = new Range(
-        doc.positionAt(0),
-        doc.positionAt(text.length));
+    const fullRange = new Range(doc.positionAt(0), doc.positionAt(text.length));
     const edit = new WorkspaceEdit();
     edit.replace(doc.uri, fullRange, updatedText);
     await workspace.applyEdit(edit);

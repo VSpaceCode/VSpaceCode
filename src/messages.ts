@@ -1,6 +1,6 @@
-import { commands, env, Uri, window } from 'vscode';
-import { CommandId, manualInstallUrl } from './constants';
-import { ComparisonResult, Version } from './version';
+import { commands, env, Uri, window } from "vscode";
+import { CommandId, manualInstallUrl } from "./constants";
+import { ComparisonResult, Version } from "./version";
 
 const enum WelcomeSelection {
     Auto = "Automatically",
@@ -11,7 +11,7 @@ export async function showWelcomeMessage() {
     const selection = await window.showInformationMessage(
         `Welcome to VSpaceCode. Some configurations are needed to get started. Choose ${WelcomeSelection.Auto} to merge necessary configurations to your user's settings.json and keybindings.json. However, formatting in those file may be lost.`,
         WelcomeSelection.Manually,
-        WelcomeSelection.Auto,
+        WelcomeSelection.Auto
     );
 
     switch (selection) {
@@ -32,7 +32,11 @@ export async function showUpdateMessage(cur: string, prev: string) {
             changeLog
         );
         if (selection === changeLog) {
-            await env.openExternal(Uri.parse("https://github.com/VSpaceCode/VSpaceCode/blob/master/CHANGELOG.md"));
+            await env.openExternal(
+                Uri.parse(
+                    "https://github.com/VSpaceCode/VSpaceCode/blob/master/CHANGELOG.md"
+                )
+            );
         }
     }
 }

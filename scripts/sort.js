@@ -1,7 +1,9 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const package = JSON.parse(fs.readFileSync('./package.json'));
-const defaultBindings = package.contributes.configuration[0].properties['vspacecode.bindings'].default;
+const package = JSON.parse(fs.readFileSync("./package.json"));
+const defaultBindings =
+    package.contributes.configuration[0].properties["vspacecode.bindings"]
+        .default;
 
 const queue = [defaultBindings];
 while (queue.length > 0) {
@@ -14,12 +16,12 @@ while (queue.length > 0) {
     bindings.sort(compareFunction);
 }
 
-fs.writeFileSync('./package.json', JSON.stringify(package, null, "\t") + "\n");
+fs.writeFileSync("./package.json", JSON.stringify(package, null, "\t") + "\n");
 
 function getType(b) {
     let type = b.type;
     if (type === "conditional") {
-        if (b.bindings.every(x => x.type === b.bindings[0].type)) {
+        if (b.bindings.every((x) => x.type === b.bindings[0].type)) {
             type = b.bindings[0].type;
         }
     }
@@ -84,7 +86,9 @@ function compareKeyString(a, b) {
     for (let i = 0; i < len; i++) {
         // Swap the case of the letter to sort lower case character first
         const diff = a[i] - b[i];
-        if (diff !== 0) { return diff; }
+        if (diff !== 0) {
+            return diff;
+        }
     }
 
     return a.length - b.length;
@@ -93,14 +97,18 @@ function compareKeyString(a, b) {
 /**
  * Binding compare function
  * 1. Sort non binding first
- * 2. 
+ * 2.
  */
 function compareFunction(a, b) {
     let diff = getTypeOrder(getType(a)) - getTypeOrder(getType(b));
-    if (diff !== 0) { return diff; }
+    if (diff !== 0) {
+        return diff;
+    }
 
     diff = getKeyTypeOrder(a) - getKeyTypeOrder(b);
-    if (diff !== 0) { return diff; }
+    if (diff !== 0) {
+        return diff;
+    }
 
     diff = compareKeyString(a.key, b.key);
     return diff;

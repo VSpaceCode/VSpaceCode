@@ -1,49 +1,49 @@
 name: Keybindings Docs
 
 on:
-  push:
-    tags:
-      - v*
+    push:
+        tags:
+            - v*
 
 jobs:
-  docs:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout VSpaceCode
-      uses: actions/checkout@v2
-      with:
-        path: VSpaceCode
+    docs:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout VSpaceCode
+              uses: actions/checkout@v2
+              with:
+                  path: VSpaceCode
 
-    - name: Generate KEYBINDINGS.md
-      run: |
-        cd VSpaceCode
-        npm install
-        npm run generate-keybindings
+            - name: Generate KEYBINDINGS.md
+              run: |
+                  cd VSpaceCode
+                  npm install
+                  npm run generate-keybindings
 
-    - name: Checkout vspacecode.github.io
-      uses: actions/checkout@v2
-      with:
-        repository: VSpaceCode/vspacecode.github.io
-        path: vspacecode.github.io
-        ssh-key: ${{ secrets.KEYBINDING_DEPLOY }}
-    
-    - name: Move KEYBINDINGS.md
-      run: |
-        cd vspacecode.github.io/docs
-        rm default-keybindings.md
-        mv ../../VSpaceCode/KEYBINDINGS.md default-keybindings.md
-        prepending='---\nid: default-keybindings\ntitle: Default Keybindings\n---\n\n<!-- AUTO GENERATED. DO NOT MODIFY MANUALLY -->\n\n'
-        echo -e "$prepending$(cat default-keybindings.md)" > default-keybindings.md
+            - name: Checkout vspacecode.github.io
+              uses: actions/checkout@v2
+              with:
+                  repository: VSpaceCode/vspacecode.github.io
+                  path: vspacecode.github.io
+                  ssh-key: ${{ secrets.KEYBINDING_DEPLOY }}
 
-    - name: Commit and Push
-      run: |
-        cd vspacecode.github.io/docs
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add default-keybindings.md
-        if [ -n "$(git status --porcelain)" ]; then
-          git commit -m "Deploy default-keybindings.md" -m "from $GITHUB_REPOSITORY@$GITHUB_SHA"
-          git push
-        else
-          echo "nothing to commit";
-        fi
+            - name: Move KEYBINDINGS.md
+              run: |
+                  cd vspacecode.github.io/docs
+                  rm default-keybindings.md
+                  mv ../../VSpaceCode/KEYBINDINGS.md default-keybindings.md
+                  prepending='---\nid: default-keybindings\ntitle: Default Keybindings\n---\n\n<!-- AUTO GENERATED. DO NOT MODIFY MANUALLY -->\n\n'
+                  echo -e "$prepending$(cat default-keybindings.md)" > default-keybindings.md
+
+            - name: Commit and Push
+              run: |
+                  cd vspacecode.github.io/docs
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com
+                  git add default-keybindings.md
+                  if [ -n "$(git status --porcelain)" ]; then
+                    git commit -m "Deploy default-keybindings.md" -m "from $GITHUB_REPOSITORY@$GITHUB_SHA"
+                    git push
+                  else
+                    echo "nothing to commit";
+                  fi

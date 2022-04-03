@@ -1,61 +1,61 @@
 on:
-  push:
-    tags:
-      - v*
+    push:
+        tags:
+            - v*
 
 name: Deploy Extension
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout VSpaceCode
-        uses: actions/checkout@v2
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout VSpaceCode
+              uses: actions/checkout@v2
 
-      - name: Set up node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
+            - name: Set up node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 14
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+            - name: Install dependencies
+              uses: bahmutov/npm-install@v1
 
-      - name: Lint
-        run: npm run lint
+            - name: Lint
+              run: npm run lint
 
-      - name: Format check
-        run: npm run format-check
+            - name: Format check
+              run: npm run format-check
 
-      - name: Test
-        run: xvfb-run -a npm run test
-      
-      - name: Package
-        id: package
-        run: |
-          npx vsce package;
-          echo ::set-output name=vsix_path::$(ls *.vsix)
+            - name: Test
+              run: xvfb-run -a npm run test
 
-      - name: Create release on GitHub
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-          draft: false
-          prerelease: false
+            - name: Package
+              id: package
+              run: |
+                  npx vsce package;
+                  echo ::set-output name=vsix_path::$(ls *.vsix)
 
-      - name: Upload .vsix as release asset to GitHub
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ${{ steps.package.outputs.vsix_path }}
-          asset_name: ${{ steps.package.outputs.vsix_path }}
-          asset_content_type: application/zip
+            - name: Create release on GitHub
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: ${{ github.ref }}
+                  release_name: ${{ github.ref }}
+                  draft: false
+                  prerelease: false
 
-      - name: Publish to VSCode Extension Marketplace
-        run: npx vsce publish --packagePath ${{ steps.package.outputs.vsix_path }}
-        env:
-          VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
+            - name: Upload .vsix as release asset to GitHub
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ${{ steps.package.outputs.vsix_path }}
+                  asset_name: ${{ steps.package.outputs.vsix_path }}
+                  asset_content_type: application/zip
+
+            - name: Publish to VSCode Extension Marketplace
+              run: npx vsce publish --packagePath ${{ steps.package.outputs.vsix_path }}
+              env:
+                  VSCE_PAT: ${{ secrets.VSCE_TOKEN }}

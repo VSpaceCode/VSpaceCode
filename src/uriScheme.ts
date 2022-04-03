@@ -3,5 +3,5 @@
  */
 export const enum UriScheme {
     File = "file",
-    VscodeRemote = 'vscode-remote'
+    VscodeRemote = "vscode-remote",
 }

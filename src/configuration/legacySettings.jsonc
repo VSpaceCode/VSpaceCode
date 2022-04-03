@@ -1,5 +1,4 @@
 {
-
     "vim.normalModeKeyBindingsNonRecursive": [
         // Remove the normalized key could have introduced before c2c8771bbd1259835728faa29f15b8de98357d8a
         {
