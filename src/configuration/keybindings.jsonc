@@ -119,6 +119,17 @@
         "command": "showPrevParameterHint",
         "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
     },
+    // File Explorer navigation with ctrl+h/k
+    {
+        "key": "ctrl+j",
+        "command": "list.focusDown",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+         "key": "ctrl+k",
+         "command": "list.focusUp",
+         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+     },
     // Add ctrl+h/l to navigate in file browser
     {
         "key": "ctrl+h",
