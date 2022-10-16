@@ -119,6 +119,22 @@
         "command": "showPrevParameterHint",
         "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
     },
+    // Easy navigation in code action
+    {
+        "key": "ctrl+j",
+        "command": "selectNextCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "acceptSelectedCodeAction",
+        "when": "codeActionMenuVisible"
+    },
     // Add ctrl+h/l to navigate in file browser
     {
         "key": "ctrl+h",
