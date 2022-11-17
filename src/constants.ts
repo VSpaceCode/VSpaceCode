@@ -11,6 +11,7 @@ export enum CommandId {
     ConfigureKeybindings = "vspacecode.configureKeybindings",
 
     OpenDocumentationUrl = "vspacecode.openDocumentationUrl",
+    OpenWalkthrough = "workbench.action.openWalkthrough",
 
     CopyPath = "vspacecode.copyPath",
     CopyPathWithLine = "vspacecode.copyPathWithLine",
@@ -28,6 +29,9 @@ export enum CommandId {
     RegisterWhichKey = "whichkey.register",
     ShowWhichKey = "whichkey.show",
 }
+export enum WalkthroughId {
+    Welcome = "vspacecode.welcome",
+}
 export enum GlobalState {
     SpacecodeVersion = "vspacecodeVersion",
 }
@@ -42,8 +46,5 @@ export const BindingsId = {
     Overrides: `${extensionId}.${ConfigKey.Overrides}`,
     RefBindings: `${extensionId}.${ConfigKey.RefBindings}`,
 };
-
-export const manualInstallUrl =
-    "https://github.com/VSpaceCode/VSpaceCode#installation";
 
 export const defaultStatusBarTimeout = 5000;

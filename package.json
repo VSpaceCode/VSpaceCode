@@ -9,7 +9,7 @@
     },
     "version": "0.10.9",
     "engines": {
-        "vscode": "^1.45.0"
+        "vscode": "^1.67.0"
     },
     "icon": "resources/logo.png",
     "galleryBanner": {
@@ -7898,6 +7898,47 @@
                     }
                 }
             }
+        ],
+        "walkthroughs": [
+            {
+                "id": "vspacecode.welcome",
+                "title": "Get Started with VSpaceCode",
+                "description": "",
+                "steps": [
+                    {
+                        "id": "vspacecode.welcome.configuration",
+                        "title": "Setting up",
+                        "description": "This step will set up all the necessary configuration for VSpaceCode.\n[Configure for you](command:vspacecode.configure)",
+                        "media": {
+                            "markdown": "walkthroughs/welcome/configuration.md"
+                        },
+                        "completionEvents": [
+                            "onCommand:vspacecode.configure",
+                            "onCommand:vspacecode.openDocumentationUrl"
+                        ]
+                    },
+                    {
+                        "id": "vspacecode.welcome.tryout",
+                        "title": "Try it out",
+                        "media": {
+                            "markdown": "walkthroughs/welcome/tryout.md"
+                        },
+                        "completionEvents": [
+                            "onCommand:vspacecode.space"
+                        ]
+                    },
+                    {
+                        "id": "vspacecode.welcome.customization",
+                        "title": "Customization",
+                        "media": {
+                            "markdown": "walkthroughs/welcome/customization.md"
+                        },
+                        "completionEvents": [
+                            "onCommand:vspacecode.openDocumentationUrl"
+                        ]
+                    }
+                ]
+            }
         ]
     },
     "scripts": {
@@ -7918,7 +7959,7 @@
         "@types/lodash": "^4.14.168",
         "@types/mocha": "^9.0.0",
         "@types/node": "16.x",
-        "@types/vscode": "^1.45.0",
+        "@types/vscode": "^1.67.0",
         "@types/webpack-env": "^1.16.0",
         "@typescript-eslint/eslint-plugin": "^5.3.0",
         "@typescript-eslint/parser": "^5.3.0",

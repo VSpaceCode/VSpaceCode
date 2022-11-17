@@ -1,4 +1,11 @@
-import { commands, env, ExtensionContext, extensions, Uri } from "vscode";
+import {
+    commands,
+    env,
+    ExtensionContext,
+    extensions,
+    Uri,
+    window,
+} from "vscode";
 import { copyWholeBuffer } from "./bufferCommands";
 import {
     configKeyBindings,
@@ -9,8 +16,9 @@ import {
     CommandId,
     extensionQualifiedId,
     GlobalState,
+    WalkthroughId,
 } from "./constants";
-import { showUpdateMessage, showWelcomeMessage } from "./messages";
+import { showUpdateMessage } from "./messages";
 import {
     copyWrapper,
     getDirectoryPath,
@@ -34,7 +42,15 @@ export async function activate(context: ExtensionContext) {
     console.log(`VSpaceCode loaded: v${previousVersion} -> v${currentVersion}`);
     context.globalState.update(GlobalState.SpacecodeVersion, currentVersion);
     if (previousVersion === undefined) {
-        showWelcomeMessage();
+        // Open to side if there's an active tab
+        const toSide = window.tabGroups.activeTabGroup.activeTab != null;
+        commands.executeCommand(
+            CommandId.OpenWalkthrough,
+            {
+                category: `${extensionQualifiedId}#${WalkthroughId.Welcome}`,
+            },
+            toSide
+        );
     } else {
         showUpdateMessage(currentVersion, previousVersion);
     }
