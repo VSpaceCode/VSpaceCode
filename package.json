@@ -1060,11 +1060,8 @@
                                         "key": "R",
                                         "name": "Rename file",
                                         "icon": "edit",
-                                        "type": "commands",
-                                        "commands": [
-                                            "workbench.files.action.showActiveFileInExplorer",
-                                            "renameFile"
-                                        ]
+                                        "type": "command",
+                                        "command": "file-browser.rename"
                                     },
                                     {
                                         "key": "S",
