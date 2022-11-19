@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Clojure major mode: fix duplicate command name – ` SPC m e l` (`calva.clearInlineResults`) is now named "Clear inline evaluation results"
+- Clojure major mode: fix duplicate command name – `SPC m e l` (`calva.clearInlineResults`) is now named "Clear inline evaluation results"
 
 ## [0.10.9] - 2022-04-03
 
