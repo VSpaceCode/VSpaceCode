@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   ⌨️ Add `ctrl+j/k/l` as a shortcut to traverse items in code action
 -   Add `SPC b R` to revert current buffer. You can use it to discard unsaved changes.
+-   Add confirmation for configuration commands
 
 ### Fixed
 

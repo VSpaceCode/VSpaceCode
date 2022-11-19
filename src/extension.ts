@@ -18,7 +18,13 @@ import {
     GlobalState,
     WalkthroughId,
 } from "./constants";
-import { showUpdateMessage } from "./messages";
+import {
+    configConfirmTitle,
+    configKeybindingsConfirmTitle,
+    configSettingsConfirmTitle,
+    confirmWrapper,
+    showUpdateMessage,
+} from "./messages";
 import {
     copyWrapper,
     getDirectoryPath,
@@ -65,15 +71,21 @@ export async function activate(context: ExtensionContext) {
     );
 
     context.subscriptions.push(
-        commands.registerCommand(CommandId.Configure, configure)
+        commands.registerCommand(
+            CommandId.Configure,
+            confirmWrapper(configConfirmTitle, configure)
+        )
     );
     context.subscriptions.push(
-        commands.registerCommand(CommandId.ConfigureSettings, configSettings)
+        commands.registerCommand(
+            CommandId.ConfigureSettings,
+            confirmWrapper(configSettingsConfirmTitle, configSettings)
+        )
     );
     context.subscriptions.push(
         commands.registerCommand(
             CommandId.ConfigureKeybindings,
-            configKeyBindings
+            confirmWrapper(configKeybindingsConfirmTitle, configKeyBindings)
         )
     );
 
@@ -178,10 +190,7 @@ function showMagitRefMenu() {
 }
 
 function configure() {
-    return Promise.all([
-        commands.executeCommand(CommandId.ConfigureSettings),
-        commands.executeCommand(CommandId.ConfigureKeybindings),
-    ]);
+    return Promise.all([configSettings, configKeyBindings]);
 }
 
 function openDocumentationUrl() {
