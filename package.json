@@ -1857,7 +1857,7 @@
                                                     },
                                                     {
                                                         "key": "l",
-                                                        "name": "Clear evaluation results",
+                                                        "name": "Clear inline evaluation results",
                                                         "type": "command",
                                                         "command": "calva.clearInlineResults"
                                                     },
