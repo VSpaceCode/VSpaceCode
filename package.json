@@ -539,7 +539,7 @@
                                     },
                                     {
                                         "key": "R",
-                                        "name": "Revert the current buffer (reload from disk)",
+                                        "name": "Revert the current buffer",
                                         "icon": "discard",
                                         "type": "command",
                                         "command": "workbench.action.files.revert"
