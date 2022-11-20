@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Added
 
 -   ⌨️ Add `ctrl+j/k/l` as a shortcut to traverse items in code action
+-   Add `SPC b R` to revert current buffer (reload from disk)
 
 ## [0.10.9] - 2022-04-03
 
