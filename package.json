@@ -538,6 +538,13 @@
                                         ]
                                     },
                                     {
+                                        "key": "R",
+                                        "name": "Revert the current buffer",
+                                        "icon": "discard",
+                                        "type": "command",
+                                        "command": "workbench.action.files.revert"
+                                    },
+                                    {
                                         "key": "T",
                                         "name": "Unpin buffer",
                                         "icon": "pinned",
