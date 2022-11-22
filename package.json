@@ -1069,7 +1069,7 @@
                                         "icon": "edit",
                                         "type": "commands",
                                         "commands": [
-                                            "workbench.files.action.showActiveFileInExplorer",
+                                            "revealInExplorer",
                                             "renameFile"
                                         ]
                                     },
