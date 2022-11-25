@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.10] - 2022-11-25
+
 ### Added
 
 -   ⌨️ Add `ctrl+j/k/l` as a shortcut to traverse items in code action
