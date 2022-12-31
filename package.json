@@ -8323,16 +8323,5 @@
         "jsonc-parser": "^3.0.0",
         "lodash": "^4.17.21",
         "path-browserify": "^1.0.1"
-    },
-    "__metadata": {
-        "id": "1c81ab96-0424-43c4-b356-fe408a1bd1cf",
-        "publisherId": "60415ab6-4581-4e73-a7e0-6fc6b3369f12",
-        "publisherDisplayName": "VSpaceCode",
-        "targetPlatform": "undefined",
-        "isApplicationScoped": false,
-        "updated": false,
-        "isPreReleaseVersion": false,
-        "installedTimestamp": 1672343009383,
-        "preRelease": false
     }
 }
