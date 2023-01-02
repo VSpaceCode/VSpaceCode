@@ -6757,6 +6757,20 @@
                                                         "icon": "selection",
                                                         "type": "command",
                                                         "command": "editor.action.formatSelection"
+                                                    },
+                                                    {
+                                                        "key": "B",
+                                                        "name": "Format buffer with formatter",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument.multiple"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "Format selection with formatter",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection.multiple"
                                                     }
                                                 ]
                                             },
@@ -6775,7 +6789,7 @@
                                                     },
                                                     {
                                                         "key": "a",
-                                                        "name": "Execute code actions",
+                                                        "name": "Execute code action",
                                                         "icon": "lightbulb",
                                                         "type": "command",
                                                         "command": "editor.action.codeAction"
@@ -6788,8 +6802,15 @@
                                                         "command": "editor.action.quickFix"
                                                     },
                                                     {
+                                                        "key": "r",
+                                                        "name": "Refactor action",
+                                                        "icon": "edit",
+                                                        "type": "command",
+                                                        "command": "editor.action.refactor"
+                                                    },
+                                                    {
                                                         "key": "s",
-                                                        "name": "Source actions",
+                                                        "name": "Source action",
                                                         "icon": "lightbulb",
                                                         "type": "command",
                                                         "command": "editor.action.sourceAction"
@@ -6803,18 +6824,18 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
-                                                        "key": "c",
-                                                        "name": "Show call hierarchy",
-                                                        "icon": "type-hierarchy",
-                                                        "type": "command",
-                                                        "command": "references-view.showCallHierarchy"
-                                                    },
-                                                    {
                                                         "key": "d",
                                                         "name": "Go to definition",
                                                         "icon": "symbol-function",
                                                         "type": "command",
                                                         "command": "editor.action.revealDefinition"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "Show call hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "references-view.showCallHierarchy"
                                                     },
                                                     {
                                                         "key": "e",
@@ -6824,18 +6845,11 @@
                                                         "command": "workbench.action.showErrorsWarnings"
                                                     },
                                                     {
-                                                        "key": "h",
-                                                        "name": "Go to type hierarchy",
-                                                        "icon": "type-hierarchy",
-                                                        "type": "command",
-                                                        "command": "java.action.showTypeHierarchy"
-                                                    },
-                                                    {
                                                         "key": "i",
-                                                        "name": "Find implementations",
+                                                        "name": "Go to implementations",
                                                         "icon": "symbol-module",
                                                         "type": "command",
-                                                        "command": "references-view.findImplementations"
+                                                        "command": "editor.action.goToImplementation"
                                                     },
                                                     {
                                                         "key": "o",
@@ -6845,18 +6859,18 @@
                                                         "command": "java.action.navigateToSuperImplementation"
                                                     },
                                                     {
+                                                        "key": "r",
+                                                        "name": "Go to references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToReferences"
+                                                    },
+                                                    {
                                                         "key": "s",
                                                         "name": "Go to symbol in buffer",
                                                         "icon": "file",
                                                         "type": "command",
                                                         "command": "workbench.action.gotoSymbol"
-                                                    },
-                                                    {
-                                                        "key": "r",
-                                                        "name": "Find references",
-                                                        "icon": "symbol-reference",
-                                                        "type": "command",
-                                                        "command": "references-view.findReferences"
                                                     },
                                                     {
                                                         "key": "t",
@@ -6871,6 +6885,27 @@
                                                         "icon": "type-hierarchy",
                                                         "type": "command",
                                                         "command": "java.action.showSubtypeHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "H",
+                                                        "name": "Go to type hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "java.action.showTypeHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "I",
+                                                        "name": "Find implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "references-view.findImplementations"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Find references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "references-view.findReferences"
                                                     },
                                                     {
                                                         "key": "S",
@@ -6998,18 +7033,18 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
-                                                        "key": "c",
-                                                        "name": "Peek call hierarchy",
-                                                        "icon": "type-hierarchy",
-                                                        "type": "command",
-                                                        "command": "editor.showCallHierarchy"
-                                                    },
-                                                    {
                                                         "key": "d",
                                                         "name": "Peek definition",
                                                         "icon": "symbol-function",
                                                         "type": "command",
                                                         "command": "editor.action.peekDefinition"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "Peek call hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "editor.showCallHierarchy"
                                                     },
                                                     {
                                                         "key": "i",
