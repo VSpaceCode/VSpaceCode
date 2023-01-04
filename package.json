@@ -6781,13 +6781,6 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
-                                                        "key": "/",
-                                                        "name": "Comment line",
-                                                        "icon": "edit",
-                                                        "type": "command",
-                                                        "command": "editor.action.commentLine"
-                                                    },
-                                                    {
                                                         "key": "a",
                                                         "name": "Execute code action",
                                                         "icon": "lightbulb",
@@ -6944,6 +6937,16 @@
                                                         "command": "editor.action.codeAction"
                                                     },
                                                     {
+                                                        "key": "e",
+                                                        "name": "Extract to function or variable",
+                                                        "icon": "gather",
+                                                        "type": "command",
+                                                        "command": "editor.action.codeAction",
+                                                        "args": {
+                                                            "kind": "refactor.extract"
+                                                        }
+                                                    },
+                                                    {
                                                         "key": "o",
                                                         "name": "Organize imports",
                                                         "icon": "edit",
@@ -6963,16 +6966,6 @@
                                                         "icon": "edit",
                                                         "type": "command",
                                                         "command": "editor.action.refactor"
-                                                    },
-                                                    {
-                                                        "key": "e",
-                                                        "name": "Extract to function or variable",
-                                                        "icon": "gather",
-                                                        "type": "command",
-                                                        "command": "editor.action.codeAction",
-                                                        "args": {
-                                                            "kind": "refactor.extract"
-                                                        }
                                                     }
                                                 ]
                                             },
