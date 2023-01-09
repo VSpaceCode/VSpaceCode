@@ -13,9 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.11] - 2023-01-08
+
 ### Added
 
--   Java major mode added
+-   Add Java major mode
 
 ## [0.10.10] - 2022-11-25
 
