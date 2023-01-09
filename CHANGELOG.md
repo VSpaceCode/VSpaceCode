@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Changed
+
+-   Replace badges' domain to vsmarketplacebadges.dev in the README.md
+
 ## [0.10.11] - 2023-01-08
 
 ### Added
