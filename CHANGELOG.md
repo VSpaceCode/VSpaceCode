@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.13] - 2023-01-08
+
 ## Changed
 
 -   Use img.shields.io for badge service instead in README.md
