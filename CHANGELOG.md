@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Fixed
+
+-   Fix the `vspacecode.configure` command which configures default settings and keybindings
+
 ## [0.10.13] - 2023-01-08
 
 ## Changed
