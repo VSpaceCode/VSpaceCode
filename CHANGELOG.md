@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add a CUDA-C++ major mode
+-   Add a CUDA-C++ major mode
 
 ## Fixed
 
