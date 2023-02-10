@@ -7567,13 +7567,6 @@
                                         "command": "editor.action.toggleWordWrap"
                                     },
                                     {
-                                        "key": "n",
-                                        "name": "Toggle line numbers",
-                                        "icon": "list-ordered",
-                                        "type": "command",
-                                        "command": "editor.action.toggleWordWrap"
-                                    },
-                                    {
                                         "key": "w",
                                         "name": "Toggle render whitespace",
                                         "icon": "whitespace",
