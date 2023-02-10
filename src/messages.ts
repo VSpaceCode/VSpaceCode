@@ -6,7 +6,7 @@ export const configSettingsConfirmTitle =
 export const configKeybindingsConfirmTitle =
     "Configuring keybindings may change the format of your keybindngs.json file. Are you sure?";
 export const configConfirmTitle =
-    "Configuration may change the format of your keybindngs.json file. Are you sure? ";
+    "Configuration may change the format of your settings.json and keybindngs.json file. Are you sure?";
 
 export function confirmWrapper(title: string, fn: () => Thenable<any>) {
     return async () => {

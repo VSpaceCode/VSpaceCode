@@ -190,7 +190,7 @@ function showMagitRefMenu() {
 }
 
 function configure() {
-    return Promise.all([configSettings, configKeyBindings]);
+    return Promise.all([configSettings(), configKeyBindings()]);
 }
 
 function openDocumentationUrl() {
