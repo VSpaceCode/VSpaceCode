@@ -1572,20 +1572,6 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
-                                                "key": "=",
-                                                "name": "Show constraints",
-                                                "icon": "repl",
-                                                "type": "command",
-                                                "command": "agda-mode.show-constraints"
-                                            },
-                                            {
-                                                "key": "?",
-                                                "name": "Show all goals",
-                                                "icon": "repl",
-                                                "type": "command",
-                                                "command": "agda-mode.show-goals"
-                                            },
-                                            {
                                                 "key": ",",
                                                 "name": "Show goal type and context (simplified)",
                                                 "icon": "repl",
@@ -1598,6 +1584,20 @@
                                                 "icon": "repl",
                                                 "type": "command",
                                                 "command": "agda-mode.goal-type-context-and-inferred-type[Simplified]"
+                                            },
+                                            {
+                                                "key": "=",
+                                                "name": "Show constraints",
+                                                "icon": "repl",
+                                                "type": "command",
+                                                "command": "agda-mode.show-constraints"
+                                            },
+                                            {
+                                                "key": "?",
+                                                "name": "Show all goals",
+                                                "icon": "repl",
+                                                "type": "command",
+                                                "command": "agda-mode.show-goals"
                                             },
                                             {
                                                 "key": "a",
@@ -2980,215 +2980,6 @@
                                                         "icon": "symbol-module",
                                                         "type": "command",
                                                         "command": "editor.action.peekImplementation"
-                                                    },
-                                                    {
-                                                        "key": "r",
-                                                        "name": "Peek references",
-                                                        "icon": "symbol-reference",
-                                                        "type": "command",
-                                                        "command": "editor.action.referenceSearch.trigger"
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "key": "languageId:cuda-cpp",
-                                        "name": "CUDA-C++",
-                                        "type": "bindings",
-                                        "bindings": [
-                                            {
-                                                "key": "=",
-                                                "name": "+Format",
-                                                "icon": "list-flat",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "=",
-                                                        "name": "Format region or buffer",
-                                                        "icon": "list-flat",
-                                                        "type": "command",
-                                                        "command": "editor.action.format"
-                                                    },
-                                                    {
-                                                        "key": "b",
-                                                        "name": "Format buffer",
-                                                        "icon": "file",
-                                                        "type": "command",
-                                                        "command": "editor.action.formatDocument"
-                                                    },
-                                                    {
-                                                        "key": "c",
-                                                        "name": "Format changes",
-                                                        "icon": "diff",
-                                                        "type": "command",
-                                                        "command": "editor.action.formatChanges"
-                                                    },
-                                                    {
-                                                        "key": "s",
-                                                        "name": "Format selection",
-                                                        "icon": "selection",
-                                                        "type": "command",
-                                                        "command": "editor.action.formatSelection"
-                                                    },
-                                                    {
-                                                        "key": "B",
-                                                        "name": "Format buffer with formatter",
-                                                        "icon": "file",
-                                                        "type": "command",
-                                                        "command": "editor.action.formatDocument.multiple"
-                                                    },
-                                                    {
-                                                        "key": "S",
-                                                        "name": "Format selection with formatter",
-                                                        "icon": "selection",
-                                                        "type": "command",
-                                                        "command": "editor.action.formatSelection.multiple"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "key": "b",
-                                                "name": "+Backend",
-                                                "icon": "circuit-board",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "d",
-                                                        "name": "Reset Database",
-                                                        "icon": "database",
-                                                        "type": "command",
-                                                        "command": "C_Cpp.ResetDatabase"
-                                                    },
-                                                    {
-                                                        "key": "w",
-                                                        "name": "Rescan Workspace",
-                                                        "icon": "project",
-                                                        "type": "command",
-                                                        "command": "C_Cpp.RescanWorkspace"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "key": "d",
-                                                "name": "+Debug",
-                                                "icon": "bug",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "f",
-                                                        "name": "Change debug focus",
-                                                        "icon": "eye-watch",
-                                                        "type": "command",
-                                                        "command": "cuda.changeDebugFocus"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "key": "g",
-                                                "name": "+Go to",
-                                                "icon": "go-to-file",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "a",
-                                                        "name": "Switch Header/Source",
-                                                        "icon": "files",
-                                                        "type": "command",
-                                                        "command": "C_Cpp.SwitchHeaderSource"
-                                                    },
-                                                    {
-                                                        "key": "d",
-                                                        "name": "Go to declaration",
-                                                        "icon": "symbol-struct",
-                                                        "type": "command",
-                                                        "command": "editor.action.revealDeclaration"
-                                                    },
-                                                    {
-                                                        "key": "e",
-                                                        "name": "Go to errors/problems",
-                                                        "icon": "error",
-                                                        "type": "command",
-                                                        "command": "workbench.actions.view.problems"
-                                                    },
-                                                    {
-                                                        "key": "f",
-                                                        "name": "Go to file in explorer",
-                                                        "icon": "file",
-                                                        "type": "command",
-                                                        "command": "workbench.files.action.showActiveFileInExplorer"
-                                                    },
-                                                    {
-                                                        "key": "g",
-                                                        "name": "Go to definition",
-                                                        "icon": "symbol-function",
-                                                        "type": "command",
-                                                        "command": "editor.action.revealDefinition"
-                                                    },
-                                                    {
-                                                        "key": "r",
-                                                        "name": "Go to reference",
-                                                        "icon": "symbol-reference",
-                                                        "type": "command",
-                                                        "command": "editor.action.goToReferences"
-                                                    },
-                                                    {
-                                                        "key": "s",
-                                                        "name": "Go to symbol in buffer",
-                                                        "icon": "symbol-class",
-                                                        "type": "command",
-                                                        "command": "workbench.action.gotoSymbol"
-                                                    },
-                                                    {
-                                                        "key": "R",
-                                                        "name": "Find references",
-                                                        "icon": "symbol-reference",
-                                                        "type": "command",
-                                                        "command": "references-view.findReferences"
-                                                    },
-                                                    {
-                                                        "key": "S",
-                                                        "name": "Go to symbol in project",
-                                                        "icon": "symbol-class",
-                                                        "type": "command",
-                                                        "command": "workbench.action.showAllSymbols"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "key": "r",
-                                                "name": "+Refactor",
-                                                "icon": "edit",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "r",
-                                                        "name": "Rename Symbol",
-                                                        "icon": "symbol-keyword",
-                                                        "type": "command",
-                                                        "command": "editor.action.rename"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "key": "G",
-                                                "name": "+Peek",
-                                                "icon": "eye",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "d",
-                                                        "name": "Peek declaration",
-                                                        "icon": "symbol-struct",
-                                                        "type": "command",
-                                                        "command": "editor.action.peekDeclaration"
-                                                    },
-                                                    {
-                                                        "key": "g",
-                                                        "name": "Peek definition",
-                                                        "icon": "symbol-function",
-                                                        "type": "command",
-                                                        "command": "editor.action.peekDefinition"
                                                     },
                                                     {
                                                         "key": "r",
@@ -4620,6 +4411,372 @@
                                         ]
                                     },
                                     {
+                                        "key": "languageId:java",
+                                        "name": "Java",
+                                        "type": "bindings",
+                                        "bindings": [
+                                            {
+                                                "key": "h",
+                                                "name": "Describe thing at point",
+                                                "icon": "book",
+                                                "type": "command",
+                                                "command": "editor.action.showHover"
+                                            },
+                                            {
+                                                "key": "D",
+                                                "name": "Debug Java file",
+                                                "icon": "debug-alt",
+                                                "type": "command",
+                                                "command": "java.debug.debugJavaFile"
+                                            },
+                                            {
+                                                "key": "R",
+                                                "name": "Run Java file",
+                                                "icon": "run",
+                                                "type": "command",
+                                                "command": "java.debug.runJavaFile"
+                                            },
+                                            {
+                                                "key": "=",
+                                                "name": "+Format",
+                                                "icon": "list-flat",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "=",
+                                                        "name": "Format region or buffer",
+                                                        "icon": "list-flat",
+                                                        "type": "command",
+                                                        "command": "editor.action.format"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Format buffer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument"
+                                                    },
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Format changes",
+                                                        "icon": "diff",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatChanges"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Format selection",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection"
+                                                    },
+                                                    {
+                                                        "key": "B",
+                                                        "name": "Format buffer with formatter",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument.multiple"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "Format selection with formatter",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection.multiple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "a",
+                                                "name": "+Code actions",
+                                                "icon": "zap",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "a",
+                                                        "name": "Execute code action",
+                                                        "icon": "lightbulb",
+                                                        "type": "command",
+                                                        "command": "editor.action.codeAction"
+                                                    },
+                                                    {
+                                                        "key": "f",
+                                                        "name": "Execute fix action",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "editor.action.quickFix"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Refactor action",
+                                                        "icon": "edit",
+                                                        "type": "command",
+                                                        "command": "editor.action.refactor"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Source action",
+                                                        "icon": "lightbulb",
+                                                        "type": "command",
+                                                        "command": "editor.action.sourceAction"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "g",
+                                                "name": "+Go to",
+                                                "icon": "go-to-file",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Go to definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.revealDefinition"
+                                                    },
+                                                    {
+                                                        "key": "e",
+                                                        "name": "Go to error list",
+                                                        "icon": "command",
+                                                        "type": "command",
+                                                        "command": "workbench.action.showErrorsWarnings"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "Show call hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "references-view.showCallHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "i",
+                                                        "name": "Go to implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToImplementation"
+                                                    },
+                                                    {
+                                                        "key": "o",
+                                                        "name": "Go to super implementation",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "java.action.navigateToSuperImplementation"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Go to references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToReferences"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Go to symbol in buffer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "workbench.action.gotoSymbol"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Go to type definition",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToTypeDefinition"
+                                                    },
+                                                    {
+                                                        "key": "u",
+                                                        "name": "Go to subtype hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "java.action.showSubtypeHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "H",
+                                                        "name": "Go to type hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "java.action.showTypeHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "I",
+                                                        "name": "Find implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "references-view.findImplementations"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Find references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "references-view.findReferences"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "Go to symbol in project",
+                                                        "icon": "project",
+                                                        "type": "command",
+                                                        "command": "workbench.action.showAllSymbols"
+                                                    },
+                                                    {
+                                                        "key": "T",
+                                                        "name": "Go to test",
+                                                        "icon": "beaker",
+                                                        "type": "command",
+                                                        "command": "java.test.goToTest"
+                                                    },
+                                                    {
+                                                        "key": "U",
+                                                        "name": "Go to supertype hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "java.action.showSupertypeHierarchy"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "r",
+                                                "name": "+Refactor",
+                                                "icon": "edit",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "a",
+                                                        "name": "Execute code actions",
+                                                        "icon": "lightbulb",
+                                                        "type": "command",
+                                                        "command": "editor.action.codeAction"
+                                                    },
+                                                    {
+                                                        "key": "e",
+                                                        "name": "Extract to function or variable",
+                                                        "icon": "gather",
+                                                        "type": "command",
+                                                        "command": "editor.action.codeAction",
+                                                        "args": {
+                                                            "kind": "refactor.extract"
+                                                        }
+                                                    },
+                                                    {
+                                                        "key": "o",
+                                                        "name": "Organize imports",
+                                                        "icon": "edit",
+                                                        "type": "command",
+                                                        "command": "editor.action.organizeImports"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Rename symbol",
+                                                        "icon": "edit",
+                                                        "type": "command",
+                                                        "command": "editor.action.rename"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Refactor actions",
+                                                        "icon": "edit",
+                                                        "type": "command",
+                                                        "command": "editor.action.refactor"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "t",
+                                                "name": "+Test",
+                                                "icon": "beaker",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "a",
+                                                        "name": "Run all tests",
+                                                        "icon": "beaker",
+                                                        "type": "command",
+                                                        "command": "testing.runAll"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Run current test file",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "testing.runCurrentFile"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Re-run failed tests",
+                                                        "icon": "close",
+                                                        "type": "command",
+                                                        "command": "testing.reRunFailTests"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Select and run test",
+                                                        "icon": "list-unordered",
+                                                        "type": "command",
+                                                        "command": "testing.runSelected"
+                                                    },
+                                                    {
+                                                        "key": "A",
+                                                        "name": "Debug all tests",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "testing.debugAll"
+                                                    },
+                                                    {
+                                                        "key": "T",
+                                                        "name": "Select and debug test",
+                                                        "icon": "debug-alt",
+                                                        "type": "command",
+                                                        "command": "testing.debugSelected"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "G",
+                                                "name": "+Peek",
+                                                "icon": "eye",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Peek definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekDefinition"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "Peek call hierarchy",
+                                                        "icon": "type-hierarchy",
+                                                        "type": "command",
+                                                        "command": "editor.showCallHierarchy"
+                                                    },
+                                                    {
+                                                        "key": "i",
+                                                        "name": "Peek implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekImplementation"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Peek references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.referenceSearch.trigger"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Peek type definition",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekTypeDefinition"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "key": "languageId:javascript",
                                         "name": "JavaScript",
                                         "type": "bindings",
@@ -5002,6 +5159,35 @@
                                                 ]
                                             },
                                             {
+                                                "key": "c",
+                                                "name": "+Clear",
+                                                "icon": "trash",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Clear current inline results",
+                                                        "icon": "chrome-close",
+                                                        "type": "command",
+                                                        "command": "language-julia.clearCurrentInlineResult"
+                                                    },
+                                                    {
+                                                        "key": "C",
+                                                        "name": "Clear all inline results",
+                                                        "icon": "clear-all",
+                                                        "type": "command",
+                                                        "command": "language-julia.clearAllInlineResults"
+                                                    },
+                                                    {
+                                                        "key": "K",
+                                                        "name": "Clear all inline results in editor",
+                                                        "icon": "clear-all",
+                                                        "type": "command",
+                                                        "command": "language-julia.clearAllInlineResultsInEditor"
+                                                    }
+                                                ]
+                                            },
+                                            {
                                                 "key": "e",
                                                 "name": "+Environment/package",
                                                 "icon": "library",
@@ -5036,18 +5222,18 @@
                                                         "command": "language-julia.changeCurrentEnvironment"
                                                     },
                                                     {
-                                                        "key": "P",
-                                                        "name": "Open package directory",
-                                                        "icon": "new-folder",
-                                                        "type": "command",
-                                                        "command": "language-julia.openPackageDirectory"
-                                                    },
-                                                    {
                                                         "key": "t",
                                                         "name": "Tag new package version",
                                                         "icon": "tag",
                                                         "type": "command",
                                                         "command": "language-julia.tagNewPackageVersion"
+                                                    },
+                                                    {
+                                                        "key": "P",
+                                                        "name": "Open package directory",
+                                                        "icon": "new-folder",
+                                                        "type": "command",
+                                                        "command": "language-julia.openPackageDirectory"
                                                     }
                                                 ]
                                             },
@@ -5183,35 +5369,6 @@
                                                         "icon": "file",
                                                         "type": "command",
                                                         "command": "language-julia.executeActiveFile"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "key": "c",
-                                                "name": "+Clear",
-                                                "icon": "trash",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "c",
-                                                        "name": "Clear current inline results",
-                                                        "icon": "chrome-close",
-                                                        "type": "command",
-                                                        "command": "language-julia.clearCurrentInlineResult"
-                                                    },
-                                                    {
-                                                        "key": "C",
-                                                        "name": "Clear all inline results",
-                                                        "icon": "clear-all",
-                                                        "type": "command",
-                                                        "command": "language-julia.clearAllInlineResults"
-                                                    },
-                                                    {
-                                                        "key": "K",
-                                                        "name": "Clear all inline results in editor",
-                                                        "icon": "clear-all",
-                                                        "type": "command",
-                                                        "command": "language-julia.clearAllInlineResultsInEditor"
                                                     }
                                                 ]
                                             }
@@ -5752,8 +5909,8 @@
                                         ]
                                     },
                                     {
-                                        "key": "languageId:php",
-                                        "name": "PHP",
+                                        "key": "languageId:objectpascal",
+                                        "name": "ObjectPascal",
                                         "type": "bindings",
                                         "bindings": [
                                             {
@@ -5910,8 +6067,8 @@
                                         ]
                                     },
                                     {
-                                        "key": "languageId:objectpascal",
-                                        "name": "ObjectPascal",
+                                        "key": "languageId:php",
+                                        "name": "PHP",
                                         "type": "bindings",
                                         "bindings": [
                                             {
@@ -6908,31 +7065,10 @@
                                         ]
                                     },
                                     {
-                                        "key": "languageId:java",
-                                        "name": "Java",
+                                        "key": "languageId:cuda-cpp",
+                                        "name": "CUDA-C++",
                                         "type": "bindings",
                                         "bindings": [
-                                            {
-                                                "key": "h",
-                                                "name": "Describe thing at point",
-                                                "icon": "book",
-                                                "type": "command",
-                                                "command": "editor.action.showHover"
-                                            },
-                                            {
-                                                "key": "D",
-                                                "name": "Debug Java file",
-                                                "icon": "debug-alt",
-                                                "type": "command",
-                                                "command": "java.debug.debugJavaFile"
-                                            },
-                                            {
-                                                "key": "R",
-                                                "name": "Run Java file",
-                                                "icon": "run",
-                                                "type": "command",
-                                                "command": "java.debug.runJavaFile"
-                                            },
                                             {
                                                 "key": "=",
                                                 "name": "+Format",
@@ -6984,38 +7120,39 @@
                                                 ]
                                             },
                                             {
-                                                "key": "a",
-                                                "name": "+Code actions",
-                                                "icon": "zap",
+                                                "key": "b",
+                                                "name": "+Backend",
+                                                "icon": "circuit-board",
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
-                                                        "key": "a",
-                                                        "name": "Execute code action",
-                                                        "icon": "lightbulb",
+                                                        "key": "d",
+                                                        "name": "Reset Database",
+                                                        "icon": "database",
                                                         "type": "command",
-                                                        "command": "editor.action.codeAction"
+                                                        "command": "C_Cpp.ResetDatabase"
                                                     },
+                                                    {
+                                                        "key": "w",
+                                                        "name": "Rescan Workspace",
+                                                        "icon": "project",
+                                                        "type": "command",
+                                                        "command": "C_Cpp.RescanWorkspace"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "d",
+                                                "name": "+Debug",
+                                                "icon": "bug",
+                                                "type": "bindings",
+                                                "bindings": [
                                                     {
                                                         "key": "f",
-                                                        "name": "Execute fix action",
-                                                        "icon": "lightbulb-autofix",
+                                                        "name": "Change debug focus",
+                                                        "icon": "eye-watch",
                                                         "type": "command",
-                                                        "command": "editor.action.quickFix"
-                                                    },
-                                                    {
-                                                        "key": "r",
-                                                        "name": "Refactor action",
-                                                        "icon": "edit",
-                                                        "type": "command",
-                                                        "command": "editor.action.refactor"
-                                                    },
-                                                    {
-                                                        "key": "s",
-                                                        "name": "Source action",
-                                                        "icon": "lightbulb",
-                                                        "type": "command",
-                                                        "command": "editor.action.sourceAction"
+                                                        "command": "cuda.changeDebugFocus"
                                                     }
                                                 ]
                                             },
@@ -7026,43 +7163,43 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
+                                                        "key": "a",
+                                                        "name": "Switch Header/Source",
+                                                        "icon": "files",
+                                                        "type": "command",
+                                                        "command": "C_Cpp.SwitchHeaderSource"
+                                                    },
+                                                    {
                                                         "key": "d",
+                                                        "name": "Go to declaration",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.revealDeclaration"
+                                                    },
+                                                    {
+                                                        "key": "e",
+                                                        "name": "Go to errors/problems",
+                                                        "icon": "error",
+                                                        "type": "command",
+                                                        "command": "workbench.actions.view.problems"
+                                                    },
+                                                    {
+                                                        "key": "f",
+                                                        "name": "Go to file in explorer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "workbench.files.action.showActiveFileInExplorer"
+                                                    },
+                                                    {
+                                                        "key": "g",
                                                         "name": "Go to definition",
                                                         "icon": "symbol-function",
                                                         "type": "command",
                                                         "command": "editor.action.revealDefinition"
                                                     },
                                                     {
-                                                        "key": "h",
-                                                        "name": "Show call hierarchy",
-                                                        "icon": "type-hierarchy",
-                                                        "type": "command",
-                                                        "command": "references-view.showCallHierarchy"
-                                                    },
-                                                    {
-                                                        "key": "e",
-                                                        "name": "Go to error list",
-                                                        "icon": "command",
-                                                        "type": "command",
-                                                        "command": "workbench.action.showErrorsWarnings"
-                                                    },
-                                                    {
-                                                        "key": "i",
-                                                        "name": "Go to implementations",
-                                                        "icon": "symbol-module",
-                                                        "type": "command",
-                                                        "command": "editor.action.goToImplementation"
-                                                    },
-                                                    {
-                                                        "key": "o",
-                                                        "name": "Go to super implementation",
-                                                        "icon": "symbol-module",
-                                                        "type": "command",
-                                                        "command": "java.action.navigateToSuperImplementation"
-                                                    },
-                                                    {
                                                         "key": "r",
-                                                        "name": "Go to references",
+                                                        "name": "Go to reference",
                                                         "icon": "symbol-reference",
                                                         "type": "command",
                                                         "command": "editor.action.goToReferences"
@@ -7070,37 +7207,9 @@
                                                     {
                                                         "key": "s",
                                                         "name": "Go to symbol in buffer",
-                                                        "icon": "file",
+                                                        "icon": "symbol-class",
                                                         "type": "command",
                                                         "command": "workbench.action.gotoSymbol"
-                                                    },
-                                                    {
-                                                        "key": "t",
-                                                        "name": "Go to type definition",
-                                                        "icon": "symbol-struct",
-                                                        "type": "command",
-                                                        "command": "editor.action.goToTypeDefinition"
-                                                    },
-                                                    {
-                                                        "key": "u",
-                                                        "name": "Go to subtype hierarchy",
-                                                        "icon": "type-hierarchy",
-                                                        "type": "command",
-                                                        "command": "java.action.showSubtypeHierarchy"
-                                                    },
-                                                    {
-                                                        "key": "H",
-                                                        "name": "Go to type hierarchy",
-                                                        "icon": "type-hierarchy",
-                                                        "type": "command",
-                                                        "command": "java.action.showTypeHierarchy"
-                                                    },
-                                                    {
-                                                        "key": "I",
-                                                        "name": "Find implementations",
-                                                        "icon": "symbol-module",
-                                                        "type": "command",
-                                                        "command": "references-view.findImplementations"
                                                     },
                                                     {
                                                         "key": "R",
@@ -7112,23 +7221,9 @@
                                                     {
                                                         "key": "S",
                                                         "name": "Go to symbol in project",
-                                                        "icon": "project",
+                                                        "icon": "symbol-class",
                                                         "type": "command",
                                                         "command": "workbench.action.showAllSymbols"
-                                                    },
-                                                    {
-                                                        "key": "T",
-                                                        "name": "Go to test",
-                                                        "icon": "beaker",
-                                                        "type": "command",
-                                                        "command": "java.test.goToTest"
-                                                    },
-                                                    {
-                                                        "key": "U",
-                                                        "name": "Go to supertype hierarchy",
-                                                        "icon": "type-hierarchy",
-                                                        "type": "command",
-                                                        "command": "java.action.showSupertypeHierarchy"
                                                     }
                                                 ]
                                             },
@@ -7139,92 +7234,11 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
-                                                        "key": "a",
-                                                        "name": "Execute code actions",
-                                                        "icon": "lightbulb",
-                                                        "type": "command",
-                                                        "command": "editor.action.codeAction"
-                                                    },
-                                                    {
-                                                        "key": "e",
-                                                        "name": "Extract to function or variable",
-                                                        "icon": "gather",
-                                                        "type": "command",
-                                                        "command": "editor.action.codeAction",
-                                                        "args": {
-                                                            "kind": "refactor.extract"
-                                                        }
-                                                    },
-                                                    {
-                                                        "key": "o",
-                                                        "name": "Organize imports",
-                                                        "icon": "edit",
-                                                        "type": "command",
-                                                        "command": "editor.action.organizeImports"
-                                                    },
-                                                    {
                                                         "key": "r",
-                                                        "name": "Rename symbol",
-                                                        "icon": "edit",
+                                                        "name": "Rename Symbol",
+                                                        "icon": "symbol-keyword",
                                                         "type": "command",
                                                         "command": "editor.action.rename"
-                                                    },
-                                                    {
-                                                        "key": "R",
-                                                        "name": "Refactor actions",
-                                                        "icon": "edit",
-                                                        "type": "command",
-                                                        "command": "editor.action.refactor"
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "key": "t",
-                                                "name": "+Test",
-                                                "icon": "beaker",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "a",
-                                                        "name": "Run all tests",
-                                                        "icon": "beaker",
-                                                        "type": "command",
-                                                        "command": "testing.runAll"
-                                                    },
-                                                    {
-                                                        "key": "b",
-                                                        "name": "Run current test file",
-                                                        "icon": "file",
-                                                        "type": "command",
-                                                        "command": "testing.runCurrentFile"
-                                                    },
-                                                    {
-                                                        "key": "r",
-                                                        "name": "Re-run failed tests",
-                                                        "icon": "close",
-                                                        "type": "command",
-                                                        "command": "testing.reRunFailTests"
-                                                    },
-                                                    {
-                                                        "key": "t",
-                                                        "name": "Select and run test",
-                                                        "icon": "list-unordered",
-                                                        "type": "command",
-                                                        "command": "testing.runSelected"
-                                                    },
-                                                    {
-                                                        "key": "A",
-                                                        "name": "Debug all tests",
-                                                        "icon": "bug",
-                                                        "type": "command",
-                                                        "command": "testing.debugAll"
-                                                    },
-                                                    {
-                                                        "key": "T",
-                                                        "name": "Select and debug test",
-                                                        "icon": "debug-alt",
-                                                        "type": "command",
-                                                        "command": "testing.debugSelected"
                                                     }
                                                 ]
                                             },
@@ -7236,24 +7250,17 @@
                                                 "bindings": [
                                                     {
                                                         "key": "d",
+                                                        "name": "Peek declaration",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekDeclaration"
+                                                    },
+                                                    {
+                                                        "key": "g",
                                                         "name": "Peek definition",
                                                         "icon": "symbol-function",
                                                         "type": "command",
                                                         "command": "editor.action.peekDefinition"
-                                                    },
-                                                    {
-                                                        "key": "h",
-                                                        "name": "Peek call hierarchy",
-                                                        "icon": "type-hierarchy",
-                                                        "type": "command",
-                                                        "command": "editor.showCallHierarchy"
-                                                    },
-                                                    {
-                                                        "key": "i",
-                                                        "name": "Peek implementations",
-                                                        "icon": "symbol-module",
-                                                        "type": "command",
-                                                        "command": "editor.action.peekImplementation"
                                                     },
                                                     {
                                                         "key": "r",
@@ -7261,13 +7268,6 @@
                                                         "icon": "symbol-reference",
                                                         "type": "command",
                                                         "command": "editor.action.referenceSearch.trigger"
-                                                    },
-                                                    {
-                                                        "key": "t",
-                                                        "name": "Peek type definition",
-                                                        "icon": "symbol-struct",
-                                                        "type": "command",
-                                                        "command": "editor.action.peekTypeDefinition"
                                                     }
                                                 ]
                                             }

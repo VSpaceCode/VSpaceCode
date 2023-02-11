@@ -17,6 +17,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Add a CUDA-C++ major mode
 
+### Changed
+
+-   Sort the bindings again
+
 ## Fixed
 
 -   Fix the `vspacecode.configure` command which configures default settings and keybindings
