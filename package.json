@@ -30,7 +30,6 @@
         "VSpaceCode.whichkey",
         "vscodevim.vim",
         "kahole.magit",
-        "jacobdufault.fuzzy-search",
         "bodil.file-browser"
     ],
     "extensionDependencies": [
@@ -7508,7 +7507,7 @@
                                         "name": "Fuzzy search in current buffer",
                                         "icon": "file",
                                         "type": "command",
-                                        "command": "fuzzySearch.activeTextEditorWithCurrentSelection"
+                                        "command": "vspacecode.fuzzySearchActiveTextEditor"
                                     },
                                     {
                                         "key": "J",
@@ -7541,7 +7540,7 @@
                                         "type": "commands",
                                         "commands": [
                                             "editor.action.addSelectionToNextFindMatch",
-                                            "fuzzySearch.activeTextEditorWithCurrentSelection"
+                                            "vspacecode.fuzzySearchActiveTextEditorWithCurrentSelection"
                                         ]
                                     }
                                 ]

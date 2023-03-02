@@ -28,6 +28,9 @@ export enum CommandId {
 
     RegisterWhichKey = "whichkey.register",
     ShowWhichKey = "whichkey.show",
+
+    ShowFuzzySearch = "vspacecode.fuzzySearchActiveTextEditor",
+    ShowFuzzySearchWithCurrentSelection = "vspacecode.fuzzySearchActiveTextEditorWithCurrentSelection",
 }
 export enum WalkthroughId {
     Welcome = "vspacecode.welcome",

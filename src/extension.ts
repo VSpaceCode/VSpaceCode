@@ -8,6 +8,10 @@ import {
 } from "vscode";
 import { copyWholeBuffer } from "./bufferCommands";
 import {
+    showFuzzySearch,
+    showFuzzySearchWithCurrentSelection
+} from "./fuzzySearch"
+import {
     configKeyBindings,
     configSettings,
 } from "./configuration/configuration";
@@ -158,6 +162,20 @@ export async function activate(context: ExtensionContext) {
         commands.registerTextEditorCommand(
             CommandId.CopyWholeBuffer,
             copyWholeBuffer
+        )
+    );
+
+    context.subscriptions.push(
+        commands.registerCommand(
+            CommandId.ShowFuzzySearchWithCurrentSelection,
+            showFuzzySearchWithCurrentSelection
+        )
+    );
+
+    context.subscriptions.push(
+        commands.registerCommand(
+            CommandId.ShowFuzzySearch,
+            showFuzzySearch
         )
     );
 }
