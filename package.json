@@ -7566,6 +7566,13 @@
                                         "type": "command",
                                         "command": "editor.action.toggleWordWrap"
                                     },
+                                    {                                    {
+                                        "key": "m",
+                                        "name": "Toggle minimap",
+                                        "icon": "list-selection",
+                                        "type": "command",
+                                        "command": "editor.action.toggleMinimap"
+                                    },
                                     {
                                         "key": "w",
                                         "name": "Toggle render whitespace",
