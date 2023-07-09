@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+-   Add `SPC t m` to toggle minimap.
+
 ## [0.10.14] - 2023-02-10
 
 ### Added
