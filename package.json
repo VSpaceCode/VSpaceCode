@@ -7569,7 +7569,7 @@
                                     {
                                         "key": "m",
                                         "name": "Toggle minimap",
-                                        "icon": "list-selection",
+                                        "icon": "symbol-ruler",
                                         "type": "command",
                                         "command": "editor.action.toggleMinimap"
                                     },
