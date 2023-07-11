@@ -7567,13 +7567,6 @@
                                         "command": "editor.action.toggleWordWrap"
                                     },
                                     {
-                                        "key": "m",
-                                        "name": "Toggle minimap",
-                                        "icon": "symbol-ruler",
-                                        "type": "command",
-                                        "command": "editor.action.toggleMinimap"
-                                    },
-                                    {
                                         "key": "w",
                                         "name": "Toggle render whitespace",
                                         "icon": "whitespace",
@@ -8434,6 +8427,13 @@
                                         "icon": "chevron-up",
                                         "type": "command",
                                         "command": "workbench.action.toggleMaximizedPanel"
+                                    },
+                                    {
+                                        "key": "M",
+                                        "name": "Toggle minimap",
+                                        "icon": "symbol-ruler",
+                                        "type": "command",
+                                        "command": "editor.action.toggleMinimap"
                                     },
                                     {
                                         "key": "s",
