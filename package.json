@@ -8429,6 +8429,13 @@
                                         "command": "workbench.action.toggleMaximizedPanel"
                                     },
                                     {
+                                        "key": "M",
+                                        "name": "Toggle minimap",
+                                        "icon": "symbol-ruler",
+                                        "type": "command",
+                                        "command": "editor.action.toggleMinimap"
+                                    },
+                                    {
                                         "key": "s",
                                         "name": "Select theme",
                                         "icon": "paintcan",
