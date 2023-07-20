@@ -37,6 +37,14 @@
                     "args": "m"
                 }
             ]
+        },
+        {
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
         }
     ]
 }
