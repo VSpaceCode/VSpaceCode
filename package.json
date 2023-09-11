@@ -7279,6 +7279,66 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
+                                                "key": ",",
+                                                "name": "Execute code in REPL",
+                                                "icon": "play",
+                                                "type": "command",
+                                                "command": "r.runSelection"
+                                            },
+                                            {
+                                                "key": "v",
+                                                "name": "+View",
+                                                "icon": "preview",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "v",
+                                                        "name": "View",
+                                                        "type": "command",
+                                                        "icon": "preview",
+                                                        "command": "r.view"
+                                                    },
+                                                    {
+                                                        "key": "n",
+                                                        "name": "Names",
+                                                        "type": "command",
+                                                        "icon": "symbol-parameter",
+                                                        "command": "r.names"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "str",
+                                                        "type": "command",
+                                                        "icon": "list-flat",
+                                                        "command": "r.runCommandWithSelectionOrWord",
+                                                        "args": "str($$)"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "thead",
+                                                        "type": "command",
+                                                        "icon": "list-filter",
+                                                        "command": "r.thead"
+                                                    },
+                                                    {
+                                                        "key": "p",
+                                                        "name": "print",
+                                                        "icon": "symbol-field",
+                                                        "type": "command",
+                                                        "command": "r.runCommandWithSelectionOrWord",
+                                                        "args": "$$"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "R",
+                                                "name": "Restart R",
+                                                "type": "command",
+                                                "icon": "debug-restart",
+                                                "command": "r.runCommand",
+                                                "args": "rstudioapi::restartSession()"
+                                            },
+                                            {
                                                 "key": "=",
                                                 "name": "+Format",
                                                 "icon": "list-flat",
@@ -7330,18 +7390,11 @@
                                             },
                                             {
                                                 "key": "d",
-                                                "name": "+Debug",
-                                                "icon": "bug",
-                                                "type": "bindings",
-                                                "bindings": [
-                                                    {
-                                                        "key": "f",
-                                                        "name": "Change debug focus",
-                                                        "icon": "eye-watch",
-                                                        "type": "command",
-                                                        "command": "cuda.changeDebugFocus"
-                                                    }
-                                                ]
+                                                "name": "debugonce",
+                                                "type": "command",
+                                                "icon": "debug",
+                                                "command": "r.runCommandWithSelectionOrWord",
+                                                "args": "debugonce($$)"
                                             },
                                             {
                                                 "key": "g",
@@ -7349,13 +7402,6 @@
                                                 "icon": "go-to-file",
                                                 "type": "bindings",
                                                 "bindings": [
-                                                    {
-                                                        "key": "a",
-                                                        "name": "Switch Header/Source",
-                                                        "icon": "files",
-                                                        "type": "command",
-                                                        "command": "C_Cpp.SwitchHeaderSource"
-                                                    },
                                                     {
                                                         "key": "d",
                                                         "name": "Go to declaration",
@@ -7413,6 +7459,13 @@
                                                         "command": "workbench.action.showAllSymbols"
                                                     }
                                                 ]
+                                            },
+                                            {
+                                                "key": "h",
+                                                "name": "help",
+                                                "icon": "question",
+                                                "type": "command",
+                                                "command": "r.helpPanel.openForSelection"
                                             },
                                             {
                                                 "key": "r",
