@@ -6518,34 +6518,6 @@
 										"type": "bindings",
 										"bindings": [
 											{
-												"key": "s",
-												"name": "Run selection",
-												"icon": "selection",
-												"type": "command",
-												"command": "quarto.runSelection"
-											},
-											{
-												"key": "m",
-												"name": "Run current cell",
-												"icon": "play",
-												"type": "command",
-												"command": "quarto.runCurrentCell"
-											},
-											{
-												"key": "i",
-												"name": "Insert cell",
-												"type": "command",
-												"icon": "list-flat",
-												"command": "quarto.insertCodeCell"
-											},
-											{
-												"key": "p",
-												"name": "Render",
-												"type": "command",
-												"icon": "check",
-												"command": "quarto.render"
-											},
-											{
 												"key": "d",
 												"name": "Debugonce R",
 												"type": "command",
@@ -6559,6 +6531,34 @@
 												"icon": "question",
 												"type": "command",
 												"command": "r.helpPanel.openForSelection"
+											},
+											{
+												"key": "i",
+												"name": "Insert cell",
+												"type": "command",
+												"icon": "list-flat",
+												"command": "quarto.insertCodeCell"
+											},
+											{
+												"key": "m",
+												"name": "Run current cell",
+												"icon": "play",
+												"type": "command",
+												"command": "quarto.runCurrentCell"
+											},
+											{
+												"key": "p",
+												"name": "Render",
+												"type": "command",
+												"icon": "check",
+												"command": "quarto.render"
+											},
+											{
+												"key": "s",
+												"name": "Run selection",
+												"icon": "selection",
+												"type": "command",
+												"command": "quarto.runSelection"
 											},
 											{
 												"key": "R",
