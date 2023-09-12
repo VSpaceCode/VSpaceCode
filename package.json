@@ -6815,8 +6815,8 @@
 										"type": "bindings",
 										"bindings": [
 											{
-												"key": ",",
-												"name": "Execute code in REPL",
+												"key": "s",
+												"name": "Run selection",
 												"icon": "play",
 												"type": "command",
 												"command": "r.runSelection"
