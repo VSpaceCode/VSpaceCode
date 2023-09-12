@@ -6518,14 +6518,6 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
-                                                "key": "o",
-                                                "name": "Objects in workspace R",
-                                                "type": "command",
-                                                "icon": "symbol-field",
-                                                "command": "r.runCommand",
-                                                "args": "sort(sapply(ls(), function(x){object.size(get(x))})) "
-                                            },
-                                            {
                                                 "key": "d",
                                                 "name": "Debugonce R",
                                                 "type": "command",
@@ -6553,6 +6545,14 @@
                                                 "icon": "play",
                                                 "type": "command",
                                                 "command": "quarto.runCurrentCell"
+                                            },
+                                            {
+                                                "key": "o",
+                                                "name": "Objects in workspace R",
+                                                "type": "command",
+                                                "icon": "symbol-field",
+                                                "command": "r.runCommand",
+                                                "args": "sort(sapply(ls(), function(x){object.size(get(x))})) "
                                             },
                                             {
                                                 "key": "p",
@@ -6823,14 +6823,6 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
-                                                "key": "o",
-                                                "name": "Objects in workspace R",
-                                                "type": "command",
-                                                "icon": "symbol-field",
-                                                "command": "r.runCommand",
-                                                "args": "sort(sapply(ls(), function(x){object.size(get(x))})) "
-                                            },
-                                            {
                                                 "key": "d",
                                                 "name": "debugonce",
                                                 "type": "command",
@@ -6844,6 +6836,14 @@
                                                 "icon": "question",
                                                 "type": "command",
                                                 "command": "r.helpPanel.openForSelection"
+                                            },
+                                            {
+                                                "key": "o",
+                                                "name": "Objects in workspace R",
+                                                "type": "command",
+                                                "icon": "symbol-field",
+                                                "command": "r.runCommand",
+                                                "args": "sort(sapply(ls(), function(x){object.size(get(x))})) "
                                             },
                                             {
                                                 "key": "s",
