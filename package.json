@@ -6815,13 +6815,6 @@
 										"type": "bindings",
 										"bindings": [
 											{
-												"key": "s",
-												"name": "Run selection",
-												"icon": "play",
-												"type": "command",
-												"command": "r.runSelection"
-											},
-											{
 												"key": "d",
 												"name": "debugonce",
 												"type": "command",
@@ -6835,6 +6828,13 @@
 												"icon": "question",
 												"type": "command",
 												"command": "r.helpPanel.openForSelection"
+											},
+											{
+												"key": "s",
+												"name": "Run selection",
+												"icon": "play",
+												"type": "command",
+												"command": "r.runSelection"
 											},
 											{
 												"key": "R",
