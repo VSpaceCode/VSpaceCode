@@ -6518,42 +6518,6 @@
 										"type": "bindings",
 										"bindings": [
 											{
-												"key": "f",
-												"name": "+Fold",
-												"icon": "fold",
-												"type": "bindings",
-												"bindings": [
-													{
-														"key": "F",
-														"name": "Fold all cells",
-														"icon": "fold",
-														"type": "command",
-														"command": "editor.foldAll"
-													},
-													{
-														"key": "f",
-														"name": "Fold cell",
-														"icon": "fold",
-														"type": "command",
-														"command": "editor.fold"
-													},
-													{
-														"key": "U",
-														"name": "Unfold all cells",
-														"icon": "unfold",
-														"type": "command",
-														"command": "editor.unfoldAll"
-													},
-													{
-														"key": "u",
-														"name": "Unfold cell",
-														"icon": "unfold",
-														"type": "command",
-														"command": "editor.unfold"
-													}
-												]
-											},
-											{
 												"key": "d",
 												"name": "Debugonce R",
 												"type": "command",
@@ -6651,6 +6615,42 @@
 														"icon": "selection",
 														"type": "command",
 														"command": "editor.action.formatSelection.multiple"
+													}
+												]
+											},
+											{
+												"key": "f",
+												"name": "+Fold",
+												"icon": "fold",
+												"type": "bindings",
+												"bindings": [
+													{
+														"key": "f",
+														"name": "Fold cell",
+														"icon": "fold",
+														"type": "command",
+														"command": "editor.fold"
+													},
+													{
+														"key": "u",
+														"name": "Unfold cell",
+														"icon": "unfold",
+														"type": "command",
+														"command": "editor.unfold"
+													},
+													{
+														"key": "F",
+														"name": "Fold all cells",
+														"icon": "fold",
+														"type": "command",
+														"command": "editor.foldAll"
+													},
+													{
+														"key": "U",
+														"name": "Unfold all cells",
+														"icon": "unfold",
+														"type": "command",
+														"command": "editor.unfoldAll"
 													}
 												]
 											},
