@@ -6748,6 +6748,28 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
+                                                        "key": "c",
+                                                        "name": "Column numbers",
+                                                        "type": "command",
+                                                        "icon": "list-ordered",
+                                                        "command": "r.runCommandWithSelectionOrWord",
+                                                        "args": "ncol($$)"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "head",
+                                                        "type": "command",
+                                                        "icon": "list-filter",
+                                                        "command": "r.head"
+                                                    },
+                                                    {
+                                                        "key": "l",
+                                                        "name": "length",
+                                                        "type": "command",
+                                                        "icon": "list-ordered",
+                                                        "command": "r.length"
+                                                    },
+                                                    {
                                                         "key": "n",
                                                         "name": "Names",
                                                         "type": "command",
@@ -6763,6 +6785,13 @@
                                                         "args": "$$"
                                                     },
                                                     {
+                                                        "key": "r",
+                                                        "name": "Row numbers",
+                                                        "type": "command",
+                                                        "icon": "list-ordered",
+                                                        "command": "r.nrow"
+                                                    },
+                                                    {
                                                         "key": "s",
                                                         "name": "str",
                                                         "type": "command",
@@ -6771,18 +6800,27 @@
                                                         "args": "str($$)"
                                                     },
                                                     {
-                                                        "key": "t",
-                                                        "name": "thead",
-                                                        "type": "command",
-                                                        "icon": "list-filter",
-                                                        "command": "r.thead"
-                                                    },
-                                                    {
                                                         "key": "v",
                                                         "name": "View",
                                                         "type": "command",
                                                         "icon": "preview",
                                                         "command": "r.view"
+                                                    },
+                                                    {
+                                                        "key": "C",
+                                                        "name": "Column names",
+                                                        "type": "command",
+                                                        "icon": "symbol-key",
+                                                        "command": "r.runCommandWithSelectionOrWord",
+                                                        "args": "colnames($$)"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Row names",
+                                                        "type": "command",
+                                                        "icon": "preserve-case",
+                                                        "command": "r.runCommandWithSelectionOrWord",
+                                                        "args": "rownames($$)"
                                                     }
                                                 ]
                                             },
@@ -6996,6 +7034,28 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
+                                                        "key": "c",
+                                                        "name": "Column numbers",
+                                                        "type": "command",
+                                                        "icon": "list-ordered",
+                                                        "command": "r.runCommandWithSelectionOrWord",
+                                                        "args": "ncol($$)"
+                                                    },
+                                                    {
+                                                        "key": "h",
+                                                        "name": "head",
+                                                        "type": "command",
+                                                        "icon": "list-filter",
+                                                        "command": "r.head"
+                                                    },
+                                                    {
+                                                        "key": "l",
+                                                        "name": "length",
+                                                        "type": "command",
+                                                        "icon": "list-ordered",
+                                                        "command": "r.length"
+                                                    },
+                                                    {
                                                         "key": "n",
                                                         "name": "Names",
                                                         "type": "command",
@@ -7011,6 +7071,13 @@
                                                         "args": "$$"
                                                     },
                                                     {
+                                                        "key": "r",
+                                                        "name": "Row numbers",
+                                                        "type": "command",
+                                                        "icon": "list-ordered",
+                                                        "command": "r.nrow"
+                                                    },
+                                                    {
                                                         "key": "s",
                                                         "name": "str",
                                                         "type": "command",
@@ -7019,18 +7086,27 @@
                                                         "args": "str($$)"
                                                     },
                                                     {
-                                                        "key": "t",
-                                                        "name": "thead",
-                                                        "type": "command",
-                                                        "icon": "list-filter",
-                                                        "command": "r.thead"
-                                                    },
-                                                    {
                                                         "key": "v",
                                                         "name": "View",
                                                         "type": "command",
                                                         "icon": "preview",
                                                         "command": "r.view"
+                                                    },
+                                                    {
+                                                        "key": "C",
+                                                        "name": "Column names",
+                                                        "type": "command",
+                                                        "icon": "symbol-key",
+                                                        "command": "r.runCommandWithSelectionOrWord",
+                                                        "args": "colnames($$)"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Row names",
+                                                        "type": "command",
+                                                        "icon": "preserve-case",
+                                                        "command": "r.runCommandWithSelectionOrWord",
+                                                        "args": "rownames($$)"
                                                     }
                                                 ]
                                             },
