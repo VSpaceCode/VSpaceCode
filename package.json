@@ -6727,6 +6727,42 @@
                                                 ]
                                             },
                                             {
+                                                "key": "a",
+                                                "name": "+Code actions",
+                                                "icon": "zap",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "a",
+                                                        "name": "Execute code action",
+                                                        "icon": "lightbulb",
+                                                        "type": "command",
+                                                        "command": "editor.action.codeAction"
+                                                    },
+                                                    {
+                                                        "key": "f",
+                                                        "name": "Execute fix action",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "editor.action.quickFix"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Refactor action",
+                                                        "icon": "edit",
+                                                        "type": "command",
+                                                        "command": "editor.action.refactor"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Source action",
+                                                        "icon": "lightbulb",
+                                                        "type": "command",
+                                                        "command": "editor.action.sourceAction"
+                                                    }
+                                                ]
+                                            },
+                                            {
                                                 "key": "r",
                                                 "name": "+Refactor",
                                                 "icon": "edit",
@@ -7009,6 +7045,42 @@
                                                         "icon": "symbol-class",
                                                         "type": "command",
                                                         "command": "workbench.action.showAllSymbols"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "a",
+                                                "name": "+Code actions",
+                                                "icon": "zap",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "a",
+                                                        "name": "Execute code action",
+                                                        "icon": "lightbulb",
+                                                        "type": "command",
+                                                        "command": "editor.action.codeAction"
+                                                    },
+                                                    {
+                                                        "key": "f",
+                                                        "name": "Execute fix action",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "editor.action.quickFix"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Refactor action",
+                                                        "icon": "edit",
+                                                        "type": "command",
+                                                        "command": "editor.action.refactor"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Source action",
+                                                        "icon": "lightbulb",
+                                                        "type": "command",
+                                                        "command": "editor.action.sourceAction"
                                                     }
                                                 ]
                                             },
