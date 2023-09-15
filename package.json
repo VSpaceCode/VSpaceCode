@@ -6898,7 +6898,7 @@
                                         "bindings": [
                                             {
                                                 "key": "d",
-                                                "name": "debugonce",
+                                                "name": "Debugonce",
                                                 "type": "command",
                                                 "icon": "debug",
                                                 "command": "r.runCommandWithSelectionOrWord",
@@ -6906,7 +6906,7 @@
                                             },
                                             {
                                                 "key": "h",
-                                                "name": "help",
+                                                "name": "Help",
                                                 "icon": "question",
                                                 "type": "command",
                                                 "command": "r.helpPanel.openForSelection"
