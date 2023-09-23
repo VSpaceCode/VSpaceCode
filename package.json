@@ -406,7 +406,63 @@
                                         "name": "First buffer in window",
                                         "icon": "arrow-both",
                                         "type": "command",
-                                        "command": "workbench.action.firstEditorInGroup"
+                                        "command": "workbench.action.openEditorAtIndex1"
+                                    },
+                                    {
+                                        "key": "2",
+                                        "name": "2nd buffer in window",
+                                        "icon": "arrow-both",
+                                        "type": "command",
+                                        "command": "workbench.action.openEditorAtIndex2"
+                                    },
+                                    {
+                                        "key": "3",
+                                        "name": "3rd buffer in window",
+                                        "icon": "arrow-both",
+                                        "type": "command",
+                                        "command": "workbench.action.openEditorAtIndex3"
+                                    },
+                                    {
+                                        "key": "4",
+                                        "name": "4th buffer in window",
+                                        "icon": "arrow-both",
+                                        "type": "command",
+                                        "command": "workbench.action.openEditorAtIndex4"
+                                    },
+                                    {
+                                        "key": "5",
+                                        "name": "5th buffer in window",
+                                        "icon": "arrow-both",
+                                        "type": "command",
+                                        "command": "workbench.action.openEditorAtIndex5"
+                                    },
+                                    {
+                                        "key": "6",
+                                        "name": "6th buffer in window",
+                                        "icon": "arrow-both",
+                                        "type": "command",
+                                        "command": "workbench.action.openEditorAtIndex6"
+                                    },
+                                    {
+                                        "key": "7",
+                                        "name": "7th buffer in window",
+                                        "icon": "arrow-both",
+                                        "type": "command",
+                                        "command": "workbench.action.openEditorAtIndex7"
+                                    },
+                                    {
+                                        "key": "8",
+                                        "name": "8th buffer in window",
+                                        "icon": "arrow-both",
+                                        "type": "command",
+                                        "command": "workbench.action.openEditorAtIndex8"
+                                    },
+                                    {
+                                        "key": "9",
+                                        "name": "9th buffer in window",
+                                        "icon": "arrow-both",
+                                        "type": "command",
+                                        "command": "workbench.action.openEditorAtIndex9"
                                     },
                                     {
                                         "key": "b",
