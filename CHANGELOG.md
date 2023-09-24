@@ -13,12 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.15] - 2023-09-23
+
 ### Added
 
 -   Add `SPC T M` to toggle minimap.
--   ⚙ Use built-in command for visual mode indention
 -   Added a R and Quarto major-mode
 -   Added `SPC b <int>` commands for jumping to buffers 0-9
+
+### Changed
+
+-   ⚙ Use built-in command for visual mode indention
 
 ## [0.10.14] - 2023-02-10
 
