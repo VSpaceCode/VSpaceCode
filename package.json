@@ -8417,28 +8417,28 @@
                                         "name": "Focus window left",
                                         "icon": "arrow-left",
                                         "type": "command",
-                                        "command": "workbench.action.focusPreviousGroup"
+                                        "command": "workbench.action.navigateLeft"
                                     },
                                     {
                                         "key": "j",
                                         "name": "Focus window down",
                                         "icon": "arrow-down",
                                         "type": "command",
-                                        "command": "workbench.action.focusBelowGroup"
+                                        "command": "workbench.action.navigateDown"
                                     },
                                     {
                                         "key": "k",
                                         "name": "Focus window up",
                                         "icon": "arrow-up",
                                         "type": "command",
-                                        "command": "workbench.action.focusAboveGroup"
+                                        "command": "workbench.action.navigateUp"
                                     },
                                     {
                                         "key": "l",
                                         "name": "Focus window right",
                                         "icon": "arrow-right",
                                         "type": "command",
-                                        "command": "workbench.action.focusNextGroup"
+                                        "command": "workbench.action.navigateRight"
                                     },
                                     {
                                         "key": "m",
