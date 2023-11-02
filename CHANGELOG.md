@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+-   Align with VSCodeVim's window navigation
+
 ## [0.10.15] - 2023-09-23
 
 ### Added
