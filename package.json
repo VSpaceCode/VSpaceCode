@@ -8445,7 +8445,7 @@
                                         "name": "Maximize window",
                                         "icon": "chrome-maximize",
                                         "type": "command",
-                                        "command": "workbench.action.toggleEditorWidths"
+                                        "command": "workbench.action.toggleMaximizeEditorGroup"
                                     },
                                     {
                                         "key": "o",
@@ -8533,10 +8533,10 @@
                                     },
                                     {
                                         "key": "M",
-                                        "name": "Maximize window and hide side bar",
+                                        "name": "Maximize window without hiding others",
                                         "icon": "screen-full",
                                         "type": "command",
-                                        "command": "workbench.action.maximizeEditor"
+                                        "command": "workbench.action.toggleEditorWidths"
                                     },
                                     {
                                         "key": "W",
