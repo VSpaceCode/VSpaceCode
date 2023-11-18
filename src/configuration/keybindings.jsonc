@@ -15,16 +15,6 @@
     // https://github.com/kahole/edamagit#vim-support-vscodevim
     // Cannot be added to package.json because keybinding replacements
     {
-        "key": "g g",
-        "command": "cursorTop",
-        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
-    },
-    {
-        "key": "g r",
-        "command": "magit.refresh",
-        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
-    },
-    {
         "key": "tab",
         "command": "extension.vim_tab",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
@@ -88,6 +78,18 @@
         "key": "y",
         "command": "vspacecode.showMagitRefMenu",
         "when": "editorTextFocus && editorLangId == 'magit' && vim.mode == 'Normal'"
+    },
+    // Extra refresh menu support for edamagit with the key "g"
+    // Cannot be added to package.json because keybinding replacements
+    {
+        "key": "g",
+        "command": "-magit.refresh",
+        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+    },
+    {
+        "key": "g",
+        "command": "vspacecode.showMagitRefreshMenu",
+        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
     },
     // Easy navigation in quick open/QuickPick
     {
