@@ -8443,7 +8443,7 @@
                                     {
                                         "key": "m",
                                         "name": "Maximize window",
-                                        "icon": "chrome-maximize",
+                                        "icon": "screen-full",
                                         "type": "command",
                                         "command": "workbench.action.toggleMaximizeEditorGroup"
                                     },
@@ -8534,7 +8534,7 @@
                                     {
                                         "key": "M",
                                         "name": "Maximize window without hiding others",
-                                        "icon": "screen-full",
+                                        "icon": "chrome-maximize",
                                         "type": "command",
                                         "command": "workbench.action.toggleEditorWidths"
                                     },
