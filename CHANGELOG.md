@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 -   `SPC w` + `h`, `j`, `k`, `l` navigate to the expected direction
+-   `SPC w m` maximizes the window as expected, while `SPC w M` changes to maximize the window without hiding other windows
 
 ## [0.10.15] - 2023-09-23
 
