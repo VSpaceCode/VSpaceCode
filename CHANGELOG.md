@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   ⌨ Added whichkey menu for `g` in magit buffer which supports `g g` to move cursor to the top.
+-   Added `SPC $` to quickly run recent commands on terminal.
 
 ### Changed
 
@@ -29,7 +30,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Add `SPC T M` to toggle minimap.
 -   Added a R and Quarto major-mode
 -   Added `SPC b <int>` commands for jumping to buffers 0-9
--   Added `SPC $` to quickly run recent commands on terminal.
 
 ### Changed
 
