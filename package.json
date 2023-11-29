@@ -3791,6 +3791,20 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
+                                                        "key": "p",
+                                                        "name": "Transform function call to pipe operator",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "extension.toPipe"
+                                                    },
+                                                    {
+                                                        "key": "P",
+                                                        "name": "Transform pipe operator to function call",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "extension.fromPipe"
+                                                    },
+                                                    {
                                                         "key": ".",
                                                         "name": "Quick fix",
                                                         "icon": "lightbulb-autofix",
