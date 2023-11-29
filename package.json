@@ -53,6 +53,7 @@
         "onStartupFinished",
         "onCommand:vspacecode.space",
         "onCommand:vspacecode.showMagitRefMenu",
+        "onCommand:vspacecode.showMagitRefreshMenu",
         "onCommand:vspacecode.configure",
         "onCommand:vspacecode.configureSettings",
         "onCommand:vspacecode.configureKeybindings",
@@ -70,6 +71,11 @@
             {
                 "command": "vspacecode.showMagitRefMenu",
                 "title": "Show Magit Ref Menu",
+                "category": "VSpaceCode"
+            },
+            {
+                "command": "vspacecode.showMagitRefreshMenu",
+                "title": "Show Magit Refresh Menu",
                 "category": "VSpaceCode"
             },
             {
@@ -146,6 +152,26 @@
                                         "y"
                                     ]
                                 }
+                            }
+                        ]
+                    },
+                    "vspacecode.magitRefreshBindings": {
+                        "type": "array",
+                        "markdownDescription": "The bindings of magit refresh menu",
+                        "default": [
+                            {
+                                "key": "g",
+                                "name": "Go cursor to top",
+                                "icon": "arrow-up",
+                                "type": "command",
+                                "command": "cursorTop"
+                            },
+                            {
+                                "key": "r",
+                                "name": "Refresh magit buffer",
+                                "icon": "refresh",
+                                "type": "command",
+                                "command": "magit.refresh"
                             }
                         ]
                     },
@@ -8450,9 +8476,9 @@
                                     {
                                         "key": "m",
                                         "name": "Maximize window",
-                                        "icon": "chrome-maximize",
+                                        "icon": "screen-full",
                                         "type": "command",
-                                        "command": "workbench.action.toggleEditorWidths"
+                                        "command": "workbench.action.toggleMaximizeEditorGroup"
                                     },
                                     {
                                         "key": "o",
@@ -8540,10 +8566,10 @@
                                     },
                                     {
                                         "key": "M",
-                                        "name": "Maximize window and hide side bar",
-                                        "icon": "screen-full",
+                                        "name": "Maximize window without hiding others",
+                                        "icon": "chrome-maximize",
                                         "type": "command",
-                                        "command": "workbench.action.maximizeEditor"
+                                        "command": "workbench.action.toggleEditorWidths"
                                     },
                                     {
                                         "key": "W",

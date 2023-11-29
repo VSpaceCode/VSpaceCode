@@ -69,6 +69,12 @@ export async function activate(context: ExtensionContext) {
     context.subscriptions.push(
         commands.registerCommand(CommandId.ShowMagitRefMenu, showMagitRefMenu)
     );
+    context.subscriptions.push(
+        commands.registerCommand(
+            CommandId.ShowMagitRefreshMenu,
+            showMagitRefreshMenu
+        )
+    );
 
     context.subscriptions.push(
         commands.registerCommand(
@@ -168,10 +174,12 @@ function setUpWhichKey() {
         overrides: BindingsId.Overrides,
         title: "VSpaceCode",
     };
-    const magitArg = { bindings: BindingsId.RefBindings };
+    const magitRefArg = { bindings: BindingsId.RefBindings };
+    const magitRefreshArg = { bindings: BindingsId.RefreshBindings };
     return Promise.all([
         commands.executeCommand(CommandId.RegisterWhichKey, arg),
-        commands.executeCommand(CommandId.RegisterWhichKey, magitArg),
+        commands.executeCommand(CommandId.RegisterWhichKey, magitRefArg),
+        commands.executeCommand(CommandId.RegisterWhichKey, magitRefreshArg),
     ]);
 }
 
@@ -186,6 +194,13 @@ function showMagitRefMenu() {
     return commands.executeCommand(
         CommandId.ShowWhichKey,
         BindingsId.RefBindings
+    );
+}
+
+function showMagitRefreshMenu() {
+    return commands.executeCommand(
+        CommandId.ShowWhichKey,
+        BindingsId.RefreshBindings
     );
 }
 
