@@ -218,6 +218,13 @@
                                 "command": "workbench.action.terminal.focus"
                             },
                             {
+                                "key": "$",
+                                "name": "Run Recent Command in Terminal",
+                                "icon": "terminal",
+                                "type": "command",
+                                "command": "workbench.action.terminal.runRecentCommand"
+                            },
+                            {
                                 "key": "*",
                                 "name": "Search in project with selection",
                                 "icon": "search",
