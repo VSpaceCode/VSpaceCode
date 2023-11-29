@@ -3734,6 +3734,13 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
+                                                        "key": "m",
+                                                        "name": "Expand selected macro",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "extension.expandMacro"
+                                                    },
+                                                    {
                                                         "key": "d",
                                                         "name": "Go to definition",
                                                         "icon": "symbol-function",
