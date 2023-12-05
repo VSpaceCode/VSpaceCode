@@ -3678,6 +3678,13 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
+                                                "key": "o",
+                                                "name": "Expand selected macro",
+                                                "icon": "symbol-function",
+                                                "type": "command",
+                                                "command": "extension.expandMacro"
+                                            },
+                                            {
                                                 "key": "=",
                                                 "name": "+Format",
                                                 "icon": "list-flat",
@@ -3733,13 +3740,6 @@
                                                 "icon": "go-to-file",
                                                 "type": "bindings",
                                                 "bindings": [
-                                                    {
-                                                        "key": "m",
-                                                        "name": "Expand selected macro",
-                                                        "icon": "symbol-function",
-                                                        "type": "command",
-                                                        "command": "extension.expandMacro"
-                                                    },
                                                     {
                                                         "key": "d",
                                                         "name": "Go to definition",
