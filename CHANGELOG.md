@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 -   ⌨ Added whichkey menu for `g` in magit buffer which supports `g g` to move cursor to the top.
+-   Add Elixir major mode
 
 ### Changed
 
