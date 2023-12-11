@@ -211,18 +211,18 @@
                                 "command": "workbench.action.terminal.openNativeConsole"
                             },
                             {
-                                "key": "'",
-                                "name": "Show terminal",
-                                "icon": "terminal",
-                                "type": "command",
-                                "command": "workbench.action.terminal.focus"
-                            },
-                            {
                                 "key": "$",
                                 "name": "Run Recent Command in Terminal",
                                 "icon": "terminal",
                                 "type": "command",
                                 "command": "workbench.action.terminal.runRecentCommand"
+                            },
+                            {
+                                "key": "'",
+                                "name": "Show terminal",
+                                "icon": "terminal",
+                                "type": "command",
+                                "command": "workbench.action.terminal.focus"
                             },
                             {
                                 "key": "*",
@@ -3805,20 +3805,6 @@
                                                 "type": "bindings",
                                                 "bindings": [
                                                     {
-                                                        "key": "p",
-                                                        "name": "Transform function call to pipe operator",
-                                                        "icon": "lightbulb-autofix",
-                                                        "type": "command",
-                                                        "command": "extension.toPipe"
-                                                    },
-                                                    {
-                                                        "key": "P",
-                                                        "name": "Transform pipe operator to function call",
-                                                        "icon": "lightbulb-autofix",
-                                                        "type": "command",
-                                                        "command": "extension.fromPipe"
-                                                    },
-                                                    {
                                                         "key": ".",
                                                         "name": "Quick fix",
                                                         "icon": "lightbulb-autofix",
@@ -3826,11 +3812,25 @@
                                                         "command": "editor.action.quickFix"
                                                     },
                                                     {
+                                                        "key": "p",
+                                                        "name": "Transform function call to pipe operator",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "extension.toPipe"
+                                                    },
+                                                    {
                                                         "key": "r",
                                                         "name": "Rename symbol",
                                                         "icon": "symbol-keyword",
                                                         "type": "command",
                                                         "command": "editor.action.rename"
+                                                    },
+                                                    {
+                                                        "key": "P",
+                                                        "name": "Transform pipe operator to function call",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "extension.fromPipe"
                                                     }
                                                 ]
                                             },
