@@ -3680,6 +3680,192 @@
                                         ]
                                     },
                                     {
+                                        "key": "languageId:elixir",
+                                        "name": "Elixir",
+                                        "type": "bindings",
+                                        "bindings": [
+                                            {
+                                                "key": "o",
+                                                "name": "Expand selected macro",
+                                                "icon": "symbol-function",
+                                                "type": "command",
+                                                "command": "extension.expandMacro"
+                                            },
+                                            {
+                                                "key": "=",
+                                                "name": "+Format",
+                                                "icon": "list-flat",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "=",
+                                                        "name": "Format region or buffer",
+                                                        "icon": "list-flat",
+                                                        "type": "command",
+                                                        "command": "editor.action.format"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Format buffer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument"
+                                                    },
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Format changes",
+                                                        "icon": "diff",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatChanges"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Format selection",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection"
+                                                    },
+                                                    {
+                                                        "key": "B",
+                                                        "name": "+Format buffer with formatter",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument.multiple"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "+Format selection with formatter",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection.multiple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "g",
+                                                "name": "+Go to",
+                                                "icon": "go-to-file",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Go to definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.revealDefinition"
+                                                    },
+                                                    {
+                                                        "key": "e",
+                                                        "name": "Go to errors/problems",
+                                                        "icon": "error",
+                                                        "type": "command",
+                                                        "command": "workbench.action.problems.focus"
+                                                    },
+                                                    {
+                                                        "key": "g",
+                                                        "name": "Go to definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.revealDefinition"
+                                                    },
+                                                    {
+                                                        "key": "i",
+                                                        "name": "Go to implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToImplementation"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Go to references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToReferences"
+                                                    },
+                                                    {
+                                                        "key": "I",
+                                                        "name": "Find implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "references-view.findImplementations"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Find references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "references-view.findReferences"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "r",
+                                                "name": "+Refactor",
+                                                "icon": "edit",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "p",
+                                                        "name": "Transform function call to pipe operator",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "extension.toPipe"
+                                                    },
+                                                    {
+                                                        "key": "P",
+                                                        "name": "Transform pipe operator to function call",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "extension.fromPipe"
+                                                    },
+                                                    {
+                                                        "key": ".",
+                                                        "name": "Quick fix",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "editor.action.quickFix"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Rename symbol",
+                                                        "icon": "symbol-keyword",
+                                                        "type": "command",
+                                                        "command": "editor.action.rename"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "G",
+                                                "name": "+Peek",
+                                                "icon": "eye",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Peek definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekDefinition"
+                                                    },
+                                                    {
+                                                        "key": "i",
+                                                        "name": "Peek implementations",
+                                                        "icon": "symbol-module",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekImplementation"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Peek references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.referenceSearch.trigger"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "key": "languageId:fsharp",
                                         "name": "F#",
                                         "type": "bindings",

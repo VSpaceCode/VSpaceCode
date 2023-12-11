@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+-   Add Elixir major mode
 -   ⌨ Added whichkey menu for `g` in magit buffer which supports `g g` to move cursor to the top.
 -   Added `SPC $` to quickly run recent commands on terminal.
 
