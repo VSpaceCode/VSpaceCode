@@ -2213,7 +2213,7 @@
                                                                 "key": "l",
                                                                 "name": "Add missing library specification",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.addMissingLibspec"
+                                                                "command": "clojureLsp.refactor.addMissingLibspec"
                                                             }
                                                         ]
                                                     },
@@ -2226,13 +2226,13 @@
                                                                 "key": "n",
                                                                 "name": "Clean namespace definition",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.cleanNs"
+                                                                "command": "clojureLsp.refactor.cleanNs"
                                                             },
                                                             {
                                                                 "key": "p",
                                                                 "name": "Cycle privacy",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.cyclePrivacy"
+                                                                "command": "clojureLsp.refactor.cyclePrivacy"
                                                             }
                                                         ]
                                                     },
@@ -2245,13 +2245,13 @@
                                                                 "key": "f",
                                                                 "name": "Extract function",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.extractFunction"
+                                                                "command": "clojureLsp.refactor.extractFunction"
                                                             },
                                                             {
                                                                 "key": "l",
                                                                 "name": "Expand let",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.expandLet"
+                                                                "command": "clojureLsp.refactor.expandLet"
                                                             }
                                                         ]
                                                     },
@@ -2264,13 +2264,13 @@
                                                                 "key": "l",
                                                                 "name": "Introduce let",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.introduceLet"
+                                                                "command": "clojureLsp.refactor.introduceLet"
                                                             },
                                                             {
                                                                 "key": "s",
                                                                 "name": "Inline symbol",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.inlineSymbol"
+                                                                "command": "clojureLsp.refactor.inlineSymbol"
                                                             }
                                                         ]
                                                     },
@@ -2283,7 +2283,7 @@
                                                                 "key": "l",
                                                                 "name": "Move to let",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.moveToLet"
+                                                                "command": "clojureLsp.refactor.moveToLet"
                                                             }
                                                         ]
                                                     },
@@ -2296,37 +2296,37 @@
                                                                 "key": "f",
                                                                 "name": "Thread first",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.threadFirst"
+                                                                "command": "clojureLsp.refactor.threadFirst"
                                                             },
                                                             {
                                                                 "key": "l",
                                                                 "name": "Thread last",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.threadLast"
+                                                                "command": "clojureLsp.refactor.threadLast"
                                                             },
                                                             {
                                                                 "key": "u",
                                                                 "name": "Unwind thread",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.unwindThread"
+                                                                "command": "clojureLsp.refactor.unwindThread"
                                                             },
                                                             {
                                                                 "key": "F",
                                                                 "name": "Thread first all",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.threadFirstAll"
+                                                                "command": "clojureLsp.refactor.threadFirstAll"
                                                             },
                                                             {
                                                                 "key": "L",
                                                                 "name": "Thread last all",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.threadLastAll"
+                                                                "command": "clojureLsp.refactor.threadLastAll"
                                                             },
                                                             {
                                                                 "key": "U",
                                                                 "name": "Unwind thread all",
                                                                 "type": "command",
-                                                                "command": "calva.refactor.unwindThread"
+                                                                "command": "clojureLsp.refactor.unwindThread"
                                                             }
                                                         ]
                                                     }
