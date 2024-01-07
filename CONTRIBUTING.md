@@ -27,7 +27,7 @@ This extension aims to provide the best out-of-the-box experience like spacemacs
     ```
 
 4. Install [TypeScript + Webpack Problem Matchers for VS Code](https://marketplace.visualstudio.com/items?itemName=eamodio.tsl-problem-matcher)
-5. Go to debug tab select `Run Extension`
+5. Go to debug tab select `Launch Extension`
 
 ## Submitting Issues
 
