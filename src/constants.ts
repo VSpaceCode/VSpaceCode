@@ -5,6 +5,7 @@ export const spaceCmdId = `${extensionId}.space`;
 export enum CommandId {
     ShowSpaceMenu = "vspacecode.space",
     ShowMagitRefMenu = "vspacecode.showMagitRefMenu",
+    ShowMagitRefreshMenu = "vspacecode.showMagitRefreshMenu",
 
     Configure = "vspacecode.configure",
     ConfigureSettings = "vspacecode.configureSettings",
@@ -39,12 +40,14 @@ export enum ConfigKey {
     Bindings = "bindings",
     Overrides = "bindingOverrides",
     RefBindings = "magitRefBindings",
+    RefreshBindings = "magitRefreshBindings",
 }
 
 export const BindingsId = {
     VSpaceCode: `${extensionId}.${ConfigKey.Bindings}`,
     Overrides: `${extensionId}.${ConfigKey.Overrides}`,
     RefBindings: `${extensionId}.${ConfigKey.RefBindings}`,
+    RefreshBindings: `${extensionId}.${ConfigKey.RefreshBindings}`,
 };
 
 export const defaultStatusBarTimeout = 5000;
