@@ -6676,6 +6676,13 @@
                                                         "command": "editor.action.refactor"
                                                     },
                                                     {
+                                                        "key": "r",
+                                                        "name": "Rename symbol",
+                                                        "icon": "symbol-keyword",
+                                                        "type": "command",
+                                                        "command": "editor.action.rename"
+                                                    },
+                                                    {
                                                         "key": "I",
                                                         "name": "Sort imports",
                                                         "icon": "selection",
@@ -7835,6 +7842,28 @@
                                                         "icon": "project",
                                                         "type": "command",
                                                         "command": "workbench.action.showAllSymbols"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "r",
+                                                "name": "+Refactor",
+                                                "icon": "edit",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": ".",
+                                                        "name": "Refactor menu",
+                                                        "icon": "lightbulb",
+                                                        "type": "command",
+                                                        "command": "editor.action.refactor"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Rename symbol",
+                                                        "icon": "symbol-keyword",
+                                                        "type": "command",
+                                                        "command": "editor.action.rename"
                                                     }
                                                 ]
                                             },
