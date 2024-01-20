@@ -13,6 +13,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.17] - 2024-01-20
+
+### Fixed
+
+-   Fix command bindings for Clojure refactorings
+
+### Chnaged
+
+-   Standarize refactor rename for Python and rust
+
 ## [0.10.16] - 2023-12-10
 
 ### Added
