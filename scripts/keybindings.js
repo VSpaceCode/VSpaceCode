@@ -1,8 +1,8 @@
-const table = require('markdown-table');
-const fs = require('fs');
+const table = require("markdown-table");
+const fs = require("fs");
 
 function replaceChar(s) {
-    return s.replace(/ /g, '␣').replace(/\t/g, '↹');
+    return s.replace(/ /g, "␣").replace(/\t/g, "↹");
 }
 
 function createHeading(name) {
@@ -11,19 +11,18 @@ function createHeading(name) {
 
 function createHeadingLink(text, name) {
     const link = `${name}`
-        .replace(/^#+/, '')
-        .replace(/[^a-zA-Z0-9 ]/g, '')
-        .replace(/ /g, '-')
+        .replace(/^#+/, "")
+        .replace(/[^a-zA-Z0-9 ]/g, "")
+        .replace(/ /g, "-")
         .toLowerCase();
     return `[${text}](#${link})`;
 }
 
 function createCommandText(binding) {
-    if (binding.command)
-    {
+    if (binding.command) {
         return `\`${binding.command}\``;
     } else if (binding.commands) {
-        return binding.commands.map(c => `\`${c}\``).join("<br />");
+        return binding.commands.map((c) => `\`${c}\``).join("<br />");
     } else {
         return "N/A";
     }
@@ -31,22 +30,23 @@ function createCommandText(binding) {
 
 function wrapCode(text) {
     if (text && text.length > 0) {
-        return `<code>${text.replace(/\`/g, '\\\`')}</code>`;
+        return `<code>${text.replace(/\`/g, "\\`")}</code>`;
     }
 
     return text;
 }
 
-const package = JSON.parse(fs.readFileSync('./package.json'));
-const defaultBindings = package.contributes.configuration[0].properties['vspacecode.bindings'].default;
+const package = JSON.parse(fs.readFileSync("./package.json"));
+const defaultBindings =
+    package.contributes.configuration[0].properties["vspacecode.bindings"]
+        .default;
 const root = {
     key: replaceChar(" "),
     keys: [replaceChar(" ")],
     name: "VSpaceCode",
     type: "bindings",
-    bindings: defaultBindings
+    bindings: defaultBindings,
 };
-
 
 let strBuilder = [];
 // Breath first search
@@ -66,7 +66,14 @@ while (queue.length > 0) {
     // Process the node
     const isTransient = node.type === "transient";
     const isConditional = node.type === "conditional";
-    const tableContent = [[(isConditional ? 'Condition' : 'Key Binding'), 'Name', 'Type', 'Command(s)']];
+    const tableContent = [
+        [
+            isConditional ? "Condition" : "Key Binding",
+            "Name",
+            "Type",
+            "Command(s)",
+        ],
+    ];
     for (const b of node.bindings) {
         b.keys = [...node.keys, replaceChar(b.key)];
 
@@ -76,7 +83,7 @@ while (queue.length > 0) {
             wrapCode(shouldJoinKeys ? b.keys.join(" ") : b.key),
             b.name,
             hasBindings ? createHeadingLink(b.type, b.name) : b.type,
-            createCommandText(b)
+            createCommandText(b),
         ]);
 
         // Enqueue if it has binding
@@ -89,4 +96,4 @@ while (queue.length > 0) {
     strBuilder.push(table(tableContent), "\n\n");
 }
 
-fs.writeFileSync('./KEYBINDINGS.md', strBuilder.join(""));
+fs.writeFileSync("./KEYBINDINGS.md", strBuilder.join(""));

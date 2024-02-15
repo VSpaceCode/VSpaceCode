@@ -3,5 +3,6 @@ dist/
 node_modules/
 .vscode-test/
 .vscode-test-web/
-.vscode-test-dependency/
-*.vsix
+
+yarn.lock
+package-lock.json

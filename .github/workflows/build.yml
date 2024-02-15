@@ -1,0 +1,33 @@
+on:
+    push:
+        branches:
+            - master
+        tags-ignore:
+            - "**"
+    pull_request:
+
+name: Build Extension
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout VSpaceCode
+              uses: actions/checkout@v2
+
+            - name: Set up node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 14
+
+            - name: Install dependencies
+              uses: bahmutov/npm-install@v1
+
+            - name: Lint
+              run: npm run lint
+
+            - name: Format check
+              run: npm run format-check
+
+            - name: Test
+              timeout-minutes: 30
+              run: xvfb-run -a npm run test

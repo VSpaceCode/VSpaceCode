@@ -6,6 +6,9 @@ export async function copyWholeBuffer() {
     if (activeEditor) {
         const lineNumber = activeEditor.document.lineCount;
         await env.clipboard.writeText(activeEditor.document.getText());
-        window.setStatusBarMessage(`${lineNumber} lines copied`, defaultStatusBarTimeout);
+        window.setStatusBarMessage(
+            `${lineNumber} lines copied`,
+            defaultStatusBarTimeout
+        );
     }
 }

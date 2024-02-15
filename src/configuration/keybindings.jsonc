@@ -17,12 +17,12 @@
     {
         "key": "tab",
         "command": "extension.vim_tab",
-        "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
     },
     {
         "key": "tab",
         "command": "-extension.vim_tab",
-        "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
     },
     {
         "key": "x",
@@ -79,6 +79,18 @@
         "command": "vspacecode.showMagitRefMenu",
         "when": "editorTextFocus && editorLangId == 'magit' && vim.mode == 'Normal'"
     },
+    // Extra refresh menu support for edamagit with the key "g"
+    // Cannot be added to package.json because keybinding replacements
+    {
+        "key": "g",
+        "command": "-magit.refresh",
+        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+    },
+    {
+        "key": "g",
+        "command": "vspacecode.showMagitRefreshMenu",
+        "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+    },
     // Easy navigation in quick open/QuickPick
     {
         "key": "ctrl+j",
@@ -90,7 +102,7 @@
         "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
     },
-    // Easy navigation in sugesstion/intellisense
+    // Easy navigation in suggestion/intellisense
     // Cannot be added to package.json because of conflict with vim's default bindings
     {
         "key": "ctrl+j",
@@ -118,6 +130,22 @@
         "key": "ctrl+k",
         "command": "showPrevParameterHint",
         "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+    },
+    // Easy navigation in code action
+    {
+        "key": "ctrl+j",
+        "command": "selectNextCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "acceptSelectedCodeAction",
+        "when": "codeActionMenuVisible"
     },
     // Add ctrl+h/l to navigate in file browser
     {

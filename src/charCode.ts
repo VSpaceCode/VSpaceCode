@@ -5,12 +5,12 @@
  */
 export const enum CharCode {
     /**
-	 * The `/` character.
-	 */
+     * The `/` character.
+     */
     Slash = 47,
-	/**
-	 * The `:` character.
-	 */
+    /**
+     * The `:` character.
+     */
     Colon = 58,
 
     A = 65,

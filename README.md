@@ -1,8 +1,9 @@
 # VSpaceCode (Preview)
+
 [![Docs](https://img.shields.io/website?label=vspacecode.github.io&url=https%3A%2F%2Fvspacecode.github.io)](https://vspacecode.github.io)
-[![Version](https://vsmarketplacebadge.apphb.com/version/vspacecode.vspacecode.svg)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/vspacecode.vspacecode.svg)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/vspacecode.vspacecode.svg)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/vspacecode.vspacecode)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/vspacecode.vspacecode)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
+[![Ratings](https://img.shields.io/visual-studio-marketplace/r/vspacecode.vspacecode)](https://marketplace.visualstudio.com/items?itemName=vspacecode.vspacecode)
 
 ![VSpaceCode Logo](resources/logo.png)
 
@@ -10,10 +11,10 @@ This extension is inspired by spacemacs and aiming to provide similar experience
 
 ## Features
 
-- Spacemacs like action menu to reduce memorization of shortcuts
-- All menu items are customizable
-- The menu key is customizable
-- Bundle all the extensions needed out-of-the box
+-   Spacemacs like action menu to reduce memorization of shortcuts
+-   All menu items are customizable
+-   The menu key is customizable
+-   Bundle all the extensions needed out-of-the box
 
 ![VSpaceCode actions](https://github.com/VSpaceCode/vspacecode.github.io/blob/master/static/img/demo.gif?raw=true)
 
@@ -39,6 +40,6 @@ This project is maintained by different [people](https://github.com/VSpaceCode/V
 
 ## Related projects
 
-- [Intellimacs](https://github.com/MarcoIeni/intellimacs) - Spacemacs' like key bindings for IntelliJ platform
-- [Spaceclipse](https://github.com/MarcoIeni/spaceclipse) - Spacemacs’ like key bindings for Eclipse
-- [SpaceVim](https://github.com/SpaceVim/SpaceVim) - A community-driven modular vim distribution
+-   [Intellimacs](https://github.com/MarcoIeni/intellimacs) - Spacemacs' like key bindings for IntelliJ platform
+-   [Spaceclipse](https://github.com/MarcoIeni/spaceclipse) - Spacemacs’ like key bindings for Eclipse
+-   [SpaceVim](https://github.com/SpaceVim/SpaceVim) - A community-driven modular vim distribution

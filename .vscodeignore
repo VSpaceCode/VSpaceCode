@@ -2,6 +2,8 @@
 
 .vscode/**
 .vscode-test/**
+.vscode-test-web/**
+.vscode-test-dependency/**
 
 **/*.ts
 **/*.map
@@ -9,6 +11,8 @@
 
 src/**
 out/**
+dist/test/**
+dist/**/*.map
 node_modules/**
 
 resources/*
