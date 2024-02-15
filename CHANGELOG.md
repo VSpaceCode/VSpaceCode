@@ -13,13 +13,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.18] - 2024-02-15
+
+### Fixed
+
+- Fixed outdated Flutter commands
+
+## [Unreleased]
+
 ## [0.10.17] - 2024-01-20
 
 ### Fixed
 
 -   Fix command bindings for Clojure refactorings
 
-### Chnaged
+### Changed
 
 -   Standarize refactor rename for Python and rust
 
