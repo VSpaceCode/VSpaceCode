@@ -11,15 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 > See [Configuration](https://vspacecode.github.io/docs/#manual-configuration-optional) section on our website
 
-## [Unreleased]
 
-## [0.10.18] - 2024-02-15
+## [Unreleased]
 
 ### Fixed
 
 -   Fixed outdated Flutter commands
-
-## [Unreleased]
 
 ## [0.10.17] - 2024-01-20
 
