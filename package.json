@@ -3402,13 +3402,6 @@
                                                         "icon": "pulse",
                                                         "type": "command",
                                                         "command": "dart.openDevToolsNetwork"
-                                                    },
-                                                    {
-                                                        "key": "t",
-                                                        "name": "Timeline",
-                                                        "icon": "clock",
-                                                        "type": "command",
-                                                        "command": "files.openTimeline"
                                                     }
                                                 ]
                                             },
