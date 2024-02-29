@@ -8640,6 +8640,34 @@
                                         ]
                                     },
                                     {
+                                        "key": "1",
+                                        "name": "Single column window layout",
+                                        "icon": "editor-layout",
+                                        "type": "command",
+                                        "command": "workbench.action.editorLayoutSingle"
+                                    },
+                                    {
+                                        "key": "2",
+                                        "name": "Double column window layout",
+                                        "icon": "editor-layout",
+                                        "type": "command",
+                                        "command": "workbench.action.editorLayoutTwoColumns"
+                                    },
+                                    {
+                                        "key": "3",
+                                        "name": "Triple column window layout",
+                                        "icon": "editor-layout",
+                                        "type": "command",
+                                        "command": "workbench.action.editorLayoutThreeColumns"
+                                    },
+                                    {
+                                        "key": "4",
+                                        "name": "Grid window layout",
+                                        "icon": "editor-layout",
+                                        "type": "command",
+                                        "command": "workbench.action.editorLayoutTwoByTwoGrid"
+                                    },
+                                    {
                                         "key": "d",
                                         "name": "Close window",
                                         "icon": "close",

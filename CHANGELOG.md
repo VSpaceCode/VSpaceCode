@@ -13,6 +13,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+-   Add window layout bindings
+    -   `SPC w 1` to open single column window layout
+    -   `SPC w 2` to open double column window layout
+    -   `SPC w 3` to open triple column window layout
+    -   `SPC w 4` to open grid window layout
+
 ### Fixed
 
 -   Fixed outdated Flutter commands
