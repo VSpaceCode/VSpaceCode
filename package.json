@@ -7003,6 +7003,13 @@
                                             },
                                             {
                                                 "key": "m",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
+                                                "type": "command",
+                                                "command": "r.createRTerm"
+                                            },
+                                            {
+                                                "key": "S",
                                                 "name": "Run current cell",
                                                 "icon": "play",
                                                 "type": "command",
@@ -7026,7 +7033,7 @@
                                             {
                                                 "key": "s",
                                                 "name": "Run selection",
-                                                "icon": "selection",
+                                                "icon": "play",
                                                 "type": "command",
                                                 "command": "quarto.runSelection"
                                             },
@@ -7387,6 +7394,13 @@
                                                 "icon": "play",
                                                 "type": "command",
                                                 "command": "r.runSelection"
+                                            },
+                                            {
+                                                "key": "m",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
+                                                "type": "command",
+                                                "command": "r.createRTerm"
                                             },
                                             {
                                                 "key": "R",
