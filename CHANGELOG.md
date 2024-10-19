@@ -278,6 +278,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
         -   `<spc> m g D` to peek definition
         -   `<spc> m g I` to find symbols in project
         -   `<spc> m g R` to find all references
+-   Add C major mode key bindings
 
 ### Changed
 
