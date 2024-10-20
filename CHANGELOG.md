@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 -   Fixed outdated Flutter commands
+-   Fixed render in Quarto mode
 
 ## [0.10.17] - 2024-01-20
 
