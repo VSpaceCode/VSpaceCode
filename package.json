@@ -6827,7 +6827,7 @@
                                                 "name": "Render",
                                                 "type": "command",
                                                 "icon": "check",
-                                                "command": "quarto.render"
+                                                "command": "quarto.renderDocument"
                                             },
                                             {
                                                 "key": "s",
