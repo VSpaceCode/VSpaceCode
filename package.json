@@ -6809,10 +6809,10 @@
                                             },
                                             {
                                                 "key": "m",
-                                                "name": "Run current cell",
-                                                "icon": "play",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
                                                 "type": "command",
-                                                "command": "quarto.runCurrentCell"
+                                                "command": "r.createRTerm"
                                             },
                                             {
                                                 "key": "o",
@@ -6832,7 +6832,7 @@
                                             {
                                                 "key": "s",
                                                 "name": "Run selection",
-                                                "icon": "selection",
+                                                "icon": "play",
                                                 "type": "command",
                                                 "command": "quarto.runSelection"
                                             },
@@ -6843,6 +6843,13 @@
                                                 "icon": "debug-restart",
                                                 "command": "r.runCommand",
                                                 "args": "rstudioapi::restartSession()"
+                                            },
+                                            {
+                                                "key": "S",
+                                                "name": "Run current cell",
+                                                "icon": "play",
+                                                "type": "command",
+                                                "command": "quarto.runCurrentCell"
                                             },
                                             {
                                                 "key": "=",
@@ -7178,6 +7185,13 @@
                                                 "icon": "question",
                                                 "type": "command",
                                                 "command": "r.helpPanel.openForSelection"
+                                            },
+                                            {
+                                                "key": "m",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
+                                                "type": "command",
+                                                "command": "r.createRTerm"
                                             },
                                             {
                                                 "key": "o",
@@ -8587,6 +8601,34 @@
                                         "command": "workbench.action.splitEditor"
                                     },
                                     {
+                                        "key": "1",
+                                        "name": "Single column window layout",
+                                        "icon": "editor-layout",
+                                        "type": "command",
+                                        "command": "workbench.action.editorLayoutSingle"
+                                    },
+                                    {
+                                        "key": "2",
+                                        "name": "Double column window layout",
+                                        "icon": "editor-layout",
+                                        "type": "command",
+                                        "command": "workbench.action.editorLayoutTwoColumns"
+                                    },
+                                    {
+                                        "key": "3",
+                                        "name": "Triple column window layout",
+                                        "icon": "editor-layout",
+                                        "type": "command",
+                                        "command": "workbench.action.editorLayoutThreeColumns"
+                                    },
+                                    {
+                                        "key": "4",
+                                        "name": "Grid window layout",
+                                        "icon": "editor-layout",
+                                        "type": "command",
+                                        "command": "workbench.action.editorLayoutTwoByTwoGrid"
+                                    },
+                                    {
                                         "key": "=",
                                         "name": "Reset window sizes",
                                         "icon": "move",
@@ -8638,34 +8680,6 @@
                                                 "command": "workbench.action.increaseViewSize"
                                             }
                                         ]
-                                    },
-                                    {
-                                        "key": "1",
-                                        "name": "Single column window layout",
-                                        "icon": "editor-layout",
-                                        "type": "command",
-                                        "command": "workbench.action.editorLayoutSingle"
-                                    },
-                                    {
-                                        "key": "2",
-                                        "name": "Double column window layout",
-                                        "icon": "editor-layout",
-                                        "type": "command",
-                                        "command": "workbench.action.editorLayoutTwoColumns"
-                                    },
-                                    {
-                                        "key": "3",
-                                        "name": "Triple column window layout",
-                                        "icon": "editor-layout",
-                                        "type": "command",
-                                        "command": "workbench.action.editorLayoutThreeColumns"
-                                    },
-                                    {
-                                        "key": "4",
-                                        "name": "Grid window layout",
-                                        "icon": "editor-layout",
-                                        "type": "command",
-                                        "command": "workbench.action.editorLayoutTwoByTwoGrid"
                                     },
                                     {
                                         "key": "d",
