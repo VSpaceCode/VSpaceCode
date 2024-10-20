@@ -2391,13 +2391,6 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
-                                                "key": "h",
-                                                "name": "Describe thing at point",
-                                                "icon": "book",
-                                                "type": "command",
-                                                "command": "editor.action.showHover"
-                                            },
-                                            {
                                                 "key": "=",
                                                 "name": "+Format",
                                                 "icon": "list-flat",
