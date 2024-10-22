@@ -31,10 +31,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     -   `SPC w 2` to open double column window layout
     -   `SPC w 3` to open triple column window layout
     -   `SPC w 4` to open grid window layout
+-   Add R create terminal in R and Quarto mode.
 
 ### Fixed
 
 -   Fixed outdated Flutter commands
+
+## Changed
+-   Changed Quarto Run current cell to `SPC m S`.
 
 ## [0.10.17] - 2024-01-20
 
