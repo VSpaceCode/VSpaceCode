@@ -6980,6 +6980,13 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
+                                                "key": "'",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
+                                                "type": "command",
+                                                "command": "r.createRTerm"
+                                            },
+                                            {
                                                 "key": "d",
                                                 "name": "Debugonce R",
                                                 "type": "command",
@@ -7365,6 +7372,13 @@
                                         "name": "R",
                                         "type": "bindings",
                                         "bindings": [
+                                            {
+                                                "key": "'",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
+                                                "type": "command",
+                                                "command": "r.createRTerm"
+                                            },
                                             {
                                                 "key": "d",
                                                 "name": "Debugonce",
