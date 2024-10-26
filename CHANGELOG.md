@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+-   Add R Package bindings in R Mode
+
 ## [0.10.28] - 2024-02-28
 
 ### Added
