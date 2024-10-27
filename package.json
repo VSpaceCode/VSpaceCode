@@ -7547,6 +7547,50 @@
                                                 ]
                                             },
                                             {
+                                                "key": "p",
+                                                "name": "+Package",
+                                                "icon": "list-flat",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Check",
+                                                        "icon": "list-flat",
+                                                        "type": "command",
+                                                        "command": "r.check"
+                                                    },
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Document",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "r.document"
+                                                    },
+                                                    {
+                                                        "key": "l",
+                                                        "name": "Load All",
+                                                        "icon": "repl",
+                                                        "type": "command",
+                                                        "command": "r.loadAll"
+                                                    },
+                                                    {
+                                                        "key": "p",
+                                                        "name": "pgkdown build site",
+                                                        "icon": "gear",
+                                                        "type": "command",
+                                                        "command": "r.runCommand",
+                                                        "args": "pkgdown::build_site()"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Test",
+                                                        "icon": "beaker",
+                                                        "type": "command",
+                                                        "command": "r.test"
+                                                    }
+                                                ]
+                                            },
+                                            {
                                                 "key": "r",
                                                 "name": "+Refactor",
                                                 "icon": "edit",
