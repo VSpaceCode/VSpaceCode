@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Add C major mode key bindings
 -   Add R Package bindings in R Mode
+-   Add R create terminal in R and Quarto mode.
 
 ### Fixed
 
@@ -31,7 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     -   `SPC w 2` to open double column window layout
     -   `SPC w 3` to open triple column window layout
     -   `SPC w 4` to open grid window layout
--   Add R create terminal in R and Quarto mode.
 
 ### Fixed
 
