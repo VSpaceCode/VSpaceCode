@@ -23,6 +23,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Fixed render in Quarto mode
 
+## Changed
+
+-   Changed Quarto Run current cell to `SPC m S`.
+
 ## [0.10.28] - 2024-02-28
 
 ### Added
@@ -36,10 +40,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 -   Fixed outdated Flutter commands
-
-## Changed
-
--   Changed Quarto Run current cell to `SPC m S`.
 
 ## [0.10.17] - 2024-01-20
 
