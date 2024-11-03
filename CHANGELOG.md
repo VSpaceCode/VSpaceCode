@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.19] - 2024-11-03
+
 ### Added
 
 -   Add C major mode key bindings
@@ -27,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Changed Quarto Run current cell to `SPC m S`.
 
-## [0.10.28] - 2024-02-28
+## [0.10.18] - 2024-02-28
 
 ### Added
 
