@@ -6980,6 +6980,13 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
+                                                "key": "'",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
+                                                "type": "command",
+                                                "command": "r.createRTerm"
+                                            },
+                                            {
                                                 "key": "d",
                                                 "name": "Debugonce R",
                                                 "type": "command",
@@ -7003,10 +7010,10 @@
                                             },
                                             {
                                                 "key": "m",
-                                                "name": "Run current cell",
-                                                "icon": "play",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
                                                 "type": "command",
-                                                "command": "quarto.runCurrentCell"
+                                                "command": "r.createRTerm"
                                             },
                                             {
                                                 "key": "o",
@@ -7026,7 +7033,7 @@
                                             {
                                                 "key": "s",
                                                 "name": "Run selection",
-                                                "icon": "selection",
+                                                "icon": "play",
                                                 "type": "command",
                                                 "command": "quarto.runSelection"
                                             },
@@ -7037,6 +7044,13 @@
                                                 "icon": "debug-restart",
                                                 "command": "r.runCommand",
                                                 "args": "rstudioapi::restartSession()"
+                                            },
+                                            {
+                                                "key": "S",
+                                                "name": "Run current cell",
+                                                "icon": "play",
+                                                "type": "command",
+                                                "command": "quarto.runCurrentCell"
                                             },
                                             {
                                                 "key": "=",
@@ -7359,6 +7373,13 @@
                                         "type": "bindings",
                                         "bindings": [
                                             {
+                                                "key": "'",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
+                                                "type": "command",
+                                                "command": "r.createRTerm"
+                                            },
+                                            {
                                                 "key": "d",
                                                 "name": "Debugonce",
                                                 "type": "command",
@@ -7372,6 +7393,13 @@
                                                 "icon": "question",
                                                 "type": "command",
                                                 "command": "r.helpPanel.openForSelection"
+                                            },
+                                            {
+                                                "key": "m",
+                                                "name": "Create R Terminal",
+                                                "icon": "terminal",
+                                                "type": "command",
+                                                "command": "r.createRTerm"
                                             },
                                             {
                                                 "key": "o",
