@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Add C major mode key bindings
 -   Add R Package bindings in R Mode
--   Add R create terminal in R and Quarto mode.
+-   Add R create terminal in R and Quarto mode with `SPC m m` and `SPC m '`.
 
 ### Fixed
 
