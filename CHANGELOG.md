@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 -   Fixed render in Quarto mode
+-   Fixed `SPC T T`(toggle editor tabs) with the new API
 
 ## Changed
 

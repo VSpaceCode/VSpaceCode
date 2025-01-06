@@ -108,6 +108,15 @@
                     "when": "sideBarVisible && explorerViewletVisible"
                 },
                 "when": "whichkeyVisible && sideBarVisible && explorerViewletVisible"
+            },
+            {
+                "key": "shift+t",
+                "command": "whichkey.triggerKey",
+                "args": {
+                    "key": "T",
+                    "when": "editorTabsVisible"
+                },
+                "when": "whichkeyVisible && editorTabsVisible"
             }
         ],
         "configuration": [
@@ -9752,8 +9761,21 @@
                                         "key": "T",
                                         "name": "Toggle tab visibility",
                                         "icon": "files",
-                                        "type": "command",
-                                        "command": "workbench.action.toggleTabsVisibility"
+                                        "type": "conditional",
+                                        "bindings": [
+                                            {
+                                                "key": "",
+                                                "name": "Show editor tabs",
+                                                "type": "command",
+                                                "command": "workbench.action.showMultipleEditorTabs"
+                                            },
+                                            {
+                                                "key": "when:editorTabsVisible",
+                                                "name": "Hide editor tabs",
+                                                "type": "command",
+                                                "command": "workbench.action.hideEditorTabs"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
