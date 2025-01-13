@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+-   Fixed `SPC T T`(toggle editor tabs) with the new API
+
 ## [0.10.19] - 2024-11-03
 
 ### Added
@@ -24,7 +28,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 -   Fixed render in Quarto mode
--   Fixed `SPC T T`(toggle editor tabs) with the new API
 
 ## Changed
 
