@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+-   Add Zig major mode key bindings
+
 ### Fixed
 
 -   Fixed `SPC T T`(toggle editor tabs) with the new API
