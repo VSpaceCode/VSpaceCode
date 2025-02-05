@@ -8538,6 +8538,258 @@
                                                 ]
                                             }
                                         ]
+                                    },
+                                    {
+                                        "key": "languageId:zig",
+                                        "name": "Zig",
+                                        "type": "bindings",
+                                        "bindings": [
+                                            {
+                                                "key": "=",
+                                                "name": "+Format",
+                                                "icon": "list-flat",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "=",
+                                                        "name": "Format region or buffer",
+                                                        "icon": "list-flat",
+                                                        "type": "command",
+                                                        "command": "editor.action.format"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Format buffer",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument"
+                                                    },
+                                                    {
+                                                        "key": "c",
+                                                        "name": "Format changes",
+                                                        "icon": "diff",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatChanges"
+                                                    },
+                                                    {
+                                                        "key": "s",
+                                                        "name": "Format selection",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection"
+                                                    },
+                                                    {
+                                                        "key": "B",
+                                                        "name": "+Format buffer with formatter",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatDocument.multiple"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "+Format selection with formatter",
+                                                        "icon": "selection",
+                                                        "type": "command",
+                                                        "command": "editor.action.formatSelection.multiple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "a",
+                                                "name": "+Actions",
+                                                "icon": "zap",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "b",
+                                                        "name": "Build workspace",
+                                                        "icon": "gear",
+                                                        "type": "command",
+                                                        "command": "zig-language-extras.buildWorkspace"
+                                                    },
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Debug",
+                                                        "icon": "debug",
+                                                        "type": "command",
+                                                        "command": "zig.debug"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Run workspace/file",
+                                                        "icon": "run",
+                                                        "type": "command",
+                                                        "command": "zig.run"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "b",
+                                                "name": "+Backend/environment",
+                                                "icon": "circuit-board",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "i",
+                                                        "name": "Install/update tools",
+                                                        "icon": "cloud-download",
+                                                        "type": "command",
+                                                        "command": "zig.install"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Start/Restart language server",
+                                                        "icon": "server-process",
+                                                        "type": "command",
+                                                        "command": "zig.zls.startRestart"
+                                                    },
+                                                    {
+                                                        "key": "S",
+                                                        "name": "Stop language server",
+                                                        "icon": "server-process",
+                                                        "type": "command",
+                                                        "command": "zig.zls.stop"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "g",
+                                                "name": "+Go to",
+                                                "icon": "go-to-file",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Go to declaration",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.revealDeclaration"
+                                                    },
+                                                    {
+                                                        "key": "e",
+                                                        "name": "Go to errors/problems",
+                                                        "icon": "error",
+                                                        "type": "command",
+                                                        "command": "workbench.action.problems.focus"
+                                                    },
+                                                    {
+                                                        "key": "g",
+                                                        "name": "Go to definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.revealDefinition"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Go to references",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToReferences"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Go to type definition",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.goToTypeDefinition"
+                                                    },
+                                                    {
+                                                        "key": "R",
+                                                        "name": "Find references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "references-view.findReferences"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "r",
+                                                "name": "+Refactor",
+                                                "icon": "edit",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": ".",
+                                                        "name": "Quick fix",
+                                                        "icon": "lightbulb-autofix",
+                                                        "type": "command",
+                                                        "command": "editor.action.quickFix"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Rename symbol",
+                                                        "icon": "symbol-keyword",
+                                                        "type": "command",
+                                                        "command": "editor.action.rename"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "t",
+                                                "name": "+Test",
+                                                "icon": "beaker",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Debug test at cursor",
+                                                        "icon": "bug",
+                                                        "type": "command",
+                                                        "command": "zig-language-extras.debugTest"
+                                                    },
+                                                    {
+                                                        "key": "f",
+                                                        "name": "Test file",
+                                                        "icon": "file",
+                                                        "type": "command",
+                                                        "command": "zig-language-extras.runFileTests"
+                                                    },
+                                                    {
+                                                        "key": "t",
+                                                        "name": "Test function at cursor",
+                                                        "icon": "whole-word",
+                                                        "type": "command",
+                                                        "command": "zig-language-extras.runSingleTest"
+                                                    },
+                                                    {
+                                                        "key": "w",
+                                                        "name": "Test workspace",
+                                                        "icon": "project",
+                                                        "type": "command",
+                                                        "command": "zig-language-extras.testWorkspace"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "key": "G",
+                                                "name": "+Peek",
+                                                "icon": "eye",
+                                                "type": "bindings",
+                                                "bindings": [
+                                                    {
+                                                        "key": "d",
+                                                        "name": "Peek declaration",
+                                                        "icon": "symbol-struct",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekDeclaration"
+                                                    },
+                                                    {
+                                                        "key": "g",
+                                                        "name": "Peek definition",
+                                                        "icon": "symbol-function",
+                                                        "type": "command",
+                                                        "command": "editor.action.peekDefinition"
+                                                    },
+                                                    {
+                                                        "key": "r",
+                                                        "name": "Peek references",
+                                                        "icon": "symbol-reference",
+                                                        "type": "command",
+                                                        "command": "editor.action.referenceSearch.trigger"
+                                                    }
+                                                ]
+                                            }
+                                        ]
                                     }
                                 ]
                             },
