@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.20] - 2025-07-12
+
 ### Fixed
 
 -   Fixed `SPC T T`(toggle editor tabs) with the new API
