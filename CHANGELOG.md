@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+-   ⌨️ Fixed broken `TAB` in edamagit
+
 ## [0.10.20] - 2025-07-12
 
 ### Fixed
