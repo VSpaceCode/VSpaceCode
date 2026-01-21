@@ -9872,7 +9872,7 @@
     },
     "dependencies": {
         "jsonc-parser": "^3.0.0",
-        "lodash": "^4.17.21",
+        "lodash": "^4.17.23",
         "path-browserify": "^1.0.1"
     }
 }
